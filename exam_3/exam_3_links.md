@@ -20,3 +20,9 @@ Chapter 11 ppt updated?
 
 https://jalcollege-my.sharepoint.com/:p:/g/personal/kristenmcconkey_jalc_edu/EaIvbKlkoOpJif0cBfO-Ph0Br6HtAoDUGER8AZ8YSW16Ig?e=SDTsZL
 
+Chapter 16 Powerpoint:
+
+https://jalcollege-my.sharepoint.com/:p:/g/personal/kristenmcconkey_jalc_edu/EZha5dS191tPga58docFiiwBYEN5CIheQRSVMUmE4rzGRg?e=9oiCd0
+
+Chapter 17 Powerpoint:
+
