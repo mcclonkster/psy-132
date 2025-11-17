@@ -30,3 +30,7 @@ Google Learn About (I don't think it will work but I'd like to try)
 
 https://learning.google.com/experiments/learn-about?src=signup&cid=conv_6B1BCACD-6C5F-4264-8771-76D119AD8095
 
+DSM-5-TR PDF
+
+https://www.migna.ir/images/docs/files/000058/nf00058253-2.pdf
+

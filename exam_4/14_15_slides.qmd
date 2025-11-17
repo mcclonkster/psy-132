@@ -1,0 +1,325 @@
+---
+title: "Chapters 14–15 Student Notes"
+subtitle: "Gateways 16e – Psychological Disorders and Therapies"
+format:
+  pdf: default
+  docx: default
+  revealjs:
+    slide-number: true
+  pptx:
+    toc: false
+    slide-number: true
+    incremental: true
+  ipynb: default
+---
+
+# Chapter 14 – Psychological Disorders
+
+## Student Notes (16e-faithful, aligned with our Block 8 plan)
+
+---
+
+## 14.1 Psychopathology: Classification and Causes
+
+**Psychopathology** is the study of mental, behavioral, and emotional disorders.
+
+### Four things to consider when deciding whether behavior is abnormal
+
+The textbook identifies four key ideas to think about when deciding if behavior is abnormal:
+
+1. **Statistical abnormality**
+   - Behavior is rare or falls far from the average.
+   - Example: very extreme scores on a depression scale compared to most people.
+
+2. **Nonconformity (social nonconformity)**
+   - Behavior seriously violates social norms or expectations.
+   - Example: acting in ways that are grossly inappropriate for the situation, such as shouting at strangers in a quiet library.
+
+3. **Subjective discomfort**
+   - The person feels intense, ongoing emotional pain or distress about their own thoughts or behavior.
+   - Example: someone feels tormented by constant, unwanted intrusive thoughts.
+
+4. **Maladaptive behavior**
+   - The behavior seriously interferes with a person’s ability to function (work, school, relationships, self-care).
+   - Example: someone who stops going to work, cannot maintain hygiene, or cannot manage daily tasks because of their symptoms.
+
+**Key points:**
+
+- These four ideas are guides, not strict rules.
+- A psychological disorder usually involves more than one of these, especially subjective discomfort and maladaptive behavior.
+
+### How disorders are classified and diagnosed
+
+- Psychological problems are classified using the **Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5)**.
+- A **diagnosis** is made by checking which symptoms are present and which are absent, and seeing if they match the **criteria** for a particular disorder.
+- People can be **comorbid**, meaning they show symptoms that fit criteria for more than one disorder at the same time.
+- DSM categories are revised over time as research and social norms change; categories can be added, changed, or removed.
+
+The DSM describes symptoms in terms of:
+
+- **Positive symptoms** – behaviors or experiences that are more than normal (for example, hallucinations, delusions).
+- **Negative symptoms** – losses or deficits compared to normal (for example, flat affect, lack of speech).
+
+### Causes of mental illness and the biopsychosocial model
+
+The chapter emphasizes the **biopsychosocial model**:
+
+- **Biological factors:** genetics, brain structure and chemistry, physical illness.
+- **Psychological factors:** learning history, thoughts, coping skills, personality.
+- **Social and cultural factors:** relationships, family environment, culture, life stress, trauma, socioeconomic conditions.
+
+The **diathesis–stress** idea fits here: people may have a predisposition (diathesis) that, combined with stress, leads to a disorder.
+
+---
+
+## 14.2 Psychotic Disorders
+
+Psychotic disorders involve a loss of contact with reality.
+
+- **Delusional disorders**
+  - Main feature: strong, false beliefs that are not shared by others and persist despite evidence to the contrary.
+  - Example: believing you are being plotted against without any real proof.
+- **Schizophrenia**
+  - Often involves:
+    - Hallucinations (most often hearing voices).
+    - Delusions (paranoid or grandiose beliefs).
+    - Disorganized thought and speech.
+    - Negative symptoms such as reduced emotional expression or lack of motivation.
+  - Typically long-term and can be very disabling, but treatment can help many people.
+
+---
+
+## 14.3 Mood and Personality Disorders
+
+### Mood disorders
+
+Mood disorders involve major disturbances in emotion, such as long-lasting sadness or extreme swings.
+
+- **Depressive disorders**
+  - Persistent low mood, loss of interest, changes in sleep and appetite, fatigue, feelings of worthlessness, possible thoughts of death or suicide.
+- **Bipolar and related disorders**
+  - Shifts between depression and **mania** or **hypomania**:
+    - Elevated mood.
+    - Increased energy.
+    - Decreased need for sleep.
+    - Racing thoughts.
+    - Impulsive or risky behavior.
+
+### Personality disorders
+
+- Long-standing patterns of thinking, feeling, and behaving that:
+  - Are inflexible across situations.
+  - Cause significant distress or impairment.
+- Examples include enduring patterns of:
+  - Distrust.
+  - Instability in relationships and self-image.
+  - Strong need for admiration with lack of empathy.
+
+---
+
+## 14.4 Anxiety and Anxiety-Related Disorders
+
+### Anxiety disorders
+
+- Feature excessive, unrealistic fear or anxiety that interferes with functioning.
+
+**Examples:**
+
+- **Generalized anxiety disorder:** chronic, widespread worry about many aspects of life.
+- **Panic disorder:** repeated panic attacks and persistent concern about having more.
+- **Phobias:** intense, irrational fear of specific objects or situations (for example, heights, animals).
+
+### Anxiety-related disorders
+
+These conditions share anxiety features but are classified separately in DSM-5.
+
+**Examples include:**
+
+- **Obsessive-compulsive disorder (OCD):** recurring unwanted thoughts and repetitive behaviors done to reduce anxiety.
+- **Trauma- and stressor-related disorders** such as **PTSD**:
+  - Intrusive memories.
+  - Nightmares.
+  - Avoidance.
+  - Hyperarousal following trauma.
+
+---
+
+## 14.5 Psychology and Your Skill Set: Perseverance
+
+This section focuses on **perseverance**, often discussed in terms of “grit”:
+
+- Perseverance means continuing to work toward goals despite obstacles and setbacks.
+- The text highlights how sticking with treatment and coping strategies over time is important for recovery.
+- Students are encouraged to:
+  - Recognize that change can be slow.
+  - Practice balancing persistence with self-care.
+  - Think about how to apply these ideas to their own challenges.
+
+---
+
+# Chapter 15 – Therapies
+
+## Student Notes (16e-faithful, aligned with our Block 8 plan)
+
+---
+
+## 15.1 The Origins and Effectiveness of Psychotherapy
+
+### A brief history of psychotherapy
+
+- Early roots in **psychoanalysis** (Freud): talking about thoughts, dreams, and childhood experiences to uncover unconscious conflicts.
+- Later developments include:
+  - **Behavior therapies** (influenced by learning theory).
+  - **Cognitive therapies** (focused on thought patterns).
+  - **Humanistic therapies** (focused on growth and self-acceptance).
+
+### Four characteristics that distinguish psychotherapies
+
+Psychotherapies can be described along these dimensions:
+
+- **Insight-oriented vs action-oriented**
+  - Insight-oriented: focus on understanding thoughts and feelings (for example, psychodynamic, humanistic).
+  - Action-oriented: focus on changing behaviors and thoughts directly (for example, behavioral, cognitive-behavioral).
+- **Directive vs nondirective**
+  - Directive: therapist takes an active role in guiding the client, giving advice, or assigning tasks.
+  - Nondirective: therapist mainly reflects and supports, letting the client lead.
+- **Open-ended vs time-limited**
+  - Open-ended: duration is flexible.
+  - Time-limited: set number of sessions.
+- **Individual vs group; in-person vs remote**
+  - Therapy can be one-on-one, in a group, or with couples/families.
+  - It can be delivered face-to-face or via phone/Internet.
+
+### Core features of effective psychotherapy
+
+The effectiveness of therapy depends on:
+
+- **Client characteristics**
+  - Motivation, expectations, and resources.
+- **Therapist characteristics**
+  - Warmth, empathy, experience, cultural competence.
+- **Therapeutic alliance**
+  - The quality of the working relationship and mutual trust between client and therapist.
+- **Nature of the problem**
+  - Some problems respond better to certain approaches than others.
+
+Overall, research shows that psychotherapy is often more helpful than no treatment at all across many problems.
+
+---
+
+## 15.2 Behavior Therapies
+
+Behavior therapies focus on **changing maladaptive behavior**, often using principles of conditioning.
+
+### Main elements of behavior therapies
+
+- Behavior therapists apply **classical** and **operant conditioning** to directly change problematic behaviors and thoughts.
+- They emphasize behavior change and skill-building more than deep “insight.”
+
+### Therapies based on classical conditioning
+
+- **Aversion therapy**
+  - Pairs an unwanted behavior (for example, heavy drinking) with something unpleasant to reduce that behavior.
+- **Exposure therapies**
+  - Help people face feared situations or cues safely, to reduce anxiety over time.
+  - Types include:
+    - **Flooding:** facing the fear all at once.
+    - **Systematic desensitization:** gradual exposure paired with relaxation.
+    - **Modeling:** observing others confronting fears.
+
+These techniques aim to weaken learned fear responses.
+
+### Therapies based on operant conditioning
+
+- Use **reinforcement** and other consequences to reduce undesired behaviors and increase desired ones.
+
+**Tools include:**
+
+- Positive reinforcement: rewarding desirable behaviors.
+- Non-reinforcement and extinction: removing rewards to reduce unwanted behaviors.
+- Punishment: adding unpleasant consequences to discourage behavior (used carefully).
+- Shaping: reinforcing small steps toward a desired behavior.
+- Stimulus control: managing cues that trigger behaviors.
+- Time-out: removing access to reinforcement after misbehavior.
+
+**Examples:**
+
+- **Token economies:** people earn tokens for positive behaviors and exchange them for rewards.
+- **Intensive behavioral intervention (IBI):** structured behavioral programs, often used with children with autism.
+
+---
+
+## 15.3 Cognitive and Humanistic Therapies
+
+### Cognitive therapies
+
+Cognitive therapies focus on **distorted thinking** and teach coping skills.
+
+**Key approaches:**
+
+- **Beck’s cognitive therapy**
+  - Targets patterns like selective perception (only seeing the negative), overgeneralization, and all-or-nothing thinking.
+  - Helps clients identify and change these thought patterns.
+- **Cognitive-behavioral therapy (CBT)**
+  - Integrates cognitive and behavioral methods.
+  - Clients learn to challenge distorted thoughts and test new behaviors.
+- **Rational-emotive behavior therapy (REBT)**
+  - Trains clients to identify irrational beliefs (“musts,” “shoulds”) and replace them with more realistic, flexible thoughts.
+
+Overall, cognitive therapies aim to modify the thoughts that fuel distress and to build more effective coping.
+
+### Humanistic therapies
+
+Humanistic therapies are **insight-oriented**:
+
+- They help clients gain deeper understanding of their own thoughts, emotions, and behaviors.
+- Emphasize personal growth, self-acceptance, and finding meaning.
+
+**Common elements:**
+
+- Seeing the client as basically good and capable of growth.
+- Providing warmth, empathy, and genuine respect.
+- Letting the client lead the exploration while the therapist offers support and reflection.
+
+---
+
+## 15.4 Medical Therapies
+
+### Main types of medical therapies
+
+- **Pharmacotherapy (medications)**
+  - Use of drugs (for example, antidepressants, antipsychotics, mood stabilizers) to change brain chemistry and reduce symptoms.
+- **Brain stimulation therapies**
+  - Methods like electroconvulsive therapy (ECT), used especially for severe depression that has not responded to other treatments.
+- **Psychosurgery**
+  - Rare surgical procedures on the brain for severe conditions that do not respond to other treatments; much less common now and tightly controlled.
+
+### Hospitalization and community mental health programs
+
+- **Hospitalization**
+  - Provides a protected setting for intensive treatment when there is serious risk (for example, suicidal intent, severe psychosis).
+- **Community mental health centers**
+  - Aim to prevent or reduce the need for hospitalization.
+  - Offer services like education, consultation, crisis intervention, and ongoing support in the community.
+
+---
+
+## 15.5 Psychology and Your Skill Set: Managing Mental Health Issues
+
+This section emphasizes **skills** for dealing with mental health problems in everyday life.
+
+### Key ideas include:
+
+- **Basic counseling skills**
+  - Listening carefully, showing empathy, and avoiding judgment when someone shares their struggles.
+  - Knowing how to encourage someone to seek professional help when needed.
+- **Getting counseling**
+  - Understanding that seeking help is a sign of strength, not weakness.
+  - Knowing steps to find support (talking to a trusted adult, contacting a counseling center, exploring community resources).
+
+**The message:**
+
+- Many psychological problems can be helped.
+- You can play a role in supporting others and in getting help for yourself when you need it.
+
+---
