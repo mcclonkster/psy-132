@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Research Methods Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nord0: '#2E3440', // Polar Night (Deepest)
+                        nord1: '#3B4252',
+                        nord2: '#434C5E',
+                        nord3: '#4C566A',
+                        nord4: '#D8DEE9', // Snow Storm (Light)
+                        nord5: '#E5E9F0',
+                        nord6: '#ECEFF4', // Snow Storm (Lightest)
+                        nord7: '#8FBCBB', // Frost
+                        nord8: '#88C0D0',
+                        nord9: '#81A1C1',
+                        nord10: '#5E81AC', // Frost Blue
+                        nord11: '#BF616A', // Aurora Red
+                        nord12: '#D08770', // Aurora Orange
+                        nord13: '#EBCB8B', // Aurora Yellow
+                        nord14: '#A3BE8C', // Aurora Green
+                        nord15: '#B48EAD', // Aurora Purple
+                        // Custom WCAG Accessible variants
+                        nord10dark: '#3B5D8A',
+                        nord14dark: '#3E5C33',
+                        nord12dark: '#8C4B35'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .method-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .step-transition {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            background-color: #ECEFF4;
+            color: #2E3440;
+        }
+        /* Custom Focus Indicator for WCAG compliance */
+        button:focus {
+            outline: 2px solid #5E81AC;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans p-4 md:p-8">
+
+    <main class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-nord0 mb-2">Psychology Research Methods</h1>
+            <p class="text-lg text-nord3">A Comprehensive Guide for PSY-132 Students</p>
+        </header>
+
+        <!-- Section 1: Methodological Definitions -->
+        <section class="mb-16" aria-labelledby="heading-categories">
+            <h2 id="heading-categories" class="text-2xl font-semibold mb-6 border-b-2 border-nord9 pb-2 text-nord1">1. Core Research Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Descriptive -->
+                <article class="bg-white p-6 rounded-xl border-t-4 border-nord14 method-card shadow-sm">
+                    <h3 class="text-xl font-bold text-nord14dark mb-2">Descriptive</h3>
+                    <p class="text-sm text-nord2 mb-4 font-medium">Goal: Describe human behavior as it exists.</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-bold text-nord3">Key Tools:</p>
+                        <ul class="list-disc ml-4 space-y-1 text-nord2">
+                            <li>Case Study: Individual focus.</li>
+                            <li>Naturalistic Observation: Real-world settings.</li>
+                            <li>Survey: Broad self-reporting.</li>
+                            <li>Archival: Using existing records.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Correlational -->
+                <article class="bg-white p-6 rounded-xl border-t-4 border-nord12 method-card shadow-sm">
+                    <h3 class="text-xl font-bold text-nord12dark mb-2">Correlational</h3>
+                    <p class="text-sm text-nord2 mb-4 font-medium">Goal: Identify mathematical relationships.</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-bold text-nord3">Logic:</p>
+                        <ul class="list-disc ml-4 space-y-1 text-nord2">
+                            <li>Passive Observation: No interference.</li>
+                            <li>Variable Relationship: Does A move with B?</li>
+                            <li class="font-bold text-nord11 underline">Limitation: Correlation does not prove causation.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Experimental -->
+                <article class="bg-white p-6 rounded-xl border-t-4 border-nord10 method-card shadow-sm">
+                    <h3 class="text-xl font-bold text-nord10dark mb-2">Experimental</h3>
+                    <p class="text-sm text-nord2 mb-4 font-medium">Goal: Determine cause and effect.</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-bold text-nord3">Components:</p>
+                        <ul class="list-disc ml-4 space-y-1 text-nord2">
+                            <li>Independent Variable: The cause (manipulated).</li>
+                            <li>Dependent Variable: The effect (measured).</li>
+                            <li>Control Group: The baseline (no treatment).</li>
+                            <li>Random Assignment: Crucial for true experiments.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Decision Tree -->
+        <section class="mb-16 bg-white p-8 rounded-2xl shadow-xl border border-nord4" aria-labelledby="heading-tree">
+            <h2 id="heading-tree" class="text-2xl font-semibold mb-2 text-center text-nord0">2. Research Design Decision Tree</h2>
+            <p class="text-center text-nord3 mb-8">Follow the logic steps to select your method.</p>
+            
+            <div id="tree-container" class="min-h-[300px] flex flex-col justify-center items-center text-center" aria-live="polite">
+                <div id="tree-content" class="step-transition w-full">
+                    <h3 id="tree-question" tabindex="-1" class="text-2xl font-bold mb-8 text-nord1 focus:outline-none">What is the primary goal of your study?</h3>
+                    <div id="tree-options" class="flex flex-wrap justify-center gap-4">
+                        <button type="button" onclick="handleChoice('descriptive')" class="bg-nord14 hover:bg-nord14dark hover:text-white text-nord0 px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">
+                            To Describe Behavior
+                        </button>
+                        <button type="button" onclick="handleChoice('correlational')" class="bg-nord12 hover:bg-nord12dark hover:text-white text-nord0 px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">
+                            To Identify a Relationship
+                        </button>
+                        <button type="button" onclick="handleChoice('experimental')" class="bg-nord10 hover:bg-nord10dark text-white px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">
+                            To Prove Cause and Effect
+                        </button>
+                    </div>
+                </div>
+                <button type="button" onclick="resetTree()" id="reset-btn" class="hidden mt-12 text-nord3 hover:text-nord10 font-medium underline focus:ring-1 focus:ring-nord10 px-2 py-1 rounded">Reset Decision Tree</button>
+            </div>
+        </section>
+
+        <!-- Section 3: Practice and Rationale -->
+        <section aria-labelledby="heading-practice">
+            <h2 id="heading-practice" class="text-2xl font-semibold mb-6 border-b-2 border-nord9 pb-2 text-nord1">3. Practice Application</h2>
+            <div class="overflow-x-auto rounded-xl border border-nord4 shadow-sm">
+                <table class="min-w-full bg-white">
+                    <caption class="sr-only">Scenarios for practice with psychological research methods and their rationales.</caption>
+                    <thead class="bg-nord2 text-nord6">
+                        <tr>
+                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Research Scenario</th>
+                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Selected Method</th>
+                            <th scope="col" class="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Rationale</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-nord4 text-sm text-nord1">
+                        <tr>
+                            <td class="px-6 py-4">A psychologist follows the same group of 50 infants from birth until age 18 to track personality development.</td>
+                            <td class="px-6 py-4"><span class="bg-nord14 bg-opacity-20 text-nord14dark border border-nord14 px-2 py-1 rounded-md font-bold text-xs uppercase">Longitudinal</span></td>
+                            <td class="px-6 py-4">The study describes change within the same individuals over an extended period.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Researchers measure the height and social confidence levels of 500 adults to see if they move in the same direction.</td>
+                            <td class="px-6 py-4"><span class="bg-nord12 bg-opacity-20 text-nord12dark border border-nord12 px-2 py-1 rounded-md font-bold text-xs uppercase">Correlational</span></td>
+                            <td class="px-6 py-4">Variables are passively measured to find a link; no variables are manipulated.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Students are randomly assigned to either a "quiet room" or a "noisy room" to test if noise affects test scores.</td>
+                            <td class="px-6 py-4"><span class="bg-nord10 bg-opacity-20 text-nord10dark border border-nord10 px-2 py-1 rounded-md font-bold text-xs uppercase">Experimental</span></td>
+                            <td class="px-6 py-4">Uses random assignment and manipulation of an independent variable (noise) to show cause.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">A health psychologist compares current stress levels of 20-year-olds, 40-year-olds, and 60-year-olds simultaneously.</td>
+                            <td class="px-6 py-4"><span class="bg-nord14 bg-opacity-20 text-nord14dark border border-nord14 px-2 py-1 rounded-md font-bold text-xs uppercase">Cross-sectional</span></td>
+                            <td class="px-6 py-4">Compares different population segments at a single point in time.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer Glossary -->
+        <footer class="mt-16 p-8 bg-nord5 rounded-xl border border-nord4">
+            <h3 class="text-lg font-bold text-nord0 mb-4">Quick Terminology Guide</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-nord2">
+                <div>
+                    <p class="mb-4"><strong>Independent Variable (IV):</strong> The variable that is changed or controlled in a scientific experiment to test the effects on the dependent variable.</p>
+                    <p><strong>Dependent Variable (DV):</strong> The variable that is being tested and measured; it changes based on the independent variable.</p>
+                </div>
+                <div>
+                    <p class="mb-4"><strong>Random Assignment:</strong> Using chance procedures to ensure that each participant has the same opportunity to be assigned to any given group.</p>
+                    <p><strong>Causation:</strong> The demonstration that one variable specifically causes a change in another. Only achievable through Experimental methods.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const treeQuestion = document.getElementById('tree-question');
+        const treeOptions = document.getElementById('tree-options');
+        const resetBtn = document.getElementById('reset-btn');
+        const treeContent = document.getElementById('tree-content');
+
+        function updateTree(question, optionsHtml) {
+            treeContent.classList.remove('step-transition');
+            void treeContent.offsetWidth; // Trigger reflow
+            treeContent.classList.add('step-transition');
+            
+            treeQuestion.innerHTML = question;
+            treeOptions.innerHTML = optionsHtml;
+            resetBtn.classList.remove('hidden');
+
+            // Focus management for WCAG compliance
+            setTimeout(() => {
+                treeQuestion.focus();
+            }, 100);
+        }
+
+        function handleChoice(choice) {
+            if (choice === 'descriptive') {
+                updateTree("Are you focused on specific behaviors or time-based changes?", `
+                    <button type="button" onclick="handleChoice('descriptive-specific')" class="bg-nord14 hover:bg-nord14dark hover:text-white text-nord0 px-6 py-3 rounded-lg font-bold transition-all focus:ring-2 focus:ring-nord10">Specific Behaviors</button>
+                    <button type="button" onclick="handleChoice('descriptive-time')" class="bg-nord14 hover:bg-nord14dark hover:text-white text-nord0 px-6 py-3 rounded-lg font-bold transition-all focus:ring-2 focus:ring-nord10">Changes Over Time</button>
+                `);
+            } else if (choice === 'descriptive-specific') {
+                updateTree("What is the scope of your observation?", `
+                    <button type="button" onclick="showResult('Case Study', 'In-depth focus on a unique individual or small group.')" class="bg-nord3 hover:bg-nord2 text-white px-4 py-2 rounded focus:ring-2 focus:ring-nord10">Single Individual</button>
+                    <button type="button" onclick="showResult('Naturalistic Observation', 'Watching behaviors in their natural setting without interference.')" class="bg-nord3 hover:bg-nord2 text-white px-4 py-2 rounded focus:ring-2 focus:ring-nord10">Natural Setting</button>
+                    <button type="button" onclick="showResult('Survey', 'Gathering self-reported data from a large population.')" class="bg-nord3 hover:bg-nord2 text-white px-4 py-2 rounded focus:ring-2 focus:ring-nord10">Large Group Opinion</button>
+                `);
+            } else if (choice === 'descriptive-time') {
+                updateTree("How are you handling the participants?", `
+                    <button type="button" onclick="showResult('Longitudinal Research', 'Following the same exact group of people over many years.')" class="bg-nord3 hover:bg-nord2 text-white px-4 py-2 rounded focus:ring-2 focus:ring-nord10">Same Group Over Years</button>
+                    <button type="button" onclick="showResult('Cross-sectional Research', 'Comparing different age groups at the same point in time.')" class="bg-nord3 hover:bg-nord2 text-white px-4 py-2 rounded focus:ring-2 focus:ring-nord10">Different Ages Right Now</button>
+                `);
+            } else if (choice === 'correlational') {
+                showResult("Correlational Research", "You are passively measuring variables to see if a relationship exists. Note: You cannot conclude that one variable causes the other.");
+            } else if (choice === 'experimental') {
+                updateTree("Can you randomly assign participants to groups?", `
+                    <button type="button" onclick="showResult('True Experiment', 'You use random assignment to control for individual differences. This is the gold standard for proving cause and effect.')" class="bg-nord10 hover:bg-nord10dark text-white px-6 py-3 rounded-lg font-bold transition-all focus:ring-2 focus:ring-nord10">Yes (Random Assignment)</button>
+                    <button type="button" onclick="showResult('Quasi-Experiment', 'You are using existing groups (like age, gender, or classrooms) where random assignment is impossible.')" class="bg-nord10 hover:bg-nord10dark text-white px-6 py-3 rounded-lg font-bold transition-all focus:ring-2 focus:ring-nord10">No (Pre-set Groups)</button>
+                `);
+            }
+        }
+
+        function showResult(title, description) {
+            updateTree(`<span class="text-sm uppercase text-nord3 font-bold block mb-2 tracking-widest">Recommended Method</span> ${title}`, `
+                <div class="max-w-md mx-auto bg-nord6 border border-nord4 p-6 rounded-xl">
+                    <p class="text-nord1 text-base leading-relaxed">${description}</p>
+                </div>
+            `);
+        }
+
+        function resetTree() {
+            treeContent.classList.remove('step-transition');
+            void treeContent.offsetWidth;
+            treeContent.classList.add('step-transition');
+            
+            treeQuestion.innerHTML = "What is the primary goal of your study?";
+            treeOptions.innerHTML = `
+                <button type="button" onclick="handleChoice('descriptive')" class="bg-nord14 hover:bg-nord14dark hover:text-white text-nord0 px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">To Describe Behavior</button>
+                <button type="button" onclick="handleChoice('correlational')" class="bg-nord12 hover:bg-nord12dark hover:text-white text-nord0 px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">To Identify a Relationship</button>
+                <button type="button" onclick="handleChoice('experimental')" class="bg-nord10 hover:bg-nord10dark text-white px-8 py-4 rounded-xl font-bold shadow-md transition-all focus:ring-2 focus:ring-nord10">To Prove Cause and Effect</button>
+            `;
+            resetBtn.classList.add('hidden');
+            treeQuestion.focus();
+        }
+    </script>
+</body>
+</html>
