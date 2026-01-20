@@ -1,0 +1,106 @@
+---
+title: "PSY-132: Neuroscience and Biopsychology"
+format: revealjs
+revealjs-plugins: [notes]
+revealjs-theme: simple
+execute: false
+---
+
+
+## Neurons and Glia
+
+- **Neurons**: transmit signals
+- **Glia**: support, repair, insulate
+- Glia matter—don’t skip them
+
+::: notes
+- Talk track: Glia are not just glue. They shape the environment in which neurons function.
+:::
+
+---
+
+## Electrical vs Chemical Signaling
+
+- Electrical: within neuron
+- Chemical: between neurons (via synapse)
+- Synapse is the communication checkpoint
+
+::: notes
+- Talk track: This is the key distinction that keeps medication claims honest.
+:::
+
+---
+
+## Synapse and Neurotransmitters
+
+- Neurotransmitters cross the synapse
+- Reuptake regulates signal length
+- Receptors and context matter
+
+::: notes
+- Clarify: Dopamine does not mean pleasure. It depends on pathway and receptor.
+:::
+
+---
+
+## Discussion
+
+What brain-chemical claim do you hear that sounds too simple to be true?  
+*If you want a lane: dopamine, serotonin, ADHD meds, “chemical imbalance”*  
+
+**Takeaway**: Neurotransmitter effects depend on receptors, pathways, and context.
+
+::: notes
+- Aim: Surface slogans and replace them with pathway thinking.
+- Entry ramp: One chemical does not equal one feeling.
+- If quiet: What is the most common neurotransmitter claim you have seen online?
+- Guardrail: No personal medication disclosure required.
+- Wrap line: Replace slogans with pathway and context thinking.
+:::
+
+---
+
+## Brain Methods
+
+- EEG: timing good, location weak
+- fMRI: location good, timing weak
+- PET: slow, radiation, good for metabolism
+
+::: notes
+- Clarify: Activation ≠ cause. All methods have limits.
+:::
+
+---
+
+## Discussion
+
+What brain claim have you seen that felt like it skipped the evidence?  
+*If you want a lane: brain scans, “this area causes,” viral infographics, TikTok neuroscience*  
+
+**Takeaway**: Methods constrain conclusions, and correlation is not causation.
+
+::: notes
+- Aim: Build claim literacy without cynicism.
+- Entry ramp: A brain image feels like proof, but it usually is not proof of cause.
+- If quiet: When you see a brain scan, what do you assume it proves?
+- Guardrail: Keep it about claims and evidence, not judging people.
+- Wrap line: Ask what the method measures before believing what the headline claims.
+:::
+
+---
+
+## Plasticity
+
+- Brains can change with experience
+- Practice and repetition drive change
+- Change is real—but constrained
+
+::: notes
+- Talk track: Plasticity is not infinite. It’s how change happens, not a superpower.
+:::
+
+---
+
+## Exit Prompt
+
+What is one brain claim you’ll now question or reinterpret?

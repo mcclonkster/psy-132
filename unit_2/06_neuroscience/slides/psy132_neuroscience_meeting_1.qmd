@@ -1,0 +1,106 @@
+---
+title: "PSY-132: Neuroscience and Biopsychology"
+format: revealjs
+revealjs-theme: simple
+---
+
+
+## Biopsychology: Why It Matters
+
+- Behavior has biological roots
+- Biology is not destiny
+- This is a toolkit, not trivia
+
+::: notes
+- Talk track: Students will keep using biology talk to explain behavior. We want to give them real tools.
+:::
+
+---
+
+## Discussion
+
+Where do you see people use biology to explain behavior, and when does it help versus excuse?  
+*If you want a lane: school stress, mental health talk, social media claims, “wired this way”*  
+
+**Takeaway**: Biopsychology explains behavior with biology without turning it into destiny or excuses.
+
+::: notes
+- Aim: Keep the lane on explanation versus excuse, not confession.
+- Entry ramp: People reach for biology language when they feel stuck or ashamed.
+- If quiet: What is a claim you have heard that sounds too simple?
+- Guardrail: No personal disclosure required. Third-person and media examples are fine.
+- Wrap line: Biology is one layer of explanation, not the whole story.
+:::
+
+---
+
+## Nervous System Divisions
+
+- **Central**: brain and spinal cord
+- **Peripheral**: everything else
+- PNS connects sensory and motor systems
+
+::: notes
+- Talk track: This is your orientation map. It’s not for memorization, it’s for interpreting signal flow.
+:::
+
+---
+
+## Afferent vs Efferent
+
+- **Afferent**: input toward CNS
+- **Efferent**: output from CNS
+- Direction tells you what kind of process is happening
+
+::: notes
+- Talk track: Example—pain is afferent, movement is efferent.
+- Confusion watch: Students often flip them.
+:::
+
+---
+
+## Somatic vs Autonomic
+
+- **Somatic**: voluntary, skeletal muscles
+- **Autonomic**: automatic, internal organs
+- Two subsystems: sympathetic, parasympathetic
+
+::: notes
+- Talk track: Autonomic is regulation, not unconscious.
+- Watch for moral framing (e.g. “can’t control it” ≠ weakness).
+:::
+
+---
+
+## Sympathetic vs Parasympathetic
+
+- Sympathetic: activates body (“fight or flight”)
+- Parasympathetic: calms body (“rest and digest”)
+- It’s not binary
+
+::: notes
+- Clarify: It’s not that one is good and one is bad. It’s about shifting based on context.
+:::
+
+---
+
+## Discussion
+
+When does your body act like it is in danger when it is really performance or stress?  
+*If you want a lane: exams, work shifts, sleep, caffeine, social anxiety*  
+
+**Takeaway**: Regulation is flexible shifting, not a binary switch.
+
+::: notes
+- Aim: Normalize activation and prevent binary thinking.
+- Entry ramp: Action mode is not only danger. It is also performance.
+- If quiet: What is a normal situation where your body goes action-mode anyway?
+- Guardrail: Keep examples general. No diagnosis talk.
+- Wrap line: The goal is context and recovery, not labeling one system good or bad.
+:::
+
+---
+
+## Exit Prompt
+
+What is one body signal you might interpret differently after today?

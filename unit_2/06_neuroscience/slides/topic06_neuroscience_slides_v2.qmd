@@ -1,0 +1,1995 @@
+---
+title: "Topic 6: Neuroscience"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How neurons communicate
+- How the nervous system is organized
+- How brain-behavior links are studied, with limits
+
+::: notes
+Visual cue: Three-part map: communication, organization, methods and limits.
+:::
+
+## The big idea
+
+- Neurons use electrical signals within cells
+- Neurons use chemical signals across synapses
+- Brain functions rely on networks, not single centers
+
+::: notes
+Visual cue: Electrical within, chemical across, network-level outcome.
+Guardrail: avoid one-region “emotion center” language.
+:::
+
+## Nervous system organization
+
+```{mermaid}
+flowchart TB
+NS[Nervous system] --> CNS[Central nervous system]
+NS --> PNS[Peripheral nervous system]
+CNS --> B[Brain]
+CNS --> S[Spinal cord]
+PNS --> Som[Somatic]
+PNS --> Aut[Autonomic]
+Aut --> Sym[Sympathetic]
+Aut --> Para[Parasympathetic]
+```
+
+::: notes
+Teaching move: ask students to name one function for each branch.
+:::
+
+## Central nervous system
+
+- Brain and spinal cord
+- Integrates information
+- Coordinates responses
+
+::: notes
+Visual cue: Simple brain and spinal cord diagram.
+:::
+
+## Peripheral nervous system
+
+- Nerves outside the brain and spinal cord
+- Carries signals to and from the CNS
+- Divides into somatic and autonomic systems
+
+::: notes
+Visual cue: Body outline with peripheral nerves highlighted.
+:::
+
+## Somatic nervous system
+
+- Sensation from body and environment
+- Voluntary movement control
+- Fast feedback for action
+
+::: notes
+Visual cue: Sensory input and motor output arrows.
+:::
+
+## Autonomic nervous system
+
+- Regulates internal organs and glands
+- Coordinates arousal and recovery
+- Runs largely outside conscious control
+
+::: notes
+Visual cue: Organ regulation icons (heart, lungs) with “automatic regulation” label.
+Guardrail: autonomic activity is regulated, not “random.”
+:::
+
+## Sympathetic and parasympathetic patterns
+
+:::: columns
+::: column
+Sympathetic
+- Mobilizes energy
+- Increases readiness
+- Supports action
+:::
+
+::: column
+Parasympathetic
+- Restores energy
+- Supports digestion and recovery
+- Supports calm states
+:::
+::::
+
+::: notes
+Visual cue: Two dials rather than a single on-off switch.
+Guardrail: the systems can both be active to different degrees.
+:::
+
+## Neuron structure
+
+- Dendrites receive input
+- Axons send output
+- Myelin increases signal speed
+
+::: notes
+Visual cue: Labeled neuron diagram.
+:::
+
+## Glial cells support neurons
+
+- Support and protect neurons
+- Help maintain healthy signaling
+- Contribute to brain function over time
+
+::: notes
+Visual cue: Neuron surrounded by glial “support” cells.
+:::
+
+## Electrical signaling inside neurons
+
+- Resting potential reflects charge difference
+- Action potential is a rapid electrical change
+- Signals travel along axons
+
+::: notes
+Visual cue: Spike traveling down an axon.
+Keep it conceptual, not math-heavy.
+:::
+
+## Chemical signaling across synapses
+
+- Synapses connect neurons
+- Neurotransmitters bind to receptors
+- Reuptake can reduce signaling
+
+::: notes
+Visual cue: Synapse diagram labeling neurotransmitter, receptor, reuptake.
+Guardrail: neurotransmitters do not have one simple effect.
+:::
+
+## Neurotransmitters are pathway-dependent
+
+- The same neurotransmitter can do different things
+- Effects depend on receptor type and pathway
+- Labels do not guarantee one simple outcome
+
+::: notes
+Visual cue: One neurotransmitter branching into multiple pathways.
+Example to say aloud: dopamine and serotonin have multiple receptor types.
+:::
+
+## Plasticity
+
+- The brain changes with experience
+- Learning changes connections over time
+- Recovery after injury can involve reorganization
+
+::: notes
+Visual cue: Timeline showing gradual change, not instant rewiring.
+Guardrail: plasticity is change over time, not guaranteed improvement.
+:::
+
+## Networks over centers
+
+- Many functions use distributed networks
+- Connections matter as much as regions
+- Single-center stories are usually misleading
+
+::: notes
+Visual cue: Network map with nodes and connections.
+Teaching move: ask students to name a network-like function (language, attention).
+:::
+
+## Networks example: DMN, frontoparietal control, salience
+
+- Default mode network (DMN): internal mode
+- Frontoparietal or executive control network (FPN or CEN): control mode
+- Salience network (SN): switching and priority
+- Common pattern: DMN and control networks often show push-pull changes
+
+::: notes
+Keep this as "zoomed out coordination": not one region, not on-off, and not one network equals one behavior.
+:::
+
+## A simple three-network map
+
+![](3DCF9646-2E78-4EFE-9FCC-8EBC0996B265.jpeg){fig-alt="Illustration of default mode, salience, and frontoparietal/executive control networks and dynamic switching."}
+
+::: notes
+Use as a picture for the claim: brain function is coordinated across networks.
+Do not claim the figure proves causation; it illustrates a model based on observed patterns.
+:::
+
+## Hemispheric specialization is partial
+
+- Some functions show division of labor
+- Integration across hemispheres is extensive
+- Specialization is not absolute
+
+::: notes
+Visual cue: Two hemispheres connected by thick communication lines.
+Key example: split-brain findings illustrate partial specialization.
+:::
+
+## How we study brain and behavior
+
+- Lesion evidence links damage to function
+- Imaging measures structure or activity proxies
+- Each method has strengths and limits
+
+::: notes
+Visual cue: Method cards labeled Lesion, EEG, MRI, fMRI, PET, CT.
+Guardrail: methods are proxies, not direct “thought reading.”
+:::
+
+## EEG
+
+- Measures electrical activity at the scalp
+- Strong timing information
+- Limited location precision
+
+::: notes
+Visual cue: Head cap with signal traces.
+Keep comparison language: timing strong, location limited.
+:::
+
+## MRI and fMRI
+
+- MRI measures structure
+- fMRI estimates activity with a blood-oxygen proxy
+- Stronger location than EEG, weaker timing than EEG
+
+::: notes
+Visual cue: Brain image card labeled structure and blood-oxygen proxy.
+Guardrail: fMRI is an indirect measure of neural activity.
+:::
+
+## PET and CT
+
+- PET measures metabolic activity with tracers
+- CT measures structural images with X-rays
+- Use depends on question and constraints
+
+::: notes
+Visual cue: PET as “metabolism proxy,” CT as “structure.”
+Keep details minimal.
+:::
+
+## Interpreting evidence requires caution
+
+- Correlation is not causation in imaging
+- Strong claims require converging evidence
+- Good interpretation states limits explicitly
+
+::: notes
+Visual cue: “Proxy” stamp on method cards plus a “converge” arrow from multiple methods.
+:::
+
+## Key evidence anchors
+
+- Split-brain research: hemispheric communication
+- Visual cortex research: feature detection
+- Lesions and language: evidence and limits
+
+::: notes
+Use anchors as examples of inference, not as one-study proof.
+Keep language network-based.
+:::
+
+## Quick check
+
+Match the item to the best description
+
+- Action potential
+- Synapse
+- Neurotransmitter
+- Reuptake
+- Somatic nervous system
+- Autonomic nervous system
+- Sympathetic division
+- Parasympathetic division
+- Neuroplasticity
+- EEG
+- fMRI
+
+::: notes
+Delivery: students commit first, then you reveal.
+Use one discriminating cue per match.
+:::
+
+## Network quick check
+
+In the three-network picture, the best match is
+
+- A. DMN = control mode; frontoparietal network = internal mode; salience network = memory storage
+- B. DMN = internal mode; frontoparietal network = control mode; salience network = switching and priority
+- C. DMN = movement; frontoparietal network = hormones; salience network = reflexes
+- D. All three are the same network
+
+::: notes
+Answer: B. Keep this brief; the goal is minimum coverage, not a deep dive.
+:::
+
+## Quick check answers
+
+- Action potential: rapid electrical signal within a neuron
+- Synapse: connection point where neurons communicate
+- Neurotransmitter: chemical messenger across a synapse
+- Reuptake: reabsorption that reduces neurotransmitter signaling
+- Somatic nervous system: sensation and voluntary movement
+- Autonomic nervous system: automatic organ regulation
+- Sympathetic division: mobilizes energy and readiness
+- Parasympathetic division: supports recovery and conservation
+- Neuroplasticity: change in neural connections over time
+- EEG: scalp electrical activity, strong timing
+- fMRI: activity proxy using blood-oxygen changes, stronger location than EEG
+
+::: notes
+Keep it brief. Do not turn answers into re-lecture.
+:::
+
+## Bridge to Topic 7
+
+- Neuroscience explains how signals travel through systems
+- Sensation begins with transduction in sensory receptors
+- Next: how stimuli become neural signals
+
+::: notes
+Visual cue: Stimulus → receptor → neural signal.
+:::
+
+::: {.content-visible when-format="html"}
+
+# Coverage bundle
+
+_Instructor reference. This section is visible only in HTML output._
+
+## In scope
+
+- Basic nervous system organization: central nervous system and peripheral nervous system, including somatic and autonomic divisions.
+- Sympathetic and parasympathetic patterns as coordinated regulation rather than simple on-off switches.
+- Neuron structure and neural communication: action potentials, synapses, neurotransmitters, receptors, and reuptake at a course level.
+- The idea that neurotransmitter effects depend on pathways and receptor types, not a single simple label.
+- Brain functions as distributed networks rather than single centers, with cautious interpretation of localization.
+- Neuroplasticity as change over time due to learning, development, and experience.
+- How brain-behavior evidence is studied: lesions, EEG, MRI, fMRI, PET, CT, and the limits of inference from proxies and correlations.
+- Hemispheric specialization as partial division of labor with extensive integration.
+
+## Out of scope
+
+- Detailed neuroanatomy of all brain regions and tracts beyond course-level examples and major divisions.
+- Advanced electrophysiology, computational neuroscience, and detailed synaptic biochemistry.
+- Clinical neurology and pharmacology beyond basic neurotransmission and the concept of agonists and antagonists at a course level.
+- Medical diagnostic interpretation of imaging results and differential diagnosis of neurological disorders.
+- Advanced neuroimaging analysis methods (preprocessing pipelines, statistical maps, connectivity modeling).
+- Deterministic claims that brain measures can directly read thoughts, intentions, or truthfulness.
+
+## Key concepts
+
+- Neural communication: electrical signaling within neurons and chemical signaling across synapses
+- Nervous system organization: CNS vs PNS; somatic vs autonomic; sympathetic vs parasympathetic
+- Chemical signaling at two time scales: neurotransmitters (synapse-local) and hormones (bloodstream)
+- Brain function as systems: networks and circuits; avoid single-center explanations
+- Neuroplasticity: change in neural connections over time
+- Evidence tools and limits: lesion evidence and brain measurement methods are informative but indirect
+- Hemispheric specialization: partial division of labor with extensive integration
+
+## Key terms
+
+- neuron
+- glial cells
+- dendrites
+- soma (cell body)
+- axon
+- myelin sheath
+- resting potential
+- threshold
+- action potential
+- all-or-none principle
+- synapse
+- neurotransmitter
+- receptor
+- reuptake
+- agonist
+- antagonist
+- reuptake inhibitor
+- central nervous system (CNS)
+- peripheral nervous system (PNS)
+- somatic nervous system
+- autonomic nervous system (ANS)
+- sympathetic division
+- parasympathetic division
+- endocrine system
+- hormone
+- hypothalamus
+- pituitary gland
+- localization of function (with limits)
+- neural networks and systems
+- lesion evidence
+- CT
+- MRI
+- fMRI
+- PET
+- EEG
+- hemispheric specialization
+- corpus callosum
+- split-brain
+
+## Examples
+
+- A simple brain–behavior pathway claim with bounded language, such as “sleep deprivation can impair attention”
+- A simple example of biological influence on behavior that is not destiny, such as stress physiology influencing coping without guaranteeing outcomes
+- A simple example of why “brain region name” is not a complete explanation
+
+## Misconceptions
+
+- One brain region fully explains a complex behavior or mental process.
+- Brain images show thoughts directly rather than proxies measured under assumptions.
+- fMRI measures neural activity directly.
+- Correlation in brain data proves causation.
+- Neurotransmitters have one simple effect, such as dopamine equals pleasure or serotonin equals happiness.
+- Chemical imbalance is a complete explanation for behavior or mental health.
+- Left-brain versus right-brain types explain personality and intelligence.
+- Autonomic nervous system is an on-off switch between sympathetic and parasympathetic states.
+- Neuroplasticity means the brain can become anything instantly with enough willpower.
+- Neuroscience explanations make psychological and social explanations unnecessary.
+
+## Corrective frames
+
+- Emphasize that complex behavior is supported by networks, and region labels are partial descriptions rather than complete explanations.
+- Emphasize that imaging measures are proxies, and interpretation requires stating what was measured and what the method cannot show.
+- Emphasize that fMRI estimates activity using blood-oxygen changes and has timing and inference limits.
+- Emphasize that brain-behavior relationships often require converging evidence from multiple methods, not a single correlation.
+- Emphasize that neurotransmitters act in multiple pathways with multiple receptor types, so effects depend on where and how signaling occurs.
+- Emphasize that biological contributions are probabilistic and interact with learning, cognition, and context, rather than replacing them.
+- Emphasize that hemispheric specialization is partial and that most tasks require coordinated activity across hemispheres.
+- Emphasize that sympathetic and parasympathetic systems can both be active and are regulated dynamically, not switched like a toggle.
+- Emphasize that neuroplasticity reflects change over time and involves constraints, costs, and context, not instant unlimited flexibility.
+
+## Retrieval practice prompts
+
+- Match each nervous system division to its core function: CNS, PNS, somatic, autonomic, sympathetic, parasympathetic.
+- Explain the difference between electrical signaling within neurons and chemical signaling across synapses.
+- Given a neurotransmitter claim, rewrite it to include pathway and receptor dependence.
+- Identify which method best fits a question: EEG, MRI, fMRI, PET, CT, lesion evidence, and state one key limitation.
+- Given an imaging headline, identify whether it is correlational and state what additional evidence would strengthen causal language.
+- Explain neuroplasticity in two sentences and name one example of change over time.
+- Decide whether a statement is an overlocalization error and rewrite it using network-based language.
+- Compare sympathetic and parasympathetic patterns by describing one function of each without using on-off language.
+- Given a short vignette, propose one biological, one cognitive, and one social-context factor that could contribute, and state how they might interact.
+- Match key terms to definitions: action potential, synapse, receptor, reuptake, agonist, antagonist.
+
+## Inclusive language guidelines
+
+- Avoid deterministic language that implies biology fixes outcomes; use probabilistic phrasing and acknowledge interaction with experience and context.
+- Avoid stigmatizing mental health explanations as purely biological or as personal weakness; keep claims evidence-based and context-aware.
+- Avoid brain-based stereotypes about groups; do not use neuroscience to imply inherent superiority or inferiority.
+- When discussing gender or cultural examples, avoid treating any group as the default brain or default experience.
+- Use person-first language for disability and neurological conditions when examples are used.
+- Avoid sensational claims about mind reading, lie detection, or 'brain scans prove' language; emphasize method limits.
+
+## Performance standard
+
+-
+
+## Raw bundle JSON snapshot
+
+```json
+
+{
+  "topic": {
+    "topic_number": 6,
+    "topic_name": "Neuroscience"
+  },
+  "unit": {
+    "unit_number": 2,
+    "unit_name": "Biology of Behavior and Experience"
+  },
+  "framework": {
+    "iai_online_version": "Biological bases of behavior (brain, nervous system, sensation, perception)",
+    "iai_review_version": "biology of behavior",
+    "apa_pillars": [
+      "Pillar 1: Biological"
+    ],
+    "ipi_outcomes_content": [
+      "1.1",
+      "1.2",
+      "1.3"
+    ],
+    "ipi_outcomes_scientific_thinking": [
+      "2.3"
+    ],
+    "integrative_themes": [
+      "C"
+    ],
+    "notes": "Neuroscience is “brain, nervous system” in IAI v1 and “biology of behavior” in v2; Pillar 1 lists Neuroscience."
+  },
+  "content": {
+    "in_scope": [
+      "Basic nervous system organization: central nervous system and peripheral nervous system, including somatic and autonomic divisions.",
+      "Sympathetic and parasympathetic patterns as coordinated regulation rather than simple on-off switches.",
+      "Neuron structure and neural communication: action potentials, synapses, neurotransmitters, receptors, and reuptake at a course level.",
+      "The idea that neurotransmitter effects depend on pathways and receptor types, not a single simple label.",
+      "Brain functions as distributed networks rather than single centers, with cautious interpretation of localization.",
+      "Neuroplasticity as change over time due to learning, development, and experience.",
+      "How brain-behavior evidence is studied: lesions, EEG, MRI, fMRI, PET, CT, and the limits of inference from proxies and correlations.",
+      "Hemispheric specialization as partial division of labor with extensive integration."
+    ],
+    "out_of_scope": [
+      "Detailed neuroanatomy of all brain regions and tracts beyond course-level examples and major divisions.",
+      "Advanced electrophysiology, computational neuroscience, and detailed synaptic biochemistry.",
+      "Clinical neurology and pharmacology beyond basic neurotransmission and the concept of agonists and antagonists at a course level.",
+      "Medical diagnostic interpretation of imaging results and differential diagnosis of neurological disorders.",
+      "Advanced neuroimaging analysis methods (preprocessing pipelines, statistical maps, connectivity modeling).",
+      "Deterministic claims that brain measures can directly read thoughts, intentions, or truthfulness."
+    ],
+    "key_concepts": [
+      "evolution",
+      "natural selection",
+      "adaptation",
+      "fitness",
+      "genotype vs phenotype",
+      "genes",
+      "expressed traits",
+      "gene–environment interaction",
+      "expression",
+      "plasticity",
+      "neuron structure",
+      "soma",
+      "axon",
+      "dendrites",
+      "myelin",
+      "action potentials",
+      "synaptic transmission",
+      "neurotransmitters",
+      "receptor binding",
+      "agonist vs antagonist",
+      "neurotransmitter systems",
+      "CNS vs PNS",
+      "brain & spinal cord vs nerves",
+      "somatic vs autonomic",
+      "voluntary vs involuntary control",
+      "sympathetic vs parasympathetic",
+      "fight–flight vs rest–digest",
+      "spinal cord",
+      "reflexes",
+      "information relay",
+      "left vs right hemisphere",
+      "frontal",
+      "parietal",
+      "temporal",
+      "occipital",
+      "structural imaging",
+      "functional imaging",
+      "clinical vs research uses",
+      "endocrine glands",
+      "pituitary",
+      "thyroid",
+      "adrenals",
+      "gonads",
+      "hormones",
+      "gland–hormone pairs",
+      "hormone functions",
+      "metabolism",
+      "stress response",
+      "growth",
+      "reproduction",
+      "further breakdown",
+      "axon terminals",
+      "electrical signaling",
+      "chemical signaling",
+      "brain plasticity",
+      "new neuron formation",
+      "structural methods",
+      "MRI",
+      "CT",
+      "postmortem studies",
+      "functional methods",
+      "fMRI",
+      "PET",
+      "EEG",
+      "TMS",
+      "lateralization",
+      "hemisphere specialization",
+      "functional roles",
+      "brainstem",
+      "limbic system",
+      "basal ganglia",
+      "components",
+      "hormone release",
+      "feedback",
+      "adrenal"
+    ],
+    "key_terms": [
+      "evolution",
+      "natural_selection",
+      "adaptation",
+      "fitness",
+      "genotype",
+      "phenotype",
+      "heredity",
+      "traits",
+      "gene_environment_interaction",
+      "expression",
+      "plasticity",
+      "neuron",
+      "soma",
+      "axon",
+      "dendrites",
+      "myelin",
+      "neural_communication",
+      "action_potential",
+      "synapse",
+      "neurotransmitters",
+      "agonist",
+      "antagonist",
+      "receptors",
+      "neurotransmitter_systems",
+      "CNS",
+      "PNS",
+      "nervous_system_divisions",
+      "somatic_ns",
+      "autonomic_ns",
+      "voluntary",
+      "involuntary",
+      "sympathetic",
+      "parasympathetic",
+      "arousal",
+      "relaxation",
+      "spinal_cord",
+      "reflex",
+      "afferent",
+      "efferent",
+      "brain_hemispheres",
+      "brain_lobes",
+      "frontal",
+      "parietal",
+      "temporal",
+      "occipital",
+      "neuroimaging",
+      "MRI",
+      "CT",
+      "PET",
+      "EEG",
+      "endocrine_system",
+      "glands",
+      "pituitary",
+      "thyroid",
+      "adrenal",
+      "gonads",
+      "hormones",
+      "cortisol",
+      "thyroxine",
+      "sex_hormones",
+      "insulin",
+      "hormone_functions",
+      "metabolism",
+      "stress",
+      "growth",
+      "reproduction",
+      "somatic",
+      "autonomic",
+      "neuron_structure",
+      "terminals",
+      "neural_operation",
+      "synaptic_release",
+      "neuroplasticity",
+      "neurogenesis",
+      "brain_change",
+      "brain_structure_methods",
+      "postmortem",
+      "brain_function_methods",
+      "fMRI",
+      "TMS",
+      "lateralization",
+      "left_hemisphere",
+      "right_hemisphere",
+      "specialization",
+      "cortical_lobes",
+      "function",
+      "subcortex",
+      "brainstem",
+      "limbic",
+      "basal_ganglia",
+      "thalamus",
+      "hypothalamus",
+      "hormone_release"
+    ],
+    "examples": [
+      "A simple brain–behavior pathway claim with bounded language, such as “sleep deprivation can impair attention”",
+      "A simple example of biological influence on behavior that is not destiny, such as stress physiology influencing coping without guaranteeing outcomes",
+      "A simple example of why “brain region name” is not a complete explanation"
+    ],
+    "misconceptions": [
+      "One brain region fully explains a complex behavior or mental process.",
+      "Brain images show thoughts directly rather than proxies measured under assumptions.",
+      "fMRI measures neural activity directly.",
+      "Correlation in brain data proves causation.",
+      "Neurotransmitters have one simple effect, such as dopamine equals pleasure or serotonin equals happiness.",
+      "Chemical imbalance is a complete explanation for behavior or mental health.",
+      "Left-brain versus right-brain types explain personality and intelligence.",
+      "Autonomic nervous system is an on-off switch between sympathetic and parasympathetic states.",
+      "Neuroplasticity means the brain can become anything instantly with enough willpower.",
+      "Neuroscience explanations make psychological and social explanations unnecessary."
+    ],
+    "corrective_frames": [
+      "Emphasize that complex behavior is supported by networks, and region labels are partial descriptions rather than complete explanations.",
+      "Emphasize that imaging measures are proxies, and interpretation requires stating what was measured and what the method cannot show.",
+      "Emphasize that fMRI estimates activity using blood-oxygen changes and has timing and inference limits.",
+      "Emphasize that brain-behavior relationships often require converging evidence from multiple methods, not a single correlation.",
+      "Emphasize that neurotransmitters act in multiple pathways with multiple receptor types, so effects depend on where and how signaling occurs.",
+      "Emphasize that biological contributions are probabilistic and interact with learning, cognition, and context, rather than replacing them.",
+      "Emphasize that hemispheric specialization is partial and that most tasks require coordinated activity across hemispheres.",
+      "Emphasize that sympathetic and parasympathetic systems can both be active and are regulated dynamically, not switched like a toggle.",
+      "Emphasize that neuroplasticity reflects change over time and involves constraints, costs, and context, not instant unlimited flexibility."
+    ],
+    "performance_standard": {
+      "standard_statement": "",
+      "criteria": [],
+      "required_components": []
+    },
+    "retrieval_practice_prompts": [
+      "Match each nervous system division to its core function: CNS, PNS, somatic, autonomic, sympathetic, parasympathetic.",
+      "Explain the difference between electrical signaling within neurons and chemical signaling across synapses.",
+      "Given a neurotransmitter claim, rewrite it to include pathway and receptor dependence.",
+      "Identify which method best fits a question: EEG, MRI, fMRI, PET, CT, lesion evidence, and state one key limitation.",
+      "Given an imaging headline, identify whether it is correlational and state what additional evidence would strengthen causal language.",
+      "Explain neuroplasticity in two sentences and name one example of change over time.",
+      "Decide whether a statement is an overlocalization error and rewrite it using network-based language.",
+      "Compare sympathetic and parasympathetic patterns by describing one function of each without using on-off language.",
+      "Given a short vignette, propose one biological, one cognitive, and one social-context factor that could contribute, and state how they might interact.",
+      "Match key terms to definitions: action potential, synapse, receptor, reuptake, agonist, antagonist."
+    ],
+    "inclusive_language_guidelines": [
+      "Avoid deterministic language that implies biology fixes outcomes; use probabilistic phrasing and acknowledge interaction with experience and context.",
+      "Avoid stigmatizing mental health explanations as purely biological or as personal weakness; keep claims evidence-based and context-aware.",
+      "Avoid brain-based stereotypes about groups; do not use neuroscience to imply inherent superiority or inferiority.",
+      "When discussing gender or cultural examples, avoid treating any group as the default brain or default experience.",
+      "Use person-first language for disability and neurological conditions when examples are used.",
+      "Avoid sensational claims about mind reading, lie detection, or 'brain scans prove' language; emphasize method limits."
+    ],
+    "x_extensions": {}
+  },
+  "connections": {
+    "prerequisites": [
+      {
+        "topic_number": 3,
+        "topic_name": "Research Methods"
+      },
+      {
+        "topic_number": 4,
+        "topic_name": "Statistics"
+      }
+    ],
+    "subsequent_topics": [
+      {
+        "topic_number": 7,
+        "topic_name": "Sensation"
+      },
+      {
+        "topic_number": 8,
+        "topic_name": "Perception"
+      },
+      {
+        "topic_number": 9,
+        "topic_name": "Consciousness"
+      },
+      {
+        "topic_number": 16,
+        "topic_name": "Health"
+      },
+      {
+        "topic_number": 23,
+        "topic_name": "Abnormal"
+      },
+      {
+        "topic_number": 24,
+        "topic_name": "Therapies"
+      }
+    ],
+    "upper_level_courses": {
+      "primary": [
+        "Neuroscience or Biopsychology",
+        "Behavioral Neuroscience",
+        "Cognitive Neuroscience",
+        "Neuropsychology"
+      ],
+      "secondary": [
+        "Sensation and Perception",
+        "Consciousness",
+        "Learning and Memory",
+        "Health Psychology",
+        "Abnormal Psychology and Psychopathology"
+      ]
+    },
+    "assumptions_for_transfer": [
+      "Use basic neuroscience vocabulary at survey depth and avoid single-cause “brain caused it” claims",
+      "Provide a limitation statement and an alternative explanation when making a brain–behavior claim",
+      "Accept multi-level explanations as normal in psychology"
+    ],
+    "non_assumptions_for_transfer": [
+      "Detailed neuroanatomy and pathway logic",
+      "Neuroscience methods and inference limits",
+      "Disorder-specific neurobiology depth"
+    ],
+    "x_extensions": {}
+  },
+  "resources": {
+    "textbook_sections": [
+      {
+        "provider": "OpenStax",
+        "title": "Biopsychology | Human Genetics",
+        "url": "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics",
+        "locator": {
+          "chapter": "3",
+          "section": "3.1"
+        },
+        "notes": ""
+      },
+      {
+        "provider": "OpenStax",
+        "title": "Biopsychology | Cells of the Nervous System",
+        "url": "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system",
+        "locator": {
+          "chapter": "3",
+          "section": "3.2"
+        },
+        "notes": ""
+      },
+      {
+        "provider": "OpenStax",
+        "title": "Biopsychology | Parts of the Nervous System",
+        "url": "https://openstax.org/books/psychology-2e/pages/3-3-parts-of-the-nervous-system",
+        "locator": {
+          "chapter": "3",
+          "section": "3.3"
+        },
+        "notes": ""
+      },
+      {
+        "provider": "OpenStax",
+        "title": "Biopsychology | The Brain and Spinal Cord",
+        "url": "https://openstax.org/books/psychology-2e/pages/3-4-the-brain-and-spinal-cord",
+        "locator": {
+          "chapter": "3",
+          "section": "3.4"
+        },
+        "notes": ""
+      },
+      {
+        "provider": "OpenStax",
+        "title": "Biopsychology | The Endocrine System",
+        "url": "https://openstax.org/books/psychology-2e/pages/3-5-the-endocrine-system",
+        "locator": {
+          "chapter": "3",
+          "section": "3.5"
+        },
+        "notes": ""
+      },
+      {
+        "provider": "Gateways",
+        "title": "Brain and Behavior | The Nervous System",
+        "url": null,
+        "locator": {
+          "chapter": "2",
+          "section": "2.1"
+        },
+        "notes": "pages: 54"
+      },
+      {
+        "provider": "Gateways",
+        "title": "Brain and Behavior | Brain Research",
+        "url": null,
+        "locator": {
+          "chapter": "2",
+          "section": "2.2"
+        },
+        "notes": "pages: 60"
+      },
+      {
+        "provider": "Gateways",
+        "title": "Brain and Behavior | The Cerebral Cortex",
+        "url": null,
+        "locator": {
+          "chapter": "2",
+          "section": "2.3"
+        },
+        "notes": "pages: 64"
+      },
+      {
+        "provider": "Gateways",
+        "title": "Brain and Behavior | The Subcortex and Endocrine System",
+        "url": null,
+        "locator": {
+          "chapter": "2",
+          "section": "2.4"
+        },
+        "notes": "pages: 71"
+      }
+    ],
+    "web_pages": [
+      {
+        "provider": "Lumen",
+        "title": "Why It Matters: Biopsychology",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-14/",
+        "notes": "match_quality: Medium; recommendations: Treat as optional framing; do not treat as core evidence for a single topic.; notes: Module-level framing page.; page_slug: introduction-14"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Introduction to Neural Communication",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-neurons/",
+        "notes": "match_quality: High; page_slug: outcome-neurons"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Neurons",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/cells-of-the-nervous-system/",
+        "notes": "match_quality: High; page_slug: cells-of-the-nervous-system"
+      },
+      {
+        "provider": "Lumen",
+        "title": "How Neurons Communicate",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-neural-communication/",
+        "notes": "match_quality: High; page_slug: reading-neural-communication"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Introduction to The Nervous System and the Endocrine System",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-the-brain/",
+        "notes": "match_quality: High; page_slug: outcome-the-brain"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Parts of the Nervous System",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/parts-of-the-nervous-system/",
+        "notes": "match_quality: High; page_slug: parts-of-the-nervous-system"
+      },
+      {
+        "provider": "Lumen",
+        "title": "The Endocrine System",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/the-endocrine-system/",
+        "notes": "match_quality: High; page_slug: the-endocrine-system"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Introduction to the Parts of the Brain",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-parts-of-the-brain/",
+        "notes": "match_quality: High; page_slug: outcome-parts-of-the-brain"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Brain Hemispheres",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/the-brain-and-spinal-cord/",
+        "notes": "match_quality: High; page_slug: the-brain-and-spinal-cord"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Lobes of the Brain",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-parts-of-the-brain/",
+        "notes": "match_quality: High; page_slug: reading-parts-of-the-brain"
+      },
+      {
+        "provider": "Lumen",
+        "title": "The Limbic System and Other Brain Areas",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-the-limbic-system-and-other-brain-areas/",
+        "notes": "match_quality: High; page_slug: reading-the-limbic-system-and-other-brain-areas"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Brain Imaging",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/1993/",
+        "notes": "match_quality: Medium; cross_note: Also touches Topic 3; recommendations: Cross-note Topic 3 if you audit research methods coverage or teach method interpretation.; notes: Brain imaging is concept content and also a research tool.; page_slug: 1993"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Introduction to Nature and Nurture",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-gene-environment-interaction/",
+        "notes": "match_quality: Medium; cross_note: Also touches Topic 15; recommendations: Cross-note Topic 15 if you treat gene-environment interaction as a lifespan-development thread.; notes: Gene-environment framing sits in biopsych but has strong developmental implications.; page_slug: outcome-gene-environment-interaction"
+      },
+      {
+        "provider": "Lumen",
+        "title": "The Nature-Nurture Question",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/the-nature-nurture-question/",
+        "notes": "match_quality: Medium; cross_note: Also touches Topic 15; recommendations: Cross-note Topic 15 for coverage accuracy.; notes: Same overlap logic as above.; page_slug: the-nature-nurture-question"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Human Genetics",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/human-genetics/",
+        "notes": "match_quality: Medium; cross_note: Also touches Topic 15; recommendations: Cross-note Topic 15 for coverage accuracy.; notes: Same overlap logic as above.; page_slug: human-genetics"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Gene-Environment Interactions",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-gene-environment-interactions/",
+        "notes": "match_quality: Medium; cross_note: Also touches Topic 15; recommendations: Cross-note Topic 15 for coverage accuracy.; notes: Same overlap logic as above.; page_slug: reading-gene-environment-interactions"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Putting It Together: Biopsychology",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-biopsychology/",
+        "notes": "match_quality: High; notes: Synthesis page within topic.; page_slug: putting-it-together-biopsychology"
+      },
+      {
+        "provider": "Lumen",
+        "title": "Discussion: Biopsychology",
+        "url": "https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-biopsychology/",
+        "notes": "match_quality: Low; recommendations: Do not treat as evidence of topic reading coverage.; notes: Activity page rather than instructional content.; page_slug: discussion-biopsychology"
+      }
+    ],
+    "videos": [
+      {
+        "provider": "Crash Course",
+        "title": "The Chemical Mind",
+        "url": "https://www.youtube.com/watch?v=W4N-7AlzK7s",
+        "notes": ""
+      },
+      {
+        "provider": "Crash Course",
+        "title": "Meet Your Master — Getting to Know Your Brain",
+        "url": "https://www.youtube.com/watch?v=vHrmiy4W9C0",
+        "notes": ""
+      }
+    ],
+    "x_extensions": {}
+  },
+  "course": {
+    "course_code": "PSY-132",
+    "schedule": [
+      {
+        "meeting_number": 4,
+        "class_date": "2026-01-21",
+        "event_type": "instruction",
+        "primary_or_reinforcement": "primary",
+        "quiz_release": "2026-01-21",
+        "quiz_due": "2026-01-22",
+        "foundations_set": true,
+        "interval_topic_sets": {
+          "date_lag_1": [
+            5
+          ],
+          "date_lag_3": [
+            3
+          ],
+          "date_lag_6": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "meeting_number": 6,
+        "class_date": "2026-01-28",
+        "event_type": "instruction",
+        "primary_or_reinforcement": "reinforcement",
+        "quiz_release": "2026-01-28",
+        "quiz_due": "2026-01-29",
+        "foundations_set": true,
+        "interval_topic_sets": {
+          "date_lag_1": [
+            6,
+            7
+          ],
+          "date_lag_3": [
+            4,
+            5
+          ],
+          "date_lag_6": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "meeting_number": 8,
+        "class_date": "2026-02-04",
+        "event_type": "integration",
+        "primary_or_reinforcement": "reinforcement",
+        "quiz_release": "2026-02-04",
+        "quiz_due": "2026-02-05",
+        "foundations_set": true,
+        "interval_topic_sets": {
+          "date_lag_1": [
+            8
+          ],
+          "date_lag_3": [
+            6
+          ],
+          "date_lag_6": [
+            3
+          ]
+        }
+      },
+      {
+        "meeting_number": 14,
+        "class_date": "2026-02-25",
+        "event_type": "instruction",
+        "primary_or_reinforcement": "reinforcement",
+        "quiz_release": "2026-02-25",
+        "quiz_due": "2026-02-26",
+        "foundations_set": true,
+        "interval_topic_sets": {
+          "date_lag_1": [
+            11,
+            12
+          ],
+          "date_lag_3": [
+            9,
+            10
+          ],
+          "date_lag_6": [
+            6,
+            7
+          ]
+        }
+      }
+    ],
+    "assessment_plan": {
+      "performance_verb": "explain",
+      "bloom_level": "understand",
+      "task": "Explain a behavior using basic neural and brain structures and distinguish nervous versus endocrine influences.",
+      "format_notes": "Short answer with labeled mechanism statements."
+    },
+    "source_learning_outcomes": [
+      {
+        "row_index": "31",
+        "lo_id": "16",
+        "lo_text": "Explain the basic principles of the theory of evolution by natural selection",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "2",
+        "primary_topic_name": "Theoretical Perspectives",
+        "secondary_topic_ids": "6",
+        "concepts": "evolution; natural selection; adaptation; fitness",
+        "tags": "evolution; natural_selection; adaptation; fitness",
+        "reasoning": "Intro evolution LO; you use it as biological foundation for later brain/behavior content. Mapped to Neuroscience week.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.1",
+        "source_section_title": "Human Genetics",
+        "source_lo_id": "3.1.1",
+        "source_lo_text": "Explain the basic principles of the theory of evolution by natural selection",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics",
+        "lo_chapter_order": "1",
+        "flag": "-",
+        "rationale_text": "Evolutionary principles underlie the evolutionary perspective in psychology (Theoretical Perspectives); Neuroscience secondary as evolution shapes biological bases of behavior.",
+        "rationale_code_primary": "conflict",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "32",
+        "lo_id": "15",
+        "lo_text": "Describe the differences between genotype and phenotype",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "15",
+        "concepts": "genotype vs phenotype; genes; expressed traits",
+        "tags": "genotype; phenotype; heredity; traits",
+        "reasoning": "Basic genetics terminology; supports later work on heritability and epigenetics.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.1",
+        "source_section_title": "Human Genetics",
+        "source_lo_id": "3.1.2",
+        "source_lo_text": "Describe the differences between genotype and phenotype",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics",
+        "lo_chapter_order": "2",
+        "flag": "-",
+        "rationale_text": "Genotype vs phenotype are genetic and expression concepts relevant to biological bases of behavior → Neuroscience primary, with Life Span Development secondary because expression unfolds over development.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "33",
+        "lo_id": "1",
+        "lo_text": "Discuss how gene-environment interactions are critical for expression of physical and psychological characteristics",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "15",
+        "primary_topic_name": "Life Span Development",
+        "secondary_topic_ids": "6",
+        "concepts": "gene–environment interaction; expression; plasticity",
+        "tags": "gene_environment_interaction; expression; plasticity; traits",
+        "reasoning": "G×E as a biological concept; used in both developmental and abnormal content later, but introduced in the Neuroscience segment.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.1",
+        "source_section_title": "Human Genetics",
+        "source_lo_id": "3.1.3",
+        "source_lo_text": "Discuss how gene-environment interactions are critical for expression of physical and psychological characteristics",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-1-human-genetics",
+        "lo_chapter_order": "3",
+        "flag": "-",
+        "rationale_text": "Focus is on how genes and environments jointly shape traits over time, which is core to Life Span Development; Neuroscience is secondary because genes and biology are the mechanisms.",
+        "rationale_code_primary": "conflict",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "34",
+        "lo_id": "58",
+        "lo_text": "Identify the basic parts of a neuron",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "neuron structure; soma; axon; dendrites; myelin",
+        "tags": "neuron; soma; axon; dendrites; myelin",
+        "reasoning": "Core nervous system anatomy; belongs in your first Neuroscience week.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.2",
+        "source_section_title": "Cells of the Nervous System",
+        "source_lo_id": "3.2.1",
+        "source_lo_text": "Identify the basic parts of a neuron",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system",
+        "lo_chapter_order": "4",
+        "flag": "-",
+        "rationale_text": "Dendrites, soma, axon, etc., are basic biological structures within Neuroscience.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "35",
+        "lo_id": "22",
+        "lo_text": "Describe how neurons communicate with each other",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "action potentials; synaptic transmission; neurotransmitters",
+        "tags": "neural_communication; action_potential; synapse; neurotransmitters",
+        "reasoning": "How neurons send signals; paired with the previous LO in your neuron section.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.2",
+        "source_section_title": "Cells of the Nervous System",
+        "source_lo_id": "3.2.2",
+        "source_lo_text": "Describe how neurons communicate with each other",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system",
+        "lo_chapter_order": "5",
+        "flag": "-",
+        "rationale_text": "Neuronal communication via action potentials and synaptic transmission is core Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "36",
+        "lo_id": "20",
+        "lo_text": "Explain how drugs act as agonists or antagonists for a given neurotransmitter system",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "9",
+        "concepts": "receptor binding; agonist vs antagonist; neurotransmitter systems",
+        "tags": "agonist; antagonist; receptors; neurotransmitter_systems",
+        "reasoning": "Mechanistic psychopharmacology; taught with neuron function before you hit the consciousness-level drug content.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.2",
+        "source_section_title": "Cells of the Nervous System",
+        "source_lo_id": "3.2.3",
+        "source_lo_text": "Explain how drugs act as agonists or antagonists for a given neurotransmitter system",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-2-cells-of-the-nervous-system",
+        "lo_chapter_order": "6",
+        "flag": "-",
+        "rationale_text": "Agonists and antagonists modify neurotransmitter systems, which is core Neuroscience; Consciousness secondary because psychoactive drugs alter states of awareness.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "37",
+        "lo_id": "10",
+        "lo_text": "Describe the difference between the central and peripheral nervous systems",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "CNS vs PNS; brain & spinal cord vs nerves",
+        "tags": "CNS; PNS; nervous_system_divisions",
+        "reasoning": "Big-picture division of nervous system; fundamental structural LO.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.3",
+        "source_section_title": "Parts of the Nervous System",
+        "source_lo_id": "3.3.1",
+        "source_lo_text": "Describe the difference between the central and peripheral nervous systems",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-3-parts-of-the-nervous-system",
+        "lo_chapter_order": "7",
+        "flag": "-",
+        "rationale_text": "Distinguishing CNS vs PNS is basic biological bases of behavior content in Neuroscience.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "38",
+        "lo_id": "47",
+        "lo_text": "Explain the difference between the somatic and autonomic nervous systems",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "somatic vs autonomic; voluntary vs involuntary control",
+        "tags": "somatic_ns; autonomic_ns; voluntary; involuntary",
+        "reasoning": "Functional division within the PNS.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.3",
+        "source_section_title": "Parts of the Nervous System",
+        "source_lo_id": "3.3.2",
+        "source_lo_text": "Explain the difference between the somatic and autonomic nervous systems",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-3-parts-of-the-nervous-system",
+        "lo_chapter_order": "8",
+        "flag": "-",
+        "rationale_text": "Somatic vs autonomic divisions are part of the nervous system (Neuroscience); Health secondary because they regulate bodily functions.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "39",
+        "lo_id": "14",
+        "lo_text": "Differentiate between the sympathetic and parasympathetic divisions of the autonomic nervous system",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "sympathetic vs parasympathetic; fight–flight vs rest–digest",
+        "tags": "sympathetic; parasympathetic; arousal; relaxation",
+        "reasoning": "Classic autonomic subdivisions; goes in the same nervous-system unit.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.3",
+        "source_section_title": "Parts of the Nervous System",
+        "source_lo_id": "3.3.3",
+        "source_lo_text": "Differentiate between the sympathetic and parasympathetic divisions of the autonomic nervous system",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-3-parts-of-the-nervous-system",
+        "lo_chapter_order": "9",
+        "flag": "-",
+        "rationale_text": "Sympathetic vs parasympathetic divisions are components of the nervous system → Neuroscience primary; Health secondary because they regulate bodily responses (e.g., stress, rest).",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "40",
+        "lo_id": "28",
+        "lo_text": "Explain the functions of the spinal cord",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "spinal cord; reflexes; information relay",
+        "tags": "spinal_cord; reflex; afferent; efferent",
+        "reasoning": "Anatomy/function LO within the Neuroscience topic.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.4",
+        "source_section_title": "The Brain and Spinal Cord",
+        "source_lo_id": "3.4.1",
+        "source_lo_text": "Explain the functions of the spinal cord",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-4-the-brain-and-spinal-cord",
+        "lo_chapter_order": "10",
+        "flag": "-",
+        "rationale_text": "Spinal cord functions (reflexes, information transmission) are basic Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "41",
+        "lo_id": "9",
+        "lo_text": "Identify the hemispheres and lobes of the brain",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "left vs right hemisphere; frontal; parietal; temporal; occipital",
+        "tags": "brain_hemispheres; brain_lobes; frontal; parietal; temporal; occipital",
+        "reasoning": "Gross brain anatomy; you cover this in the same block as neuron basics.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.4",
+        "source_section_title": "The Brain and Spinal Cord",
+        "source_lo_id": "3.4.2",
+        "source_lo_text": "Identify the hemispheres and lobes of the brain",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-4-the-brain-and-spinal-cord",
+        "lo_chapter_order": "11",
+        "flag": "-",
+        "rationale_text": "Brain hemispheres and lobes are basic biological bases of behavior → Neuroscience.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "42",
+        "lo_id": "26",
+        "lo_text": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "3",
+        "primary_topic_name": "Research Methods",
+        "secondary_topic_ids": "6",
+        "concepts": "structural imaging; functional imaging; clinical vs research uses",
+        "tags": "neuroimaging; MRI; CT; PET; EEG",
+        "reasoning": "High-level overview of imaging techniques; more detailed NOBA LOs below expand this.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.4",
+        "source_section_title": "The Brain and Spinal Cord",
+        "source_lo_id": "3.4.3",
+        "source_lo_text": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-4-the-brain-and-spinal-cord",
+        "lo_chapter_order": "12",
+        "flag": "-",
+        "rationale_text": "Brain imaging techniques (fMRI, PET, etc.) are tools used in research/clinical methods → Research Methods primary; Neuroscience secondary because they measure brain activity.",
+        "rationale_code_primary": "conflict",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "43",
+        "lo_id": "36",
+        "lo_text": "Identify the major glands of the endocrine system",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "endocrine glands; pituitary; thyroid; adrenals; gonads",
+        "tags": "endocrine_system; glands; pituitary; thyroid; adrenal; gonads",
+        "reasoning": "Basic endocrine anatomy; fits in the biology-of-behavior week.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.5",
+        "source_section_title": "The Endocrine System",
+        "source_lo_id": "3.5.1",
+        "source_lo_text": "Identify the major glands of the endocrine system",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-5-the-endocrine-system",
+        "lo_chapter_order": "13",
+        "flag": "-",
+        "rationale_text": "Endocrine glands and their roles belong to the biological bases of behavior (Neuroscience); Health secondary because hormones are central to bodily functioning.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "44",
+        "lo_id": "13",
+        "lo_text": "Identify the hormones secreted by each gland",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "hormones; gland–hormone pairs",
+        "tags": "hormones; cortisol; thyroxine; sex_hormones; insulin",
+        "reasoning": "Extends endocrine anatomy into function; still Neuroscience-level biology.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.5",
+        "source_section_title": "The Endocrine System",
+        "source_lo_id": "3.5.2",
+        "source_lo_text": "Identify the hormones secreted by each gland",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-5-the-endocrine-system",
+        "lo_chapter_order": "14",
+        "flag": "-",
+        "rationale_text": "Hormone secretion by glands involves endocrine functioning within the biological bases of behavior, so Neuroscience is primary and Health secondary.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "45",
+        "lo_id": "78",
+        "lo_text": "Describe each hormone’s role in regulating bodily functions",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "hormone functions; metabolism; stress response; growth; reproduction",
+        "tags": "hormone_functions; metabolism; stress; growth; reproduction",
+        "reasoning": "Functionally oriented endocrinology; same topic.",
+        "source": "OpenStax 2e",
+        "book": "OpenStax 2e",
+        "source_chapter_number": "3",
+        "source_chapter_title": "Biopsychology",
+        "source_section_number": "3.5",
+        "source_section_title": "The Endocrine System",
+        "source_lo_id": "3.5.3",
+        "source_lo_text": "Describe each hormone’s role in regulating bodily functions",
+        "source_lo_description": "",
+        "source_pages_folio": "",
+        "source_url": "https://openstax.org/books/psychology-2e/pages/3-5-the-endocrine-system",
+        "lo_chapter_order": "15",
+        "flag": "-",
+        "rationale_text": "Hormones and regulation of bodily functions are part of biological bases of behavior (Neuroscience); Health secondary due to bodily health.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "309",
+        "lo_id": "39",
+        "lo_text": "Outline the major divisions of the nervous system",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "CNS vs PNS; further breakdown",
+        "tags": "nervous_system_divisions; CNS; PNS; somatic; autonomic",
+        "reasoning": "Summary-type LO for nervous system structure; same topic as earlier CNS/PNS LOs.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.1",
+        "source_section_title": "The Nervous System",
+        "source_lo_id": "2.1.1",
+        "source_lo_text": "Outline the major divisions of the nervous system",
+        "source_lo_description": "The nervous system divides into the CNS (brain for most “computing”; spinal cord linking brain to PNS) and the PNS. The PNS includes the somatic system (sensory input to brain; motor commands to body) and the autonomic system (sympathetic and parasympathetic branches).",
+        "source_pages_folio": "54",
+        "source_url": "",
+        "lo_chapter_order": "1",
+        "flag": "-",
+        "rationale_text": "Divisions such as central vs peripheral nervous system are standard Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "310",
+        "lo_id": "66",
+        "lo_text": "Identify the important parts of a neuron",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "soma; axon; dendrites; axon terminals; myelin",
+        "tags": "neuron_structure; soma; dendrites; axon; terminals; myelin",
+        "reasoning": "Duplicate concept of “basic parts of neuron”; kept in Topic 6.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.1",
+        "source_section_title": "The Nervous System",
+        "source_lo_id": "2.1.2",
+        "source_lo_text": "Identify the important parts of a neuron",
+        "source_lo_description": "Dendrites receive incoming messages; the cell body integrates them; the axon carries impulses away; axon terminals pass signals to adjacent neurons.",
+        "source_pages_folio": "54",
+        "source_url": "",
+        "lo_chapter_order": "2",
+        "flag": "-",
+        "rationale_text": "Dendrites, soma, axon, etc., are biological structures, falling under Neuroscience.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "311",
+        "lo_id": "58",
+        "lo_text": "Describe how neurons operate and communicate with each other",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "electrical signaling; chemical signaling; synaptic transmission",
+        "tags": "neural_operation; action_potential; synaptic_release; receptors",
+        "reasoning": "Expanded wording of the communication LO; fits with neuron function content.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.1",
+        "source_section_title": "The Nervous System",
+        "source_lo_id": "2.1.3",
+        "source_lo_text": "Describe how neurons operate and communicate with each other",
+        "source_lo_description": "Neural input at dendrites and soma triggers an electrical action potential that travels down the axon to terminals. Between neurons, communication is chemical: neurotransmitters cross the synapse to receptors, exciting or inhibiting the next cell; neuropeptides modulate synaptic activity.",
+        "source_pages_folio": "54",
+        "source_url": "",
+        "lo_chapter_order": "3",
+        "flag": "-",
+        "rationale_text": "Neuron operation and synaptic transmission are core Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "312",
+        "lo_id": "33",
+        "lo_text": "Distinguish between neuroplasticity and neurogenesis",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "15",
+        "concepts": "brain plasticity; new neuron formation",
+        "tags": "neuroplasticity; neurogenesis; brain_change",
+        "reasoning": "Introduces how brains change structurally and functionally; part of Neuroscience unit.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.1",
+        "source_section_title": "The Nervous System",
+        "source_lo_id": "2.1.4",
+        "source_lo_text": "Distinguish between neuroplasticity and neurogenesis",
+        "source_lo_description": "Neuroplasticity is the brain’s capacity to change with experience. Neurogenesis is the production of new neurons in the brain (while many PNS nerves can regenerate).",
+        "source_pages_folio": "54",
+        "source_url": "",
+        "lo_chapter_order": "4",
+        "flag": "-",
+        "rationale_text": "Neuroplasticity and neurogenesis describe brain changes and new neuron growth → Neuroscience primary; Life Span Development secondary because these processes vary across development.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "313",
+        "lo_id": "14",
+        "lo_text": "Identify three methods that scientists use to understand the structures of the brain",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "3",
+        "primary_topic_name": "Research Methods",
+        "secondary_topic_ids": "6",
+        "concepts": "structural methods; MRI; CT; postmortem studies",
+        "tags": "brain_structure_methods; MRI; CT; postmortem",
+        "reasoning": "Methods anchored in structure; goes with your brain-imaging slice.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.2",
+        "source_section_title": "Brain Research",
+        "source_lo_id": "2.2.1",
+        "source_lo_text": "Identify three methods that scientists use to understand the structures of the brain",
+        "source_lo_description": "Brain structure can be studied via dissection and noninvasive imaging (CT; MRI).",
+        "source_pages_folio": "60",
+        "source_url": "",
+        "lo_chapter_order": "5",
+        "flag": "-",
+        "rationale_text": "Lesions, imaging, and stimulation are research methods (Research Methods) applied to brain structures (Neuroscience secondary).",
+        "rationale_code_primary": "conflict",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "314",
+        "lo_id": "5",
+        "lo_text": "Identify four methods that scientists use to understand the function of brain structures",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "3",
+        "primary_topic_name": "Research Methods",
+        "secondary_topic_ids": "6",
+        "concepts": "functional methods; fMRI; PET; EEG; TMS",
+        "tags": "brain_function_methods; fMRI; PET; EEG; TMS",
+        "reasoning": "Methods anchored in function; mapped to same topic.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.2",
+        "source_section_title": "Brain Research",
+        "source_lo_id": "2.2.2",
+        "source_lo_text": "Identify four methods that scientists use to understand the function of brain structures",
+        "source_lo_description": "Brain function can be studied through surgical methods (electrical stimulation, ablation, deep lesioning) and noninvasive techniques (EEG, PET, fMRI).",
+        "source_pages_folio": "60",
+        "source_url": "",
+        "lo_chapter_order": "6",
+        "flag": "-",
+        "rationale_text": "Methods like lesion studies, imaging, stimulation, etc. are research tools (Research Methods) applied to brain function (Neuroscience secondary).",
+        "rationale_code_primary": "conflict",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "315",
+        "lo_id": "22",
+        "lo_text": "Explain how the left and right hemispheres of the cerebral cortex differ as a result of lateralization",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "12",
+        "concepts": "lateralization; hemisphere specialization",
+        "tags": "lateralization; left_hemisphere; right_hemisphere; specialization",
+        "reasoning": "Classic hemispheric-specialization LO; part of your brain anatomy content.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.3",
+        "source_section_title": "The Cerebral Cortex",
+        "source_lo_id": "2.3.1",
+        "source_lo_text": "Explain how the left and right hemispheres of the cerebral cortex differ as a result of lateralization",
+        "source_lo_description": "Split-brain research shows specialization: the left hemisphere is analytic, sequential, and language-focused (writing, calculating, timing, complex movements); the right processes information holistically and nonverbally (spatial/perceptual skills, visualization, pattern/face/melody recognition). People are not literally “left-brained” or “right-brained.”",
+        "source_pages_folio": "64",
+        "source_url": "",
+        "lo_chapter_order": "7",
+        "flag": "-",
+        "rationale_text": "Hemispheric specialization is a brain-structure and function topic → Neuroscience primary, with Cognition secondary because many lateralized functions are cognitive.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "316",
+        "lo_id": "22",
+        "lo_text": "Name the four lobes of the cerebral cortex and describe their function",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "frontal; parietal; temporal; occipital; functional roles",
+        "tags": "cortical_lobes; frontal; parietal; temporal; occipital; function",
+        "reasoning": "Straightforward lobe/function mapping; Neuroscience topic.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.3",
+        "source_section_title": "The Cerebral Cortex",
+        "source_lo_id": "2.3.2",
+        "source_lo_text": "Name the four lobes of the cerebral cortex and describe their function",
+        "source_lo_description": "Frontal: primary motor area (incl. mirror neurons) and association areas; prefrontal supports abstract thought and self. Parietal: primary sensory area for bodily sensations. Temporal: primary auditory area; hearing and language. Occipital: primary visual area; first cortical input from eyes.",
+        "source_pages_folio": "64",
+        "source_url": "",
+        "lo_chapter_order": "8",
+        "flag": "-",
+        "rationale_text": "Naming and describing cortical lobes and their functions is core Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "317",
+        "lo_id": "86",
+        "lo_text": "Name the three major regions of the subcortex, and the parts that make up each one",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "-",
+        "concepts": "brainstem; limbic system; basal ganglia; components",
+        "tags": "subcortex; brainstem; limbic; basal_ganglia; thalamus; hypothalamus",
+        "reasoning": "Subcortical structure LO; also part of brain anatomy.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.4",
+        "source_section_title": "The Subcortex and Endocrine System",
+        "source_lo_id": "2.4.1",
+        "source_lo_text": "Name the three major regions of the subcortex, and the parts that make up each one",
+        "source_lo_description": "Hindbrain: medulla (vital reflexes), reticular formation (activating system), cerebellum (coordination, posture, tone), pons (links medulla to other areas). Midbrain connects hindbrain and forebrain; with pons and medulla forms the brainstem. Forebrain: thalamus (sensory relay), hypothalamus (basic motives/physiology), limbic system (emotion, reward/punishment) incl. hippocampus (memory).",
+        "source_pages_folio": "71",
+        "source_url": "",
+        "lo_chapter_order": "9",
+        "flag": "-",
+        "rationale_text": "Subcortical brain regions and their parts are Neuroscience content.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      },
+      {
+        "row_index": "318",
+        "lo_id": "34",
+        "lo_text": "Explain how the endocrine system works, and describe the action of four endocrine glands",
+        "block": "2",
+        "pillar_number": "1",
+        "domain_name": "Biological",
+        "topic_number": "6",
+        "topic_name": "Neuroscience",
+        "primary_topic_id": "6",
+        "primary_topic_name": "Neuroscience",
+        "secondary_topic_ids": "16",
+        "concepts": "hormone release; feedback; pituitary; thyroid; adrenal; gonads",
+        "tags": "endocrine_system; hormone_release; pituitary; thyroid; adrenal; gonads",
+        "reasoning": "System-level LO on hormonal regulation; extends endocrine LOs above.",
+        "source": "Gateways 16e",
+        "book": "Gateways 16e",
+        "source_chapter_number": "2",
+        "source_chapter_title": "Brain and Behavior",
+        "source_section_number": "2.4",
+        "source_section_title": "The Subcortex and Endocrine System",
+        "source_lo_id": "2.4.2",
+        "source_lo_text": "Explain how the endocrine system works, and describe the action of four endocrine glands",
+        "source_lo_description": "Endocrine glands release hormones into blood, influencing behavior, mood, and personality; many are regulated by the pituitary, which is influenced by the hypothalamus. Examples: pituitary (growth hormone; oxytocin; “master” control), pineal (melatonin; body clock), thyroid (metabolism), adrenal (epinephrine/norepinephrine; stress response; sexual development).",
+        "source_pages_folio": "71",
+        "source_url": "",
+        "lo_chapter_order": "10",
+        "flag": "-",
+        "rationale_text": "Hormone-producing glands and their actions are part of the biological bases of behavior (Neuroscience), with Health secondary because hormones shape bodily health and functioning.",
+        "rationale_code_primary": "-",
+        "rationale_code_secondary": "-",
+        "rationale_reference_ids": "-"
+      }
+    ],
+    "x_extensions": {}
+  },
+  "meta": {
+    "title": "PSY-132 Topic 6 Neuroscience Topic Bundle",
+    "type": "topic_bundle",
+    "version": "0.1",
+    "status": "draft",
+    "tags": [
+      "psy132",
+      "topic-bundle",
+      "topic-6",
+      "unit-2"
+    ],
+    "updated": "2026-01-02",
+    "schema_version": "1.0.0",
+    "legacy": {}
+  }
+}
+
+```
+
+:::
