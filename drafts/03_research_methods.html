@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>03_research_methods.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="03researchmethods">03_research_methods</h1>
+<hr>
+<h2 id="why-it-matters-psychological-research">Why It Matters: Psychological Research</h2>
+<ul>
+<li>url_title:: &quot;Why It Matters: Psychological Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-15/
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224457/CNX_Psych_02_00_childrentv.jpg" alt="Children sit in front of a bank of television screens. A sign on the wall says, “Some content may not be suitable for children.”"></li>
+</ul>
+<p><strong>Figure 1</strong>. How does television content impact children’s behavior? (credit: modification of work by “antisocialtory”/Flickr)</p>
+<p>Have you ever wondered whether the violence you see on television affects your behavior? Are you more likely to behave aggressively in real life after watching people behave violently in dramatic situations on the screen? Or, could seeing fictional violence actually get aggression out of your system, causing you to be more peaceful? How are children influenced by the media they are exposed to? A psychologist interested in the relationship between behavior and exposure to violent images might ask these very questions.</p>
+<p>The topic of violence in the media today is contentious. Since ancient times, humans have been concerned about the effects of new technologies on our behaviors and thinking processes. The Greek philosopher Socrates, for example, worried that writing—a new technology at that time—would diminish people’s ability to remember because they could rely on written records rather than committing information to memory. In our world of quickly changing technologies, questions about the effects of media continue to emerge. Is it okay to talk on a cell phone while driving? Are headphones good to use in a car? What impact does text messaging have on reaction time while driving? These are types of questions that psychologist David Strayer asks in his lab.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch this short video to see how Strayer utilizes the scientific method to reach important conclusions regarding technology and driving safety.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/UnderstandingDriverDistraction.txt">view the transcript for “Understanding driver distraction” here (opens in new window)</a>.</p>
+<p>How can we go about finding answers that are supported not by mere opinion, but by evidence that we can all agree on? The findings of psychological research can help us navigate issues like this.</p>
+<p>Module References</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="introduction-to-approaches-to-research">Introduction to Approaches to Research</h2>
+<ul>
+<li>url_title:: &quot;Introduction to Approaches to Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-approaches-to-research/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-describe-the-strengths-and-weaknesses-of-descriptive-experimental-and-correlational-research">What you’ll learn to do: describe the strengths and weaknesses of descriptive, experimental, and correlational research</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17210224/734px-Researchers_review_documents.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17210224/734px-Researchers_review_documents.jpg" alt="Three researchers review data while talking around a microscope."></a></p>
+<p>If you think about the vast array of fields and topics covered in psychology, you understand that in order to do psychological research, there must be a diverse set of ways to gather data and perform experiments. For example, a biological psychologist might work predominately in a lab setting or alongside a neurologist. A social scientist may set up situational experiments, a health psychologist may administer surveys, and a developmental psychologist may make observations in a classroom. In this section, you’ll learn about the various types of research methods that psychologists employ to learn about human behavior.</p>
+<p>Psychologists use descriptive, experimental, and correlational methods to conduct research. Descriptive, or qualitative, methods include the case study, naturalistic observation, surveys, archival research, longitudinal research, and cross-sectional research.</p>
+<p>Experiments are conducted in order to determine cause-and-effect relationships. In ideal experimental design, the only difference between the experimental and control groups is whether participants are exposed to the experimental manipulation. Each group goes through all phases of the experiment, but each group will experience a different level of the independent variable: the experimental group is exposed to the experimental manipulation, and the control group is not exposed to the experimental manipulation. The researcher then measures the changes that are produced in the dependent variable in each group. Once data is collected from both groups, it is analyzed statistically to determine if there are meaningful differences between the groups.</p>
+<p>When scientists passively observe and measure phenomena it is called correlational research. Here, psychologists do not intervene and change behavior, as they do in experiments. In correlational research, they can identify a relationship between two variables but usually cannot infer what causes what.</p>
+<h3 id="watch-it-more-on-research">Watch It: More on Research</h3>
+<p>If you enjoy learning through lectures and want an interesting and comprehensive summary of this section, then click on the <a href="https://www.youtube.com/watch?v=syXplPKQb_o">Youtube link to watch a lecture given by MIT Professor John Gabrieli</a>. <strong>Start at the 30:45 minute mark</strong> and watch through the end to hear examples of actual psychological studies and how they were analyzed. Listen for references to independent and dependent variables, experimenter bias, and double-blind studies. In the lecture, you’ll learn about breaking social norms, “WEIRD” research, why expectations matter, how a warm cup of coffee might make you nicer, why you <em>should</em> change your answer on a multiple choice test, and why praise for intelligence won’t make you any smarter.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/Lec2MIT900SCIntroToPsychology.txt">view the transcript for “Lec 2 | MIT 9.00SC Introduction to Psychology, Spring 2011” here (opens in new window)</a>.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Differentiate between descriptive, experimental, and correlational research</li>
+<li>Explain the strengths and weaknesses of case studies, naturalistic observation, and surveys</li>
+<li>Describe the strength and weaknesses of archival, longitudinal, and cross-sectional research</li>
+<li>Explain what a correlation coefficient tells us about the relationship between variables</li>
+<li>Describe why correlation does not mean causation</li>
+<li>Describe the experimental process, including ways to control for bias</li>
+<li>Identify and differentiate between independent and dependent variables</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Introductory content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+<li>Modification and adaptation. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Paragraph on correlation. <strong>Authored by</strong>: Christie Napa Scollon. <strong>Provided by</strong>: Singapore Management University. <strong>Located at</strong>: <a href="http://nobaproject.com/modules/research-designs?r=MTc0ODYsMjMzNjQ%3D">http://nobaproject.com/modules/research-designs?r=MTc0ODYsMjMzNjQ%3D</a>. <strong>Project</strong>: The Noba Project. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+<li>Psychology. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/2-introduction">https://openstax.org/books/psychology-2e/pages/2-introduction</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Lec 2 | MIT 9.00SC Introduction to Psychology, Spring 2011. <strong>Authored by</strong>: John Gabrieli. <strong>Provided by</strong>: MIT OpenCourseWare. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=syXplPKQb_o">https://www.youtube.com/watch?v=syXplPKQb_o</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+</ul>
+<p>Public domain content</p>
+<ul>
+<li>Researchers review documents. <strong>Authored by</strong>: National Cancer Institute. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Researchers_review_documents.jpg">https://commons.wikimedia.org/wiki/File:Researchers_review_documents.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+</ul>
+<hr>
+<h2 id="introduction-to-the-scientific-method">Introduction to The Scientific Method</h2>
+<ul>
+<li>url_title:: &quot;Introduction to The Scientific Method&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-the-scientific-method/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-define-and-apply-the-scientific-method-to-psychology">What you’ll learn to do: define and apply the scientific method to psychology</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17193458/17664002728_acb9354acf_z.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17193458/17664002728_acb9354acf_z.jpg" alt="photograph of the word &quot;research&quot; from a dictionary with a pen pointing at the word."></a></p>
+<p>Scientists are engaged in explaining and understanding how the world around them works, and they are able to do so by coming up with theories that generate hypotheses that are testable and falsifiable. Theories that stand up to their tests are retained and refined, while those that do not are discarded or modified. In this way, research enables scientists to separate fact from simple opinion. Having good information generated from research aids in making wise decisions both in public policy and in our personal lives. In this section, you’ll see how psychologists use the scientific method to study and understand behavior.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain the steps of the scientific method</li>
+<li>Differentiate between theories and hypotheses</li>
+<li>Explain how research involving humans or animals is regulated</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="correlational-research--introduction-to-psychology">Correlational Research | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Correlational Research | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-correlational-research/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain what a correlation coefficient tells us about the relationship between variables</li>
+<li>Describe why correlation does not mean causation</li>
+</ul>
+<p>Did you know that as sales in ice cream increase, so does the overall rate of crime? Is it possible that indulging in your favorite flavor of ice cream could send you on a crime spree? Or, after committing crime do you think you might decide to treat yourself to a cone? There is no question that a relationship exists between ice cream and crime (e.g., Harper, 2013), but it would be pretty foolish to decide that one thing actually caused the other to occur.</p>
+<p>It is much more likely that both ice cream sales and crime rates are related to the temperature outside. When the temperature is warm, there are lots of people out of their houses, interacting with each other, getting annoyed with one another, and sometimes committing crimes. Also, when it is warm outside, we are more likely to seek a cool treat like ice cream. How do we determine if there is indeed a relationship between two things? And when there is a relationship, how can we discern whether it is attributable to coincidence or causation?</p>
+<h2 id="correlational-research">Correlational Research</h2>
+<p><strong>Correlation</strong> means that there is a relationship between two or more variables (such as ice cream consumption and crime), but this relationship does not necessarily imply cause and effect. When two variables are correlated, it simply means that as one variable changes, so does the other. We can measure correlation by calculating a statistic known as a correlation coefficient. A <strong>correlation coefficient</strong> is a number from -1 to +1 that indicates the strength and direction of the relationship between variables. The correlation coefficient is usually represented by the letter <em>r</em>.</p>
+<p>The number portion of the correlation coefficient indicates the strength of the relationship. The closer the number is to 1 (be it negative or positive), the more strongly related the variables are, and the more predictable changes in one variable will be as the other variable changes. The closer the number is to zero, the weaker the relationship, and the less predictable the relationships between the variables becomes. For instance, a correlation coefficient of 0.9 indicates a far stronger relationship than a correlation coefficient of 0.3. If the variables are not related to one another at all, the correlation coefficient is 0. The example above about ice cream and crime is an example of two variables that we might expect to have no relationship to each other.</p>
+<p>The sign—positive or negative—of the correlation coefficient indicates the direction of the relationship (Figure 1). A <strong>positive correlation</strong> means that the variables move in the same direction. Put another way, it means that as one variable increases so does the other, and conversely, when one variable decreases so does the other. A <strong>negative correlation</strong> means that the variables move in opposite directions. If two variables are negatively correlated, a decrease in one variable is associated with an increase in the other and vice versa.</p>
+<p>The example of ice cream and crime rates is a positive correlation because both variables increase when temperatures are warmer. Other examples of positive correlations are the relationship between an individual’s height and weight or the relationship between a person’s age and number of wrinkles. One might expect a negative correlation to exist between someone’s tiredness during the day and the number of hours they slept the previous night: the amount of sleep decreases as the feelings of tiredness increase. In a real-world example of negative correlation, student researchers at the University of Minnesota found a weak negative correlation (<em>r</em> = -0.29) between the average number of days per week that students got fewer than 5 hours of sleep and their GPA (Lowry, Dean, &amp; Manders, 2010). Keep in mind that a negative correlation is not the same as no correlation. For example, we would probably find no correlation between hours of sleep and shoe size.</p>
+<p>As mentioned earlier, correlations have predictive value. Imagine that you are on the admissions committee of a major university. You are faced with a huge number of applications, but you are able to accommodate only a small percentage of the applicant pool. How might you decide who should be admitted? You might try to correlate your current students’ college GPA with their scores on standardized tests like the SAT or ACT. By observing which correlations were strongest for your current students, you could use this information to predict relative success of those students who have applied for admission into the university.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224515/CNX_Psych_02_04_scatter.jpg" alt="Three scatterplots are shown. Scatterplot (a) is labeled “positive correlation” and shows scattered dots forming a rough line from the bottom left to the top right; the x-axis is labeled “weight” and the y-axis is labeled “height.” Scatterplot (b) is labeled “negative correlation” and shows scattered dots forming a rough line from the top left to the bottom right; the x-axis is labeled “tiredness” and the y-axis is labeled “hours of sleep.” Scatterplot (c) is labeled “no correlation” and shows scattered dots having no pattern; the x-axis is labeled “shoe size” and the y-axis is labeled “hours of sleep.”"></p>
+<p><strong>Figure 1</strong>. Scatterplots are a graphical view of the strength and direction of correlations. The stronger the correlation, the closer the data points are to a straight line. In these examples, we see that there is (a) a positive correlation between weight and height, (b) a negative correlation between tiredness and hours of sleep, and (c) no correlation between shoe size and hours of sleep.</p>
+<h2 id="correlation-does-not-indicate-causation">Correlation Does Not Indicate Causation</h2>
+<p>Correlational research is useful because it allows us to discover the strength and direction of relationships that exist between two variables. However, correlation is limited because establishing the existence of a relationship tells us little about <strong>cause and effect</strong>. While variables are sometimes correlated because one does cause the other, it could also be that some other factor, a <strong>confounding variable</strong>, is actually causing the systematic movement in our variables of interest. In the ice cream/crime rate example mentioned earlier, temperature is a confounding variable that could account for the relationship between the two variables.</p>
+<p>Even when we cannot point to clear confounding variables, we should not assume that a correlation between two variables implies that one variable causes changes in another. This can be frustrating when a cause-and-effect relationship seems clear and intuitive. Think back to our discussion of the research done by the American Cancer Society and how their research projects were some of the first demonstrations of the link between smoking and cancer. It seems reasonable to assume that smoking causes cancer, but if we were limited to <strong>correlational research</strong>, we would be overstepping our bounds by making this assumption.</p>
+<p>Unfortunately, people mistakenly make claims of causation as a function of correlations all the time. Such claims are especially common in advertisements and news stories. For example, recent research found that people who eat cereal on a regular basis achieve healthier weights than those who rarely eat cereal (Frantzen, Treviño, Echon, Garcia-Dominic, &amp; DiMarco, 2013; Barton et al., 2005). Guess how the cereal companies report this finding. Does eating cereal really cause an individual to maintain a healthy weight, or are there other possible explanations, such as, someone at a healthy weight is more likely to regularly eat a healthy breakfast than someone who is obese or someone who avoids meals in an attempt to diet (Figure 2)? While correlational research is invaluable in identifying relationships among variables, a major limitation is the inability to establish causality. Psychologists want to make statements about cause and effect, but the only way to do that is to conduct an experiment to answer a research question. The next section describes how scientific experiments incorporate methods that eliminate, or control for, alternative explanations, which allow researchers to explore how changes in one variable cause changes in another variable.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch this clip from Freakonomics for an example of how correlation does <em>not</em> indicate causation.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/CorrelationVSCausalityFreakonomicsMovie.txt">view the transcript for “Correlation vs. Causality: Freakonomics Movie” here (opens in new window)</a>.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224516/CNX_Psych_02_04_cereal.jpg" alt="A photograph shows a bowl of cereal."></p>
+<p><strong>Figure 2</strong>. Does eating cereal really cause someone to be a healthy weight? (credit: Tim Skillern)</p>
+<h2 id="illusory-correlations">Illusory Correlations</h2>
+<p>The temptation to make erroneous cause-and-effect statements based on correlational research is not the only way we tend to misinterpret data. We also tend to make the mistake of illusory correlations, especially with unsystematic observations. <strong>Illusory correlations</strong>, or false correlations, occur when people believe that relationships exist between two things when no such relationship exists. One well-known illusory correlation is the supposed effect that the moon’s phases have on human behavior. Many people passionately assert that human behavior is affected by the phase of the moon, and specifically, that people act strangely when the moon is full (Figure 3).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224518/CNX_Psych_02_04_moon.jpg" alt="A photograph shows the moon."></p>
+<p><strong>Figure 3</strong>. Some people believe that a full moon makes people behave oddly. (credit: Cory Zanker)</p>
+<p>There is no denying that the moon exerts a powerful influence on our planet. The ebb and flow of the ocean’s tides are tightly tied to the gravitational forces of the moon. Many people believe, therefore, that it is logical that we are affected by the moon as well. After all, our bodies are largely made up of water. A meta-analysis of nearly 40 studies consistently demonstrated, however, that the relationship between the moon and our behavior does not exist (Rotton &amp; Kelly, 1985). While we may pay more attention to odd behavior during the full phase of the moon, the rates of odd behavior remain constant throughout the lunar cycle.</p>
+<p>Why are we so apt to believe in illusory correlations like this? Often we read or hear about them and simply accept the information as valid. Or, we have a hunch about how something works and then look for evidence to support that hunch, ignoring evidence that would tell us our hunch is false; this is known as <strong>confirmation bias</strong>. Other times, we find illusory correlations based on the information that comes most easily to mind, even if that information is severely limited. And while we may feel confident that we can use these relationships to better understand and predict the world around us, illusory correlations can have significant drawbacks. For example, research suggests that illusory correlations—in which certain behaviors are inaccurately attributed to certain groups—are involved in the formation of prejudicial attitudes that can ultimately lead to discriminatory behavior (Fiedler, 2004).</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>We all have a tendency to make illusory correlations from time to time. Try to think of an illusory correlation that is held by you, a family member, or a close friend. How do you think this illusory correlation came about and what can be done in the future to combat them?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>cause-and-effect relationship:</strong> changes in one variable cause the changes in the other variable; can be determined only through an experimental research design</p>
+<p><strong>confirmation bias:</strong> tendency to ignore evidence that disproves ideas or beliefs</p>
+<p><strong>confounding variable:</strong> unanticipated outside factor that affects both variables of interest, often giving the false impression that changes in one variable causes changes in the other variable, when, in actuality, the outside factor causes changes in both variables</p>
+<p><strong>correlation:</strong> relationship between two or more variables; when two variables are correlated, one variable changes as the other does</p>
+<p><strong>correlation coefficient:</strong> number from -1 to +1, indicating the strength and direction of the relationship between variables, and usually represented by <em>r</em></p>
+<p><strong>illusory correlation:</strong> seeing relationships between two things when in reality no such relationship exists</p>
+<p><strong>negative correlation:</strong> two variables change in different directions, with one becoming larger as the other becomes smaller; a negative correlation is not the same thing as no correlation</p>
+<p><strong>positive correlation:</strong> two variables change in the same direction, both becoming either larger or smaller</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="descriptive-research--introduction-to-psychology">Descriptive Research | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Descriptive Research | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-clinical-or-case-studies/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Differentiate between descriptive, experimental, and correlational research</li>
+<li>Explain the strengths and weaknesses of case studies, naturalistic observation, and surveys</li>
+</ul>
+<p>There are many research methods available to psychologists in their efforts to understand, describe, and explain behavior and the cognitive and biological processes that underlie it. Some methods rely on observational techniques. Other approaches involve interactions between the researcher and the individuals who are being studied—ranging from a series of simple questions to extensive, in-depth interviews—to well-controlled experiments.</p>
+<p>The three main categories of psychological research are descriptive, correlational, and experimental research. Research studies that do not test specific relationships between variables are called <strong>descriptive studies</strong>. These studies are used to describe general or specific behaviors and attributes that are observed and measured. In the early stages of research, it might be difficult to form a hypothesis, especially when there is not any existing literature in the area. In these situations designing an experiment would be premature, as the question of interest is not yet clearly defined as a hypothesis. Often a researcher will begin with a non-experimental approach, such as a descriptive study, to gather more information about the topic before designing an experiment or correlational study to address a specific hypothesis. Descriptive research is distinct from <strong>correlational research</strong>, in which psychologists formally test whether a relationship exists between two or more variables. <strong>Experimental research</strong> goes a step further beyond descriptive and correlational research and randomly assigns people to different conditions, using hypothesis testing to make inferences about how these conditions affect behavior. It aims to determine if one variable directly impacts and causes another. Correlational and experimental research both typically use hypothesis testing, whereas descriptive research does not. Table 1 displays a quick overview of the characteristics of each research design.</p>
+<p><strong>Table 1.</strong> Characteristics of Descriptive, Experimental, and Correlational Research</p>
+<table><tbody><tr><td><strong>Research Design</strong></td><td><strong>Characteristic</strong></td></tr><tr><td>Descriptive</td><td>Allows researchers to gather more information about a topic</td></tr><tr><td>Correlational</td><td>Tests a hypothesis to determine whether a relationship exists between two or more variables</td></tr><tr><td>Experimental</td><td>Is the only way to determine if a cause and effect relationship exists</td></tr></tbody></table>
+<p>The three main categories of psychological research are descriptive, correlational, and experimental research. Research studies that do not test specific relationships between variables are called <strong>descriptive studies</strong>. These studies are used to describe general or specific behaviors and attributes that are observed and measured. In the early stages of research, it might be difficult to form a hypothesis, especially when there is not any existing literature in the area. In these situations designing an experiment would be premature, as the question of interest is not yet clearly defined as a hypothesis. Often a researcher will begin with a non-experimental approach, such as a descriptive study, to gather more information about the topic before designing an experiment or correlational study to address a specific hypothesis. Descriptive research is distinct from <strong>correlational research</strong>, in which psychologists formally test whether a relationship exists between two or more variables. <strong>Experimental research</strong> goes a step further beyond descriptive and correlational research and randomly assigns people to different conditions, using hypothesis testing to make inferences about how these conditions affect behavior. It aims to determine if one variable directly impacts and causes another. Correlational and experimental research both typically use hypothesis testing, whereas descriptive research does not.</p>
+<p>Each of these research methods has unique strengths and weaknesses, and each method may only be appropriate for certain types of research questions. For example, studies that rely primarily on observation produce incredible amounts of information, but the ability to apply this information to the larger population is somewhat limited because of small sample sizes. Survey research, on the other hand, allows researchers to easily collect data from relatively large samples. While this allows for results to be generalized to the larger population more easily, the information that can be collected on any given survey is somewhat limited and subject to problems associated with any type of self-reported data. Some researchers conduct archival research by using existing records. While this can be a fairly inexpensive way to collect data that can provide insight into a number of research questions, researchers using this approach have no control on how or what kind of data was collected.</p>
+<p>Correlational research can find a relationship between two variables, but the only way a researcher can claim that the relationship between the variables is cause and effect is to perform an experiment. In experimental research, which will be discussed later in the text, there is a tremendous amount of control over variables of interest. While this is a powerful approach, experiments are often conducted in very artificial settings. This calls into question the validity of experimental findings with regard to how they would apply in real-world settings. In addition, many of the questions that psychologists would like to answer cannot be pursued through experimental research because of ethical concerns.</p>
+<p>The three main types of descriptive studies are case studies, naturalistic observation, and surveys.</p>
+<h2 id="case-studies">Case Studies</h2>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>In 2011, the <em>New York Times</em> featured Krista and Tatiana Hogan, Canadian conjoined twins who are joined at the head. What makes them especially unique is that their brains are connected through the thalamus, a part of the brain that sends sensory information (like sights, sounds, and touch) to higher brain areas. Because of this, researchers believe the twins may actually share some experiences. For example, if Krista laughs at something on TV, Tatiana might also smile or laugh—even without seeing the show herself. Their case has fascinated neuroscientists, who study them to better understand how the brain processes sensory information.</p>
+<p>You can watch this <a href="https://www.youtube.com/watch?v=v7XEXzGjRhE">video to learn more about their lives as conjoined twins.</a></p>
+<p>In observational research, scientists are conducting a clinical or <strong>case study</strong> when they focus on one person or just a few individuals. Indeed, some scientists spend their entire careers studying just 10–20 individuals. Why would they do this? Obviously, when they focus their attention on a very small number of people, they can gain a tremendous amount of insight into those cases. The richness of information that is collected in clinical or case studies is unmatched by any other single research method. This allows the researcher to have a very deep understanding of the individuals and the particular phenomenon being studied.</p>
+<p>If clinical or case studies provide so much information, why are they not more frequent among researchers? As it turns out, the major benefit of this particular approach is also a weakness. As mentioned earlier, this approach is often used when studying individuals who are interesting to researchers because they have a rare characteristic. Therefore, the individuals who serve as the focus of case studies are not like most other people. If scientists ultimately want to explain all behavior, focusing attention on such a special group of people can make it difficult to generalize any observations to the larger population as a whole. Generalizing refers to the ability to apply the findings of a particular research project to larger segments of society. Again, case studies provide enormous amounts of information, but since the cases are so specific, the potential to apply what’s learned to the average person may be very limited.</p>
+<h2 id="naturalistic-observation">Naturalistic Observation</h2>
+<p>If you want to understand how behavior occurs, one of the best ways to gain information is to simply observe the behavior in its natural context. However, people might change their behavior in unexpected ways if they know they are being observed. How do researchers obtain accurate information when people tend to hide their natural behavior? As an example, imagine that your professor asks everyone in your class to raise their hand if they always wash their hands after using the restroom. Chances are that almost everyone in the classroom will raise their hand, but do you think hand washing after every trip to the restroom is really that universal?</p>
+<p>This is very similar to the phenomenon mentioned earlier in this module: many individuals do not feel comfortable answering a question honestly. But if we are committed to finding out the facts about hand washing, we have other options available to us.</p>
+<p>Suppose we send a classmate into the restroom to actually watch whether everyone washes their hands after using the restroom. Will our observer blend into the restroom environment by wearing a white lab coat, sitting with a clipboard, and staring at the sinks? We want our researcher to be inconspicuous—perhaps standing at one of the sinks pretending to put in contact lenses while secretly recording the relevant information. This type of observational study is called <strong>naturalistic observation</strong>: observing behavior in its natural setting. To better understand peer exclusion, Suzanne Fanger collaborated with colleagues at the University of Texas to observe the behavior of preschool children on a playground. How did the observers remain inconspicuous over the duration of the study? They equipped a few of the children with wireless microphones (which the children quickly forgot about) and observed while taking notes from a distance. Also, the children in that particular preschool (a “laboratory preschool”) were accustomed to having observers on the playground (Fanger, Frankel, &amp; Hazen, 2012).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224506/CNX_Psych_02_02_policecar.jpg" alt="A photograph shows two police cars driving, one with its lights flashing."></p>
+<p><strong>Figure 1</strong>. Seeing a police car behind you would probably affect your driving behavior. (credit: Michael Gil)</p>
+<p>It is critical that the observer be as unobtrusive and as inconspicuous as possible: when people know they are being watched, they are less likely to behave naturally. If you have any doubt about this, ask yourself how your driving behavior might differ in two situations: In the first situation, you are driving down a deserted highway during the middle of the day; in the second situation, you are being followed by a police car down the same deserted highway (Figure 1).</p>
+<p>It should be pointed out that naturalistic observation is not limited to research involving humans. Indeed, some of the best-known examples of naturalistic observation involve researchers going into the field to observe various kinds of animals in their own environments. As with human studies, the researchers maintain their distance and avoid interfering with the animal subjects so as not to influence their natural behaviors. Scientists have used this technique to study social hierarchies and interactions among animals ranging from ground squirrels to gorillas. The information provided by these studies is invaluable in understanding how those animals organize socially and communicate with one another. The anthropologist Jane Goodall, for example, spent nearly five decades observing the behavior of chimpanzees in Africa (Figure 2). As an illustration of the types of concerns that a researcher might encounter in naturalistic observation, some scientists criticized Goodall for giving the chimps names instead of referring to them by numbers—using names was thought to undermine the emotional detachment required for the objectivity of the study (McKie, 2010).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224508/CNX_Psych_02_02_goodall.jpg" alt="(a) A photograph shows Jane Goodall speaking from a lectern. (b) A photograph shows a chimpanzee’s face."></p>
+<p><strong>Figure 2</strong>. (a) Jane Goodall made a career of conducting naturalistic observations of (b) chimpanzee behavior. (credit “Jane Goodall”: modification of work by Erik Hersman; “chimpanzee”: modification of work by “Afrika Force”/Flickr.com)</p>
+<p>The greatest benefit of naturalistic observation is the validity, or accuracy, of information collected unobtrusively in a natural setting. Having individuals behave as they normally would in a given situation means that we have a higher degree of ecological validity, or realism, than we might achieve with other research approaches. Therefore, our ability to <strong>generalize</strong> the findings of the research to real-world situations is enhanced. If done correctly, we need not worry about people or animals modifying their behavior simply because they are being observed. Sometimes, people may assume that reality programs give us a glimpse into authentic human behavior. However, the principle of inconspicuous observation is violated as reality stars are followed by camera crews and are interviewed on camera for personal confessionals. Given that environment, we must doubt how natural and realistic their behaviors are.</p>
+<p>The major downside of naturalistic observation is that they are often difficult to set up and control. In our restroom study, what if you stood in the restroom all day prepared to record people’s hand washing behavior and no one came in? Or, what if you have been closely observing a troop of gorillas for weeks only to find that they migrated to a new place while you were sleeping in your tent? The benefit of realistic data comes at a cost. As a researcher you have no control of when (or if) you have behavior to observe. In addition, this type of observational research often requires significant investments of time, money, and a good dose of luck.</p>
+<p>Sometimes studies involve structured observation. In these cases, people are observed while engaging in set, specific tasks. An excellent example of structured observation comes from Strange Situation by Mary Ainsworth (you will read more about this in the module on lifespan development). The Strange Situation is a procedure used to evaluate attachment styles that exist between an infant and caregiver. In this scenario, caregivers bring their infants into a room filled with toys. The Strange Situation involves a number of phases, including a stranger coming into the room, the caregiver leaving the room, and the caregiver’s return to the room. The infant’s behavior is closely monitored at each phase, but it is the behavior of the infant upon being reunited with the caregiver that is most telling in terms of characterizing the infant’s attachment style with the caregiver.</p>
+<p>Another potential problem in observational research is <strong>observer bias</strong>. Generally, people who act as observers are closely involved in the research project and may unconsciously skew their observations to fit their research goals or expectations. To protect against this type of bias, researchers should have clear criteria established for the types of behaviors recorded and how those behaviors should be classified. In addition, researchers often compare observations of the same event by multiple observers, in order to test <strong>inter-rater reliability</strong>: a measure of reliability that assesses the consistency of observations by different observers.</p>
+<h2 id="surveys">Surveys</h2>
+<p>Often, psychologists develop surveys as a means of gathering data. <strong>Surveys</strong> are lists of questions to be answered by research participants, and can be delivered as paper-and-pencil questionnaires, administered electronically, or conducted verbally (Figure 3). Generally, the survey itself can be completed in a short time, and the ease of administering a survey makes it easy to collect data from a large number of people.</p>
+<p>Surveys allow researchers to gather data from larger samples than may be afforded by other research methods**.** A <strong>sample</strong> is a subset of individuals selected from a <strong>population</strong>, which is the overall group of individuals that the researchers are interested in. Researchers study the sample and seek to generalize their findings to the population. Generally, researchers will begin this process by calculating various measures of central tendency from the data they have collected. These measures provide an overall summary of what a typical response looks like. There are three measures of central tendency: mode, median, and mean. The mode is the most frequently occurring response, the median lies at the middle of a given data set, and the mean is the arithmetic average of all data points. Means tend to be most useful in conducting additional analyses like those described below; however, means are very sensitive to the effects of outliers, and so one must be aware of those effects when making assessments of what measures of central tendency tell us about a data set in question.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224509/CNX_Psych_02_03_surveyn.jpg" alt="A sample online survey reads, “Dear visitor, your opinion is important to us. We would like to invite you to participate in a short survey to gather your opinions and feedback on your news consumption habits. The survey will take approximately 10-15 minutes. Simply click the “Yes” button below to launch the survey. Would you like to participate?” Two buttons are labeled “yes” and “no.”"></p>
+<p><strong>Figure 3</strong>. Surveys can be administered in a number of ways, including electronically administered research, like the survey shown here. (credit: Robert Nyman)</p>
+<p>There is both strength and weakness of the survey in comparison to case studies. By using surveys, we can collect information from a larger sample of people. A larger sample is better able to reflect the actual diversity of the population, thus allowing better generalizability. Therefore, if our sample is sufficiently large and diverse, we can assume that the data we collect from the survey can be generalized to the larger population with more certainty than the information collected through a case study. However, given the greater number of people involved, we are not able to collect the same depth of information on each person that would be collected in a case study.</p>
+<p>Another potential weakness of surveys is something we touched on earlier in this module: people don’t always give accurate responses. They may lie, misremember, or answer questions in a way that they think makes them look good. For example, people may report drinking less alcohol than is actually the case.</p>
+<p>Any number of research questions can be answered through the use of surveys. One real-world example is the research conducted by Jenkins, Ruppel, Kizer, Yehl, and Griffin (2012) about the backlash against the US Arab-American community following the terrorist attacks of September 11, 2001. Jenkins and colleagues wanted to determine to what extent these negative attitudes toward Arab-Americans still existed nearly a decade after the attacks occurred. In one study, 140 research participants filled out a survey with 10 questions, including questions asking directly about the participant’s overt prejudicial attitudes toward people of various ethnicities. The survey also asked indirect questions about how likely the participant would be to interact with a person of a given ethnicity in a variety of settings (such as, “How likely do you think it is that you would introduce yourself to a person of Arab-American descent?”). The results of the research suggested that participants were unwilling to report prejudicial attitudes toward any ethnic group. However, there were significant differences between their pattern of responses to questions about social interaction with Arab-Americans compared to other ethnic groups: they indicated less willingness for social interaction with Arab-Americans compared to the other ethnic groups. This suggested that the participants harbored subtle forms of prejudice against Arab-Americans, despite their assertions that this was not the case (Jenkins et al., 2012).</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>A friend of yours is working part-time in a local pet store. Your friend has become increasingly interested in how dogs normally communicate and interact with each other, and is thinking of visiting a local veterinary clinic to see how dogs interact in the waiting room. After reading this section, do you think this is the best way to better understand such interactions? Do you have any suggestions that might result in more valid data?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>clinical or case study:</strong> observational research study focusing on one or a few people</p>
+<p><strong>correlational research:</strong> tests whether a relationship exists between two or more variables</p>
+<p><strong>descriptive research:</strong> research studies that do not test specific relationships between variables; they are used to describe general or specific behaviors and attributes that are observed and measured</p>
+<p><strong>experimental research:</strong> tests a hypothesis to determine cause and effect relationships</p>
+<p><strong>generalize:</strong> inferring that the results for a sample apply to the larger population</p>
+<p><strong>inter-rater reliability:</strong> measure of agreement among observers on how they record and classify a particular event</p>
+<p><strong>naturalistic observation:</strong> observation of behavior in its natural setting</p>
+<p><strong>observer bias:</strong> when observations may be skewed to align with observer expectations</p>
+<p><strong>population:</strong> overall group of individuals that the researchers are interested in</p>
+<p><strong>sample:</strong> subset of individuals selected from the larger population</p>
+<p><strong>survey:</strong> list of questions to be answered by research participants—given as paper-and-pencil questionnaires, administered electronically, or conducted verbally—allowing researchers to collect data from a large number of people</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification and adaptation. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Approaches to Research. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research">https://openstax.org/books/psychology-2e/pages/2-2-approaches-to-research</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction.</li>
+<li>Descriptive Research. <strong>Provided by</strong>: Boundless. <strong>Located at</strong>: <a href="https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/researching-psychology-2/types-of-research-studies-27/descriptive-research-124-12659/">https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/researching-psychology-2/types-of-research-studies-27/descriptive-research-124-12659/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<hr>
+<h2 id="experiments--introduction-to-psychology">Experiments | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Experiments | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-conducting-experiments/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the experimental process, including ways to control for bias</li>
+<li>Identify and differentiate between independent and dependent variables</li>
+</ul>
+<h2 id="causality-conducting-experiments-and-using-the-data">Causality: Conducting Experiments and Using the Data</h2>
+<p>As you’ve learned, the only way to establish that there is a cause-and-effect relationship between two variables is to conduct a scientific experiment. <strong>Experiment</strong> has a different meaning in the scientific context than in everyday life. In everyday conversation, we often use it to describe trying something for the first time, such as experimenting with a new hair style or a new food. However, in the scientific context, an experiment has precise requirements for design and implementation.</p>
+<h2 id="experimental-hypothesis">Experimental Hypothesis</h2>
+<p>In order to conduct an experiment, a researcher must have a specific <strong>hypothesis</strong> to be tested. As you’ve learned, hypotheses can be formulated either through direct observation of the real world or after careful review of previous research. For example, if you think that the use of technology in the classroom has negative impacts on learning, then you have basically formulated a hypothesis—namely, that the use of technology in the classroom should be limited because it decreases learning. How might you have arrived at this particular hypothesis? You may have noticed that your classmates who take notes on their laptops perform at lower levels on class exams than those who take notes by hand, or those who receive a lesson via a computer program versus via an in-person teacher have different levels of performance when tested (Figure 1).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27180545/b527fb6e2547267e06d240f6e5f41ee78ee24781.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27180545/b527fb6e2547267e06d240f6e5f41ee78ee24781-300x236.jpeg" alt="Many rows of students are in a classroom. One student has an open laptop on his desk."></a></p>
+<p><strong>Figure 1</strong>. How might the use of technology in the classroom impact learning? (credit: modification of work by Nikolay Georgiev/Pixabay)</p>
+<p>These sorts of personal observations are what often lead us to formulate a specific hypothesis, but we cannot use limited personal observations and anecdotal evidence to rigorously test our hypothesis. Instead, to find out if real-world data supports our hypothesis, we have to conduct an experiment.</p>
+<h2 id="designing-an-experiment">Designing an Experiment</h2>
+<p>The most basic experimental design involves two groups: the experimental group and the control group. The two groups are designed to be the same except for one difference— experimental manipulation. The <strong>experimental group</strong> gets the experimental manipulation—that is, the treatment or variable being tested (in this case, violent TV images)—and the <strong>control group</strong> does not. Since experimental manipulation is the only difference between the experimental and control groups, we can be sure that any differences between the two are due to experimental manipulation rather than chance.</p>
+<p>In our example of how the use of technology should be limited in the classroom, we have the experimental group learn algebra using a computer program and then test their learning. We measure the learning in our control group after they are taught algebra by a teacher in a traditional classroom. It is important for the control group to be treated similarly to the experimental group, with the exception that the control group does not receive the experimental manipulation.</p>
+<p>We also need to precisely define, or operationalize, how we measure learning of algebra. An operational definition is a precise description of our variables, and it is important in allowing others to understand exactly how and what a researcher measures in a particular experiment. In operationalizing learning, we might choose to look at performance on a test covering the material on which the individuals were taught by the teacher or the computer program. We might also ask our participants to summarize the information that was just presented in some way. Whatever we determine, it is important that we operationalize learning in such a way that anyone who hears about our study for the first time knows exactly what we mean by learning. This aids peoples’ ability to interpret our data as well as their capacity to repeat our experiment should they choose to do so.</p>
+<p>Once we have operationalized what is considered use of technology and what is considered learning in our experiment participants, we need to establish how we will run our experiment. In this case, we might have participants spend 45 minutes learning algebra (either through a computer program or with an in-person math teacher) and then give them a test on the material covered during the 45 minutes.</p>
+<p>Ideally, the people who score the tests are unaware of who was assigned to the experimental or control group, in order to control for experimenter bias. Experimenter bias refers to the possibility that a researcher’s expectations might skew the results of the study. Remember, conducting an experiment requires a lot of planning, and the people involved in the research project have a vested interest in supporting their hypotheses. If the observers knew which child was in which group, it might influence how they interpret ambiguous responses, such as sloppy handwriting or minor computational mistakes. By being blind to which child is in which group, we protect against those biases. This situation is a single-blind study, meaning that one of the groups (participants) are unaware as to which group they are in (experiment or control group) while the researcher who developed the experiment knows which participants are in each group.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224520/CNX_Psych_02_05_placebo.jpg" alt="A photograph shows three glass bottles of pills labeled as placebos."></p>
+<p><strong>Figure 2</strong>. Providing the control group with a placebo treatment protects against bias caused by expectancy. (credit: Elaine and Arthur Shapiro)</p>
+<p>In a <strong>double-blind study</strong>, both the researchers and the participants are blind to group assignments. Why would a researcher want to run a study where no one knows who is in which group? Because by doing so, we can control for both experimenter and participant expectations. If you are familiar with the phrase placebo effect, you already have some idea as to why this is an important consideration. The <strong>placebo effect</strong> occurs when people’s expectations or beliefs influence or determine their experience in a given situation. In other words, simply expecting something to happen can actually make it happen.</p>
+<p>The placebo effect is commonly described in terms of testing the effectiveness of a new medication. Imagine that you work in a pharmaceutical company, and you think you have a new drug that is effective in treating depression. To demonstrate that your medication is effective, you run an experiment with two groups: The experimental group receives the medication, and the control group does not. But you don’t want participants to know whether they received the drug or not.</p>
+<p>Why is that? Imagine that you are a participant in this study, and you have just taken a pill that you think will improve your mood. Because you expect the pill to have an effect, you might feel better simply because you took the pill and not because of any drug actually contained in the pill—this is the placebo effect.</p>
+<p>To make sure that any effects on mood are due to the drug and not due to expectations, the control group receives a placebo (in this case a sugar pill). Now everyone gets a pill, and once again neither the researcher nor the experimental participants know who got the drug and who got the sugar pill. Any differences in mood between the experimental and control groups can now be attributed to the drug itself rather than to experimenter bias or participant expectations (Figure 2).</p>
+<h2 id="independent-and-dependent-variables">Independent and Dependent Variables</h2>
+<p>In a research experiment, we strive to study whether changes in one thing cause changes in another. To achieve this, we must pay attention to two important variables, or things that can be changed, in any experimental study: the independent variable and the dependent variable. An <strong>independent variable</strong> is manipulated or controlled by the experimenter. In a well-designed experimental study, the independent variable is the only important difference between the experimental and control groups. In our example of how technology use in the classroom affects learning, the independent variable is the type of learning by participants in the study (Figure 2.17). A dependent variable is what the researcher measures to see how much effect the independent variable had. In our example, the dependent variable is the learning exhibited by our participants.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27174938/3ed53f2c8245f1be744fba606c5a34c734c9a157.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27174938/3ed53f2c8245f1be744fba606c5a34c734c9a157-300x159.jpeg" alt="A box labeled “independent variable: taking notes on a laptop or by hand” contains a photograph of a classroom of students with an open laptop on one student's desk. An arrow labeled “influences change in the…” leads to a second box. The second box is labeled “dependent variable: performance on measure of learning” and has a photograph of a student at a desk, taking a test."></a></p>
+<p><strong>Figure 3</strong>. In an experiment, manipulations of the independent variable are expected to result in changes in the dependent variable. (credit: “classroom” modification of work by Nikolay Georgiev/Pixabay; credit “note taking”: modification of work by KF/Wikimedia)</p>
+<p>We expect that the dependent variable will change as a function of the independent variable. In other words, the dependent variable <em>depends</em> on the independent variable. A good way to think about the relationship between the independent and dependent variables is with this question: What effect does the independent variable have on the dependent variable? Returning to our example, what effect does watching a half hour of violent television programming or nonviolent television programming have on the number of incidents of physical aggression displayed on the playground?</p>
+<h2 id="selecting-and-assigning-experimental-participants">Selecting and Assigning Experimental Participants</h2>
+<p>Now that our study is designed, we need to obtain a sample of individuals to include in our experiment. Our study involves human participants so we need to determine who to include. <strong>Participants</strong> are the subjects of psychological research, and as the name implies, individuals who are involved in psychological research actively participate in the process. Often, psychological research projects rely on college students to serve as participants. In fact, the vast majority of research in psychology subfields has historically involved students as research participants (Sears, 1986; Arnett, 2008). But are college students truly representative of the general population? College students tend to be younger, more educated, more liberal, and less diverse than the general population. Although using students as test subjects is an accepted practice, relying on such a limited pool of research participants can be problematic because it is difficult to generalize findings to the larger population.</p>
+<p>Our hypothetical experiment involves children, and we must first generate a sample of child participants. Samples are used because populations are usually too large to reasonably involve every member in our particular experiment (Figure 4). If possible, we should use a <strong>random sample</strong> (there are other types of samples, but for the purposes of this section, we will focus on random samples). A random sample is a subset of a larger population in which every member of the population has an equal chance of being selected. Random samples are preferred because if the sample is large enough we can be reasonably sure that the participating individuals are representative of the larger population. This means that the percentages of characteristics in the sample—sex, ethnicity, socioeconomic level, and any other characteristics that might affect the results—are close to those percentages in the larger population.</p>
+<p>In our example, let’s say we decide our population of interest is fourth graders. But all fourth graders is a very large population, so we need to be more specific; instead we might say our population of interest is all fourth graders in a particular city. We should include students from various income brackets, family situations, races, ethnicities, religions, and geographic areas of town. With this more manageable population, we can work with the local schools in selecting a random sample of around 200 fourth graders who we want to participate in our experiment.</p>
+<p>In summary, because we cannot test all of the fourth graders in a city, we want to find a group of about 200 that reflects the composition of that city. With a representative group, we can generalize our findings to the larger population without fear of our sample being biased in some way.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224523/CNX_Psych_02_05_sample.jpg" alt="(a) A photograph shows an aerial view of crowds on a street. (b) A photograph shows s small group of children."></p>
+<p><strong>Figure 4</strong>. Researchers may work with (a) a large population or (b) a sample group that is a subset of the larger population. (credit “crowd”: modification of work by James Cridland; credit “students”: modification of work by Laurie Sullivan)</p>
+<p>Now that we have a sample, the next step of the experimental process is to split the participants into experimental and control groups through random assignment. With <strong>random assignment</strong>, all participants have an equal chance of being assigned to either group. There is statistical software that will randomly assign each of the fourth graders in the sample to either the experimental or the control group.</p>
+<p>Random assignment is critical for sound <strong>experimental design</strong>. With sufficiently large samples, random assignment makes it unlikely that there are systematic differences between the groups. So, for instance, it would be very unlikely that we would get one group composed entirely of males, a given ethnic identity, or a given religious ideology. This is important because if the groups were systematically different before the experiment began, we would not know the origin of any differences we find between the groups: Were the differences preexisting, or were they caused by manipulation of the independent variable? Random assignment allows us to assume that any differences observed between experimental and control groups result from the manipulation of the independent variable.</p>
+<h2 id="issues-to-consider">Issues to Consider</h2>
+<p>While experiments allow scientists to make cause-and-effect claims, they are not without problems. True experiments require the experimenter to manipulate an independent variable, and that can complicate many questions that psychologists might want to address. For instance, imagine that you want to know what effect sex (the independent variable) has on spatial memory (the dependent variable). Although you can certainly look for differences between males and females on a task that taps into spatial memory, you cannot directly control a person’s sex. We categorize this type of research approach as quasi-experimental and recognize that we cannot make cause-and-effect claims in these circumstances.</p>
+<p>Experimenters are also limited by ethical constraints. For instance, you would not be able to conduct an experiment designed to determine if experiencing abuse as a child leads to lower levels of self-esteem among adults. To conduct such an experiment, you would need to randomly assign some experimental participants to a group that receives abuse, and that experiment would be unethical.</p>
+<h3 id="research-design-review">Research Design Review</h3>
+<p>Learn more about research design and methods in the following interactive.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>cause-and-effect relationship:</strong> changes in one variable cause the changes in the other variable; can be determined only through an experimental research design</p>
+<p><strong>control group:</strong> serves as a basis for comparison and controls for chance factors that might influence the results of the study—by holding such factors constant across groups so that the experimental manipulation is the only difference between groups</p>
+<p><strong>dependent variable:</strong> variable that the researcher measures to see how much effect the independent variable had</p>
+<p><strong>double-blind study:</strong> experiment in which both the researchers and the participants are blind to group assignments</p>
+<p><strong>experimental group:</strong> group designed to answer the research question; experimental manipulation is the only difference between the experimental and control groups, so any differences between the two are due to experimental manipulation rather than chance</p>
+<p><strong>experimenter bias:</strong> researcher expectations skew the results of the study</p>
+<p><strong>independent variable:</strong> variable that is influenced or controlled by the experimenter; in a sound experimental study, the independent variable is the only important difference between the experimental and control group</p>
+<p><strong>operational definition:</strong> description of what actions and operations will be used to measure the dependent variables and manipulate the independent variables</p>
+<p><strong>participants:</strong> subjects of psychological research</p>
+<p><strong>placebo effect:</strong> people’s expectations or beliefs influencing or determining their experience in a given situation</p>
+<p><strong>random assignment:</strong> method of experimental group assignment in which all participants have an equal chance of being assigned to either group</p>
+<p><strong>random sample:</strong> subset of a larger population in which every member of the population has an equal chance of being selected</p>
+<p><strong>single-blind study:</strong> experiment in which the researcher knows which participants are in the experimental group and which are in the control group</p>
+<p><strong>statistical analysis:</strong> determines how likely any difference between experimental groups is due to chance</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="how-to-read-research--introduction-to-psychology">How to Read Research | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;How to Read Research | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/how-to-read-research/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the basic structure of a psychological research article</li>
+</ul>
+<p>In this course and throughout your academic career, you’ll be reading journal articles (meaning they were published by experts in a peer-reviewed journal) and reports that explain psychological research. It’s important to understand the format of these articles so that you can read them strategically and understand the information presented. Scientific articles vary in content or structure, depending on the type of journal to which they will be submitted. Psychological articles and many papers in the social sciences follow the writing guidelines and format dictated by the <a href="https://owl.english.purdue.edu/owl/section/2/10/">American Psychological Association</a> (APA). In general, the structure is: abstract, introduction, methods, results, discussion, and references.</p>
+<ul>
+<li><strong>Abstract</strong>: the abstract is the concise summary of the article. It summarizes the most important features of the manuscript, providing the reader with a global first impression of the article. It is generally just one paragraph that explains the experiment as well as a short synopsis of the results.</li>
+<li><strong>Introduction</strong>: this section provides background information about the origin and purpose of performing the experiment or study. It reviews previous research and presents existing theories on the topic.</li>
+<li><strong>Method</strong>: this section covers the methodologies used to investigate the research question, including the identification of <em>participants</em>, <em>procedures</em>, and <em>materials</em> as well as a description of the actual <em>procedure</em>. It should be sufficiently detailed to allow for replication.</li>
+<li><strong>Results</strong>: the results section presents key findings of the research, including references to indicators of statistical significance.</li>
+<li><strong>Discussion</strong>: this section provides an interpretation of the findings, states their significance for current research, and derives implications for theory and practice. Alternative interpretations for findings are also provided, particularly when it is not possible to conclude for the directionality of the effects. In the discussion, authors also acknowledge the strengths and limitations/weaknesses of the study and offer concrete directions for future research.</li>
+</ul>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch this video for an explanation of how to read scholarly articles. While the articles can sometimes seem dense, if you use the abstract, conclusion, or introductions first, you can get a broad overview of what the article is about and what you should focus on while you read.</p>
+<p>Practice identifying these key components in the following experiment: <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167462">Food-Induced Emotional Resonance Improves Emotion Recognition</a>.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Reading a Scientific Paper for Psychology and the Social Sciences: A Critical Guide. <strong>Authored by</strong>: Pedro Cordeiro, Victor E. C. Ortuu00f1o, Maria Paula Paixu00e3o, Jou00e3o Maru00f4co. <strong>Provided by</strong>: Faculty of Psychology and Educational Sciences, University of Coimbra. <strong>Located at</strong>: <a href="http://pch.psychopen.eu/article/view/136/html">http://pch.psychopen.eu/article/view/136/html</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>How to Read a Scholarly Article video. <strong>Provided by</strong>: University of Illinois Undergraduate Library. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=2ZS1Beio11M">https://www.youtube.com/watch?v=2ZS1Beio11M</a>. <strong>License</strong>: <em>Other</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+</ul>
+<hr>
+<h2 id="other-types-of-descriptive-research">Other Types of Descriptive Research</h2>
+<ul>
+<li>url_title:: &quot;Other Types of Descriptive Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-research/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the strength and weaknesses of archival, longitudinal, and cross-sectional research</li>
+</ul>
+<p>Other types of descriptive research include archival research and longitudinal and cross-sectional studies.</p>
+<h2 id="archival-research">Archival Research</h2>
+<p>Some researchers gain access to large amounts of data without interacting with a single research participant. Instead, they use existing records to answer various research questions. This type of research approach is known as archival research. <strong>Archival research</strong> relies on looking at past records or data sets to look for interesting patterns or relationships.</p>
+<p>For example, a researcher might access the academic records of all individuals who enrolled in college within the past ten years and calculate how long it took them to complete their degrees, as well as course loads, grades, and extracurricular involvement. Archival research could provide important information about who is most likely to complete their education, and it could help identify important risk factors for struggling students (Figure 1).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224511/CNX_Psych_02_03_records.jpg" alt="(a) A photograph shows stacks of paper files on shelves. (b) A photograph shows a computer."></p>
+<p><strong>Figure 1</strong>. A researcher doing archival research examines records, whether archived as a (a) hardcopy or (b) electronically. (credit “paper files”: modification of work by “Newtown graffiti”/Flickr; “computer”: modification of work by INPIVIC Family/Flickr)</p>
+<p>In comparing archival research to other research methods, there are several important distinctions. For one, the researcher employing archival research never directly interacts with research participants. Therefore, the investment of time and money to collect data is considerably less with archival research. Additionally, researchers have no control over what information was originally collected. Therefore, research questions have to be tailored so they can be answered within the structure of the existing data sets. There is also no guarantee of consistency between the records from one source to another, which might make comparing and contrasting different data sets problematic.</p>
+<h2 id="longitudinal-and-cross-sectional-research">Longitudinal and Cross-Sectional Research</h2>
+<p>Sometimes we want to see how people change over time, as in studies of human development and lifespan. When we test the same group of individuals repeatedly over an extended period of time, we are conducting longitudinal research. <strong>Longitudinal</strong> research is a research design in which data-gathering is administered repeatedly over an extended period of time. For example, we may survey a group of individuals about their dietary habits at age 20, retest them a decade later at age 30, and then again at age 40.</p>
+<p>Another approach is <strong>cross-sectional</strong> research. In cross-sectional research, a researcher compares multiple segments of the population at the same time. Using the dietary habits example above, the researcher might directly compare different groups of people by age. Instead of studying a group of people for 20 years to see how their dietary habits changed from decade to decade, the researcher would study a group of 20-year-old individuals and compare them to a group of 30-year-old individuals and a group of 40-year-old individuals. While cross-sectional research requires a shorter-term investment, it is also limited by differences that exist between the different generations (or cohorts) that have nothing to do with age per se, but rather reflect the social and cultural experiences of different generations of individuals make them different from one another.</p>
+<p>To illustrate this concept, consider the following survey findings. In recent years there has been significant growth in the popular support of same-sex marriage. Many studies on this topic break down survey participants into different age groups. In general, younger people are more supportive of same-sex marriage than are those who are older (Jones, 2013). Does this mean that as we age we become less open to the idea of same-sex marriage, or does this mean that older individuals have different perspectives because of the social climates in which they grew up? Longitudinal research is a powerful approach because the same individuals are involved in the research project over time, which means that the researchers need to be less concerned with differences among cohorts affecting the results of their study.</p>
+<p>Often longitudinal studies are employed when researching various diseases in an effort to understand particular risk factors. Such studies often involve tens of thousands of individuals who are followed for several decades. Given the enormous number of people involved in these studies, researchers can feel confident that their findings can be generalized to the larger population. The Cancer Prevention Study-3 (CPS-3) is one of a series of longitudinal studies sponsored by the American Cancer Society aimed at determining predictive risk factors associated with cancer. When participants enter the study, they complete a survey about their lives and family histories, providing information on factors that might cause or prevent the development of cancer. Then every few years the participants receive additional surveys to complete. In the end, hundreds of thousands of participants will be tracked over 20 years to determine which of them develop cancer and which do not.</p>
+<p>Clearly, this type of research is important and potentially very informative. For instance, earlier longitudinal studies sponsored by the American Cancer Society provided some of the first scientific demonstrations of the now well-established links between increased rates of cancer and smoking (American Cancer Society, n.d.) (Figure 2).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224513/CNX_Psych_02_03_cigarettes.jpg" alt="A photograph shows pack of cigarettes and cigarettes in an ashtray. The pack of cigarettes reads, “Surgeon general’s warning: smoking causes lung cancer, heart disease, emphysema, and may complicate pregnancy.”"></p>
+<p><strong>Figure 2</strong>. Longitudinal research like the CPS-3 help us to better understand how smoking is associated with cancer and other diseases. (credit: CDC/Debora Cartagena)</p>
+<p>As with any research strategy, longitudinal research is not without limitations. For one, these studies require an incredible time investment by the researcher and research participants. Given that some longitudinal studies take years, if not decades, to complete, the results will not be known for a considerable period of time. In addition to the time demands, these studies also require a substantial financial investment. Many researchers are unable to commit the resources necessary to see a longitudinal project through to the end.</p>
+<p>Research participants must also be willing to continue their participation for an extended period of time, and this can be problematic. People move, get married and take new names, get ill, and eventually die. Even without significant life changes, some people may simply choose to discontinue their participation in the project. As a result, the <strong>attrition</strong> rates, or reduction in the number of research participants due to dropouts, in longitudinal studies are quite high and increases over the course of a project. For this reason, researchers using this approach typically recruit many participants fully expecting that a substantial number will drop out before the end. As the study progresses, they continually check whether the sample still represents the larger population, and make adjustments as necessary.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>archival research:</strong> method of research using past records or data sets to answer various research questions, or to search for interesting patterns or relationships</p>
+<p><strong>attrition:</strong> reduction in number of research participants as some drop out of the study over time</p>
+<p><strong>cross-sectional research:</strong> compares multiple segments of a population at a single time</p>
+<p><strong>longitudinal research:</strong> studies in which the same group of individuals is surveyed or measured repeatedly over an extended period of time</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="the-scientific-process--introduction-to-psychology">The Scientific Process | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;The Scientific Process | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-the-scientific-process-replace-content/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain the steps of the scientific method</li>
+<li>Differentiate between theories and hypotheses</li>
+</ul>
+<p>Scientific research is a critical tool for successfully navigating our complex world. Without it, we would be forced to rely solely on intuition, other people’s authority, and blind luck. While many of us feel confident in our abilities to decipher and interact with the world around us, history is filled with examples of how very wrong we can be when we fail to recognize the need for evidence in supporting claims. At various times in history, we would have been certain that the sun revolved around a flat earth, that the earth’s continents did not move, and that mental illness was caused by possession (Figure 1). It is through systematic scientific research that we divest ourselves of our preconceived notions and superstitions and gain an objective understanding of ourselves and our world.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224458/CNX_Psych_02_01_trephining.jpg" alt="A skull has a large hole bored through the forehead."></p>
+<p><strong>Figure 1</strong>. Some of our ancestors, across the world and over the centuries, believed that trephination—the practice of making a hole in the skull, as shown here—allowed evil spirits to leave the body, thus curing mental illness and other disorders. (credit: “taiproject”/Flickr)</p>
+<p>The goal of all scientists is to better understand the world around them. Psychologists focus their attention on understanding behavior, as well as the cognitive (mental) and physiological (body) processes that underlie behavior. In contrast to other methods that people use to understand the behavior of others, such as intuition and personal experience, the hallmark of scientific research is that there is evidence to support a claim. Scientific knowledge is <strong>empirical</strong>: It is grounded in objective, tangible evidence that can be observed time and time again, regardless of who is observing.</p>
+<p>While behavior is observable, the mind is not. If someone is crying, we can see the behavior. However, the reason for the behavior is more difficult to determine. Is the person crying due to being sad, in pain, or happy? Sometimes we can learn the reason for someone’s behavior by simply asking a question, like “Why are you crying?” However, there are situations in which an individual is either uncomfortable or unwilling to answer the question honestly, or is incapable of answering. For example, infants would not be able to explain why they are crying. In such circumstances, the psychologist must be creative in finding ways to better understand behavior. This module explores how scientific knowledge is generated, and how important that knowledge is in forming decisions in our personal lives and in the public domain.</p>
+<h2 id="process-of-scientific-research">Process of Scientific Research</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/13033743/scimethod.png" alt="Flowchart of the scientific method with eight stages. It begins with make an observation, then ask a question, form a hypothesis that answers the question, make a prediction based on the hypothesis, do an experiment to test the prediction, analyze the results, prove the hypothesis correct or incorrect, then report the results. If the Hypothesis is incorrect, you return to stage three (form a hypothesis that answers the question) and repeat process from there."></p>
+<p><strong>Figure 2</strong>. The scientific method is a process for gathering data and processing information. It provides well-defined steps to standardize how scientific knowledge is gathered through a logical, rational problem-solving method.</p>
+<p>Scientific knowledge is advanced through a process known as the scientific method. Basically, ideas (in the form of theories and hypotheses) are tested against the real world (in the form of empirical observations), and those empirical observations lead to more ideas that are tested against the real world, and so on.</p>
+<p>The basic steps in the scientific method are:</p>
+<ul>
+<li>Observe a natural phenomenon and define a question about it</li>
+<li>Make a hypothesis, or potential solution to the question</li>
+<li>Test the hypothesis</li>
+<li>If the hypothesis is true, find more evidence or find counter-evidence</li>
+<li>If the hypothesis is false, create a new hypothesis or try again</li>
+<li>Draw conclusions and repeat–the scientific method is never-ending, and no result is ever considered perfect</li>
+</ul>
+<p>In order to ask an important question that may improve our understanding of the world, a researcher must first observe natural phenomena. By making observations, a researcher can define a useful question. After finding a question to answer, the researcher can then make a prediction (a hypothesis) about what they think the answer will be. This prediction is usually a statement about the relationship between two or more variables. After making a hypothesis, the researcher will then design an experiment to test their hypothesis and evaluate the data gathered. These data will either support or refute the hypothesis. Based on the conclusions drawn from the data, the researcher will then find more evidence to support the hypothesis, look for counter-evidence to further strengthen the hypothesis, revise the hypothesis and create a new experiment, or continue to incorporate the information gathered to answer the research question.</p>
+<h2 id="basic-principles-of-the-scientific-method">Basic Principles of the Scientific Method</h2>
+<p>Two key concepts in the scientific approach are theory and hypothesis. A <strong>theory</strong> is a well-developed set of ideas that propose an explanation for observed phenomena that can be used to make predictions about future observations. A <strong>hypothesis</strong> is a testable prediction that is arrived at logically from a theory. It is often worded as an if-then statement (e.g., if I study all night, I will get a passing grade on the test). The hypothesis is extremely important because it bridges the gap between the realm of ideas and the real world. As specific hypotheses are tested, theories are modified and refined to reflect and incorporate the result of these tests.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27190620/d961aca4fe0109c144b2cf02d83d988fe8fcd4b6.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27190620/d961aca4fe0109c144b2cf02d83d988fe8fcd4b6-300x159.jpeg" alt="A diagram has seven labeled boxes with arrows to show the progression in the flow chart. The chart starts at “Theory” and moves to “Generate hypothesis,” “Collect data,” “Analyze data,” and “Summarize data and report findings.” There are two arrows coming from “Summarize data and report findings” to show two options. The first arrow points to “Confirm theory.” The second arrow points to “Modify theory,” which has an arrow that points back to “Generate hypothesis.”"></a></p>
+<p><strong>Figure 3</strong>. The scientific method involves deriving hypotheses from theories and then testing those hypotheses. If the results are consistent with the theory, then the theory is supported. If the results are not consistent, then the theory should be modified and new hypotheses will be generated.</p>
+<p>Other key components in following the scientific method include verifiability, predictability, falsifiability, and fairness. <strong>Verifiability</strong> means that an experiment must be replicable by another researcher. To achieve verifiability, researchers must make sure to document their methods and clearly explain how their experiment is structured and why it produces certain results.</p>
+<p><strong>Predictability</strong> in a scientific theory implies that the theory should enable us to make predictions about future events. The precision of these predictions is a measure of the strength of the theory.</p>
+<p><strong>Falsifiability</strong> refers to whether a hypothesis can be disproved. For a hypothesis to be falsifiable, it must be logically possible to make an observation or do a physical experiment that would show that there is no support for the hypothesis. Even when a hypothesis cannot be shown to be false, that does not necessarily mean it is not valid. Future testing may disprove the hypothesis. This does not mean that a hypothesis <em>has</em> to be shown to be false, just that it can be tested.</p>
+<p>To determine whether a hypothesis is supported or not supported, psychological researchers must conduct hypothesis testing using statistics. Hypothesis testing is a type of statistics that determines the probability of a hypothesis being true or false. If hypothesis testing reveals that results were “statistically significant,” this means that there was support for the hypothesis and that the researchers can be reasonably confident that their result was not due to random chance. If the results are not statistically significant, this means that the researchers’ hypothesis was not supported.</p>
+<p><strong>Fairness</strong> implies that all data must be considered when evaluating a hypothesis. A researcher cannot pick and choose what data to keep and what to discard or focus specifically on data that support or do not support a particular hypothesis. All data must be accounted for, even if they invalidate the hypothesis.</p>
+<h2 id="applying-the-scientific-method">Applying the Scientific Method</h2>
+<p>To see how this process works, let’s consider a specific theory and a hypothesis that might be generated from that theory. As you’ll learn in a later module, the James-Lange theory of emotion asserts that emotional experience relies on the physiological arousal associated with the emotional state. If you walked out of your home and discovered a very aggressive snake waiting on your doorstep, your heart would begin to race and your stomach churn. According to the James-Lange theory, these physiological changes would result in your feeling of fear. A hypothesis that could be derived from this theory might be that a person who is unaware of the physiological arousal that the sight of the snake elicits will not feel fear.</p>
+<p>Remember that a good scientific hypothesis is falsifiable, or capable of being shown to be incorrect. Recall from the introductory module that Sigmund Freud had lots of interesting ideas to explain various human behaviors. However, a major criticism of Freud’s theories is that many of his ideas are not falsifiable; for example, it is impossible to imagine empirical observations that would disprove the existence of the id, the ego, and the superego—the three elements of personality described in Freud’s theories. Despite this, Freud’s theories are widely taught in introductory psychology texts because of their historical significance for personality psychology and psychotherapy, and these remain the root of all modern forms of therapy.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224504/CNX_Psych_02_01_freud.jpg" alt="(a)A photograph shows Freud holding a cigar. (b) The mind’s conscious and unconscious states are illustrated as an iceberg floating in water. Beneath the water’s surface in the “unconscious” area are the id, ego, and superego. The area just below the water’s surface is labeled “preconscious.” The area above the water’s surface is labeled “conscious.”"></p>
+<p><strong>Figure 4</strong>. Many of the specifics of (a) Freud’s theories, such as (b) his division of the mind into id, ego, and superego, have fallen out of favor in recent decades because they are not falsifiable. In broader strokes, his views set the stage for much of psychological thinking today, such as the unconscious nature of the majority of psychological processes.</p>
+<p>In contrast, the James-Lange theory does generate falsifiable hypotheses, such as the one described above. Some individuals who suffer significant injuries to their spinal columns are unable to feel the bodily changes that often accompany emotional experiences. Therefore, we could test the hypothesis by determining how emotional experiences differ between individuals who have the ability to detect these changes in their physiological arousal and those who do not. In fact, this research has been conducted and while the emotional experiences of people deprived of an awareness of their physiological arousal may be less intense, they still experience emotion (Chwalisz, Diener, &amp; Gallagher, 1988).</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Want to participate in a study? Visit <a href="http://psych.hanover.edu/Research/exponnet.html#Relationships">this Psychological Research on the Net website</a> and click on a link that sounds interesting to you in order to participate in online research.</p>
+<h2 id="why-the-scientific-method-is-important-for-psychology">Why the Scientific Method Is Important for Psychology</h2>
+<p>The use of the scientific method is one of the main features that separates modern psychology from earlier philosophical inquiries about the mind. Compared to chemistry, physics, and other “natural sciences,” psychology has long been considered one of the “social sciences” because of the subjective nature of the things it seeks to study. Many of the concepts that psychologists are interested in—such as aspects of the human mind, behavior, and emotions—are subjective and cannot be directly measured. Psychologists often rely instead on behavioral observations and self-reported data, which are considered by some to be illegitimate or lacking in methodological rigor. Applying the scientific method to psychology, therefore, helps to standardize the approach to understanding its very different types of information.</p>
+<p>The scientific method allows psychological data to be replicated and confirmed in many instances, under different circumstances, and by a variety of researchers. Through replication of experiments, new generations of psychologists can reduce errors and broaden the applicability of theories. It also allows theories to be tested and validated instead of simply being conjectures that could never be verified or falsified. All of this allows psychologists to gain a stronger understanding of how the human mind works.</p>
+<p>Scientific articles published in journals and psychology papers written in the style of the American Psychological Association (i.e., in “APA style”) are structured around the scientific method. These papers include an introduction, which introduces the background information and outlines the hypotheses; a methods section, which outlines the specifics of how the experiment was conducted to test the hypothesis; a results section, which includes the statistics that tested the hypothesis and state whether it was supported or not supported, and a discussion and conclusion, which state the implications of finding support for, or no support for, the hypothesis. Writing articles and papers that adhere to the scientific method makes it easy for future researchers to repeat the study and attempt to replicate the results.</p>
+<h3 id="notable-researchers">Notable Researchers</h3>
+<p>Psychological research has a long history involving important figures from diverse backgrounds. While the introductory module discussed several researchers who made significant contributions to the discipline, there are many more individuals who deserve attention in considering how psychology has advanced as a science through their work. For instance, Margaret Floy Washburn (1871–1939) was the first woman to earn a PhD in psychology. Her research focused on animal behavior and cognition (Margaret Floy Washburn, PhD, n.d.). Mary Whiton Calkins (1863–1930) was a preeminent first-generation American psychologist who opposed the behaviorist movement, conducted significant research into memory, and established one of the earliest experimental psychology labs in the United States (Mary Whiton Calkins, n.d.).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/21154956/WashburnProsser.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/21154956/WashburnProsser.jpeg" alt="Figure &quot;a&quot; is a portrait of Margaret Floy Washburn. Figure &quot;b&quot; a portrait of Inez Prosser."></a></p>
+<p><strong>Figure 5</strong>. (a) Margaret Floy Washburn was the first woman to earn a doctorate degree in psychology. (b) Psychologist Inez Beverly Prosser, who was the first African American woman to earn a PhD in psychology.</p>
+<p>Francis Sumner (1895–1954) was the first African American to receive a PhD in psychology in 1920. His dissertation focused on issues related to psychoanalysis. Sumner also had research interests in racial bias and educational justice. Sumner was one of the founders of Howard University’s department of psychology, and because of his accomplishments, he is sometimes referred to as the “Father of Black Psychology.” Thirteen years later, Inez Beverly Prosser (1895–1934) became the first African American woman to receive a PhD in psychology. Prosser’s research highlighted issues related to education in segregated versus integrated schools, and ultimately, her work was very influential in the hallmark Brown v. Board of Education Supreme Court ruling that segregation of public schools was unconstitutional (Ethnicity and Health in America Series: Featured Psychologists, n.d.).</p>
+<p>Although the establishment of psychology’s scientific roots occurred first in Europe and the United States, it did not take much time until researchers from around the world began to establish their own laboratories and research programs. For example, some of the first experimental psychology laboratories in South America were founded by Horatio Piñero (1869–1919) at two institutions in Buenos Aires, Argentina (Godoy &amp; Brussino, 2010). In India, Gunamudian David Boaz (1908–1965) and Narendra Nath Sen Gupta (1889–1944) established the first independent departments of psychology at the University of Madras and the University of Calcutta, respectively. These developments provided an opportunity for Indian researchers to make important contributions to the field (Gunamudian David Boaz, n.d.; Narendra Nath Sen Gupta, n.d.).</p>
+<p>When the American Psychological Association (APA) was first founded in 1892, all of the members were white males. However, by 1905, Mary Whiton Calkins was elected as the first female president of the APA, and by 1946, nearly one-quarter of American psychologists were female. Psychology became a popular degree option for students enrolled in the nation’s historically black higher education institutions, increasing the number of black Americans who went on to become psychologists. Given demographic shifts occurring in the United States and increased access to higher educational opportunities among historically underrepresented populations, there is reason to hope that the diversity of the field will increasingly match the larger population, and that the research contributions made by the psychologists of the future will better serve people of all backgrounds (Women and Minorities in Psychology, n.d.).</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>empirical:</strong> grounded in objective, tangible evidence that can be observed time and time again, regardless of who is observing</p>
+<p><strong>fairness:</strong> implies that all data must be considered when evaluating a hypothesis</p>
+<p><strong>falsifiable:</strong> able to be disproven by experimental results</p>
+<p><strong>hypothesis:</strong> (plural: hypotheses) tentative and testable statement about the relationship between two or more variables</p>
+<p><strong>predictability:</strong> implies that a theory should enable us to make predictions about future events</p>
+<p><strong>theory:</strong> well-developed set of ideas that propose an explanation for observed phenomena</p>
+<p><strong>verifiability:</strong> an experiment must be replicable by another researcher</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification and adaptation. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Why is Research Important?. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/2-1-why-is-research-important">https://openstax.org/books/psychology-2e/pages/2-1-why-is-research-important</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Psychology and the Scientific Method: From Theory to Conclusion, content on the scientific method principles. <strong>Provided by</strong>: Boundless. <strong>Located at</strong>: <a href="https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/researching-psychology-2/the-scientific-method-26/psychology-and-the-scientific-method-from-theory-to-conclusion-123-12658/images/the-scientific-method/">https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/researching-psychology-2/the-scientific-method-26/psychology-and-the-scientific-method-from-theory-to-conclusion-123-12658/images/the-scientific-method/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<hr>
+<h2 id="psych-in-real-life-brain-imaging-and-messy-science">Psych in Real Life: Brain Imaging and Messy Science</h2>
+<ul>
+<li>url_title:: &quot;Psych in Real Life: Brain Imaging and Messy Science&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe replication and its importance to psychology</li>
+</ul>
+<p>This is a little difficult for a psychologist to ask, but here goes: when you think of a “science” which one of these is more likely to come to mind: physics or psychology?</p>
+<p>We suspect you chose “physics” (though we don’t have the data, so maybe not!).</p>
+<p>Despite the higher “status” of physics and chemistry in the world of science over psychology, good scientific reasoning is just as important in psychology. Valid logic, careful methodology, strong results, and empirically supported conclusions should be sought after regardless of the topic area.</p>
+<p>We would like you to exercise your scientific reasoning using the example below. Read the passage “Watching TV is Related to Math Ability” and answer a few questions afterward.</p>
+<h3 id="watching-tv-is-related-to-math-ability">Watching TV is Related to Math Ability</h3>
+<p>Television is often criticized for having a negative impact on our youth. Everything from aggressive behavior to obesity in children seems to be blamed on their television viewing habits. On the other hand, TV also provides us with much of our news and entertainment, and has become a major source of education for children, with shows like Sesame Street teaching children to count and say the alphabet.</p>
+<p>Recently, researchers Ian McAtee and Leo Geraci at Harvard University did some research to examine if TV watching might have beneficial effects on cognition. The approach was fairly simple. Children between the ages of 12-14 were either asked to watch a television sitcom or do arithmetic problems, and while they were doing these activities, images of their brains were recorded using fMRI (functional magnetic resonance imaging). This technique measures the flow of blood to specific parts of the brain during performance, allowing scientists to create images of the areas that are activated during cognition.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03123719/Screen-Shot-2017-08-03-at-7.32.47-AM1.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03123719/Screen-Shot-2017-08-03-at-7.32.47-AM1-240x300.png" alt="Two images of brain fMRI scans. The top image shows red areas of activation in three different regions on the back of the head, and he bottom scan shows activation in two similar areas. A bar showing the intensity of the activation from red (2) to yellow (10) is shown next to the brain scans."></a>Results revealed that similar areas of the parietal lobes were active during TV watching (the red area of the brain image on the top) and during arithmetic problem solving (the red area of the brain image on the bottom). This area of the brain has been implicated in other research as being important for abstract thought, suggesting that both TV watching and arithmetic processing may have beneficial effects on cognition. “We were somewhat surprised that TV watching would activate brain areas involved in higher-order thought processes because TV watching is typically considered a passive activity,” said McAtee. Added Geraci, “The next step is to see what specific content on the TV show led to the pattern of activation that mimicked math performance, so we need to better understand that aspect of the data. We also need to compare TV watching to other types of cognitive skills, like reading comprehension and writing.” Although this is only the beginning to this type of research, these findings certainly question the accepted wisdom that the “idiot box” is harmful to children’s cognitive functioning.</p>
+<p>Indicate whether you agree or disagree with the following statements about the article. There are no incorrect answers.</p>
+<p>The article was well written.</p>
+<ol>
+<li>strongly disagree</li>
+<li>disagree</li>
+<li>agree</li>
+<li>strongly agree</li>
+</ol>
+<p>The title, “Watching TV is Related to Math Ability” was a good description of the results.</p>
+<ol>
+<li>strongly disagree</li>
+<li>disagree</li>
+<li>agree</li>
+<li>strongly agree</li>
+</ol>
+<p>The scientific argument in the article made sense.</p>
+<ol>
+<li>strongly disagree</li>
+<li>disagree</li>
+<li>agree</li>
+<li>strongly agree</li>
+</ol>
+<p>It is pretty surprising to learn that watching television can improve your math ability, and the fact that we can identify the area in the brain that produces this relationship shows how far psychology has progressed as a science.</p>
+<p>Or maybe not.</p>
+<p>The article you just read and rated was <em>not</em> an account of real research. Ian McAtee and Leo Geraci are not real people and the study discussed was never conducted (as far as we know). The article was written by psychologists David McCabe and Alan Castel for a study they published in 2008.[1] They asked people to do exactly what you just did: read this article and two others and rate them.</p>
+<p>McCabe and Castel wondered if people’s biases about science influence the way they judge the information they read. In other words, if what you are reading <em>looks</em> more scientific, do you assume it is better science?</p>
+<p>In recent years, neuroscience has impressed a lot of people as “real science,” when compared to the “soft science” of psychology. Did you notice the pictures of the brain next to the article that you just read? Do you think that picture had any influence on your evaluation of the scientific quality of the article? The brain pictures actually added no new information that was not already in the article itself other than showing you exactly where in the brain the relevant part of the parietal lobe is located. The red marks are in the same locations in both brain pictures, but we already knew that “Results revealed that similar areas in the parietal lobes were active during TV watching…and during arithmetic solving.”</p>
+<h2 id="mccabe--castel-experiment">McCabe &amp; Castel Experiment</h2>
+<p>McCabe and Castel wrote three brief (fake) scientific articles that appeared to be typical reports like those you might find in a textbook or news source, all with brain activity as part of the story. In addition to the one you read (“Watching TV is related to math ability “) others had these titles: “Meditation enhances creative thought” and “Playing video games benefits attention.”</p>
+<p>All of the articles had flawed scientific reasoning. In the “Watching TV is Related to Math Ability” article that you read, the only “result” that is reported is that a particular brain area (a part of the parietal lobe) is active when a person is watching TV and when they are working on math. The highlighted part of the next sentence is where the article goes too far: “This area of the brain has been implicated in other research as being important for abstract thought, <strong>suggesting that both tv watching and arithmetic processing may have beneficial effects on cognition</strong>.”</p>
+<p>The fact that the same area of the brain is active for two different activities does <em>not</em> “suggest” that either one is beneficial or that there is any interesting similarity in mental or brain activity between the processes. The final part of the article goes on and on about how this supposedly surprising finding is intriguing and deserves extensive exploration.</p>
+<p>The researchers asked 156 college students to read the three articles and rate them for how much they made sense scientifically, as well as rating the quality of the writing and the accuracy of the title.</p>
+<p>Everybody read the same articles, but the picture that accompanied the article differed according to create three experimental conditions. For the article in the brain image condition, subjects saw one of the following brain images to the side of the article:</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144210/image3.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144210/image3.png" alt="3 different images. The first is the brain activation fMRI showing activity in the brain, the other shows an overhead fMRI of activation and a statement that says &quot;meditation enhances creative thought.&quot; The last shows another brain scan saying &quot;playing video games enhances attention.&quot;"></a></p>
+<p><strong>Figure 1</strong>. Subjects in the experimental condition were shown ONE of the applicable brain images with each article they read.</p>
+<p>Graphs are a common and effective way to display results in science and other areas, but most people are so used to seeing graphs that (according to McCabe and Castel) people should be less impressed by them than by brain images. The figures below show the graphs that accompanied the three articles for the bar graph condition. The results shown in the graphs were made up by the experimenters, but what they show is consistent with the information in the article.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144302/image2.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144302/image2.png" alt="3 bar graphs. Participants in the bar graph condition were shown one of the following with each article they read: The first bar graph called “Watching TV is Related to Math Ability&quot; shows two bars of about the same height measuring parietal lobe activation. The second bar graph called “Meditation Enhances Creative Thought” shows similar levels of activation in the occipital, temporal, parietal, and frontal lobes. The third bar graph called “Playing Video Games Enhances Attention” shows shows more activation in the parietal lobe in gaming experts than in gaming novices."></a></p>
+<p><strong>Figure 2</strong>. Participants in the bar graph condition were shown ONE of the bar graphs with each article they read.</p>
+<p>Finally, in the control condition, the article was presented without any accompanying figure or picture. The control condition tells us how the subjects rate the articles without any extraneous, but potentially biasing, illustrations.</p>
+<h3 id="procedure">Procedure</h3>
+<p>Each participant read all three articles: one with a brain image, one with a bar graph, and one without any illustration (the control condition). Across all the participants, each article was presented approximately the same number of times in each condition, and the order in which the articles were presented was randomized.</p>
+<h3 id="ratings">Ratings</h3>
+<p>Immediately after reading each article, the participants rated their agreement with three statements: (a) The article was well written, (b) The title was a good description of the results, and (c) The scientific reasoning in the article made sense. Each rating was on a 4-point scale: (score=1) strongly disagree, (score=2) disagree, (score=3) agree, and (score=4) strongly agree. Remember that the written part of the articles was exactly the same in all three conditions, so the ratings should have been the same if people were not using the illustrations to influence their conclusions.</p>
+<p>Before going on, let’s make sure you know the basic design of this experiment. In other words, can you identify the critical variables used in the study according to their function?</p>
+<h3 id="results-for-a-accuracy-of-the-title-and-b-quality-of-the-writing">Results for (a) Accuracy of the Title and (b) Quality of the Writing</h3>
+<p>The first two questions for the participants were about (a) the accuracy of the title and (b) the quality of the writing. These questions were included to assure that the participants had read the articles closely. The experimenters expected that there would be no differences in the ratings for the three conditions for these questions. For the question about the title, their prediction was correct. Subjects gave about the same rating to the titles in all three conditions, agreeing that it was accurate.</p>
+<p>For question (b) about the quality of the writing, the experimenters found that the two conditions with illustrations (the brain images and the bar graphs) were rated higher than the control condition. Apparently just the presence of an illustration made the writing seem better. This result was not predicted.</p>
+<h3 id="results-for-c-scientific-reasoning-assessment">Results for (c) Scientific Reasoning Assessment</h3>
+<p>The main hypothesis behind this study was that subjects would rate the quality of the scientific reasoning in the article higher when it was accompanied by a brain image than when there was a bar graph or there was no illustration at all. If the ratings differed among conditions, then the illustrations—which added nothing substantial that was not in the writing—had to be the cause.</p>
+<h3 id="try-it">Try It</h3>
+<p>Use the graph below to show your predicted results of the experiment. Move the bars to the point where you think people generally agreed or disagreed with the statement that “the scientific reasoning in the article made sense.” Higher bars mean that the person believes the reasoning in the article is better, and a lower bar means that they judge the reasoning as worse. Click on “Show Results” when you are done to compare your prediction with the actual results.</p>
+<p>Show Results</p>
+<h3 id="conclusions">Conclusions</h3>
+<p>McCabe and Castel conducted two more experiments, changing the stories, the images, and the wording of the questions in each. Across the three experiments, they tested almost 400 college students and their results were consistent: <em>participants rated the quality of scientific reasoning higher when the writing was accompanied by a brain image than in other conditions</em>.</p>
+<p>The implications of this study go beyond brain images. The deeper idea is that any information that symbolizes something we believe is important can influence our thinking, sometimes making us less thoughtful than we might otherwise be. This other information could be a brain image or some statistical jargon that sounds impressive or a mathematical formula that we don’t understand or a statement that the author teaches at Harvard University rather than Littletown State College.</p>
+<p>In a study also published in 2008, Deena Weisberg and her colleagues at Yale University conducted a study similar to the one you just read.[2] Weisberg had people read brief descriptions of psychological phenomena (involving memory, attention, reasoning, emotion, and other similar topics). They rated the scientific quality of the explanations. Instead of images, Weisberg had some explanations that included entirely superfluous and useless brain information (e.g., “people feel strong emotion because the amygdala processes emotion”) or no such brain information. Weisberg found that a good explanation was rated as even better when it included a brain reference (which was completely irrelevant). When the explanation was flawed, students were fairly good at catching the reasoning problems UNLESS the explanation contained the irrelevant brain reference. In that case, the students rated the flawed explanations as being good. Weisberg and her colleague call the problem “the seductive allure of neuroscience explanations.”</p>
+<h2 id="does-it-replicate-the-messy-world-of-real-science">Does it Replicate? The Messy World of Real Science</h2>
+<p>A few years after the McCabe and Castel study was published, some psychologists[3] at the University of Victoria in New Zealand, led by Robert Michael, were intrigued by the results and they were impressed by how frequently the paper had been cited by other researchers (about 40 citations per year between 2008 and 2012—a reasonably strong citation record). They wanted to explore the brain image effect, so they started by simply replicating the original study.[4]</p>
+<p>In their first attempt at replication, the researchers recruited and tested people using an online site called Mechanical Turk. With 197 participants, they found no hint of an effect of the brain image on people’s judgments about the validity of the conclusions of the article they read. In a second replication study, they tested students from their university and again found no statistically significant effect. In this second attempt, the results were in the predicted direction (the presence of a brain image was associated with higher ratings), but the differences were not strong enough to be persuasive. They tried slight variations on instructions and people recruited, but across 10 different replication studies, only one produced a statistically significant effect.</p>
+<p>So, did Dr. Michael and his colleagues accuse McCabe and Castel of doing something wrong? Did they tear apart the experiments we described earlier and show that they were poorly planned, incorrectly analyzed, or interpreted in a deceptive way?</p>
+<p>Not at all.</p>
+<p>It is instructive to see how professional scientists approached the problem of failing to replicate a study. Here is a quick review of the approach taken by the researchers who did not replicate the McCabe and Castel study:</p>
+<ul>
+<li>First, they did not question the integrity of the original research. David McCabe[5] and Alan Castel are respected researchers who carefully reported on a series of well-conducted experiments. They even noted that the original paper was carefully reported, even if journalists and other psychologists had occasionally exaggerated the findings: “Although McCabe and Castel (2008) did not overstate their findings, many others have. Sometimes these overstatements were linguistic exaggerations…Other overstatements made claims beyond what McCabe and Castel themselves reported.” [p. 720]</li>
+<li>Replication is an essential part of the scientific process. Michael and his colleagues did not back off of the importance of their difficulty reproducing the McCabe and Castel results. Clearly, McCabe and Castel’s conclusions—that “there is something special about the brain images with respect to influencing judgments of scientific credibility”—need to taken as possibly incorrect.</li>
+<li>Michael and his colleagues looked closely at the McCabe and Castel results and their own, and they looked for interesting reasons that the results of the two sets of studies might be different.
+<ul>
+<li>
+<ul>
+<li><strong>Subtle effects</strong>: Perhaps the brain pictures really do influence their judgments, but only for some people or under very specific circumstances.</li>
+<li><strong>Alternative explanations</strong>: Perhaps people assume that irrelevant information is not typically presented in scientific reports. People may have believed that the brain images provided additional evidence for the claims.</li>
+<li><strong>Things have changed</strong>: The McCabe and Castel study was conducted in 2008 and the failed replication was in 2013. Neuroscience was very new to the general public in 2008, but a mere 5 years later, in 2013, it may have seemed less impressive.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Do images really directly affect people’s judgments of the quality of scientific thinking? Maybe yes. Maybe no. That’s still an open question.</p>
+<h3 id="the-replication-crisis">The “Replication Crisis”</h3>
+<p>In recent years, there has been increased effort in the sciences (psychology, medicine, economics, etc.) to redo previous experiments to test their reliability. The findings have been disappointing at times.</p>
+<p>The <a href="https://osf.io/ezcuj/">Reproducibility Project</a> has attempted to replicate 100 studies within the field of psychology that were published with statistically significant results; they found that many of these results did not replicate well. Some did not reach statistical significance when replicated. Others reached statistical significance, but with much weaker effects than in the original study.</p>
+<p>How could this happen?</p>
+<ul>
+<li><strong>Chance</strong>. Psychologist use statistics to confirm that their results did not occur simply because of chance. Within psychology, the most common standard for p-values is “p &lt; .05”. This p-value means that there is less than a 5% probability that the results of an experiment happened just by random chance, and a 95% probability that the results were statistically significant. Even though a published study may reveal statistically significant results, there is still a possibility that those results were random.</li>
+<li><strong>Publication bias.</strong> Psychology research journals are far more likely to publish studies that find statistically significant results than they are studies that fail to find statistically significant results. What this means is that studies that yield results that are not statistically significant are <em>very unlikely</em> to get published. Let’s say that twenty researchers are all studying the same phenomenon. Out of the twenty, one gets statistically significant results, while the other nineteen all get non-significant results. The statistically significant result was likely just a result of randomness, but because of publication bias, that one study’s results are far more likely to be published than are the results of the other nineteen.</li>
+</ul>
+<p>Note that this “replication crisis” itself does not mean that the original studies were bad, fraudulent, or even wrong. What it means, at its core, is that replication found results that were different from the results of the original studies. These results were sufficiently different that we might no longer be secure in our knowledge of what those results mean. Further replication and testing in other directions might give us a better understanding of why the results were different, but that too will require time and resources.</p>
+<h2 id="one-final-note">One Final Note</h2>
+<p>When we wrote to Dr. Alan Castel for permission to use his stimuli in this article, he not only consented, but he also sent us his data and copies of all of his stimuli. He sent copies of research by a variety of people, some research that has supported his work with David McCabe and some that has not. He even included a copy of the 10-experiment paper that you just read about, the one that failed to replicate the McCabe and Castel study.</p>
+<p>The goal is to find the truth, not to insist that everything you publish is the last word on the topic. In fact, if it is the last word, then you are probably studying something so boring that no one else really cares.</p>
+<p>Scientists disagree with one another all the time. But the disagreements are (usually) not personal. The evidence is not always neat and tidy, and the best interpretation of complex results is seldom obvious. At its best, scientists can disagree passionately about theory and evidence, and later to relax over a cool drink as friends.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Brain Imaging and Messy Science. <strong>Authored by</strong>: Patrick Carroll for Lumen Learning. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>The Replication Crisis. <strong>Authored by</strong>: Colin Thomas William. <strong>Provided by</strong>: Ivy Tech Community College. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>Seeing is believing: The effect of brain images on judgments of scientific reasoning. <strong>Authored by</strong>: David P. McCabe &amp; Alan D. Castel (2008). <strong>Provided by</strong>: Cognition. <strong>License</strong>: <em>All Rights Reserved</em>. <strong>License Terms</strong>: Used with permission from Alan Castel</li>
+</ul>
+<hr>
+<ol>
+<li>David P. McCabe &amp; Alan D. Castel (2008). Seeing is believing: The effect of brain images on judgments of scientific reasoning. Cognition, 107, 343-352. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-1">↵</a></li>
+<li>Deena Skolnick Weisberg, Frank C. Keil, Joshua Goodstein, Elizabeth Rawson, &amp; Jeremy R. Gray (2008). The seductive allure of neuroscience explanations. Journal of Cognitive Neuroscience, 20(3), 470-477 <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-2">↵</a></li>
+<li>Robert B. Michael, Eryn J. Newman, Matti Vuorre, Geoff Cumming, and Maryanne Garry (2013). On the (non)persuasive power of a brain image. Psychonomic Bulletin &amp; Review, 20(4), 720-725. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-3">↵</a></li>
+<li>They actually tried to replicate Experiment 3 in the McCabe and Castel study. You read Experiment 1. These two experiments were similar and supported the same conclusions, but Dr. Michael and his colleagues preferred Experiment 3 for some technical reasons. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-4">↵</a></li>
+<li>David McCabe, the first author of the original paper, tragically passed away in 2011 at the age of 41. At the time of his death, he was an assistant professor of Psychology at Colorado State University and he had started to build a solid body of published research, and he was also married with two young children. The problems with replicating his experiments were only published after his death, so it is impossible to know what his thoughts might have been about the issues these challenges raised. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-5">↵</a></li>
+</ol>
+<hr>
+<h2 id="putting-it-together-psychological-research">Putting It Together: Psychological Research</h2>
+<ul>
+<li>url_title:: &quot;Putting It Together: Psychological Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>In this module, you learned to</p>
+<ul>
+<li>define and apply the scientific method to psychology</li>
+<li>describe the strengths and weaknesses of descriptive, experimental, and correlational research</li>
+<li>define the basic elements of a statistical investigation</li>
+</ul>
+<p>Psychologists use the scientific method to examine human behavior and mental processes. Some of the methods you learned about include descriptive, experimental, and correlational research designs.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch the CrashCourse video to review the material you learned, then read through the following examples and see if you can come up with your own design for each type of study.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Lifespan+Development/Transcriptions/PsychologicalResearchCrashCoursePsychology2_transcript.txt">view the transcript for “Psychological Research: Crash Course Psychology #2” here (opens in new window)</a>.</p>
+<p><strong>Case Study:</strong> a detailed analysis of a particular person, group, business, event, etc. This approach is commonly used to learn more about rare examples with the goal of describing that particular thing.</p>
+<ul>
+<li>Ted Bundy was one of America’s most notorious serial killers who murdered at least 30 women and was executed in 1989. Dr. Al Carlisle evaluated Bundy when he was first arrested and conducted a psychological analysis of Bundy’s development of his sexual fantasies merging into reality (Ramsland, 2012). Carlisle believes that there was a gradual evolution of three processes that guided his actions: fantasy, dissociation, and compartmentalization (Ramsland, 2012). Read <em><a href="https://www.psychologytoday.com/blog/shadow-boxing/201208/imagining-ted-bundy">Imagining Ted Bundy</a></em> (http://goo.gl/rGqcUv) for more information on this case study.</li>
+</ul>
+<p><strong>Naturalistic Observation</strong>: a researcher unobtrusively collects information without the participant’s awareness.</p>
+<ul>
+<li>Drain and Engelhardt (2013) observed six nonverbal children with autism’s evoked and spontaneous communicative acts. Each of the children attended a school for children with autism and were in different classes. They were observed for 30 minutes of each school day. By observing these children without them knowing, they were able to see true communicative acts without any external influences.</li>
+</ul>
+<p><strong>Survey</strong>: participants are asked to provide information or responses to questions on a survey or structure assessment.</p>
+<ul>
+<li>Educational psychologists can ask students to report their grade point average and what, if anything, they eat for breakfast on an average day. A healthy breakfast has been associated with better academic performance (Digangi’s 1999).</li>
+</ul>
+<p><strong>Archival research:</strong> researchers examine data that has already been collected for other purposes.</p>
+<ul>
+<li>Anderson (1987) tried to find the relationship between uncomfortably hot temperatures and aggressive behavior, which was then looked at with two studies done on violent and nonviolent crime. Based on previous research that had been done by Anderson and Anderson (1984), it was predicted that violent crimes would be more prevalent during the hotter time of year and the years in which it was hotter weather in general. The study confirmed this prediction.</li>
+</ul>
+<p><strong>Longitudinal Study:</strong> researchers recruit a sample of participants and track them for an extended period of time.</p>
+<ul>
+<li>In a study of a representative sample of 856 children Eron and his colleagues (1972) found that a boy’s exposure to media violence at age eight was significantly related to his aggressive behavior ten years later, after he graduated from high school.</li>
+</ul>
+<p><strong>Cross-Sectional Study:</strong> researchers gather participants from different groups (commonly different ages) and look for differences between the groups.</p>
+<ul>
+<li>In 1996, Russell surveyed people of varying age groups and found that people in their 20s tend to report being more lonely than people in their 70s.</li>
+</ul>
+<p><strong>Correlational Design:</strong> two different variables are measured to determine whether there is a relationship between them.</p>
+<ul>
+<li>Thornhill et al. (2003) had people rate how physically attractive they found other people to be. They then had them separately smell t-shirts those people had worn (without knowing which clothes belonged to whom) and rate how good or bad their body odor was. They found that the more attractive someone was the more pleasant their body odor was rated to be.</li>
+</ul>
+<p><strong>Experiment:</strong> researchers create a controlled environment in which they can carefully manipulate at least one variable to test its effect on another. The key here is that the researchers can cause a change in one variable.</p>
+<ul>
+<li>Clinical psychologists can test a new pharmaceutical treatment for depression by giving some patients the new pill and others an already-tested one to see which is the more effective treatment.</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="discussion-research-in-psychology--introduction-to-psychology">Discussion: Research in Psychology | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Discussion: Research in Psychology | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology/</li>
+</ul>
+<h2 id="discussion-research-in-psychology">Discussion: Research in Psychology</h2>
+<p><strong>Step 1:</strong> To view this discussion prompt, click on <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology-2/">Discussion: Research in Psychology.</a></p>
+<p><strong>Step 2:</strong> Read the prompt and instructions, then post your response and comments inside of the discussion forum.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Discussion: Research in Psychology. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>Licenses and Attributions</p>
+<p><a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/">Previous</a> <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-14/">Next</a></p>
+<hr>
+<h2 id="evaluating-psychotherapy--introduction-to-psychology">Evaluating Psychotherapy | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Evaluating Psychotherapy | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/humanistic-theory/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare and evaluate various forms of psychotherapy</li>
+</ul>
+<h2 id="evaluating-various-forms-of-psychotherapy">Evaluating Various Forms of Psychotherapy</h2>
+<p>How can we assess the effectiveness of psychotherapy? Is one technique more effective than another? For anyone considering therapy, these are important questions. According to the American Psychological Association, three factors work together to produce successful treatment. The first is the use of evidence-based treatment that is deemed appropriate for your particular issue. The second important factor is the clinical expertise of the psychologist or therapist. The third factor is your own characteristics, values, preferences, and culture. Many people begin psychotherapy feeling like their problem will never be resolved; however, psychotherapy helps people see that they can do things to make their situation better. Psychotherapy can help reduce a person’s anxiety, depression, and maladaptive behaviors. Through psychotherapy, individuals can learn to engage in healthy behaviors designed to help them better express emotions, improve relationships, think more positively, and perform more effectively at work or school. In discussing therapeutic orientations, it is important to note that many clinicians incorporate techniques from multiple approaches, a practice known as integrative or <strong>eclectic psychotherapy</strong>.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/05205823/Delta_College_Counseling_and_Career_Services.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/05205823/Delta_College_Counseling_and_Career_Services.jpg" alt="Two people having a conversation in a library."></a></p>
+<p><strong>Figure 1</strong>. Therapy comes in many different forms and settings, but one critical factor in its success is the relationship between the therapist and client.</p>
+<p>Consider the following advantages and disadvantages of some of the major forms of psychotherapy:</p>
+<ul>
+<li><strong>Psychoanalysis</strong>: Psychoanalysis was once the only type of psychotherapy available, but presently the number of therapists practicing this approach is decreasing around the world. Psychoanalysis is not appropriate for some types of patients, including those with severe psychopathology or mental retardation. Further, psychoanalysis is often expensive because treatment usually lasts many years. Still, some patients and therapists find the prolonged and detailed analysis very rewarding.</li>
+<li><strong>Cognitive-Behavioral Therapy</strong>: CBT interventions tend to be relatively brief, making them cost-effective for the average consumer. In addition, CBT is an intuitive treatment that makes logical sense to patients. It can also be adapted to suit the needs of many different populations. One disadvantage, however, is that CBT does involve significant effort on the patient’s part, because the patient is an active participant in treatment. Therapists often assign “homework” (e.g., worksheets for recording one’s thoughts and behaviors) between sessions to maintain the cognitive and behavioral habits the patient is working on. The greatest strength of CBT is the abundance of empirical support for its effectiveness.</li>
+<li><strong>Humanistic Therapy</strong>: One key advantage of person-centered therapy is that it is highly acceptable to patients. In other words, people tend to find the supportive, flexible environment of this approach very rewarding. Furthermore, some of the themes of PCT translate well to other therapeutic approaches. For example, most therapists of any orientation find that clients respond well to being treated with nonjudgmental empathy.</li>
+</ul>
+<p>Many studies have explored the effectiveness of psychotherapy. For example, one large-scale study that examined 16 meta-analyses of CBT reported that it was equally effective or more effective than other therapies in treating PTSD, generalized anxiety disorder, depression, and social anxiety disorder (Butlera, Chapmanb, Formanc, &amp; Becka, 2006). Another study found that CBT was as effective at treating depression (43% success rate) as prescription medication (50% success rate) compared to the placebo rate of 25% (DeRubeis et al., 2005). Another meta-analysis found that psychodynamic therapy was also as effective at treating these types of psychological issues as CBT (Shedler, 2010). However, no studies have found one psychotherapeutic approach more effective than another (Abbass, Kisely, &amp; Kroenke, 2006; Chorpita et al., 2011), nor have they shown any relationship between a client’s treatment outcome and the level of the clinician’s training or experience (Wampold, 2007). Regardless of which type of psychotherapy an individual chooses, one critical factor that determines the success of treatment is the person’s relationship with the psychologist or therapist.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Review each of the types of psychotherapy you’ve learned about in this lesson in the following CrashCourse video.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/GettingHelpPsychotherapyCrashCoursePsychology35.txt">view the transcript for “Getting Help – Psychotherapy: Crash Course Psychology #35” here (opens in new window)</a>.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>eclectic psychotherapy</strong>: also called integrative psychotherapy, this term refers to approaches combining multiple orientations (e.g., CBT with psychoanalytic elements).</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Types of Treatment. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment">https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Definition of eclectic therapy and summaries about advantages and disadvantages of treatments from Therapeutic Orientations. <strong>Authored by</strong>: Hannah Boettcher, Stefan G. Hofmann, and Q. Jade Wu. <strong>Provided by</strong>: Boston University. <strong>Located at</strong>: <a href="http://nobaproject.com/modules/therapeutic-orientations">http://nobaproject.com/modules/therapeutic-orientations</a>. <strong>Project</strong>: The Noba Project. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+<li>Counseling image. <strong>Authored by</strong>: Jefferyrauschert. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Delta_College_Counseling_and_Career_Services.jpg">https://commons.wikimedia.org/wiki/File:Delta_College_Counseling_and_Career_Services.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>Getting Help - Psychotherapy: Crash Course Psychology #35. <strong>Authored by</strong>: Hank Green. <strong>Provided by</strong>: CrashCourse. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=6nEL44QkL9w&amp;index=35&amp;list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6">https://www.youtube.com/watch?v=6nEL44QkL9w&amp;index=35&amp;list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6</a>. <strong>License</strong>: <em>Other</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+</ul>
+<hr>
+<h2 id="studying-stress--introduction-to-psychology">Studying Stress | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Studying Stress | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/studying-stress/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the contributions of Walter Cannon (fight or flight) and Hans Selye (general adaptation syndrome) to the stress research field</li>
+</ul>
+<h2 id="early-contributions-to-the-study-of-stress">Early Contributions to the Study of Stress</h2>
+<p>As previously stated, scientific interest in stress goes back nearly a century. One of the early pioneers in the study of stress was Walter Cannon, an eminent American physiologist at Harvard Medical School (Figure 1). In the early part of the 20th century, Cannon was the first to identify the body’s physiological reactions to stress.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26143440/Walter_Bradford_Cannon.jpg" alt="Photo of Walter Cannon. He is sitting down, wearing glasses and holding a pipe."></p>
+<p><strong>Figure 1</strong>. Harvard physiologist Walter Cannon first articulated and named the fight-or-flight response, the nervous system’s sympathetic response to a significant stressor.</p>
+<h2 id="cannon-and-the-fight-or-flight-response">Cannon and the Fight-or-Flight Response</h2>
+<p>Imagine that you are hiking in the beautiful mountains of Colorado on a warm and sunny spring day. At one point during your hike, a large, frightening-looking black bear appears from behind a stand of trees and sits about 50 yards from you. The bear notices you, sits up, and begins to lumber in your direction. In addition to thinking, “This is definitely not good,” a constellation of physiological reactions begins to take place inside you. Prompted by a deluge of epinephrine (adrenaline) and norepinephrine (noradrenaline) from your adrenal glands, your pupils begin to dilate. Your heart starts to pound and speeds up, you begin to breathe heavily and perspire, you get butterflies in your stomach, and your muscles become tense, preparing you to take some kind of direct action. Cannon proposed that this reaction, which he called the <strong>fight-or-flight response</strong>, occurs when a person experiences very strong emotions—especially those associated with a perceived threat (Cannon, 1932). During the fight-or-flight response, the body is rapidly aroused by activation of both the sympathetic nervous system and the endocrine system (Figure 2). This arousal helps prepare the person to either fight or flee from a perceived threat.</p>
+<p><img src="https://textimgs.s3.amazonaws.com/ospsych/m49142/CNX_Psych_14_01_Fightflight.jpg#fixme" alt="A figure shows the basic outline of a human body and indicates the body’s various responses to fight or flight, including: pupils dilate, heart rate increases, muscles tense and may tremble, respiration quickens, bronchial tubes dilate, and perspiration begins."></p>
+<p><strong>Figure 2</strong>. Fight or flight is a physiological response to a stressor.</p>
+<p>According to Cannon, the fight-or-flight response is a built-in mechanism that assists in maintaining homeostasis—an internal environment in which physiological variables such as blood pressure, respiration, digestion, and temperature are stabilized at levels optimal for survival. Thus, Cannon viewed the fight-or-flight response as adaptive because it enables people to adjust internally and externally to threats in their environment, allowing them to continue to be alive and overcome the threat.</p>
+<h2 id="selye-and-the-general-adaptation-syndrome">Selye and the General Adaptation Syndrome</h2>
+<p><img src="https://textimgs.s3.amazonaws.com/ospsych/m49142/CNX_Psych_14_01_Hans.jpg#fixme" alt="A stamp featuring Hans Selye is shown."></p>
+<p><strong>Figure 3</strong>. Hans Selye specialized in research about stress. In 2009, his native Hungary honored his work with this stamp, released in conjunction with the 2nd annual World Conference on Stress.</p>
+<p>Another important early contributor to the stress field was Hans Selye, mentioned earlier. He would eventually become one of the world’s foremost experts in the study of stress (Figure 3). As a young assistant in the biochemistry department at McGill University in the 1930s, Selye was engaged in research involving sex hormones in rats. Although he was unable to find an answer for what he was initially researching, he incidentally discovered that when exposed to prolonged negative stimulation (<strong>stressors</strong>)—such as extreme cold, surgical injury, excessive muscular exercise, and shock—the rats showed signs of adrenal enlargement, thymus and lymph node shrinkage, and stomach ulceration. Selye realized that these responses were triggered by a coordinated series of physiological reactions that unfold over time during continued exposure to a stressor. These physiological reactions were nonspecific, which means that regardless of the type of stressor, the same pattern of reactions would occur. What Selye discovered was the general adaptation syndrome, the body’s nonspecific physiological response to stress.</p>
+<p>The general adaptation syndrome, shown in Figure 4, consists of three stages: (1) alarm reaction, (2) stage of resistance, and (3) stage of exhaustion (Selye, 1936; 1976). <strong>Alarm reaction</strong> describes the body’s immediate reaction upon facing a threatening situation or emergency, and it is roughly analogous to the fight-or-flight response described by Cannon. During an alarm reaction, you are alerted to a stressor, and your body alarms you with a cascade of physiological reactions that provide you with the energy to manage the situation. A person who wakes up in the middle of the night to discover her house is on fire, for example, is experiencing an alarm reaction.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/05212101/7b8e075a73cce599a7fd57d981d9b1de55b759de.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/05212101/7b8e075a73cce599a7fd57d981d9b1de55b759de.jpeg" alt="A graph shows the three stages of Selye’s general adaption syndrome: alarm reaction, resistance, and exhaustion. The x-axis represents time while the y-axis represents stress levels. The x-axis is labeled “Time” and the y-axis is labeled “Stress resistance.” The graph shows that an increase in time and stress ultimately leads to exhaustion."></a></p>
+<p><strong>Figure 4</strong>. The three stages of Selye’s general adaptation syndrome are shown in this graph. Prolonged stress ultimately results in exhaustion.</p>
+<p>If exposure to a stressor is prolonged, the organism will enter the <strong>stage of resistance</strong>. During this stage, the initial shock of alarm reaction has worn off and the body has adapted to the stressor. Nevertheless, the body also remains on alert and is prepared to respond as it did during the alarm reaction, although with less intensity. For example, suppose a child who went missing is still missing 72 hours later. Although the parents would obviously remain extremely disturbed, the magnitude of physiological reactions would likely have diminished over the 72 intervening hours due to some adaptation to this event.</p>
+<p>If exposure to a stressor continues over a longer period of time, the <strong>stage of exhaustion</strong> ensues. At this stage, the person is no longer able to adapt to the stressor: the body’s ability to resist becomes depleted as physical wear takes its toll on the body’s tissues and organs. As a result, illness, disease, and other permanent damage to the body—even death—may occur. If a missing child still remained missing after three months, the long-term stress associated with this situation may cause a parent to literally faint with exhaustion at some point or even to develop a serious and irreversible illness.</p>
+<p>In short, Selye’s general adaptation syndrome suggests that stressors tax the body via a three-phase process—an initial jolt, subsequent readjustment, and a later depletion of all physical resources—that ultimately lays the groundwork for serious health problems and even death. It should be pointed out, however, that this model is a response-based conceptualization of stress, focusing exclusively on the body’s physical responses while largely ignoring psychological factors such as appraisal and interpretation of threats. Nevertheless, Selye’s model has had an enormous impact on the field of stress because it offers a general explanation for how stress can lead to physical damage and, thus, disease. As we shall discuss later, prolonged or repeated stress has been implicated in development of a number of disorders such as hypertension and coronary artery disease.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>alarm reaction:</strong> first stage of the general adaptation syndrome; characterized as the body’s immediate physiological reaction to a threatening situation or some other emergency; analogous to the fight-or-flight response<br>
+<strong>fight-or-flight response:</strong> set of physiological reactions (increases in blood pressure, heart rate, respiration rate, and sweat) that occur when an individual encounters a perceived threat; these reactions are produced by activation of the sympathetic nervous system and the endocrine system<br>
+<strong>general adaptation syndrome:</strong> Hans Selye’s three-stage model of the body’s physiological reactions to stress and the process of stress adaptation: alarm reaction, stage of resistance, and stage of exhaustion<br>
+<strong>stage of exhaustion:</strong> third stage of the general adaptation syndrome; the body’s ability to resist stress becomes depleted; illness, disease, and even death may occur<br>
+<strong>stage of resistance:</strong> second stage of the general adaptation syndrome; the body adapts to a stressor for a period of time<br>
+<strong>stress:</strong> process whereby an individual perceives and responds to events that one appraises as overwhelming or threatening to one’s well-being<br>
+<strong>stressors:</strong> environmental events that may be judged as threatening or demanding; stimuli that initiate the stress process</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>What is Stress?. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress">https://openstax.org/books/psychology-2e/pages/14-1-what-is-stress</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Walter Cannon. <strong>Provided by</strong>: Wikipeda. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Walter_Bradford_Cannon#/media/File:Walter_Bradford_Cannon.jpg">https://en.wikipedia.org/wiki/Walter_Bradford_Cannon#/media/File:Walter_Bradford_Cannon.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<hr>
+
+</body>
+</html>

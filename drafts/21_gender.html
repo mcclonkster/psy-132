@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>21_gender.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="21gender">21_gender</h1>
+<hr>
+<h2 id="introduction-to-sexual-behavior--introduction-to-psychology">Introduction to Sexual Behavior | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Introduction to Sexual Behavior | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-sexual-behavior/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-describe-sexual-behavior-and-research-about-sexuality">What you’ll learn to do: describe sexual behavior and research about sexuality</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/24210630/couple.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/24210630/couple.jpeg" alt="photograph of a couple standing face to face looking at each other from 2 feet apart. Photograph is just from the shoulders down."></a></p>
+<p>“Human sexuality” refers to people’s sexual interest in and attraction to others; it is the capacity to have erotic or sexual feelings and experiences. Sexuality differs from sex assigned at birth, in that “sexuality” refers to the capacity for sexual <em>feelings</em> and attraction, while “sex assigned at birth” refers to how one’s anatomy, physiology, hormones, and genetics are classified (typically as male, female, or intersex). Sexuality is also separate from gender identity, which is a person’s sense of their own <em>gender,</em> or sociocultural classification (i.e., man, woman, or another gender) based on, or in opposition to, their sex assigned at birth (i.e., male or female). It is also distinct from—although it shapes—<em>sexual orientation,</em> or one’s emotional and sexual attraction to a particular sex or gender.</p>
+<p>Sexuality may be experienced and expressed in a variety of ways, including thoughts, fantasies, desires, beliefs, attitudes, values, behaviors, practices, roles, and relationships. These manifest themselves not only in biological, physical, and emotional ways, but also in sociocultural ways, which have to do with the effects of human society and culture on one’s sexuality. Some researchers believe that sexual behavior is determined by genetics; however, others assert that it is largely molded by the environment. Human sexuality impacts, and is impacted by, cultural, political, legal, and philosophical aspects of life, and can interact with issues of morality, ethics, theology, spirituality, or religion.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Understand basic biological mechanisms regulating sexual behavior and motivation</li>
+<li>Explain the contributions of Alfred Kinsey’s and William Masters and Virginia Johnson’s research made to our understanding of sexual behavior</li>
+<li>Describe variations sexual orientation and gender identity</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Sexual Behavior objectives. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/10-3-sexual-behavior">https://openstax.org/books/psychology-2e/pages/10-3-sexual-behavior</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Human Sexuality and Culture. <strong>Provided by</strong>: Boundless. <strong>Project</strong>: Boundless Psychology. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/gender-and-sexuality-15/sexuality-415/human-sexuality-and-culture-299-12834/</li>
+<li>picture. <strong>Provided by</strong>: freestocks.org. <strong>Located at</strong>: <a href="https://www.pexels.com/photo/adult-couple-dock-fashion-349494/">https://www.pexels.com/photo/adult-couple-dock-fashion-349494/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/cc0">CC0: No Rights Reserved</a></em></li>
+</ul>
+<hr>
+<h2 id="sexual-behavior--introduction-to-psychology">Sexual Behavior | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Sexual Behavior | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-behavior/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Understand basic biological mechanisms regulating sexual behavior and motivation</li>
+<li>Explain the contributions of Alfred Kinsey’s and William Masters and Virginia Johnson’s research made to our understanding of sexual behavior</li>
+</ul>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224943/CNX_Psych_10_03_Rats.jpg" alt="A photograph shows two rats."></p>
+<p><strong>Figure 1</strong>. A male rat that cannot engage in sexual behavior still seeks receptive females, suggesting that the ability to engage in sexual behavior and the motivation to do so are mediated by different systems in the brain. (credit: Jason Snyder)</p>
+<p>Like food, sex is an important part of our lives. From an evolutionary perspective, the reason is obvious—perpetuation of the species. Sexual behavior in humans, however, involves much more than reproduction. This section provides an overview of research that has been conducted on human sexual behavior and motivation. This section will close with a discussion of issues related to gender and sexual orientation.</p>
+<h2 id="physiological-mechanisms-of-sexual-behavior-and-motivation">Physiological Mechanisms of Sexual Behavior and Motivation</h2>
+<p>Much of what we know about the physiological mechanisms that underlie sexual behavior and motivation comes from animal research. As you’ve learned, the hypothalamus plays an important role in motivated behaviors, and sex is no exception. In fact, lesions to an area of the hypothalamus called the medial preoptic area completely disrupt a male rat’s ability to engage in sexual behavior. Surprisingly, medial preoptic lesions do not change how hard a male rat is willing to work to gain access to a sexually receptive female (Figure 1). This suggests that the ability to engage in sexual behavior and the motivation to do so may be mediated by neural systems distinct from one another.</p>
+<p>Animal research suggests that limbic system structures such as the amygdala and nucleus accumbens are especially important for sexual motivation. Damage to these areas results in a decreased motivation to engage in sexual behavior, while leaving the ability to do so intact (Figure 2) (Everett, 1990). Similar dissociations of sexual motivation and sexual ability have also been observed in the female rat (Becker, Rudick, &amp; Jenkins, 2001; Jenkins &amp; Becker, 2001).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03203531/88954174d88ba86f35ceaee3b5d220a7dec7a7f4-1.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03203531/88954174d88ba86f35ceaee3b5d220a7dec7a7f4-1.jpeg" alt="An illustration of the brain labels the locations of the “nucleus accumbeus,” “hypothalamus,” “medial preoptic area,” and “amygdala.”"></a></p>
+<p><strong>Figure 2</strong>. The medial preoptic area, an area of the hypothalamus, is involved in the ability to engage in sexual behavior, but it does not affect sexual motivation. In contrast, the amygdala and nucleus accumbens are involved in motivation for sexual behavior, but they do not affect the ability to engage in it.</p>
+<p>Although human sexual behavior is much more complex than that seen in rats, some parallels between animals and humans can be drawn from this research. The worldwide popularity of drugs used to treat erectile dysfunction (Conrad, 2005) speaks to the fact that sexual motivation and the ability to engage in sexual behavior can also be dissociated in humans. Moreover, disorders that involve abnormal hypothalamic function are often associated with hypogonadism (reduced function of the gonads) and reduced sexual function (e.g., Prader-Willi syndrome). Given the hypothalamus’s role in endocrine function, it is not surprising that hormones secreted by the endocrine system also play important roles in sexual motivation and behavior. For example, many animals show no sign of sexual motivation in the absence of the appropriate combination of sex hormones from their gonads. While this is not the case for humans, there is considerable evidence that sexual motivation in humans varies as a function of circulating testosterone levels (Bhasin, Enzlin, Coviello, &amp; Basson, 2007; Carter, 1992; Sherwin, 1988).</p>
+<h2 id="kinseys-research">Kinsey’s Research</h2>
+<p>Before the late 1940s, access to reliable, empirically-based information on sex was limited. Physicians were considered authorities on all issues related to sex, despite the fact that they had little to no training in these issues, and it is likely that most of what people knew about sex had been learned either through their own experiences or by talking with their peers. Convinced that people would benefit from a more open dialogue on issues related to human sexuality, Dr. Alfred Kinsey of Indiana University initiated large-scale survey research on the topic (Figure 3). The results of some of these efforts were published in two books—<em>Sexual Behavior in the Human Male</em> and <em>Sexual Behavior in the Human Female</em>—which were published in 1948 and 1953, respectively (Bullough, 1998).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224946/CNX_Psych_10_03_Kinsey.jpg" alt="A photograph shows Morrison Hall, the building that houses the Kinsey Institute for Research in Sex, Gender, and Reproduction."></p>
+<p><strong>Figure 3</strong>. In 1947, Alfred Kinsey established The Kinsey Institute for Research, Sex, Gender and Reproduction at Indiana University, shown here in 2011. The Kinsey Institute has continued as a research site of important psychological studies for decades.</p>
+<p>At the time, the Kinsey reports were quite sensational. Never before had the American public seen its private sexual behavior become the focus of scientific scrutiny on such a large scale. The books, which were filled with statistics and scientific lingo, sold remarkably well to the general public, and people began to engage in open conversations about human sexuality. As you might imagine, not everyone was happy that this information was being published. In fact, these books were banned in some countries. Ultimately, the controversy resulted in Kinsey losing funding that he had secured from the Rockefeller Foundation to continue his research efforts (Bancroft, 2004).</p>
+<p>Although Kinsey’s research has been widely criticized as being riddled with sampling and statistical errors (Jenkins, 2010), there is little doubt that this research was very influential in shaping future research on human sexual behavior and motivation. Kinsey described a remarkably diverse range of sexual behaviors and experiences reported by the volunteers participating in his research. Behaviors that had once been considered exceedingly rare or problematic were demonstrated to be much more common and innocuous than previously imagined (Bancroft, 2004; Bullough, 1998).</p>
+<p>Among the results of Kinsey’s research were the findings that women are as interested and experienced in sex as their male counterparts, that both males and females masturbate without adverse health consequences, and that homosexual behavior is fairly common (Bancroft, 2004). Kinsey also developed a continuum known as the Kinsey scale that is still commonly used today to categorize an individual’s sexual orientation (Jenkins, 2010).</p>
+<h2 id="masters-and-johnsons-research">Masters and Johnson’s Research</h2>
+<p>In 1966, William Masters and Virginia Johnson published a book detailing the results of their observations of nearly 700 people who agreed to participate in their study of physiological responses during sexual behavior. Unlike Kinsey, who used personal interviews and surveys to collect data, Masters and Johnson observed people having intercourse in a variety of positions, and they observed people masturbating, manually or with the aid of a device. While this was occurring, researchers recorded measurements of physiological variables, such as blood pressure and respiration rate, as well as measurements of sexual arousal, such as vaginal lubrication and penile tumescence (swelling associated with an erection). In total, Masters and Johnson observed nearly 10,000 sexual acts as a part of their research (Hock, 2008).</p>
+<p>Based on these observations, Masters and Johnson divided the <strong>sexual response cycle</strong> into four phases that are fairly similar in individuals regardless of the individual’s sex assigned at birth: excitement, plateau, orgasm, and resolution (Figure 4). The <strong>excitement</strong> phase is the arousal phase of the sexual response cycle, and it is marked by the erection of the penis or clitoris and lubrication and expansion of the vaginal canal. In the <strong>plateau</strong> phase, individuals experience a full erection of the penis often accompanied by pre-ejaculatory fluid or further swelling of the vagina and increased blood flow to the labia minora. For individuals with female sex organs, <strong>orgasm</strong> is marked by rhythmic contractions of the pelvis and uterus along with increased muscle tension. For individuals with male sex organs, pelvic contractions are accompanied by a buildup of seminal fluid near the urethra that is ultimately forced out by contractions of genital muscles (i.e., ejaculation). <strong>Resolution</strong> is the relatively rapid return to an unaroused state accompanied by a decrease in blood pressure and muscular relaxation. While many individuals with female sex organs can quickly repeat the sexual response cycle, those with male sex organs commonly pass through a longer refractory period as part of resolution. The refractory period is a period of time that follows an orgasm during which an individual is incapable of experiencing another orgasm. For those with male sex organs, the duration of the refractory period can vary dramatically from individual to individual with some refractory periods as short as several minutes and others as long as a day. As these people age, their refractory periods tend to span longer periods of time.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03203928/8779b02770677c3a72128d975437df4299869513.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03203928/8779b02770677c3a72128d975437df4299869513.jpeg" alt="A graph titled “Sexual response cycle” has an x-axis labeled “time” and a y-axis labeled “arousal.” Four phases are depicted. In the “excitement” phase the arousal level increases from the bottom to midway on the graph. In the “plateau” phase the arousal level remains mostly steady at the midpoint of the graph and then begins to rise at the end of the plateau phase. At the “orgasm” phase, the arousal level sharply increases, peaks at the top of the graph, and then declines to the midway point. In the “resolution” phase the graph drops from the midway point to the bottom."></a></p>
+<p><strong>Figure 4</strong>. This graph illustrates the different phases of the sexual response cycle as described by Masters and Johnson.</p>
+<p>In addition to the insights that their research provided with regards to the sexual response cycle and the multi-orgasmic potential of those with female sex organs, Masters and Johnson also collected important information about reproductive anatomy. Their research demonstrated the oft-cited statistic of the average size of a flaccid and an erect penis (3 and 6 inches, respectively) as well as dispelling long-held beliefs about relationships between the size of an individual’s erect penis and their ability to provide sexual pleasure to their partner. Furthermore, they determined that the vagina is a very elastic structure that can conform to penises of various sizes (Hock, 2008).</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Watch the following episode of Crash Course Psychology in which Hank talks about Kinsey, Masters and Johnson, sexuality, gender identity, hormones, and even looks into the idea of why people have sex.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/LetsTalkAboutSexCrashCoursePsychology27.txt">view the transcript for “Let’s Talk About Sex: Crash Course Psychology #27” here (opens in new window)</a>.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>excitement:</strong> phase of the sexual response cycle that involves sexual arousal</p>
+<p><strong>heterosexual:</strong> emotional and erotic attractions to individuals of another sex</p>
+<p><strong>homosexual:</strong> emotional and erotic attractions to same-sexed individuals</p>
+<p><strong>orgasm:</strong> peak phase of the sexual response cycle associated with rhythmic muscle contractions (and ejaculation)</p>
+<p><strong>plateau:</strong> phase of the sexual response cycle that falls between excitement and orgasm</p>
+<p><strong>refractory period:</strong> time immediately following an orgasm during which an individual is incapable of experiencing another orgasm</p>
+<p><strong>resolution:</strong> phase of the sexual response cycle following orgasm during which the body returns to its unaroused state</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="sexual-orientation-and-gender-identity">Sexual Orientation and Gender Identity</h2>
+<ul>
+<li>url_title:: &quot;Sexual Orientation and Gender Identity&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe variations in sexual orientation and gender identity</li>
+</ul>
+<h2 id="sexual-orientation">Sexual Orientation</h2>
+<p>As mentioned earlier, a person’s sexual orientation is their emotional and erotic attraction toward another individual. While the majority of people identify as heterosexual, there is a sizable population of people within the United States who identify as gay or lesbian, bisexual, pansexual, asexual, or other non-hetero sexualities. A 2022 Gallup poll concluded that 7.1% of adult Americans identified as LGBT (lesbian, gay, bisexual, or trans).[1] Bisexual individuals are attracted to people of their own gender and another gender; pansexual people experience attraction in which sex, gender identity, or gender expression do not play a role; asexual people do not experience sexual attraction or have little or no interest in sexual activity, and demisexual people require an emotional connection in order to develop sexual attraction. Both demisexuality and asexuality exist on a spectrum. Additional categories may be used to categorize the more nuanced aspects of sexual identity, including pansexual (being gender-blind or attracted to others regardless of their sex or gender identity), or polysexual (attraction to many, but not all genders, sometimes used instead of bisexual). The term <em>sexual preference</em> largely overlaps with sexual orientation, but is generally distinguished in psychological research. A person who identifies as bisexual, for example, may sexually prefer one sex over the other. Sexual preference may also suggest a degree of voluntary choice, whereas sexual orientation is not a choice.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224949/CNX_Psych_10_03_GayMales.jpg" alt="A photograph shows two people holding hands."></p>
+<p><strong>Figure 1</strong>. Between 3% and 10% of the adult population identifies as homosexual. (credit: Till Krech)</p>
+<p>Issues of sexual orientation have long fascinated scientists interested in determining what causes one individual to be straight while another is gay. For many years, people believed that these differences arose because of different socialization and familial experiences. However, research has consistently demonstrated that family backgrounds and experiences are very similar among people from all sexual orientations (Bell, Weinberg, &amp; Hammersmith, 1981; Ross &amp; Arrindell, 1988).</p>
+<p>Genetic and biological mechanisms have also been proposed, and the balance of research evidence suggests that sexual orientation has an underlying biological component. For instance, over the past 25 years, research has demonstrated gene-level contributions to sexual orientation (Bailey &amp; Pillard, 1991; Hamer, Hu, Magnuson, Hu, &amp; Pattatucci, 1993; Rodriguez-Larralde &amp; Paradisi, 2009), with some researchers estimating that genes account for at least half of the variability seen in human sexual orientation (Pillard &amp; Bailey, 1998). Other studies report differences in brain structure and function between heterosexual and gay or lesbian individuals (Allen &amp; Gorski, 1992; Byne et al., 2001; Hu et al., 2008; LeVay, 1991; Ponseti et al., 2006; Rahman &amp; Wilson, 2003a; Swaab &amp; Hofman, 1990), and even differences in basic body structure and function have been observed (Hall &amp; Kimura, 1994; Lippa, 2003; Loehlin &amp; McFadden, 2003; McFadden &amp; Champlin, 2000; McFadden &amp; Pasanen, 1998; Rahman &amp; Wilson, 2003b).</p>
+<p>There is considerably more evidence supporting nonsocial, biological causes of sexual orientation than social ones, especially for males.[2] Scientists do not believe that sexual orientation is a choice,[3] and some of them believe that it is established at conception.[4] Current scientific investigation usually seeks to find biological explanations for the adoption of a particular sexual orientation. In aggregate, the data suggest that to a significant extent, sexual orientations are something with which we are born.</p>
+<h2 id="misunderstandings-about-sexual-orientation">Misunderstandings about Sexual Orientation</h2>
+<p>Regardless of how sexual orientation is determined, research has made clear that sexual orientation is not a choice, but rather it is a relatively stable characteristic of a person that cannot be changed. Claims of successful gay conversion therapy have received wide criticism from the research community due to significant concerns with research design, recruitment of experimental participants, and interpretation of data. As such, there is no credible scientific evidence to suggest that individuals can change their sexual orientation (Jenkins, 2010).</p>
+<p>Dr. Robert Spitzer, the author of one of the most widely-cited examples of successful conversion therapy, apologized to both the scientific community and the gay community for his mistakes, and he publically recanted his own paper in a public letter addressed to the editor of <em>Archives of Sexual Behavior</em> in the spring of 2012 (Carey, 2012). In this letter, Spitzer wrote,</p>
+<blockquote>
+<p>I was considering writing something that would acknowledge that I now judge the major critiques of the study as largely correct. . . . I believe I owe the gay community an apology for my study making unproven claims of the efficacy of reparative therapy. I also apologize to any gay person who wasted time or energy undergoing some form of reparative therapy because they believed that I had proven that reparative therapy works with some “highly motivated” individuals. (Becker, 2012, pars. 2, 5)</p>
+</blockquote>
+<p>Citing research that suggests not only that gay conversion therapy is ineffective, but also potentially harmful, legislative efforts to make such therapy illegal have either been enacted (e.g., it is now illegal in California) or are underway across the United States, and many professional organizations have issued statements against this practice (Human Rights Campaign, n.d.)</p>
+<h2 id="gender-identity">Gender Identity</h2>
+<p>Many people conflate sexual orientation with gender identity because of stereotypical attitudes that exist about non-heterosexual behavior. In reality, these are two related, but different, issues. <strong>Gender identity</strong> refers to one’s sense of being male, female, or another gender. Generally, our gender identities correspond to our chromosomal and phenotypic sex, but this is not always the case. When individuals do not feel comfortable identifying with the gender associated with their sex assigned at birth, then they experience gender dysphoria. <strong>Gender dysphoria</strong> is a diagnostic category in the fifth edition of the <em>Diagnostic and Statistical Manual of Mental Disorders</em> (DSM-5) that describes individuals who do not identify as the gender that most people would assume they are. This dysphoria must persist for at least six months and result in significant distress or dysfunction to meet DSM-5 diagnostic criteria. In order for children to be assigned this diagnostic category, they must verbalize their desire to become the other gender.</p>
+<p><strong>C****isgender</strong> is an umbrella term used to describe people whose sense of personal identity and gender corresponds with their sex assigned at birth, while <strong>transgender</strong> is a term used to describe people whose sense of personal identity does not correspond with their sex assigned at birth. Approximately 1.4 million U.S. adults or .6 percent of the population are transgender according to a 2016 report.[5]</p>
+<p>Many people who are classified as gender dysphoric seek to live their lives in ways that are consistent with their own gender identity. This involves dressing in another-sex clothing and assuming another-sex identity. These individuals may also undertake <strong>gender-affirming hormone therapy</strong> in an attempt to make their bodies look more like another sex, and in some cases, they elect to have surgeries to alter the appearance of their external genitalia to resemble that of their gender identity (Figure 6). Transgender people who attempt to alter their bodies through medical interventions such as surgery and hormonal therapy are called <strong>transsexual</strong> individuals. They may also be known as male-to-female (MTF) or female-to-male (FTM). Not all transgender individuals choose to alter their bodies: many will maintain their original anatomy but may present themselves to society as another gender.</p>
+<p>Our scientific knowledge and general understanding of gender identity continue to evolve, and young people today have more opportunity to explore and openly express different ideas about what gender means than in previous generations. Recent studies indicate that the majority of millennials (those ages 18–34) regard gender as a spectrum instead of a strict male/female binary, and that 12% identify as transgender or gender non-conforming. Additionally, over half of people ages 13–20 know people who use gender-neutral pronouns (such as they/them) (Kennedy, 2017). This change in language means that millennials and Generation Z people understand the experience of gender itself differently. As young people lead this change, other changes are emerging in a range of spheres, from public bathroom policies to retail organizations. For example, some retailers are starting to change traditional gender-based marketing of products, such as removing “pink and blue” clothing and toy aisles. Even with these changes, those who exist outside of traditional gender norms face difficult challenges. Even people who vary slightly from traditional norms can be the target of discrimination and sometimes even violence.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03211448/70e2acb857432ccc9ecddf2a3fce5e466bc0c065.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03211448/70e2acb857432ccc9ecddf2a3fce5e466bc0c065.jpeg" alt="Laverne Cox delivers a speech."></a></p>
+<p><strong>Figure 2</strong>. Actress Laverne Cox, who is openly transgender, is the first transgender actress to portray a transgender character on a regular television series. She is also an advocate for LGBTQ+ issues outside of her career, such as in this &quot;Ain't I a Woman?&quot; speaking tour.</p>
+<h2 id="cultural-factors-in-sexual-orientation-and-gender-identity">Cultural Factors in Sexual Orientation and Gender Identity</h2>
+<p>Gender is deeply cultural. Like race, it is a social construction with real consequences, particularly for those who do not conform to gender binaries. In order to describe gender as a concept, we need to expand the language we use to describe gender beyond “masculine” or “feminine.” Gender identity, or the way that one thinks about gender and self-identifies, can be woman, man, or genderqueer.</p>
+<p><strong>Gender</strong> <strong>expression</strong>, or how one demonstrates gender (based on traditional gender role norms related to clothing, behavior, and interactions) can be feminine, masculine, androgynous, or somewhere along a spectrum. Although gender has traditionally been considered in binary terms (male or female), increasingly gender is being seen as a spectrum; however, our vocabulary is still limited in terms of the ways in which we describe gender identity.</p>
+<p>Issues related to sexual orientation and gender identity are very much influenced by sociocultural factors. Even the ways in which we define sexual orientation and gender vary from one culture to the next. While in the United States exclusive heterosexuality is viewed as the norm, there are societies that have different attitudes regarding variations in cisgender or heterosexual behavior. In fact, in some instances, periods of exclusively homosexual behavior are socially prescribed as a part of normal development and maturation. For example, in parts of New Guinea, young boys are expected to engage in sexual behavior with other boys for a given period of time because it is believed that doing so is necessary for these boys to become men (Baldwin &amp; Baldwin, 1989).</p>
+<p>There is a two-gendered culture in the United States. We tend to classify an individual as either male or female. However, in some cultures, there are additional gender variants resulting in more than two gender categories. For example, in Thailand, you can be male, female, or kathoey. A kathoey is an individual who would be described as intersexed or transgender in the United States (Tangmunkongvorakul, Banwell, Carmichael, Utomo, &amp; Sleigh, 2010). Intersex is a broad term referring to people whose bodies are not strictly biologically male or female (Hughes, et al. 2006). Intersex conditions can present at any time during life (Creighton, 2001). Sometimes a child may be born with components of male and female genitals, and other times XY chromosomal differences are present (Creighton, 2001; Hughes, et al. 2006).</p>
+<h3 id="dig-deeper-the-case-of-david-reimer">Dig Deeper: The Case of David Reimer</h3>
+<p>In August of 1965, Janet and Ronald Reimer of Winnipeg, Canada, welcomed the birth of their twin sons, Bruce and Brian. Within a few months, the twins were experiencing urinary problems; doctors recommended the problems could be alleviated by having the boys circumcised. A malfunction of the medical equipment used to perform the circumcision resulted in Bruce’s penis being irreparably damaged. Distraught, Janet and Ronald looked to expert advice on what to do with their baby boy. By happenstance, the couple became aware of Dr. John Money at Johns Hopkins University and his theory of psychosexual neutrality (Colapinto, 2000).</p>
+<p>Dr. Money had spent a considerable amount of time researching transgender individuals and individuals born with ambiguous genitalia. As a result of this work, he developed a theory of psychosexual neutrality. His theory asserted that we are essentially neutral at birth with regard to our gender identity and that we don’t assume a concrete gender identity until we begin to master language. Furthermore, Dr. Money believed that the way in which we are socialized in early life is ultimately much more important than our biology in determining our gender identity (Money, 1962).</p>
+<p>Dr. Money encouraged Janet and Ronald to bring the twins to Johns Hopkins University, and he convinced them that they should raise Bruce as a girl. Left with few other options at the time, Janet and Ronald agreed to have Bruce’s testicles removed and to raise him as a girl. When they returned home to Canada, they brought with them Brian and his “sister,” Brenda, along with specific instructions to never reveal to Brenda that she had been born a boy (Colapinto, 2000).</p>
+<p>Early on, Dr. Money shared with the scientific community the great success of this natural experiment that seemed to fully support his theory of psychosexual neutrality (Money, 1975). Indeed, in early interviews with the children it appeared that Brenda was a typical little girl who liked to play with “girly” toys and do “girly” things.</p>
+<p>However, Dr. Money was less than forthcoming with information that seemed to argue against the success of the case. In reality, Brenda’s parents were constantly concerned that their little girl wasn’t really behaving as most girls did, and by the time Brenda was nearing adolescence, it was painfully obvious to the family that she was really having a hard time identifying as a female. In addition, Brenda was becoming increasingly reluctant to continue her visits with Dr. Money to the point that she threatened suicide if her parents made her go back to see him again.</p>
+<p>At that point, Janet and Ronald disclosed the true nature of Brenda’s early childhood to their daughter. While initially shocked, Brenda reported that things made sense to her now, and ultimately, by the time she was an adolescent, Brenda had decided to identify as a male. Thus, she became David Reimer.</p>
+<p>David was quite comfortable in his masculine role. He made new friends and began to think about his future. Although his castration had left him infertile, he still wanted to be a father. In 1990, David married a single mother and loved his new role as a husband and father. In 1997, David was made aware that Dr. Money was continuing to publicize his case as a success supporting his theory of psychosexual neutrality. This prompted David and his brother to go public with their experiences in an attempt to discredit the doctor’s publications. While this revelation created a firestorm in the scientific community for Dr. Money, it also triggered a series of unfortunate events that ultimately led to David committing suicide in 2004 (O’Connell, 2004).</p>
+<p>This sad story speaks to the complexities involved in gender identity. While the Reimer case had earlier been paraded as a hallmark of how socialization trumped biology in terms of gender identity, the truth of the story made the scientific and medical communities more cautious in dealing with cases that involve intersex children and how to deal with their unique circumstances. In fact, stories like this one have prompted measures to prevent unnecessary harm and suffering to children who might have issues with gender identity. For example, in 2013, a law took effect in Germany allowing parents of intersex children to classify their children as indeterminate so that children can self-assign the appropriate gender once they have fully developed their own gender identities (Paramaguru, 2013).</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Watch this <a href="https://www.youtube.com/watch?v=vFMfrBWM7_A">news story</a> about the experiences of David Reimer and his family.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>bisexual:</strong> emotional and erotic attractions to both same-sexed individuals and individuals of another sex</p>
+<p><strong>cisgender</strong>: an umbrella term used to describe people whose sense of personal identity and gender corresponds with their sex assigned at birth</p>
+<p><strong>gender dysphoria:</strong> diagnostic category in DSM-5 for individuals who do not identify as the gender associated with their sex assigned at birth</p>
+<p><strong>gender identity: an</strong> individual’s sense of being male, female, or another gender</p>
+<p><strong>heterosexual:</strong> emotional and erotic attractions to individuals of another sex</p>
+<p><strong>homosexual:</strong> emotional and erotic attractions to same-sexed individuals</p>
+<p><strong>sexual orientation:</strong> emotional and erotic attraction to same-sexed individuals, individuals of another sex, or both</p>
+<p><strong>transgender</strong>: a term used to describe people whose sense of personal identity does not correspond with their birth sex</p>
+<p><strong>gender-affirming hormone therapy:</strong> use of hormones to make one’s body look more like another sex</p>
+<p><strong>transsexual</strong>: transgender individuals who attempt to alter their bodies through medical interventions such as surgery and hormonal therapy</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Sexual Behavior. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/10-3-sexual-behavior">https://openstax.org/books/psychology-2e/pages/10-3-sexual-behavior</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Additional material on gender identity. <strong>Provided by</strong>: Lumen Learning. <strong>Located at</strong>: <a href="https://courses.lumenlearning.com/wm-introductiontosociology/chapter/sex-and-gender/">https://courses.lumenlearning.com/wm-introductiontosociology/chapter/sex-and-gender/</a>. <strong>Project</strong>: Introduction to Sociology. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+<li>Sexual Identity. <strong>Provided by</strong>: Wikipedia. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Sexual_identity#Identities">https://en.wikipedia.org/wiki/Sexual_identity#Identities</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Sexual Orientation. <strong>Provided by</strong>: Sexual orientation. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Sexual_orientation">https://en.wikipedia.org/wiki/Sexual_orientation</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>Example Video. <strong>Authored by</strong>: heirospace. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=TG-lR3uF6Ag">https://www.youtube.com/watch?v=TG-lR3uF6Ag</a>. <strong>License</strong>: <em>All Rights Reserved</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+<li>Transgender Migrants Seek Asylum in the US. <strong>Provided by</strong>: VOA News. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=qN78g2MpboE">https://www.youtube.com/watch?v=qN78g2MpboE</a>. <strong>License</strong>: <em>All Rights Reserved</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+</ul>
+<hr>
+<ol>
+<li>LGBT Identification in U.S. Ticks Up to 7.1%&quot;. <em>Gallup</em>. 17 Feb 2022. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/#return-footnote-2494-1">↵</a></li>
+<li>Bailey JM, Vasey PL, Diamond LM, Breedlove SM, Vilain E, Epprecht M (2016). &quot;Sexual Orientation, Controversy, and Science&quot;. <em>Psychological Science in the Public Interest</em>. 17 (21): 45–101. doi:10.1177/1529100616637616 <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/#return-footnote-2494-2">↵</a></li>
+<li>Gloria Kersey-Matusiak (2012). Delivering Culturally Competent Nursing Care. <em>Springer Publishing Company</em>. p. 169. ISBN 978-0826193810. Retrieved 10 February 2016. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/#return-footnote-2494-3">↵</a></li>
+<li>Vare, Jonatha W., and Terry L. Norton. &quot;Understanding Gay and Lesbian Youth: Sticks, Stones and Silence.&quot; Cleaning House 71.6 (1998): 327–31: Education Full Text (H.W. Wilson). Web. 19 April 2012. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/#return-footnote-2494-4">↵</a></li>
+<li>[footnote]Flores, A., J. Herman, G. Gates, and T. N.T. Brown. &quot;How many adults identify as transgender.&quot; The Williams Institute. <a href="http://williamsinstitute.law.ucla.edu/wp-content/uploads/How-Many-Adults-Identify-as-Transgender-in-the-United-States.pdf">http://williamsinstitute.law.ucla.edu/wp-content/uploads/How-Many-Adults-Identify-as-Transgender-in-the-United-States.pdf</a>. <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/sexual-orientation-and-gender-identity/#return-footnote-2494-5">↵</a></li>
+</ol>
+<hr>
+
+</body>
+</html>

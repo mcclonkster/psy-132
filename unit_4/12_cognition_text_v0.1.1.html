@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Psych: Interactive Textbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap');
+
+        :root {
+            --nord0: #2e3440;
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            --nord4: #d8dee9;
+            --nord5: #e5e9f0;
+            --nord6: #eceff4;
+            --nord7: #8fbcbb;
+            --nord8: #88c0d0;
+            --nord9: #81a1c1;
+            --nord10: #5e81ac;
+            --nord11: #bf616a;
+            --nord12: #d08770;
+            --nord13: #ebcb8b;
+            --nord14: #a3be8c;
+            --nord15: #b48ead;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--nord6);
+            color: var(--nord0);
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+
+        /* Sidebar Styling */
+        .sidebar { background-color: var(--nord0); color: var(--nord4); transition: all 0.3s ease; }
+        .sidebar a { transition: all 0.2s; border-left: 4px solid transparent; }
+        .sidebar a:hover { background-color: var(--nord1); color: var(--nord8); }
+        .sidebar a.active { background-color: var(--nord2); color: var(--nord8); border-left-color: var(--nord8); }
+
+        /* Content Area */
+        .content-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border: 1px solid var(--nord4);
+            padding: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Typography */
+        h1 { font-size: 2.75rem; font-weight: 800; color: var(--nord0); line-height: 1.1; margin-bottom: 1.5rem; border-bottom: 4px solid var(--nord8); padding-bottom: 1rem; }
+        h2 { font-size: 1.75rem; font-weight: 700; color: var(--nord10); margin-top: 3rem; border-bottom: 1px solid var(--nord4); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.35rem; font-weight: 600; color: var(--nord3); margin-top: 2rem; }
+        
+        p { margin-bottom: 1.25rem; }
+        strong { color: var(--nord1); }
+
+        /* Specialized Components */
+        .callout {
+            margin: 2.5rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid;
+            font-size: 0.95rem;
+        }
+        .learning-obj { background: var(--nord6); border-color: var(--nord14); }
+        .link-to-learning { background: var(--nord5); border-color: var(--nord8); }
+        .watch-it { background: var(--nord5); border-color: var(--nord15); }
+        .think-it-over { background: var(--nord5); border-color: var(--nord13); }
+        .dig-deeper { background: #fdf2f2; border-color: var(--nord11); }
+
+        .nord-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; }
+        .nord-table th { background: var(--nord5); padding: 0.75rem 1rem; border: 1px solid var(--nord4); text-align: left; }
+        .nord-table td { padding: 0.75rem 1rem; border: 1px solid var(--nord4); }
+        .nord-table tr:nth-child(even) { background: var(--nord6); }
+
+        img { border-radius: 8px; margin: 2rem 0; width: 100%; height: auto; border: 1px solid var(--nord4); }
+        
+        blockquote {
+            border-left: 4px solid var(--nord9);
+            padding: 1rem 1.5rem;
+            background: var(--nord6);
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+            color: var(--nord2);
+        }
+
+        /* Nav & UI */
+        .toc-link { color: var(--nord10); text-decoration: none; display: block; padding: 0.25rem 0; font-size: 0.9rem; }
+        .toc-link:hover { color: var(--nord8); }
+
+        .module-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            color: var(--nord3);
+            text-align: center;
+        }
+
+        #loading-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: white;
+            z-index: 100;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <div id="loading-overlay"><i class="fas fa-circle-notch fa-spin text-4xl text-nord8"></i></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar w-72 flex-shrink-0 fixed h-full z-10 overflow-y-auto hidden lg:block">
+        <div class="p-8">
+            <h2 class="text-nord8 text-2xl font-bold tracking-tight m-0">Open Psych</h2>
+            <p class="text-nord3 text-xs mt-1 uppercase tracking-widest">Interactive Edition</p>
+        </div>
+        <nav class="px-4 mt-4">
+            <p class="px-4 py-2 text-xs font-bold text-nord3 uppercase tracking-widest opacity-60">Curriculum</p>
+            <a href="#" onclick="loadModule('cognition')" id="nav-cognition" class="flex items-center px-4 py-3 rounded-lg active mb-1">
+                <i class="fas fa-brain mr-3 w-5"></i> 12. Cognition
+            </a>
+            <a href="#" onclick="loadModule('intelligence')" id="nav-intelligence" class="flex items-center px-4 py-3 rounded-lg mb-1">
+                <i class="fas fa-lightbulb mr-3 w-5"></i> 13. Intelligence
+            </a>
+            <a href="#" onclick="loadModule('language')" id="nav-language" class="flex items-center px-4 py-3 rounded-lg mb-1">
+                <i class="fas fa-comments mr-3 w-5"></i> 14. Language
+            </a>
+        </nav>
+        <div class="absolute bottom-0 left-0 right-0 p-8 text-xs text-nord3 border-t border-nord2">
+            <p>Audience: Students & Instructors</p>
+            <p class="mt-1">Theme: Nord Palette</p>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 lg:ml-72 p-6 md:p-12 lg:p-20">
+        <div id="module-container" class="content-card">
+            <!-- Content will be injected here -->
+        </div>
+    </main>
+
+    <script>
+        // Content Data Object - We will populate this turn by turn
+        const MODULE_DATA = {
+            cognition: `
+                <h1>Module 12: Cognition</h1>
+                <div class="bg-nord6 p-6 rounded-lg mb-12">
+                    <h4 class="mt-0 mb-3 text-xs font-bold uppercase tracking-widest text-nord3">Quick Navigation</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                        <a href="#intro" class="toc-link">Why It Matters: Thinking</a>
+                        <a href="#what-is" class="toc-link">What Is Cognition?</a>
+                        <a href="#concepts" class="toc-link">Categories & Concepts</a>
+                        <a href="#schemata" class="toc-link">Schemata</a>
+                        <a href="#problems" class="toc-link">Problem-Solving Strategies</a>
+                        <a href="#choice" class="toc-link">Choice Blindness</a>
+                        <a href="#piaget" class="toc-link">Piaget's Cognitive Development</a>
+                    </div>
+                </div>
+
+                <section id="intro">
+                    <h2>Why It Matters: Thinking and Intelligence</h2>
+                    <p>Thinking is an important part of our human experience, and one that has captivated people for centuries. Today, it is one area of psychological study. The 19th-century <em>Girl with a Book</em> by José Ferraz de Almeida Júnior, the 20th-century sculpture <em>The Thinker</em> by August Rodin, and Shi Ke’s 10th-century painting <em>Huike Thinking</em> all reflect the fascination with the process of human thought.</p>
+                    <img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224819/CNX_Psych_07_00_Thinking.jpg" alt="Artistic representations of thought">
+                    <p>What is the best way to solve a problem? How does a person who has never seen or touched snow in real life develop an understanding of the concept of snow? How do young children acquire the ability to learn language with no formal instruction? Psychologists who study thinking explore questions like these and are called <strong>cognitive psychologists</strong>.</p>
+                </section>
+
+                <section id="what-is">
+                    <h2>What Is Cognition?</h2>
+                    <p>The brain is endlessly perceiving, processing, planning, organizing, and remembering—it is always active. Yet, you don’t notice most of your brain’s activity as you move throughout your daily routine. This is only one facet of the complex processes involved in cognition. Simply put, <strong>cognition</strong> is thinking, and it encompasses the processes associated with perception, knowledge, problem solving, judgment, language, and memory.</p>
+                    
+                    <div class="callout learning-obj">
+                        <h4 class="mt-0 text-nord14 font-bold"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                        <ul class="list-disc ml-5 space-y-1 mt-2">
+                            <li>Distinguish between concepts and prototypes</li>
+                            <li>Explain the difference between natural and artificial concepts</li>
+                            <li>Describe problem solving strategies, including algorithms and heuristics</li>
+                            <li>Explain some common roadblocks to effective problem solving</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="concepts">
+                    <h2>Categories and Concepts</h2>
+                    <p>A <strong>category</strong> is a set of objects that can be treated as equivalent in some way. The mental representations we form of categories are called <strong>concepts</strong>. You use concepts to see the relationships among the different elements of your experiences and to keep the information in your mind organized and accessible.</p>
+                    
+                    <h3>Prototypes</h3>
+                    <p>A <strong>prototype</strong> is the best example or representation of a concept. For example, what comes to your mind when you think of a dog? Most likely your early experiences with dogs will shape what you imagine. If your first pet was a Golden Retriever, there is a good chance that this would be your prototype for the category of dogs.</p>
+                    
+                    <h3>Natural and Artificial Concepts</h3>
+                    <p><strong>Natural concepts</strong> are created “naturally” through your experiences and can be developed from either direct or indirect experiences. If you live in Vermont, you know snow. If you live in the Caribbean, you may know snow from watching films (indirect knowledge).</p>
+                    <p>An <strong>artificial concept</strong> is defined by a specific set of characteristics. Geometric shapes like squares and triangles are useful examples. Mathematical formulas, like the equation for area (length × width), are also artificial concepts.</p>
+                </section>
+
+                <section id="schemata">
+                    <h2>Schemata</h2>
+                    <p>A <strong>schema</strong> is a mental construct consisting of a cluster or collection of related concepts. Schemata are methods of organizing information that allow the brain to work more efficiently.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Role Schema:</strong> Assumptions about how individuals in certain roles will behave (e.g., the firefighter schema).</li>
+                        <li><strong>Event Schema (Cognitive Script):</strong> A set of behaviors that can feel like a routine. Examples include the pattern of behavior in an elevator or the habit of checking a ringing phone.</li>
+                    </ul>
+                </section>
+
+                <section id="problems">
+                    <h2>Solving Problems & Strategies</h2>
+                    <p>Before finding a solution to a problem, the problem must first be clearly identified. After that, one of many problem-solving strategies can be applied:</p>
+                    <table class="nord-table">
+                        <thead>
+                            <tr><th>Method</th><th>Description</th><th>Example</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Trial and error</strong></td><td>Continue trying different solutions until successful.</td><td>Restarting a phone to fix a glitch.</td></tr>
+                            <tr><td><strong>Algorithm</strong></td><td>Step-by-step problem-solving formula.</td><td>Manual for software installation.</td></tr>
+                            <tr><td><strong>Heuristic</strong></td><td>General framework; mental shortcuts.</td><td>Working backwards from a goal.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <section id="choice">
+                    <h2>Choice Blindness</h2>
+                    <p><strong>Choice blindness</strong> is the failure to recall a choice immediately after we have made that choice. Research by Johansson and Hall showed that in an attraction preference experiment, 75% of participants failed to notice when a picture was switched and proceeded to justify a choice they didn't actually make.</p>
+                    <blockquote>"We're all a little bit more flexible than we think. We can change our minds. Our attitudes are not set in stone." — Petter Johansson</blockquote>
+                </section>
+
+                <section id="piaget">
+                    <h2>Cognitive Development: Piaget</h2>
+                    <p>Jean Piaget proposed that cognitive abilities develop through specific stages. He identified how children develop schemata through <strong>assimilation</strong> (taking in similar info) and <strong>accommodation</strong> (changing schemata based on new info).</p>
+                    <table class="nord-table">
+                        <thead>
+                            <tr><th>Stage</th><th>Age</th><th>Description</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Sensorimotor</strong></td><td>0–2</td><td>World via senses; Object permanence.</td></tr>
+                            <tr><td><strong>Preoperational</strong></td><td>2–7</td><td>Use symbols; Egocentrism.</td></tr>
+                            <tr><td><strong>Concrete operational</strong></td><td>7–11</td><td>Logical thinking; Conservation.</td></tr>
+                            <tr><td><strong>Formal operational</strong></td><td>11+</td><td>Abstract logic; Moral reasoning.</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            `,
+            intelligence: `
+                <div class="module-placeholder">
+                    <i class="fas fa-tools text-5xl mb-4 opacity-20"></i>
+                    <h2 class="text-2xl font-bold">Module 13 Population in Progress</h2>
+                    <p class="max-w-md">I am currently processing the full text for Intelligence and Creativity to ensure it meets the visual standards of the Cognition module.</p>
+                    <button onclick="loadModule('cognition')" class="mt-6 px-6 py-2 bg-nord8 text-white rounded-lg hover:bg-nord10 transition-colors">Return to Module 12</button>
+                </div>
+            `,
+            language: `
+                <div class="module-placeholder">
+                    <i class="fas fa-tools text-5xl mb-4 opacity-20"></i>
+                    <h2 class="text-2xl font-bold">Module 14 Population in Progress</h2>
+                    <p class="max-w-md">The Language Development module is queued for visual enhancement. Stay tuned!</p>
+                    <button onclick="loadModule('cognition')" class="mt-6 px-6 py-2 bg-nord8 text-white rounded-lg hover:bg-nord10 transition-colors">Return to Module 12</button>
+                </div>
+            `
+        };
+
+        function loadModule(moduleId) {
+            const overlay = document.getElementById('loading-overlay');
+            overlay.style.display = 'flex';
+
+            // Update UI
+            document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
+            document.getElementById('nav-' + moduleId).classList.add('active');
+
+            setTimeout(() => {
+                document.getElementById('module-container').innerHTML = MODULE_DATA[moduleId];
+                overlay.style.display = 'none';
+                window.scrollTo(0, 0);
+            }, 300);
+        }
+
+        // Initialize with Cognition
+        window.onload = () => loadModule('cognition');
+    </script>
+</body>
+</html>

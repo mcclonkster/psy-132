@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Psychology: Thinking & Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap');
+
+        :root {
+            --nord0: #2e3440;
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            --nord4: #d8dee9;
+            --nord5: #e5e9f0;
+            --nord6: #eceff4;
+            --nord7: #8fbcbb;
+            --nord8: #88c0d0;
+            --nord9: #81a1c1;
+            --nord10: #5e81ac;
+            --nord11: #bf616a;
+            --nord12: #d08770;
+            --nord13: #ebcb8b;
+            --nord14: #a3be8c;
+            --nord15: #b48ead;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--nord6);
+            color: var(--nord0);
+            line-height: 1.7;
+        }
+
+        /* Layout Elements */
+        .sidebar { background-color: var(--nord0); color: var(--nord4); }
+        .sidebar a:hover { background-color: var(--nord1); color: var(--nord8); }
+        .sidebar a.active { background-color: var(--nord2); color: var(--nord8); border-left: 4px solid var(--nord8); }
+
+        .content-card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--nord4);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { color: var(--nord0); font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; line-height: 1.2; border-bottom: 4px solid var(--nord8); padding-bottom: 1rem; }
+        h2 { font-size: 1.8rem; color: var(--nord10); border-bottom: 1px solid var(--nord4); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.4rem; color: var(--nord3); }
+        
+        strong { color: var(--nord1); font-weight: 700; }
+        
+        /* Callout Boxes */
+        .callout {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 6px solid;
+        }
+        .learning-obj { background: var(--nord6); border-color: var(--nord14); }
+        .link-to-learning { background: var(--nord5); border-color: var(--nord8); }
+        .watch-it { background: var(--nord5); border-color: var(--nord15); }
+        .think-it-over { background: var(--nord5); border-color: var(--nord13); }
+        .dig-deeper { background: #fdf2f2; border-color: var(--nord11); }
+
+        /* Components */
+        .nord-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+        .nord-table th { background: var(--nord5); padding: 1rem; border: 1px solid var(--nord4); text-align: left; }
+        .nord-table td { padding: 1rem; border: 1px solid var(--nord4); }
+        .nord-table tr:nth-child(even) { background: var(--nord6); }
+
+        img { border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 1.5rem 0; width: 100%; height: auto; object-fit: cover; }
+        
+        blockquote {
+            border-left: 4px solid var(--nord9);
+            padding: 1rem 1.5rem;
+            background: var(--nord6);
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .toc {
+            background: var(--nord6);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        .toc a { color: var(--nord10); text-decoration: none; display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .toc a:hover { color: var(--nord8); text-decoration: underline; }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-cols: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .glossary-item b { color: var(--nord10); display: block; margin-bottom: 0.2rem; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar w-72 flex-shrink-0 fixed h-full z-10 overflow-y-auto hidden lg:block">
+        <div class="p-8">
+            <h2 class="text-nord8 text-2xl font-bold tracking-tight m-0">Open Psych</h2>
+            <p class="text-nord3 text-sm mt-1">Cognition & Intelligence</p>
+        </div>
+        <nav class="px-4">
+            <p class="px-4 py-2 text-xs font-bold text-nord3 uppercase tracking-widest">Modules</p>
+            <a href="#" onclick="showSection('cognition')" id="nav-cognition" class="flex items-center px-4 py-3 rounded-lg transition-all active mb-1">
+                <i class="fas fa-brain mr-3 w-5"></i> Module 12: Cognition
+            </a>
+            <a href="#" onclick="showSection('intelligence')" id="nav-intelligence" class="flex items-center px-4 py-3 rounded-lg transition-all mb-1">
+                <i class="fas fa-lightbulb mr-3 w-5"></i> Module 13: Intelligence
+            </a>
+            <a href="#" onclick="showSection('language')" id="nav-language" class="flex items-center px-4 py-3 rounded-lg transition-all mb-1">
+                <i class="fas fa-comments mr-3 w-5"></i> Module 14: Language
+            </a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 lg:ml-72 p-6 md:p-12 lg:p-16">
+        
+        <!-- Mobile Header -->
+        <div class="lg:hidden flex items-center justify-between mb-8 bg-nord0 p-4 rounded-xl text-white">
+            <span class="font-bold">Psychology Textbook</span>
+            <div class="flex gap-4">
+                <button onclick="showSection('cognition')" class="p-2"><i class="fas fa-brain"></i></button>
+                <button onclick="showSection('intelligence')" class="p-2"><i class="fas fa-lightbulb"></i></button>
+                <button onclick="showSection('language')" class="p-2"><i class="fas fa-comments"></i></button>
+            </div>
+        </div>
+
+        <!-- MODULE 12: COGNITION -->
+        <div id="section-cognition" class="tab-content active max-w-5xl mx-auto">
+            <div class="content-card">
+                <h1>Module 12: Cognition</h1>
+                
+                <div class="toc">
+                    <h4 class="mt-0 mb-4 text-nord3 text-xs uppercase tracking-widest">In this chapter</h4>
+                    <a href="#cog-intro">Why It Matters: Thinking</a>
+                    <a href="#cog-what">What is Cognition?</a>
+                    <a href="#cog-concepts">Categories and Concepts</a>
+                    <a href="#cog-problem">Problem-Solving Strategies</a>
+                    <a href="#cog-schemata">Schemata & Scripts</a>
+                    <a href="#cog-piaget">Piaget's Cognitive Development</a>
+                </div>
+
+                <div id="cog-intro">
+                    <h2>Why It Matters: Thinking and Intelligence</h2>
+                    <p>What is the best way to solve a problem? How does a person who has never seen or touched snow in real life develop an understanding of the concept of snow? How do young children acquire the ability to learn language with no formal instruction? Psychologists who study thinking explore questions like these and are called cognitive psychologists.</p>
+                    <img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224819/CNX_Psych_07_00_Thinking.jpg" alt="Artistic representations of thinking">
+                    <p class="text-sm text-nord3 italic mt-2">Thinking has captivated people for centuries, as seen in José Ferraz de Almeida Júnior’s "Girl with a Book", Rodin’s "The Thinker", and Shi Ke’s "Huike Thinking".</p>
+                </div>
+
+                <div id="cog-what">
+                    <h2>What is Cognition?</h2>
+                    <p>Simply put, <strong>cognition</strong> is thinking, and it encompasses the processes associated with perception, knowledge, problem solving, judgment, language, and memory. Scientists who study cognition are searching for ways to understand how we integrate, organize, and utilize our conscious cognitive experiences without being aware of all of the unconscious work that our brains are doing.</p>
+                    
+                    <div class="callout learning-obj">
+                        <h4 class="mt-0 text-nord14"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                        <ul class="list-disc ml-5 text-sm space-y-1">
+                            <li>Distinguish between concepts and prototypes</li>
+                            <li>Explain the difference between natural and artificial concepts</li>
+                            <li>Describe problem solving strategies, including algorithms and heuristics</li>
+                            <li>Explain some common roadblocks to effective problem solving</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="cog-concepts">
+                    <h2>Categories and Concepts</h2>
+                    <p>A <strong>category</strong> is a set of objects that can be treated as equivalent in some way. The mental representations we form of categories are called <strong>concepts</strong>. You use concepts to see the relationships among the different elements of your experiences and to keep the information in your mind organized and accessible.</p>
+                    
+                    <h3>Natural and Artificial Concepts</h3>
+                    <p><strong>Natural concepts</strong> are created “naturally” through your experiences and can be developed from either direct or indirect experiences. For example, your concept of "snow" if you live in Vermont vs. if you live in the Caribbean.</p>
+                    <p>An <strong>artificial concept</strong> is defined by a specific set of characteristics. Geometric shapes like squares and triangles are useful examples. A triangle always has three angles and three sides.</p>
+                    
+                    <h3>Prototypes</h3>
+                    <p>A <strong>prototype</strong> is the best example or representation of a concept. If your first pet was a Golden Retriever, there is a good chance that this would be your prototype for the category of dogs.</p>
+                </div>
+
+                <div id="cog-schemata">
+                    <h2>Schemata</h2>
+                    <p>A <strong>schema</strong> is a mental construct consisting of a cluster or collection of related concepts. When a schema is activated, the brain makes immediate assumptions about the person or object being observed.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Role Schema:</strong> Makes assumptions about how individuals in certain roles (like a firefighter) will behave.</li>
+                        <li><strong>Event Schema (Cognitive Script):</strong> A set of behaviors that can feel like a routine, such as walking into an elevator and turning to face the door.</li>
+                    </ul>
+                </div>
+
+                <div id="cog-problem">
+                    <h2>Solving Problems</h2>
+                    <p>A <strong>problem-solving strategy</strong> is a plan of action used to find a solution. Different strategies have different action plans associated with them.</p>
+                    <table class="nord-table">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Trial and error</strong></td>
+                                <td>Continue trying different solutions until problem is solved</td>
+                                <td>Restarting phone to fix a malfunction</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Algorithm</strong></td>
+                                <td>Step-by-step problem-solving formula</td>
+                                <td>Instruction manual for software installation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Heuristic</strong></td>
+                                <td>General problem-solving framework; mental shortcut</td>
+                                <td>Working backwards; breaking a task into steps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="cog-piaget">
+                    <h2>Cognitive Development (Piaget)</h2>
+                    <p>Jean Piaget focused on children’s cognitive growth. He believed that thinking is a central aspect of development and that children do not think and reason like adults.</p>
+                    
+                    <table class="nord-table">
+                        <thead>
+                            <tr>
+                                <th>Age</th>
+                                <th>Stage</th>
+                                <th>Description</th>
+                                <th>Key Issues</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0–2</td>
+                                <td>Sensorimotor</td>
+                                <td>World experienced through senses/actions</td>
+                                <td>Object permanence, Stranger anxiety</td>
+                            </tr>
+                            <tr>
+                                <td>2–7</td>
+                                <td>Preoperational</td>
+                                <td>Uses words/images; lacks logical reasoning</td>
+                                <td>Pretend play, Egocentrism</td>
+                            </tr>
+                            <tr>
+                                <td>7–11</td>
+                                <td>Concrete operational</td>
+                                <td>Logical thinking about concrete events</td>
+                                <td>Conservation, Reversibility</td>
+                            </tr>
+                            <tr>
+                                <td>11+</td>
+                                <td>Formal operational</td>
+                                <td>Abstract reasoning and logic</td>
+                                <td>Abstract logic, Moral reasoning</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-nord4">
+                    <h3 class="text-nord10 uppercase tracking-widest text-xs">Glossary</h3>
+                    <div class="glossary-grid">
+                        <div class="glossary-item"><b>Artificial concept</b> Defined by a very specific set of characteristics.</div>
+                        <div class="glossary-item"><b>Cognition</b> Thinking, including perception, learning, problem solving, judgment, and memory.</div>
+                        <div class="glossary-item"><b>Prototype</b> Best representation of a concept.</div>
+                        <div class="glossary-item"><b>Schema</b> Mental construct consisting of a collection of related concepts.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODULE 13: INTELLIGENCE -->
+        <div id="section-intelligence" class="tab-content max-w-5xl mx-auto">
+            <div class="content-card">
+                <h1>Module 13: Intelligence</h1>
+                
+                <div class="toc">
+                    <h4 class="mt-0 mb-4 text-nord3 text-xs uppercase tracking-widest">In this chapter</h4>
+                    <a href="#int-theories">Classifying Intelligence</a>
+                    <a href="#int-triarchic">Triarchic Theory (Sternberg)</a>
+                    <a href="#int-multiple">Multiple Intelligences (Gardner)</a>
+                    <a href="#int-creativity">Creativity & Thought</a>
+                    <a href="#int-iq">Measuring Intelligence (IQ)</a>
+                    <a href="#int-nature">The Source of Intelligence</a>
+                    <a href="#int-disability">Learning Disabilities</a>
+                </div>
+
+                <div id="int-theories">
+                    <h2>Classifying Intelligence</h2>
+                    <p>Charles Spearman believed intelligence consisted of one general factor, called <strong>g</strong>. Raymond Cattell later divided general intelligence into two components:</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Crystallized intelligence:</strong> Acquired knowledge and the ability to retrieve it.</li>
+                        <li><strong>Fluid intelligence:</strong> The ability to see complex relationships and solve problems.</li>
+                    </ul>
+                </div>
+
+                <div id="int-triarchic">
+                    <h2>Triarchic Theory of Intelligence</h2>
+                    <p>Robert Sternberg sees intelligence as comprised of three parts:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+                        <div class="p-4 bg-nord6 rounded-lg text-center">
+                            <i class="fas fa-brain text-nord10 text-2xl mb-2"></i>
+                            <p><strong>Practical</strong><br>Street smarts/Common sense</p>
+                        </div>
+                        <div class="p-4 bg-nord6 rounded-lg text-center">
+                            <i class="fas fa-lightbulb text-nord15 text-2xl mb-2"></i>
+                            <p><strong>Creative</strong><br>Imaginative solutions</p>
+                        </div>
+                        <div class="p-4 bg-nord6 rounded-lg text-center">
+                            <i class="fas fa-microscope text-nord14 text-2xl mb-2"></i>
+                            <p><strong>Analytical</strong><br>Academic problem solving</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="int-multiple">
+                    <h2>Multiple Intelligences Theory</h2>
+                    <p>Howard Gardner proposed that each person possesses at least eight intelligences:</p>
+                    <table class="nord-table text-sm">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Characteristics</th>
+                                <th>Career Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Linguistic</td><td>Perceives language functions/sounds</td><td>Journalist, novelist</td></tr>
+                            <tr><td>Logical-math</td><td>Seeing numerical patterns; reason</td><td>Scientist, mathematician</td></tr>
+                            <tr><td>Musical</td><td>Appreciates rhythm/pitch</td><td>Composer, performer</td></tr>
+                            <tr><td>Bodily kinesthetic</td><td>Control body movement</td><td>Dancer, athlete</td></tr>
+                            <tr><td>Spatial</td><td>Perceive relationships in space</td><td>Architect, sailor</td></tr>
+                            <tr><td>Interpersonal</td><td>Understand emotions of others</td><td>Counselor, social worker</td></tr>
+                            <tr><td>Intrapersonal</td><td>Access personal feelings</td><td>Component of success</td></tr>
+                            <tr><td>Naturalist</td><td>Appreciate the natural world</td><td>Biologist, ecologist</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="int-iq">
+                    <h2>Measuring Intelligence (IQ)</h2>
+                    <p>IQ stands for <strong>intelligence quotient</strong>. The average score is 100. Standard deviations (usually 15 points) describe how scores are dispersed.</p>
+                    <img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31164156/87dba6aac07b342c4ce36005429a170fed2cc4cd.jpeg" alt="IQ Bell Curve Graph">
+                    
+                    <div class="callout watch-it">
+                        <h4 class="mt-0 text-nord15"><i class="fas fa-video mr-2"></i>Flynn Effect</h4>
+                        <p>The <strong>Flynn effect</strong> refers to the observation that each generation has a significantly higher IQ than the previous generation, though this doesn't necessarily mean we are more "intelligent" per se.</p>
+                    </div>
+                </div>
+
+                <div id="int-disability">
+                    <h2>Learning Disabilities</h2>
+                    <p>Learning disabilities are cognitive disorders that affect specific areas of cognition like language or reading. They are distinct from intellectual disabilities.</p>
+                    <ul class="space-y-4 mt-4">
+                        <li class="p-4 bg-nord6 rounded-lg">
+                            <strong>Dysgraphia:</strong> Difficulty writing legibly; struggle putting thoughts on paper.
+                        </li>
+                        <li class="p-4 bg-nord6 rounded-lg">
+                            <strong>Dyslexia:</strong> Most common; inability to correctly process letters and sound-letter correspondence.
+                        </li>
+                        <li class="p-4 bg-nord6 rounded-lg">
+                            <strong>Dyscalculia:</strong> Difficulty learning or comprehending arithmetic.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODULE 14: LANGUAGE -->
+        <div id="section-language" class="tab-content max-w-5xl mx-auto">
+            <div class="content-card">
+                <h1>Module 14: Language</h1>
+                
+                <div class="toc">
+                    <h4 class="mt-0 mb-4 text-nord3 text-xs uppercase tracking-widest">In this chapter</h4>
+                    <a href="#lang-what">Introduction to Language</a>
+                    <a href="#lang-components">Components of Language</a>
+                    <a href="#lang-dev">Language Development</a>
+                    <a href="#lang-genie">Case Study: Genie</a>
+                    <a href="#lang-thought">Language and Thinking</a>
+                    <a href="#lang-gossip">Social Use of Language (Gossip)</a>
+                </div>
+
+                <div id="lang-what">
+                    <h2>Introduction to Language</h2>
+                    <p>Language is a communication system that involves using words and systematic rules to organize those words to transmit information. While many species communicate, many people assert that language makes humans unique.</p>
+                </div>
+
+                <div id="lang-components">
+                    <h2>Components of Language</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                        <div class="p-4 border border-nord4 rounded-lg">
+                            <strong>Lexicon:</strong> The vocabulary of a given language.
+                        </div>
+                        <div class="p-4 border border-nord4 rounded-lg">
+                            <strong>Grammar:</strong> Rules used to convey meaning through lexicon.
+                        </div>
+                        <div class="p-4 border border-nord4 rounded-lg">
+                            <strong>Phoneme:</strong> Basic sound unit (e.g., "ah" vs "eh").
+                        </div>
+                        <div class="p-4 border border-nord4 rounded-lg">
+                            <strong>Morpheme:</strong> Smallest units that convey meaning.
+                        </div>
+                    </div>
+                    <p>We use <strong>semantics</strong> (deriving meaning) and <strong>syntax</strong> (word organization) to construct sentences.</p>
+                </div>
+
+                <div id="lang-dev">
+                    <h2>Language Development</h2>
+                    <p>B.F. Skinner proposed that language is learned through reinforcement. Noam Chomsky criticized this, asserting that language acquisition mechanisms are biologically determined. Proficiency is maximal early in life (critical period).</p>
+                    
+                    <table class="nord-table">
+                        <thead>
+                            <tr><th>Stage</th><th>Age</th><th>Development</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1-3</td><td>0–13 mos.</td><td>Reflexive; Intentional sociability</td></tr>
+                            <tr><td>4</td><td>12–18 mos.</td><td>First words</td></tr>
+                            <tr><td>5</td><td>18–24 mos.</td><td>Simple two-word sentences</td></tr>
+                            <tr><td>6-7</td><td>2–5 years</td><td>Complex sentences; conversations</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="lang-genie" class="callout dig-deeper">
+                    <h4 class="mt-0 text-nord11"><i class="fas fa-user-shield mr-2"></i>The Case of Genie</h4>
+                    <p>Found at age 13 after extreme neglect, Genie was unable to speak. While she amassed a large vocabulary after rescue, she never mastered grammatical aspects, supporting the idea of a <strong>critical period</strong> for language acquisition.</p>
+                </div>
+
+                <div id="lang-thought">
+                    <h2>Language and Thinking</h2>
+                    <p>The <strong>Sapir-Whorf hypothesis</strong> proposes that language determines thought. While researchers now view this as too absolute, language habits certainly encourage habits in thought.</p>
+                    <blockquote class="italic">
+                        "Habits in language encourage habits in thought." — Boroditsky (2001)
+                    </blockquote>
+                    <p>Examples include English vs Mandarin Chinese descriptions of time (horizontal vs vertical) and "pronoun drop" in Japanese being linked to collectivistic values.</p>
+                </div>
+
+                <div id="lang-gossip">
+                    <h2>The Social Brain & Gossip</h2>
+                    <p>Approximately 60%–70% of everyday conversation is gossip. Robin Dunbar argued that gossip is the human equivalent of grooming in primates—an act of socializing and signaling importance.</p>
+                    <p>The <strong>social brain hypothesis</strong> suggests that human brain evolution was driven by the need to maintain larger social groups (ingroups).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="mt-20 py-10 border-t border-nord4 text-center text-nord3 text-sm">
+            <p>&copy; 2024 Psychology Interactive Textbook | Nord Edition</p>
+            <p class="mt-2 text-xs opacity-60">Source: OpenStax / Lumen Learning (CC BY 4.0)</p>
+        </footer>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Section visibility
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('section-' + sectionId).classList.add('active');
+            
+            // Sidebar link styling
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.getElementById('nav-' + sectionId).classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>08_perception.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="08perception">08_perception</h1>
+<hr>
+<h2 id="why-it-matters-sensation-and-perception">Why It Matters: Sensation and Perception</h2>
+<ul>
+<li>url_title:: &quot;Why It Matters: Sensation and Perception&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-12/
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224703/CNX_Psych_05_00_Senses.jpg" alt="A person playing a piano on the sidewalk near a busy intersection in a city."></li>
+</ul>
+<p><strong>Figure 1</strong>. If you were standing in the midst of this street scene, you would be absorbing and processing numerous pieces of sensory input. (credit: modification of work by Cory Zanker)</p>
+<p>Imagine standing on a city street corner. You might be struck by movement everywhere as cars and people go about their business, by the sound of a street musician’s melody or a horn honking in the distance, by the smell of exhaust fumes or of food being sold by a nearby vendor, and by the sensation of hard pavement under your feet.</p>
+<p>We rely on our sensory systems to provide important information about our surroundings. We use this information to successfully navigate and interact with our environment so that we can find nourishment, seek shelter, maintain social relationships, and avoid potentially dangerous situations. But while sensory information is critical to our survival, there is so much information available at any given time that we would be overwhelmed if we were forced to attend to all of it. In fact, we are aware of only a fraction of the sensory information taken in by our sensory systems at any given time.</p>
+<p>This module will provide an overview of how sensory information is received and processed by the nervous system and how that affects our conscious experience of the world. We begin by learning the distinction between sensation and perception. Then we consider the physical properties of light and sound stimuli, along with an overview of the basic structure and function of the major sensory systems. The module will close with a discussion of a historically important theory of perception called the Gestalt theory. This theory attempts to explain some underlying principles of perception.</p>
+<p>Module References</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="introduction-to-perception--introduction-to-psychology">Introduction to Perception | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Introduction to Perception | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-gestalt-principles-of-perception/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-define-perception-and-give-examples-of-gestalt-principles-and-multimodal-perception">What you’ll learn to do: define perception and give examples of gestalt principles and multimodal perception</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/01204244/5704563713_dd5a8c0de1_o.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/01204244/5704563713_dd5a8c0de1_o.jpg" alt="Poster depicting a drawing of an eye with circles of cyan, magenta, and yellow."></a></p>
+<p>Seeing something is not the same thing as making sense of what you see. Why is it that our senses are so easily fooled? In this section, you will come to see how our perceptions are not infallible, and they can be influenced by bias, prejudice, and other factors. Psychologists are interested in how these false perceptions influence our thoughts and behavior.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch this CrashCourse video for a good overview of perception:</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/PerceivingIsBelievingCrashCoursePsychology7.txt">view the transcript for “Perceiving is Believing: Crash Course Psychology #7” here (opens in new window)</a>.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Give examples of gestalt principles, including the figure-ground relationship, proximity, similarity, continuity, and closure</li>
+<li>Define the basic terminology and basic principles of multimodal perception</li>
+<li>Give examples of multimodal and crossmodal behavioral effects</li>
+<li>Explain how and why psychologists use illusions</li>
+<li>Describe Jessica Witt’s research on golf and its connection to the Ebbinghaus illusion</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="introduction-to-sensation-and-perception">Introduction to Sensation and Perception</h2>
+<ul>
+<li>url_title:: &quot;Introduction to Sensation and Perception&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-sensation-and-perception/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-differentiate-between-sensation-and-perception">What you’ll learn to do: differentiate between sensation and perception</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/02212759/Signac_-_Portrait_de_Fe%CC%81lix_Fe%CC%81ne%CC%81on.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/02212759/Signac_-_Portrait_de_Félix_Fénéon.jpg" alt="1890, Portrait of Félix Fénéon, Opus 217. Against the Enamel of a Background Rhythmic with Beats and Angles, Tones, and Tints, oil on canvas, 73.5 x 92.5 cm, Museum of Modern Art, New York City. Man in a suit holding a top hat is reaching out with a flower in his hand. The background is multicolored swirls."></a></p>
+<p>Sensation and perception are two separate processes that are very closely related. Sensation is input about the physical world obtained by our sensory receptors, and perception is the process by which the brain selects, organizes, and interprets these sensations. In other words, senses are the physiological basis of perception. Perception of the same senses may vary from one person to another because each person’s brain interprets stimuli differently based on that individual’s learning, memory, emotions, and expectations.</p>
+<h3 id="learning-objectives">LEARNING OBJECTIVES</h3>
+<ul>
+<li>Define sensation and explain its connection to the concepts of absolute threshold, difference threshold, and subliminal messages</li>
+<li>Discuss the roles attention, motivation, and sensory adaptation play in perception</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Sensation versus Perception. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception">https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Introduction to Sensation. <strong>Provided by</strong>: Boundless. <strong>Located at</strong>: <a href="https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/sensation-and-perception-5/introduction-to-sensation-37/introduction-to-sensation-157-12692/">https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/sensation-and-perception-5/introduction-to-sensation-37/introduction-to-sensation-157-12692/</a>. <strong>Project</strong>: Boundless Psychology. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>Public domain content</p>
+<ul>
+<li>Painting. <strong>Authored by</strong>: Paul Signac. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_des_Artistes_Ind%C3%A9pendants#/media/File:Signac_-_Portrait_de_F%C3%A9lix_F%C3%A9n%C3%A9on.jpg">https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_des_Artistes_Ind%C3%A9pendants#/media/File:Signac_-_Portrait_de_F%C3%A9lix_F%C3%A9n%C3%A9on.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+</ul>
+<hr>
+<h2 id="what-is-perception--introduction-to-psychology">What is Perception? | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;What is Perception? | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-what-is-perception/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Discuss the roles attention, motivation, and sensory adaptation play in perception</li>
+</ul>
+<p>While our sensory receptors are constantly collecting information from the environment, it is ultimately how we interpret that information that affects how we interact with the world. <strong>Perception</strong> refers to the way sensory information is organized, interpreted, and consciously experienced. Perception involves both bottom-up and top-down processing. <strong>Bottom-up processing</strong> refers to sensory information from a stimulus in the environment driving a process, and <strong>top-down processing</strong> refers to knowledge and expectancy driving a process, as shown in Figure 5.2 (Egeth &amp; Yantis, 1997; Fine &amp; Minnery, 2009; Yantis &amp; Egeth, 1999).</p>
+<p>Look at the shape in Figure 1 below. Seen alone, your brain engages in bottom-up processing. There are two thick vertical lines and three thin horizontal lines. There is no context to give it a specific meaning, so there is no top-down processing involved.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/01/26161444/Screen-Shot-2017-01-26-at-10.13.34-AM.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/01/26161444/Screen-Shot-2017-01-26-at-10.13.34-AM.png" alt="text or image of a thick vertical line and three thin horizontal lines, then another thick vertical line."></a></p>
+<p><strong>Figure 1</strong>. What is this image? Without any context, you must use bottom-up processing.</p>
+<p>Now, look at the same shape in two different contexts. Surrounded by sequential letters, your brain expects the shape to be a letter and to complete the sequence. In that context, you perceive the lines to form the shape of the letter “B.”</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/01/26161456/Screen-Shot-2017-01-26-at-10.13.51-AM.png" alt="The letter A, then the same shape from before that now appears to be a B, then followed by the letter C."></p>
+<p><strong>Figure 2</strong>. With top-down processing, you use context to give meaning to this image.</p>
+<p>Surrounded by numbers, the same shape now looks like the number “13.”</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/01/26161457/Screen-Shot-2017-01-26-at-10.14.00-AM.png" alt="The number 12, then the same shape from before that now appears to be a 13, then followed by the number 14."></p>
+<p><strong>Figure 3</strong>. With top-down processing, you use context to give meaning to this image.</p>
+<p>When given a context, your perception is driven by your cognitive expectations. Now you are processing the shape in a top-down fashion.</p>
+<p>One way to think of this concept is that sensation is a physical process, whereas perception is psychological. For example, upon walking into a kitchen and smelling the scent of baking cinnamon rolls, the <em>sensation</em> is the scent receptors detecting the odor of cinnamon, but the <em>perception</em> may be “Mmm, this smells like the bread Grandma used to bake when the family gathered for holidays.”</p>
+<p>Although our perceptions are built from sensations, not all sensations result in perception. In fact, we often don’t perceive stimuli that remain relatively constant over prolonged periods of time. This is known as <strong>sensory adaptation</strong>. Imagine going to a city that you have never visited. You check into the hotel, but when you get to your room, there is a road construction sign with a bright flashing light outside your window. Unfortunately, there are no other rooms available, so you are stuck with a flashing light. You decide to watch television to unwind. The flashing light was extremely annoying when you first entered your room. It was as if someone was continually turning a bright yellow spotlight on and off in your room, but after watching television for a short while, you no longer notice the light flashing. The light is still flashing and filling your room with yellow light every few seconds, and the photoreceptors in your eyes still sense the light, but you no longer perceive the rapid changes in lighting conditions. That you no longer perceive the flashing light demonstrates sensory adaptation and shows that while closely associated, sensation and perception are different.</p>
+<h2 id="attention-and-perception">Attention and Perception</h2>
+<p>There is another factor that affects sensation and perception: attention. Attention plays a significant role in determining what is sensed versus what is perceived. Imagine you are at a party full of music, chatter, and laughter. You get involved in an interesting conversation with a friend, and you tune out all the background noise. If someone interrupted you to ask what song had just finished playing, you would probably be unable to answer that question.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>See for yourself how inattentional blindness works by watching this selective attention test from Simons and Chabris (1999):</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/SelectiveAttentionTest.txt">view the transcript for “selective attention test” here (opens in new window)</a>.</p>
+<p>One of the most interesting demonstrations of how important attention is in determining our perception of the environment occurred in a famous study conducted by Daniel Simons and Christopher Chabris (1999). In this study, participants watched a video of people dressed in black and white passing basketballs. Participants were asked to count the number of times the team dressed in white passed the ball. During the video, a person dressed in a black gorilla costume walks among the two teams. You would think that someone would notice the gorilla, right? Nearly half of the people who watched the video didn’t notice the gorilla at all, despite the fact that he was clearly visible for nine seconds. Because participants were so focused on the number of times the team dressed in white was passing the ball, they completely tuned out other visual information. <strong>Inattentional blindness</strong> is the failure to notice something that is completely visible because the person was actively attending to something else and did not pay attention to other things (Mack &amp; Rock, 1998; Simons &amp; Chabris, 1999).</p>
+<p>In a similar experiment, researchers tested inattentional blindness by asking participants to observe images moving across a computer screen. They were instructed to focus on either white or black objects, disregarding the other color. When a red cross passed across the screen, about one third of subjects did not notice it (Figure 5.3) (Most, Simons, Scholl, &amp; Chabris, 2000).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224706/CNX_Psych_05_01_Cross.jpg" alt="A photograph shows a person staring at a screen that displays one red cross toward the left side and numerous black and white shapes all over."></p>
+<p><strong>Figure 4</strong>. Nearly one third of participants in a study did not notice that a red cross passed on the screen because their attention was focused on the black or white figures. (credit: Cory Zanker)</p>
+<h2 id="motivations-expectations-and-perception">Motivations, Expectations, and Perception</h2>
+<p>Motivation can also affect perception. Have you ever been expecting a really important phone call and, while taking a shower, you think you hear the phone ringing, only to discover that it is not? If so, then you have experienced how motivation to detect a meaningful stimulus can shift our ability to discriminate between a true sensory stimulus and background noise. The ability to identify a stimulus when it is embedded in a distracting background is called <strong>signal detection theory</strong>. This might also explain why a mother is awakened by a quiet murmur from her baby but not by other sounds that occur while she is asleep. Signal detection theory has practical applications, such as increasing air traffic controller accuracy. Controllers need to be able to detect planes among many signals (blips) that appear on the radar screen and follow those planes as they move through the sky. In fact, the original work of the researcher who developed signal detection theory was focused on improving the sensitivity of air traffic controllers to plane blips (Swets, 1964).</p>
+<p>Our perceptions can also be affected by our beliefs, values, prejudices, expectations, and life experiences. As you will see later in this module, individuals who are deprived of the experience of binocular vision during critical periods of development have trouble perceiving depth (Fawcett, Wang, &amp; Birch, 2005). The shared experiences of people within a given cultural context can have pronounced effects on perception. For example, Marshall Segall, Donald Campbell, and Melville Herskovits (1963) published the results of a multinational study in which they demonstrated that individuals from Western cultures were more prone to experience certain types of visual illusions than individuals from non-Western cultures, and vice versa. One such illusion that Westerners were more likely to experience was the Müller-Lyer illusion (Figure 5): The lines appear to be different lengths, but they are actually the same length.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224707/CNX_Psych_05_01_MullerLyer.jpg" alt="Two vertical lines are shown on the left in (a). They each have V–shaped brackets on their ends, but one line has the brackets angled toward its center, and the other has the brackets angled away from its center. The lines are the same length, but the second line appears longer due to the orientation of the brackets on its endpoints. To the right of these lines is a two-dimensional drawing of walls meeting at 90-degree angles. Within this drawing are 2 lines which are the same length, but appear different lengths. Because one line is bordering a window on a wall that has the appearance of being farther away from the perspective of the viewer, it appears shorter than the other line which marks the 90 degree angle where the facing wall appears closer to the viewer’s perspective point."></p>
+<p><strong>Figure 5</strong>. In the Müller-Lyer illusion, lines appear to be different lengths although they are identical. (a) Arrows at the ends of lines may make the line on the right appear longer, although the lines are the same length. (b) When applied to a three-dimensional image, the line on the right again may appear longer although both black lines are the same length.</p>
+<p>These perceptual differences were consistent with differences in the types of environmental features experienced on a regular basis by people in a given cultural context. People in Western cultures, for example, have a perceptual context of buildings with straight lines, what Segall’s study called a carpentered world (Segall et al., 1966). In contrast, people from certain non-Western cultures with an uncarpentered view, such as the Zulu of South Africa, whose villages are made up of round huts arranged in circles, are less susceptible to this illusion (Segall et al., 1999). It is not just vision that is affected by cultural factors. Indeed, research has demonstrated that the ability to identify an odor, and rate its pleasantness and its intensity, varies cross-culturally (Ayabe-Kanamura, Saito, Distel, Martínez-Gómez, &amp; Hudson, 1998).</p>
+<p>Children described as thrill seekers are more likely to show taste preferences for intense sour flavors (Liem, Westerbeek, Wolterink, Kok, &amp; de Graaf, 2004), which suggests that basic aspects of personality might affect perception. Furthermore, individuals who hold positive attitudes toward reduced-fat foods are more likely to rate foods labeled as reduced fat as tasting better than people who have less positive attitudes about these products (Aaron, Mela, &amp; Evans, 1994).</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Review the differences between sensation and perception in this CrashCourse Psychology video:</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/SensationAndPerceptionCrashCoursePsychology5.txt">view the transcript for “Sensation and Perception: Crash Course Psychology #5” here (opens in new window)</a>.</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>Think about a time when you failed to notice something around you because your attention was focused elsewhere. If someone pointed it out, were you surprised that you hadn’t noticed it right away?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>bottom-up processing:</strong> system in which perceptions are built from sensory input</p>
+<p><strong>inattentional blindness:</strong> failure to notice something that is completely visible because of a lack of attention</p>
+<p><strong>perception:</strong> way that sensory information is interpreted and consciously experienced</p>
+<p><strong>sensory adaptation</strong>: the reduction in sensitivity after prolonged exposure to a stimulus</p>
+<p><strong>top-down processing:</strong> interpretation of sensations is influenced by available knowledge, experiences, and thoughts</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Sensation and Perception. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception">https://openstax.org/books/psychology-2e/pages/5-1-sensation-versus-perception</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Section on bottom-up versus top-down processing. <strong>Authored by</strong>: Dr. Scott Roberts, Dr. Ryan Curtis, Samantha Levy, and Dr. Dylan Selterman. <strong>Provided by</strong>: OpenPsyc. <strong>Located at</strong>: <a href="http://openpsyc.blogspot.com/2014/06/bottom-up-vs-top-down-processing.html">http://openpsyc.blogspot.com/2014/06/bottom-up-vs-top-down-processing.html</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>Sensation &amp; Perception - Crash Course Psychology #5. <strong>Provided by</strong>: CrashCourse. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=unWnZvXJH2o">https://www.youtube.com/watch?v=unWnZvXJH2o</a>. <strong>License</strong>: <em>Other</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+</ul>
+<hr>
+<h2 id="color-and-depth-perception--introduction-to-psychology">Color and Depth Perception | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Color and Depth Perception | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-color-and-depth-perception/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the trichromatic theory of color vision and the opponent-process theory</li>
+<li>Describe how monocular and binocular cues are used in the perception of depth</li>
+</ul>
+<p>We do not see the world in black and white; neither do we see it as two-dimensional (2-D) or flat (just height and width, no depth). Let’s look at how color vision works and how we perceive three dimensions (height, width, and depth).</p>
+<h2 id="color-vision">Color Vision</h2>
+<p>Normal-sighted individuals have three different types of cones that mediate <strong>color vision</strong>. Each of these cone types is maximally sensitive to a slightly different wavelength of light. According to the Young-Helmholtz <strong>trichromatic theory of color vision</strong>, shown in Figure 1, all colors in the spectrum can be produced by combining red, green, and blue. The three types of cones are each receptive to one of the colors.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/29215942/a64eff29d4c7d338b9a588b7e5e195747c9e2c4b.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/29215942/a64eff29d4c7d338b9a588b7e5e195747c9e2c4b-300x209.jpeg" alt="A graph is shown with “sensitivity” plotted on the y-axis and “Wavelength” in nanometers plotted along the x-axis with measurements of 400, 500, 600, and 700. Three lines in different colors move from the base to the peak of the y axis, and back to the base. The blue line begins at 400 nm and hits its peak of sensitivity around 455 nanometers, before the sensitivity drops off at roughly the same rate at which it increased, returning to the lowest sensitivity around 530 nm . The green line begins at 400 nm and reaches its peak of sensitivity around 535 nanometers. Its sensitivity then decreases at roughly the same rate at which it increased, returning to the lowest sensitivity around 650 nm. The red line follows the same pattern as the first two, beginning at 400 nm, increasing and decreasing at the same rate, and it hits its height of sensitivity around 580 nanometers. Below this graph is a horizontal bar showing the colors of the visible spectrum."></a></p>
+<p><strong>Figure 1</strong>. This figure illustrates the different sensitivities for the three cone types found in a normal-sighted individual. (credit: modification of work by Vanessa Ezekowitz)</p>
+<h3 id="connect-the-concepts">Connect the concepts</h3>
+<h2 id="colorblindness-a-personal-story"><strong>Colorblindness: A Personal Story</strong></h2>
+<p>Several years ago, I dressed to go to a public function and walked into the kitchen where my 7-year-old daughter sat. She looked up at me, and in her most stern voice, said, “You can’t wear that.” I asked, “Why not?” and she informed me the colors of my clothes did not match. She had complained frequently that I was bad at matching my shirts, pants, and ties, but this time, she sounded especially alarmed. As a single father with no one else to ask at home, I drove us to the nearest convenience store and asked the store clerk if my clothes matched. She said my pants were a bright green color, my shirt was a reddish orange, and my tie was brown. She looked at my quizzically and said, “No way do your clothes match.” Over the next few days, I started asking my coworkers and friends if my clothes matched. After several days of being told that my coworkers just thought I had “a really unique style,” I made an appointment with an eye doctor and was tested (Figure 5.15). It was then that I found out that I was colorblind. I cannot differentiate between most greens, browns, and reds. Fortunately, other than unknowingly being badly dressed, my colorblindness rarely harms my day-to-day life.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/10221122/21632351cd15e26896aa4e56c6f36100c9b380d4.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/10221122/21632351cd15e26896aa4e56c6f36100c9b380d4.jpeg" alt="The figure includes three large circles that are made up of smaller circles of varying shades and sizes. Inside each large circle is a number that is made visible only by its different color. The first circle has an orange number 12 in a background of green. The second color has a green number 74 in a background of orange. The third circle has a red and brown number 42 in a background of black and gray."></a></p>
+<p><strong>Figure 2</strong>. The Ishihara test evaluates color perception by assessing whether individuals can discern numbers that appear in a circle of dots of varying colors and sizes.</p>
+<p>Some forms of color deficiency are rare. Seeing in grayscale (only shades of black and white) is extremely rare, and people who do so only have rods, which means they have very low visual acuity and cannot see very well. The most common X-linked inherited abnormality is red-green color blindness (Birch, 2012). Approximately 8% of males with European Caucasian decent, 5% of Asian males, 4% of African males, and less than 2% of indigenous American males, Australian males, and Polynesian males have red-green color deficiency (Birch, 2012). Comparatively, only about 0.4% in females from European Caucasian descent have red-green color deficiency (Birch, 2012).</p>
+<p>The trichromatic theory of color vision is not the only theory—another major theory of color vision is known as the <strong>opponent-process theory</strong>. According to this theory, color is coded in opponent pairs: black-white, yellow-blue, and green-red. The basic idea is that some cells of the visual system are excited by one of the opponent colors and inhibited by the other. So, a cell that was excited by wavelengths associated with green would be inhibited by wavelengths associated with red, and vice versa. One of the implications of opponent processing is that we do not experience greenish-reds or yellowish-blues as colors. Another implication is that this leads to the experience of negative afterimages. An <strong>afterimage</strong> describes the continuation of a visual sensation after removal of the stimulus. For example, when you stare briefly at the sun and then look away from it, you may still perceive a spot of light although the stimulus (the sun) has been removed. When color is involved in the stimulus, the color pairings identified in the opponent-process theory lead to a negative afterimage. You can test this concept using the flag in Figure 2.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224727/CNX_Psych_05_03_Afterimage.jpg" alt="An illustration shows a green flag with a thick, black-bordered yellow lines meeting slightly to the left of the center. A small white dot sits within the yellow space in the exact center of the flag."></p>
+<p><strong>Figure 3</strong>. Stare at the white dot for 30–60 seconds and then move your eyes to a blank piece of white paper. What do you see? This is known as a negative afterimage, and it provides empirical support for the opponent-process theory of color vision.</p>
+<p>But these two theories—the trichromatic theory of color vision and the opponent-process theory—are not mutually exclusive. Research has shown that they just apply to different levels of the nervous system. For visual processing on the retina, trichromatic theory applies: the cones are responsive to three different wavelengths that represent red, blue, and green. But once the signal moves past the retina on its way to the brain, the cells respond in a way consistent with opponent-process theory (Land, 1959; Kaiser, 1997).</p>
+<h2 id="depth-perception">Depth Perception</h2>
+<p>Our ability to perceive spatial relationships in three-dimensional (3-D) space is known as <strong>depth perception</strong>. With depth perception, we can describe things as being in front, behind, above, below, or to the side of other things.</p>
+<p>Our world is three-dimensional, so it makes sense that our mental representation of the world has three-dimensional properties. We use a variety of cues in a visual scene to establish our sense of depth. Some of these are <strong>binocular cues</strong>, which means that they rely on the use of both eyes. One example of a binocular depth cue is <strong>binocular disparity</strong>, the slightly different view of the world that each of our eyes receives. To experience this slightly different view, do this simple exercise: extend your arm fully and extend one of your fingers and focus on that finger. Now, close your left eye without moving your head, then open your left eye and close your right eye without moving your head. You will notice that your finger seems to shift as you alternate between the two eyes because of the slightly different view each eye has of your finger.</p>
+<p>A 3-D movie works on the same principle: the special glasses you wear allow the two slightly different images projected onto the screen to be seen separately by your left and your right eye. As your brain processes these images, you have the illusion that the leaping animal or running person is coming right toward you.</p>
+<p>Although we rely on binocular cues to experience depth in our 3-D world, we can also perceive depth in 2-D arrays. Think about all the paintings and photographs you have seen. Generally, you pick up on depth in these images even though the visual stimulus is 2-D. When we do this, we are relying on a number of <strong>monocular cues</strong>, or cues that require only one eye. If you think you can’t see depth with one eye, note that you don’t bump into things when using only one eye while walking—and, in fact, we have more monocular cues than binocular cues.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>The following video of anamorphic art demonstrates how we rely on these monocular cues to see depth, even when the depth is only imagined.</p>
+<p>You can view the <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/AmazingAnamophicIllusions_alternative.txt">text alternative for “Amazing Anamorphic Illusions!” (opens in new window).</a></p>
+<p>An example of a monocular cue would be what is known as <strong>linear perspective</strong>. Linear perspective refers to the fact that we perceive depth when we see two parallel lines that seem to converge in an image (Figure 3). Some other monocular depth cues are interposition, the partial overlap of objects, the relative size and closeness of images to the horizon, relative size, and the variation between light and shadow.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224729/CNX_Psych_05_03_LinPerspec.jpg" alt="A photograph shows an empty road that continues toward the horizon."></p>
+<p><strong>Figure 4</strong>. We perceive depth in a two-dimensional figure like this one through the use of monocular cues like linear perspective, like the parallel lines converging as the road narrows in the distance. (credit: Marc Dalmulder)</p>
+<h3 id="dig-deeper-stereoblindness">Dig Deeper: Stereoblindness</h3>
+<p>Bruce Bridgeman was born with an extreme case of lazy eye that resulted in him being stereoblind, or unable to respond to binocular cues of depth. He relied heavily on monocular depth cues, but he never had a true appreciation of the 3-D nature of the world around him. This all changed one night in 2012 while Bruce was seeing a movie with his wife.</p>
+<p>The movie the couple was going to see was shot in 3-D, and even though he thought it was a waste of money, Bruce paid for the 3-D glasses when he purchased his ticket. As soon as the film began, Bruce put on the glasses and experienced something completely new. For the first time in his life he appreciated the true depth of the world around him. Remarkably, his ability to perceive depth persisted outside of the movie theater.</p>
+<p>There are cells in the nervous system that respond to binocular depth cues. Normally, these cells require activation during early development in order to persist, so experts familiar with Bruce’s case (and others like his) assume that at some point in his development, Bruce must have experienced at least a fleeting moment of binocular vision. It was enough to ensure the survival of the cells in the visual system tuned to binocular cues. The mystery now is why it took Bruce nearly 70 years to have these cells activated (Peck, 2012).</p>
+<h2 id="integration-with-other-modalities">Integration with Other Modalities</h2>
+<p>Vision is not an encapsulated system. It interacts with and depends on other sensory modalities. For example, when you move your head in one direction, your eyes reflexively move in the opposite direction to compensate, allowing you to maintain your gaze on the object that you are looking at. This reflex is called the <strong>vestibulo-ocular reflex</strong>. It is achieved by integrating information from both the visual and the vestibular system (which knows about body motion and position). You can experience this compensation quite simply. First, while you keep your head still and your gaze looking straight ahead, wave your finger in front of you from side to side. Notice how the image of the finger appears blurry. Now, keep your finger steady and look at it while you move your head from side to side. Notice how your eyes reflexively move to compensate the movement of your head and how the image of the finger stays sharp and stable. Vision also interacts with your proprioceptive system, to help you find where all your body parts are, and with your auditory system, to help you understand the sounds people make when they speak. You can learn more about this in the multimodal module.</p>
+<p>Finally, vision is also often implicated in a blending-of-sensations phenomenon known as <strong>synesthesia</strong>. Synesthesia occurs when one sensory signal gives rise to two or more sensations. The most common type is <em>grapheme-color</em> synesthesia. About 1 in 200 individuals experience a sensation of color associated with specific letters, numbers, or words: the number 1 might always be seen as red, the number 2 as orange, etc. But the more fascinating forms of synesthesia blend sensations from entirely different sensory modalities, like taste and color or music and color: the taste of chicken might elicit a sensation of green, for example, and the timbre of violin a deep purple.</p>
+<h3 id="sensation-and-perception">Sensation and PErception</h3>
+<p>All of this talk about vision may have you wondering what this has to do with psychology. Remember that sensation is input about the physical world obtained by our sensory receptors, and perception is the process by which the brain selects, organizes, and interprets these sensations. In other words, senses are the physiological basis of perception. Perception of the same senses may vary from one person to another because each person’s brain interprets stimuli differently based on that individual’s learning, memory, emotions, and expectations. It is for this reason that psychologists study sensation—in order to understand perception, which is clearly a component of behavior and mental processes (the definition of psychology).</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>Take a look at a few of your photos or personal works of art. Can you find examples of linear perspective as a potential depth cue?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>afterimage:</strong> continuation of a visual sensation after removal of the stimulus</p>
+<p><strong>binocular cue:</strong> cue that relies on the use of both eyes</p>
+<p><strong>binocular disparity:</strong> slightly different view of the world that each eye receives</p>
+<p><strong>depth perception:</strong> ability to perceive depth</p>
+<p><strong>linear perspective:</strong> perceive depth in an image when two parallel lines seem to converge</p>
+<p><strong>monocular cue:</strong> cue that requires only one eye</p>
+<p><strong>opponent-process theory of color perception:</strong> color is coded in opponent pairs: black-white, yellow-blue, and red-green</p>
+<p><strong>synesthesia</strong>: the blending of two or more sensory experiences, or the automatic activation of a secondary (indirect) sensory experience due to certain aspects of the primary (direct) sensory stimulation.</p>
+<p><strong>trichromatic theory of color perception:</strong> color vision is mediated by the activity across the three groups of cones</p>
+<p><strong>vestibulo-ocular reflex:</strong> coordination of motion information with visual information that allows you to maintain your gaze on an object while you move.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at http://cnx.org/contents/4abf04bf-93a0-45c3-9cbc-2cefd46e68cc@5.48</li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Vision. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/5-3-vision">https://openstax.org/books/psychology-2e/pages/5-3-vision</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Integration with Other Modalities. <strong>Authored by</strong>: Simona Buetti and Alejandro Lleras. <strong>Provided by</strong>: University of Illinois. <strong>Located at</strong>: <a href="http://nobaproject.com/modules/vision">http://nobaproject.com/modules/vision</a>. <strong>Project</strong>: The Noba Project. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+<li>Introduction to Sensation. <strong>Provided by</strong>: Boundless. <strong>Located at</strong>: <a href="https://www.boundless.com/psychology/textbooks/alternative-to-study-guide-for-psychology-9th-david-g-myers-richard-o-straub-1429225343-9781429225342/sensation-and-perception-7/sensation-44/introduction-to-sensation-198-12692/">https://www.boundless.com/psychology/textbooks/alternative-to-study-guide-for-psychology-9th-david-g-myers-richard-o-straub-1429225343-9781429225342/sensation-and-perception-7/sensation-44/introduction-to-sensation-198-12692/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Questions for perception activity. <strong>Provided by</strong>: Open Learning Initiative. <strong>Located at</strong>: <a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=df3e710c0a0001dc3d30772377a4018e">https://oli.cmu.edu/jcourse/workbook/activity/page?context=df3e710c0a0001dc3d30772377a4018e</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+</ul>
+<p>All rights reserved content</p>
+<ul>
+<li>Amazing Anamorphic Illusions. <strong>Authored by</strong>: brusspup. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=tBNHPk-Lnkk">https://www.youtube.com/watch?v=tBNHPk-Lnkk</a>. <strong>License</strong>: <em>Other</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+</ul>
+<hr>
+<h2 id="gestalt-principles-of-perception--introduction-to-psychology">Gestalt Principles of Perception | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Gestalt Principles of Perception | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/gestalt-principles-of-perception/
+In the early part of the 20th century, Max Wertheimer published a paper demonstrating that individuals perceived motion in rapidly flickering static images—an insight that came to him as he used a child’s toy tachistoscope. Wertheimer, and his assistants Wolfgang Köhler and Kurt Koffka, who later became his partners, believed that perception involved more than simply combining sensory stimuli. This belief led to a new movement within the field of psychology known as <strong>Gestalt psychology</strong>. The word <em>gestalt</em> literally means form or pattern, but its use reflects the idea that the whole is different from the sum of its parts. In other words, the brain creates a perception that is more than simply the sum of available sensory inputs, and it does so in predictable ways. Gestalt psychologists translated these predictable ways into principles by which we organize sensory information. As a result, Gestalt psychology has been extremely influential in the area of sensation and perception (Rock &amp; Palmer, 1990).</li>
+</ul>
+<p>One Gestalt principle is the <strong>figure-ground relationship</strong>. According to this principle, we tend to segment our visual world into figure and ground. Figure is the object or person that is the focus of the visual field, while the ground is the background. As Figure 1 shows, our perception can vary tremendously, depending on what is perceived as figure and what is perceived as ground. Presumably, our ability to interpret sensory information depends on what we label as figure and what we label as ground in any particular case, although this assumption has been called into question (Peterson &amp; Gibson, 1994; Vecera &amp; O’Reilly, 1998).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224743/CNX_Psych_05_06_FacesVase.jpg" alt="An illustration shows two identical black face-like shapes that face towards one another, and one white vase-like shape that occupies all of the space in between them. Depending on which part of the illustration is focused on, either the black shapes or the white shape may appear to be the object of the illustration, leaving the other(s) perceived as negative space."></p>
+<p><strong>Figure 1</strong>. The concept of figure-ground relationship explains why this image can be perceived either as a vase or as a pair of faces.</p>
+<p>Another Gestalt principle for organizing sensory stimuli into meaningful perception is <strong>proximity</strong>. This principle asserts that things that are close to one another tend to be grouped together, as Figure 2 illustrates.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224744/CNX_Psych_05_06_Proximity.jpg" alt="Illustration A shows thirty-six dots in six evenly-spaced rows and columns. Illustration B shows thirty-six dots in six evenly-spaced rows but with the columns separated into three sets of two columns."></p>
+<p><strong>Figure 2</strong>. The Gestalt principle of proximity suggests that you see (a) one block of dots on the left side and (b) three columns on the right side.</p>
+<p>How we read something provides another illustration of the proximity concept. For example, we read this sentence like this, notl iket hiso rt hat. We group the letters of a given word together because there are no spaces between the letters, and we perceive words because there are spaces between each word. Here are some more examples: Cany oum akes enseo ft hiss entence? What doth es e wor dsmea n?</p>
+<p>We might also use the principle of <strong>similarity</strong> to group things in our visual fields. According to this principle, things that are alike tend to be grouped together (Figure 3). For example, when watching a football game, we tend to group individuals based on the colors of their uniforms. When watching an offensive drive, we can get a sense of the two teams simply by grouping along this dimension.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224745/CNX_Psych_05_06_Similarity.jpg" alt="An illustration shows six rows of six dots each. The rows of dots alternate between blue and white colored dots."></p>
+<p><strong>Figure 3</strong>. When looking at this array of dots, we likely perceive alternating rows of colors. We are grouping these dots according to the principle of similarity.</p>
+<p>Two additional Gestalt principles are the <strong>law of</strong> <strong>continuity</strong> (or good continuation) and <strong>closure</strong>. The law of continuity suggests that we are more likely to perceive continuous, smooth flowing lines rather than jagged, broken lines (Figure 4). The principle of closure states that we organize our perceptions into complete objects rather than as a series of parts (Figure 5).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224746/CNX_Psych_05_06_Continuity.jpg" alt="An illustration shows two lines of diagonal dots that cross in the middle in the general shape of an “X.”"></p>
+<p><strong>Figure 4</strong>. Good continuation would suggest that we are more likely to perceive this as two overlapping lines, rather than four lines meeting in the center.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224747/CNX_Psych_05_06_Closure.jpg" alt="An illustration shows fragmented lines that would form a circle if they were connected. Another illustration shows fragmented lines that would form a square if they were connected."></p>
+<p><strong>Figure 5</strong>. Closure suggests that we will perceive a complete circle and rectangle rather than a series of segments.</p>
+<p>According to Gestalt theorists, <strong>pattern perception</strong>, or our ability to discriminate among different figures and shapes, occurs by following the principles described above. You probably feel fairly certain that your perception accurately matches the real world, but this is not always the case. Our perceptions are based on <strong>perceptual hypotheses</strong>: educated guesses that we make while interpreting sensory information. These hypotheses are informed by a number of factors, including our personalities, experiences, and expectations. We use these hypotheses to generate our perceptual set. For instance, research has demonstrated that those who are given verbal priming produce a biased interpretation of complex ambiguous figures (Goolkasian &amp; Woodbury, 2010).</p>
+<h3 id="dig-deeper-the-depths-of-perception-bias-prejudice-and-cultural-factors"><strong>Dig Deeper: The Depths of Perception: Bias, Prejudice, and Cultural Factors</strong></h3>
+<p>In this module, you have learned that perception is a complex process. Built from sensations, but influenced by our own experiences, biases, prejudices, and cultures, perceptions can be very different from person to person. Research suggests that implicit racial prejudice and stereotypes affect perception. For instance, several studies have demonstrated that non-Black participants identify weapons faster and are more likely to identify non-weapons as weapons when the image of the weapon is paired with the image of a Black person (Payne, 2001; Payne, Shimizu, &amp; Jacoby, 2005). Furthermore, White individuals’ decisions to shoot an armed target in a video game is made more quickly when the target is Black (Correll, Park, Judd, &amp; Wittenbrink, 2002; Correll, Urland, &amp; Ito, 2006). This research is important, considering the number of very high-profile cases in the last few decades in which young Blacks were killed by people who claimed to believe that the unarmed individuals were armed and/or represented some threat to their personal safety.</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>Have you ever listened to a song on the radio and sung along only to find out later that you have been singing the wrong lyrics? Once you found the correct lyrics, did your perception of the song change?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>closure:</strong> organizing our perceptions into complete objects rather than as a series of parts</p>
+<p><strong>figure-ground relationship:</strong> segmenting our visual world into figure and ground</p>
+<p><strong>Gestalt psychology:</strong> field of psychology based on the idea that the whole is different from the sum of its parts</p>
+<p><strong>good continuation:</strong> (also, continuity) we are more likely to perceive continuous, smooth flowing lines rather than jagged, broken lines</p>
+<p><strong>pattern perception:</strong> ability to discriminate among different figures and shapes</p>
+<p><strong>perceptual hypothesis:</strong> educated guess used to interpret sensory information</p>
+<p><strong>proximity:</strong> things that are close to one another tend to be grouped together</p>
+<p><strong>similarity:</strong> things that are alike tend to be grouped together</p>
+<hr>
+<h2 id="illusions--introduction-to-psychology">Illusions | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Illusions | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/illusions/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain how and why psychologists use illusions</li>
+</ul>
+<h2 id="why-illusions">Why Illusions?</h2>
+<p>Psychologists have analyzed perceptual systems for more than a century. Vision and hearing have received the most attention by far, but other perceptual systems, like those for smell taste movement, balance, touch, and pain, have also been studied extensively. Perception scientists use a variety of approaches to study these systems—they design experiments, study neurological patients with damaged brain regions, and create perceptual illusions that toy with the brain’s efforts to interpret the sensory world.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/14154724/Horizontal_3d_graffiti_%C5%81%C3%B3d%C5%BA_Schillera_Passage.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/14154724/Horizontal_3d_graffiti_Łódź_Schillera_Passage.jpg" alt="3D street art showing a rubix cube, deck of cards, waterfall, and blocks all on a 2D surface."></a></p>
+<p><strong>Figure 1</strong>. This 3-D street art demonstrates how artists utilize illusions to portray depth on a 2-D sidewalk.</p>
+<p>Creation and testing of perceptual illusions has been a fruitful approach to the study of perception—particularly visual perception—since the early days of psychology. People often think that visual illusions are simply amusing tricks that provide us with entertainment. Many illusions are fun to experience, but perception scientists create illusions based on their understanding of the perceptual system. Once they have created a successful illusion, the scientist can explore what people experience, what parts of the brain are involved in interpretation of the illusion, and what variables increase or diminish the strength of the illusion. Scientists are not alone in this interest. Visual artists have discovered and used many illusion-producing principles for centuries, allowing them to create the experience of depth, movement, light and shadow, and relative size on two-dimensional canvases.</p>
+<h2 id="depth-illusions">Depth Illusions</h2>
+<p>When we look at the world, we are not very good at detecting the absolute qualities of things—their exact size or color or shape. What we are very good at is judging objects in the context of other objects and conditions. Let’s take a look at a few illusions to see how they are based on insights about our perception. Look at Figure 2 below. Which of the two horizontal yellow lines looks wider, the top one or the bottom one?</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07210125/Ponzo_illusion.gif"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07210125/Ponzo_illusion.gif" alt="Lines of a railroad track as they converge off into the distance. One yellow line is close to the front of the image on the tracks and another line of the same size is placed towards the back of the image along the tracks. Because of the converging lines, the yellow line in the back appears larger than the line in the foreground."></a></p>
+<p><strong>Figure 2</strong>. The Ponzo Illusion.</p>
+<p>Most people experience the top line as wider. They are both exactly the same length. This experience is called the Ponzo illusion. Even though you know that the lines are the same length, it is difficult to see them as identical. Our perceptual system takes the context into account, here using the converging “railroad tracks” to produce an experience of depth. Then, using some impressive mental geometry, our brain adjusts the experienced length of the top line to be consistent with the size it would have if it were that far away: if two lines are the same length on my retina, but different distances from me, the more distant line must be in reality longer. You experience a world that “makes sense” rather than a world that reflects the actual objects in front of you.</p>
+<p>There are many depth illusions. It is difficult to see the drawing on the left below as a two-dimensional figure. The converging lines and smaller square at the center seem to coax our perceptual systems into seeing depth, even though we know that the drawing is flat. This urge to see depth is probably so strong because our ability to use two-dimensional information to infer a three dimensional world is essential for allowing us to operate in the world. The picture on the right below is a driving tunnel, something you would need to process at high speed if you were in a car going through it. Your quick and detailed use of converging lines and other cues allows you to make sense of this 3-D world.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07210639/Screen-Shot-2017-02-07-at-3.04.55-PM.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07210639/Screen-Shot-2017-02-07-at-3.04.55-PM.png" alt="The drawing on the left shows a large square with a smaller square on the inside and lines connecting the corners of the inner and outer square. The secong image shows the inside of a tunnel."></a></p>
+<p><strong>Figure 3</strong>. Understanding depth enables us to function in a 3-dimensional world.</p>
+<h2 id="light-and-size-illusions">Light and Size Illusions</h2>
+<p>Depth is not the only quality in the world that shows how we adjust what we experience to fit the surrounding world. Look at the two gray squares in the figure below. Which one looks darker?</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07211928/Simultaneous_Contrast.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07211928/Simultaneous_Contrast.jpg" alt="A dark black square with a gray square in the center next to a white square with a gray square in the middle. The black surrounding the gray makes the gray appear lighter than with the white background."></a></p>
+<p><strong>Figure 4</strong>. Which gray square appears darker?</p>
+<p>Most people experience the square on the right as the darker of the two gray squares. You’ve probably already guessed that the squares are actually identical in shade, but the surrounding area—black on the left and white on the right—influence how our perceptual systems interpret the gray area. In this case, the greater difference in shading between the white surrounding area and the gray square on the right results in the experience of a darker square.</p>
+<p>Here is another example below. The two triangular figures are identical in shade, but the triangle on the left looks lighter against the dark background of the cross when compared to the triangle in the white area on the right.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07212941/569px-Benary_Cross.svg_.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07212941/569px-Benary_Cross.svg_-300x300.png" alt="Gray cross with a lighter gray triangle inside of the cross arm, and another outside of the arm of the cross. The triangle outside of the cross arm appears darker with its greater contrast against the white background."></a></p>
+<p><strong>Figure 5</strong>. Benary Cross</p>
+<p>Our visual systems work with more than simple contrast. They also use our knowledge of how the world works to adjust our perceptual experience. Look at the checkerboard below. There are two squares with letters in them, one marked “A” and the other “B”. Which one of those two squares is darker?</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07213735/Optical.greysquares.arp_.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/07213735/Optical.greysquares.arp_-300x242.jpg" alt="A checkerboard with a large green cylinder on top of the gameboard, casting a shadow on the board. The shadow makes the pieces appear darker, so much so that the lighter &quot;B&quot; piece is actually the same color as the darker &quot;A&quot; piece."></a></p>
+<p><strong>Figure 6</strong>. Which looks darker, A or B?</p>
+<p>This seems like an easy comparison, but the truth is that squares A and B are identical in shade. Our perceptual system adjusts our experience by taking some visual information into account. First, “A” is one of the “dark squares” and “B” is a “light square” if we take the checkerboard pattern into account. Perhaps even more impressive, our visual systems notice that “B” is in a shadow. Object in a shadow appear darker, so our experience is adjusted to take account of effect of the shadow, resulting in perceiving square B as being lighter than square A, which sits in the bright light. And if you really don’t believe your eyes, take a look at a <a href="https://www.youtube.com/watch?v=z9Sen1HTu5o">video showing the same color tiles here</a>.</p>
+<h3 id="try-it">Try It</h3>
+<p>One final illusion takes us back to adjustment for size. Look at the two sets of circles below. Your task is to adjust the center circle on the left so it is the same actual size as the center circle on the right. The surrounding circles will not change in size, though the right of circles will expand to accommodate the size of the center circle. Use the slide bar with the label “Size of left circle” to make your adjustments. When you are satisfied with your adjustment, check your accuracy by clicking on the “Verify Diameter” button. Click “Reset” to try again.</p>
+<p>This illusion is called the Ebbinghaus illusion, created by Hermann Ebbinghaus, one of the early founders of experimental psychology.</p>
+<p>Here is another example of the Ebbinghaus illusion:</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/02202255/650px-Mond-vergleich.svg_.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/02202255/650px-Mond-vergleich.svg_.png" alt="Large blue circles surrounding a small orange circle and a large (appearing) orange circle surrounded by blue circles. The center orange circles are in fact the same size."></a></p>
+<p>In this version of the illusion, most people see the circle on the right as larger than the one on the left. The two orange circles are exactly the same size. The Ebbinghaus illusion again illustrates the tendency of our perceptual systems to adjust our experience of the world to the surrounding context.</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>If you want to explore more visual illusions, <a href="https://michaelbach.de/ot/">visit this website with dozens of interesting illusions</a> created by Michael Bach.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Contrast Illusion. <strong>Authored by</strong>: Paaliaq. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/Category:Contrast_illusions#/media/File:Simultaneous_Contrast.jpg">https://commons.wikimedia.org/wiki/Category:Contrast_illusions#/media/File:Simultaneous_Contrast.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Benary Cross Illusion. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/Category:Contrast_illusions#/media/File:Benary_Cross.svg">https://commons.wikimedia.org/wiki/Category:Contrast_illusions#/media/File:Benary_Cross.svg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Horizontal 3D grafitti. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Horizontal_3d_graffiti,_%C5%81%C3%B3d%C5%BA_Schillera_Passage.jpg">https://commons.wikimedia.org/wiki/File:Horizontal_3d_graffiti,_%C5%81%C3%B3d%C5%BA_Schillera_Passage.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Illusions Explanation. <strong>Authored by</strong>: Patrick Carroll. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>Public domain content</p>
+<ul>
+<li>Ponzo Illusion. <strong>Provided by</strong>: Wikipedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Ponzo_illusion.gif">https://commons.wikimedia.org/wiki/File:Ponzo_illusion.gif</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Baltimore Harbor Tunnel. <strong>Authored by</strong>: ErgoSum88. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/Category:Centered_tunnel_perspective#/media/File:Baltimore_Harbor_Tunnel_I-895_02.JPG">https://commons.wikimedia.org/wiki/Category:Centered_tunnel_perspective#/media/File:Baltimore_Harbor_Tunnel_I-895_02.JPG</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Simple shape square optical illusion. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/Category:Optical_illusions#/media/File:PSM_V54_D322_Simple_shape_creating_optical_illusion_2.png">https://commons.wikimedia.org/wiki/Category:Optical_illusions#/media/File:PSM_V54_D322_Simple_shape_creating_optical_illusion_2.png</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Checkerboard Illusion. <strong>Authored by</strong>: Adrian Pingstone . <strong>Provided by</strong>: Wikipedia. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Optical.greysquares.arp.jpg">https://commons.wikimedia.org/wiki/File:Optical.greysquares.arp.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Ebbinghaus Illusion. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/File:Mond-vergleich.svg">https://en.wikipedia.org/wiki/File:Mond-vergleich.svg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+</ul>
+<hr>
+<h2 id="modal-perception--introduction-to-psychology">Modal Perception | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Modal Perception | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/multi-modal-perception/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Define the basic terminology and basic principles of multimodal perception</li>
+<li>Give examples of multimodal and crossmodal behavioral effects</li>
+</ul>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27203138/percep.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27203138/percep-300x216.jpg" alt="Colorful image of fears, lines, and circles that, when seen together, look like a woman's face."></a></p>
+<p>Figure 1. The way we receive the information from the world is called sensation while our interpretation of that information is called perception. [Image: Laurens van Lieshou]</p>
+<p>Although it has been traditional to study the various senses independently, most of the time, perception operates in the context of information supplied by multiple <strong>sensory modalities</strong> at the same time. For example, imagine if you witnessed a car collision. You could describe the stimulus generated by this event by considering each of the senses independently; that is, as a set of <strong>unimodal</strong> stimuli. Your eyes would be stimulated with patterns of light energy bouncing off the cars involved. Your ears would be stimulated with patterns of acoustic energy emanating from the collision. Your nose might even be stimulated by the smell of burning rubber or gasoline. However, all of this information would be relevant to the same thing: your perception of the car collision. Indeed, unless someone was to explicitly ask you to describe your perception in unimodal terms, you would most likely experience the event as a unified bundle of sensations from multiple senses. In other words, your perception would be <strong>multimodal</strong>. The question is whether the various sources of information involved in this multimodal stimulus are processed separately by the perceptual system or not.</p>
+<p>For the last few decades, perceptual research has pointed to the importance of <strong>multimodal perception</strong>: the effects on the perception of events and objects in the world that are observed when there is information from more than one sensory modality. Most of this research indicates that, at some point in perceptual processing, information from the various sensory modalities is <strong>integrated</strong>. In other words, the information is combined and treated as a unitary representation of the world.</p>
+<h2 id="behavioral-effects-of-multimodal-perception">Behavioral Effects of Multimodal Perception</h2>
+<p>Although neuroscientists tend to study very simple interactions between neurons, the fact that they’ve found so many crossmodal areas of the cortex seems to hint that the way we experience the world is fundamentally multimodal. Our intuitions about perception are consistent with this; it does not seem as though our perception of events is constrained to the perception of each sensory modality independently. Rather, we perceive a unified world, regardless of the sensory modality through which we perceive it.</p>
+<p>It will probably require many more years of research before neuroscientists uncover all the details of the neural machinery involved in this unified experience. In the meantime, experimental psychologists have contributed to our understanding of multimodal perception through investigations of the behavioral effects associated with it. These effects fall into two broad classes. The first class—<strong>multimodal phenomena</strong>—concerns the binding of inputs from multiple sensory modalities and the effects of this binding on perception. The second class—<strong>crossmodal phenomena</strong>—concerns the influence of one sensory modality on the perception of another (Spence, Senkowski, &amp; Roder, 2009).</p>
+<h2 id="multimodal-phenomena">Multimodal Phenomena</h2>
+<h3 id="audiovisual-speech">Audiovisual Speech</h3>
+<p>Multimodal phenomena concern stimuli that generate simultaneous (or nearly simultaneous) information in more than one sensory modality. As discussed above, speech is a classic example of this kind of stimulus. When an individual speaks, she generates sound waves that carry meaningful information. If the perceiver is also looking at the speaker, then that perceiver also has access to <em>visual</em> patterns that carry meaningful information. Of course, as anyone who has ever tried to lipread knows, there are limits on how informative visual speech information is. Even so, the visual speech pattern alone is sufficient for very robust speech perception. Most people assume that deaf individuals are much better at lipreading than individuals with normal hearing. It may come as a surprise to learn, however, that some individuals with normal hearing are also remarkably good at lipreading (sometimes called “speechreading”). In fact, there is a wide range of speechreading ability in both normal hearing and deaf populations (Andersson, Lyxell, Rönnberg, &amp; Spens, 2001). However, the reasons for this wide range of performance are not well understood (Auer &amp; Bernstein, 2007; Bernstein, 2006; Bernstein, Auer, &amp; Tucker, 2001; Mohammed et al., 2005).</p>
+<p>How does visual information about speech interact with auditory information about speech? One of the earliest investigations of this question examined the accuracy of recognizing spoken words presented in a noisy context, much like in the example above about talking at a crowded party. To study this phenomenon experimentally, some irrelevant noise (“white noise”—which sounds like a radio tuned between stations) was presented to participants. Embedded in the white noise were spoken words, and the participants’ task was to identify the words. There were two conditions: one in which only the auditory component of the words was presented (the “auditory-alone” condition), and one in both the auditory and visual components were presented (the “audiovisual” condition). The noise levels were also varied, so that on some trials, the noise was very loud relative to the loudness of the words, and on other trials, the noise was very soft relative to the words. Sumby and Pollack (1954) found that the accuracy of identifying the spoken words was much higher for the audiovisual condition than it was in the auditory-alone condition. In addition, the pattern of results was consistent with the Principle of Inverse Effectiveness: The advantage gained by audiovisual presentation was highest when the auditory-alone condition performance was lowest (i.e., when the noise was loudest). At these noise levels, the audiovisual advantage was considerable: It was estimated that allowing the participant to see the speaker was equivalent to turning the volume of the noise down by over half. Clearly, the audiovisual advantage can have dramatic effects on behavior.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Another phenomenon using audiovisual speech is a very famous illusion called the “McGurk effect” (named after one of its discoverers). In the classic formulation of the illusion, a movie is recorded of a speaker saying the syllables “gaga.” Another movie is made of the same speaker saying the syllables “baba.” Then, the auditory portion of the “baba” movie is dubbed onto the visual portion of the “gaga” movie. This combined stimulus is presented to participants, who are asked to report what the speaker in the movie said. McGurk and MacDonald (1976) reported that 98 percent of their participants reported hearing the syllable “dada”—which was in neither the visual nor the auditory components of the stimulus. These results indicate that when visual and auditory information about speech is integrated, it can have profound effects on perception.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/TryThisBizarreAudioIllusionBBC.txt">view the transcript for “Try this bizarre audio illusion!” here (opens in new window)</a>.</p>
+<h3 id="tactilevisual-interactions-in-body-ownership">Tactile/Visual Interactions in Body Ownership</h3>
+<p>Not all multisensory integration phenomena concern speech, however. One particularly compelling multisensory illusion involves the integration of tactile and visual information in the perception of body ownership. In the “rubber hand illusion” (Botvinick &amp; Cohen, 1998), an observer is situated so that one of his hands is not visible. A fake rubber hand is placed near the obscured hand, but in a visible location. The experimenter then uses a light paintbrush to simultaneously stroke the obscured hand and the rubber hand in the same locations. For example, if the middle finger of the obscured hand is being brushed, then the middle finger of the rubber hand will also be brushed. This sets up a correspondence between the tactile sensations (coming from the obscured hand) and the visual sensations (of the rubber hand). After a short time (around 10 minutes), participants report feeling as though the rubber hand “belongs” to them; that is, that the rubber hand is a part of their body. This feeling can be so strong that surprising the participant by hitting the rubber hand with a hammer often leads to a reflexive withdrawing of the obscured hand—even though it is in no danger at all. It appears, then, that our awareness of our own bodies may be the result of multisensory integration.</p>
+<h2 id="crossmodal-phenomena">Crossmodal Phenomena</h2>
+<p>Crossmodal phenomena are distinguished from multimodal phenomena in that they concern the influence one sensory modality has on the perception of another.</p>
+<h3 id="visual-influence-on-auditory-localization">Visual Influence on Auditory Localization</h3>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27203253/ventril.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/27203253/ventril.jpg" alt="Man posing with his ventriloquist doll."></a></p>
+<p><strong>Figure 2</strong>. Ventriloquists are able to trick us into believing that what we see and what we hear are the same where, in truth, they are not. [Image: Indiapuppet]</p>
+<p>A famous (and commonly experienced) crossmodal illusion is referred to as “the ventriloquism effect.” When a ventriloquist appears to make a puppet speak, she fools the listener into thinking that the location of the origin of the speech sounds is at the puppet’s mouth. In other words, instead of localizing the auditory signal (coming from the mouth of a ventriloquist) to the correct place, our perceptual system localizes it incorrectly (to the mouth of the puppet).</p>
+<p>Why might this happen? Consider the information available to the observer about the location of the two components of the stimulus: the sounds from the ventriloquist’s mouth and the visual movement of the puppet’s mouth. Whereas it is very obvious where the visual stimulus is coming from (because you can see it), it is much more difficult to pinpoint the location of the sounds. In other words, the very precise visual location of mouth movement apparently overrides the less well-specified location of the auditory information. More generally, it has been found that the location of a wide variety of auditory stimuli can be affected by the simultaneous presentation of a visual stimulus (Vroomen &amp; De Gelder, 2004). In addition, the ventriloquism effect has been demonstrated for objects in motion: The motion of a visual object can influence the perceived direction of motion of a moving sound source (Soto-Faraco, Kingstone, &amp; Spence, 2003).</p>
+<h3 id="auditory-influence-on-visual-perception">Auditory Influence on Visual Perception</h3>
+<p>A related illusion demonstrates the opposite effect: where sounds have an effect on visual perception. In the double-flash illusion, a participant is asked to stare at a central point on a computer monitor. On the extreme edge of the participant’s vision, a white circle is briefly flashed one time. There is also a simultaneous auditory event: either one beep or two beeps in rapid succession. Remarkably, participants report seeing <em>two</em> visual flashes when the flash is accompanied by two beeps; the same stimulus is seen as a single flash in the context of a single beep or no beep (Shams, Kamitani, &amp; Shimojo, 2000). In other words, the number of heard beeps influences the number of seen flashes!</p>
+<p>Another illusion involves the perception of collisions between two circles (called “balls”) moving toward each other and continuing through each other. Such stimuli can be perceived as either two balls moving through each other or as a collision between the two balls that then bounce off each other in opposite directions. Sekuler, Sekuler, and Lau (1997) showed that the presentation of an auditory stimulus at the time of contact between the two balls strongly influenced the perception of a collision event. In this case, the perceived sound influences the interpretation of the ambiguous visual stimulus.</p>
+<h3 id="crossmodal-speech">Crossmodal Speech</h3>
+<p>Several crossmodal phenomena have also been discovered for speech stimuli. These crossmodal speech effects usually show altered perceptual processing of unimodal stimuli (e.g., acoustic patterns) by virtue of prior experience with the alternate unimodal stimulus (e.g., optical patterns). For example, Rosenblum, Miller, and Sanchez (2007) conducted an experiment examining the ability to become familiar with a person’s voice. Their first interesting finding was unimodal: Much like what happens when someone repeatedly hears a person speak, perceivers can become familiar with the “visual voice” of a speaker. That is, they can become familiar with the person’s speaking style simply by seeing that person speak. Even more astounding was their crossmodal finding: Familiarity with this <em>visual</em> information also led to increased recognition of the speaker’s <em>auditory</em> speech, to which participants had never had exposure.</p>
+<p>Similarly, it has been shown that when perceivers see a speaking face, they can identify the (auditory-alone) voice of that speaker, and vice versa (Kamachi, Hill, Lander, &amp; Vatikiotis-Bateson, 2003; Lachs &amp; Pisoni, 2004a, 2004b, 2004c; Rosenblum, Smith, Nichols, Lee, &amp; Hale, 2006). In other words, the visual form of a speaker engaged in the act of speaking appears to contain information about what that speaker should sound like. Perhaps more surprisingly, the auditory form of speech seems to contain information about what the speaker should look like.</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>In the late 17th century, a scientist named William Molyneux asked the famous philosopher John Locke a question relevant to modern studies of multisensory processing. The question was this: Imagine a person who has been blind since birth, and who is able, by virtue of the sense of touch, to identify three dimensional shapes such as spheres or pyramids. Now imagine that this person suddenly receives the ability to see. Would the person, without using the sense of touch, be able to identify those same shapes visually? Can modern research in multimodal perception help answer this question? Why or why not? How do the studies about crossmodal phenomena inform us about the answer to this question?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>crossmodal phenomena</strong>: effects that concern the influence of the perception of one sensory modality on the perception of another<br>
+<strong>double flash illusion</strong>: the false perception of two visual flashes when a single flash is accompanied by two auditory beeps<br>
+<strong>integrated</strong>: the process by which the perceptual system combines information arising from more than one modality<br>
+<strong>McGurk effect</strong>: an effect in which conflicting visual and auditory components of a speech stimulus result in an illusory perception<br>
+<strong>multimodal</strong>: of or pertaining to multiple sensory modalities<br>
+<strong>multimodal perception</strong>: the effects that concurrent stimulation in more than one sensory modality has on the perception of events and objects in the world<br>
+<strong>multimodal phenomena</strong>: effects that concern the binding of inputs from multiple sensory modalities<br>
+<strong>rubber hand illusion</strong>: the false perception of a fake hand as belonging to a perceiver, due to multimodal sensory information<br>
+<strong>sensory modalities</strong>: a type of sense; for example, vision or audition<br>
+<strong>unimodal</strong>: of or pertaining to a single sensory modality</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="pitch-perception-and-hearing-loss">Pitch Perception and Hearing Loss</h2>
+<ul>
+<li>url_title:: &quot;Pitch Perception and Hearing Loss&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-pitch-perception-and-hearing-loss/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain how we encode and perceive pitch and localize sound</li>
+<li>Describe types of hearing loss</li>
+</ul>
+<h2 id="pitch-perception">Pitch Perception</h2>
+<p>We know that different frequencies of sound waves are associated with differences in our perception of the pitch of those sounds. Low-frequency sounds are lower pitched, and high-frequency sounds are higher pitched. But how does the auditory system differentiate among various pitches? Several theories have been proposed to account for pitch perception. We’ll discuss two of them here: temporal theory and place theory. The <strong>temporal theory</strong> of pitch perception asserts that frequency is coded by the activity level of a sensory neuron. This would mean that a given hair cell would fire action potentials related to the frequency of the sound wave. While this is a very intuitive explanation, we detect such a broad range of frequencies (20–20,000 Hz) that the frequency of action potentials fired by hair cells cannot account for the entire range. Because of properties related to sodium channels on the neuronal membrane that are involved in action potentials, there is a point at which a cell cannot fire any faster (Shamma, 2001). The <strong>place theory</strong> of pitch perception suggests that different portions of the basilar membrane are sensitive to sounds of different frequencies. More specifically, the base of the basilar membrane responds best to high frequencies and the tip of the basilar membrane responds best to low frequencies. Therefore, hair cells that are in the base portion would be labeled as high-pitch receptors, while those in the tip of basilar membrane would be labeled as low-pitch receptors (Shamma, 2001). In reality, both theories explain different aspects of pitch perception. At frequencies up to about 4000 Hz, it is clear that both the rate of action potentials and place contribute to our perception of pitch. However, much higher frequency sounds can only be encoded using place cues (Shamma, 2001).</p>
+<h2 id="sound-localization">Sound Localization</h2>
+<p>The ability to locate sound in our environments is an important part of <strong>hearing</strong>. Localizing sound could be considered similar to the way that we perceive depth in our visual fields. Like the monocular and binocular cues that provided information about depth, the auditory system uses both <strong>monaural</strong> (one-eared) and <strong>binaural</strong> (two-eared) cues to localize sound.</p>
+<p>Each pinna interacts with incoming sound waves differently, depending on the sound’s source relative to our bodies. This interaction provides a monaural cue that is helpful in locating sounds that occur above or below and in front or behind us. The sound waves received by your two ears from sounds that come from directly above, below, in front, or behind you would be identical; therefore, monaural cues are essential (Grothe, Pecka, &amp; McAlpine, 2010).</p>
+<p>Binaural cues, on the other hand, provide information on the location of a sound along a horizontal axis by relying on differences in patterns of vibration of the eardrum between our two ears. If a sound comes from an off-center location, it creates two types of binaural cues: interaural level differences and interaural timing differences. <strong>Interaural level difference</strong> refers to the fact that a sound coming from the right side of your body is more intense at your right ear than at your left ear because of the attenuation of the sound wave as it passes through your head. <strong>Interaural timing difference</strong> refers to the small difference in the time at which a given sound wave arrives at each ear (Figure 1). Certain brain areas monitor these differences to construct where along a horizontal axis a sound originates (Grothe et al., 2010).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224732/CNX_Psych_05_04_MonInt.jpg" alt="A photograph of jets has an illustration of arced waves labeled “sound” coming from the jets. These extend to an outline of a human head, with arrows from the jets identifying the location of each ear."></p>
+<p><strong>Figure 1</strong>. Localizing sound involves the use of both monaural and binaural cues. (credit “plane”: modification of work by Max Pfandl)</p>
+<h2 id="hearing-loss">Hearing Loss</h2>
+<p><strong>Deafness</strong> is the partial or complete inability to hear. Some people are born without hearing, which is known as <strong>congenital deafness</strong>. Other people suffer from <strong>conductive hearing loss</strong>, which is due to a problem delivering sound energy to the cochlea. Causes for conductive hearing loss include blockage of the ear canal, a hole in the tympanic membrane, problems with the ossicles, or fluid in the space between the eardrum and cochlea. Another group of people suffer from sensorineural hearing loss, which is the most common form of hearing loss. Sensorineural hearing loss can be caused by many factors, such as aging, head or acoustic trauma, infections and diseases (such as measles or mumps), medications, environmental effects such as noise exposure (noise-induced hearing loss, as shown in Figure 5.20), tumors, and toxins (such as those found in certain solvents and metals).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/29221028/9eb390d075658d14e8907a047adbb361829177fb.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/29221028/9eb390d075658d14e8907a047adbb361829177fb-300x153.jpeg" alt="Photograph A shows Beyoncé performing at a concert. Photograph B shows a construction worker operating a jackhammer."></a></p>
+<p><strong>Figure 2</strong>. Environmental factors that can lead to sensorineural hearing loss include regular exposure to loud music or construction equipment. (a) Musical performers and (b) construction workers are at risk for this type of hearing loss. (credit a: modification of work by “GillyBerlin_Flickr”/Flickr; credit b: modification of work by Nick Allen)</p>
+<p>Given the mechanical nature by which the sound wave stimulus is transmitted from the eardrum through the ossicles to the oval window of the cochlea, some degree of hearing loss is inevitable. With conductive hearing loss, hearing problems are associated with a failure in the vibration of the eardrum and/or movement of the ossicles. These problems are often dealt with through devices like hearing aids that amplify incoming sound waves to make vibration of the eardrum and movement of the ossicles more likely to occur.</p>
+<p>When the hearing problem is associated with a failure to transmit neural signals from the cochlea to the brain, it is called <strong>sensorineural hearing loss</strong>. This type of loss accelerates with age and can be caused by prolonged exposure to loud noises, which causes damage to the hair cells within the cochlea. One disease that results in sensorineural hearing loss is <strong>Ménière’s disease</strong>. Although not well understood, Ménière’s disease results in a degeneration of inner ear structures that can lead to hearing loss, tinnitus (constant ringing or buzzing), <strong>vertigo</strong> (a sense of spinning), and an increase in pressure within the inner ear (Semaan &amp; Megerian, 2011). This kind of loss cannot be treated with hearing aids, but some individuals might be candidates for a cochlear implant as a treatment option. <strong>Cochlear implants</strong> are electronic devices that consist of a microphone, a speech processor, and an electrode array. The device receives incoming sound information and directly stimulates the auditory nerve to transmit information to the brain.</p>
+<h3 id="what-do-you-think-deaf-culture">What Do You Think?: Deaf Culture</h3>
+<p>In the United States and other places around the world, deaf people have their own language, schools, and customs. This is called deaf culture. In the United States, deaf individuals often communicate using American Sign Language (ASL); ASL has no verbal component and is based entirely on visual signs and gestures. The primary mode of communication is signing. One of the values of deaf culture is to continue traditions like using sign language rather than teaching deaf children to try to speak, read lips, or have cochlear implant surgery.</p>
+<p>When a child is diagnosed as deaf, parents have difficult decisions to make. Should the child be enrolled in mainstream schools and taught to verbalize and read lips? Or should the child be sent to a school for deaf children to learn ASL and have significant exposure to deaf culture? Do you think there might be differences in the way that parents approach these decisions depending on whether or not they are also deaf?</p>
+<h3 id="think-it-over">Think It Over</h3>
+<p>If you had to choose to lose either your vision or your hearing, which would you choose and why?</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>binaural cue:</strong> two-eared cue to localize sound</p>
+<p><strong>cochlear implant:</strong> electronic device that consists of a microphone, a speech processor, and an electrode array to directly stimulate the auditory nerve to transmit information to the brain</p>
+<p><strong>conductive hearing loss:</strong> failure in the vibration of the eardrum and/or movement of the ossicles</p>
+<p><strong>congenital deafness:</strong> deafness from birth</p>
+<p><strong>deafness:</strong> partial or complete inability to hear</p>
+<p><strong>interaural level difference:</strong> sound coming from one side of the body is more intense at the closest ear because of the attenuation of the sound wave as it passes through the head</p>
+<p><strong>interaural timing difference:</strong> small difference in the time at which a given sound wave arrives at each ear</p>
+<p><strong>Ménière’s disease:</strong> results in a degeneration of inner ear structures that can lead to hearing loss, tinnitus, vertigo, and an increase in pressure within the inner ear</p>
+<p><strong>monaural cue:</strong> one-eared cue to localize sound</p>
+<p><strong>place theory of pitch perception:</strong> different portions of the basilar membrane are sensitive to sounds of different frequencies</p>
+<p><strong>sensorineural hearing loss:</strong> failure to transmit neural signals from the cochlea to the brain</p>
+<p><strong>temporal theory of pitch perception:</strong> sound’s frequency is coded by the activity level of a sensory neuron</p>
+<p><strong>vertigo:</strong> spinning sensation</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="psych-in-real-life-illusions">Psych in Real Life: Illusions</h2>
+<ul>
+<li>url_title:: &quot;Psych in Real Life: Illusions&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-illusions/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe Jessica Witt’s research on golf and its connection to the Ebbinghaus illusion</li>
+</ul>
+<p>Remember the Ebbinghaus illusion (shown again below)? How do you think a psychologist might use this illusion to learn about mental processes or behavior? Read on to see an actual example from a psychologist at Colorado State University.</p>
+<h3 id="try-it">Try It</h3>
+<p>Try to match the size of the center orange circle on the left to the size of the center orange circle on the right. Use the slide bar with the label “Size of left circle” to make your adjustments. When you are satisfied with your adjustment, check your accuracy by clicking on the “Verify Diameter” button. Click “Reset” to try again.</p>
+<h2 id="ebbinghaus-in-the-real-world">Ebbinghaus in the Real World</h2>
+<p>Imagine that you are in a golf competition in which you are putting against someone with the same experience and skill that you have. There is one problem: Your opponent gets to putt into a hole that is 10% larger than the hole you have to use. You’d probably think that the competition was unfairly biased against you.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/14025440/ball-1842170_1920.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/02/14025440/ball-1842170_1920.jpg" alt="aerial view of a golf hole and golf ball"></a></p>
+<p><strong>Figure 1</strong>. Do you suspect that the <em>perceived</em> size of a golf hole will affect putting performance?</p>
+<p>Now imagine a somewhat different situation. You and your opponent are about equal in ability and the holes you are using are the same size, but the hole that your opponent is using <em>looks</em> 10% larger than the one you are using. Would your opponent have an unfair advantage now?</p>
+<p>If you read the earlier section on the Ebbinghaus effect, you have an idea how psychologists could exploit your perceptual system (and your opponent’s) to test this very question. Psychologist Jessica Witt and her colleagues Sally Linkenauger and Dennis Proffitt recruited research participants with no unusual golf experience to participate in a putting task. They competed against themselves rather than against another person.</p>
+<p>The experimenters made the task challenging by using a hole with a 2-inch diameter, which is about half the diameter of the hole you will find on a golf course. An overhead projector mounted on the ceiling of their lab allowed them to project Ebbinghaus’s circles around the putting hole. Some participants saw the putting hole surrounded by circles that were smaller than the hole in the center; the other half saw surrounding black circles that were larger.</p>
+<p>Participants putted from about 11½ feet away. They took 10 putts in one condition, and then 10 in the other condition. Half of the participants putted with the large surrounding circles first and half saw the small surrounding circles first. This procedure is called <strong>counterbalancing</strong>. If there is any advantage (e.g., getting better over time with practice) or disadvantage (e.g., getting tired of putting), counterbalancing assures that both conditions are equally exposed to the positive or negative effects of which task goes first or second. Failure to take account of this type of problem means that you may have a <strong>confounding variable</strong>—practice or fatigue—that influences performance. A confounding variable is something that <em>could</em> influence performance, but is not part of the study. We try to <em>control</em> (that is, neutralize) potentially confounding variables so they cannot be the cause of performance differences. So, for instance, if everyone did the large surrounding circles condition first and then the small surrounding circles, then differences in performance could be due to order of conditions (leading to practice or fatigue effects) rather than the size of the surrounding circles. By counterbalancing, we don’t get rid of the effects of practice or fatigue for any particular person, but—across all the participants—practice or fatigue should affect both conditions (both types of Ebbinghaus circles) equally.</p>
+<p>The experimenters wanted to know two things. First, did they actually produce the Ebbinghaus illusion? Remember: there is no guarantee that people see or think the way your theory says they should. So just before the participant started putting in a particular condition, they drew a circle using a computerized drawing tool, attempting to match the exact size of the putting hole. This is better than simply asking, “do you see the illusion?” The drawing task attempts to directly measure what they perceive.</p>
+<p>Second, the experimenters wanted to see if the perceived size of the hole influenced putting accuracy. They recorded the success or failure of each putt. Each participant could get a score of 0 to 10 successful putts in each condition.</p>
+<h3 id="methods-summary">Methods Summary</h3>
+<p>Recap the steps you’ve read about thus far:</p>
+<ol>
+<li>The participant practices putting to get used to the task.</li>
+<li>The participant completes the first condition (large surrounding circles for half of the participants and small surrounding circles for the other half).
+<ul>
+<li>The participant draws a circle corresponding to their estimation of the actual size of the putting hole. This allows the experimenters to determine if the Ebbinghaus effect actually occurred.</li>
+<li>The participant putts 10 times in this condition.</li>
+</ul>
+</li>
+<li>Participant completes the second condition (whichever condition they have not yet done).
+<ul>
+<li>The participant draws a circle corresponding to their estimation of the actual size of the putting hole.</li>
+<li>The participant putts 10 times in this condition.</li>
+</ul>
+</li>
+</ol>
+<h3 id="try-it">Try It</h3>
+<p><strong>Now that you know the details of Jessica Witt’s experiment, see if you can answer the following questions. Decide which option you think is correct and then click the ‘Show Answer’ link to see if you’re right.</strong></p>
+<p><strong>Question 1: What is the independent variable as described in this study?</strong><br>
+a. The size of the putting hole is the independent variable.<br>
+b. The size of the circles surrounding the putting hole is the independent variable.<br>
+c. The distance the person had to putt is the independent variable.<br>
+d. There are two independent variables: the size of the putting hole and the size of the surrounding circles.</p>
+<p>Show Answer</p>
+<p><strong>Question 2: What is the dependent variable in this study?</strong><br>
+a. The number of successful putts is the dependent variable.<br>
+b. The size of the circle drawn by the participant is the dependent variable.<br>
+c. The size of the putting hole is the dependent variable.<br>
+d. There are two dependent variables: the number of successful putts and the size of the circle drawn by the participants are both dependent variables.</p>
+<p>Show Answer</p>
+<p>Now see if you can guess the results of this study.</p>
+<h3 id="try-it">Try It</h3>
+<p><strong>Question 3: How did the participants perceive the holes?</strong></p>
+<p>Resize the bars below by clicking and dragging them to show your predicted results when the subjects were asked to draw the circles. Make a general prediction based on your understanding of the experiment.</p>
+<p>Show Answer</p>
+<p><strong>Question 4: Can you guess how well the participants putted?</strong></p>
+<p>Resize the bars below by clicking and dragging them to show your predicted results when the subjects putted.</p>
+<p>Show Answer</p>
+<h3 id="try-it">Try It</h3>
+<p>Before we show you the actual results of the study, write out your prediction. Do you think the illusion affected putting performance? Why or why not? Explain your answer in the text box below:</p>
+<p>Show Answer</p>
+<p>This is not the only experiment that has used a sports context to study the effects of illusions. Other experiments have shown that people hit softballs better when the balls are perceived as larger. People score higher in darts when the board appears larger. Athletes kick field goals and return tennis balls more successfully when the goal posts or tennis balls appear larger. In all of these studies, the balls or boards or goal posts were not actually larger, but they were perceived as larger because the experimenters created illusions. Skilled athletes often report that targets appear larger or time slows down when they are “in the zone”, as if practice and skill create their own perceptual illusions that increase confidence and make difficult challenges feel easier.</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Watch this interview with Psychologist Jessica Witt to see her talk about how her research utilizing the Ebbinghaus illusion impacts a golfer’s perception and performance. You can also <a href="http://www.apa.org/science/about/psa/2016/12/action-visual-perception.aspx">read about more about similar variations of Witt’s research here</a>.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/AHoleInTheHeadGolfAndPerception.txt">view the transcript for “A hole in the head: Golf and Perception” here (opens in new window)</a>.</p>
+<h2 id="a-final-note-science-doesnt-always-produce-simple-results">A Final Note: Science Doesn’t Always Produce Simple Results</h2>
+<p>Professor Witt’s study had interesting results; however, they weren’t quite as simple as we have made them seem. The researchers actually had two different hole sizes: 2 inches and 4 inches. The Ebbinghaus circles were adjusted to be relatively larger or smaller than the putting hole.</p>
+<p>The Ebbinghaus illusion worked for the smaller (2 inch) putting holes, but not for the larger (4 inch) putting holes. In other words, when people drew the circles as they perceived them (the “manipulation check” dependent variable), they drew different sized circles for the 2 inch holes (the Ebbinghaus illusion), but the same size circles for the 4 inch holes (no Ebbinghaus illusion).</p>
+<p>For the larger (4 inch) putting holes, putting accuracy was the same for the two different conditions. This didn’t bother the experimenters, because—as we have already noted—the participants did not experience the Ebbinghaus illusion with the larger holes. If the holes were perceived as the same, then self-confidence should not have been affected and, in turn, putting should not have been better in one condition than the other.</p>
+<p>In the research paper, the experimenters suggest a few technical reasons that the larger hole might not have produced the Ebbinghaus illusion, but they admit that they have no definitive explanation. That’s okay. Science often yields messy results—and these can be the basis for new experiments and sometimes for really interesting discoveries. The world is not as simple as our theories try to make it seem. Happily, in science, as in many aspects of life, you learn more from your failures than your successes, so good scientists don’t try to hide from results they don’t expect.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Ebbinghaus Application. <strong>Authored by</strong>: Patrick J Carroll. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Mond-Vergleich image. <strong>Authored by</strong>: Fibonacci. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Mond-vergleich.svg">https://commons.wikimedia.org/wiki/File:Mond-vergleich.svg</a>. <strong>Project</strong>: Wikimedia. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>A hole in the head: Golf and Perception. <strong>Authored by</strong>: sciencentral. <strong>Located at</strong>: <a href="https://www.youtube.com/watch?v=XDNfTUOSjFw">https://www.youtube.com/watch?v=XDNfTUOSjFw</a>. <strong>License</strong>: <em>Other</em>. <strong>License Terms</strong>: Standard YouTube License</li>
+<li>golf picture. <strong>Authored by</strong>: coffee. <strong>Provided by</strong>: Pixabay. <strong>Located at</strong>: <a href="https://pixabay.com/en/ball-golf-golf-ball-golf-course-1842170/">https://pixabay.com/en/ball-golf-golf-ball-golf-course-1842170/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/cc0">CC0: No Rights Reserved</a></em></li>
+</ul>
+<hr>
+<h2 id="putting-it-together-sensation-and-perception">Putting It Together: Sensation and Perception</h2>
+<ul>
+<li>url_title:: &quot;Putting It Together: Sensation and Perception&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-sensation-and-perception/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>In this module, you learned to</p>
+<ul>
+<li>differentiate between sensation and perception</li>
+<li>explain the process of vision and how people see color and depth</li>
+<li>explain the basics of hearing</li>
+<li>describe the basic anatomy and functions of taste, smell, touch, pain, and the vestibular sense</li>
+<li>define perception and give examples of gestalt principles and multimodal perception</li>
+</ul>
+<p>In this module, you learned about the way our senses work and the impact they have on our perception of the world. Our impressive sensory abilities allow us to experience the most enjoyable and most miserable experiences, as well as everything in between. Our eyes, ears, nose, tongue and skin provide an interface for the brain to interact with the world around us. While there is simplicity in covering each sensory modality independently, we are organisms that have evolved the ability to process multiple modalities as a unified experience.</p>
+<p>While the information covered in this module may initially seem straightforward and stagnant, you saw in the example from Jessica Witt’s research on perception that a person’s perception of the size of a golf hole can impact their performance. The ways that perception can alter our behavior and the impact this has on mental processes is of particular interest to psychologists.</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26142949/Google-Cardboard.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26142949/Google-Cardboard.jpg" alt="Photograph of a Google Cardboard viewer, a small cardboard box with two eye holes and lens that let the viewer look inside of the box to see their smartphone."></a></p>
+<p><strong>Figure 1</strong>. Google Cardboard.</p>
+<p>One current area of interest is the influence of psychological principles on virtual reality design. Think about it. How can designers create a 3-dimensional world on a 2-dimensional plane? They must first consider the way that we interpret visual cues and how we see depth. Consider <a href="https://vr.google.com/cardboard/">Google Cardboard</a>. In 2014, two Google engineers created a cardboard viewer lens that allows users to place their smartphones inside and view the world as if they entered a virtual reality. This was a huge leap forward in reducing the cost of and increasing access to virtual reality. But how did they do it? In order to feel like you are immersed in the gaming world, you need to remove the distractions that exist outside of the immediate visual field. Hence, the box around the phone. You also need to feel like you are inside of the world, so the box includes lenses that adjust your focal point and magnify the picture on the screen (Figure 1).</p>
+<p>You also need the world to be 3-dimensional. As you learned, your eyes rely on several monocular and binocular cues in order to see depth. Binocular disparity describes the slightly unique view of the world we see from each of our two eyes (which explains why if you hold an object near your face and close one eye, then open it and close the other, that object appears to move). To create this effect, developers put a barrier between the left and right visual fields and split the screen in two, so that the image on the screen is slightly different. The picture on your phone shows up like this:</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26144856/16905172090_360p.mp4">https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26144856/16905172090_360p.mp4</a></p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26150327/768px-Pincushion_distortion.svg_.png"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26150327/768px-Pincushion_distortion.svg_.png" alt="An image of gridlines show the grid get more stretched toward the corners."></a></p>
+<p><strong>Figure 2</strong>. Pincushion distortion.</p>
+<p>Because you are viewing the image through magnified lenses, there is a distortion called the pincushion distortion, which stretches the image in the corners of the view. To counteract that and make the work appear normal, developers apply a barrel distortion to the viewer, which explains why you see the image in the video with the pinched corners.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/26150553/768px-Barrel_distortion.svg_.png" alt="Image of gridlines show a bulging center and pinched corners."></p>
+<p><strong>Figure 3</strong>. Barrel distortion.</p>
+<p>Advances in virtual reality are also important to psychology because virtual reality is a treatment method used to help those with psychological disorders. Consider PTSD or phobias, for example. In a virtual world, a counselor can create situations and experiences designed to recreate the triggers for specific behaviors and assist the client in using coping mechanisms to deal with threatening situations. Virtual reality therapy can be used in numerous ways as a type of exposure therapy, even assisting people with autism as they practice recognizing and interpreting social cues or helping those with depression to make choices to help them prevent negative thoughts.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Putting It Together: Sensation and Perception. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Google Cardboard VR with Camera Viewer. <strong>Authored by</strong>: sndrv. <strong>Provided by</strong>: Flickr. <strong>Located at</strong>: <a href="https://www.flickr.com/photos/sndrv/16905172090">https://www.flickr.com/photos/sndrv/16905172090</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+<li>Distortion images. <strong>Authored by</strong>: WolfWings. <strong>Provided by</strong>: Wikimedia. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Distortion_(optics)">https://en.wikipedia.org/wiki/Distortion_(optics)</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+<li>Google Cardboard. <strong>Provided by</strong>: Wikipedia. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Google_Cardboard">https://en.wikipedia.org/wiki/Google_Cardboard</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Introductory Paragraph. <strong>Authored by</strong>: Adam John Privitera . <strong>Provided by</strong>: Chemeketa Community College. <strong>Located at</strong>: <a href="http://nobaproject.com/modules/sensation-and-perception">http://nobaproject.com/modules/sensation-and-perception</a>. <strong>Project</strong>: The Noba Project. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</a></em></li>
+</ul>
+<p>Public domain content</p>
+<ul>
+<li>Google Cardboard image. <strong>Authored by</strong>: Evan Amos. <strong>Located at</strong>: <a href="https://en.wikipedia.org/wiki/Google_Cardboard#/media/File:Google-Cardboard.jpg">https://en.wikipedia.org/wiki/Google_Cardboard#/media/File:Google-Cardboard.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/about/pdm">Public Domain: No Known Copyright</a></em></li>
+</ul>
+<hr>
+<h2 id="discussion-sensation-and-perception--introduction-to-psychology">Discussion: Sensation and Perception | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Discussion: Sensation and Perception | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-sensation-and-perception/
+<strong>Step 1:</strong> To view this discussion prompt, click on <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-sensation-and-perception-2/">Discussion: Sensation and Perception.</a></li>
+</ul>
+<p><strong>Step 2:</strong> Read the prompt and instructions, then post your response and comments inside of the discussion forum.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Discussion: Sensation and Perception. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Discussion idea. <strong>Authored by</strong>: Terry Davis . <strong>Provided by</strong>: Wiley College. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<hr>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognition, Intelligence, and Language</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap');
+
+        :root {
+            /* Nord Palette */
+            --nord0: #2e3440;
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            --nord4: #d8dee9;
+            --nord5: #e5e9f0;
+            --nord6: #eceff4;
+            --nord7: #8fbcbb;
+            --nord8: #88c0d0;
+            --nord9: #81a1c1;
+            --nord10: #5e81ac;
+            --nord11: #bf616a;
+            --nord12: #d08770;
+            --nord13: #ebcb8b;
+            --nord14: #a3be8c;
+            --nord15: #b48ead;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--nord6);
+            color: var(--nord0);
+            line-height: 1.6;
+        }
+
+        .nord-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--nord4);
+        }
+
+        .sidebar {
+            background-color: var(--nord0);
+            color: var(--nord4);
+        }
+
+        .sidebar a:hover {
+            background-color: var(--nord1);
+            color: var(--nord8);
+        }
+
+        .sidebar a.active {
+            background-color: var(--nord2);
+            color: var(--nord8);
+            border-left: 4px solid var(--nord8);
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--nord0);
+            font-weight: 700;
+        }
+
+        .section-header {
+            border-bottom: 2px solid var(--nord8);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--nord10);
+        }
+
+        .objective-box {
+            background-color: var(--nord6);
+            border-left: 4px solid var(--nord14);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .glossary-term {
+            color: var(--nord10);
+            font-weight: 600;
+        }
+
+        .glossary-box {
+            background-color: var(--nord5);
+            border: 1px solid var(--nord4);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        img {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--nord5);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: var(--nord11);
+        }
+
+        blockquote {
+            border-left: 4px solid var(--nord9);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--nord3);
+            margin: 1.5rem 0;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: var(--nord8);
+            color: white;
+            border-radius: 6px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-link:hover {
+            background-color: var(--nord10);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar w-64 flex-shrink-0 fixed h-full z-10 overflow-y-auto hidden md:block">
+        <div class="p-6">
+            <h2 class="text-nord8 text-xl font-bold uppercase tracking-wider">Psychology</h2>
+            <p class="text-nord3 text-xs">Course Dashboard</p>
+        </div>
+        <nav class="mt-4">
+            <p class="px-6 py-2 text-xs font-semibold text-nord3 uppercase">Modules</p>
+            <a href="#" onclick="showSection('cognition')" id="nav-cognition" class="flex items-center px-6 py-3 transition-colors active">
+                <i class="fas fa-brain mr-3 w-5"></i> 12. Cognition
+            </a>
+            <a href="#" onclick="showSection('intelligence')" id="nav-intelligence" class="flex items-center px-6 py-3 transition-colors">
+                <i class="fas fa-lightbulb mr-3 w-5"></i> 13. Intelligence
+            </a>
+            <a href="#" onclick="showSection('language')" id="nav-language" class="flex items-center px-6 py-3 transition-colors">
+                <i class="fas fa-comments mr-3 w-5"></i> 14. Language
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 md:ml-64 p-4 md:p-10">
+        
+        <!-- TOP NAV (Mobile) -->
+        <div class="md:hidden flex items-center justify-between mb-6 bg-nord0 p-4 rounded-lg text-white">
+            <span class="font-bold">Psychology Portal</span>
+            <div class="space-x-4">
+                <button onclick="showSection('cognition')"><i class="fas fa-brain"></i></button>
+                <button onclick="showSection('intelligence')"><i class="fas fa-lightbulb"></i></button>
+                <button onclick="showSection('language')"><i class="fas fa-comments"></i></button>
+            </div>
+        </div>
+
+        <!-- SECTION: COGNITION -->
+        <div id="section-cognition" class="tab-content active space-y-8 max-w-4xl mx-auto">
+            <header class="mb-10">
+                <h1 class="text-4xl md:text-5xl mb-4">Thinking and Cognition</h1>
+                <p class="text-xl text-nord3">Exploring how we process information, solve problems, and organize our mental world.</p>
+            </header>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">What is Cognition?</h2>
+                <div class="flex flex-col md:flex-row gap-6 mb-6">
+                    <div class="flex-1">
+                        <p class="mb-4">Simply put, <strong>cognition</strong> is thinking. It encompasses processes associated with perception, knowledge, problem solving, judgment, language, and memory.</p>
+                        <div class="objective-box mb-4">
+                            <h4 class="font-bold mb-2 text-nord14"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                            <ul class="list-disc ml-5 space-y-1 text-sm">
+                                <li>Distinguish between concepts and prototypes.</li>
+                                <li>Explain natural vs. artificial concepts.</li>
+                                <li>Describe problem-solving strategies (algorithms & heuristics).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <img src="https://courses.lumenlearning.com/waymaker-psychology/wp-content/uploads/sites/855/2017/02/5507777269_7514e305a2_b.jpg" alt="Thinking sculpture">
+                    </div>
+                </div>
+
+                <h3 class="text-xl mb-4 font-semibold">Categories and Concepts</h3>
+                <p class="mb-4">A <strong>category</strong> is a set of objects that can be treated as equivalent. The mental representations we form of categories are called <strong>concepts</strong>.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div class="p-4 bg-nord6 rounded-lg border-t-4 border-nord9">
+                        <h4 class="font-bold">Natural Concepts</h4>
+                        <p class="text-sm">Created through direct or indirect experience. Examples: Snow, birds, "roughness".</p>
+                    </div>
+                    <div class="p-4 bg-nord6 rounded-lg border-t-4 border-nord15">
+                        <h4 class="font-bold">Artificial Concepts</h4>
+                        <p class="text-sm">Defined by a specific set of characteristics. Examples: Squares, mathematical formulas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Problem-Solving Strategies</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-nord5">
+                                <th class="p-3 border">Method</th>
+                                <th class="p-3 border">Description</th>
+                                <th class="p-3 border">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border font-semibold">Trial and Error</td>
+                                <td class="p-3 border">Trying solutions until it works.</td>
+                                <td class="p-3 border text-sm">Restarting a phone to fix a glitch.</td>
+                            </tr>
+                            <tr class="bg-nord6">
+                                <td class="p-3 border font-semibold text-nord10">Algorithm</td>
+                                <td class="p-3 border">Step-by-step formula.</td>
+                                <td class="p-3 border text-sm">Manual for installing software.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border font-semibold text-nord12">Heuristic</td>
+                                <td class="p-3 border">General framework; mental shortcuts.</td>
+                                <td class="p-3 border text-sm">Breaking a task into small steps.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glossary-box">
+                <h3 class="text-xl mb-4"><i class="fas fa-book-open mr-2 text-nord10"></i>Glossary: Cognition</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                    <p><span class="glossary-term">Prototype:</span> The best example of a concept.</p>
+                    <p><span class="glossary-term">Schema:</span> A mental construct of related concepts.</p>
+                    <p><span class="glossary-term">Role Schema:</span> Assumptions about behaviors in certain roles.</p>
+                    <p><span class="glossary-term">Functional Fixedness:</span> Inability to see new uses for objects.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: INTELLIGENCE -->
+        <div id="section-intelligence" class="tab-content space-y-8 max-w-4xl mx-auto">
+            <header class="mb-10">
+                <h1 class="text-4xl md:text-5xl mb-4">Intelligence and Creativity</h1>
+                <p class="text-xl text-nord3">What does it mean to be "smart"? Understanding theories, measurement, and potential.</p>
+            </header>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Theories of Intelligence</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-white border border-nord4 rounded-xl shadow-sm text-center">
+                        <i class="fas fa-microscope text-3xl text-nord10 mb-4"></i>
+                        <h4 class="font-bold mb-2">Analytical</h4>
+                        <p class="text-sm">Academic problem solving and computations.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-nord4 rounded-xl shadow-sm text-center">
+                        <i class="fas fa-palette text-3xl text-nord15 mb-4"></i>
+                        <h4 class="font-bold mb-2">Creative</h4>
+                        <p class="text-sm">Imaginative and innovative solutions.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-nord4 rounded-xl shadow-sm text-center">
+                        <i class="fas fa-tools text-3xl text-nord12 mb-4"></i>
+                        <h4 class="font-bold mb-2">Practical</h4>
+                        <p class="text-sm">Street smarts and common sense.</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-center text-nord3 italic">— Robert Sternberg's Triarchic Theory</p>
+            </div>
+
+            <div class="nord-card p-8 bg-nord0 text-nord6">
+                <h2 class="section-header border-nord8 text-nord8">The Bell Curve</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <p class="mb-4">The average IQ score is <strong>100</strong>. Standard deviations (usually 15 points) describe how scores are dispersed.</p>
+                        <ul class="space-y-2 text-sm">
+                            <li><i class="fas fa-check text-nord14 mr-2"></i> 85–115: Considered <strong>Average</strong> (82% of population)</li>
+                            <li><i class="fas fa-check text-nord14 mr-2"></i> 130+: Considered <strong>Gifted</strong></li>
+                            <li><i class="fas fa-check text-nord14 mr-2"></i> Below 70: Intellectual Disability criteria</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-white p-4 rounded-lg">
+                        <img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31164156/87dba6aac07b342c4ce36005429a170fed2cc4cd.jpeg" alt="IQ Bell Curve" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Creativity: Three Criteria</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-nord14 text-white flex items-center justify-center font-bold mr-4 shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold">Originality</h4>
+                            <p class="text-sm text-nord3">The idea must have a low probability or be unique.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-nord8 text-white flex items-center justify-center font-bold mr-4 shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold">Usefulness</h4>
+                            <p class="text-sm text-nord3">The idea should be valuable or solve a specific problem.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-nord15 text-white flex items-center justify-center font-bold mr-4 shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold">Surprise</h4>
+                            <p class="text-sm text-nord3">The idea should be non-obvious to the viewer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: LANGUAGE -->
+        <div id="section-language" class="tab-content space-y-8 max-w-4xl mx-auto">
+            <header class="mb-10">
+                <h1 class="text-4xl md:text-5xl mb-4">Language and Communication</h1>
+                <p class="text-xl text-nord3">How words and systematic rules shape human connection and thought.</p>
+            </header>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Components of Language</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-nord6 rounded border-l-4 border-nord10">
+                            <div>
+                                <span class="block font-bold">Lexicon</span>
+                                <span class="text-sm">Vocabulary of a given language.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-nord6 rounded border-l-4 border-nord10">
+                            <div>
+                                <span class="block font-bold">Phoneme</span>
+                                <span class="text-sm">Basic sound unit (e.g., "ah").</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-nord6 rounded border-l-4 border-nord13">
+                            <div>
+                                <span class="block font-bold">Semantics</span>
+                                <span class="text-sm">How we derive meaning from words.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-nord6 rounded border-l-4 border-nord13">
+                            <div>
+                                <span class="block font-bold">Syntax</span>
+                                <span class="text-sm">How words are organized into sentences.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Language Development Stages</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-semibold">0–3 months</span>
+                        <span class="text-nord3">Reflexive communication</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-semibold">12–18 months</span>
+                        <span class="text-nord3">First words stage</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-semibold">18–24 months</span>
+                        <span class="text-nord3">Simple two-word sentences</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-2">
+                        <span class="font-semibold">3–5 years</span>
+                        <span class="text-nord3">Complex sentences & conversations</span>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-nord11/10 rounded-lg">
+                    <h4 class="font-bold text-nord11 mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>Overgeneralization</h4>
+                    <p class="text-sm">Children extending a rule to an exception (e.g., "three mouses" instead of "three mice"). This shows they have understood the rule!</p>
+                </div>
+            </div>
+
+            <div class="nord-card p-8">
+                <h2 class="section-header">Language and Thought</h2>
+                <p class="mb-4">Does language determine thought? The <strong>Sapir-Whorf hypothesis</strong> suggests that the language we use determines our patterns of thought.</p>
+                <blockquote class="bg-nord6 p-4 rounded">
+                    "Language may indeed influence the way that we think, an idea known as <strong>linguistic determinism</strong>."
+                </blockquote>
+                <p class="text-sm text-nord3">Research on color perception (English vs. Dani people) and time perception (English vs. Mandarin) provides evidence that language can influence how we focus on or organize concepts, though it may not completely determine them.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="mt-20 py-10 border-t border-nord4 text-center text-nord3 text-sm">
+            <p>&copy; 2024 Psychology Course Materials | Designed for Students & Instructors</p>
+            <p class="mt-2">Content adapted from Lumen Learning / Waymaker Psychology</p>
+        </footer>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById('section-' + sectionId).classList.add('active');
+            
+            // Update sidebar links
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.getElementById('nav-' + sectionId).classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

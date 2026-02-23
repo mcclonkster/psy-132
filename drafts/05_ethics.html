@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>05_ethics.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="05ethics">05_ethics</h1>
+<hr>
+<h2 id="why-it-matters-psychological-research">Why It Matters: Psychological Research</h2>
+<ul>
+<li>url_title:: &quot;Why It Matters: Psychological Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-15/
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224457/CNX_Psych_02_00_childrentv.jpg" alt="Children sit in front of a bank of television screens. A sign on the wall says, “Some content may not be suitable for children.”"></li>
+</ul>
+<p><strong>Figure 1</strong>. How does television content impact children’s behavior? (credit: modification of work by “antisocialtory”/Flickr)</p>
+<p>Have you ever wondered whether the violence you see on television affects your behavior? Are you more likely to behave aggressively in real life after watching people behave violently in dramatic situations on the screen? Or, could seeing fictional violence actually get aggression out of your system, causing you to be more peaceful? How are children influenced by the media they are exposed to? A psychologist interested in the relationship between behavior and exposure to violent images might ask these very questions.</p>
+<p>The topic of violence in the media today is contentious. Since ancient times, humans have been concerned about the effects of new technologies on our behaviors and thinking processes. The Greek philosopher Socrates, for example, worried that writing—a new technology at that time—would diminish people’s ability to remember because they could rely on written records rather than committing information to memory. In our world of quickly changing technologies, questions about the effects of media continue to emerge. Is it okay to talk on a cell phone while driving? Are headphones good to use in a car? What impact does text messaging have on reaction time while driving? These are types of questions that psychologist David Strayer asks in his lab.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch this short video to see how Strayer utilizes the scientific method to reach important conclusions regarding technology and driving safety.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/UnderstandingDriverDistraction.txt">view the transcript for “Understanding driver distraction” here (opens in new window)</a>.</p>
+<p>How can we go about finding answers that are supported not by mere opinion, but by evidence that we can all agree on? The findings of psychological research can help us navigate issues like this.</p>
+<p>Module References</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="ethics-in-research--introduction-to-psychology">Ethics in Research | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Ethics in Research | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/ethics/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain how research involving humans and animals is regulated</li>
+</ul>
+<p>Today, scientists agree that good research is ethical in nature and is guided by a basic respect for human dignity and safety. However, as you will read in the Tuskegee Syphilis Study, this has not always been the case. Modern researchers must demonstrate that the research they perform is ethically sound. This section presents how ethical considerations affect the design and implementation of research conducted today.</p>
+<h2 id="research-involving-human-participants">Research Involving Human Participants</h2>
+<p>Any experiment involving the participation of human subjects is governed by extensive, strict guidelines designed to ensure that the experiment does not result in harm. Any research institution that receives federal support for research involving human participants must have access to an <strong>Institutional Review Board (IRB)</strong>. The IRB is a committee of individuals often made up of members of the institution’s administration, scientists, and community members (Figure 1). The purpose of the IRB is to review proposals for research that involve human participants. The IRB reviews these proposals with the principles mentioned above in mind, and generally, approval from the IRB is required in order for the experiment to proceed.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224526/CNX_Psych_02_06_irb.jpg" alt="A group of people seated around tables in a meeting room."></p>
+<p><strong>Figure 1</strong>. An institution’s IRB meets regularly to review experimental proposals that involve human participants. (credit: modification of work by Lowndes Area Knowledge Exchange (LAKE)/Flickr)</p>
+<p>An institution’s IRB requires several components in any experiment it approves. For one, each participant must sign an informed consent form before they can participate in the experiment. An <strong>informed consent</strong> form provides a written description of what participants can expect during the experiment, including potential risks and implications of the research. It also lets participants know that their involvement is completely voluntary and can be discontinued without penalty at any time. Furthermore, the informed consent guarantees that any data collected in the experiment will remain completely confidential. In cases where research participants are under the age of 18, the parents or legal guardians are required to sign the informed consent form.</p>
+<p>While the informed consent form should be as honest as possible in describing exactly what participants will be doing, sometimes deception is necessary to prevent participants’ knowledge of the exact research question from affecting the results of the study. <strong>Deception</strong> involves purposely misleading experiment participants in order to maintain the integrity of the experiment, but not to the point where the deception could be considered harmful. For example, if we are interested in how our opinion of someone is affected by their attire, we might use deception in describing the experiment to prevent that knowledge from affecting participants’ responses. In cases where deception is involved, participants must receive a full <strong>debriefing</strong> upon conclusion of the study—complete, honest information about the purpose of the experiment, how the data collected will be used, the reasons why deception was necessary, and information about how to obtain additional information about the study.</p>
+<h3 id="dig-deeper-ethics-and-the-tuskegee-syphilis-study">Dig Deeper: Ethics and the Tuskegee Syphilis Study</h3>
+<p>Unfortunately, the ethical guidelines that exist for research today were not always applied in the past. In 1932, poor, rural, Black, male sharecroppers from Tuskegee, Alabama, were recruited to participate in a study conducted by the U.S. Public Health Service, with the aim of studying syphilis in Black men (Figure 2). In exchange for free medical care, meals, and burial insurance, 600 men agreed to participate in the study. A little more than half of the men tested positive for syphilis, and they served as the experimental group (given that the researchers could not randomly assign participants to groups, this represents a quasi-experiment). The remaining syphilis-free individuals served as the control group. However, those individuals that tested positive for syphilis were never informed that they had the disease.</p>
+<p>While there was no treatment for syphilis when the study began, by 1947 penicillin was recognized as an effective treatment for the disease. Despite this, no penicillin was administered to the participants in this study, and the participants were not allowed to seek treatment at any other facilities if they continued in the study. Over the course of 40 years, many of the participants unknowingly spread syphilis to their wives (and subsequently their children born from their wives) and eventually died because they never received treatment for the disease. This study was discontinued in 1972 when the experiment was discovered by the national press (Tuskegee University, n.d.). The resulting outrage over the experiment led directly to the National Research Act of 1974 and the strict ethical guidelines for research on humans described in this chapter. Why is this study unethical? How were the men who participated and their families harmed as a function of this research?</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/13165851/TuskegeeExperiment.gif"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/13165851/TuskegeeExperiment.gif" alt="A person administering an injection."></a></p>
+<p><strong>Figure 2.</strong> A blood sample is taken from one of the participants in the Tuskegee Syphilis Study.</p>
+<h2 id="research-involving-animal-subjects">Research Involving Animal Subjects</h2>
+<p>Many psychologists conduct research involving animal subjects. Often, these researchers use rodents (Figure 3) or birds as the subjects of their experiments—the APA estimates that 90% of all animal research in psychology uses these species (American Psychological Association, n.d.). Because many basic processes in animals are sufficiently similar to those in humans, these animals are acceptable substitutes for research that would be considered unethical in human participants.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224529/CNX_Psych_02_06_rat.jpg" alt="A gloved hand holding a lab rat."></p>
+<p><strong>Figure 3</strong>. Rats, like the one shown here, often serve as the subjects of animal research.</p>
+<p>This does not mean that animal researchers are immune to ethical concerns. Indeed, the humane and ethical treatment of animal research subjects is a critical aspect of this type of research. Researchers must design their experiments to minimize any pain or distress experienced by animals serving as research subjects.</p>
+<p>Whereas IRBs review research proposals that involve human participants, animal experimental proposals are reviewed by an <strong>Institutional Animal Care and Use Committee (IACUC)</strong>. An IACUC consists of institutional administrators, scientists, veterinarians, and community members. This committee is charged with ensuring that all experimental proposals require the humane treatment of animal research subjects. It also conducts semi-annual inspections of all animal facilities to ensure that the research protocols are being followed. No animal research project can proceed without the committee’s approval.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>debriefing:</strong> when an experiment involved deception, participants are told complete and truthful information about the experiment at its conclusion</p>
+<p><strong>deception:</strong> purposely misleading experiment participants in order to maintain the integrity of the experiment</p>
+<p><strong>informed consent:</strong> process of informing a research participant about what to expect during an experiment, any risks involved, and the implications of the research, and then obtaining the person’s consent to participate</p>
+<p><strong>Institutional Animal Care and Use Committee (IACUC):</strong> committee of administrators, scientists, veterinarians, and community members that reviews proposals for research involving animal participants</p>
+<p><strong>Institutional Review Board (IRB):</strong> committee of administrators, scientists, and community members that reviews proposals for research involving human participants</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="putting-it-together-psychological-research">Putting It Together: Psychological Research</h2>
+<ul>
+<li>url_title:: &quot;Putting It Together: Psychological Research&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>In this module, you learned to</p>
+<ul>
+<li>define and apply the scientific method to psychology</li>
+<li>describe the strengths and weaknesses of descriptive, experimental, and correlational research</li>
+<li>define the basic elements of a statistical investigation</li>
+</ul>
+<p>Psychologists use the scientific method to examine human behavior and mental processes. Some of the methods you learned about include descriptive, experimental, and correlational research designs.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Watch the CrashCourse video to review the material you learned, then read through the following examples and see if you can come up with your own design for each type of study.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Lifespan+Development/Transcriptions/PsychologicalResearchCrashCoursePsychology2_transcript.txt">view the transcript for “Psychological Research: Crash Course Psychology #2” here (opens in new window)</a>.</p>
+<p><strong>Case Study:</strong> a detailed analysis of a particular person, group, business, event, etc. This approach is commonly used to learn more about rare examples with the goal of describing that particular thing.</p>
+<ul>
+<li>Ted Bundy was one of America’s most notorious serial killers who murdered at least 30 women and was executed in 1989. Dr. Al Carlisle evaluated Bundy when he was first arrested and conducted a psychological analysis of Bundy’s development of his sexual fantasies merging into reality (Ramsland, 2012). Carlisle believes that there was a gradual evolution of three processes that guided his actions: fantasy, dissociation, and compartmentalization (Ramsland, 2012). Read <em><a href="https://www.psychologytoday.com/blog/shadow-boxing/201208/imagining-ted-bundy">Imagining Ted Bundy</a></em> (http://goo.gl/rGqcUv) for more information on this case study.</li>
+</ul>
+<p><strong>Naturalistic Observation</strong>: a researcher unobtrusively collects information without the participant’s awareness.</p>
+<ul>
+<li>Drain and Engelhardt (2013) observed six nonverbal children with autism’s evoked and spontaneous communicative acts. Each of the children attended a school for children with autism and were in different classes. They were observed for 30 minutes of each school day. By observing these children without them knowing, they were able to see true communicative acts without any external influences.</li>
+</ul>
+<p><strong>Survey</strong>: participants are asked to provide information or responses to questions on a survey or structure assessment.</p>
+<ul>
+<li>Educational psychologists can ask students to report their grade point average and what, if anything, they eat for breakfast on an average day. A healthy breakfast has been associated with better academic performance (Digangi’s 1999).</li>
+</ul>
+<p><strong>Archival research:</strong> researchers examine data that has already been collected for other purposes.</p>
+<ul>
+<li>Anderson (1987) tried to find the relationship between uncomfortably hot temperatures and aggressive behavior, which was then looked at with two studies done on violent and nonviolent crime. Based on previous research that had been done by Anderson and Anderson (1984), it was predicted that violent crimes would be more prevalent during the hotter time of year and the years in which it was hotter weather in general. The study confirmed this prediction.</li>
+</ul>
+<p><strong>Longitudinal Study:</strong> researchers recruit a sample of participants and track them for an extended period of time.</p>
+<ul>
+<li>In a study of a representative sample of 856 children Eron and his colleagues (1972) found that a boy’s exposure to media violence at age eight was significantly related to his aggressive behavior ten years later, after he graduated from high school.</li>
+</ul>
+<p><strong>Cross-Sectional Study:</strong> researchers gather participants from different groups (commonly different ages) and look for differences between the groups.</p>
+<ul>
+<li>In 1996, Russell surveyed people of varying age groups and found that people in their 20s tend to report being more lonely than people in their 70s.</li>
+</ul>
+<p><strong>Correlational Design:</strong> two different variables are measured to determine whether there is a relationship between them.</p>
+<ul>
+<li>Thornhill et al. (2003) had people rate how physically attractive they found other people to be. They then had them separately smell t-shirts those people had worn (without knowing which clothes belonged to whom) and rate how good or bad their body odor was. They found that the more attractive someone was the more pleasant their body odor was rated to be.</li>
+</ul>
+<p><strong>Experiment:</strong> researchers create a controlled environment in which they can carefully manipulate at least one variable to test its effect on another. The key here is that the researchers can cause a change in one variable.</p>
+<ul>
+<li>Clinical psychologists can test a new pharmaceutical treatment for depression by giving some patients the new pill and others an already-tested one to see which is the more effective treatment.</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="discussion-research-in-psychology--introduction-to-psychology">Discussion: Research in Psychology | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Discussion: Research in Psychology | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology/</li>
+</ul>
+<h2 id="discussion-research-in-psychology">Discussion: Research in Psychology</h2>
+<p><strong>Step 1:</strong> To view this discussion prompt, click on <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology-2/">Discussion: Research in Psychology.</a></p>
+<p><strong>Step 2:</strong> Read the prompt and instructions, then post your response and comments inside of the discussion forum.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Discussion: Research in Psychology. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>Licenses and Attributions</p>
+<p><a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/">Previous</a> <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-14/">Next</a></p>
+<hr>
+
+</body>
+</html>
