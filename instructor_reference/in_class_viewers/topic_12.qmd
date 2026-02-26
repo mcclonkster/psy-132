@@ -1,0 +1,617 @@
+---
+title: "Topic 12 — Cognition"
+subtitle: "PSY-132 (Dual Credit) • 75 minutes • Break between Core 2 and Core 3"
+format:
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    progress: false
+    transition: none
+---
+
+## Title
+- Course: PSY-132 Introduction to Psychology
+- Lesson: Topic 12 Cognition
+- Date: TBD
+- Instructor: TBD
+
+::: notes
+### Instructor notes
+Fill in Date and Instructor as needed. This is a structural slide: minimal text, clear identity.
+:::
+
+---
+
+## Agenda
+- Today’s topics: concept building; schema use; problem solving; judgment shortcuts
+- Activities: prototype demo; restaurant script; strategy switch; shortcut check
+- Break: 5 minutes (between schema use and problem solving)
+
+::: notes
+### Instructor notes
+Optional timing call-out if helpful:
+- Opening: 10–12 min
+- Core 1: 12–15
+- Core 2: 12–15
+- Break: 5
+- Core 3: 14–16
+- Core 4: 12–15
+- Close: 6–10
+:::
+
+---
+
+## Learning targets
+- Define concept, prototype, schema, script, algorithm, heuristic
+- Distinguish algorithms from heuristics in an example
+- Explain why people get stuck (mental set, functional fixedness)
+- Identify anchoring, availability, and confirmation bias in everyday decisions
+
+::: notes
+### Instructor notes
+These are student-facing learning objectives. Keep them brisk; you’ll return to them at the end.
+:::
+
+---
+
+## Thinking that guides decisions
+- Cognition = mental processes that organize information, solve problems, and guide judgments
+- Today’s throughline: thinking works because it simplifies; the tradeoff is predictable errors
+- Goal: notice the shortcut, predict the likely mistake, choose a simple check
+
+::: notes
+### Instructor notes
+Start with tone: this is not “people are irrational.” This is “minds are efficient under constraint.” Tell them you’ll use safe, everyday examples first (birds, restaurants) and then transfer to school/social/online decisions. Keep the room light but serious: this is about agency, not blame.
+
+### Talk track (optional)
+“Cognition is the part of psychology that explains how thinking actually works in real time—how we categorize, predict, solve problems, and make quick judgments. Those abilities are why you can function. They’re also why you can be confidently wrong. Today you’ll learn a few thinking tools you can actually use.”
+:::
+
+---
+
+## Why thinking feels obvious
+- You do not think by carefully analyzing every detail
+- You think by using mental shortcuts and stored knowledge
+- Those shortcuts usually help—and sometimes mislead
+
+::: notes
+### Instructor notes
+This is the “permission slip” slide. Students often hear ‘bias’ as an insult. Make the stance explicit now so it doesn’t become a fight later.
+:::
+
+---
+
+## A 10-second judgment test
+- In your head, answer fast:
+  - Typical bird
+  - Less typical bird
+  - Does this count as “studying”? (yes/no)
+- Notice speed and confidence, not just the answer
+
+::: notes
+### Instructor notes
+Run this fast. You are creating a felt experience of prototype-driven judgment. Don’t debate what “counts” yet—save that for Core 1 student practice.
+:::
+
+---
+
+## Confidence comes from familiarity
+- “Typical” answers come faster and feel more certain
+- Confidence can come from familiarity, not careful reasoning
+- That feeling of “obvious” is the mechanism we’ll keep studying
+
+::: notes
+### Instructor notes
+Reinforce the idea that the *feeling* of certainty is data. It predicts where shortcuts are operating.
+:::
+
+---
+
+## Terms we’ll use today
+- Concept; prototype
+- Schema; script
+- Algorithm; heuristic
+- Mental set; functional fixedness
+- Anchoring; availability; confirmation bias
+
+::: notes
+### Instructor notes
+This is your “scope control” slide. Tell students these are the only labels they’ll be responsible for today. If you mention an expanded term, define it once and immediately tie it to a concrete example.
+:::
+
+---
+
+## Concept building: Typical examples steer categories
+
+- Typical examples steer categories
+::: notes
+### Instructor notes
+Time target: ~12–15 minutes for this section.
+Core 1 loop: teach → example/demo → student try → fast check → debrief.
+Keep the point visible: not birds; *typicality steers judgment*.
+
+Cut plan (if behind): merge slides “Fuzzy boundaries + labels” and “Student try-it” into one quick prompt + one debrief sentence.
+:::
+
+---
+
+## Concepts: Categories reduce overload
+- A **concept** is a mental category used to organize information
+- A **prototype** is a “most typical” example that guides fast category decisions
+- Prototypes increase speed and confidence, especially in borderline cases
+- Key idea: prototype ≠ definition; it is a shortcut your brain uses
+
+::: notes
+### Instructor notes
+Keep this tight: you are labeling what they just felt in the hook. Say “prototype is what comes to mind first,” then immediately go back to examples. Reinforce the one distinction students confuse: prototype is not the official rule for the category.
+
+Cut plan (if behind): keep only the first two bullets + the prototype≠definition line, then move into the bird demo.
+:::
+
+---
+
+## Prototypes: Typical examples guide quick judgments
+- A **prototype** is the most typical example of a concept
+- Prototypes make category judgments feel easy and “obvious”
+- People can share a concept but hold different prototypes
+
+::: notes
+### Instructor notes
+Say explicitly: prototype ≠ definition. Prototype is “what comes to mind as a good example.” That distinction prevents a lot of confusion later.
+:::
+
+---
+
+## Typicality: Familiarity inflates confidence
+- Typical birds (often): robin, sparrow, blue jay
+- Less typical birds (often): penguin, ostrich, kiwi
+- The lesson: “typical” drives quick certainty
+
+::: notes
+### Instructor notes
+Keep it brisk. Ask two quick questions:
+1) “Which answer came faster?”
+2) “Which answer felt more certain?”
+Then transfer: “Now swap bird for a school concept and watch what happens.”
+:::
+
+---
+
+## Category boundaries: Edges are fuzzy, not fixed
+- Many everyday categories are not clean rules
+- Borderline cases reveal where your boundary sits
+- Labels can shift what feels like it “belongs”
+
+::: notes
+### Instructor notes
+Give one quick safe example (tomato/vegetable; hotdog/sandwich) then pivot back to school: “studying,” “friend,” “bullying.” Keep it cognitive, not moral.
+:::
+
+---
+
+## Rule-making: Write a rule, then break it
+- For each example, pick **Studying** or **Not studying**
+  - reading notes while scrolling
+  - redoing practice questions
+  - watching a recap video at 1.75×
+- Write a **10‑word rule** you used
+- Add **one counterexample** that would break your rule
+
+::: notes
+### Instructor notes
+Visible output for Core 1. Timing: 60 seconds solo, 90 seconds pair, then debrief.
+Debrief questions:
+1) “What was your rule?”
+2) “Where would a smart person disagree?”
+3) “What’s the prototype hiding?”
+Your goal is cognitive, not moral: show fuzzy boundaries and prototype-driven certainty.
+:::
+
+---
+
+## Judgment shortcuts: Vivid examples feel common and anchors pull estimates
+- Scenario A: “I saw it three times today, so it must be common.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+- Scenario B: “The sale feels great because the original price was huge.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+
+::: notes
+### Instructor notes
+Visible output for Core 4. The confidence line reinforces “confidence ≠ proof” without shaming.
+Debrief: name the shortcut, then name one check that changes behavior (estimate before anchor; ask what you’re not seeing; one reason I might be wrong + one fact that would change my mind).
+:::
+
+---
+
+## Schemas and scripts: Expectations fill in the blanks
+
+- Your brain fills gaps
+::: notes
+### Instructor notes
+Time target: ~12–15 minutes for this section.
+Core 2 loop: teach → demo → student try → fast check → debrief.
+Run the restaurant script tight. The learning is in the *missing-step confusion* and the *gap-filling assumptions*.
+
+Cut plan (if behind): do the script list (solo) + one “break the script” question, then jump straight to the fast check.
+:::
+
+---
+
+## Schemas: Expectations steer attention
+- A **schema** is an organized knowledge structure for a situation or idea
+- Schemas steer attention toward “expected” details
+- When information is missing, schemas supply best guesses to make a coherent story
+- The guesses can feel like facts
+
+::: notes
+### Instructor notes
+This is the payoff slide for Core 2. Keep it concrete: “what you noticed,” “what you assumed,” “what you filled in.” Link to memory if you want: attention shapes what gets encoded; schemas shape attention.
+Cut plan (if behind): keep definition + one example, then run the restaurant script quickly.
+:::
+
+---
+
+## Gap-filling: Missing details become assumptions
+- Real life is incomplete; you rarely get all the information
+- Your brain completes the story to make it coherent
+- The “completed” parts can feel like facts
+
+::: notes
+### Instructor notes
+This is where misunderstandings become teachable: what you inferred can feel as real as what you observed. Keep it safe—no personal disclosures required.
+:::
+
+---
+
+## Scripts: Routine situations run on autopilot
+- A **script** is a schema for how an event usually unfolds
+- Scripts reduce effort in routine situations
+- When the script breaks, confusion rises fast
+
+::: notes
+### Instructor notes
+Examples: restaurant, school day, job interview. Preview: “We’ll break the restaurant script on purpose.”
+:::
+
+---
+
+## Scripts: Write the restaurant sequence
+- In 30 seconds, list the usual steps of eating at a restaurant
+- Put them in order
+- Keep it simple and concrete
+
+::: notes
+### Instructor notes
+Visible output: 30 seconds solo, 45 seconds pair, then you build the class script quickly: seated → menu → order → eat → bill → pay → leave. Don’t let it sprawl.
+:::
+
+---
+
+## Inference: Separate assumption from evidence
+- You sit down and:
+  - there are no menus
+  - nobody comes to take your order
+  - the bill arrives immediately
+- Write in this format:
+  - **Assumption:** __________
+  - **Evidence I actually have:** __________
+  - **Next action:** __________
+
+::: notes
+### Instructor notes
+This turns “gap-filling” into a visible product. Debrief by separating assumption from evidence. Then name the mechanism: “Your brain filled missing steps to make the situation coherent.”
+:::
+
+---
+
+## Inference: Stated vs assumed
+- Scenario A: “I saw it three times today, so it must be common.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+- Scenario B: “The sale feels great because the original price was huge.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+
+::: notes
+### Instructor notes
+Visible output for Core 4. The confidence line reinforces “confidence ≠ proof” without shaming.
+Debrief: name the shortcut, then name one check that changes behavior (estimate before anchor; ask what you’re not seeing; one reason I might be wrong + one fact that would change my mind).
+:::
+
+---
+
+## Break
+Back at: ____
+
+::: notes
+### Instructor notes
+Use this as a buffer if you’re behind. If you need to reclaim time, start Core 3 with a quick recap question instead of extra talk.
+:::
+
+---
+
+## Problem solving: Why you get stuck and how to switch
+
+- Restart question: what did scripts show us about expectations and missing information
+- Why we get stuck
+::: notes
+### Instructor notes
+Time target: ~14–16 minutes for this section.
+Keep the tone humane: stuckness is a constraint with causes, not a personal flaw.
+Your move: keep Duncker as a one-minute story; do not let it become a puzzle marathon.
+
+Cut plan (if behind): combine “Mental set” + “Functional fixedness” into one compare slide and keep only one student scenario.
+:::
+
+---
+
+## Problems: Start state, goal, obstacles
+- Start state → goal → obstacles
+- Obstacles can be missing info, rules, time, misleading cues
+- Clear goals support better strategy choice
+
+::: notes
+### Instructor notes
+Use one example: homework/assignment planning. Show how vague goals lead to default habits. Keep it concrete.
+:::
+
+---
+
+## Strategies: Algorithms vs heuristics
+- **Algorithm**: step-by-step procedure; slower, more reliable
+- **Heuristic**: rule of thumb; faster, less certain
+- Skill: match strategy to stakes and situation
+
+::: notes
+### Instructor notes
+This is the bridge to Core 4 later. Reinforce tradeoffs, not moral labels.
+:::
+
+---
+
+## Mental set: Old methods keep running
+- **Mental set**: sticking with a strategy that worked before
+- Efficient when the problem type stays the same
+- A problem when the task changes but the method doesn’t
+
+::: notes
+### Instructor notes
+Use your guide example: same math method even when the problem changes. Ask: what’s the cost of not switching?
+:::
+
+---
+
+## Functional fixedness: Tools look like only one thing
+- **Functional fixedness**: seeing objects only in their usual role
+- Blocks creative use of tools under constraints
+- Common under time pressure
+
+::: notes
+### Instructor notes
+Keep it simple. Students will understand instantly if you give one quick example (box as “container only”).
+:::
+
+---
+
+## Reframing: A tool becomes a new tool
+- **Functional fixedness**: seeing an object only in its usual role
+- In the candle task, the box is seen only as a container, not a platform
+- The mechanism: representation blocks tool use until you reframe the object
+- Why it matters: stuck thinking has a normal cause, not a character flaw
+
+::: notes
+### Instructor notes
+Tell it as a one-minute story. Do not run it as a full puzzle unless you have extra time.
+Key line: “The box is also a platform.”
+Bridge to students: being stuck often means “change representation,” not “try harder.”
+:::
+
+---
+
+## Strategy switching: Choose a different approach
+- Pick one stuck scenario:
+  - a homework method isn’t working
+  - you keep rereading but nothing sticks
+  - you can’t solve a simple tech problem
+- Fill this in:
+  - **What’s blocking me?** (mental set / functional fixedness / wrong strategy) __________
+  - **Switch I’ll try:** (draw it / list steps / work backward / change the tool) __________
+  - **Why that helps:** __________
+
+::: notes
+### Instructor notes
+Visible output for Core 3. Timing: 60 seconds solo, 90 seconds pair.
+Debrief: collect 2–3 “switches” students will actually use this week. Reinforce: stuckness is a signal to switch strategy or representation.
+:::
+
+---
+
+## Diagnosis: Mental set vs fixedness
+- Scenario A: “I saw it three times today, so it must be common.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+- Scenario B: “The sale feels great because the original price was huge.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+
+::: notes
+### Instructor notes
+Visible output for Core 4. The confidence line reinforces “confidence ≠ proof” without shaming.
+Debrief: name the shortcut, then name one check that changes behavior (estimate before anchor; ask what you’re not seeing; one reason I might be wrong + one fact that would change my mind).
+:::
+
+---
+
+## Judgment shortcuts: Shortcuts bend decisions
+
+- Fast shortcuts create predictable errors
+::: notes
+### Instructor notes
+Time target: ~12–15 minutes for this section.
+Norm framing (say it once, then move on): “Bias here means a predictable thinking pattern, not a personal insult.”
+Optional add-on (only if you want a clip): choice blindness (Johansson & Hall). Keep it short and prompt-driven:
+:::
+
+---
+
+## Bias: Predictable error patterns
+- Bias here = predictable thinking error pattern
+- Shortcuts are normal and often useful
+- The skill is deciding when to slow down and check
+
+::: notes
+### Instructor notes
+Say it plainly. This slide prevents social friction (“you’re biased!”) from derailing you.
+:::
+
+---
+
+## Anchoring: First numbers pull estimates
+- First numbers become starting points
+- Later judgments stay pulled toward the anchor
+- Check: make your estimate before seeing the anchor
+
+::: notes
+### Instructor notes
+Use the sale-price example from your guide. Optional quick demo: two different starting numbers, two different estimates.
+:::
+
+---
+
+## Availability: Vivid examples feel frequent
+- Likelihood feels higher when examples come to mind easily
+- Feeds repeat vivid cases and amplify this shortcut
+- Check: ask “what am I not seeing?” and look for base rates
+
+::: notes
+### Instructor notes
+Use a neutral example (trends on social media, rare events in news) rather than political content.
+:::
+
+---
+
+## Confirmation bias: Evidence gets filtered
+- You notice and trust evidence that supports what you already believe
+- You search for support more than tests
+- Check: one reason I might be wrong + one fact that would change my mind
+
+::: notes
+### Instructor notes
+Model the check out loud with a safe example (study strategy, rumor, assumption about a situation). Keep the room calm.
+:::
+
+---
+
+## Research: Errors can be systematic
+- Tversky & Kahneman: shortcuts can create predictable judgment errors
+- Choice blindness: confident explanations can be stories after the fact
+- Takeaway: confidence is not proof
+
+::: notes
+### Instructor notes
+Keep this as a 60–90 second legitimacy slide. You are not teaching a history-of-research lecture; you are giving students permission to treat these errors as predictable.
+
+Optional clip cue (if you want it): choice blindness talk or short demo.
+Run it like a lab:
+1) predict (“How sure are you your explanation matches the real cause?”)
+2) observe (clip)
+3) debrief (“confidence isn’t proof; explanations can be post-hoc stories”)
+:::
+
+---
+
+## Metacognition: Name the shortcut and choose a check
+- Scenario A: “I saw it three times today, so it must be common.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+- Scenario B: “The sale feels great because the original price was huge.”
+  - Shortcut: __________
+  - Check: __________
+  - Confidence (0–100): ___
+
+::: notes
+### Instructor notes
+Visible output for Core 4. The confidence line reinforces “confidence ≠ proof” without shaming.
+Debrief: name the shortcut, then name one check that changes behavior (estimate before anchor; ask what you’re not seeing; one reason I might be wrong + one fact that would change my mind).
+:::
+
+---
+
+## Closing
+- Speed trades off with accuracy
+::: notes
+### Instructor notes
+This is your synthesis in plain language. Keep it short. If you’re behind, this slide plus a tight summary is enough to close well.
+:::
+
+---
+
+## References
+- Better studying: strategy choice and organization matter
+- Better disagreements: separate evidence from confidence
+- Better decisions: time, money, conflict, online judgment
+- Risk: using “bias” words as insults blocks learning and hides the mechanism
+
+::: notes
+### Instructor notes
+Use one concrete example in class time (not four). Choose the one that fits your group best that day.
+:::
+
+---
+
+## Appendix
+- Shortcuts are normal; they help you function
+- Shortcuts have tradeoffs; “feels obvious” can mislead
+- You can improve decisions with small checks and strategy switches
+
+::: notes
+### Instructor notes
+Point back to the learning targets quickly: “We defined the tools, used them, and practiced checks.”
+:::
+
+---
+
+## Appendix: Exit ticket  Show your thinking
+- MCQ 1: algorithm vs heuristic (or mental set vs functional fixedness)
+- MCQ 2: anchoring vs availability vs confirmation
+- Short answer (2–4 sentences):
+  - Name a shortcut you used recently, what it predicted, and one check you could use next time
+
+::: notes
+### Instructor notes
+Make directions explicit. Remind them: bias terms are mechanisms, not insults. If you want, end with one sentence: “The goal isn’t perfect thinking—it’s better thinking when stakes are high.”
+:::
+
+---
+
+## Appendix: What’s next
+- What’s next: Topic 13 Intelligence and Topic 14 Language (next class meeting)
+- Study move: pick one shortcut you notice this week and apply one check
+- Questions
+
+::: notes
+### Instructor notes
+If you want a clear handoff: “Next class we move from thinking tools to intelligence and language—how we measure, interpret, and communicate.”
+:::
+
+---
+
+## Appendix: References
+- Topic packet: /mnt/data/12_cognition.md
+- Lumen Waymaker: What is Cognition; Problem Solving; Pitfalls to Problem Solving; Choice Blindness
+- OpenStax Psychology 2e: 7.1 What is Cognition
+- Duncker (1945); Tversky & Kahneman (1974); Johansson & Hall (2005)
+
+::: notes
+### Instructor notes
+If you want to keep the student-facing slide clean, you can move URLs into speaker notes and leave only short source names on the slide.
+:::
