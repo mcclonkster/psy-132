@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nord Light: Cognitive Psychology Slide Deck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 1. NORD LIGHT PALETTE & BASE SETUP */
+        :root {
+            --nord0: #2e3440; 
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            --nord4: #d8dee9; 
+            --nord5: #e5e9f0;
+            --nord6: #eceff4; 
+            --nord7: #8fbcbb; 
+            --nord8: #88c0d0; 
+            --nord9: #81a1c1; 
+            --nord10: #5e81ac; 
+            --nord11: #bf616a; 
+            --nord12: #d08770; 
+            --nord13: #ebcb8b; 
+            --nord14: #a3be8c; 
+            --nord15: #b48ead; 
+        }
+
+        * { box-sizing: border-box; }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+            background-color: var(--nord4); 
+            font-family: 'Lato', sans-serif;
+            color: var(--nord1);
+        }
+
+        /* Slide Deck Logic */
+        .deck-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1500px;
+        }
+
+        .slide {
+            position: absolute;
+            width: 1280px;
+            height: 720px;
+            background-color: transparent; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1;
+        }
+
+        /* Lateral Sliding Transitions */
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+            z-index: 10;
+        }
+        .slide.next { transform: translateX(100%); }
+        .slide.prev { transform: translateX(-100%); }
+
+        /* Decorative Blobs (Global) */
+        .bg-blob {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: var(--nord8);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.15;
+            filter: blur(100px);
+            pointer-events: none;
+        }
+
+        /* THE UNIFIED WHITE CARD */
+        .white-card {
+            background-color: #ffffff !important;
+            border: 1px solid #e1e8f0;
+            border-radius: 20px;
+            padding: 50px 60px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Typography */
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; color: var(--nord0); margin: 0; }
+        h1 { font-size: 64px; line-height: 1.1; font-weight: 700; color: var(--nord10); text-align: center; }
+        .slide-title { 
+            font-size: 38px; 
+            margin-bottom: 30px; 
+            text-align: left; 
+            width: 100%; 
+            border-left: 8px solid var(--nord10); 
+            padding-left: 24px; 
+            color: var(--nord0);
+        }
+        p, li, td, th { font-size: 19px; line-height: 1.6; color: var(--nord2); }
+        .subtitle { font-size: 24px; color: var(--nord9); font-weight: 600; text-align: center; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Section Indicator Tab */
+        .section-tag {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            background: var(--nord5);
+            color: var(--nord10);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--nord4);
+        }
+
+        /* Navigation Controls */
+        .nav-ui {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 12px;
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: #ffffff;
+            color: var(--nord10);
+            border: 1px solid var(--nord4);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .nav-btn:hover {
+            background: var(--nord10);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .progress-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--nord5);
+            z-index: 101;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--nord10);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            color: var(--nord3);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            z-index: 100;
+        }
+
+        /* Layout Elements */
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; }
+        .tiled-content { display: flex; gap: 30px; width: 100%; align-items: stretch; }
+        
+        .tile { 
+            background-color: var(--nord6); 
+            border: 1px solid #e1e8f0; 
+            border-radius: 12px; 
+            padding: 30px; 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            transition: transform 0.3s ease;
+        }
+        .tile:hover { transform: translateY(-5px); border-color: var(--nord9); }
+        
+        .tile h3 { font-size: 26px; margin-bottom: 15px; color: var(--nord10); }
+        .tile .icon { font-size: 36px; color: var(--nord9); margin-bottom: 20px; }
+        
+        .bullet-list ul { list-style: none; padding: 0; }
+        .bullet-list li { position: relative; padding-left: 45px; margin-bottom: 22px; font-size: 20px; }
+        .bullet-list i { position: absolute; left: 0; top: 4px; color: var(--nord10); font-size: 22px; }
+        
+        /* Interactive Reveal Component */
+        .reveal-box {
+            background: var(--nord5);
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: 700;
+            color: var(--nord10);
+            border: 2px dashed var(--nord8);
+            margin-top: 15px;
+        }
+        .reveal-box.active {
+            background: var(--nord14);
+            color: var(--nord0);
+            border-style: solid;
+        }
+        .hidden-answer { display: none; }
+        .reveal-box.active .hidden-answer { display: block; }
+        .reveal-box.active .prompt { display: none; }
+
+        .image-wrapper { border-radius: 12px; overflow: hidden; height: 100%; border: 1px solid var(--nord5); }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .quote-layout { text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+        .quote-layout blockquote { font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 600; color: var(--nord0); margin-bottom: 30px; line-height: 1.3; font-style: italic; }
+        
+        .section-title-layout { text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+        .section-title-layout h2 { font-size: 72px; color: var(--nord10); }
+        .section-title-layout hr { width: 100px; height: 6px; background-color: var(--nord14); border: none; margin: 30px auto; }
+        
+        .number { font-size: 140px; font-weight: 700; color: var(--nord12); font-family: 'Poppins'; }
+        
+        .table-wrapper { border-radius: 12px; overflow: hidden; border: 1px solid #e1e8f0; margin-top: 20px; }
+        .table-wrapper table { width: 100%; border-collapse: collapse; background: white; }
+        .table-wrapper th { background-color: var(--nord5); padding: 22px; text-align: left; color: var(--nord10); border-bottom: 2px solid var(--nord4); }
+        .table-wrapper td { padding: 22px; border-bottom: 1px solid var(--nord5); color: var(--nord1); font-size: 19px; }
+        
+        .chart-svg { width: 100%; height: 260px; overflow: visible; }
+        .chart-line { fill: none; stroke: var(--nord10); stroke-width: 4; }
+        .chart-area { fill: var(--nord8); opacity: 0.3; }
+        math { color: var(--nord0); font-size: 32px; }
+
+        /* Timer Styles */
+        #break-timer { font-size: 120px; font-weight: 700; color: var(--nord10); font-family: 'Poppins'; margin: 20px 0; }
+
+        @media (max-width: 1300px), (max-height: 750px) {
+            .slide { transform: scale(0.7); }
+            .slide.active { transform: scale(0.75); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-blob" style="top: -100px; right: -100px;"></div>
+    <div class="bg-blob" style="bottom: -100px; left: -100px; background: var(--nord10);"></div>
+
+    <div class="deck-container" id="deck">
+        <!-- Slide 1: Title Slide -->
+        <div class="slide active">
+            <div class="white-card">
+                <div class="section-tag">Intro</div>
+                <div class="content-area" style="text-align:center;">
+                    <p class="subtitle">PSYCHOLOGY 101</p>
+                    <h1>Cognitive Psychology:<br>Heuristics and Biases</h1>
+                    <p style="font-size: 22px; margin-top: 30px; opacity: 0.8;">Lesson 4: How we think, fail, and adapt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Agenda Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Overview</div>
+                <h2 class="slide-title">Today's Agenda</h2>
+                <div class="content-area">
+                    <div class="bullet-list">
+                        <ul>
+                            <li><i class="fa-solid fa-brain"></i> <strong>Foundations:</strong> Defining cognitive constructs and mental stances.</li>
+                            <li><i class="fa-solid fa-arrows-split-up-and-left"></i> <strong>Distinctions:</strong> Algorithms vs. Heuristics.</li>
+                            <li><i class="fa-solid fa-flask-vial"></i> <strong>Demonstration:</strong> Prototypicality and the "Typical Bird" task.</li>
+                            <li><i class="fa-solid fa-magnifying-glass-chart"></i> <strong>Analysis:</strong> Deep dive into the Availability Heuristic.</li>
+                            <li><i class="fa-solid fa-mug-hot"></i> <strong>Transition:</strong> Synthesis, 10-minute break, and Exit Ticket.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Learning Targets Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Overview</div>
+                <h2 class="slide-title">Learning Targets</h2>
+                <div class="content-area">
+                    <div class="tiled-content">
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3>Differentiate</h3>
+                            <p>Distinguish between algorithmic and heuristic problem-solving strategies.</p>
+                        </div>
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                            <h3>Identify</h3>
+                            <p>Recognize real-world instances of the Availability Heuristic and related biases.</p>
+                        </div>
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+                            <h3>Analyze</h3>
+                            <p>Critique how cognitive shortcuts influence decision-making under uncertainty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Section Divider Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-title-layout">
+                    <hr>
+                    <h2>Part 1: Mental Shortcuts</h2>
+                    <p class="subtitle">The architecture of cognitive efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Framing Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Context</div>
+                <div class="quote-layout">
+                    <blockquote>"Cognitive bias is a feature of the brain's processing patterns, not a personal insult to your intelligence."</blockquote>
+                    <cite>— Setting the Tone</cite>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Concept Definition Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Foundations</div>
+                <h2 class="slide-title">What are Heuristics?</h2>
+                <div class="content-area">
+                    <div class="two-column">
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                            <h3>Mental Shortcuts</h3>
+                            <p>A simple thinking strategy that often allows us to make judgments and solve problems efficiently.</p>
+                        </div>
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-cogs"></i></div>
+                            <h3>System 1 Thinking</h3>
+                            <p>Operates automatically and quickly, with little or no effort and no sense of voluntary control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Compare/Contrast Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Foundations</div>
+                <h2 class="slide-title">Algorithm vs. Heuristic</h2>
+                <div class="content-area">
+                    <div class="two-column">
+                        <div class="tile">
+                            <h3>Algorithm</h3>
+                            <p>A methodical, logical rule or procedure that guarantees solving a particular problem.</p>
+                            <p style="font-family: 'JetBrains Mono', monospace; font-size: 14px; margin-top: 15px; color: var(--nord10);">Result: 100% Certain | Effort: High</p>
+                        </div>
+                        <div class="tile" style="border-left: 4px solid var(--nord12);">
+                            <h3>Heuristic</h3>
+                            <p>A simple thinking strategy that allows for speed but is prone to occasional error.</p>
+                            <p style="font-family: 'JetBrains Mono', monospace; font-size: 14px; margin-top: 15px; color: var(--nord12);">Result: Probable | Effort: Low</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Demonstration Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Activity</div>
+                <h2 class="slide-title">Demo: Prototypicality</h2>
+                <div class="content-area">
+                    <div class="two-column">
+                        <div>
+                            <h3>Task: Visualize a "Typical Bird"</h3>
+                            <p>In your mind, conjure an image of a generic bird. Don't overthink it.</p>
+                            <div class="bullet-list" style="margin-top: 30px;">
+                                <ul>
+                                    <li><i class="fa-solid fa-comment-dots"></i> How many of you saw a <strong>Robin</strong>?</li>
+                                    <li><i class="fa-solid fa-comment-dots"></i> How many saw a <strong>Penguin</strong>?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1552728089-57bdde30eba3?auto=format&fit=crop&q=80&w=600" alt="Bird">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Example/Illustration Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Biases</div>
+                <h2 class="slide-title">Availability Heuristic</h2>
+                <div class="content-area">
+                    <div class="two-column">
+                        <div>
+                            <p>Estimating the likelihood of events based on their availability in memory.</p>
+                            <p style="margin-top: 20px; border-left: 4px solid var(--nord10); padding-left: 15px;">"If you can easily recall it, it must be important/common."</p>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" alt="Memory peaks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Student Practice Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Practice</div>
+                <h2 class="slide-title">Application: Headline Bias</h2>
+                <div class="content-area">
+                    <div class="two-column">
+                        <div class="tile">
+                            <h3>The Challenge</h3>
+                            <p>Recall a "scary" viral news headline. Apply the model:</p>
+                            <div class="bullet-list" style="margin-top: 20px;">
+                                <ul>
+                                    <li><i class="fa-solid fa-pen-fancy"></i> Identify the <strong>imagery</strong>.</li>
+                                    <li><i class="fa-solid fa-pen-fancy"></i> Write a <strong>counter-fact</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tile" style="background-color: var(--nord5);">
+                            <p style="font-style: italic; font-weight: 600;">"SHARK SIGHTING AT POPULAR BEACH CAUSES PANIC"</p>
+                            <hr style="border: 0; border-top: 1px solid var(--nord4); margin: 20px 0;">
+                            <p style="font-size: 16px;">How does this headline bypass your logic circuits?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Fast Check Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Review</div>
+                <h2 class="slide-title">Interactive Check</h2>
+                <div class="content-area">
+                    <div class="tiled-content">
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-circle-question"></i></div>
+                            <h3>Q1: Certainty?</h3>
+                            <p>Which strategy guarantees a solution every time?</p>
+                            <div class="reveal-box" onclick="this.classList.toggle('active')">
+                                <span class="prompt">Reveal Answer</span>
+                                <span class="hidden-answer">Algorithm</span>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <div class="icon"><i class="fa-solid fa-fire"></i></div>
+                            <h3>Q2: Flash Memory</h3>
+                            <p>Fearing a plane crash after watching the news is...</p>
+                            <div class="reveal-box" onclick="this.classList.toggle('active')">
+                                <span class="prompt">Reveal Answer</span>
+                                <span class="hidden-answer">Availability Heuristic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Debrief/Carry-Forward Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Next Steps</div>
+                <h2 class="slide-title">Efficiency vs. Accuracy</h2>
+                <div class="content-area">
+                    <div class="highlight-numbers-layout">
+                        <div class="number">S : A</div>
+                        <div>
+                            <h3 style="font-size: 32px;">The Human Trade-off</h3>
+                            <p>Our brains prioritize <strong>speed</strong> in 95% of daily interactions. Notice when you reach a conclusion before the data is actually in front of you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Break Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Intermission</div>
+                <div class="break-content">
+                    <p class="subtitle">Time to recharge</p>
+                    <div id="break-timer">10:00</div>
+                    <p style="color: var(--nord3);">Brain recovery in progress. Stretch, hydrate, and return.</p>
+                    <button class="nav-btn" style="margin: 20px auto; width: 200px; border-radius: 8px;" onclick="startTimer()">Reset Timer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Synthesis Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Synthesis</div>
+                <h2 class="slide-title">The Dual Process Model</h2>
+                <div class="content-area">
+                    <svg class="chart-svg" viewBox="0 0 1000 300">
+                        <path class="chart-area" d="M0,250 C200,230 400,80 600,60 C800,40 1000,10 1000,300 L0,300 Z"></path>
+                        <path class="chart-line" d="M0,250 C200,230 400,80 600,60 C800,40 1000,10"></path>
+                        <text x="50" y="270" fill="#4c566a" font-size="16" font-weight="700">System 1 (Automatic)</text>
+                        <text x="750" y="40" fill="#4c566a" font-size="16" font-weight="700">System 2 (Effortful)</text>
+                    </svg>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="math">
+                            <mrow>
+                                <msub><mi>P</mi><mi>error</mi></msub>
+                                <mo>&#x221D;</mo>
+                                <mfrac>
+                                    <mi>vividness</mi>
+                                    <mi>deliberation</mi>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Summary Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Wrap Up</div>
+                <h2 class="slide-title">Key Takeaways</h2>
+                <div class="content-area">
+                    <div class="bullet-list">
+                        <ul>
+                            <li><i class="fa-solid fa-check-double"></i> <strong>Heuristics</strong> are fast but prone to systematic error.</li>
+                            <li><i class="fa-solid fa-check-double"></i> <strong>Availability</strong> uses memory ease as a proxy for frequency.</li>
+                            <li><i class="fa-solid fa-check-double"></i> <strong>Awareness</strong> allows for deliberate "System 2" overrides.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Exit Ticket Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Assessment</div>
+                <h2 class="slide-title">Exit Ticket</h2>
+                <div class="content-area">
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item Type</th>
+                                    <th>Question</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Scenario</td>
+                                    <td>Why do vivid news stories distort risk perception?</td>
+                                </tr>
+                                <tr>
+                                    <td>Mechanism</td>
+                                    <td>Difference between an algorithm and a heuristic?</td>
+                                </tr>
+                                <tr>
+                                    <td>Reflection</td>
+                                    <td>Describe a heuristic you used today.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: References Slide -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Credits</div>
+                <h2 class="slide-title">References</h2>
+                <div class="content-area">
+                    <div class="bullet-list">
+                        <ul>
+                            <li><i class="fa-solid fa-book"></i> Kahneman, D. (2011). <em>Thinking, Fast and Slow</em>.</li>
+                            <li><i class="fa-solid fa-file-lines"></i> Tversky & Kahneman (1974). Judgment under Uncertainty.</li>
+                            <li><i class="fa-solid fa-graduation-cap"></i> Gigerenzer, G. (2008). <em>Gut Feelings</em>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: Appendix -->
+        <div class="slide next">
+            <div class="white-card">
+                <div class="section-tag">Bonus</div>
+                <h2 class="slide-title">Appendix: Anchoring</h2>
+                <div class="content-area">
+                    <div class="tile" style="border: 1px solid var(--nord10);">
+                        <h3>The Anchoring Effect</h3>
+                        <p>The tendency to rely too heavily on the first piece of information offered (the "anchor") when making decisions.</p>
+                        <p style="margin-top: 15px; font-weight: bold; color: var(--nord11);">Common in salary negotiations and retail pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI Overlay -->
+    <div class="slide-counter" id="counter">1 / 18</div>
+    <div class="progress-container"><div class="progress-bar" id="progress"></div></div>
+
+    <div class="nav-ui">
+        <button class="nav-btn" title="Fullscreen" onclick="toggleFullscreen()"><i class="fa-solid fa-expand"></i></button>
+        <button class="nav-btn" onclick="prevSlide()" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="nav-btn" onclick="nextSlide()" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressBar = document.getElementById('progress');
+        const counter = document.getElementById('counter');
+        let timerInterval;
+
+        function updateDeck() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev', 'next');
+                if (index === currentSlideIndex) {
+                    slide.classList.add('active');
+                } else if (index < currentSlideIndex) {
+                    slide.classList.add('prev');
+                } else {
+                    slide.classList.add('next');
+                }
+            });
+
+            const percentage = ((currentSlideIndex + 1) / slides.length) * 100;
+            progressBar.style.width = percentage + '%';
+            counter.innerText = `${currentSlideIndex + 1} / ${slides.length}`;
+
+            // Handle break timer auto-start
+            if (currentSlideIndex === 12) {
+                startTimer();
+            } else {
+                clearInterval(timerInterval);
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlideIndex < slides.length - 1) {
+                currentSlideIndex++;
+                updateDeck();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlideIndex > 0) {
+                currentSlideIndex--;
+                updateDeck();
+            }
+        }
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            let time = 600; // 10 minutes
+            const display = document.getElementById('break-timer');
+            timerInterval = setInterval(() => {
+                const mins = Math.floor(time / 60);
+                const secs = time % 60;
+                display.innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+                if (--time < 0) clearInterval(timerInterval);
+            }, 1000);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') nextSlide();
+            if (e.key === 'ArrowLeft' || e.key === 'Backspace') prevSlide();
+            if (e.key === 'f') toggleFullscreen();
+        });
+
+        updateDeck();
+    </script>
+</body>
+</html>

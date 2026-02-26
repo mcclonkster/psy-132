@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Psych: Advanced Study Suite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap');
+
+        :root {
+            /* Nord Theme Variables */
+            --nord0: #2e3440; --nord1: #3b4252; --nord2: #434c5e; --nord3: #4c566a;
+            --nord4: #d8dee9; --nord5: #e5e9f0; --nord6: #eceff4;
+            --nord7: #8fbcbb; --nord8: #88c0d0; --nord9: #81a1c1; --nord10: #5e81ac;
+            --nord11: #bf616a; --nord12: #d08770; --nord13: #ebcb8b; --nord14: #a3be8c; --nord15: #b48ead;
+
+            --bg: var(--nord6);
+            --text: var(--nord0);
+            --card-bg: #ffffff;
+            --border: var(--nord4);
+            --accent: var(--nord10);
+            --font-size-base: 1rem;
+        }
+
+        body.dark-mode {
+            --bg: var(--nord0);
+            --text: var(--nord6);
+            --card-bg: var(--nord1);
+            --border: var(--nord2);
+            --accent: var(--nord8);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            font-size: var(--font-size-base);
+            transition: background-color 0.3s, color 0.3s;
+            scroll-behavior: smooth;
+        }
+
+        /* Sidebar Styling */
+        .sidebar { background-color: var(--nord0); color: var(--nord4); z-index: 50; }
+        .sidebar a, .sidebar button { transition: all 0.2s; border-left: 4px solid transparent; }
+        .sidebar a:hover, .sidebar button:hover { background-color: var(--nord1); color: var(--nord8); }
+        .sidebar a.active { background-color: var(--nord2); color: var(--nord8); border-left-color: var(--nord8); }
+
+        /* Reading Progress bar */
+        #progress-container { position: fixed; top: 0; right: 0; left: 0; height: 4px; background: transparent; z-index: 1000; }
+        #progress-bar { height: 100%; background: var(--nord8); width: 0%; transition: width 0.1s; }
+
+        /* Content UI */
+        .content-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+            padding: 3.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.75rem; font-weight: 800; border-bottom: 4px solid var(--nord8); padding-bottom: 1rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.85rem; font-weight: 700; color: var(--nord10); margin-top: 3.5rem; margin-bottom: 1.25rem; }
+        h3 { font-size: 1.4rem; font-weight: 600; margin-top: 2rem; color: var(--nord3); }
+        
+        .callout { margin: 2.5rem 0; padding: 1.75rem; border-radius: 12px; border-left: 6px solid; }
+        .learning-obj { background: rgba(163, 190, 140, 0.1); border-color: var(--nord14); }
+        .think-it-over { background: rgba(235, 203, 139, 0.1); border-color: var(--nord13); }
+        .watch-it { background: rgba(180, 142, 173, 0.1); border-color: var(--nord15); }
+
+        /* Flashcard Interaction */
+        .flashcard { perspective: 1000px; height: 280px; cursor: pointer; }
+        .flashcard-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+        .flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+        .flashcard-front, .flashcard-back {
+            position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
+            display: flex; align-items: center; justify-content: center; padding: 2.5rem;
+            border-radius: 20px; border: 2px solid var(--nord4); background: var(--card-bg);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .flashcard-back { transform: rotateY(180deg); background: var(--nord5); color: var(--nord0); }
+
+        /* Quiz UI */
+        .quiz-option { 
+            display: block; width: 100%; padding: 1rem; margin-bottom: 0.75rem; 
+            border: 2px solid var(--nord4); border-radius: 10px; cursor: pointer; transition: all 0.2s;
+        }
+        .quiz-option:hover { border-color: var(--nord10); background: rgba(94, 129, 172, 0.05); }
+        .quiz-option.correct { border-color: var(--nord14); background: rgba(163, 190, 140, 0.1); }
+        .quiz-option.incorrect { border-color: var(--nord11); background: rgba(191, 97, 106, 0.1); }
+
+        /* Modal / Overlay */
+        .overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+            display: none; align-items: center; justify-content: center; z-index: 1000;
+            backdrop-filter: blur(8px);
+        }
+        .overlay.active { display: flex; }
+        .modal { background: var(--card-bg); padding: 3rem; border-radius: 24px; max-width: 650px; width: 95%; max-height: 85vh; overflow-y: auto; position: relative; }
+
+        .highlight { background: var(--nord13); color: var(--nord0); padding: 0 2px; border-radius: 3px; }
+
+        .nord-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
+        .nord-table th { background: var(--nord5); padding: 1.25rem; border: 1px solid var(--border); text-align: left; color: var(--nord10); font-weight: 700; }
+        .nord-table td { padding: 1.25rem; border: 1px solid var(--border); }
+
+        #settings-panel { position: fixed; bottom: 25px; right: 25px; z-index: 100; display: flex; flex-direction: column; gap: 10px; }
+        .fab { width: 50px; height: 50px; border-radius: 50%; background: var(--nord0); color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+        .fab:hover { transform: scale(1.15); background: var(--nord10); }
+
+        /* Notes & Glossary Sidebar items */
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+        .status-complete { background: var(--nord14); box-shadow: 0 0 8px var(--nord14); }
+
+        textarea#notesArea { width: 100%; min-height: 200px; background: var(--nord6); border: 1px solid var(--nord4); border-radius: 12px; padding: 1rem; font-family: inherit; resize: vertical; margin-top: 1rem; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar w-72 flex-shrink-0 fixed h-full z-10 overflow-y-auto hidden lg:flex flex-col border-r border-nord2">
+        <div class="p-8">
+            <h2 class="text-nord8 text-2xl font-bold tracking-tight m-0">Open Psych</h2>
+            <p class="text-nord3 text-xs mt-1 uppercase tracking-widest font-semibold">Study Environment</p>
+        </div>
+
+        <div class="px-6 mb-6">
+            <div class="relative">
+                <input type="text" id="searchInput" placeholder="Search Module..." 
+                    class="w-full bg-nord1 text-nord6 text-sm rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-nord8 border border-nord2">
+                <i class="fas fa-search absolute right-4 top-3.5 text-nord3"></i>
+            </div>
+        </div>
+
+        <nav class="px-4 flex-1">
+            <p class="px-4 py-2 text-xs font-bold text-nord3 uppercase tracking-widest opacity-60">Modules</p>
+            <a href="#" onclick="loadModule('cognition')" id="nav-cognition" class="flex items-center px-4 py-3 rounded-xl active mb-1">
+                <span id="dot-cognition" class="status-dot"></span>
+                <i class="fas fa-brain mr-3 w-5"></i> 12. Cognition
+            </a>
+            <a href="#" onclick="loadModule('intelligence')" id="nav-intelligence" class="flex items-center px-4 py-3 rounded-xl mb-1 opacity-40 cursor-not-allowed">
+                <span id="dot-intelligence" class="status-dot"></span>
+                <i class="fas fa-lightbulb mr-3 w-5"></i> 13. Intelligence
+            </a>
+            <a href="#" onclick="loadModule('language')" id="nav-language" class="flex items-center px-4 py-3 rounded-xl mb-1 opacity-40 cursor-not-allowed">
+                <span id="dot-language" class="status-dot"></span>
+                <i class="fas fa-comments mr-3 w-5"></i> 14. Language
+            </a>
+
+            <p class="px-4 py-2 mt-8 text-xs font-bold text-nord3 uppercase tracking-widest opacity-60">Personal Suite</p>
+            <button onclick="openStudyTool('glossary')" class="w-full flex items-center px-4 py-3 rounded-xl hover:bg-nord1 text-left text-nord4 mb-1">
+                <i class="fas fa-spell-check mr-3 w-5 text-nord9"></i> Glossary
+            </button>
+            <button onclick="openStudyTool('flashcards')" class="w-full flex items-center px-4 py-3 rounded-xl hover:bg-nord1 text-left text-nord4 mb-1">
+                <i class="fas fa-clone mr-3 w-5 text-nord15"></i> Flashcards
+            </button>
+            <button onclick="openStudyTool('quiz')" class="w-full flex items-center px-4 py-3 rounded-xl hover:bg-nord1 text-left text-nord4 mb-1">
+                <i class="fas fa-tasks mr-3 w-5 text-nord14"></i> Practice Quiz
+            </button>
+            <button onclick="openStudyTool('notes')" class="w-full flex items-center px-4 py-3 rounded-xl hover:bg-nord1 text-left text-nord4 mb-1">
+                <i class="fas fa-sticky-note mr-3 w-5 text-nord13"></i> My Notes
+            </button>
+        </nav>
+
+        <div class="p-8 text-xs text-nord3 border-t border-nord2">
+            <p><i class="fas fa-graduation-cap mr-2"></i> Psychology Undergraduate</p>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 lg:ml-72 p-6 md:p-12 lg:p-20 relative">
+        <div id="module-container" class="content-card">
+            <!-- Content Injected Here -->
+        </div>
+    </main>
+
+    <!-- SETTINGS FAB -->
+    <div id="settings-panel">
+        <button onclick="toggleTheme()" class="fab" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button onclick="adjustFontSize(1)" class="fab" title="Increase Text Size">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button onclick="adjustFontSize(-1)" class="fab" title="Decrease Text Size">
+            <i class="fas fa-minus"></i>
+        </button>
+    </div>
+
+    <!-- STUDY MODALS -->
+    <div id="study-overlay" class="overlay" onclick="closeStudyTool(event)">
+        <div class="modal" id="study-modal-content" onclick="event.stopPropagation()">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+
+    <script>
+        // Module Data
+        const MODULE_DATA = {
+            cognition: `
+                <h1>Module 12: Cognition</h1>
+                <section>
+                    <h2>The Nature of Thinking</h2>
+                    <p>Exceptionally complex, <strong>cognition</strong> is thinking, and it encompasses the processes associated with perception, knowledge, problem solving, judgment, language, and memory. Scientists who study cognition are searching for ways to understand how we integrate, organize, and utilize our conscious cognitive experiences without being aware of all of the unconscious work that our brains are doing.</p>
+                    
+                    <div class="callout learning-obj">
+                        <h4 class="font-bold text-nord14"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                        <ul class="list-disc ml-5 mt-2 space-y-1 text-sm">
+                            <li>Distinguish between <strong>concepts</strong> and <strong>prototypes</strong>.</li>
+                            <li>Explain the difference between <strong>natural</strong> and <strong>artificial</strong> concepts.</li>
+                            <li>Describe problem-solving strategies like <strong>algorithms</strong> and <strong>heuristics</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Categories and Concepts</h3>
+                    <p>The human nervous system is capable of handling endless streams of information. To organize this, the mind has developed a “file cabinet” of sorts. The different files stored in the file cabinet are called <strong>concepts</strong>. Concepts are categories or groupings of linguistic information, images, ideas, or memories, such as life experiences.</p>
+                    
+                    <p>A <strong>prototype</strong> is the best example or representation of a concept. For example, when you think of a dog, your early experiences shapes that prototype—if you grew up with a Golden Retriever, that is likely your mental baseline.</p>
+
+                    <h3>Natural and Artificial Concepts</h3>
+                    <p><strong>Natural concepts</strong> are created “naturally” through your experiences and can be developed from either direct or indirect experiences (e.g., knowing snow in Vermont vs. seeing it in films). In contrast, <strong>artificial concepts</strong> are defined by a specific set of characteristics, like geometric shapes or mathematical formulas.</p>
+
+                    <h3>Schemata</h3>
+                    <p>A <strong>schema</strong> is a mental construct consisting of a cluster or collection of related concepts. A <strong>role schema</strong> makes assumptions about how individuals in certain roles will behave, while an <strong>event schema</strong> (or <strong>cognitive script</strong>) is a set of behaviors that feel like a routine—such as the way you automatically face the door in an elevator.</p>
+
+                    <h2>Problem-Solving Strategies</h2>
+                    <p>Different strategies are applied depending on the complexity of the problem:</p>
+                    <table class="nord-table">
+                        <thead>
+                            <tr><th>Strategy</th><th>Definition</th><th>Example</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Algorithm</strong></td><td>Step-by-step problem-solving formula.</td><td>Software installation instructions.</td></tr>
+                            <tr><td><strong>Heuristic</strong></td><td>General problem-solving framework.</td><td>Mental shortcuts; rule of thumb.</td></tr>
+                            <tr><td><strong>Trial & Error</strong></td><td>Trying solutions until one works.</td><td>Restarting a device to fix a glitch.</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="callout think-it-over">
+                        <h4 class="font-bold text-nord13"><i class="fas fa-brain mr-2"></i>Think It Over</h4>
+                        <p class="text-sm">Identify an event schema in your life that you perform automatically. Why is it difficult to interrupt that script?</p>
+                    </div>
+
+                    <h2>Cognitive Development</h2>
+                    <p>Jean Piaget identified four stages of development: <strong>Sensorimotor</strong> (0–2), <strong>Preoperational</strong> (2–7), <strong>Concrete Operational</strong> (7–11), and <strong>Formal Operational</strong> (11+). He argued we adapt through <strong>assimilation</strong> and <strong>accommodation</strong>.</p>
+                </section>
+            `
+        };
+
+        const GLOSSARY = {
+            cognition: [
+                { term: "Cognition", def: "Thinking, including perception, knowledge, problem solving, judgment, and memory." },
+                { term: "Concept", def: "Category or grouping of linguistic information, objects, ideas, or life experiences." },
+                { term: "Prototype", def: "The best representation of a concept." },
+                { term: "Schema", def: "Mental construct consisting of a collection of related concepts." },
+                { term: "Algorithm", def: "Problem-solving strategy characterized by a specific set of instructions." },
+                { term: "Heuristic", def: "Mental shortcut that saves time when solving a problem." },
+                { term: "Functional Fixedness", def: "Inability to see an object as useful for anything other than its intended purpose." }
+            ]
+        };
+
+        const FLASHCARDS = [
+            { q: "What is the difference between an algorithm and a heuristic?", a: "Algorithms are step-by-step formulas that guarantee a result; heuristics are general shortcuts that don't always guarantee correctness." },
+            { q: "What is an 'Event Schema'?", a: "A set of behaviors performed the same way each time, like an automatic routine (cognitive script)." },
+            { q: "Define 'Prototype'", a: "The single best example or mental representation of a specific concept category." },
+            { q: "Who proposed the 4 stages of cognitive development?", a: "Jean Piaget." }
+        ];
+
+        const QUIZ = [
+            { q: "Which type of concept is defined by a specific set of characteristics, like a square?", options: ["Natural", "Artificial", "Prototype"], correct: 1 },
+            { q: "What is the term for a mental shortcut used to solve problems?", options: ["Algorithm", "Heuristic", "Mental Set"], correct: 1 },
+            { q: "The inability to see a screwdriver as a hammer is an example of:", options: ["Confirmation Bias", "Functional Fixedness", "Hindsight Bias"], correct: 1 }
+        ];
+
+        let currentModule = 'cognition';
+
+        // Load Module Content
+        function loadModule(moduleId) {
+            if (moduleId !== 'cognition') return; // Only 12 ready
+            currentModule = moduleId;
+            document.getElementById('module-container').innerHTML = MODULE_DATA[moduleId];
+            window.scrollTo(0, 0);
+            updateProgressDots();
+        }
+
+        // Search
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            const container = document.getElementById('module-container');
+            if (!term) { loadModule(currentModule); return; }
+
+            const cleanHTML = MODULE_DATA[currentModule];
+            container.innerHTML = cleanHTML; // Reset for fresh search
+
+            const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+            let node;
+            const nodesToReplace = [];
+            while(node = walker.nextNode()) {
+                if (node.textContent.toLowerCase().includes(term)) nodesToReplace.push(node);
+            }
+            
+            nodesToReplace.forEach(n => {
+                const regex = new RegExp(`(${term})`, 'gi');
+                const span = document.createElement('span');
+                span.innerHTML = n.textContent.replace(regex, '<span class="highlight">$1</span>');
+                n.parentNode.replaceChild(span, n);
+            });
+        });
+
+        // Study Tools
+        function openStudyTool(type) {
+            const overlay = document.getElementById('study-overlay');
+            const content = document.getElementById('study-modal-content');
+            overlay.classList.add('active');
+
+            if (type === 'glossary') renderGlossary(content);
+            if (type === 'flashcards') renderFlashcards(content);
+            if (type === 'quiz') renderQuiz(content);
+            if (type === 'notes') renderNotes(content);
+        }
+
+        function closeStudyTool(e) {
+            document.getElementById('study-overlay').classList.remove('active');
+        }
+
+        function renderGlossary(container) {
+            const terms = GLOSSARY[currentModule] || [];
+            container.innerHTML = `<h2 class="text-nord10 mb-6">Interactive Glossary</h2>
+                <div class="space-y-4">
+                    ${terms.map(t => `<div class="p-4 bg-nord6 rounded-xl">
+                        <h4 class="font-bold text-nord10 mb-1">${t.term}</h4>
+                        <p class="text-sm opacity-80">${t.def}</p>
+                    </div>`).join('')}
+                </div>`;
+        }
+
+        function renderFlashcards(container) {
+            let idx = 0;
+            const updateUI = () => {
+                const card = FLASHCARDS[idx];
+                container.innerHTML = `
+                    <h2 class="text-nord15 mb-6 text-center">Flashcards</h2>
+                    <div class="flashcard mb-8" onclick="this.classList.toggle('flipped')">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front font-bold text-xl">${card.q}</div>
+                            <div class="flashcard-back text-lg leading-relaxed">${card.a}</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center px-4">
+                        <button onclick="changeCard(-1)" class="w-12 h-12 bg-nord4 rounded-full"><i class="fas fa-chevron-left"></i></button>
+                        <span class="font-bold">${idx + 1} / ${FLASHCARDS.length}</span>
+                        <button onclick="changeCard(1)" class="w-12 h-12 bg-nord4 rounded-full"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                `;
+            };
+            window.changeCard = (dir) => { idx = (idx + dir + FLASHCARDS.length) % FLASHCARDS.length; updateUI(); };
+            updateUI();
+        }
+
+        function renderQuiz(container) {
+            container.innerHTML = `<h2 class="text-nord14 mb-6">Practice Quiz</h2><div id="quizBody"></div>`;
+            const body = document.getElementById('quizBody');
+            
+            QUIZ.forEach((q, i) => {
+                const div = document.createElement('div');
+                div.className = 'mb-6 p-6 bg-nord6 rounded-2xl';
+                div.innerHTML = `<p class="font-bold mb-4">${i+1}. ${q.q}</p>
+                    <div class="options-group">
+                        ${q.options.map((opt, oi) => `
+                            <div class="quiz-option" onclick="checkOption(this, ${i}, ${oi})">${opt}</div>
+                        `).join('')}
+                    </div>`;
+                body.appendChild(div);
+            });
+
+            window.checkOption = (el, qIdx, oIdx) => {
+                const options = el.parentNode.querySelectorAll('.quiz-option');
+                options.forEach(o => o.style.pointerEvents = 'none'); // Disable after click
+                if (oIdx === QUIZ[qIdx].correct) {
+                    el.classList.add('correct');
+                } else {
+                    el.classList.add('incorrect');
+                    options[QUIZ[qIdx].correct].classList.add('correct');
+                }
+                checkCompletion();
+            };
+        }
+
+        function checkCompletion() {
+            const totalAnswered = document.querySelectorAll('.correct').length;
+            if (totalAnswered === QUIZ.length) {
+                localStorage.setItem(`complete_${currentModule}`, 'true');
+                updateProgressDots();
+            }
+        }
+
+        function updateProgressDots() {
+            if (localStorage.getItem(`complete_${currentModule}`) === 'true') {
+                document.getElementById(`dot-${currentModule}`).classList.add('status-complete');
+            }
+        }
+
+        function renderNotes(container) {
+            const saved = localStorage.getItem(`notes_${currentModule}`) || "";
+            container.innerHTML = `<h2 class="text-nord13 mb-4">My Personal Notes</h2>
+                <p class="text-xs text-nord3">Notes are saved automatically to this browser for this module.</p>
+                <textarea id="notesArea" oninput="saveNotes(this.value)" placeholder="Type your study notes here...">${saved}</textarea>`;
+        }
+
+        window.saveNotes = (val) => localStorage.setItem(`notes_${currentModule}`, val);
+
+        // UI Controls
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.getElementById('theme-icon');
+            icon.classList.toggle('fa-moon'); icon.classList.toggle('fa-sun');
+        }
+
+        function adjustFontSize(delta) {
+            const root = document.documentElement;
+            const cur = parseFloat(getComputedStyle(root).getPropertyValue('--font-size-base'));
+            root.style.setProperty('--font-size-base', (cur + delta * 0.1) + 'rem');
+        }
+
+        window.onscroll = () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById("progress-bar").style.width = (winScroll / height * 100) + "%";
+        };
+
+        window.onload = () => loadModule('cognition');
+    </script>
+</body>
+</html>

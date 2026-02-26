@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nord Presentation Studio</title>
+    
+    <!-- 1. External dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- 2. Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "react": "https://esm.sh/react@18.2.0",
+            "react-dom": "https://esm.sh/react-dom@18.2.0/client",
+            "lucide-react": "https://esm.sh/lucide-react@0.284.0"
+        }
+    }
+    </script>
+
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; background-color: #eceff4; }
+        #root { width: 100vw; height: 100vh; }
+        /* Hide scrollbars for the presentation look */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="module">
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        /**
+         * The mjsContent below contains your Quarto-style presentation component.
+         * All internal backticks and template literals are escaped (\`) to live inside this string.
+         */
+        const mjsContent = `
+import React, { useState, useEffect, useRef } from 'react';
+import { 
+  Play, ChevronLeft, ChevronRight, Maximize, Layout, Type, 
+  Monitor, Settings, Code, FileText, PanelLeftClose, 
+  PanelLeftOpen, X, Minimize
+} from 'lucide-react';
+
+const App = () => {
+  const initialMarkdown = \`---
+title: "Nord Light Presentation"
+subtitle: "A Clean Arctic Aesthetic"
+author: "Quarto Viewer"
+format: revealjs
+theme: nord
+---
+
+# Polar Night
+## Dark but readable
+
+- Designed for focus
+- Reduced eye strain
+- Elegant contrast
+- Professional feel
+
+---
+
+## Frost Accents
+
+1. **Nord 8**: Arctic Blue
+2. **Nord 9**: Sea Blue
+3. **Nord 10**: Deep Blue
+
+> "Simplicity is the ultimate sophistication." — Leonardo da Vinci
+
+---
+
+## Code in the Cold
+
+\\\`\\\`\\\`javascript
+const theme = "nord-light";
+const colors = {
+  background: "#eceff4",
+  accent: "#88c0d0",
+  text: "#2e3440"
+};
+\\\`\\\`\\\`
+
+- Clean monospaced font
+- Subtle background
+- Clear structure
+
+---
+
+# Data & Statistics
+## Snow Storm Grays
+
+| Metric | Value | Status |
+|--------|-------|--------|
+| Focus  | 100%  | ✅ |
+| Style  | Max   | ✅ |
+| Speed  | Fast  | ✅ |
+
+---
+
+# Finis.
+## Thank you for viewing!
+
+[Learn more about Nord](https://www.nordtheme.com/)\`;
+
+  const [markdown, setMarkdown] = useState(initialMarkdown);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slides, setSlides] = useState([]);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [metadata, setMetadata] = useState({});
+  const [isSimulatedFullscreen, setIsSimulatedFullscreen] = useState(false);
+  
+  const stageRef = useRef(null);
+
+  useEffect(() => {
+    const parseMarkdown = () => {
+      const yamlRegex = /^---\\s*[\\r\\n]([\\s\\S]*?)[\\r\\n]---/;
+      const yamlMatch = markdown.match(yamlRegex);
+      const meta = {};
+      let body = markdown;
+
+      if (yamlMatch) {
+        const yamlContent = yamlMatch[1];
+        yamlContent.split('\\n').forEach(line => {
+          const [key, ...val] = line.split(':');
+          if (key && val) meta[key.trim()] = val.join(':').trim().replace(/['"]/g, '');
+        });
+        body = markdown.replace(yamlRegex, '');
+      }
+      setMetadata(meta);
+
+      const slideParts = body.split(/^---$/m).map(s => s.trim()).filter(s => s.length > 0);
+      setSlides(slideParts);
+      
+      if (currentSlide >= slideParts.length) {
+        setCurrentSlide(Math.max(0, slideParts.length - 1));
+      }
+    };
+
+    parseMarkdown();
+  }, [markdown]);
+
+  const nextSlide = () => setCurrentSlide(prev => Math.min(prev + 1, slides.length - 1));
+  const prevSlide = () => setCurrentSlide(prev => Math.max(prev - 1, 0));
+
+  const handlePresent = () => {
+    setIsSimulatedFullscreen(!isSimulatedFullscreen);
+    if (!isSimulatedFullscreen) {
+      setIsSidebarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (document.activeElement.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+      if (e.key === 'f' || e.key === 'F' || e.key === 'p' || e.key === 'P') handlePresent();
+      if (e.key === 'Escape' && isSimulatedFullscreen) setIsSimulatedFullscreen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [slides.length, isSimulatedFullscreen]);
+
+  const SlideRenderer = ({ content, isTitleSlide }) => {
+    const lines = content.split('\\n');
+    return (
+      <div className={\`w-full h-full flex flex-col \${isTitleSlide ? 'justify-center items-center text-center' : 'justify-start p-12'}\`}>
+        {lines.map((line, idx) => {
+          if (line.startsWith('# ')) return <h1 key={idx} className={\`\${isSimulatedFullscreen ? 'text-7xl' : 'text-5xl'} font-bold mb-6 text-[#2e3440]\`}>{line.replace('# ', '')}</h1>;
+          if (line.startsWith('## ')) return <h2 key={idx} className={\`\${isSimulatedFullscreen ? 'text-5xl' : 'text-4xl'} font-semibold mb-6 text-[#3b4252]\`}>{line.replace('## ', '')}</h2>;
+          if (line.startsWith('- ') || line.startsWith('* ')) {
+            return <li key={idx} className={\`\${isSimulatedFullscreen ? 'text-3xl' : 'text-2xl'} mb-2 ml-8 list-disc text-[#4c566a]\`}>{line.substring(2)}</li>;
+          }
+          if (/^\\d+\\. /.test(line)) {
+            return <li key={idx} className={\`\${isSimulatedFullscreen ? 'text-3xl' : 'text-2xl'} mb-2 ml-8 list-decimal text-[#4c566a]\`}>{line.replace(/^\\d+\\. /, '')}</li>;
+          }
+          if (line.startsWith('> ')) {
+            return <blockquote key={idx} className={\`border-l-4 border-[#81a1c1] pl-4 italic \${isSimulatedFullscreen ? 'text-3xl' : 'text-2xl'} my-6 text-[#4c566a]\`}>{line.replace('> ', '')}</blockquote>;
+          }
+          if (line.startsWith('\`\`\`')) return null;
+          if (line.includes('|')) return (
+            <div key={idx} className={\`font-mono \${isSimulatedFullscreen ? 'text-xl' : 'text-lg'} bg-[#f0f4f8] p-1 border-x border-[#d8dee9] text-[#2e3440]\`}>
+              {line}
+            </div>
+          );
+          if (line.trim() === '') return <div key={idx} className="h-4" />;
+          return <p key={idx} className={\`\${isSimulatedFullscreen ? 'text-3xl' : 'text-2xl'} mb-4 text-[#4c566a] leading-relaxed\`}>{line}</p>;
+        })}
+      </div>
+    );
+  };
+
+  return (
+    <div className="flex h-screen w-full bg-[#eceff4] font-sans overflow-hidden text-[#2e3440]">
+      {!isSimulatedFullscreen && (
+        <div className={\`transition-all duration-300 ease-in-out border-r border-[#d8dee9] bg-[#e5e9f0] flex flex-col \${isSidebarOpen ? 'w-1/3' : 'w-0 overflow-hidden border-none'}\`}>
+          <div className="p-4 border-b border-[#d8dee9] flex justify-between items-center bg-[#eceff4]">
+            <div className="flex items-center gap-2 font-semibold text-[#4c566a]"><Code size={18} /><span>Quarto Editor</span></div>
+            <button onClick={() => setIsSidebarOpen(false)} className="p-1 hover:bg-[#d8dee9] rounded transition-colors text-[#4c566a]"><PanelLeftClose size={18} /></button>
+          </div>
+          <textarea value={markdown} onChange={(e) => setMarkdown(e.target.value)} className="flex-1 p-6 font-mono text-sm resize-none focus:outline-none bg-white leading-relaxed text-[#2e3440]" spellCheck="false" />
+        </div>
+      )}
+
+      <div className={\`flex-1 flex flex-col relative overflow-hidden \${isSimulatedFullscreen ? 'bg-white' : ''}\`}>
+        {!isSimulatedFullscreen && (
+          <div className="h-14 border-b border-[#d8dee9] bg-white flex items-center justify-between px-6 z-10">
+            <div className="flex items-center gap-4">
+              {!isSidebarOpen && <button onClick={() => setIsSidebarOpen(true)} className="p-1 hover:bg-[#eceff4] rounded transition-colors text-[#4c566a]"><PanelLeftOpen size={20} /></button>}
+              <div className="text-sm font-medium text-[#4c566a]">{metadata.title || 'Untitled Presentation'}</div>
+            </div>
+            <button onClick={handlePresent} className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-[#81a1c1] rounded-md hover:bg-[#5e81ac] transition-all shadow-sm">
+              <Play size={14} fill="currentColor" /><span>Present</span>
+            </button>
+          </div>
+        )}
+
+        <div className={\`flex-1 flex items-center justify-center relative group \${isSimulatedFullscreen ? 'p-0 bg-white' : 'p-8 lg:p-12 bg-[#eceff4]'}\`}>
+          <div className={\`w-full h-full relative flex flex-col overflow-hidden \${isSimulatedFullscreen ? '' : 'max-w-5xl aspect-[16/9] bg-white rounded-xl shadow-xl border border-[#d8dee9]'}\`}>
+            {currentSlide === 0 && metadata.title && (
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white p-12 text-center">
+                <h1 className={\`\${isSimulatedFullscreen ? 'text-8xl' : 'text-6xl'} font-black text-[#2e3440] mb-4 tracking-tight\`}>{metadata.title}</h1>
+                {metadata.subtitle && <h3 className={\`\${isSimulatedFullscreen ? 'text-4xl' : 'text-3xl'} text-[#4c566a] mb-8 font-light italic\`}>{metadata.subtitle}</h3>}
+                {metadata.author && <p className={\`\${isSimulatedFullscreen ? 'text-2xl' : 'text-xl'} text-[#81a1c1] font-semibold\`}>{metadata.author}</p>}
+                <div className={\`mt-12 \${isSimulatedFullscreen ? 'w-32' : 'w-24'} h-1 bg-[#88c0d0] rounded-full\`} />
+              </div>
+            )}
+
+            <div className="flex-1 overflow-auto scrollbar-hide">
+              {slides.length > 0 ? <SlideRenderer content={slides[currentSlide]} isTitleSlide={slides[currentSlide].startsWith('# ')} /> : null}
+            </div>
+
+            {isSimulatedFullscreen && (
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity z-50">
+                <button onClick={() => setIsSimulatedFullscreen(false)} className="p-2 bg-[#eceff4] hover:bg-[#d8dee9] rounded-full text-[#4c566a] shadow-sm transition-all"><Minimize size={20} /></button>
+              </div>
+            )}
+
+            <div className="absolute inset-y-0 left-0 w-16 flex items-center opacity-0 group-hover:opacity-100 transition-opacity z-40">
+              <button onClick={prevSlide} className="p-3 ml-4 bg-white/90 backdrop-blur shadow-md rounded-full text-[#4c566a] hover:text-[#81a1c1] transition-all"><ChevronLeft size={32} /></button>
+            </div>
+            <div className="absolute inset-y-0 right-0 w-16 flex items-center justify-end opacity-0 group-hover:opacity-100 transition-opacity z-40">
+              <button onClick={nextSlide} className="p-3 mr-4 bg-white/90 backdrop-blur shadow-md rounded-full text-[#4c566a] hover:text-[#81a1c1] transition-all"><ChevronRight size={32} /></button>
+            </div>
+
+            <div className="h-2 w-full bg-[#e5e9f0] flex z-40">
+              <div className="h-full bg-[#88c0d0] transition-all duration-300 ease-out" style={{ width: \`\${((currentSlide + 1) / slides.length) * 100}%\` }} />
+            </div>
+          </div>
+        </div>
+
+        {!isSimulatedFullscreen && (
+          <div className="h-10 bg-white border-t border-[#d8dee9] flex items-center justify-between px-6 text-[11px] font-bold text-[#4c566a] tracking-wider uppercase">
+            <div className="flex gap-4"><span>FORMAT: {metadata.format || 'revealjs'}</span><span className="text-[#81a1c1]">THEME: NORD LIGHT</span></div>
+            <div>SLIDE {currentSlide + 1} / {slides.length}</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default App;
+        `;
+
+        async function mountComponent(sourceCode) {
+            try {
+                // Step A: Transpile JSX to JS
+                const { code } = Babel.transform(sourceCode, {
+                    presets: ['react'],
+                    filename: 'virtual-module.js'
+                });
+
+                // Step B: Use btoa with safer encoding
+                const base64Code = btoa(unescape(encodeURIComponent(code)));
+                const dataUri = "data:text/javascript;base64," + base64Code;
+                
+                // Step C: Dynamically import
+                const module = await import(dataUri);
+
+                // Step D: Render
+                if (module.default) {
+                    const root = ReactDOM.createRoot(document.getElementById('root'));
+                    root.render(React.createElement(module.default));
+                }
+            } catch (err) {
+                console.error("Failed to run module:", err);
+                document.getElementById('root').innerHTML = 
+                    '<div style="color: #bf616a; padding: 40px; font-family: monospace; background: #2e3440; height: 100vh">' + 
+                    '<h2 style="font-size: 24px; margin-bottom: 20px;">Runtime Error</h2>' +
+                    '<pre style="white-space: pre-wrap; font-size: 14px;">' + err.message + '\\n\\n' + err.stack + '</pre>' + 
+                    '</div>';
+            }
+        }
+
+        mountComponent(mjsContent);
+    </script>
+
+</body>
+</html>

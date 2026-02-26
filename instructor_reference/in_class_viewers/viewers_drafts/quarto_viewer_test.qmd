@@ -1,0 +1,242 @@
+---
+title: "Quarto Slide Viewer Test Deck"
+subtitle: "A compact torture-test for theme, navigation, editor sync, search, and media"
+author: "Kristen"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    transition: fade
+    center: false
+    width: 1280
+    height: 720
+    code-line-numbers: true
+    preview-links: true
+editor: visual
+---
+
+## Purpose
+
+This deck is designed to **exercise your custom Slide Viewer features** in one place:
+
+-   Theme + typography + Nord-like styling
+-   Overview/grid mode behavior
+-   Progress bar behavior
+-   Sidebar editor live-update behavior
+-   Slide search behavior (content variety helps)
+-   Markdown rendering coverage (tables, code, blockquotes, lists, inline formatting)
+-   Smart video workflow (thumbnail-first, optional external open)
+
+------------------------------------------------------------------------
+
+## Keyboard + Click Navigation Test
+
+Use these inputs and confirm they all work:
+
+-   **Keyboard:** ← → ↑ ↓, Space
+-   **Mouse:** next/prev arrows, slide stage click targets
+-   **Touch:** fat-finger-friendly targets
+
+Inline formatting sanity check: **bold**, *italics*, `inline code`, and a link to a harmless URL: <https://example.com>.
+
+------------------------------------------------------------------------
+
+## Overview Mode Test (Grid)
+
+Trigger overview mode and confirm:
+
+-   `O` key toggles overview
+-   Grid icon toggles overview
+-   Thumbnails render clearly (no missing styles)
+-   Clicking a thumbnail jumps to that slide reliably
+
+------------------------------------------------------------------------
+
+## YAML Metadata Parsing Test
+
+Your viewer should read this from frontmatter:
+
+-   Title: `Quarto Slide Viewer Test Deck`
+-   Subtitle: `A compact torture-test for theme, navigation, editor sync, search, and media`
+-   Author: `Kristen`
+
+Also confirm the sidebar/editor reflects changes if you edit the YAML.
+
+------------------------------------------------------------------------
+
+## Slide Search Test: Keywords
+
+This slide is a keyword dump for search filtering.
+
+Search targets:
+
+-   **polar night**
+-   **snow storm**
+-   **frost**
+-   **progress bar**
+-   **grid view**
+-   **thumbnail**
+-   **click-to-play**
+-   **Error 153**
+-   **YouTube**
+-   **Vimeo**
+-   **MP4**
+
+------------------------------------------------------------------------
+
+## Lists Test
+
+Bulleted list scaling:
+
+-   One short bullet
+-   One longer bullet designed to wrap onto a second line so you can verify indentation, line-height, and readability at presentation size
+-   One bullet with **bold** and `inline code` mixed in
+
+Numbered list scaling:
+
+1.  First item
+2.  Second item with a bit more text so it wraps cleanly and still looks like a “presentation list”
+3.  Third item
+
+------------------------------------------------------------------------
+
+## Blockquote Test (Frost Accent)
+
+> “A quote block should feel like a deliberate design element, not like the browser forgot how to be classy.”
+
+Confirm:
+
+-   Left border / accent color
+-   Padding + line-height
+-   Contrast vs background
+
+------------------------------------------------------------------------
+
+## Table Test (Nord Zebra)
+
+| Feature Area | What to Look For | Pass Signal |
+|------------------------|------------------------|------------------------|
+| Header styling | Bold + distinct background | Header clearly separates from body |
+| Zebra striping | Alternating row backgrounds | Easy row tracking |
+| Cell padding | Comfortable spacing | No cramped text |
+| Link rendering | Link contrast | Readable + obviously clickable |
+
+------------------------------------------------------------------------
+
+## Code Block Test (Polar Night Container)
+
+``` js
+// Confirm: background, monospace font, padding, overflow handling
+function clamp(n, min, max) {
+  return Math.max(min, Math.min(max, n));
+}
+
+const progress = clamp(0.42, 0, 1);
+console.log("progress:", progress);
+```
+
+Also confirm long-line behavior (horizontal scroll vs wrap):
+
+``` txt
+THIS_IS_A_SINGLE_VERY_LONG_LINE_DESIGNED_TO_TEST_OVERFLOW_HANDLING______________________________________________END
+```
+
+------------------------------------------------------------------------
+
+## Image Test (Block Image Scaling)
+
+A simple placeholder image (swap with your own later):
+
+![Nord-ish placeholder banner](https://placehold.co/1200x600/png?text=Image+Scaling+Test)
+
+Confirm:
+
+-   Image scales to slide width without distortion
+-   No layout shift/jank
+-   Missing image fallback doesn’t explode the slide
+
+------------------------------------------------------------------------
+
+## Inline Icon Test (Small Image)
+
+Inline image behavior (kept tiny on purpose):
+
+Here is an inline icon: ![tiny icon](https://placehold.co/32x32/png?text=+) sitting inside a sentence.
+
+Confirm:
+
+-   Baseline alignment is acceptable
+-   Doesn’t blow up line spacing
+
+------------------------------------------------------------------------
+
+## Smart Video Test: YouTube (Thumbnail-First)
+
+Clicking the thumbnail should open or initialize your player safely:
+
+[![YouTube thumbnail test](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+Also provide a plain link (for “open externally” mode):
+
+<https://www.youtube.com/watch?v=dQw4w9WgXcQ>
+
+------------------------------------------------------------------------
+
+## Smart Video Test: Vimeo (Thumbnail-First Pattern)
+
+Vimeo thumbnails are not as trivially predictable as YouTube’s, so this uses a generic placeholder thumbnail:
+
+[![Vimeo thumbnail placeholder](https://placehold.co/1200x675/png?text=Vimeo+Thumbnail+Placeholder)](https://vimeo.com/76979871)
+
+External-open link:
+
+<https://vimeo.com/76979871>
+
+------------------------------------------------------------------------
+
+## Smart Video Test: Direct MP4 Link Pattern
+
+If your viewer supports MP4 click-to-play, this slide is the test harness.
+
+Thumbnail-first:
+
+[![MP4 thumbnail placeholder](https://placehold.co/1200x675/png?text=MP4+Thumbnail+Placeholder)](https://file-examples.com/storage/fe6b3f1b2b9d39f05d5f9b0/2017/04/file_example_MP4_480_1_5MG.mp4)
+
+External-open link:
+
+<https://file-examples.com/storage/fe6b3f1b2b9d39f05d5f9b0/2017/04/file_example_MP4_480_1_5MG.mp4>
+
+------------------------------------------------------------------------
+
+## Mixed Markdown Stress Test
+
+This paragraph contains **bold**, *italics*, `inline code`, and a link: <https://example.com>.
+
+-   A bullet with a nested list:
+
+    -   Nested bullet A
+    -   Nested bullet B with `code`
+
+-   A bullet with a table reference: see the **Nord Zebra** slide
+
+> Nested quote test:
+>
+> “Second-level quote block to confirm spacing rules.”
+
+------------------------------------------------------------------------
+
+## Final Slide: Visual QA Checklist
+
+Quick scan:
+
+-   Title area hierarchy looks right
+-   Progress bar matches Nord theme styling
+-   Overview mode is legible and clickable
+-   Editor updates preview in real time
+-   Search finds the keyword slide quickly
+-   Tables look intentional
+-   Code blocks are readable
+-   Video thumbnails behave (no embed errors)
+
+Thanks, universe. You may now behave.

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto Portable Slide Viewer</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React & ReactDOM CDNs -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel for JSX parsing in browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #eceff4; color: #2e3440; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Nord color variables for Tailwind extension if needed */
+        .bg-nord-0 { background-color: #2e3440; }
+        .bg-nord-4 { background-color: #eceff4; }
+        .bg-nord-frost { background-color: #81a1c1; }
+        
+        pre { white-space: pre-wrap; word-break: break-all; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        
+        /* Custom animations */
+        .fade-in { animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo, useRef, memo } = React;
+
+        // --- COMPONENTS ---
+
+        const Icon = ({ name, size = 18, className = "" }) => {
+            useEffect(() => {
+                if (window.lucide) window.lucide.createIcons();
+            }, [name]);
+            return <i data-lucide={name} style={{ width: size, height: size }} className={className}></i>;
+        };
+
+        const SafeInlineContent = ({ text }) => {
+            if (!text) return null;
+            const tokens = text.split(/(\*\*\*.*?\*\*\*|\*\*.*?\*\*|__.*?__|\[.*?\]\(.*?\)|`.*?`|\*.*?\*|_.*?_)/g);
+            return (
+                <span>
+                    {tokens.map((token, i) => {
+                        if (!token) return null;
+                        if (token.startsWith('***') && token.endsWith('***')) return <strong key={i}><em>{token.slice(3, -3)}</em></strong>;
+                        if ((token.startsWith('**') && token.endsWith('**')) || (token.startsWith('__') && token.endsWith('__'))) return <strong key={i}>{token.slice(2, -2)}</strong>;
+                        if ((token.startsWith('*') && token.endsWith('*')) || (token.startsWith('_') && token.endsWith('_'))) return <em key={i}>{token.slice(1, -1)}</em>;
+                        if (token.startsWith('`') && token.endsWith('`')) return <code key={i} className="bg-[#eceff4] px-1.5 py-0.5 rounded font-mono text-[0.85em] text-[#bf616a]">{token.slice(1, -1)}</code>;
+                        const linkMatch = token.match(/^\[(.*?)\]\((.*?)\)$/);
+                        if (linkMatch) return <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#81a1c1] underline hover:text-[#5e81ac]">{linkMatch[1]}</a>;
+                        return token;
+                    })}
+                </span>
+            );
+        };
+
+        const SmartVideoPlayer = ({ url, alt, mini }) => {
+            const [isPlaying, setIsPlaying] = useState(false);
+            const getYouTubeId = (u) => {
+                const m = u.match(/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/);
+                return (m && m[2].length === 11) ? m[2] : null;
+            };
+            const ytId = getYouTubeId(url);
+            const watchUrl = ytId ? `https://www.youtube.com/watch?v=${ytId}` : url;
+
+            if (mini) return <div className="flex items-center justify-center h-full w-full bg-[#3b4252] text-[#88c0d0]"><Icon name="video" /></div>;
+
+            if (!isPlaying) {
+                return (
+                    <div className="relative w-full h-full group/player overflow-hidden rounded-lg shadow-lg border border-[#d8dee9] bg-[#2e3440]">
+                        <img 
+                            src={ytId ? `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg` : 'https://placehold.co/1280x720/3b4252/88c0d0?text=Video+Ready'} 
+                            className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover/player:opacity-70 transition-opacity duration-700" 
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6 z-10 p-4">
+                            <button onClick={() => setIsPlaying(true)} className="flex items-center gap-3 px-8 py-4 bg-[#81a1c1] text-white rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 font-bold">
+                                <Icon name="play" size={24} />
+                                <span>Initialize Player</span>
+                            </button>
+                            <a href={watchUrl} target="_blank" className="flex items-center gap-2 px-4 py-2 bg-[#4c566a]/80 backdrop-blur-md text-[#eceff4] rounded-lg transition-all text-xs font-semibold border border-white/10">
+                                <Icon name="external-link" size={14}/> 
+                                <span>Open Video Link</span>
+                            </a>
+                        </div>
+                    </div>
+                );
+            }
+            return (
+                <div className="w-full h-full relative rounded-lg bg-black overflow-hidden shadow-2xl">
+                    <iframe src={ytId ? `https://www.youtube.com/embed/${ytId}?autoplay=1` : url} className="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" />
+                    <button onClick={() => setIsPlaying(false)} className="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full hover:bg-black/80"><Icon name="x" size={16}/></button>
+                </div>
+            );
+        };
+
+        const SlideRenderer = memo(({ content, isTitleSlide, isFullscreen, mini = false }) => {
+            const blocks = useMemo(() => {
+                const stripped = content.replace(/::: notes\s*([\s\S]*?)\s*:::/, '').trim();
+                const lines = stripped.split('\n');
+                const result = [];
+                let currentBlock = null;
+
+                lines.forEach((line) => {
+                    const trimmed = line.trim();
+                    const mediaMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
+                    if (mediaMatch) {
+                        currentBlock = null;
+                        const isVideo = mediaMatch[1].toLowerCase() === 'video' || mediaMatch[2].includes('youtube') || mediaMatch[2].includes('vimeo') || mediaMatch[2].endsWith('.mp4');
+                        result.push({ type: isVideo ? 'video' : 'image', alt: mediaMatch[1], url: mediaMatch[2] });
+                        return;
+                    }
+                    if (trimmed.includes('|')) {
+                        if (!currentBlock || currentBlock.type !== 'table') { 
+                            currentBlock = { type: 'table', rows: [], alignments: [] }; 
+                            result.push(currentBlock); 
+                        }
+                        if (trimmed.match(/^[|\s-:]+$/)) {
+                            currentBlock.alignments = trimmed.split('|').filter(c => c.trim()).map(c => {
+                                if (c.includes(':') && c.startsWith(':') && c.endsWith(':')) return 'center';
+                                if (c.endsWith(':')) return 'right';
+                                return 'left';
+                            });
+                            return;
+                        }
+                        const cells = trimmed.split('|').map(c => c.trim()).filter((c, i, a) => !(i === 0 && !c) && !(i === a.length - 1 && !c));
+                        currentBlock.rows.push(cells);
+                        return;
+                    }
+                    if (line.startsWith('```')) {
+                        if (!currentBlock || currentBlock.type !== 'code') { currentBlock = { type: 'code', lines: [] }; result.push(currentBlock); }
+                        else currentBlock = null;
+                        return;
+                    }
+                    if (currentBlock && currentBlock.type === 'code') { currentBlock.lines.push(line); return; }
+                    currentBlock = null;
+                    if (line.startsWith('# ')) result.push({ type: 'h1', text: line.replace('# ', '') });
+                    else if (line.startsWith('## ')) result.push({ type: 'h2', text: line.replace('## ', '') });
+                    else if (line.startsWith('- ') || line.startsWith('* ')) result.push({ type: 'li', text: line.substring(2) });
+                    else if (line.startsWith('> ')) result.push({ type: 'quote', text: line.replace('> ', '') });
+                    else if (trimmed === '') result.push({ type: 'spacer' });
+                    else result.push({ type: 'p', text: line });
+                });
+                return result;
+            }, [content]);
+
+            const textScale = mini ? 'text-[6px]' : (isFullscreen ? 'text-3xl' : 'text-2xl');
+            const h1Scale = mini ? 'text-[10px]' : (isFullscreen ? 'text-7xl' : 'text-5xl');
+
+            return (
+                <div className={`w-full h-full flex flex-col fade-in ${isTitleSlide ? 'justify-center items-center text-center' : 'justify-start p-6 md:p-12'}`}>
+                    {blocks.map((b, i) => {
+                        if (b.type === 'h1') return <h1 key={i} className={`${h1Scale} font-bold mb-6 text-[#2e3440] tracking-tight`}><SafeInlineContent text={b.text} /></h1>;
+                        if (b.type === 'h2') return <h2 key={i} className={`${mini ? 'text-[8px]' : 'text-4xl'} font-semibold mb-6 text-[#3b4252]`}><SafeInlineContent text={b.text} /></h2>;
+                        if (b.type === 'li') return <li key={i} className={`${textScale} mb-3 ml-6 list-disc text-[#4c566a] pl-2`}><SafeInlineContent text={b.text} /></li>;
+                        if (b.type === 'quote') return <blockquote key={i} className={`border-l-4 border-[#81a1c1] pl-6 italic ${textScale} my-6 text-[#4c566a] bg-[#f8fafc]/50 py-2`}><SafeInlineContent text={b.text} /></blockquote>;
+                        if (b.type === 'p') return <p key={i} className={`${textScale} mb-4 text-[#4c566a] leading-relaxed`}><SafeInlineContent text={b.text} /></p>;
+                        if (b.type === 'image') return <div key={i} className="my-6 flex justify-center flex-1 overflow-hidden"><img src={b.url} className="max-w-full max-h-full object-contain rounded-lg shadow-lg border border-[#d8dee9] p-1 bg-white" onError={(e) => e.target.src='[https://placehold.co/600x400?text=Image+Not+Found](https://placehold.co/600x400?text=Image+Not+Found)'} /></div>;
+                        if (b.type === 'video') return <div key={i} className="my-6 flex justify-center flex-1 overflow-hidden aspect-video"><SmartVideoPlayer url={b.url} alt={b.alt} mini={mini} /></div>;
+                        if (b.type === 'table') return (
+                            <div key={i} className="my-6 overflow-x-auto">
+                                <table className={`w-full border-collapse ${mini ? 'text-[4px]' : 'text-xl'}`}>
+                                    <thead className="bg-[#e5e9f0]"><tr>{b.rows[0]?.map((c, j) => <th key={j} style={{ textAlign: b.alignments[j] || 'left' }} className="p-2 border-b-2 border-[#d8dee9] font-bold text-[#2e3440]">{c}</th>)}</tr></thead>
+                                    <tbody>{b.rows.slice(1).map((r, j) => <tr key={j} className={j % 2 === 0 ? 'bg-white' : 'bg-[#f8fafc]'}>{r.map((c, k) => <td key={k} style={{ textAlign: b.alignments[k] || 'left' }} className="p-2 border-b border-[#d8dee9] text-[#4c566a]">{c}</td>)}</tr>)}</tbody>
+                                </table>
+                            </div>
+                        );
+                        if (b.type === 'code') return <pre key={i} className={`${mini ? 'text-[3px] p-1' : 'p-4 text-sm'} bg-[#2e3440] text-[#d8dee9] rounded-lg font-mono overflow-x-auto my-4`}>{b.lines.join('\n')}</pre>;
+                        return <div key={i} className={mini ? "h-1" : "h-4"} />;
+                    })}
+                </div>
+            );
+        });
+
+        // --- MAIN APP ---
+
+        const App = () => {
+            const [markdown, setMarkdown] = useState(`---
+title: "Quarto Portable Viewer"
+subtitle: "Full Power Standalone"
+author: "Presenter"
+---
+
+# Professional Quarto Viewer
+## All Features Restored
+
+- **Standalone**: One HTML file, zero server
+- **Search**: Find keywords in real-time
+- **Overview**: Press 'O' for grid view
+- **Speaker Notes**: Press 'S' for console
+- **Safe Parsing**: No more raw HTML injection
+
+::: notes
+Welcome! This version combines the portability of a single HTML file 
+with the advanced navigation and security of the React implementation.
+:::
+
+---
+
+## Technical Features
+
+| Feature | Logic | Nord Color |
+|:---|:---:|:---:|
+| Search | Filtered | Frost |
+| Overview | CSS Grid | Snow Storm |
+| Video | Smart Load | Polar Night |
+
+---
+
+# Multimedia Stability
+
+![video](https://www.youtube.com/embed/dQw4w9WgXcQ)
+
+::: notes
+Click the play button to load the YouTube iframe safely.
+This avoids browser permission errors.
+:::`);
+
+            const [currentSlide, setCurrentSlide] = useState(0);
+            const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+            const [isFullscreen, setIsFullscreen] = useState(false);
+            const [isOverviewMode, setIsOverviewMode] = useState(false);
+            const [showNotes, setShowNotes] = useState(false);
+            const [searchQuery, setSearchQuery] = useState('');
+            const [timer, setTimer] = useState(0);
+            const [isTimerRunning, setIsTimerRunning] = useState(false);
+            const fileInputRef = useRef(null);
+
+            const { metadata, slides } = useMemo(() => {
+                const yamlRegex = /^---\s*[\r\n]([\s\S]*?)[\r\n]---/;
+                const match = markdown.match(yamlRegex);
+                const meta = {};
+                let body = markdown;
+                if (match) {
+                    match[1].split('\n').forEach(l => {
+                        const [k, ...v] = l.split(':');
+                        if (k && v) meta[k.trim()] = v.join(':').trim().replace(/['"]/g, '');
+                    });
+                    body = markdown.replace(yamlRegex, '');
+                }
+                const parts = body.split(/^---$/m).map(s => s.trim()).filter(s => s.length > 0);
+                return { metadata: meta, slides: parts };
+            }, [markdown]);
+
+            const filteredSlides = useMemo(() => {
+                if (!searchQuery) return [];
+                return slides.map((content, index) => ({ content, index }))
+                             .filter(s => s.content.toLowerCase().includes(searchQuery.toLowerCase()));
+            }, [searchQuery, slides]);
+
+            const handleFileOpen = (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (e) => { setMarkdown(e.target.result); setCurrentSlide(0); };
+                reader.readAsText(file);
+            };
+
+            const downloadMarkdown = () => {
+                const blob = new Blob([markdown], { type: 'text/markdown' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = `${metadata.title || 'presentation'}.qmd`;
+                a.click();
+            };
+
+            const exportStandalone = () => {
+                const escapedMarkdown = markdown.replace(/`/g, '\\`').replace(/\$/g, '\\$');
+                const newHtml = document.documentElement.outerHTML.replace(
+                    /const \[markdown, setMarkdown\] = useState\([\s\S]*?\);/, 
+                    `const [markdown, setMarkdown] = useState(\`${escapedMarkdown}\`);`
+                );
+                const blob = new Blob([newHtml], { type: 'text/html' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = `deck_${metadata.title || 'presentation'}.html`;
+                a.click();
+            };
+
+            useEffect(() => {
+                let itv;
+                if (isTimerRunning) itv = setInterval(() => setTimer(t => t + 1), 1000);
+                return () => clearInterval(itv);
+            }, [isTimerRunning]);
+
+            useEffect(() => {
+                const handleKey = (e) => {
+                    if (['TEXTAREA', 'INPUT'].includes(document.activeElement.tagName)) return;
+                    if (e.key === 'ArrowRight' || e.key === ' ') setCurrentSlide(s => Math.min(s + 1, slides.length - 1));
+                    if (e.key === 'ArrowLeft') setCurrentSlide(s => Math.max(s - 1, 0));
+                    if (e.key === 'Escape') { setIsFullscreen(false); setIsOverviewMode(false); setIsSidebarOpen(true); }
+                    if (e.key.toLowerCase() === 'o') setIsOverviewMode(!isOverviewMode);
+                    if (e.key.toLowerCase() === 's') setShowNotes(!showNotes);
+                    if (e.key.toLowerCase() === 'f') { 
+                        const nextState = !isFullscreen;
+                        setIsFullscreen(nextState); 
+                        setIsSidebarOpen(!nextState);
+                        setIsTimerRunning(nextState);
+                    }
+                };
+                window.addEventListener('keydown', handleKey);
+                return () => window.removeEventListener('keydown', handleKey);
+            }, [slides.length, isFullscreen, isOverviewMode, showNotes]);
+
+            return (
+                <div className="flex h-screen w-full overflow-hidden text-[#2e3440] bg-[#eceff4]">
+                    {/* Sidebar */}
+                    {!isFullscreen && (
+                        <div className={`transition-all duration-300 bg-[#e5e9f0] border-r border-[#d8dee9] flex flex-col ${isSidebarOpen ? 'w-[400px]' : 'w-0 overflow-hidden'}`}>
+                            <div className="p-4 bg-[#eceff4] border-b flex justify-between items-center shadow-sm">
+                                <div className="flex items-center gap-2 font-bold text-xs text-[#4c566a] uppercase tracking-widest"><Icon name="file-text"/><span>Quarto Editor</span></div>
+                                <button onClick={() => setIsSidebarOpen(false)} className="p-1 hover:bg-[#d8dee9] rounded"><Icon name="panel-left-close"/></button>
+                            </div>
+                            
+                            {/* Search */}
+                            <div className="p-3 border-b bg-white/50">
+                                <div className="relative">
+                                    <Icon name="search" size={14} className="absolute left-3 top-2.5 text-[#4c566a]" />
+                                    <input 
+                                        type="text" 
+                                        placeholder="Search slides..." 
+                                        className="w-full pl-9 pr-3 py-1.5 text-xs rounded border border-[#d8dee9] focus:ring-1 focus:ring-[#81a1c1] outline-none"
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
+                                    />
+                                </div>
+                                {searchQuery && (
+                                    <div className="mt-2 max-h-40 overflow-y-auto bg-white rounded border border-[#d8dee9] text-[10px] shadow-lg">
+                                        {filteredSlides.length > 0 ? filteredSlides.map(s => (
+                                            <button key={s.index} onClick={() => { setCurrentSlide(s.index); setSearchQuery(''); }} className="w-full text-left p-2 hover:bg-[#eceff4] border-b last:border-0 truncate">
+                                                <span className="font-bold text-[#81a1c1] mr-2">SLIDE {s.index + 1}:</span>
+                                                {s.content.split('\n')[0].replace(/[#\s]/g, '') || 'Untitled'}
+                                            </button>
+                                        )) : <div className="p-2 text-gray-400 italic">No results found</div>}
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="p-4 flex gap-2 border-b bg-white">
+                                <button onClick={() => fileInputRef.current.click()} className="flex-1 flex items-center justify-center gap-2 py-2 text-xs font-bold bg-[#81a1c1] text-white rounded hover:bg-[#5e81ac] shadow-sm"><Icon name="folder-open" size={14}/> OPEN</button>
+                                <button onClick={downloadMarkdown} className="flex-1 flex items-center justify-center gap-2 py-2 text-xs font-bold border border-[#81a1c1] text-[#81a1c1] rounded hover:bg-[#81a1c1]/10"><Icon name="save" size={14}/> SAVE</button>
+                                <input type="file" ref={fileInputRef} onChange={handleFileOpen} className="hidden" accept=".md,.qmd,.txt" />
+                            </div>
+
+                            <textarea value={markdown} onChange={(e) => setMarkdown(e.target.value)} className="flex-1 p-6 font-mono text-sm resize-none outline-none bg-white text-[#2e3440] leading-relaxed" spellCheck="false" />
+                            
+                            <div className="p-4 bg-[#d8dee9]">
+                                <button onClick={exportStandalone} className="w-full flex items-center justify-center gap-2 py-3 text-xs font-black uppercase tracking-widest bg-[#4c566a] text-white rounded hover:bg-[#3b4252] shadow-xl"><Icon name="zap" size={14}/> Export Portable Deck</button>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Stage Container */}
+                    <div className="flex-1 flex flex-col relative overflow-hidden">
+                        {!isFullscreen && (
+                            <header className="h-14 bg-white border-b flex items-center justify-between px-6 z-10 shadow-sm">
+                                <div className="flex items-center gap-4">
+                                    {!isSidebarOpen && <button onClick={() => setIsSidebarOpen(true)} className="p-1 hover:bg-[#eceff4] rounded transition-colors"><Icon name="panel-left-open"/></button>}
+                                    <h1 className="text-sm font-bold text-[#4c566a] tracking-tight">{metadata.title || 'New Presentation'}</h1>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <button onClick={() => setShowNotes(!showNotes)} className={`p-2 rounded transition-all ${showNotes ? 'bg-[#81a1c1] text-white shadow-inner' : 'hover:bg-[#eceff4] text-[#4c566a]'}`} title="Notes (S)"><Icon name="message-square"/></button>
+                                    <button onClick={() => setIsOverviewMode(!isOverviewMode)} className={`p-2 rounded transition-all ${isOverviewMode ? 'bg-[#81a1c1] text-white shadow-inner' : 'hover:bg-[#eceff4] text-[#4c566a]'}`} title="Overview (O)"><Icon name="grid"/></button>
+                                    <button onClick={() => {setIsFullscreen(true); setIsSidebarOpen(false); setIsTimerRunning(true);}} className="flex items-center gap-2 px-5 py-2 bg-[#81a1c1] text-white text-xs font-black uppercase tracking-widest rounded shadow-lg hover:bg-[#5e81ac] transition-all transform active:scale-95 ml-2"><Icon name="play" size={14}/> Present</button>
+                                </div>
+                            </header>
+                        )}
+
+                        <div className={`flex-1 flex ${isFullscreen && showNotes ? 'flex-row' : 'flex-col'} p-4 md:p-10 relative overflow-hidden bg-[#eceff4]`}>
+                            {/* Slide Display or Overview */}
+                            <div className="flex-1 relative flex items-center justify-center overflow-y-auto scrollbar-hide">
+                                {isOverviewMode ? (
+                                    <div className="w-full h-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
+                                        {slides.map((content, idx) => (
+                                            <div key={idx} onClick={() => { setCurrentSlide(idx); setIsOverviewMode(false); }} className={`aspect-[16/9] bg-white border-2 rounded-2xl cursor-pointer transition-all hover:scale-105 overflow-hidden relative shadow-md ${currentSlide === idx ? 'border-[#81a1c1] ring-4 ring-[#81a1c1]/20' : 'border-[#d8dee9]'}`}>
+                                                <SlideRenderer content={content} isTitleSlide={idx === 0} isFullscreen={isFullscreen} mini={true} />
+                                                <div className="absolute bottom-2 right-4 text-xs font-black text-[#81a1c1] bg-white/80 px-2 py-0.5 rounded-full shadow-sm">{idx + 1}</div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className={`w-full h-full relative flex flex-col bg-white overflow-hidden transition-all shadow-2xl ${isFullscreen ? 'rounded-none' : 'max-w-6xl aspect-[16/9] rounded-[2.5rem] border border-[#d8dee9]'}`}>
+                                        
+                                        {isFullscreen && (
+                                            <div className="absolute top-6 right-6 opacity-0 hover:opacity-100 transition-opacity z-50">
+                                                <button onClick={() => setIsFullscreen(false)} className="p-3 bg-white/90 shadow-xl rounded-full text-[#4c566a] hover:text-[#bf616a]"><Icon name="minimize" /></button>
+                                            </div>
+                                        )}
+
+                                        {/* Title Slide Logic */}
+                                        {currentSlide === 0 && metadata.title && !slides[0].includes(metadata.title) && (
+                                            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white p-12 text-center fade-in">
+                                                <h1 className={`${isFullscreen ? 'text-8xl' : 'text-6xl'} font-black text-[#2e3440] mb-8 tracking-tighter`}><SafeInlineContent text={metadata.title} /></h1>
+                                                {metadata.subtitle && <h2 className="text-3xl text-[#4c566a] italic font-light mb-12"><SafeInlineContent text={metadata.subtitle} /></h2>}
+                                                <div className="w-32 h-1.5 bg-[#88c0d0] rounded-full" />
+                                                {metadata.author && <p className="mt-8 text-xl text-[#81a1c1] font-semibold">{metadata.author}</p>}
+                                            </div>
+                                        )}
+                                        
+                                        <div className="flex-1 overflow-y-auto scrollbar-hide">
+                                            <SlideRenderer content={slides[currentSlide] || ''} isTitleSlide={currentSlide === 0} isFullscreen={isFullscreen} />
+                                        </div>
+                                        
+                                        <div className="h-2 bg-[#e5e9f0] w-full mt-auto">
+                                            <div className="h-full bg-[#88c0d0] transition-all duration-300 ease-out shadow-[0_0_10px_rgba(136,192,208,0.5)]" style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }} />
+                                        </div>
+
+                                        {!isFullscreen && (
+                                            <>
+                                                <button onClick={() => setCurrentSlide(s => Math.max(s - 1, 0))} className="absolute left-6 top-1/2 -translate-y-1/2 p-4 bg-white/50 backdrop-blur-sm shadow-xl rounded-full text-[#4c566a] hover:text-[#81a1c1] opacity-0 hover:opacity-100 transition-all active:scale-90"><Icon name="chevron-left" size={24}/></button>
+                                                <button onClick={() => setCurrentSlide(s => Math.min(s + 1, slides.length - 1))} className="absolute right-6 top-1/2 -translate-y-1/2 p-4 bg-white/50 backdrop-blur-sm shadow-xl rounded-full text-[#4c566a] hover:text-[#81a1c1] opacity-0 hover:opacity-100 transition-all active:scale-90"><Icon name="chevron-right" size={24}/></button>
+                                            </>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Speaker Notes Console */}
+                            {showNotes && !isOverviewMode && (
+                                <aside className={`${isFullscreen ? 'w-[450px] ml-10' : 'mt-8 h-56'} bg-[#3b4252] text-[#eceff4] rounded-[2rem] shadow-2xl flex flex-col overflow-hidden border border-white/10 fade-in`}>
+                                    <div className="p-5 bg-[#2e3440] flex justify-between items-center">
+                                        <div className="flex items-center gap-3 font-black text-xs tracking-widest text-[#88c0d0] uppercase"><Icon name="message-square" size={16}/> Speaker Notes</div>
+                                        <div className="flex items-center gap-3 px-4 py-1.5 bg-[#4c566a] rounded-full text-xs font-mono shadow-inner border border-white/5">
+                                            <Icon name="clock" size={12}/> <span>{Math.floor(timer/60)}:{String(timer%60).padStart(2,'0')}</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1 p-8 overflow-y-auto text-xl italic leading-relaxed text-[#d8dee9] border-t border-white/5">
+                                        {(slides[currentSlide]?.match(/::: notes\s*([\s\S]*?)\s*:::/)?.[1] || "No talking points for this slide.").split('\n').map((l, i) => <p key={i} className="mb-4">{l}</p>)}
+                                    </div>
+                                </aside>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

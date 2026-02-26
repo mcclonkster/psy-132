@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nord Studio - Accessible Markdown</title>
+    
+    <!-- 1. External dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- 2. Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "react": "https://esm.sh/react@18.2.0",
+            "react-dom": "https://esm.sh/react-dom@18.2.0/client",
+            "lucide-react": "https://esm.sh/lucide-react@0.284.0"
+        }
+    }
+    </script>
+
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; background-color: #2e3440; }
+        #root { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="module">
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        // Your code is stored here as a string so Babel can transpile the JSX
+        // Note: Internal backticks are escaped with \` to prevent string termination
+        const mjsContent = `
+import React, { useState, useEffect, useMemo } from 'react';
+import { 
+  FileText, Eye, Edit3, Download, Copy, Trash2, Moon, Sun,
+  Layout, Clock, Code, Type, Maximize2, Minimize2
+} from 'lucide-react';
+
+const NORD = {
+  polar0: '#2e3440', polar1: '#3b4252', polar2: '#434c5e', polar3: '#373e4c',
+  snow0: '#d8dee9', snow1: '#e5e9f0', snow2: '#eceff4',
+  frost0: '#79a09f', frost1: '#5e96a7', frost2: '#5279a1', frost3: '#445d81',
+  aurora0: '#bf616a', aurora3: '#7c946a',
+};
+
+const App = () => {
+  const [markdown, setMarkdown] = useState('');
+  const [viewMode, setViewMode] = useState('split');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
+  const [fontSize, setFontSize] = useState(20);
+  const [showStatus, setShowStatus] = useState(false);
+
+  useEffect(() => {
+    const savedContent = localStorage.getItem('markdown_studio_content');
+    setMarkdown(savedContent || DEFAULT_MARKDOWN);
+
+    const loadScript = (src) => new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      document.head.appendChild(script);
+    });
+
+    Promise.all([
+      loadScript('https://cdn.jsdelivr.net/npm/marked/marked.min.js'),
+      loadScript('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js')
+    ]).then(() => {
+      if (window.marked && window.hljs) {
+        window.marked.setOptions({
+          highlight: (code, lang) => {
+            const language = window.hljs.getLanguage(lang) ? lang : 'plaintext';
+            return window.hljs.highlight(code, { language }).value;
+          },
+          langPrefix: 'hljs language-',
+          breaks: true, gfm: true
+        });
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('markdown_studio_content', markdown);
+  }, [markdown]);
+
+  const renderedHtml = useMemo(() => {
+    if (!window.marked) return '';
+    try { return window.marked.parse(markdown); } 
+    catch (e) { return "<p>Error parsing.</p>"; }
+  }, [markdown]);
+
+  const handleDownload = () => {
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'notes.md'; a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const bgColor = isDarkMode ? NORD.polar0 : NORD.snow2;
+  const secondaryBg = isDarkMode ? NORD.polar1 : NORD.snow1;
+  const borderColor = isDarkMode ? NORD.polar2 : NORD.snow0;
+  const textColor = isDarkMode ? NORD.snow2 : NORD.polar0;
+  const mutedText = isDarkMode ? NORD.snow0 : NORD.polar3;
+
+  return (
+    <div className="flex flex-col h-screen overflow-hidden font-sans transition-colors duration-300"
+         style={{ backgroundColor: bgColor, color: textColor }}>
+      
+      {!isFocusMode && (
+        <header className="flex items-center justify-between px-6 py-4 border-b z-10"
+                style={{ borderColor: borderColor, backgroundColor: isDarkMode ? NORD.polar0 : '#ffffff' }}>
+          <div className="flex items-center gap-3">
+            <div className="p-2 rounded-lg" style={{ backgroundColor: NORD.frost3 }}>
+              <FileText size={24} className="text-white" />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold">Nord Studio</h1>
+              <p className="text-[10px] uppercase tracking-widest" style={{ color: NORD.frost2 }}>AAA Compliant</p>
+            </div>
+          </div>
+
+          <nav className="flex items-center gap-4">
+            <div className="flex items-center gap-3 px-3 py-2 rounded-lg" style={{ backgroundColor: secondaryBg }}>
+              <Type size={18} style={{ color: mutedText }} />
+              <input type="range" min="16" max="48" value={fontSize} 
+                     onChange={(e) => setFontSize(parseInt(e.target.value))}
+                     className="w-24 h-2 cursor-pointer accent-nord-frost" />
+            </div>
+
+            <div className="flex items-center p-1 rounded-lg" style={{ backgroundColor: secondaryBg }}>
+              {[{ id: 'edit', icon: <Edit3 size={20} /> }, { id: 'split', icon: <Layout size={20} /> }, { id: 'preview', icon: <Eye size={20} /> }].map(mode => (
+                <button key={mode.id} onClick={() => setViewMode(mode.id)} className="p-2 rounded-md"
+                        style={{ backgroundColor: viewMode === mode.id ? (isDarkMode ? NORD.polar3 : '#fff') : 'transparent', color: viewMode === mode.id ? NORD.frost3 : mutedText }}>
+                  {mode.icon}
+                </button>
+              ))}
+            </div>
+
+            <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-2" style={{ color: mutedText }}>
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <button onClick={() => setIsFocusMode(true)} className="px-4 py-2 rounded-lg font-bold text-white bg-slate-800 flex items-center gap-2">
+              <Maximize2 size={18} /> Present
+            </button>
+          </nav>
+        </header>
+      )}
+
+      <main className="flex-1 flex overflow-hidden relative">
+        {(viewMode === 'edit' || viewMode === 'split') && (
+          <section className={\`flex flex-col h-full border-r \${viewMode === 'edit' ? 'w-full' : 'w-1/3'}\`} style={{ borderColor: borderColor }}>
+            <textarea className="flex-1 p-8 resize-none outline-none font-mono text-base"
+                      style={{ backgroundColor: isDarkMode ? NORD.polar1 : '#fff', color: textColor }}
+                      value={markdown} onChange={(e) => setMarkdown(e.target.value)} />
+          </section>
+        )}
+
+        {(viewMode === 'preview' || viewMode === 'split') && (
+          <section className={\`flex-1 overflow-y-auto \${isFocusMode ? 'p-12 md:p-32' : 'p-12'}\`} 
+                   style={{ backgroundColor: isFocusMode ? bgColor : (isDarkMode ? NORD.polar0 : '#fff') }}>
+            <article className="prose max-w-4xl mx-auto" style={{ fontSize: \`\${fontSize}px\`, color: textColor }}
+                     dangerouslySetInnerHTML={{ __html: renderedHtml }} />
+          </section>
+        )}
+      </main>
+
+      <style>{\`
+        article h1 { font-size: 2.5em; color: \${NORD.frost3}; border-bottom: 2px solid \${NORD.snow0}; }
+        article h2 { color: \${NORD.frost2}; margin-top: 1.5em; }
+        article blockquote { border-left: 5px solid \${NORD.frost0}; padding-left: 1em; font-style: italic; }
+        article pre { background: #2e3440; color: #eceff4; padding: 1.5em; border-radius: 8px; overflow: auto; }
+        article code { color: \${NORD.aurora0}; background: rgba(0,0,0,0.05); padding: 0.2em 0.4em; border-radius: 4px; }
+      \`}</style>
+    </div>
+  );
+};
+
+const DEFAULT_MARKDOWN = "# Hello Nord Studio\\n\\nEdit this text to see changes!";
+export default App;
+        `;
+
+        async function mountComponent(sourceCode) {
+            try {
+                const { code } = Babel.transform(sourceCode, {
+                    presets: ['react'],
+                    filename: 'virtual-module.js'
+                });
+                const base64Code = btoa(unescape(encodeURIComponent(code)));
+                const dataUri = "data:text/javascript;base64," + base64Code;
+                const module = await import(dataUri);
+                if (module.default) {
+                    const root = ReactDOM.createRoot(document.getElementById('root'));
+                    root.render(React.createElement(module.default));
+                }
+            } catch (err) {
+                console.error(err);
+                document.getElementById('root').innerHTML = '<pre style="color:white;padding:20px">' + err.message + '</pre>';
+            }
+        }
+
+        mountComponent(mjsContent);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "psy-132",
+  "version": "1.0.0",
+  "description": "[Public NotebookLM notebook for OpenStax](https://notebooklm.google.com/notebook/90a2ee5f-cccb-4c28-a356-bb1682cc8aeb?e)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcclonkster/psy-132.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mcclonkster/psy-132/issues"
+  },
+  "homepage": "https://github.com/mcclonkster/psy-132#readme",
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  },
+  "dependencies": {
+    "lucide-react": "^0.575.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
