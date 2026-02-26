@@ -1,0 +1,897 @@
+---
+title: "Topic 19: Social"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How social context shapes thought, feeling, and behavior
+- Social cognition and attribution
+- Social influence and group processes
+- Intergroup dynamics and bias
+
+::: notes
+Visual cue: One person in the center with lenses labeled cognition, influence, groups, intergroup.
+:::
+
+## Social psychology studies context
+
+- Situations influence behavior
+- Interpretation shapes response
+- Group norms and roles matter
+
+::: notes
+Guardrail: situation effects do not deny personality differences.
+:::
+
+## From situation to behavior
+
+```{mermaid}
+flowchart LR
+S[Situation] --> I[Interpretation]
+I --> A[Attribution]
+A --> R[Response]
+G[Group norms and roles] --> R
+```
+
+::: notes
+Caption cue: what you think is happening shapes what you do.
+:::
+
+## Attribution
+
+- Attribution is explaining behavior
+- Explanations can be dispositional or situational
+- Biases can shift explanations
+
+::: notes
+Visual cue: Two-column frame: person causes vs situation causes.
+:::
+
+## Fundamental attribution error
+
+- Overemphasize traits in others
+- Underemphasize constraints in situations
+- Stronger when context is hidden
+
+::: notes
+Visual cue: Spotlight on the person, background dimmed.
+:::
+
+## Actor-observer difference
+
+- You explain your behavior with situations
+- You explain others with traits
+- Perspective changes what information you have
+
+::: notes
+Visual cue: Two camera angles: inside actor view, outside observer view.
+:::
+
+## Self-serving bias
+
+- Success: internal explanations
+- Failure: external explanations
+- Protects self-image in many contexts
+
+::: notes
+Visual cue: Success and failure cards feeding into different explanations.
+:::
+
+## Norms, roles, scripts
+
+- Norm: shared expectation
+- Role: expected behavior in a position
+- Script: expected sequence in a situation
+
+::: notes
+Visual cue: Classroom script example.
+:::
+
+## Conformity
+
+- Conformity is changing behavior to match a group
+- Normative influence: desire to fit in
+- Informational influence: desire to be correct
+
+::: notes
+Guardrail: conformity can be public compliance without private agreement.
+Visual cue: Fit in vs be correct pathways.
+:::
+
+## Obedience
+
+- Obedience is following authority directives
+- Roles and framing can increase compliance
+- Obedience is not always physically coerced
+
+::: notes
+Visual cue: Authority cue → role framing → action.
+Guardrail: keep classic studies as mechanism illustrations, not moral parables.
+:::
+
+## Groupthink and polarization
+
+:::: columns
+::: column
+Groupthink
+- pressure for consensus
+- reduced critical evaluation
+- narrower decisions
+:::
+
+::: column
+Group polarization
+- discussion strengthens initial leanings
+- more extreme group position
+- shared arguments intensify attitudes
+:::
+::::
+
+::: notes
+Visual cue: Two outcomes from the same group discussion.
+Guardrail: not all groups show these patterns.
+:::
+
+## Social facilitation and loafing
+
+:::: columns
+::: column
+Social facilitation
+- improves simple tasks
+- impairs complex tasks
+- arousal and evaluation matter
+:::
+
+::: column
+Social loafing
+- reduced effort in groups
+- more likely when effort is unidentifiable
+- reduced by accountability
+:::
+::::
+
+::: notes
+Visual cue: Performance curve and effort bars.
+:::
+
+## Helping and the bystander effect
+
+- Notice the event
+- Interpret as an emergency
+- Assume responsibility
+- Know how to help and act
+
+::: notes
+Visual cue: Decision steps model.
+Guardrail: do not use simplified myths as proof; focus on mechanism.
+:::
+
+## Diffusion of responsibility
+
+- Responsibility is shared across bystanders
+- Each person feels less personal duty
+- Direct requests can reduce diffusion
+
+::: notes
+Visual cue: Responsibility “pie” split among bystanders.
+:::
+
+## Stereotype, prejudice, discrimination
+
+:::: columns
+::: column
+Stereotype
+- belief or expectation about a group
+:::
+
+::: column
+Prejudice
+- evaluative attitude toward a group
+:::
+
+::: column
+Discrimination
+- behavior and unequal treatment
+:::
+::::
+
+::: notes
+Guardrail: keep these terms distinct.
+:::
+
+## Social identity
+
+- Identity shapes belonging and meaning
+- Ingroup and outgroup categories shift behavior
+- Categorization can produce favoritism
+
+::: notes
+Visual cue: Identity badge plus ingroup-outgroup circles.
+Anchor: minimal group effects as an illustration of categorization.
+:::
+
+## Stereotype threat
+
+- Context cues can affect performance
+- Effects depend on stakes and identity relevance
+- Changing cues can reduce threat
+
+::: notes
+Visual cue: Testing cues → load → performance.
+Guardrail: keep claims conditional and context-based.
+:::
+
+## Worked example: one behavior, two lenses
+
+Scenario: a student stays quiet in class
+
+:::: columns
+::: column
+Attribution lens
+- trait explanation: “shy”
+- constraint explanation: “unclear expectations”
+:::
+
+::: column
+Norms and roles lens
+- classroom norms discourage speaking
+- role expectations shape behavior
+:::
+::::
+
+::: notes
+Teaching move: ask students what additional information would change the explanation.
+:::
+
+## Common confusions to avoid
+
+- Social psychology denies personality
+- Conformity means agreement
+- Bystanders do not care
+- Stereotypes are always conscious
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Fundamental attribution error
+- Actor-observer difference
+- Self-serving bias
+- Norm
+- Role
+- Script
+- Normative influence
+- Informational influence
+- Groupthink
+- Group polarization
+- Social loafing
+- Diffusion of responsibility
+- Stereotype
+- Prejudice
+- Discrimination
+- Social identity
+- Stereotype threat
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Fundamental attribution error: overemphasize traits, underemphasize constraints
+- Actor-observer difference: self explained by situation, others by traits
+- Self-serving bias: success internal, failure external
+- Norm: shared expectation
+- Role: expected behavior in a position
+- Script: expected sequence in a situation
+- Normative influence: fit in
+- Informational influence: be correct
+- Groupthink: pressure for consensus reduces critique
+- Group polarization: discussion strengthens initial leanings
+- Social loafing: reduced effort when effort is unidentifiable
+- Diffusion of responsibility: shared presence reduces personal duty
+- Stereotype: belief or expectation about a group
+- Prejudice: evaluative attitude
+- Discrimination: behavior and unequal treatment
+- Social identity: group membership shaping belonging and behavior
+- Stereotype threat: performance affected by stereotype-relevant cues
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 20
+
+- Social context shapes behavior in predictable ways
+- Personality describes stable tendencies
+- Next: traits, assessment, and person-situation interaction
+
+::: notes
+Visual cue: Person and situation both feeding into behavior.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of social psychology
+- influence of others on thoughts
+- feelings
+- behavior
+- situational attributions
+- dispositional attributions
+- overemphasis on dispositional causes
+- underweighting situation
+- different attributions for self vs others
+- attributing successes internally
+- failures externally
+- belief in a fair world
+- victim-blaming
+- roles
+- expectations
+- role-congruent behavior
+- norms
+- conformity pressures
+- regulation of behavior
+- schemas for events
+- expected sequences of actions
+- role-induced behavior
+- power of situation
+- ethical issues
+- evaluation of objects
+- people
+- ideas
+- affect
+- cognition
+- dissonance
+- attitude change to reduce inconsistency
+- persuasion
+- message
+- source
+- audience factors
+- elaboration likelihood
+- central vs peripheral cues
+- conformity in judgments
+- normative influence
+- conformity
+- compliance
+- obedience
+- informational vs normative
+- obedience to authority
+- situational power
+- ethics
+- groupthink
+- performance change in groups
+- loafing vs effort
+- affective
+- cognitive
+- behavioral components of bias
+- concrete cases of each component of bias
+- social identity
+- realistic conflict
+- learning
+- cognitive biases
+- behavior intended to harm
+- different forms
+- online aggression
+- harassment via digital channels
+- reduced help in presence of others
+- diffusion of responsibility
+- helping with no obvious self-benefit
+- proximity
+- similarity
+- familiarity
+- reciprocity
+- attractiveness
+- competence
+- Sternberg’s intimacy
+- passion
+- commitment
+- costs and benefits
+- comparison levels
+- investments
+- I/O domains
+- work behavior
+- organizational processes
+- origins
+- Hawthorne studies
+- major developments
+- job analysis
+- testing
+- interviews
+- validity
+- onboarding
+- skills training
+- development programs
+- performance appraisals
+- rating biases
+- feedback
+- study of workers’ attitudes
+- motivation
+- leadership
+- job satisfaction scales
+- predictors
+- outcomes
+- leadership styles
+- management roles
+- influence
+- shared values and norms
+- climate
+- impact on behavior
+- human–machine interaction
+- design for users
+- design to reduce errors
+- improve comfort and performance
+- spoken/written vs body language
+- facial expressions
+- tone
+- e.g.
+- assertive vs passive
+- content vs relational
+- communication goals
+- skills practice
+- observational learning
+- desensitization
+- priming
+- mixed findings
+- cohort differences
+- cultural shifts
+- sexual norms
+- communication
+- consent
+- mutual respect
+- satisfaction
+- unwanted sexual behavior
+- power
+- workplace or social contexts
+- definition of rape
+- false beliefs that minimize or excuse it
+- participation in community and public life
+- benefits to health
+- social capital
+- democracy
+- personal civic goals
+- concrete actions
+- barriers
+- group membership
+- ingroup bias
+- core group constructs and their meanings
+- upward vs downward comparison
+- reference groups
+- internal vs external
+- covariation or similar model
+- FAE vs actor-observer
+- nuance in attribution biases
+- definition
+- conditioning
+- modeling
+- exposure
+- self-report
+- behavioral
+- implicit measures
+- persuasion cues
+- threats/opportunities
+- inconsistency
+- reduction strategies
+- taxonomy of influence
+- from passive presence to active coercion
+- social facilitation/inhibition
+- arousal effects
+- normative vs informational motives
+- situational factors
+- and audience factors
+- specific compliance techniques
+- mechanism differences
+- key findings
+- individual vs situational factors
+- ethical implications
+- coercive persuasion
+- isolation
+- control of information
+- assertive communication
+- boundary-setting
+- confidence
+- group participation
+- role clarity
+- need to belong
+- social support
+- information
+- identity
+- physical attractiveness
+- depth of disclosure
+- cost–benefit
+- reciprocity over time
+- intimacy
+- combinations
+- secure
+- anxious/ambivalent
+- avoidant
+- evolved preferences
+- parental investment
+- mate selection
+- prosocial behavior
+- altruism
+- egoism
+- collectivism
+- helping that may or may not involve self-sacrifice vs strict selfless helping
+- situational (bystanders)
+- victim characteristics
+- helper traits
+- decision model of helping
+- noticing
+- interpreting
+- responsibility
+- antisocial acts
+- aggression
+- direct vs relational aggression
+- biological
+- social learning
+- situational triggers
+- policies
+- education
+- self-control
+- context changes
+- I/O roles in selection
+- training
+- assessment
+- development
+- culture at work
+- hostile environments
+- selection
+- placement
+- improving conditions
+- recognition
+- fit
+- management assumptions
+- study of people–environment interactions
+- environmental stressors
+- coping and design strategies
+- tragedy of the commons
+- overuse
+- pollution
+- policy
+- incentives
+- structural changes
+- applied roles in law
+- community settings
+- sport performance
+- voir dire
+- surveys
+- mock juries
+- profiling
+- pretrial publicity
+- biases
+- group dynamics
+- evidence complexity
+- ecological levels
+- empowerment
+- prevention
+- career exploration
+- goal setting
+- skill development
+
+## Key terms
+
+- social_psychology_definition
+- social_influence
+- group_context
+- situational_vs_dispositional
+- attribution
+- behavior_causes
+- fundamental_attribution_error
+- attribution_bias
+- actor_observer_bias
+- self_vs_other
+- self_serving_bias
+- self_protection
+- just_world_belief
+- victim_blame
+- social_roles
+- expectations
+- behavior
+- social_norms
+- conformity
+- behavior_regulation
+- social_scripts
+- event_schemas
+- Stanford_prison_experiment
+- roles
+- ethics
+- demand_characteristics
+- attitude_definition
+- ABC_model
+- evaluation
+- cognitive_dissonance_change
+- internal_attitude_change
+- persuasion
+- external_attitude_change
+- source_message_audience
+- ELM
+- central_route
+- peripheral_route
+- persuasion_routes
+- Asch_effect
+- norms
+- conformity_definition
+- social_influence_types
+- compliance
+- obedience
+- Milgram
+- authority
+- groupthink
+- social_facilitation
+- social_loafing
+- group_processes
+- prejudice
+- stereotypes
+- discrimination
+- prejudice_examples
+- stereotype_examples
+- discrimination_examples
+- prejudice_causes
+- social_identity
+- realistic_conflict
+- learning
+- aggression_definition
+- intent_to_harm
+- cyberbullying
+- online_aggression
+- harassment
+- bystander_effect
+- diffusion_of_responsibility
+- helping
+- altruism_definition
+- prosocial_behavior
+- selflessness
+- relationship_formation
+- proximity
+- similarity
+- familiarity
+- reciprocity
+- attraction_factors
+- physical_attractiveness
+- triangular_theory
+- Sternberg
+- intimacy
+- passion
+- commitment
+- social_exchange_theory
+- costs_benefits
+- comparison_level
+- relationships
+- IO_scope
+- work_psychology
+- organizational_behavior
+- IO_history
+- Hawthorne
+- applied_psychology
+- employee_selection
+- job_analysis
+- testing
+- hiring
+- job_training
+- onboarding
+- skills_training
+- development
+- performance_assessment
+- ratings
+- bias
+- feedback
+- organizational_psychology_definition
+- work_attitudes
+- leadership
+- job_satisfaction
+- measurement
+- predictors
+- outcomes
+- management
+- styles
+- influence
+- organizational_culture
+- climate
+- human_factors
+- ergonomics
+- user_centered_design
+- human_factors_role
+- safety
+- productivity
+- satisfaction
+- verbal_communication
+- nonverbal_communication
+- body_language
+- verbal_methods
+- communication_styles
+- perspectives
+- communication_plan
+- skills
+- self_improvement
+- media_violence
+- aggression
+- mechanisms
+- research_findings
+- sexual_attitudes_change
+- sexual_behavior_trends
+- cohorts
+- healthy_sexual_relationships
+- communication
+- consent
+- respect
+- sexual_harassment
+- examples
+- power
+- boundaries
+- rape_definition
+- rape_myths
+- civic_engagement
+- participation
+- community_involvement
+- civic_benefits
+- social_capital
+- health
+- democracy
+- civic_plan
+- engagement
+- action_steps
+- ingroup
+- outgroup
+- ingroup_favoritism
+- group_structure
+- cohesiveness
+- status
+- social_comparison
+- upward
+- downward
+- reference_group
+- internal_vs_external_attribution
+- attribution_factors
+- FAE_vs_actor_observer
+- attribution_bias_comparison
+- attitude_formation
+- conditioning
+- modeling
+- exposure
+- attitude_measurement
+- self_report
+- implicit_measures
+- attitude_change_factors
+- dissonance
+- threat
+- cognitive_dissonance
+- reduction_strategies
+- belief_behavior_gap
+- social_influence_methods
+- mere_presence
+- coercion
+- social_inhibition
+- conformity_reasons
+- normative_influence
+- informational_influence
+- conditions
+- compliance_persuasiveness
+- source
+- message
+- audience
+- compliance_techniques
+- foot_in_the_door
+- door_in_the_face
+- lowball
+- nudge
+- Milgram_lessons
+- situational_power
+- brainwashing
+- captivity
+- self_assertion_strategies
+- assertiveness
+- teamwork_plan
+- group_skills
+- collaboration
+- affiliation_motives
+- belongingness
+- support
+- information
+- attractiveness
+- relationship_development
+- self_disclosure
+- social_exchange
+- Sternberg_triangular
+- adult_attachment_types
+- secure
+- anxious
+- avoidant
+- sexual_selection_social
+- mate_preferences
+- evolutionary_psychology
+- motives
+- altruism
+- egoism
+- collectivism
+- prosocial_vs_altruism
+- selfless
+- helping_factors
+- situation
+- victim
+- helper
+- bystander_apathy
+- helping_decision_model
+- steps
+- antisocial_behavior
+- direct
+- indirect
+- aggression_causes
+- biology
+- aggression_reduction
+- societal
+- individual
+- interventions
+- IO_roles
+- selection
+- training
+- assessment
+- hostility
+- personnel_psychology
+- person_job_fit
+- placement
+- job_satisfaction_promotion
+- work_conditions
+- recognition
+- Theory_X
+- Theory_Y
+- transformational_leadership
+- leadership_styles
+- environmental_psychology
+- human_environment_interaction
+- crowding
+- overstimulation
+- noise
+- environmental_management
+- environmental_damage
+- social_dilemmas
+- commons
+- environmental_solutions
+- policy
+- incentives
+- legal_psychology
+- community_psychology
+- sports_psychology
+- jury_selection_techniques
+- voir_dire
+- surveys
+- profiling
+- juror_bias_factors
+- impartiality
+- pretrial_publicity
+- group_pressure
+- community_psychology_ideas
+- empowerment
+- prevention
+- ecology
+- career_plan
+- goals
+- exploration
+
+## Examples
+
+- A norm example where behavior changes because expectations shift
+- An attribution example where someone misreads a situational constraint as personality
+- A conformity example that does not require memorizing classic study names
+
+:::

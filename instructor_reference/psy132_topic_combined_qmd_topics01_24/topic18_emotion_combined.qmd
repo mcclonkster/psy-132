@@ -1,0 +1,380 @@
+---
+title: "Topic 18: Emotion"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Components of emotion
+- Major theories of emotion
+- Emotion regulation strategies and trade-offs
+- How emotion interacts with cognition and behavior
+
+::: notes
+Visual cue: Emotion episode with four components, then regulation choices.
+:::
+
+## Emotion has multiple components
+
+- Arousal in the body
+- Appraisal of meaning
+- Subjective experience
+- Expression and action tendencies
+
+::: notes
+Visual cue: Four-part wheel labeled arousal, appraisal, experience, expression.
+Guardrail: avoid treating emotion as only a feeling or only physiology.
+:::
+
+## Emotion episode model
+
+```{mermaid}
+flowchart LR
+S[Situation] --> A[Appraisal]
+A --> AR[Arousal]
+A --> E[Experience]
+A --> EX[Expression]
+AR --> B[Behavior]
+E --> B
+EX --> B
+```
+
+::: notes
+Caption cue: appraisal shapes arousal, experience, and expression, which shape behavior.
+:::
+
+## Arousal
+
+- Physiological activation
+- Can look similar across different emotions
+- Context helps label arousal
+
+::: notes
+Visual cue: Same arousal meter paired with two different situation cards.
+Example to say aloud: excitement versus anxiety.
+:::
+
+## Appraisal
+
+- Evaluation of meaning
+- Influences which emotion occurs
+- Can be fast and automatic
+
+::: notes
+Visual cue: Same event → two appraisals → two emotions.
+:::
+
+## Expression
+
+- Face, voice, posture, and action
+- Signals to others
+- Shaped by context and culture
+
+::: notes
+Guardrail: avoid claiming expression is fully universal or fully culture-specific.
+Visual cue: Expression channels as icons.
+:::
+
+## Display rules
+
+- Norms for when and how to show emotion
+- Public expression can differ from private experience
+- Audience and setting matter
+
+::: notes
+Visual cue: Same emotion episode with different public display choices.
+:::
+
+## Theories emphasize different timing and mechanisms
+
+- Theories are models, not final answers
+- They emphasize different sequences
+- Useful comparison focuses on what comes first
+
+::: notes
+Visual cue: Three timelines for the classic theories.
+:::
+
+## Three classic theories compared
+
+```{mermaid}
+flowchart TB
+JL[James-Lange] --> JL1[Situation → arousal → emotion experience]
+CB[Cannon-Bard] --> CB1[Situation → arousal and experience together]
+TF[Two-factor] --> TF1[Situation → arousal + label → emotion experience]
+```
+
+::: notes
+Guardrail: treat these as simplified teaching models.
+:::
+
+## James-Lange theory
+
+- Bodily arousal comes first
+- Experience follows bodily changes
+- Different patterns support different labels
+
+::: notes
+Visual cue: Situation → arousal → label.
+:::
+
+## Cannon-Bard theory
+
+- Arousal and experience occur together
+- Emotion is not dependent on one bodily sequence first
+- Central processing coordinates responses
+
+::: notes
+Visual cue: Situation → arousal and experience simultaneously.
+Guardrail: keep brain claims network-based.
+:::
+
+## Two-factor theory
+
+- Arousal plus cognitive label
+- Label depends on context
+- Similar arousal can become different emotions
+
+::: notes
+Visual cue: Arousal + context → label.
+Example to say aloud: excitement versus anxiety.
+:::
+
+## Appraisal approaches
+
+- Meaning drives emotion differences
+- Goals and control shape appraisal
+- Appraisal changes intensity and type
+
+::: notes
+Visual cue: Appraisal questions: what is at stake, can I cope, who caused this.
+:::
+
+## Emotion regulation
+
+- Regulation changes experience or expression
+- Strategies differ in trade-offs
+- Effectiveness depends on context
+
+::: notes
+Visual cue: Emotion episode timeline with decision points.
+Guardrail: strategies are not universally good or bad.
+:::
+
+## Reappraisal
+
+- Changes interpretation of the situation
+- Can reduce negative emotion intensity
+- Often reduces downstream costs
+
+::: notes
+Visual cue: Situation → new meaning → reduced intensity.
+:::
+
+## Suppression
+
+- Reduces visible expression
+- Does not necessarily reduce inner experience
+- Can increase effort or stress in some contexts
+
+::: notes
+Visual cue: Expression turned down while internal load remains.
+Guardrail: suppression is one strategy, not “emotion regulation” as a whole.
+:::
+
+## Emotion influences cognition
+
+- Emotion shapes attention
+- Emotion shapes memory
+- Emotion shapes judgment and social behavior
+
+::: notes
+Visual cue: Emotion episode feeding into attention filter and memory encoding strength.
+:::
+
+## Worked example: test anxiety
+
+- Appraisal: “This is a threat”
+- Arousal: activation increases
+- Label: anxiety increases avoidance urges
+- Regulation: reappraisal and preparation can change outcomes
+
+::: notes
+Teaching move: ask students to propose a reappraisal statement that is believable, not overly positive.
+:::
+
+## Common confusions to avoid
+
+- Emotion is only feeling
+- One theory explains all emotions
+- Suppression is the same as regulation
+- Arousal uniquely identifies a specific emotion
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Arousal
+- Appraisal
+- Display rule
+- James-Lange theory
+- Cannon-Bard theory
+- Two-factor theory
+- Reappraisal
+- Suppression
+- Action tendency
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Arousal: physiological activation
+- Appraisal: evaluation of meaning and control
+- Display rule: norm for expression in context
+- James-Lange theory: arousal first, then experience
+- Cannon-Bard theory: arousal and experience together
+- Two-factor theory: arousal plus label
+- Reappraisal: change interpretation to change emotion
+- Suppression: reduce expression without necessarily reducing experience
+- Action tendency: impulse toward a behavior linked to emotion
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 19
+
+- Emotion occurs in social contexts
+- People interpret others using emotion cues
+- Next: social influence and social cognition
+
+::: notes
+Visual cue: One interaction with emotion cues feeding into interpretation.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- James–Lange
+- Cannon–Bard
+- Schachter–Singer
+- appraisal theories
+- amygdala
+- hippocampus
+- hypothalamus
+- emotional circuits
+- facial expression
+- universality
+- recognition across cultures
+- perceiving
+- using
+- understanding
+- and managing emotions
+- applying EI skills
+- regulation
+- empathy
+- perspective taking
+- subjective experience
+- physiology
+- expression
+- cognition/appraisal
+- short-lived states vs longer moods
+- intensity
+- triggers
+- autonomic activation
+- heart rate
+- sweating
+- endocrine changes
+- facial
+- vocal
+- behavioral expression
+- regulation strategies
+- appraisals
+- attributions
+- emotion–cognition links
+- sequencing of physiology and experience
+- role of appraisal
+- basic emotions
+- criticism of Ekman’s model
+- affective
+- cognitive
+- motivational empathy
+- vs sympathy and distress
+
+## Key terms
+
+- emotion_theories
+- James_Lange
+- Cannon_Bard
+- Schachter_Singer
+- appraisal
+- limbic_system
+- amygdala
+- hypothalamus
+- emotion_processing
+- emotional_expression
+- recognition
+- universality
+- facial_cues
+- emotional_intelligence
+- EI_components
+- emotion_perception
+- regulation
+- EI_application
+- emotion_regulation
+- interpersonal_skills
+- emotion_components
+- experience
+- physiology
+- expression
+- cognition
+- emotional_experience
+- mood
+- duration
+- intensity
+- emotion_physiology
+- autonomic
+- arousal
+- hormones
+- emotion_expression
+- display_rules
+- strategies
+- emotion_cognition
+- attribution
+- theory_comparison
+- basic_emotion_theory
+- Ekman
+- critique
+- empathy_components
+- empathy_vs_sympathy
+- personal_distress
+
+## Examples
+
+- An appraisal example where two people interpret the same event differently and therefore experience different emotions
+- A “experience vs expression” example where social norms shape visible emotion
+- A regulation example where reappraisal changes intensity or behavior
+- One limitation example, such as sleep deprivation increasing irritability independent of situation meaning
+
+:::

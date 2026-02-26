@@ -1,0 +1,481 @@
+---
+title: "Topic 15: Life Span Development"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Development across physical, cognitive, and psychosocial domains
+- How biology, experience, and context interact over time
+- Key frameworks and common misconceptions about development
+
+::: notes
+Visual cue: Life-span timeline with three tracks: physical, cognitive, psychosocial.
+:::
+
+## Development is change over time
+
+- Development involves gains and losses
+- Change can be gradual or stage-like
+- Variation is expected
+
+::: notes
+Guardrail: avoid “one path fits everyone” narratives.
+:::
+
+## A simple development model
+
+```{mermaid}
+flowchart LR
+B[Biology] --> D[Development]
+E[Experience] --> D
+C[Context] --> D
+D --> O[Outcomes]
+O --> D
+```
+
+::: notes
+Caption cue: development is an ongoing interaction, not a one-time cause.
+:::
+
+## Nature and nurture interact
+
+- Both contribute to outcomes
+- Interaction is common
+- Either-or stories miss mechanisms
+
+::: notes
+Visual cue: Two inputs blending, with a context frame around them.
+:::
+
+## Continuity and discontinuity
+
+:::: columns
+::: column
+Continuity
+- gradual change
+- small steps accumulate
+:::
+
+::: column
+Discontinuity
+- stage-like shifts
+- qualitative changes
+:::
+::::
+
+::: notes
+Visual cue: Smooth curve vs step curve.
+Guardrail: pattern depends on domain and measurement.
+:::
+
+## Prenatal development
+
+- Rapid biological change
+- Sensitive periods
+- Environmental vulnerability
+
+::: notes
+Visual cue: Prenatal timeline with “rapid change” highlighted.
+:::
+
+## Teratogens
+
+- Teratogen: exposure that can increase risk
+- Effects depend on timing
+- Effects depend on dose and context
+
+::: notes
+Visual cue: Timing and dose sliders affecting risk.
+Guardrail: avoid single-cause claims.
+:::
+
+## Infancy: temperament
+
+- Early differences in reactivity
+- Early differences in regulation
+- Some stability and some change
+
+::: notes
+Visual cue: Two dials labeled reactivity and regulation.
+:::
+
+## Attachment
+
+- Early relationship pattern
+- Responsiveness matters
+- Influence without guarantee
+
+::: notes
+Visual cue: Responsiveness → secure base behavior → later outcomes (dashed line).
+Guardrail: attachment categories are not destiny.
+:::
+
+## Parenting styles as patterns
+
+- Warmth and responsiveness
+- Control and structure
+- Consistent interaction style
+
+::: notes
+Visual cue: Two-axis warmth-control matrix.
+:::
+
+## Parenting styles
+
+```{mermaid}
+quadrantChart
+title Warmth and control patterns
+x-axis Low control --> High control
+y-axis Low warmth --> High warmth
+quadrant-1 Authoritative
+quadrant-2 Permissive
+quadrant-3 Authoritarian
+quadrant-4 Uninvolved
+```
+
+::: notes
+Guardrail: associations are probabilistic and context-dependent.
+:::
+
+## Cognitive development
+
+- Thinking changes with age and experience
+- Education and practice matter
+- Culture and context matter
+
+::: notes
+Visual cue: Thinking tools becoming more flexible across time.
+Guardrail: avoid rigid age cutoffs.
+:::
+
+## Adolescence
+
+- Puberty and biological change
+- Identity development
+- Peer and social context shifts
+
+::: notes
+Visual cue: Puberty timeline plus identity exploration arrows.
+Guardrail: avoid “adolescence is always turbulent” claims.
+:::
+
+## Peer context and risk
+
+- Peers can increase risk-taking in some contexts
+- Incentives and social goals matter
+- Effects vary across people and situations
+
+::: notes
+Visual cue: Same choice alone vs with peers.
+:::
+
+## Emerging adulthood
+
+- Transition period in some societies
+- Role exploration and instability
+- Variation across culture and context
+
+::: notes
+Visual cue: Bridge between adolescence and adulthood with multiple pathways.
+:::
+
+## Aging
+
+- Some abilities change more than others
+- Health and context shape trajectories
+- Knowledge often remains strong
+
+::: notes
+Visual cue: Two lines: speed-based skills shift more; knowledge-based skills remain stable or grow.
+Guardrail: avoid “uniform decline” narratives.
+:::
+
+## Culture and cohort
+
+- Norms and timing vary across cultures
+- Historical cohorts differ in opportunities
+- Context shapes “typical” patterns
+
+::: notes
+Visual cue: Two cohorts with different environmental contexts.
+:::
+
+## Bereavement and grief
+
+- Bereavement is the loss context
+- Grief responses vary widely
+- Stage models can mislead if treated as fixed sequences
+
+::: notes
+Guardrail: grief does not follow a fixed sequence for all people.
+Visual cue: Multiple grief trajectories rather than a single stage ladder.
+:::
+
+## Worked example: one milestone, multiple influences
+
+Example: academic performance in adolescence
+
+- Biology: sleep timing shifts can affect attention
+- Experience: practice and feedback build skills
+- Context: resources and expectations shape outcomes
+
+::: notes
+Teaching move: ask students to name one protective factor in each category.
+:::
+
+## Common confusions to avoid
+
+- Development is mostly genetics
+- Development is mostly parenting
+- Stages are universal and fixed
+- Aging means inevitable severe decline
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Teratogen
+- Temperament
+- Attachment
+- Authoritative parenting
+- Continuity
+- Discontinuity
+- Cohort
+- Emerging adulthood
+- Bereavement
+- Grief
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Teratogen: exposure that can increase developmental risk
+- Temperament: early reactivity and regulation differences
+- Attachment: early relationship pattern influencing secure base behavior
+- Authoritative parenting: high warmth with high structure
+- Continuity: gradual developmental change
+- Discontinuity: stage-like developmental shifts
+- Cohort: group shaped by shared historical time and context
+- Emerging adulthood: transition period with role exploration in some settings
+- Bereavement: loss context
+- Grief: response pattern that varies widely after loss
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 16
+
+- Development shapes health risk and protection over time
+- Stress and coping processes affect health
+- Next: health psychology and stress pathways
+
+::: notes
+Visual cue: Life-span pathways feeding into health outcomes.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- three domains of development
+- body
+- mind
+- relationships
+- norms
+- average ages
+- typical developmental patterns
+- stage vs gradual change
+- universal vs contextual paths
+- heredity vs environment
+- psychosexual stages
+- early experiences
+- fixation
+- Erikson’s eight stages
+- psychosocial crises across life
+- Piagetian stages
+- child thinking
+- stage transitions
+- preconventional
+- conventional
+- postconventional reasoning
+- evaluation of Freud
+- Erikson
+- Piaget
+- Kohlberg
+- others
+- germinal
+- embryonic
+- fetal stages
+- prenatal risks
+- care
+- infancy and childhood changes in three domains
+- adolescent puberty
+- cognitive shifts
+- emotional changes
+- adulthood and aging changes across domains
+- end-of-life care
+- palliative support
+- Kübler-Ross model
+- responses to loss
+- ethical/legal decisions at end of life
+- autonomy
+- care preferences
+- genetic influences
+- heritable traits
+- predisposition
+- family
+- peers
+- culture
+- SES
+- life events
+- epigenetic mechanisms
+- gene expression changes
+- developmental outcomes
+- major physical changes from infancy to old age
+- sensory and perceptual changes over time
+- emotion regulation
+- expression
+- understanding over time
+- social roles
+- Eriksonian crises from infancy to old age
+- early temperament
+- attachment bonds
+- later outcomes
+- Baumrind-style parenting
+- cultural variation
+- changes in social networks during emerging adulthood and late life
+- lifespan cognitive change
+- Piaget’s key concepts
+- sociocultural perspective
+- scaffolding
+- ZPD
+- information-processing
+- core knowledge
+- newer models
+- moral reasoning changes over time
+- Gilligan’s critique
+- applying moral development insights
+- value-based decision-making
+
+## Key terms
+
+- developmental_domains
+- physical
+- cognitive
+- psychosocial
+- normative_approach
+- age_norms
+- typical_development
+- continuity_discontinuity
+- universality_vs_context
+- nature_nurture
+- Freud_psychosexual
+- stages
+- early_experience
+- Erikson
+- psychosocial_stages
+- child_tasks
+- adult_tasks
+- Piaget
+- cognitive_stages
+- childhood_cognition
+- Kohlberg
+- moral_stages
+- moral_reasoning
+- developmental_theories
+- strengths
+- weaknesses
+- comparison
+- prenatal_stages
+- prenatal_care
+- teratogens
+- infancy_childhood_dev
+- emotional
+- adolescence_dev
+- adulthood_dev
+- aging
+- hospice
+- end_of_life
+- palliative_care
+- grief_stages
+- Kubler_Ross
+- bereavement
+- living_wills
+- DNR
+- hospice_ethics
+- genes_development
+- heredity
+- predispositions
+- environment_development
+- family
+- peers
+- culture
+- SES
+- epigenetics_development
+- gene_expression
+- environment
+- physical_across_lifespan
+- growth
+- maturation
+- perceptual_across_lifespan
+- sensory_changes
+- emotional_across_lifespan
+- regulation
+- expression
+- social_across_lifespan
+- relationships
+- roles
+- temperament_childhood
+- attachment
+- early_social
+- parenting_styles
+- socialization
+- social_networks
+- emerging_adulthood
+- older_adults
+- cognitive_across_lifespan
+- Piaget_core
+- schemes
+- Vygotsky_core
+- scaffolding
+- ZPD
+- sociocultural
+- modern_cog_dev
+- info_processing
+- core_knowledge
+- moral_across_lifespan
+- Gilligan
+- justice_vs_care
+- values_plan
+- moral_development
+- self_reflection
+
+## Examples
+
+- One example of each domain changing across a period, such as physical growth, cognitive strategy change, and socioemotional relationship change
+- One interactionist example, such as how temperament and parenting environment can interact
+- One context example, such as how culture or school environment changes how development is expressed or interpreted
+
+:::

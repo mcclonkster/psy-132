@@ -1,0 +1,383 @@
+---
+title: "Topic 17: Motivation"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Why goal-oriented behavior starts, persists, and stops
+- How needs, incentives, and goals shape action
+- How self-efficacy and self-regulation support long-term behavior
+
+::: notes
+Visual cue: Start → direction → persistence arrows pointing toward a goal.
+:::
+
+## Motivation is inferred from behavior
+
+- Motivation is not directly observed
+- We infer motivation from choice, effort, and persistence
+- Context shapes what effort looks like
+
+::: notes
+Visual cue: Choice, effort, persistence feeding into an inference box labeled motivation.
+:::
+
+## Needs, incentives, and goals
+
+```{mermaid}
+flowchart LR
+N[Needs] --> B[Behavior]
+I[Incentives] --> B
+G[Goals] --> B
+B --> O[Outcomes]
+O --> G
+```
+
+::: notes
+Caption cue: needs and incentives both influence behavior, and goals organize behavior over time.
+:::
+
+## Needs and homeostasis
+
+- Needs reflect internal states
+- Homeostasis supports regulation
+- Needs interact with learning and environment
+
+::: notes
+Guardrail: needs do not explain all motivation by themselves.
+Visual cue: Need meter plus a separate “cues and learning” lane.
+:::
+
+## Incentives and reinforcement
+
+- Incentives pull behavior toward outcomes
+- Reinforcement shapes behavior through consequences
+- Incentives depend on meaning and context
+
+::: notes
+Visual cue: Incentive cue in the environment pulling action.
+:::
+
+## Intrinsic and extrinsic motivation
+
+:::: columns
+::: column
+Intrinsic
+- interest and enjoyment
+- engagement for its own sake
+:::
+
+::: column
+Extrinsic
+- external outcomes
+- rewards, grades, approval
+:::
+::::
+
+::: notes
+Guardrail: extrinsic motivation is not automatically harmful.
+Visual cue: Two fuel sources feeding into the same behavior.
+:::
+
+## When rewards help or hurt
+
+- Rewards can increase behavior short term
+- Rewards can undermine intrinsic interest in some conditions
+- Effects depend on whether rewards feel controlling
+
+::: notes
+Visual cue: Reward labeled informational vs controlling leading to different engagement.
+:::
+
+## Self-determination theory
+
+- Autonomy supports engagement
+- Competence supports persistence
+- Relatedness supports sustained motivation
+
+::: notes
+Visual cue: Three supports under a platform labeled engagement.
+Anchor: Deci and Ryan.
+:::
+
+## Expectancy and self-efficacy
+
+- Expectancies shape effort
+- Self-efficacy shapes persistence after setbacks
+- Self-efficacy is task-specific
+
+::: notes
+Visual cue: “Can I do this task” gauge influencing persistence.
+Anchor: Bandura.
+:::
+
+## Approach and avoidance motivation
+
+- Approach pursues desired outcomes
+- Avoidance prevents negative outcomes
+- Both can sustain effort
+
+::: notes
+Visual cue: Two paths: toward reward and away from threat.
+:::
+
+## Arousal and performance
+
+- Arousal can support simple tasks
+- High arousal can impair complex tasks
+- Task demands and skill level matter
+
+::: notes
+Visual cue: Two curves: simple task peak later, complex task peak earlier.
+Guardrail: not a universal law for all tasks and people.
+:::
+
+## Goal setting
+
+- Goals direct attention and effort
+- Specific goals support tracking progress
+- Goals work best with feedback
+
+::: notes
+Visual cue: Goal target with a progress bar and a feedback arrow.
+:::
+
+## Self-regulation loop
+
+```{mermaid}
+flowchart LR
+P[Plan] --> M[Monitor]
+M --> A[Adjust]
+A --> P
+```
+
+::: notes
+Caption cue: self-regulation is repeated planning, monitoring, and adjustment over time.
+:::
+
+## Self-control is context-sensitive
+
+- Barriers and constraints matter
+- Habits reduce effort cost
+- Supports and systems improve persistence
+
+::: notes
+Guardrail: avoid framing self-control as pure willpower.
+Visual cue: Context constraints around a “choice” box.
+:::
+
+## Incentive salience
+
+- Cues can trigger strong wanting
+- Wanting can exceed expected pleasure
+- Cue effects are learned and context-dependent
+
+::: notes
+Visual cue: Cue → wanting spike → approach behavior.
+:::
+
+## Worked example: studying for an exam
+
+- Needs: sleep and stress shape capacity
+- Incentives: grades and approval shape urgency
+- Goals: specific study plan increases follow-through
+- Self-efficacy: confidence supports persistence after setbacks
+
+::: notes
+Teaching move: ask students to name one change that increases autonomy, competence, or relatedness for studying.
+:::
+
+## Common confusions to avoid
+
+- Motivation is the same as emotion
+- Rewards always help or always hurt
+- Self-efficacy is global confidence
+- Self-control is only willpower
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Need
+- Incentive
+- Intrinsic motivation
+- Extrinsic motivation
+- Self-efficacy
+- Autonomy
+- Competence
+- Relatedness
+- Goal setting
+- Self-regulation
+- Approach motivation
+- Avoidance motivation
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Need: internal state that can drive action
+- Incentive: external outcome that pulls behavior
+- Intrinsic motivation: engagement for interest and enjoyment
+- Extrinsic motivation: engagement for external outcomes
+- Self-efficacy: task-specific belief about capability
+- Autonomy: sense of choice and ownership
+- Competence: sense of effectiveness and skill
+- Relatedness: sense of connection and belonging
+- Goal setting: using goals to direct effort and track progress
+- Self-regulation: planning, monitoring, adjusting over time
+- Approach motivation: moving toward desired outcomes
+- Avoidance motivation: moving away from negative outcomes
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 18
+
+- Motivation explains goal direction and persistence
+- Emotion adds appraisal and subjective experience
+- Next: components of emotion and regulation
+
+::: notes
+Visual cue: Goal pursuit lane feeding into appraisal and regulation lane.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- internal vs external motives
+- autonomy vs control
+- historical and contemporary motivation theories
+- hierarchy of needs
+- basic vs growth needs
+- self-actualization
+- physiological hunger signals
+- environmental cues
+- regulation
+- hormones
+- brain regions
+- sexual motivation
+- self-regulation
+- goal pursuit
+- habit change
+- internal states and external incentives shaping behavior
+- same conceptual distinction as earlier LO
+- reinforced
+- lower vs higher order needs
+- deficiency vs growth
+- motives classification: biological
+- stimulus seeking
+- learned/social
+- sex drive as biological motive
+- hormonal modulation
+- pain as a drive
+- avoidance behavior
+- learning effects
+- two thirst mechanisms
+- appropriate corrective actions
+- glucose
+- stomach signals
+- environment
+- cues
+- culture
+- optimal arousal
+- seeking moderate levels of stimulation
+- inverted-U relationship
+- task difficulty
+- performance
+- achievement motive
+- power motive
+- individual differences
+- hedonic shifts
+- adaptation
+- motivation to maintain balance
+
+## Key terms
+
+- intrinsic_motivation
+- extrinsic_motivation
+- autonomy
+- motivation_theories
+- instinct
+- drive_reduction
+- self_efficacy
+- social_motives
+- Maslow
+- hierarchy_of_needs
+- basic_needs
+- growth_needs
+- hunger_regulation
+- homeostasis
+- hormones
+- cues
+- sexual_motivation
+- brain_mechanisms
+- self_regulation_plan
+- goals
+- habit_change
+- needs
+- drives
+- incentives
+- responses
+- intrinsic_vs_extrinsic
+- motivation_types
+- motive_types
+- biological_motives
+- stimulus_motives
+- learned_motives
+- sex_drive
+- sexual_behavior
+- animals
+- pain_drive
+- episodic_drive
+- avoidance
+- learning
+- thirst_intracellular
+- thirst_extracellular
+- hunger_factors
+- internal_cues
+- external_cues
+- culture
+- arousal_theory
+- optimal_arousal
+- stimulation_seeking
+- Yerkes_Dodson
+- arousal_performance
+- inverted_U
+- nAch
+- nPower
+- motives
+- individual_differences
+- opponent_process_theory
+- hedonic_tone
+- adaptation
+
+## Examples
+
+- A scenario where goals and value explain persistence, such as studying for a career plan
+- A scenario where incentives change behavior, with a limitation statement about context
+- A scenario where expectancy beliefs affect effort, such as “I won’t try because I think I’ll fail”
+
+:::

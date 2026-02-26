@@ -1,0 +1,324 @@
+---
+title: "Topic 1: History"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How psychology became a science
+- Why early approaches disagreed
+- How multiple lenses are used today
+
+::: notes
+Visual cue: Three-part map: Science shift, Early disagreements, Modern lenses.
+:::
+
+## Psychology becomes a science
+
+- Psychology studies behavior and mental processes
+- Explanations should be testable
+- Evidence should be systematic
+
+::: notes
+Visual cue: Question → method → evidence loop.
+Caption cue: Strong claims produce predictions you can test.
+:::
+
+## The science loop
+
+```{mermaid}
+flowchart LR
+Q[Question] --> M[Method]
+M --> E[Evidence]
+E --> R[Revise explanation]
+R --> Q
+```
+
+::: notes
+Teaching move: Ask "What would count as evidence against this explanation?"
+:::
+
+## Why early approaches disagreed
+
+- They asked different questions
+- They used different methods
+- They emphasized different explanations
+
+::: notes
+Visual cue: Two-column contrast labeled Question and Method.
+Optional prompt: Use "What causes fear?" as one topic with different questions.
+:::
+
+## How to read an approach
+
+- Focus: what it studies
+- Method: how it studies it
+- Signature: what it treats as most important
+
+::: notes
+Visual cue: Reusable three-row template that you repeat on each approach slide.
+:::
+
+## Structuralism studies conscious experience
+
+- Focus: conscious experience as parts
+- Method: introspection
+- Signature: analyze elements of experience
+
+::: notes
+Anchor: Wilhelm Wundt and Edward Titchener, late 1800s.
+Visual cue: Labeled parts diagram.
+Guardrail: Introspection is difficult to verify across people.
+:::
+
+## Functionalism studies what the mind does
+
+- Focus: purpose of thinking and behavior
+- Method: broad and practical tools
+- Signature: function and adaptation
+
+::: notes
+Anchor: William James, late 1800s.
+Visual cue: Problem → function → outcome arrows.
+:::
+
+## Psychoanalytic theory emphasizes the unconscious
+
+- Focus: motives outside awareness and conflict
+- Method: clinical observation and interpretation
+- Signature: early experience shapes patterns
+
+::: notes
+Anchor: Sigmund Freud, early 1900s.
+Visual cue: Iceberg with constrained labels.
+Guardrail: Unconscious processes are inferred, not directly observed.
+:::
+
+## Gestalt psychology emphasizes organized perception
+
+- Focus: perception as patterns and wholes
+- Method: perception experiments
+- Signature: the whole shapes the parts
+
+::: notes
+Anchor: Max Wertheimer and colleagues, early 1900s.
+Visual cue: Figure-ground and closure examples.
+Caption cue: Perception groups elements into patterns.
+:::
+
+## Behaviorism emphasizes observable behavior
+
+- Focus: observable behavior
+- Method: controlled experiments
+- Signature: learning through conditioning
+
+::: notes
+Anchor: John Watson and B. F. Skinner, 1900s.
+Visual cue: Stimulus → response → consequence.
+:::
+
+## Humanistic psychology emphasizes meaning and growth
+
+- Focus: meaning, values, self-concept
+- Method: lived experience in context
+- Signature: autonomy and potential
+
+::: notes
+Anchor: Carl Rogers and Abraham Maslow, mid 1900s.
+Visual cue: Values-to-growth path or needs-to-growth ladder.
+Guardrail: Avoid slogan phrasing; keep examples concrete.
+:::
+
+## Cognitive psychology studies mental processes scientifically
+
+- Focus: attention, memory, thinking
+- Method: infer processes from performance
+- Signature: information processing models
+
+::: notes
+Anchor: George Miller and Ulric Neisser, mid 1900s.
+Visual cue: Input → processing → output.
+Concrete proxies to say aloud: accuracy, reaction time, recall.
+:::
+
+## Multicultural psychology expands what counts as general
+
+- Focus: culture and context shape meaning
+- Method: improve sampling and measurement validity
+- Signature: reduce biased conclusions
+
+::: notes
+Visual cue: Same situation, different cultural frames.
+Framing cue: Cross-cutting lens across domains, not one bounded historical school.
+:::
+
+## Misconception reset
+
+- Approaches did not replace each other in a straight line
+- Many ideas overlap and persist
+- Different lenses can be useful for different questions
+
+::: notes
+Visual cue: Timeline bands that overlap rather than a single chain.
+:::
+
+## Overlap rather than replacement
+
+```{mermaid}
+flowchart TB
+A[Earlier approaches] --> B[Later approaches]
+A --> C[Ideas persist and evolve]
+B --> C
+C --> D[Multiple lenses used today]
+```
+
+::: notes
+Teaching move: Ask students to name one idea that persists (learning, perception, meaning, cognition).
+:::
+
+## Modern psychology uses multiple levels of explanation
+
+- Biological level
+- Cognitive level
+- Behavioral level
+- Social and cultural level
+
+::: notes
+Visual cue: One behavior with multiple labeled lenses.
+Keep labels consistent with later topics.
+:::
+
+## Worked example: One behavior, different lenses
+
+Example: procrastination
+
+:::: columns
+::: column
+Behavioral lens
+- What consequences maintain delay
+- What reinforces avoidance
+:::
+
+::: column
+Cognitive lens
+- What beliefs drive delay
+- What attention patterns sustain it
+:::
+
+::: column
+Social-cultural lens
+- What norms shape expectations
+- What constraints shape options
+:::
+::::
+
+::: notes
+Teaching move: Ask "What evidence would support each lens for the same behavior?"
+Keep the walkthrough short: question → evidence → conclusion limits.
+:::
+
+## Quick check
+
+:::: columns
+::: column
+Approach
+- Behaviorism
+- Psychoanalytic theory
+- Humanistic psychology
+- Gestalt psychology
+- Cognitive psychology
+- Functionalism
+:::
+
+::: column
+Emphasis
+- Observable behavior and learning history
+- Unconscious motives and conflict
+- Meaning, values, and growth
+- Organized perception and patterns
+- Mental processes inferred from performance
+- Function and adaptation
+:::
+::::
+
+::: notes
+Delivery: Students match first, then you reveal.
+Prompt: Ask "What is the discriminating cue for each match?"
+:::
+
+## Quick check answers
+
+- Behaviorism → Observable behavior and learning history
+- Psychoanalytic theory → Unconscious motives and conflict
+- Humanistic psychology → Meaning, values, and growth
+- Gestalt psychology → Organized perception and patterns
+- Cognitive psychology → Mental processes inferred from performance
+- Functionalism → Function and adaptation
+
+::: notes
+Keep each explanation to one discriminating cue.
+:::
+
+## Bridge to Topic 2
+
+- Different lenses suggest different hypotheses
+- Methods test hypotheses
+- Next: how perspectives guide questions and evidence
+
+::: notes
+Visual cue: Lens → hypothesis → method filter → conclusion strength.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- first labs
+- structuralism
+- functionalism
+- early scientific psychology
+- psychoanalysis
+- unconscious
+- historical impact
+- introspection
+- method limitations
+- structuralism vs functionalism
+- behaviorism
+- cognitive
+
+## Key terms
+
+- Wundt
+- James
+- history
+- structuralism
+- functionalism
+- Freud
+- psychoanalysis
+- unconscious
+- Titchener
+- introspection
+- limitations
+- comparison
+- early_schools
+
+## Examples
+
+- Why introspection alone was limited as evidence and why later approaches emphasized observable or measurable evidence
+- Why psychology contains multiple theoretical perspectives rather than one single “final” explanation
+- How historical shifts in what counted as evidence connect to why modern research methods matter
+
+:::

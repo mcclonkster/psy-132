@@ -1,0 +1,358 @@
+---
+title: "Topic 5: Ethics"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  pptx: default
+---
+
+## What this topic covers
+
+- How ethical research protects welfare and rights
+- How consent, privacy, and risk management work
+- Why oversight and fairness matter for research quality
+
+::: notes
+Visual cue: Three lenses labeled Consent, Risk, Fairness feeding into “Responsible research.”
+:::
+
+---
+
+## Ethics is part of research quality
+
+- Research can help and harm
+- Ethical design reduces preventable harm
+- Trustworthy science requires responsible practice
+
+::: notes
+Visual cue: Two pillars labeled Welfare and Knowledge supporting Responsible research.
+:::
+
+---
+
+## Ethical decision workflow
+
+```{mermaid}
+flowchart LR
+Q[Research question] --> R[Risk and benefit]
+R --> C[Consent and autonomy]
+C --> P[Privacy protections]
+P --> F[Fair selection]
+F --> O[Oversight]
+O --> D[Data collection]
+D --> M[Monitor and debrief]
+```
+
+::: notes
+Teaching move: Ask, “Which step is the weak point in this study design?”
+:::
+
+---
+
+## Three guiding principles
+
+- Respect for persons
+- Beneficence
+- Justice
+
+::: notes
+Visual cue: Three-column organizer.
+Say one plain phrase aloud for each principle.
+:::
+
+---
+
+## Informed consent
+
+- Disclosure
+- Comprehension
+- Voluntariness
+
+::: notes
+Visual cue: Consent card with three checkpoints.
+Guardrail: consent is a process, not only a signature.
+:::
+
+---
+
+## Right to withdraw
+
+- Participation is voluntary
+- Stopping should not create penalty
+- Withdrawal should be feasible in practice
+
+::: notes
+Teaching move: Ask what an ethical “no penalty” alternative looks like in a course study.
+:::
+
+---
+
+## Coercion and undue influence
+
+- Power differences can pressure choices
+- Incentives can distort voluntariness
+- Vulnerable populations may need extra safeguards
+
+::: notes
+Visual cue: Power gradient plus a pressure meter.
+:::
+
+---
+
+## Risk and minimal risk
+
+- Risk should be minimized
+- Minimal risk is a common benchmark
+- Higher risk requires stronger safeguards
+
+::: notes
+Visual cue: Risk thermometer with safeguards rising as risk rises.
+:::
+
+---
+
+## Privacy protection
+
+- Confidentiality protects identity and records
+- Anonymity prevents linking data to identity
+- Safeguards reduce harm
+
+::: notes
+Visual cue: Two locks labeled Confidentiality and Anonymity.
+:::
+
+---
+
+## Confidentiality versus anonymity
+
+:::: columns
+::: column
+Confidentiality
+- Identity link exists
+- Protection depends on safeguards
+- Access must be restricted
+:::
+
+::: column
+Anonymity
+- No identity link is possible
+- Stronger privacy by design
+- Not always feasible
+:::
+::::
+
+::: notes
+Teaching move: Ask which one is feasible for a classroom survey and why.
+:::
+
+---
+
+## Deception requires justification
+
+- Not automatically unethical
+- Must be necessary for the question
+- Must be minimized
+
+::: notes
+Visual cue: Deception card with a “justify” stamp.
+Guardrail: deception is not a default tool.
+:::
+
+---
+
+## Debriefing repairs autonomy
+
+- Explain what was withheld
+- Correct misconceptions
+- Reduce harm and restore trust
+
+::: notes
+Visual cue: Before and after belief panels.
+:::
+
+---
+
+## Oversight review
+
+- Review occurs before data collection
+- Review evaluates risk, consent, and fairness
+- Oversight does not replace researcher responsibility
+
+::: notes
+Visual cue: Plan → review → revise → run.
+:::
+
+---
+
+## Institutional review board
+
+- Reviews human research protocols
+- Requires protections for participants
+- Can require changes to improve safeguards
+
+::: notes
+Visual cue: Review gate before the study can begin.
+:::
+
+---
+
+## Equitable selection
+
+- Recruitment should be fair
+- Benefits and burdens should not be skewed
+- Inclusion and exclusion require reasons
+
+::: notes
+Visual cue: Recruitment funnel with fairness checkpoints.
+:::
+
+---
+
+## Ethical issues in incentives and grading
+
+- Extra credit can pressure participation
+- Alternatives should be equal in effort and value
+- Transparency reduces coercion risk
+
+::: notes
+Visual cue: Two equal pathways: participate or alternative assignment.
+:::
+
+---
+
+## Animal research
+
+- Scientific justification is required
+- Humane treatment is required
+- Oversight is required
+
+::: notes
+Visual cue: Justification, Minimization, Oversight.
+:::
+
+---
+
+## Replace, reduce, refine
+
+- Replace animals when possible
+- Reduce numbers when appropriate
+- Refine procedures to minimize pain and distress
+
+::: notes
+Visual cue: Three cards labeled Replace, Reduce, Refine.
+:::
+
+---
+
+## Case-based caution is about safeguards
+
+- Focus on what protection was missing
+- Focus on what would prevent harm now
+- Do not treat any case as entertainment
+
+::: notes
+Visual cue: Case → missing safeguard → improved design.
+:::
+
+---
+
+## Common confusions to avoid
+
+- Ethics is only paperwork
+- Consent is a signature
+- Deception is always unethical
+- Oversight guarantees ethical conduct
+
+::: notes
+Use as a reset before retrieval practice.
+:::
+
+---
+
+## Quick check
+
+Decide what needs to be improved
+
+- Extra credit only for participation
+- Names collected with sensitive responses
+- Deception with a vague debriefing
+- Excluding a group with no stated reason
+
+::: notes
+Delivery: students identify the principle and the safeguard fix.
+Commit first, then reveal.
+:::
+
+---
+
+## Quick check answers
+
+- Extra credit only: undue influence, add equal alternative
+- Names with sensitive data: confidentiality risk, use de-identification or anonymity when feasible
+- Vague debriefing: insufficient debriefing, provide meaningful explanation and correction
+- Unjustified exclusion: justice issue, justify criteria or revise recruitment
+
+::: notes
+Keep each explanation to one safeguard.
+:::
+
+---
+
+## Bridge to Topic 6
+
+- Ethics constrains what studies should do
+- Neuroscience explains the systems that make behavior possible
+- Next: neurons, synapses, and brain-behavior evidence
+
+::: notes
+Visual cue: Ethics boundary line leading into brain-behavior systems.
+:::
+
+---
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- IRB
+- oversight
+- ethical principles
+- risk–benefit
+- informing participants
+- consent
+- post-study explanation
+- animal care committees
+- welfare standards
+- justification
+
+---
+
+## Key terms
+
+- human_subjects_regulation
+- IRB
+- ethics
+- risk_benefit
+- informed_consent
+- debriefing
+- autonomy
+- animal_research_regulation
+- IACUC
+- welfare
+
+---
+
+## Examples
+
+- Why informed consent and debriefing exist and what they accomplish in human research
+- Why privacy and confidentiality matter for both research and practice contexts
+- One example of how power or privilege can change opportunity or risk in a psychological context, requiring ethical attention
+
+:::

@@ -4,6 +4,8 @@
 
 ## Topic 12 Cognition
 
+https://skipcut.com/watch/HVWbrNls-Kw
+
 ## Textbook Sources
 - https://courses.lumenlearning.com/waymaker-psychology/chapter/what-is-cognition/
 - https://courses.lumenlearning.com/waymaker-psychology/chapter/problem-solving/
@@ -52,3 +54,5 @@ https://skipcut.com/watch/9xTz3QjcloI
 
 
 ## Topic 14 Language
+
+https://skipcut.com/watch/s9shPouRWCs

@@ -1,0 +1,571 @@
+---
+title: "Topic 11: Memory"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How information is encoded, stored, and retrieved
+- How memory systems differ in function
+- Why remembering is cue-dependent and reconstructive
+
+::: notes
+Visual cue: Encode → store → retrieve pipeline with “cues” feeding into retrieval.
+:::
+
+## Memory is not one single store
+
+- Memory has multiple systems
+- Memory includes multiple processes
+- Remembering is not a literal recording
+
+::: notes
+Guardrail: confidence and vividness can increase without accuracy increasing.
+:::
+
+## Encode, store, retrieve
+
+```{mermaid}
+flowchart LR
+E[Encoding] --> S[Storage]
+S --> R[Retrieval]
+C[Cues and context] --> R
+R --> P[Remembering and performance]
+```
+
+::: notes
+Caption cue: retrieval depends on cues, not only on what was stored.
+:::
+
+## Encoding
+
+- Encoding is getting information into memory
+- Divided attention reduces later recall
+- Deeper processing supports stronger memory
+
+::: notes
+Visual cue: Focused encoding lane vs divided encoding lane leading to different later recall.
+:::
+
+## Storage
+
+- Storage is maintaining information over time
+- Consolidation stabilizes memory over time
+- Sleep can support consolidation
+
+::: notes
+Visual cue: Memory trace strengthening across time, with sleep as a support.
+Guardrail: consolidation is a process over time, not instant locking.
+:::
+
+## Retrieval
+
+- Retrieval is bringing information into awareness
+- Retrieval can fail even when information was stored
+- Retrieval improves when cues match encoding
+
+::: notes
+Visual cue: Same memory “box” with two different keys, only one fits.
+:::
+
+## A simple map of memory systems
+
+```{mermaid}
+flowchart TB
+M[Memory] --> SM[Sensory memory]
+M --> WM[Working memory]
+M --> LTM[Long-term memory]
+LTM --> EX[Explicit]
+LTM --> IM[Implicit]
+EX --> EP[Episodic]
+EX --> SE[Semantic]
+IM --> PR[Procedural]
+IM --> PM[Priming]
+```
+
+::: notes
+Keep it big-picture. You will add detail later in cognition and learning.
+:::
+
+## Sensory memory
+
+- Very brief storage of incoming input
+- Supports continuity of experience
+- Feeds later processing
+
+::: notes
+Visual cue: Incoming stream held briefly, then either lost or passed forward.
+:::
+
+## Working memory
+
+- Holds information and works with it
+- Limited capacity
+- Depends on attentional control
+
+::: notes
+Visual cue: Small workspace with limited slots plus an attention spotlight.
+Guardrail: avoid claiming one fixed “magic number” for everyone.
+:::
+
+## Long-term memory
+
+- Durable storage
+- Multiple systems with different evidence
+- Retrieval depends on cues and context
+
+::: notes
+Visual cue: Library sections plus a search bar labeled cues.
+:::
+
+## Explicit and implicit memory
+
+:::: columns
+::: column
+Explicit memory
+- conscious recall
+- episodic and semantic
+- reportable in words
+:::
+
+::: column
+Implicit memory
+- without conscious recall
+- skills and priming
+- shown in performance
+:::
+::::
+
+::: notes
+Teaching move: ask for an example of a skill you can do without describing it well.
+:::
+
+## Episodic and semantic memory
+
+- Episodic: events with time and place context
+- Semantic: facts and concepts
+- Both are explicit, but they behave differently
+
+::: notes
+Visual cue: Timeline of events vs concept map of knowledge.
+:::
+
+## Procedural memory and priming
+
+- Procedural memory supports skills
+- Priming is faster processing after prior exposure
+- Learning can appear in performance without conscious recall
+
+::: notes
+Visual cue: Practice → smoother performance; prior exposure → faster response.
+:::
+
+## Retrieval cues
+
+- Cues help locate stored information
+- Stronger cues increase recall
+- Weak cues produce retrieval failure
+
+::: notes
+Visual cue: Search bar returns more results when the cue is specific.
+:::
+
+## Encoding specificity and context
+
+- Memory improves when cues match encoding
+- Context can act as a cue
+- Matches help retrieval, mismatches hurt retrieval
+
+::: notes
+Visual cue: Matching tags at encoding and retrieval.
+:::
+
+## Interference
+
+- New learning can compete with old learning
+- Old learning can compete with new learning
+- Interference can look like forgetting
+
+::: notes
+Visual cue: Two similar items competing for one retrieval cue.
+Example to say aloud: old password vs new password.
+:::
+
+## Reconstructive memory
+
+- Memory is rebuilt during retrieval
+- Gist is often stronger than details
+- Later information can change reports
+
+::: notes
+Guardrail: reconstruction does not mean memory is useless, but it does mean memory is not a recording.
+:::
+
+## Misinformation effect
+
+- Post-event information can alter reports
+- Suggestive questions increase distortion risk
+- Effects depend on conditions
+
+::: notes
+Visual cue: Event → post-event info → later report.
+Keep claims conditional and evidence-based.
+:::
+
+## Source monitoring
+
+- People can remember information but misattribute its source
+- Familiarity can be mistaken for truth
+- Repetition increases familiarity
+
+::: notes
+Visual cue: Two source icons with a misattribution arrow.
+:::
+
+## Consolidation and reconsolidation
+
+- Consolidation stabilizes memory over time
+- Retrieval can briefly reopen a memory for updating
+- Updating is condition-dependent, not reliable erasure
+
+::: notes
+Guardrail: avoid “easy memory erasure” claims.
+Visual cue: Memory trace stabilizes, then briefly opens during retrieval, then restabilizes.
+:::
+
+## Worked example: one story, multiple memory effects
+
+Scenario: you witness a minor accident
+
+- Encoding: divided attention reduces detail memory
+- Retrieval cues: matching context improves recall
+- Reconstruction: later conversation can reshape details
+
+::: notes
+Teaching move: ask students to identify one point where error is most likely and why.
+:::
+
+## Common confusions to avoid
+
+- Memory is a literal recording
+- Confidence guarantees accuracy
+- Working memory equals long-term memory
+- Forgetting means information was never stored
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Encoding
+- Storage
+- Retrieval
+- Working memory
+- Episodic memory
+- Semantic memory
+- Procedural memory
+- Priming
+- Encoding specificity
+- Interference
+- Misinformation effect
+- Source monitoring
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Encoding: getting information into memory
+- Storage: maintaining information over time
+- Retrieval: bringing stored information into awareness
+- Working memory: holding and manipulating information briefly
+- Episodic memory: memory for events with context
+- Semantic memory: memory for facts and concepts
+- Procedural memory: memory for skills
+- Priming: faster processing after prior exposure
+- Encoding specificity: cues match encoding improve recall
+- Interference: competing learning reduces recall
+- Misinformation effect: post-event info alters reports
+- Source monitoring: misattributing where information came from
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 12
+
+- Memory explains how information is stored and retrieved
+- Cognition explains how people think, decide, and solve problems
+- Next: concepts, heuristics, and reasoning
+
+::: notes
+Visual cue: Memory systems feeding into thinking and decision processes.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- encoding
+- storage
+- retrieval
+- sensory
+- short-term/working
+- long-term memory
+- procedural vs declarative
+- episodic vs semantic
+- brain regions supporting encoding
+- systems-level view
+- hippocampus and episodic memory
+- amygdala and emotional memory
+- cerebellum and procedural/conditioned responses
+- anterograde vs retrograde amnesia
+- what is impaired
+- reconstructive memory
+- suggestibility
+- misinformation effect
+- failure to encode
+- lack of attention
+- shallow processing
+- bias
+- transience
+- blocking
+- misattribution
+- proactive vs retroactive interference
+- best practices for encoding/retrieval
+- spaced practice
+- elaboration
+- study behaviors that align with known memory principles
+- reading strategies
+- previewing
+- note-taking
+- self-testing
+- in-class strategies
+- attention
+- participation
+- test preparation
+- retrieval practice
+- spacing
+- avoiding cramming
+- metacognition
+- knowledge
+- monitoring
+- control
+- applying metacognitive strategies
+- self-regulation
+- definition as process of encoding
+- storing
+- retrieving information
+- short-term
+- long-term stores
+- associated processes
+- brief storage
+- high capacity
+- rapid decay
+- limited capacity
+- short duration
+- active processing
+- chunking
+- grouping
+- information compression
+- shallow vs deep processing
+- maintenance vs elaborative rehearsal
+- virtually unlimited capacity
+- long duration
+- semantic/associative organization
+- cues
+- redintegration
+- spreading activation in associative networks
+- conscious vs unconscious recall
+- personal episodes vs general knowledge
+- hippocampus
+- amygdala
+- cortex
+- cerebellum
+- benefits for comprehension
+- problem solving
+- efficiency
+- conditions that alter encoding success vs irrelevant factors
+- recall
+- recognition
+- relearning
+- interference
+- decay
+- encoding failure
+- retrieval failure
+- motivated forgetting
+- intentional vs unintentional forgetting
+- misinformation
+- suggestion
+- source confusion
+- imagination inflation
+- line-up procedures
+- instructions
+- double-blind administration
+- list of effective encoding and retrieval strategies
+- definition of mnemonics
+- acronyms
+- acrostics
+- loci
+- peg-word
+- dual-channel learning
+- words and pictures together
+- applying multimedia principle
+- slide design
+- signaling
+
+## Key terms
+
+- memory_functions
+- encoding
+- storage
+- retrieval
+- memory_stages
+- sensory_memory
+- working_memory
+- long_term_memory
+- procedural_memory
+- declarative_memory
+- episodic
+- semantic
+- memory_brain_functions
+- hippocampus
+- amygdala
+- cerebellum
+- memory_roles
+- anterograde_amnesia
+- retrograde_amnesia
+- memory_loss
+- eyewitness_memory
+- unreliability
+- misinformation
+- reconstruction
+- encoding_failure
+- inattention
+- shallow_processing
+- memory_errors
+- bias
+- suggestibility
+- transience
+- misattribution
+- proactive_interference
+- retroactive_interference
+- forgetting
+- memory_strategies
+- spaced_practice
+- elaboration
+- retrieval_practice
+- study_techniques
+- testing_effect
+- distributed_practice
+- interleaving
+- textbook_strategies
+- reading_comprehension
+- active_learning
+- class_time_strategies
+- attention
+- note_taking
+- engagement
+- test_preparation
+- spacing
+- overlearning
+- metacognition
+- knowledge_about_thinking
+- monitoring
+- control
+- metacognitive_plan
+- self_monitoring
+- self_regulation
+- memory_definition
+- Atkinson_Shiffrin
+- short_term
+- long_term
+- processes
+- capacity
+- duration
+- iconic
+- echoic
+- rehearsal
+- chunking
+- grouping
+- capacity_expansion
+- rote_rehearsal
+- elaborative_rehearsal
+- depth_of_processing
+- organization
+- retrieval_cues
+- redintegration
+- spreading_activation
+- semantic_networks
+- implicit_memory
+- explicit_memory
+- nondeclarative
+- declarative
+- episodic_memory
+- semantic_memory
+- memory_brain_regions
+- prefrontal
+- LTM_benefits
+- comprehension
+- problem_solving
+- automaticity
+- encoding_factors
+- depth
+- irrelevant_factors
+- memory_measures
+- recall
+- recognition
+- relearning
+- forgetting_factors
+- interference
+- decay
+- retrieval_failure
+- active_forgetting
+- passive_forgetting
+- suppression
+- false_memories
+- misinformation_effect
+- source_misattribution
+- eyewitness_procedures
+- unbiased_lineups
+- instructions
+- double_blind
+- encoding_tips
+- mnemonics
+- acronyms
+- acrostics
+- method_of_loci
+- pegword
+- multimedia_principle
+- dual_coding
+- multimedia_learning
+- multimedia_plan
+- presentation_design
+- memory_support
+
+## Examples
+
+- An encoding failure example, such as distraction during learning
+- A retrieval failure example, such as context mismatch or missing cues
+- An interference example, such as mixing similar information
+- One example showing confidence can be wrong, such as false certainty after suggestion
+
+:::

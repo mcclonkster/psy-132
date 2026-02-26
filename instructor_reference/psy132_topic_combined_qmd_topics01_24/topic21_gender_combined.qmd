@@ -1,0 +1,315 @@
+---
+title: "Topic 21: Gender"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Distinctions among sex, gender identity, expression, and orientation
+- Gender roles, norms, and socialization
+- Stigma, minority stress, and well-being pathways
+- Careful use of clinical terminology
+
+::: notes
+Visual cue: Four separate cards: sex, gender identity, gender expression, sexual orientation.
+:::
+
+## Separate the constructs
+
+- Biological sex is about bodily characteristics and classifications
+- Gender identity is an internal sense of self
+- Gender expression is outward presentation and behavior
+- Sexual orientation is patterns of attraction
+
+::: notes
+Guardrail: do not collapse these constructs into one.
+:::
+
+## Construct map
+
+```{mermaid}
+flowchart TB
+S[Biological sex] --> D[Development and context]
+GI[Gender identity] --> D
+GE[Gender expression] --> D
+SO[Sexual orientation] --> D
+D --> E[Experience and outcomes]
+```
+
+::: notes
+Caption cue: constructs are related but not identical, and context shapes outcomes.
+:::
+
+## Gender roles, norms, and stereotypes
+
+- Gender roles are expected behaviors tied to categories
+- Norms are shared rules about what is acceptable
+- Stereotypes are beliefs about typical traits or behavior
+
+::: notes
+Visual cue: Role, norm, stereotype as three layers around a setting.
+:::
+
+## Gender schemas
+
+- Schemas organize attention and interpretation
+- Schemas shape what feels typical
+- Schemas influence memory and judgment
+
+::: notes
+Visual cue: Schema as a filter highlighting “gender-consistent” cues.
+Anchor: Bem as a common framework reference.
+:::
+
+## Socialization shapes norms over time
+
+- Family and caregivers
+- Peers and school contexts
+- Media and online environments
+- Institutions and cultural expectations
+
+::: notes
+Visual cue: Multiple inputs feeding into “what feels acceptable.”
+:::
+
+## Biological and social influences interact
+
+- Biology contributes to development
+- Social context contributes to development
+- Single-cause explanations are usually inaccurate
+
+::: notes
+Visual cue: Two-way arrows between biology and social context across time.
+:::
+
+## Gender expression is diverse
+
+- Expression does not map neatly onto stereotypes
+- Expression varies by context and safety
+- Expression can shift across settings
+
+::: notes
+Visual cue: Same person across settings with different expression, labeled context matters.
+:::
+
+## Common terms
+
+- Cisgender: identity aligns with sex assigned at birth
+- Transgender: identity differs from sex assigned at birth
+- Nonbinary: identity outside strictly woman or man categories
+
+::: notes
+Visual cue: Three definitions in parallel format.
+Guardrail: terms are identity descriptors, not diagnoses.
+:::
+
+## Stigma and discrimination
+
+- Discrimination affects opportunity and safety
+- Stigma increases chronic stress exposure
+- Effects operate through stress and access pathways
+
+::: notes
+Visual cue: Stigma → stress load and access barriers → outcomes.
+:::
+
+## Minority stress
+
+- Chronic stress from stigma-related experiences
+- Anticipation of rejection can be stressful
+- Concealment pressures can accumulate
+
+::: notes
+Visual cue: Repeated stressors filling a “load” meter over time.
+Guardrail: minority stress is exposure pattern, not personal weakness.
+:::
+
+## Protective factors
+
+- Social support and belonging
+- Affirming environments
+- Access to competent care
+
+::: notes
+Visual cue: Protective shields reducing risk pathway strength.
+:::
+
+## Clinical terminology requires care
+
+- Clinical categories focus on distress and impairment
+- Identity is not defined by diagnosis language
+- Use precise, non-stigmatizing wording
+
+::: notes
+Visual cue: Identity language box separate from distress-language box.
+:::
+
+## Gender dysphoria
+
+- Distress related to incongruence can occur for some people
+- Distress is the focus of the clinical category
+- Support aims to reduce distress and impairment
+
+::: notes
+Guardrail: avoid implying gender diversity itself is pathological.
+:::
+
+## Case caution
+
+- Do not treat any one case as decisive proof
+- Many cases involve confounds and ethical limits
+- Use cautious conclusions
+
+::: notes
+If a case like David Reimer is mentioned, frame it as ethically and methodologically limited, not as a clean experiment.
+:::
+
+## Worked example: identifying the construct
+
+Scenario: “I avoid wearing this at school because I will be judged.”
+
+- Identity is about internal sense of self
+- Expression is outward presentation
+- Norms and safety change what is feasible
+
+::: notes
+Teaching move: ask students to label which construct is being described and why.
+:::
+
+## Common confusions to avoid
+
+- Sex and gender are identical
+- Gender identity equals sexual orientation
+- Socialization is the only influence
+- Biology is the only influence
+- Diagnostic terms define identity
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Biological sex
+- Gender identity
+- Gender expression
+- Sexual orientation
+- Gender role
+- Gender stereotype
+- Socialization
+- Discrimination
+- Minority stress
+- Gender dysphoria
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Biological sex: bodily characteristics and classifications
+- Gender identity: internal sense of gender
+- Gender expression: outward presentation and behavior
+- Sexual orientation: patterns of attraction
+- Gender role: expected behavior tied to a category
+- Gender stereotype: belief about typical traits or behavior
+- Socialization: learning norms through interaction and feedback
+- Discrimination: unequal treatment and barriers
+- Minority stress: chronic stress from stigma-related exposures
+- Gender dysphoria: distress and impairment related to incongruence
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 22
+
+- Gender shows how social meaning shapes experience
+- Culture shapes what is treated as typical and acceptable
+- Next: multicultural psychology and cultural variability
+
+::: notes
+Visual cue: One concept shown across multiple cultural frames.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- early sex surveys
+- sexual behavior patterns
+- methodological impact
+- sexual response phases
+- physiological measurement
+- orientation vs identity
+- attraction vs self-concept
+- chromosomes
+- gonads
+- hormones
+- internal and external genitalia
+- definition
+- biological
+- psychological
+- social influences
+- internal sense of gender
+- influences
+- gender variance
+- socially defined expectations based on gender
+- blend of masculine/feminine traits
+- flexibility
+- adjustment
+- sex similarities and differences in sexual response patterns
+
+## Key terms
+
+- Kinsey
+- human_sexuality
+- sex_surveys
+- Masters_Johnson
+- sexual_response_cycle
+- physiology
+- sexual_orientation
+- gender_identity
+- definitions
+- biological_sex_dimensions
+- chromosomes
+- hormones
+- sexual_differentiation
+- causes
+- biology
+- environment
+- gender_variant
+- influences
+- gender_roles
+- social_expectations
+- norms
+- psychological_androgyny
+- flexibility
+- adjustment
+- sex_differences_sexual_response
+- male_vs_female
+- sexual_response
+
+## Examples
+
+- One example of gender role expectations shaping behavior or opportunity
+- One example of stereotype-driven judgment affecting evaluation
+- One example of why context changes conclusions about “gender differences,” such as workplace norms or educational access
+
+:::

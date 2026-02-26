@@ -1,0 +1,504 @@
+---
+title: "Topic 6: Neuroscience"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How neurons communicate
+- How the nervous system is organized
+- How brain-behavior links are studied, with limits
+
+::: notes
+Visual cue: Three-part map: communication, organization, methods and limits.
+:::
+
+## The big idea
+
+- Neurons use electrical signals within cells
+- Neurons use chemical signals across synapses
+- Brain functions rely on networks, not single centers
+
+::: notes
+Visual cue: Electrical within, chemical across, network-level outcome.
+Guardrail: avoid one-region “emotion center” language.
+:::
+
+## Nervous system organization
+
+```{mermaid}
+flowchart TB
+NS[Nervous system] --> CNS[Central nervous system]
+NS --> PNS[Peripheral nervous system]
+CNS --> B[Brain]
+CNS --> S[Spinal cord]
+PNS --> Som[Somatic]
+PNS --> Aut[Autonomic]
+Aut --> Sym[Sympathetic]
+Aut --> Para[Parasympathetic]
+```
+
+::: notes
+Teaching move: ask students to name one function for each branch.
+:::
+
+## Central nervous system
+
+- Brain and spinal cord
+- Integrates information
+- Coordinates responses
+
+::: notes
+Visual cue: Simple brain and spinal cord diagram.
+:::
+
+## Peripheral nervous system
+
+- Nerves outside the brain and spinal cord
+- Carries signals to and from the CNS
+- Divides into somatic and autonomic systems
+
+::: notes
+Visual cue: Body outline with peripheral nerves highlighted.
+:::
+
+## Somatic nervous system
+
+- Sensation from body and environment
+- Voluntary movement control
+- Fast feedback for action
+
+::: notes
+Visual cue: Sensory input and motor output arrows.
+:::
+
+## Autonomic nervous system
+
+- Regulates internal organs and glands
+- Coordinates arousal and recovery
+- Runs largely outside conscious control
+
+::: notes
+Visual cue: Organ regulation icons (heart, lungs) with “automatic regulation” label.
+Guardrail: autonomic activity is regulated, not “random.”
+:::
+
+## Sympathetic and parasympathetic patterns
+
+:::: columns
+::: column
+Sympathetic
+- Mobilizes energy
+- Increases readiness
+- Supports action
+:::
+
+::: column
+Parasympathetic
+- Restores energy
+- Supports digestion and recovery
+- Supports calm states
+:::
+::::
+
+::: notes
+Visual cue: Two dials rather than a single on-off switch.
+Guardrail: the systems can both be active to different degrees.
+:::
+
+## Neuron structure
+
+- Dendrites receive input
+- Axons send output
+- Myelin increases signal speed
+
+::: notes
+Visual cue: Labeled neuron diagram.
+:::
+
+## Glial cells support neurons
+
+- Support and protect neurons
+- Help maintain healthy signaling
+- Contribute to brain function over time
+
+::: notes
+Visual cue: Neuron surrounded by glial “support” cells.
+:::
+
+## Electrical signaling inside neurons
+
+- Resting potential reflects charge difference
+- Action potential is a rapid electrical change
+- Signals travel along axons
+
+::: notes
+Visual cue: Spike traveling down an axon.
+Keep it conceptual, not math-heavy.
+:::
+
+## Chemical signaling across synapses
+
+- Synapses connect neurons
+- Neurotransmitters bind to receptors
+- Reuptake can reduce signaling
+
+::: notes
+Visual cue: Synapse diagram labeling neurotransmitter, receptor, reuptake.
+Guardrail: neurotransmitters do not have one simple effect.
+:::
+
+## Neurotransmitters are pathway-dependent
+
+- The same neurotransmitter can do different things
+- Effects depend on receptor type and pathway
+- Labels do not guarantee one simple outcome
+
+::: notes
+Visual cue: One neurotransmitter branching into multiple pathways.
+Example to say aloud: dopamine and serotonin have multiple receptor types.
+:::
+
+## Plasticity
+
+- The brain changes with experience
+- Learning changes connections over time
+- Recovery after injury can involve reorganization
+
+::: notes
+Visual cue: Timeline showing gradual change, not instant rewiring.
+Guardrail: plasticity is change over time, not guaranteed improvement.
+:::
+
+## Networks over centers
+
+- Many functions use distributed networks
+- Connections matter as much as regions
+- Single-center stories are usually misleading
+
+::: notes
+Visual cue: Network map with nodes and connections.
+Teaching move: ask students to name a network-like function (language, attention).
+:::
+
+## Hemispheric specialization is partial
+
+- Some functions show division of labor
+- Integration across hemispheres is extensive
+- Specialization is not absolute
+
+::: notes
+Visual cue: Two hemispheres connected by thick communication lines.
+Key example: split-brain findings illustrate partial specialization.
+:::
+
+## How we study brain and behavior
+
+- Lesion evidence links damage to function
+- Imaging measures structure or activity proxies
+- Each method has strengths and limits
+
+::: notes
+Visual cue: Method cards labeled Lesion, EEG, MRI, fMRI, PET, CT.
+Guardrail: methods are proxies, not direct “thought reading.”
+:::
+
+## EEG
+
+- Measures electrical activity at the scalp
+- Strong timing information
+- Limited location precision
+
+::: notes
+Visual cue: Head cap with signal traces.
+Keep comparison language: timing strong, location limited.
+:::
+
+## MRI and fMRI
+
+- MRI measures structure
+- fMRI estimates activity with a blood-oxygen proxy
+- Stronger location than EEG, weaker timing than EEG
+
+::: notes
+Visual cue: Brain image card labeled structure and blood-oxygen proxy.
+Guardrail: fMRI is an indirect measure of neural activity.
+:::
+
+## PET and CT
+
+- PET measures metabolic activity with tracers
+- CT measures structural images with X-rays
+- Use depends on question and constraints
+
+::: notes
+Visual cue: PET as “metabolism proxy,” CT as “structure.”
+Keep details minimal.
+:::
+
+## Interpreting evidence requires caution
+
+- Correlation is not causation in imaging
+- Strong claims require converging evidence
+- Good interpretation states limits explicitly
+
+::: notes
+Visual cue: “Proxy” stamp on method cards plus a “converge” arrow from multiple methods.
+:::
+
+## Key evidence anchors
+
+- Split-brain research: hemispheric communication
+- Visual cortex research: feature detection
+- Lesions and language: evidence and limits
+
+::: notes
+Use anchors as examples of inference, not as one-study proof.
+Keep language network-based.
+:::
+
+## Quick check
+
+Match the item to the best description
+
+- Action potential
+- Synapse
+- Neurotransmitter
+- Reuptake
+- Somatic nervous system
+- Autonomic nervous system
+- Sympathetic division
+- Parasympathetic division
+- Neuroplasticity
+- EEG
+- fMRI
+
+::: notes
+Delivery: students commit first, then you reveal.
+Use one discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Action potential: rapid electrical signal within a neuron
+- Synapse: connection point where neurons communicate
+- Neurotransmitter: chemical messenger across a synapse
+- Reuptake: reabsorption that reduces neurotransmitter signaling
+- Somatic nervous system: sensation and voluntary movement
+- Autonomic nervous system: automatic organ regulation
+- Sympathetic division: mobilizes energy and readiness
+- Parasympathetic division: supports recovery and conservation
+- Neuroplasticity: change in neural connections over time
+- EEG: scalp electrical activity, strong timing
+- fMRI: activity proxy using blood-oxygen changes, stronger location than EEG
+
+::: notes
+Keep it brief. Do not turn answers into re-lecture.
+:::
+
+## Bridge to Topic 7
+
+- Neuroscience explains how signals travel through systems
+- Sensation begins with transduction in sensory receptors
+- Next: how stimuli become neural signals
+
+::: notes
+Visual cue: Stimulus → receptor → neural signal.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- evolution
+- natural selection
+- adaptation
+- fitness
+- genotype vs phenotype
+- genes
+- expressed traits
+- gene–environment interaction
+- expression
+- plasticity
+- neuron structure
+- soma
+- axon
+- dendrites
+- myelin
+- action potentials
+- synaptic transmission
+- neurotransmitters
+- receptor binding
+- agonist vs antagonist
+- neurotransmitter systems
+- CNS vs PNS
+- brain & spinal cord vs nerves
+- somatic vs autonomic
+- voluntary vs involuntary control
+- sympathetic vs parasympathetic
+- fight–flight vs rest–digest
+- spinal cord
+- reflexes
+- information relay
+- left vs right hemisphere
+- frontal
+- parietal
+- temporal
+- occipital
+- structural imaging
+- functional imaging
+- clinical vs research uses
+- endocrine glands
+- pituitary
+- thyroid
+- adrenals
+- gonads
+- hormones
+- gland–hormone pairs
+- hormone functions
+- metabolism
+- stress response
+- growth
+- reproduction
+- further breakdown
+- axon terminals
+- electrical signaling
+- chemical signaling
+- brain plasticity
+- new neuron formation
+- structural methods
+- MRI
+- CT
+- postmortem studies
+- functional methods
+- fMRI
+- PET
+- EEG
+- TMS
+- lateralization
+- hemisphere specialization
+- functional roles
+- brainstem
+- limbic system
+- basal ganglia
+- components
+- hormone release
+- feedback
+- adrenal
+
+## Key terms
+
+- evolution
+- natural_selection
+- adaptation
+- fitness
+- genotype
+- phenotype
+- heredity
+- traits
+- gene_environment_interaction
+- expression
+- plasticity
+- neuron
+- soma
+- axon
+- dendrites
+- myelin
+- neural_communication
+- action_potential
+- synapse
+- neurotransmitters
+- agonist
+- antagonist
+- receptors
+- neurotransmitter_systems
+- CNS
+- PNS
+- nervous_system_divisions
+- somatic_ns
+- autonomic_ns
+- voluntary
+- involuntary
+- sympathetic
+- parasympathetic
+- arousal
+- relaxation
+- spinal_cord
+- reflex
+- afferent
+- efferent
+- brain_hemispheres
+- brain_lobes
+- frontal
+- parietal
+- temporal
+- occipital
+- neuroimaging
+- MRI
+- CT
+- PET
+- EEG
+- endocrine_system
+- glands
+- pituitary
+- thyroid
+- adrenal
+- gonads
+- hormones
+- cortisol
+- thyroxine
+- sex_hormones
+- insulin
+- hormone_functions
+- metabolism
+- stress
+- growth
+- reproduction
+- somatic
+- autonomic
+- neuron_structure
+- terminals
+- neural_operation
+- synaptic_release
+- neuroplasticity
+- neurogenesis
+- brain_change
+- brain_structure_methods
+- postmortem
+- brain_function_methods
+- fMRI
+- TMS
+- lateralization
+- left_hemisphere
+- right_hemisphere
+- specialization
+- cortical_lobes
+- function
+- subcortex
+- brainstem
+- limbic
+- basal_ganglia
+- thalamus
+- hypothalamus
+- hormone_release
+
+## Examples
+
+- A simple brain–behavior pathway claim with bounded language, such as “sleep deprivation can impair attention”
+- A simple example of biological influence on behavior that is not destiny, such as stress physiology influencing coping without guaranteeing outcomes
+- A simple example of why “brain region name” is not a complete explanation
+
+:::

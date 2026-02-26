@@ -1,0 +1,408 @@
+---
+title: "Topic 8: Perception"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How perception organizes and interprets sensory input
+- How bottom-up and top-down processes interact
+- How attention, depth, and multisensory integration shape experience
+
+::: notes
+Visual cue: Sensation → perception → experience pipeline.
+:::
+
+## Perception is organization and interpretation
+
+- Sensation encodes input
+- Perception organizes patterns
+- Perception assigns meaning in context
+
+::: notes
+Guardrail: perception is not a perfect copy of reality.
+:::
+
+## Bottom-up and top-down work together
+
+```{mermaid}
+flowchart LR
+S[Sensory input] --> BU[Bottom-up processing]
+K[Knowledge and expectations] --> TD[Top-down processing]
+BU --> P[Perception]
+TD --> P
+P --> E[Experience and response]
+```
+
+::: notes
+Caption cue: perception reflects both input and interpretation.
+:::
+
+## Bottom-up processing
+
+- Builds from sensory features
+- Supports detection and grouping
+- Constrains what can be perceived
+
+::: notes
+Visual cue: Features → pattern → object.
+:::
+
+## Top-down processing
+
+- Uses knowledge and expectations
+- Uses context and goals
+- Shapes interpretation under ambiguity
+
+::: notes
+Visual cue: Context frame changing what an ambiguous stimulus means.
+:::
+
+## Perceptual set
+
+- Expectations bias what you notice
+- Expectations bias what you interpret
+- Context can change the same input
+
+::: notes
+Visual cue: Ambiguous image with two context labels producing two interpretations.
+:::
+
+## Perceptual organization
+
+- Grouping simplifies complex scenes
+- Grouping follows predictable tendencies
+- Tendencies can create illusions
+
+::: notes
+Visual cue: Dots grouped into lines after highlighting proximity and similarity.
+:::
+
+## Gestalt principles: what to notice
+
+- Proximity: near elements group
+- Similarity: similar elements group
+- Continuity: patterns follow smooth paths
+- Closure: missing parts are filled in
+- Figure-ground: object separates from background
+
+::: notes
+Visual cue: If you use images, label the intended takeaway and keep them large.
+Accessibility cue: add a short caption for each image.
+:::
+
+## Figure-ground
+
+- Perception separates object from background
+- The same input can support different interpretations
+
+::: notes
+Visual cue: Figure-ground image with a caption stating the intended separation.
+:::
+
+## Perceptual constancy
+
+- Stable perception despite changing input
+- Size and shape constancy are common examples
+- Constancy is useful, not perfect
+
+::: notes
+Visual cue: Same object at different distances with “stable size perception” label.
+:::
+
+## Depth perception uses multiple cues
+
+:::: columns
+::: column
+Binocular cues
+- two-eye information
+- disparity and convergence
+:::
+
+::: column
+Monocular cues
+- one-eye information
+- perspective, overlap, relative size
+:::
+::::
+
+::: notes
+Visual cue: Two-column organizer with one example image for each side.
+:::
+
+## Binocular disparity
+
+- Two eyes see slightly different images
+- Differences support depth judgments
+- Strongest for nearby objects
+
+::: notes
+Visual cue: Two-eye lines and a near object highlighted.
+:::
+
+## Monocular cues
+
+- Linear perspective supports distance
+- Interposition supports depth from overlap
+- Relative size supports distance comparison
+
+::: notes
+Visual cue: Road or hallway image labeled with cue names.
+:::
+
+## Selective attention
+
+- Attention prioritizes information
+- Attention has limits
+- Limits produce predictable misses
+
+::: notes
+Visual cue: Spotlight model of attention over a scene.
+:::
+
+## Inattentional blindness
+
+- People can miss obvious events
+- Misses depend on task and focus
+- Limits matter in everyday life
+
+::: notes
+Visual cue: Inattentional blindness demonstration still with a caption.
+Guardrail: do not present as a personal flaw; it reflects system limits.
+:::
+
+## Change blindness
+
+- Large changes can be missed
+- Misses increase when attention is disrupted
+- Perception is not continuous recording
+
+::: notes
+Visual cue: Two images with a change; show how attention disruption hides it.
+:::
+
+## Signal detection theory
+
+- Sensitivity reflects detection ability
+- Criterion reflects decision threshold
+- Uncertainty requires separating the two
+
+::: notes
+Visual cue: Two dials labeled Sensitivity and Criterion.
+Guardrail: motivation and costs often shift criterion, not sensitivity.
+:::
+
+## Multisensory integration
+
+- Inputs across senses combine
+- Integration can improve perception
+- Integration can also produce illusions
+
+::: notes
+Visual cue: Audio and visual streams merging into one perception output.
+:::
+
+## McGurk effect
+
+- Visual speech cues influence what you hear
+- Perception integrates senses in speech
+
+::: notes
+Visual cue: Mouth movement plus audio leading to a different perceived syllable.
+Guardrail: effects vary by person and context.
+:::
+
+## Rubber hand illusion
+
+- Vision and touch can shift ownership experience
+- Integration contributes to body representation
+
+::: notes
+Visual cue: Hand with synchronized touch cues shifting “ownership” rating.
+Guardrail: use as evidence for integration, not as proof of one grand theory of self.
+:::
+
+## Common confusions to avoid
+
+- Perception equals reality
+- Top-down equals bias and bottom-up equals truth
+- Attention is stable and continuous
+- Illusions mean perception is weak
+
+::: notes
+Use as a reset before retrieval.
+Frame illusions as informative about system tendencies.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Bottom-up processing
+- Top-down processing
+- Perceptual set
+- Closure
+- Figure-ground
+- Binocular disparity
+- Inattentional blindness
+- Sensitivity
+- Criterion
+- Multisensory integration
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Bottom-up processing: builds from sensory input
+- Top-down processing: shaped by expectations and context
+- Perceptual set: expectation bias in perception
+- Closure: filling in missing parts
+- Figure-ground: separating object from background
+- Binocular disparity: two-eye difference supporting depth
+- Inattentional blindness: missing events due to attention limits
+- Sensitivity: ability to detect a signal
+- Criterion: decision threshold under uncertainty
+- Multisensory integration: combining senses in perception
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 9
+
+- Perception depends on attention and context
+- Consciousness changes across sleep and waking
+- Next: sleep, rhythms, and altered states
+
+::: notes
+Visual cue: Attention and state feeding into awareness.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- Gestalt principles of organization
+- grouping
+- figure–ground
+- closure
+- difference between raw sensory input and interpreted experience
+- how attention
+- motivation
+- and adaptation shape what is perceived
+- mapping wavelength
+- amplitude
+- purity to color and brightness
+- mapping frequency
+- complexity to pitch
+- loudness
+- timbre
+- monocular cues
+- binocular cues
+- depth judgments
+- competing theories of color processing
+- pitch perception
+- frequency coding
+- place coding
+- combining information from multiple senses into a single percept
+- divided attention
+- multitasking costs
+- performance limits
+- salience
+- personal relevance
+- expectations
+- emotional value
+- mind-wandering
+- default mode
+- creativity
+- performance decrements
+- how transduced input feeds higher-level perception
+- data-driven vs expectation-driven processing
+- interaction of biology and learning in shaping perception
+- cultural influences on visual illusions
+- classification and examples of depth cues
+- application of depth cues in art and VR treatment
+
+## Key terms
+
+- Gestalt
+- grouping
+- figure_ground
+- perceptual_organization
+- sensation_vs_perception
+- sensory_input
+- interpretation
+- attention
+- motivation
+- sensory_adaptation
+- perception
+- light_properties
+- wavelength_color
+- amplitude_brightness
+- purity_saturation
+- sound_properties
+- frequency_pitch
+- amplitude_loudness
+- complexity_timbre
+- depth_cues
+- monocular
+- binocular
+- depth_perception
+- color_vision_theories
+- trichromatic
+- opponent_process
+- pitch_theories
+- frequency_theory
+- place_theory
+- multimodal_integration
+- multisensory
+- multitasking_research
+- divided_attention
+- performance
+- attention_factors
+- salience
+- relevance
+- expectation
+- emotion
+- mind_wandering
+- benefits
+- costs
+- sensation_perception_relationship
+- processing_stages
+- bottom_up_processing
+- top_down_processing
+- transduction
+- experience
+- individual_differences
+- culture_and_perception
+- Muller_Lyer
+- illusions
+- monocular_cues
+- binocular_cues
+- art
+- virtual_reality
+- exposure_therapy
+
+## Examples
+
+- One illusion as evidence of a perceptual assumption, such as size or brightness illusions
+- One top-down example, such as how expectations shape ambiguous images or sounds
+- One real-life perceptual error example, such as misreading a situation in low light or under stress
+
+:::

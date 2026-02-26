@@ -1,0 +1,588 @@
+---
+title: "Topic 16: Health"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How stress processes relate to health
+- How coping and social support change outcomes
+- How health behaviors and access shape risk and recovery
+
+::: notes
+Visual cue: Stress process → behavior and physiology → health outcomes, with context around it.
+:::
+
+## Health is multi-factor
+
+- Biology matters
+- Behavior matters
+- Stress and context matter
+
+::: notes
+Guardrail: avoid one-to-one claims like “stress causes disease.”
+:::
+
+## Stress is a process
+
+```{mermaid}
+flowchart LR
+S[Stressor] --> A[Appraisal]
+A --> P[Physiology]
+A --> C[Coping]
+P --> O[Outcomes]
+C --> O
+O --> A
+```
+
+::: notes
+Caption cue: the same stressor can produce different outcomes depending on appraisal and coping.
+:::
+
+## Appraisal shapes stress
+
+- Meaning of the situation
+- Perceived control
+- Available resources
+
+::: notes
+Visual cue: Same event card leading to two different appraisals.
+:::
+
+## Acute and chronic stress
+
+- Acute stress can support short-term action
+- Chronic stress can increase long-term risk
+- Effects depend on duration and context
+
+::: notes
+Visual cue: Short spike vs sustained activation.
+:::
+
+## Sympathetic and HPA pathways
+
+:::: columns
+::: column
+Sympathetic pathway
+- fast activation
+- prepares action
+- short time scale
+:::
+
+::: column
+HPA axis pathway
+- slower activation
+- cortisol timing signals
+- longer time scale
+:::
+::::
+
+::: notes
+Visual cue: Two-lane pathway diagram.
+Guardrail: cortisol is not a single “stress level” meter.
+:::
+
+## Allostatic load
+
+- Cumulative wear from repeated activation
+- Multi-step pathway, not one marker
+- Depends on measurement and timescale
+
+::: notes
+Visual cue: Repeated stress hits filling a “load” meter.
+:::
+
+## Psychoneuroimmunology
+
+- Stress processes can influence immune-related outcomes
+- Links are multi-factor and design-dependent
+- Strong conclusions require careful evidence
+
+::: notes
+Guardrail: do not imply stress automatically causes a specific disease.
+Visual cue: Stress process → behavior and physiology → immune-related outcomes.
+:::
+
+## Coping changes outcomes
+
+- Coping is how you respond to demands
+- Coping can change exposure and meaning
+- Coping can change physiology and behavior
+
+::: notes
+Visual cue: Coping sits between appraisal and outcomes.
+:::
+
+## Problem-focused coping
+
+- Targets the stressor or situation
+- Planning and action steps
+- Best fit when change is possible
+
+::: notes
+Visual cue: Stressor → plan → action.
+:::
+
+## Emotion-focused coping
+
+- Targets emotion and meaning
+- Reappraisal and acceptance
+- Best fit when change is limited
+
+::: notes
+Visual cue: Stressor → new meaning → reduced distress.
+Guardrail: emotion-focused coping is not avoidance by default.
+:::
+
+## Coping effectiveness is context-dependent
+
+- Controllability matters
+- Timing matters
+- Costs and trade-offs matter
+
+::: notes
+Visual cue: Coping strategy card evaluated against a context card.
+:::
+
+## Social support buffers stress
+
+- Increases resources
+- Improves regulation
+- Supports behavior change
+
+::: notes
+Visual cue: Social support as a buffer between stress and outcomes.
+Guardrail: support can help through multiple pathways.
+:::
+
+## Resilience
+
+- Adaptation under adversity
+- Protective factors reduce risk
+- Resilience is not invulnerability
+
+::: notes
+Visual cue: Risk factors and protective factors feeding into outcomes.
+:::
+
+## Health behaviors
+
+- Sleep and recovery
+- Physical activity
+- Nutrition patterns
+- Substance use
+
+::: notes
+Visual cue: Behavior set feeding into long-term outcomes.
+:::
+
+## Adherence
+
+- Following a treatment plan over time
+- Influenced by barriers and support
+- Shaped by stress and resources
+
+::: notes
+Visual cue: Plan → barriers → adherence → outcomes.
+:::
+
+## Access and context matter
+
+- Cost and time constraints matter
+- Transportation and availability matter
+- Language access and trust matter
+
+::: notes
+Guardrail: avoid “health is only personal responsibility” framing.
+Visual cue: Context constraints around choices.
+:::
+
+## Type A and hostility
+
+- Type A is not uniformly predictive
+- Hostility is often a more specific risk-relevant component
+- Evidence is mixed and context-dependent
+
+::: notes
+Visual cue: Type A umbrella with hostility highlighted.
+Guardrail: avoid treating Type A as a single reliable predictor.
+:::
+
+## Biomarkers require caution
+
+- Single markers are proxies
+- Evidence is often correlational
+- Interpretation depends on design and timescale
+
+::: notes
+Visual cue: Biomarker card stamped “proxy,” with confounds around it.
+:::
+
+## Worked example: stress and health behavior
+
+Scenario: a demanding week
+
+- Appraisal changes stress response
+- Coping changes choices
+- Sleep and activity change recovery
+
+::: notes
+Teaching move: ask students to name one problem-focused and one emotion-focused coping option for the scenario.
+:::
+
+## Common confusions to avoid
+
+- Stress is only a feeling
+- Stress automatically causes disease
+- One coping style is always best
+- Biomarkers prove simple answers
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Appraisal
+- Sympathetic pathway
+- HPA axis
+- Cortisol
+- Allostatic load
+- Problem-focused coping
+- Emotion-focused coping
+- Social support
+- Adherence
+- Resilience
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Appraisal: evaluation of meaning and control
+- Sympathetic pathway: fast arousal mobilization
+- HPA axis: slower stress pathway with cortisol timing signals
+- Cortisol: hormone signal involved in stress timing and regulation
+- Allostatic load: cumulative wear from repeated activation
+- Problem-focused coping: actions to change the stressor
+- Emotion-focused coping: actions to change emotion and meaning
+- Social support: resource buffer that improves coping and behavior
+- Adherence: following a treatment plan over time
+- Resilience: adaptation under adversity, not invulnerability
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 17
+
+- Health behavior involves goals and persistence
+- Motivation explains goal direction and effort
+- Next: needs, incentives, goals, and self-regulation
+
+::: notes
+Visual cue: Health behavior feeding into motivation and self-regulation.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- infant health
+- sleep position
+- environment
+- prevention guidelines
+- BMI ranges
+- overweight vs obesity
+- physical health risks
+- medical complications of eating disorders
+- physiological risks
+- stress as external events vs stress as physiological/psychological response
+- transactional model
+- appraisal and coping over time
+- eustress vs distress
+- functional vs harmful stress
+- fight-or-flight
+- general adaptation syndrome
+- historical foundations
+- HPA axis
+- alarm–resistance–exhaustion
+- stress physiology
+- acute vs chronic stressors
+- daily hassles
+- life events
+- major life events
+- adjustment
+- stress load
+- SRRS
+- scoring
+- life change units
+- occupational stress
+- demands vs control
+- exhaustion
+- conditions where stress affects physical health
+- psychosomatic
+- psychoneuroimmunology
+- immune function
+- stress effects
+- stress-related cardiovascular risk
+- asthma
+- headaches
+- coping strategies
+- tackling problem vs managing emotion
+- control beliefs
+- locus of control
+- stress buffering
+- social support
+- health outcomes
+- mortality risk
+- happiness
+- subjective well-being
+- predictors
+- positive psychology
+- strengths
+- flourishing
+- interventions
+- positive emotions
+- impact on health and coping
+- flow state
+- engagement
+- intrinsic motivation
+- well-being
+- insomnia
+- sleep apnea
+- narcolepsy
+- parasomnias
+- circadian disorders
+- coping motives
+- social factors
+- reinforcement
+- dependence
+- definitions of positive psychology
+- SWB
+- optimism
+- internal–external
+- stable–unstable
+- global–specific
+- applying optimism and explanatory style
+- cognitive reframing
+- medical model vs BPS
+- narrow vs holistic health views
+- BPS factors
+- multi-level determinants of health
+- smoking
+- diet
+- inactivity
+- substance use
+- behavior-change techniques
+- self-monitoring
+- support
+- environmental changes
+- major life events vs daily hassles
+- primary vs secondary appraisal
+- evaluation of threat and coping resources
+- alarm
+- resistance
+- chronic stress outcomes
+- health problems
+- burnout
+- symptom perception
+- illness behavior
+- interpretation
+- perceived need
+- stigma
+- access
+- beliefs
+- three coping modes
+- targeting problem
+- emotion
+- or relationships
+- traumatic stress
+- PTSD risk
+- integration
+- assimilation
+- separation
+- marginalization
+- stress levels
+- subclinical depression
+- academic and social stress
+- coping techniques
+- physiological
+- emotional
+- behavioral effects
+- stress-management planning
+- targeted coping strategies
+
+## Key terms
+
+- SIDS
+- risk_factors
+- prevention
+- infant_sleep
+- overweight
+- obesity
+- BMI
+- health_consequences
+- anorexia_consequences
+- bulimia_consequences
+- medical_complications
+- stimulus_based_stress
+- response_based_stress
+- stress_definitions
+- stress_as_process
+- appraisal
+- coping
+- eustress
+- distress
+- stress_types
+- Cannon
+- Selye
+- fight_or_flight
+- GAS
+- stress_physiology
+- HPA_axis
+- general_adaptation_syndrome
+- stressors
+- acute
+- chronic
+- hassles
+- catastrophes
+- life_changes
+- adjustment
+- stress_impact
+- SRRS
+- stress_measure
+- life_change_units
+- job_strain
+- job_burnout
+- occupational_stress
+- psychophysiological_disorders
+- stress_related_illness
+- psychosomatic
+- immune_system
+- PNI
+- immunity
+- cardiovascular_disorders
+- asthma
+- tension_headaches
+- stress_link
+- problem_focused
+- emotion_focused
+- perceived_control
+- stress_buffer
+- locus_of_control
+- social_support
+- health_benefits
+- longevity
+- happiness
+- subjective_wellbeing
+- determinants
+- positive_psychology
+- strengths
+- flourishing
+- applied_problems
+- positive_affect
+- health_outcomes
+- resilience
+- flow
+- engagement
+- fulfillment
+- sleep_disorders
+- insomnia
+- sleep_apnea
+- narcolepsy
+- parasomnias
+- drug_abuse_reasons
+- social_pressure
+- reinforcement
+- positive_psychology_def
+- SWB
+- optimism
+- explanatory_style
+- internal_external
+- stable_unstable
+- global_specific
+- optimism_plan
+- cognitive_reframing
+- medical_model
+- biopsychosocial_model
+- health_conceptions
+- health_determinants
+- biological
+- psychological
+- social
+- behavioral_risks
+- smoking
+- poor_diet
+- inactivity
+- substance_use
+- risk_reduction_strategies
+- behavior_change
+- self_monitoring
+- support
+- life_events
+- daily_hassles
+- stressor_types
+- primary_appraisal
+- secondary_appraisal
+- appraisal_factors
+- alarm
+- resistance
+- exhaustion
+- prolonged_stress
+- chronic_stress_effects
+- burnout
+- illness
+- illness_recognition
+- BPS_factors
+- symptom_perception
+- treatment_seeking
+- perceived_need
+- stigma
+- access
+- beliefs
+- problem_focused_coping
+- emotion_focused_coping
+- relationship_focused_coping
+- traumatic_stress
+- PTSD_risk
+- coping_strategies
+- acculturation_coping
+- integration
+- assimilation
+- separation
+- marginalization
+- college_blues
+- mild_depression
+- student_stress
+- stress_effects
+- physiological
+- emotional
+- behavioral
+- stress_management_plan
+- self_regulation
+
+## Examples
+
+- One biopsychosocial explanation for a health outcome that includes one biological, one psychological, and one social contributor
+- One stress and coping example where support or strategy changes outcomes
+- One example where environment constrains choices, such as sleep schedule, food access, or safe activity options
+
+:::

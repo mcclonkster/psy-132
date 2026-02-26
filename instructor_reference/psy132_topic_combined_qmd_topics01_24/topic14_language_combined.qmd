@@ -1,0 +1,320 @@
+---
+title: "Topic 14: Language"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  pptx: default
+---
+
+## What this topic covers
+
+- Language as a structured, generative system
+- Core components of language
+- Language development and learning mechanisms
+- What language does and does not do to thought
+
+::: notes
+Visual cue: Components → development → use and meaning.
+:::
+
+## Language is structured and generative
+
+- Rules produce many possible messages
+- Structure changes meaning
+- Language is learned in context
+
+::: notes
+Guardrail: language is not only memorized phrases.
+:::
+
+## Core components of language
+
+```{mermaid}
+flowchart TB
+L[Language] --> P[Phonemes]
+L --> M[Morphemes]
+L --> SY[Syntax]
+L --> SE[Semantics]
+L --> PR[Pragmatics]
+```
+
+::: notes
+Caption cue: components work together in real communication.
+:::
+
+## Phonemes
+
+- Smallest sound units that change meaning
+- Languages use different phoneme sets
+- One sound change can change a word
+
+::: notes
+Visual cue: Two words differing by one phoneme.
+:::
+
+## Morphemes
+
+- Smallest meaning units in language
+- Combine to build words
+- Rule use shows more than memorization
+
+::: notes
+Visual cue: Root plus suffix producing a new meaning.
+:::
+
+## Syntax and semantics
+
+- Syntax organizes word order
+- Semantics is literal meaning
+- Structure can change meaning
+
+::: notes
+Visual cue: Same words in a different order producing different meaning.
+:::
+
+## Pragmatics
+
+- Meaning depends on social context
+- Intent can differ from literal wording
+- Context guides what is appropriate
+
+::: notes
+Visual cue: “Can you pass the salt” literal vs intended meaning.
+:::
+
+## Language development is patterned and variable
+
+- Typical milestones exist
+- Timing varies across children and contexts
+- Wide variability is normal
+
+::: notes
+Guardrail: avoid treating ages as fixed universal rules.
+Visual cue: Milestone timeline with wide bands.
+:::
+
+## Early milestones
+
+- Babbling
+- First words and holophrases
+- Two-word combinations
+- Telegraphic speech
+
+::: notes
+Visual cue: Four-stage strip with one example utterance per stage.
+:::
+
+## Overregularization
+
+- Children apply rules broadly
+- Errors can show rule learning
+- Errors are not evidence of “not learning”
+
+::: notes
+Visual cue: Regular rule applied to an irregular form, producing an error.
+:::
+
+## Fast mapping
+
+- Word meanings can be learned quickly from limited exposure
+- Later exposures refine meaning
+- Context guides inference
+
+::: notes
+Visual cue: New word heard once → likely referent → refinement over time.
+:::
+
+## Child-directed speech
+
+- Often simpler structure and clearer cues
+- Supports attention and segmentation
+- Varies across cultures and families
+
+::: notes
+Guardrail: absence of child-directed speech does not imply poor language development.
+Visual cue: Adult utterance vs child-directed version with clearer boundaries.
+:::
+
+## Learning-based accounts
+
+- Emphasize experience and input
+- Emphasize feedback and practice
+- Explain growth from exposure
+
+::: notes
+Visual cue: Many input examples strengthening patterns.
+:::
+
+## Nativist accounts
+
+- Emphasize innate constraints on learning
+- Suggest specialized readiness for language
+- Treat “language acquisition device” as a hypothesis
+
+::: notes
+Guardrail: avoid presenting the language acquisition device as a confirmed anatomical module.
+Visual cue: Constraints as guide rails supporting learning from input.
+:::
+
+## The debate is about mechanisms
+
+- It is not whether learning matters
+- It is about what enables rapid learning
+- Multiple processes can contribute
+
+::: notes
+Visual cue: Overlapping circles labeled learning mechanisms and constraints.
+:::
+
+## Critical period hypothesis
+
+- Some aspects may be easier early
+- Sensitivity to input can change over time
+- Evidence is complex
+
+::: notes
+Guardrail: do not treat any one case as decisive proof.
+Visual cue: Sensitivity curve that changes gradually, not a hard cutoff.
+:::
+
+## Bilingualism
+
+- Children can learn multiple languages without confusion
+- Outcomes depend on exposure and context
+- Development can look different across settings
+
+::: notes
+Guardrail: avoid “bilingualism causes confusion” myths.
+Visual cue: Two input streams feeding into one learner, moderated by exposure.
+:::
+
+## Language and thought
+
+- Language can influence attention and categorization in some contexts
+- Strong “language determines thought” claims are not supported
+- Effects tend to be domain-specific and modest
+
+::: notes
+Visual cue: Labels nudging categorization for the same scene.
+Guardrail: avoid strong linguistic determinism claims.
+:::
+
+## Worked example: pragmatics in action
+
+Scenario: “Can you open the window”
+
+- Literal meaning is a question about ability
+- Intended meaning is a polite request
+- Context and relationship guide interpretation
+
+::: notes
+Teaching move: ask students to generate a second example where pragmatics changes meaning.
+:::
+
+## Common confusions to avoid
+
+- Language is memorization
+- One case proves a critical period
+- Language determines thought
+- Bilingualism causes confusion
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Phoneme
+- Morpheme
+- Syntax
+- Semantics
+- Pragmatics
+- Holophrase
+- Telegraphic speech
+- Overregularization
+- Fast mapping
+- Critical period hypothesis
+- Linguistic relativity
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Phoneme: sound unit that changes meaning
+- Morpheme: meaning unit in language
+- Syntax: rule system for word order
+- Semantics: literal meaning of words and sentences
+- Pragmatics: meaning shaped by social context
+- Holophrase: one word used as a full message
+- Telegraphic speech: short content-heavy phrases missing function words
+- Overregularization: applying a rule too broadly
+- Fast mapping: rapid initial word learning from limited exposure
+- Critical period hypothesis: early sensitivity window with complex evidence
+- Linguistic relativity: language can nudge thought in limited ways
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 15
+
+- Language development is one window into broader development
+- Development reflects biology, experience, and context
+- Next: development across the life span
+
+::: notes
+Visual cue: Early language milestones feeding into a life-span timeline.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of language
+- phonology
+- morphology
+- syntax
+- semantics
+- pragmatics
+- language acquisition
+- stages
+- mechanisms
+- changes in language abilities from infancy to older adulthood
+
+## Key terms
+
+- language_definition
+- phonology
+- morphology
+- syntax
+- semantics
+- pragmatics
+- language_development
+- acquisition
+- stages
+- mechanisms
+- language_lifespan
+- early_language
+- adult_language
+- aging_language
+
+## Examples
+
+- A sentence with syntactic ambiguity and how context resolves meaning
+- A pragmatic example such as sarcasm, indirect requests, or politeness norms
+- One example of language development influence, such as social interaction or cultural variation
+
+:::

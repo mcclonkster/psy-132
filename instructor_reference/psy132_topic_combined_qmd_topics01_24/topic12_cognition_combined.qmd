@@ -1,0 +1,463 @@
+---
+title: "Topic 12: Cognition"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How people form concepts and categories
+- How people solve problems and make decisions
+- Why shortcuts can help and also create predictable errors
+
+::: notes
+Visual cue: Categorize → solve → decide pipeline.
+:::
+
+## Cognition is thinking in action
+
+- Cognition organizes information
+- Cognition guides decisions
+- Cognition is efficient, not perfect
+
+::: notes
+Guardrail: biases are context-dependent patterns, not proof of general laziness or low intelligence.
+:::
+
+## From information to judgment
+
+```{mermaid}
+flowchart LR
+I[Information] --> R[Representation]
+R --> S[Strategy]
+S --> J[Judgment and choice]
+J --> F[Feedback]
+F --> R
+```
+
+::: notes
+Caption cue: how you represent a problem changes what strategies you use.
+:::
+
+## Concepts and categories
+
+- Concepts are mental representations
+- Categories group related items
+- Categories guide expectations
+
+::: notes
+Visual cue: Many items grouped into one labeled category.
+:::
+
+## Prototypes
+
+- Prototype: a typical category example
+- Typicality influences speed and confidence
+- Typical does not mean correct
+
+::: notes
+Visual cue: Category center labeled prototype, less typical examples farther away.
+Example to say aloud: robin versus penguin as birds.
+:::
+
+## Exemplars
+
+- Exemplar: a remembered specific example
+- Judgments can use stored examples
+- Salient examples can dominate
+
+::: notes
+Visual cue: Multiple stored examples feeding into a new judgment.
+Guardrail: vivid examples can distort perceived frequency.
+:::
+
+## Schemas and scripts
+
+- Schemas organize knowledge
+- Scripts are schemas for familiar sequences
+- Schemas shape perception, memory, and judgment
+
+::: notes
+Visual cue: Schema as a folder; script as a timeline inside the folder.
+:::
+
+## Problem representation matters
+
+- Same problem, different frame
+- Different frame, different solution
+- Reframing can reveal options
+
+::: notes
+Visual cue: One problem shown two ways, with one pathway becoming visible after reframing.
+:::
+
+## Algorithms and heuristics
+
+:::: columns
+::: column
+Algorithm
+- step-by-step procedure
+- systematic search
+- can guarantee a solution in principle
+:::
+
+::: column
+Heuristic
+- efficient shortcut
+- works under uncertainty
+- can create predictable bias
+:::
+::::
+
+::: notes
+Visual cue: Two routes: thorough versus fast.
+Guardrail: heuristics are not automatically irrational.
+:::
+
+## Availability heuristic
+
+- Likelihood judged by ease of recall
+- Vivid examples feel more common
+- Recent and media-salient events distort estimates
+
+::: notes
+Visual cue: Easy-to-recall examples appear larger than hard-to-recall examples.
+:::
+
+## Anchoring
+
+- Start from an initial number
+- Adjust too little from the start
+- Estimates drift toward the anchor
+
+::: notes
+Visual cue: Anchor number pulling later estimates toward it.
+:::
+
+## Representativeness heuristic
+
+- Likelihood judged by similarity to a prototype
+- Base rates can be ignored
+- Similarity can feel like probability
+
+::: notes
+Visual cue: Prototype match meter overpowering base-rate info.
+Teaching move: define base rates as “how common it is overall.”
+:::
+
+## Confirmation bias
+
+- Prefer information that fits existing beliefs
+- Interpret ambiguous evidence as supportive
+- Stronger when stakes are high
+
+::: notes
+Visual cue: Filter icon letting in confirming evidence.
+Keep it descriptive, not moral.
+:::
+
+## Hindsight bias
+
+- Outcome makes the past feel predictable
+- Memory for prediction shifts toward the outcome
+- Confidence increases without accuracy increasing
+
+::: notes
+Visual cue: Before prediction and after remembered prediction, with a drift arrow.
+:::
+
+## Framing effect
+
+- Equivalent options feel different
+- Gains and losses shift preferences
+- Wording can change decisions without changing facts
+
+::: notes
+Visual cue: “90 percent survival” and “10 percent mortality” shown as equivalent.
+:::
+
+## Mental set and functional fixedness
+
+- Mental set: default strategy blocks alternatives
+- Functional fixedness: usual object use blocks new uses
+- Reframing can reduce both
+
+::: notes
+Visual cue: One well-worn path plus an alternative path; common object with a new use revealed.
+:::
+
+## Automatic and controlled processing
+
+- Automatic responses are fast and effortless
+- Controlled processing requires attention and effort
+- Automatic responses can interfere with control
+
+::: notes
+Visual cue: Two tracks, fast and slow, with an interference arrow.
+Anchor example: Stroop task.
+:::
+
+## Metacognition
+
+- Monitoring your own thinking
+- Regulating strategies and effort
+- Detecting errors and limits
+
+::: notes
+Visual cue: “thinking dashboard” with confidence and error signals.
+:::
+
+## Worked example: one decision, multiple biases
+
+Scenario: deciding whether something is dangerous
+
+- Availability: vivid story feels common
+- Representativeness: similarity feels like probability
+- Anchoring: first number pulls estimates
+
+::: notes
+Teaching move: ask what information would reduce each bias in the scenario.
+:::
+
+## Common confusions to avoid
+
+- Heuristics are always bad
+- Bias equals laziness
+- Confidence guarantees accuracy
+- Logic is always natural and automatic
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Prototype
+- Exemplar
+- Schema
+- Script
+- Algorithm
+- Heuristic
+- Availability heuristic
+- Anchoring
+- Representativeness heuristic
+- Confirmation bias
+- Hindsight bias
+- Framing effect
+- Mental set
+- Functional fixedness
+- Metacognition
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Prototype: typical category example
+- Exemplar: stored specific example
+- Schema: organized knowledge structure
+- Script: schema for a familiar sequence
+- Algorithm: systematic step-by-step procedure
+- Heuristic: efficient shortcut under uncertainty
+- Availability heuristic: judged by ease of recall
+- Anchoring: estimate pulled toward a starting value
+- Representativeness heuristic: judged by similarity to a prototype
+- Confirmation bias: preference for fitting evidence
+- Hindsight bias: outcome shifts remembered prediction
+- Framing effect: wording changes choice without changing facts
+- Mental set: default strategy blocks alternatives
+- Functional fixedness: usual object function blocks new uses
+- Metacognition: monitoring and regulating thinking
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 13
+
+- Cognition explains thinking and decision processes
+- Intelligence asks how ability is defined and measured
+- Next: psychometrics, norms, and interpretation limits
+
+::: notes
+Visual cue: Thinking processes feeding into measurement questions.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of cognition
+- mental processes
+- concepts
+- prototypes
+- category structure
+- natural vs artificial categories
+- experience vs rules
+- schemas
+- knowledge structures
+- scripts
+- language and thought
+- linguistic relativity
+- inner speech
+- algorithms
+- heuristics
+- insight
+- means–ends analysis
+- algorithm
+- heuristic
+- exact vs approximate solutions
+- fixation
+- mental set
+- functional fixedness
+- biases
+- learning via mental processes
+- cognitive and educational psychologists
+- knowledge dimension
+- cognitive process dimension
+- prior knowledge
+- attention
+- motivation
+- strategies
+- real-world examples of learning via thinking and problem solving
+- dual-process
+- intuitive vs deliberative thinking
+- mental imagery
+- visual thinking
+- problem solving
+- role of concepts in reasoning
+- categorization
+- inference
+- verbal reasoning
+- framing
+- problem-solving methods
+- exact vs approximate
+- confirmation bias
+- expert schemas
+- chunking
+- pattern recognition vs novice strategies
+- JDM biases
+- heuristic-driven errors
+- too many options
+- decision paralysis
+- satisfaction
+- divergent thinking
+- originality
+- creativity tests
+- preparation
+- incubation
+- illumination
+- evaluation
+- verification
+- applying creativity strategies
+- practice
+- environment
+- AI definition
+- machine learning
+- ethical issues
+
+## Key terms
+
+- cognition_definition
+- thinking
+- mental_processes
+- concepts
+- prototypes
+- category_structure
+- natural_concepts
+- artificial_concepts
+- category_learning
+- schemas
+- knowledge_structures
+- scripts
+- language_and_thought
+- linguistic_relativity
+- inner_speech
+- problem_solving_strategies
+- algorithms
+- heuristics
+- insight
+- algorithm
+- heuristic
+- problem_solving
+- problem_solving_barriers
+- fixation
+- mental_set
+- functional_fixedness
+- cognitive_learning
+- cognitive_psychologists
+- educational_psychologists
+- blooms_taxonomy
+- knowledge_dimension
+- cognitive_processes
+- cognitive_learning_factors
+- prior_knowledge
+- attention
+- motivation
+- strategies
+- cognitive_learning_examples
+- everyday_life
+- dual_process
+- experiential_processing
+- reflective_processing
+- mental_imagery
+- visual_thinking
+- cognition
+- concepts_in_thinking
+- categorization
+- reasoning
+- language_use_in_thinking
+- framing
+- problem_solving_methods
+- understanding
+- confirmation_bias
+- expert_vs_novice
+- pattern_recognition
+- strategy_use
+- framing_effect
+- availability_heuristic
+- representativeness
+- base_rate_neglect
+- choice_overload
+- decision_paralysis
+- satisfaction
+- creative_thinking
+- divergent_thinking
+- creativity_measures
+- creative_stages
+- preparation
+- incubation
+- illumination
+- verification
+- creativity_plan
+- innovation_skills
+- practice
+- environment
+- artificial_intelligence
+- ethics
+- automation
+- bias
+
+## Examples
+
+- Multitasking and why it reduces performance through attention and switching limits
+- One heuristic example that leads to an error, such as availability-based judgment
+- One example of cognitive load affecting learning or memory, linking to Topic 10 and Topic 11
+
+:::

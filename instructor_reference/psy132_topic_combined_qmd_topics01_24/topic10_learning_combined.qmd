@@ -1,0 +1,487 @@
+---
+title: "Topic 10: Learning"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Learning as change from experience
+- Learning by association and consequences
+- Learning by observing others
+- Why learning can persist and return
+
+::: notes
+Visual cue: Three routes into learning: association, consequences, observation.
+:::
+
+## Learning is change from experience
+
+- Relatively enduring change from experience
+- Inferred from behavior change over time
+- Not maturation, reflexes, or fatigue
+
+::: notes
+Visual cue: Before and after behavior trace with “experience” marked between.
+:::
+
+## Three routes to learning
+
+```{mermaid}
+flowchart LR
+A[Association] --> L[Learning]
+C[Consequences] --> L
+O[Observation] --> L
+L --> B[Change over time]
+```
+
+::: notes
+Caption cue: different mechanisms can produce similar behavior change.
+:::
+
+## Habituation
+
+- Reduced responding after repeated exposure
+- Helps focus on change rather than constant input
+- Can look like ignoring, but it is learning
+
+::: notes
+Visual cue: Repeated stimulus with declining response curve.
+:::
+
+## Classical conditioning predicts what comes next
+
+- Learning relationships between stimuli
+- Neutral cues gain meaning through pairing
+- Supports reflex-like and emotional responses
+
+::: notes
+Visual cue: Neutral cue + meaningful event → anticipatory response.
+:::
+
+## Classical conditioning terms
+
+- Unconditioned stimulus and unconditioned response
+- Conditioned stimulus and conditioned response
+- Acquisition builds the association
+
+::: notes
+Visual cue: Two paired pathways: UCS → UCR and CS → CR.
+Use one simple example aloud and reuse it.
+:::
+
+## Extinction and return
+
+- Extinction decreases conditioned responding when pairing stops
+- Extinction does not guarantee erasure
+- Spontaneous recovery can occur after time
+
+::: notes
+Visual cue: Response declines during extinction, then partially returns after a delay.
+:::
+
+## Generalization and discrimination
+
+- Generalization: learning transfers to similar cues
+- Discrimination: learning becomes specific to a cue
+- Both reflect how cues are interpreted
+
+::: notes
+Visual cue: Stimulus gradient with strongest response near the trained cue.
+:::
+
+## Operant conditioning shapes what you do
+
+- Learning relationships between behavior and consequences
+- Consequences change future probability of behavior
+- Behavior is shaped over time
+
+::: notes
+Visual cue: Antecedent → behavior → consequence loop.
+:::
+
+## Reinforcement and punishment
+
+- Reinforcement increases behavior
+- Punishment decreases behavior
+- Definitions depend on effects, not intentions
+
+::: notes
+Visual cue: Two columns labeled Increases and Decreases with arrows.
+:::
+
+## Positive and negative reinforcement
+
+- Positive reinforcement adds something to increase behavior
+- Negative reinforcement removes something to increase behavior
+- Negative reinforcement is not punishment
+
+::: notes
+Visual cue: Add vs Remove, both pointing to Increased behavior.
+:::
+
+## Punishment limits
+
+- Punishment can suppress behavior short term
+- Punishment does not teach a replacement behavior by itself
+- Side effects and avoidance can occur
+
+::: notes
+Visual cue: Behavior drops, but no “replacement” appears automatically.
+:::
+
+## Shaping builds complex behavior
+
+- Reinforce successive approximations
+- Define clear criteria for “closer to target”
+- Step by step changes accumulate
+
+::: notes
+Visual cue: Stair-step progression toward a target behavior.
+:::
+
+## Reinforcement schedules change patterns
+
+- Fixed schedules produce more predictable responding
+- Variable schedules can produce more persistent responding
+- Patterns depend on schedule and context
+
+::: notes
+Visual cue: Predictable pattern vs persistent pattern mini graphs.
+:::
+
+## Observational learning
+
+- Learn by watching a model
+- Depends on attention and retention
+- Depends on ability to reproduce and motivation
+
+::: notes
+Visual cue: Model → attention → memory → reproduction → motivation.
+:::
+
+## Vicarious consequences
+
+- Observing outcomes changes imitation
+- Consequences to others influence your behavior
+- Modeling can change norms and expectations
+
+::: notes
+Visual cue: Model acts → consequence → observer chooses to imitate or not.
+:::
+
+## Latent learning and cognitive maps
+
+- Learning can occur without immediate reinforcement
+- Internal representations can guide later behavior
+- Reinforcement can reveal learning rather than create it
+
+::: notes
+Visual cue: Maze map appears before a reward is introduced.
+Guardrail: keep “internal representation” functional, not mystical.
+:::
+
+## Worked example: one behavior, three mechanisms
+
+Example: avoiding dogs after a bite
+
+:::: columns
+::: column
+Classical conditioning
+- cues predict danger
+- fear response becomes conditioned
+:::
+
+::: column
+Operant conditioning
+- avoidance reduces fear
+- relief reinforces avoidance
+:::
+
+::: column
+Observational learning
+- watch others avoid
+- modeling strengthens avoidance
+:::
+::::
+
+::: notes
+Teaching move: ask what intervention would target each mechanism.
+:::
+
+## Common confusions to avoid
+
+- Negative reinforcement means punishment
+- Reinforcement means reward
+- Extinction means permanent erasure
+- Observational learning requires direct reinforcement
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Habituation
+- Classical conditioning
+- Operant conditioning
+- Negative reinforcement
+- Punishment
+- Extinction
+- Spontaneous recovery
+- Generalization
+- Discrimination
+- Observational learning
+- Latent learning
+- Cognitive map
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Habituation: reduced response after repeated exposure
+- Classical conditioning: association between stimuli
+- Operant conditioning: consequences shape behavior
+- Negative reinforcement: remove something to increase behavior
+- Punishment: consequence decreases behavior
+- Extinction: conditioned response decreases when pairing stops
+- Spontaneous recovery: conditioned response returns after time
+- Generalization: response transfers to similar cues
+- Discrimination: response becomes specific to one cue
+- Observational learning: learning by watching others
+- Latent learning: learning without immediate reinforcement
+- Cognitive map: internal representation guiding later navigation
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 11
+
+- Learning changes behavior through experience
+- Memory explains how information is stored and retrieved
+- Next: encoding, storage, retrieval, and reconstruction
+
+::: notes
+Visual cue: Learning pathways feeding into memory systems.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- learned behavior
+- instinct
+- reflex
+- experience vs innate
+- definition of learning
+- relatively permanent change
+- experience
+- types of learning
+- classical
+- operant
+- observational
+- CS–US pairing
+- acquisition of CR
+- associative learning
+- conditioning processes
+- strengthening and weakening
+- response patterns
+- behavior–consequence learning
+- voluntary behavior
+- reinforcement contingencies
+- reinforcement vs punishment
+- increasing vs decreasing behavior
+- continuous vs partial
+- ratio vs interval
+- fixed vs variable
+- learning by watching others
+- model-based learning
+- attention
+- retention
+- reproduction
+- motivation
+- learning helpful vs harmful behaviors from models
+- same as earlier definition
+- relatively permanent change via experience
+- classical conditioning
+- operant conditioning
+- observational learning
+- cognitive learning
+- classical and operant as associative
+- mechanisms of conditioning
+- predictive relationships
+- weakening of CR
+- return of CR after rest
+- conditioning dynamics
+- responding to similar vs specific stimuli
+- stimulus control
+- real-world examples
+- phobias
+- taste aversion
+- advertising
+- operant mechanisms
+- positive/negative reinforcement
+- types of punishment
+- stimulus generalization vs discrimination in operant contexts
+- successive approximations
+- reinforcing steps toward a target behavior
+- immediacy
+- contingency
+- magnitude
+- schedule
+- FR
+- VR
+- FI
+- VI
+- biologically based vs conditioned reinforcers
+- real-world operant examples
+- rewards
+- punishments
+- reproduction (simplified model)
+- model status
+- similarity
+- attractiveness
+- power
+- vicarious reinforcement
+- seeing consequences for others
+- real-world examples of modeling
+- peers
+- media
+- habit change
+- contingency management
+- reinforcement
+- imaginal conditioning techniques
+- pairing imagery with aversive or reinforcing outcomes
+- self-management
+- applying learning principles to personal behavior
+- motor learning
+- practice
+- feedback
+- deliberate practice
+- performance
+
+## Key terms
+
+- learning_vs_instincts
+- reflexes
+- experience_based_change
+- learning_definition
+- behavior_change
+- experience
+- learning_types
+- classical_conditioning
+- operant_conditioning
+- observational_learning
+- acquisition
+- CS_US_pairing
+- CR
+- extinction
+- spontaneous_recovery
+- generalization
+- discrimination
+- behavior_consequence
+- voluntary_behavior
+- reinforcement
+- punishment
+- reinforcement_schedules
+- continuous
+- FR
+- VR
+- FI
+- VI
+- modeling
+- vicarious_learning
+- modeling_steps
+- attention
+- retention
+- reproduction
+- motivation
+- observational_effects
+- prosocial_behavior
+- antisocial_behavior
+- aggression
+- classical
+- operant
+- observational
+- cognitive_learning
+- associative_learning
+- CS_US
+- prediction
+- contiguity
+- conditioning_processes
+- stimulus_generalization
+- stimulus_discrimination
+- classical_examples
+- phobias
+- taste_aversion
+- advertising
+- positive_reinforcement
+- negative_reinforcement
+- operant_generalization
+- operant_discrimination
+- stimulus_control
+- shaping
+- successive_approximations
+- behavior_modification
+- reinforcement_effectiveness
+- timing
+- consistency
+- magnitude
+- continuous_reinforcement
+- partial_reinforcement
+- primary_reinforcers
+- secondary_reinforcers
+- conditioned_reinforcers
+- operant_examples
+- everyday_reinforcement
+- everyday_punishment
+- observational_steps
+- model_characteristics
+- similarity
+- status
+- attractiveness
+- vicarious_reinforcement
+- observational_operant_link
+- observational_examples
+- media_influence
+- habit_change_strategies
+- reinforcement_plans
+- self_management
+- covert_sensitization
+- covert_reinforcement
+- imaginal_conditioning
+- behavior_change_plan
+- learning_application
+- motor_skill_learning
+- practice
+- feedback
+- peak_performance
+- sports_psychology
+
+## Examples
+
+- One classical conditioning example with correctly labeled elements
+- One operant conditioning example identifying behavior, consequence, and direction of behavior change
+- One negative reinforcement example that is not punishment
+- One example showing generalization and one showing discrimination
+- One example showing why extinction can be fragile when context changes
+
+:::

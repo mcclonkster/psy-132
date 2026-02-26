@@ -1,0 +1,480 @@
+---
+title: "Topic 9: Consciousness"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Consciousness as measurable awareness
+- Biological rhythms and sleep architecture
+- Psychoactive drugs and selected altered states
+
+::: notes
+Visual cue: Awareness across time and states: day-night rhythm, sleep stages, substances, attention practices.
+:::
+
+## Consciousness is studied through evidence
+
+- Awareness is described and measured
+- Physiology and behavior provide signals
+- Interpretation depends on method limits
+
+::: notes
+Guardrail: consciousness is not defined by one measure alone.
+:::
+
+## Biological rhythms organize alertness
+
+- Circadian timing shapes sleep and wake
+- Light is a major timing cue
+- Rhythms shift across development and context
+
+::: notes
+Visual cue: 24-hour cycle with alertness curve and light cue.
+:::
+
+## Circadian timing system
+
+```{mermaid}
+flowchart LR
+L[Light cue] --> SCN[Suprachiasmatic nucleus]
+SCN --> T[Timing signals]
+T --> S[Sleep-wake pattern]
+T --> M[Melatonin timing]
+```
+
+::: notes
+Guardrail: keep causation language cautious and timing-focused.
+:::
+
+## Measuring sleep
+
+- Sleep staging uses physiological indicators
+- EEG is a common signal source
+- Sleep is not staged by feeling alone
+
+::: notes
+Visual cue: EEG trace panel with stage labels.
+:::
+
+## Sleep architecture
+
+- Sleep cycles across the night
+- Non-REM and REM differ in patterns
+- Cycles repeat multiple times
+
+::: notes
+Visual cue: Hypnogram-style timeline with repeating cycles.
+Guardrail: avoid presenting exact timing as fixed for all people.
+:::
+
+## Non-REM sleep
+
+- Includes multiple stages
+- Deeper stages are more common earlier in the night
+- Sleep spindles are a key feature in one stage
+
+::: notes
+Visual cue: NREM block with a spindle callout.
+:::
+
+## REM sleep
+
+- Distinct physiology pattern
+- More common later in the night
+- Dreaming is not identical to REM sleep
+
+::: notes
+Visual cue: REM block plus a separate “dreaming” bubble spanning more than one stage.
+:::
+
+## Sleep loss affects functioning
+
+- Attention and performance decrease
+- Mood and regulation can worsen
+- Errors and lapses increase
+
+::: notes
+Visual cue: Attention and mood dials shifting with fewer hours of sleep.
+Keep claims practical and cautious.
+:::
+
+## Sleep disorders overview
+
+- Insomnia: persistent sleep difficulty
+- Sleep apnea: breathing interruptions and disrupted sleep
+- Narcolepsy: sudden sleep episodes and REM intrusion patterns
+
+::: notes
+Visual cue: Three disorder cards with one defining feature each.
+Guardrail: avoid self-diagnosis framing.
+:::
+
+## Psychoactive drugs
+
+- Psychoactive drugs alter consciousness
+- Effects depend on dose, setting, and person factors
+- Risk varies by substance and situation
+
+::: notes
+Safety guardrail: keep discussion descriptive and non-instructional.
+:::
+
+## Tolerance, dependence, withdrawal
+
+- Tolerance: reduced effect at the same dose over time
+- Dependence: adaptation with withdrawal risk if stopped
+- Withdrawal: symptoms after reducing or stopping
+
+::: notes
+Guardrail: dependence is not identical to addiction.
+:::
+
+## Broad drug categories
+
+- Depressants
+- Stimulants
+- Opioids
+- Hallucinogens
+
+::: notes
+Guardrail: categories are broad groupings; substances within a group can differ.
+:::
+
+## Depressants
+
+- Reduce central nervous system activity
+- Can impair coordination and judgment
+- Risk increases when combined with other depressants
+
+::: notes
+Guardrail: depressant does not mean sadness.
+:::
+
+## Stimulants
+
+- Increase alertness and activation
+- Can disrupt sleep and increase jitteriness
+- Risk increases with dose and vulnerability
+
+::: notes
+Visual cue: Alertness dial up, sleep dial down.
+:::
+
+## Opioids
+
+- Act on pain and reward pathways
+- Can slow breathing and increase overdose risk
+- Dependence risk can be high
+
+::: notes
+Safety guardrail: emphasize impairment and overdose risk without use guidance.
+:::
+
+## Hallucinogens
+
+- Alter perception and experience
+- Effects depend strongly on context and individual factors
+- Risks include panic reactions and unsafe behavior under impairment
+
+::: notes
+Safety guardrail: focus on impairment and context sensitivity.
+:::
+
+## Hypnosis
+
+- Focused attention and responsiveness to suggestion
+- Expectation and context matter
+- Hypnosis is not mind control
+
+::: notes
+Visual cue: Attention spotlight plus suggestion arrow.
+Guardrail: avoid “mind control” framing.
+:::
+
+## Two interpretations of hypnosis
+
+:::: columns
+::: column
+Dissociation accounts
+- divided awareness
+- automatic responding
+:::
+
+::: column
+Response expectancy accounts
+- expectation effects
+- role and context
+:::
+::::
+
+::: notes
+Guardrail: hypnosis is not universally agreed to be one distinct state.
+:::
+
+## Meditation
+
+- Practices that train attention and awareness
+- Effects depend on practice type and context
+- Often involves self-regulation skills
+
+::: notes
+Visual cue: Attention spotlight becoming steadier over time.
+Guardrail: avoid overpromising effects.
+:::
+
+## Common confusions to avoid
+
+- Dreaming equals REM sleep
+- Depressant means sadness
+- Hypnosis equals mind control
+- Category labels guarantee one simple drug effect
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Circadian rhythm
+- Suprachiasmatic nucleus
+- Melatonin
+- EEG
+- REM sleep
+- Non-REM sleep
+- Sleep spindle
+- Tolerance
+- Dependence
+- Withdrawal
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Circadian rhythm: roughly daily timing pattern
+- Suprachiasmatic nucleus: timing coordinator for circadian rhythms
+- Melatonin: timing-related hormone signal associated with sleep
+- EEG: electrical activity measure used in sleep staging
+- REM sleep: stage with distinct physiology and more late-night proportion
+- Non-REM sleep: stages with deeper sleep more early in the night
+- Sleep spindle: brief burst pattern in one non-REM stage
+- Tolerance: reduced effect at the same dose over time
+- Dependence: adaptation with withdrawal risk if stopped
+- Withdrawal: symptoms after reducing or stopping
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 10
+
+- Consciousness changes across sleep and waking
+- Learning changes behavior through experience
+- Next: how association and consequences shape behavior
+
+::: notes
+Visual cue: State and attention feeding into learning capacity.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of consciousness
+- awareness
+- subjective experience
+- circadian rhythms
+- biological clock
+- sleep regulation
+- disruption
+- sleep debt
+- accumulated loss
+- cognitive and health effects
+- hypothalamus
+- brainstem
+- thalamus
+- sleep centers
+- melatonin
+- cortisol
+- growth hormone
+- sleep-related endocrine patterns
+- restorative theory
+- evolutionary theory
+- memory consolidation
+- activation-synthesis
+- cognitive/problem-solving
+- psychodynamic
+- REM vs NREM
+- physiological differences
+- dream likelihood
+- NREM stages
+- Stage 1–3 characteristics
+- depth of sleep
+- sleep and memory consolidation
+- stage-specific roles
+- dopamine
+- serotonin
+- GABA
+- glutamate
+- substance classes
+- psychoactive drugs
+- altered states
+- behavioral effects
+- subjective effects
+- hypnosis
+- meditation
+- compare hypnosis and meditation
+- attention
+- control
+- definition
+- subjective state
+- disordered states
+- coma
+- vegetative state
+- state vs nonstate theories
+- suggestion
+- divided consciousness
+- social role
+- meditation mechanisms
+- mindfulness
+- concentrative practice
+- attention regulation
+- sleep–wake cycle
+- sleep architecture
+- daily pattern
+- slow-wave sleep
+- sleep function
+- REM sleep
+- dreaming
+- cognitive/emotional functions
+- theories of sleep function
+- sleep deprivation
+- cognitive and health impacts
+- dream theories
+- cognitive problem-solving
+- drug action
+- neurotransmitters
+- recreational vs instrumental use
+- stimulant class
+- examples
+- arousal effects
+- depressant class
+- CNS slowing
+- hallucinogen class
+- perceptual distortions
+- sleep timing
+
+## Key terms
+
+- consciousness
+- awareness
+- subjective_experience
+- circadian_rhythms
+- biological_clock
+- sleep_wake_cycle
+- disruption
+- sleep_debt
+- sleep_deprivation
+- performance_impairment
+- health_risk
+- sleep_brain_areas
+- hypothalamus
+- brainstem
+- thalamus
+- sleep_hormones
+- melatonin
+- cortisol
+- circadian_hormones
+- sleep_theories
+- restoration
+- conservation
+- memory_consolidation
+- dream_theories
+- activation_synthesis
+- problem_solving
+- wish_fulfillment
+- REM_sleep
+- NREM_sleep
+- sleep_stages
+- NREM_stages
+- Stage1
+- Stage2
+- Stage3
+- slow_wave_sleep
+- sleep_memory
+- REM_consolidation
+- NREM_consolidation
+- neurotransmitter_systems
+- psychoactive_drugs
+- dopamine
+- serotonin
+- GABA
+- altered_states
+- behavior_change
+- experience
+- hypnosis
+- meditation
+- hypnosis_vs_meditation
+- attention_focus
+- voluntary_control
+- definition
+- disordered_consciousness
+- coma
+- vegetative_state
+- state_theory
+- nonstate_theory
+- suggestion
+- dissociation
+- mindfulness
+- concentrative_meditation
+- attention_regulation
+- sleep_architecture
+- circadian_influence
+- slow_wave
+- dreaming
+- emotion_processing
+- sleep_function
+- health_risks
+- drug_action
+- recreational_use
+- instrumental_use
+- stimulants
+- drug_classes
+- caffeine
+- nicotine
+- amphetamines
+- depressants
+- alcohol
+- benzodiazepines
+- barbiturates
+- hallucinogens
+- LSD
+- psilocybin
+- perceptual_change
+- sleep_cycle_regulation
+
+## Examples
+
+- One cognitive consequence of sleep deprivation, such as reduced attention or impaired learning
+- One emotion consequence of sleep deprivation, such as irritability or reduced regulation
+- One example of an altered state claim that should be bounded, such as “substances reveal truth” or “substances have no effect beyond choice”
+
+:::

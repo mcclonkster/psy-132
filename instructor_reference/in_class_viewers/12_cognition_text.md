@@ -1,11 +1,7 @@
-# 12_cognition
+# Topic 12 Cognition
 
-
----
 ## Why It Matters: Thinking and Intelligence
 
-- url_title:: "Why It Matters: Thinking and Intelligence"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-10/
 ![Three side by side images are shown. On the left is a person lying in the grass with a book, looking off into the distance. In the middle is a sculpture of a person sitting on rock, with chin rested on hand, and the elbow of that hand rested on knee. The third is a drawing of a person sitting cross-legged with his head resting on his hand, elbow on knee.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224819/CNX_Psych_07_00_Thinking.jpg)
 
 **Figure 1**. Thinking is an important part of our human experience, and one that has captivated people for centuries. Today, it is one area of psychological study. The 19th-century Girl with a Book by José Ferraz de Almeida Júnior, the 20th-century sculpture The Thinker by August Rodin, and Shi Ke’s 10th-century painting Huike Thinking all reflect the fascination with the process of human thought. (credit “middle”: modification of work by Jason Rogers; credit “right”: modification of work by Tang Zu-Ming)
@@ -24,8 +20,6 @@ Module References
 
 ## Introduction to Thinking and Problem-Solving
 
-- url_title:: "Introduction to Thinking and Problem-Solving"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-thinking-and-problem-solving/
 ## What you’ll learn to do: describe cognition and problem-solving strategies
 
 ![A man sitting down in "The Thinker" pose.](https://courses.lumenlearning.com/waymaker-psychology/wp-content/uploads/sites/855/2017/02/5507777269_7514e305a2_b.jpg)
@@ -45,8 +39,6 @@ Imagine all of your thoughts as if they were physical entities, swirling rapidly
 
 ## What Is Cognition? | Introduction to Psychology
 
-- url_title:: "What Is Cognition? | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/what-is-cognition/
 ### Learning Objectives
 
 -   Distinguish between concepts and prototypes
@@ -162,8 +154,6 @@ All rights reserved content
 
 ## Language and Thinking | Introduction to Psychology
 
-- url_title:: "Language and Thinking | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-language-and-thought/
 ### Learning Objectives
 
 -   Explain the relationship between language and thinking
@@ -213,8 +203,6 @@ All rights reserved content
 
 ## Pitfalls to Problem Solving | Introduction to Psychology
 
-- url_title:: "Pitfalls to Problem Solving | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-pitfalls-to-problem/
 ### Learning Objectives
 
 -   Explain some common roadblocks to effective problem solving
@@ -295,8 +283,6 @@ CC licensed content, Shared previously
 
 ## Solving Problems | Introduction to Psychology
 
-- url_title:: "Solving Problems | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/problem-solving/
 ### Learning Objectives
 
 -   Describe problem solving strategies, including algorithms and heuristics
@@ -376,8 +362,6 @@ Check your answers here.
 
 ## Psych in Real Life: Choice Blindness
 
-- url_title:: "Psych in Real Life: Choice Blindness"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-choice-blindness/
 ### Learning Objectives
 
 -   Explain some common roadblocks to effective problem solving, including choice blindness
@@ -525,8 +509,6 @@ All rights reserved content
 
 ## Putting It Together: Thinking and Intelligence
 
-- url_title:: "Putting It Together: Thinking and Intelligence"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-thinking-and-intelligence/
 ### Learning Objectives
 
 In this module, you learned to
@@ -561,8 +543,6 @@ Yet another interesting investigation into intelligence reveals that people have
 
 ## Discussion: Thinking and Intelligence | Introduction to Psychology
 
-- url_title:: "Discussion: Thinking and Intelligence | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-thinking-and-intelligence/
 **Step 1:** To view this discussion prompt, click on [Discussion: Thinking and Intelligence.](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-thinking-and-intelligence-2/)
 
 **Step 2:** Read the prompt and instructions, then post your response and comments inside of the discussion forum.
@@ -581,8 +561,6 @@ CC licensed content, Shared previously
 
 ## Cognitive Development | Introduction to Psychology
 
-- url_title:: "Cognitive Development | Introduction to Psychology"
-  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/lifespan-theories-cognitive-development/
 ### Learning Objectives
 
 -   Give examples of behavior and key vocabulary in each of Piaget’s stages of cognitive development

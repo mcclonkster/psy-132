@@ -1,0 +1,375 @@
+---
+title: "Topic 7: Sensation"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How sensory systems detect physical energy
+- How transduction turns energy into neural signals
+- How thresholds, adaptation, and basic coding work
+
+::: notes
+Visual cue: Stimulus energy → receptor → neural signal → basic feature code.
+:::
+
+## Sensation is detection and encoding
+
+- Sensation begins with physical energy
+- Receptors respond to specific energy types
+- The nervous system encodes basic features
+
+::: notes
+Guardrail: sensation is not interpretation. Interpretation is perception.
+:::
+
+## Transduction is the key step
+
+```{mermaid}
+flowchart LR
+E[Physical energy] --> R[Receptor]
+R --> N[Neural signal]
+N --> C[Feature code]
+```
+
+::: notes
+Caption cue: transduction converts energy into neural activity.
+:::
+
+## Thresholds describe detection limits
+
+- Absolute threshold: smallest detectable signal under defined conditions
+- Difference threshold: smallest detectable change
+- Thresholds depend on noise and decision criteria
+
+::: notes
+Visual cue: Signal bar with a detection line.
+Guardrail: thresholds are not fixed personal limits.
+:::
+
+## Weber’s law
+
+- Perceived change depends on proportion
+- Larger baselines require larger changes to notice
+- Difference thresholds scale with intensity
+
+::: notes
+Visual cue: Two bars showing equal proportional changes that feel equally noticeable.
+:::
+
+## Sensory adaptation
+
+- Responsiveness decreases with constant stimulation
+- Adaptation increases sensitivity to change
+- Adaptation does not mean input disappears
+
+::: notes
+Visual cue: Constant stimulus with declining response curve.
+:::
+
+## Signal detection reminder
+
+- Sensitivity reflects ability to detect a signal
+- Criterion reflects the decision threshold
+- Context and costs can shift criterion
+
+::: notes
+Visual cue: Two dials labeled Sensitivity and Criterion affecting “Detected.”
+Keep it simple; full treatment appears again in perception.
+:::
+
+## Vision starts in the retina
+
+- Rods: low-light sensitivity
+- Cones: detail and color
+- Receptors specialize for different conditions
+
+::: notes
+Visual cue: Retina sketch labeling rods and cones.
+:::
+
+## Color coding uses multiple mechanisms
+
+- Trichromatic coding supports early color processing
+- Opponent coding supports contrast processing
+- Mechanisms operate at different stages
+
+::: notes
+Visual cue: Three inputs → opponent channels diagram.
+Guardrail: do not present one theory as replacing the other.
+:::
+
+## Hearing starts with sound energy
+
+- Sound is pressure variation over time
+- Frequency supports pitch perception
+- Amplitude supports loudness perception
+
+::: notes
+Visual cue: Wave with frequency and amplitude labeled.
+:::
+
+## How the ear represents frequency
+
+- Place cues: different locations respond to different frequencies
+- Timing cues: firing patterns support frequency information
+- Cochlear mechanics constrain both
+
+::: notes
+Visual cue: Unrolled cochlea with a place gradient plus a timing cue.
+Keep language: “cues,” not “one correct theory.”
+:::
+
+## Touch and body-position senses
+
+- Mechanoreceptors detect pressure and vibration
+- Thermoreceptors detect temperature change
+- Proprioception supports body position awareness
+- Vestibular sense supports balance
+
+::: notes
+Visual cue: Body outline with sensors at skin, joints, inner ear.
+:::
+
+## Nociception and pain are not identical
+
+- Nociception detects potentially harmful stimuli
+- Pain experience depends on perception and context
+- The same input can feel different across situations
+
+::: notes
+Visual cue: Nociceptor input → brain processing → reported experience.
+Guardrail: avoid “pain is only in your head” framing.
+:::
+
+## Sensation versus perception
+
+:::: columns
+::: column
+Sensation
+- detect and encode
+- basic features
+- transduction and thresholds
+:::
+
+::: column
+Perception
+- organize and interpret
+- meaning and context
+- bottom-up and top-down interaction
+:::
+::::
+
+::: notes
+Visual cue: Two-step pipeline: sensation → perception.
+This slide sets the boundary for Topic 8.
+:::
+
+## Worked example: same stimulus, different experience
+
+- The stimulus can stay the same
+- Attention and context can change the experience
+- Interpretation begins in perception
+
+::: notes
+Visual cue: Same stimulus card with two different context frames.
+Use a simple example aloud: a cold pool versus an ice pack, or a loud sound in a concert versus in class.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Transduction
+- Absolute threshold
+- Difference threshold
+- Weber’s law
+- Sensory adaptation
+- Rod
+- Cone
+- Place cue
+- Proprioception
+- Vestibular sense
+- Nociception
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Transduction: energy becomes neural activity
+- Absolute threshold: smallest detectable signal under defined conditions
+- Difference threshold: smallest detectable change
+- Weber’s law: change is noticed by proportion
+- Sensory adaptation: reduced response to constant stimulation
+- Rod: receptor supporting low-light sensitivity
+- Cone: receptor supporting detail and color
+- Place cue: frequency information from cochlear location
+- Proprioception: sense of body position
+- Vestibular sense: sense of balance
+- Nociception: detection of potentially harmful stimuli
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 8
+
+- Sensation encodes input
+- Perception organizes input into experience
+- Next: bottom-up and top-down processing
+
+::: notes
+Visual cue: Sensation pipeline feeding into perception interpretation.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- absolute threshold
+- just-noticeable difference
+- sensitivity
+- frequency
+- amplitude
+- wavelength
+- complexity
+- eye structures
+- retina
+- optic nerve
+- basic pathway
+- photoreceptors
+- scotopic vs photopic
+- color vs detail
+- taste and smell roles
+- nutrient/toxin detection
+- touch
+- pain
+- temperature
+- balance
+- body position
+- movement
+- internal senses
+- sensation
+- transduction
+- receptor activation
+- neural coding
+- same threshold concepts as above
+- sensory gating
+- adaptation
+- habituation
+- lateral inhibition
+- purity as encoded by receptors
+- lens focusing
+- near/far vision
+- myopia
+- hyperopia
+- phototransduction
+- cones
+- color deficiencies
+- frequency and amplitude as encoded by auditory system
+- hair cell transduction
+- conductive vs sensorineural loss
+- taste
+- smell
+- odorant binding
+- olfactory receptor activation
+- taste bud activation
+- neural coding of tastants
+- mechanoreceptors
+- A-delta vs C fibers
+- pain signaling
+- semicircular canal and otolith hair cell activation
+
+## Key terms
+
+- absolute_threshold
+- difference_threshold
+- psychophysics
+- waveforms
+- frequency
+- amplitude
+- wavelength
+- complexity
+- visual_anatomy
+- cornea
+- lens
+- retina
+- optic_nerve
+- rods
+- cones
+- low_light_vision
+- color_vision
+- acuity
+- chemical_senses
+- taste
+- smell
+- chemoreception
+- somatosensation
+- nociception
+- thermoception
+- touch
+- vestibular
+- proprioception
+- kinesthesia
+- balance
+- sensation
+- transduction
+- receptors
+- neural_signal
+- sensory_filtering
+- sensory_adaptation
+- habituation
+- lateral_inhibition
+- light_characteristics
+- purity
+- accommodation
+- myopia
+- hyperopia
+- presbyopia
+- retinal_transduction
+- color_blindness
+- opsins
+- sound_characteristics
+- auditory_transduction
+- hair_cells
+- conductive_loss
+- sensorineural_loss
+- somesthetic_senses
+- pain
+- temperature
+- olfactory_transduction
+- odorants
+- olfactory_receptors
+- gustatory_transduction
+- taste_buds
+- taste_receptors
+- somatosensory_transduction
+- A_delta
+- C_fibers
+- vestibular_transduction
+- semicircular_canals
+- otoliths
+
+## Examples
+
+- An adaptation example, such as becoming less aware of a smell after a few minutes
+- A threshold example, such as why dim light limits what can be seen
+- A detection error example, such as missing a quiet sound in a loud environment
+
+:::

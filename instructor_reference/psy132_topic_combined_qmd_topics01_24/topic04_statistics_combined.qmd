@@ -1,0 +1,301 @@
+---
+title: "Topic 4: Statistics"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How we summarize patterns in data
+- How we quantify uncertainty from samples
+- How we interpret evidence without yes-or-no thinking
+
+::: notes
+Visual cue: Describe → uncertainty → interpretation pipeline.
+:::
+
+## Statistics manages variability
+
+- People vary
+- Samples vary
+- Estimates have uncertainty
+
+::: notes
+Visual cue: Many sample estimates clustered around a “true” value.
+Core line: uncertainty is expected, not a mistake.
+:::
+
+## The interpretation workflow
+
+```{mermaid}
+flowchart LR
+D[Design quality] --> S[Summary of data]
+S --> U[Uncertainty]
+U --> M[Magnitude]
+M --> I[Interpretation]
+I --> R[Replication]
+```
+
+::: notes
+Teaching move: Ask, “Which step is weakest here: design, uncertainty, or magnitude?”
+:::
+
+## Distributions first
+
+- A distribution shows the full pattern
+- Averages can hide important differences
+- Shape and spread matter
+
+::: notes
+Visual cue: Histogram with center and spread labels.
+:::
+
+## Center
+
+- Mean: average
+- Median: middle
+- Mode: most frequent
+
+::: notes
+Visual cue: One distribution with mean and median marked.
+Guardrail: mean is outlier-sensitive; median is outlier-resistant.
+:::
+
+## Spread
+
+- Spread describes variability
+- Spread changes overlap between groups
+- Spread changes uncertainty of estimates
+
+::: notes
+Visual cue: Two distributions with the same mean but different spread.
+:::
+
+## Standard deviation
+
+- Typical distance from the mean
+- Larger standard deviation means more spread
+- Standard deviation describes the data, not the estimate
+
+::: notes
+Visual cue: Points around a mean with distance arrows.
+Guardrail: standard deviation is not the same as standard error.
+:::
+
+## Standard error
+
+- Standard error is variability of an estimate across samples
+- Standard error shrinks as sample size increases
+- Standard error supports uncertainty reasoning
+
+::: notes
+Visual cue: Sampling distribution of the mean with a labeled standard error.
+Guardrail: standard error is about the estimate, not the raw data.
+:::
+
+## Confidence intervals
+
+- A confidence interval expresses uncertainty around an estimate
+- Wider intervals mean more uncertainty
+- Intervals support interpretation beyond “significant or not”
+
+::: notes
+Visual cue: Point estimate with an interval bar.
+Teaching move: ask students what range seems plausible, not whether it “passed.”
+:::
+
+## Effect size
+
+- Effect size describes magnitude
+- Magnitude supports practical interpretation
+- Magnitude is distinct from significance
+
+::: notes
+Visual cue: Two group means separated by a labeled distance.
+Guardrail: a small effect can be statistically significant in a large sample.
+:::
+
+## Correlation
+
+- Correlation describes association
+- Correlation has direction and strength
+- Correlation does not establish causation
+
+::: notes
+Visual cue: Two scatterplots with different strengths.
+Keep the reminder brief; causal logic is Topic 3.
+:::
+
+## Hypothesis tests compare models
+
+- Null model: no effect in a specified way
+- Alternative model: competing pattern
+- Tests ask how compatible the data are with the null
+
+::: notes
+Visual cue: Two model cards labeled Null and Alternative.
+Guardrail: “null” is a model, not the world.
+:::
+
+## What a p-value is and is not
+
+- It is computed under a specified null model
+- It reflects how extreme the results are under that model
+- It is not effect size or importance
+
+::: notes
+Visual cue: Tail area on a curve labeled “as extreme or more extreme.”
+Guardrail: p-value is not the probability the hypothesis is true.
+:::
+
+## Statistical significance is not importance
+
+- Statistical significance concerns a null model
+- Importance concerns magnitude and consequences
+- Generalizability depends on sampling and context
+
+::: notes
+Visual cue: “significant” stamp next to a tiny effect bar, plus a separate “importance” box.
+:::
+
+## Type one and type two errors
+
+:::: columns
+::: column
+False positive
+- Conclude an effect when none exists
+- Can follow from noisy evidence and thresholds
+:::
+
+::: column
+False negative
+- Miss an effect that exists
+- Common when power is low
+:::
+::::
+
+::: notes
+Visual cue: 2×2 grid (reality vs decision) with the two error types labeled.
+:::
+
+## Statistical power
+
+- Power is the chance to detect an effect if it exists
+- Power depends on sample size, variability, and effect size
+- Low power increases missed effects and unstable estimates
+
+::: notes
+Visual cue: Three sliders (sample size, variability, effect size) feeding into a power meter.
+:::
+
+## Putting it together
+
+- Use distributions to see patterns
+- Use intervals to express uncertainty
+- Use effect sizes to interpret magnitude
+- Use replication to increase confidence
+
+::: notes
+Visual cue: Four inputs feeding into one interpretation box.
+:::
+
+## Worked example: same mean, different conclusion
+
+- Two groups can have the same mean
+- Different spread can change overlap
+- Interpretation should include spread and uncertainty
+
+::: notes
+Visual cue: Two distributions with equal means but different standard deviations.
+Teaching move: ask, “What does overlap imply about prediction for individuals?”
+:::
+
+## Quick check
+
+Choose the best tool for the question
+
+- Typical value: mean or median
+- Data variability: standard deviation or standard error
+- Estimate uncertainty: confidence interval or mean
+- Magnitude: effect size or p-value
+- Association: correlation or experiment
+
+::: notes
+Delivery: students commit first, then you reveal.
+Use the discriminating cue: data vs estimate, magnitude vs uncertainty, association vs cause.
+:::
+
+## Quick check answers
+
+- Typical value: mean or median, depending on outliers
+- Data variability: standard deviation
+- Estimate uncertainty: confidence interval
+- Magnitude: effect size
+- Association: correlation, not causation
+
+::: notes
+Keep each answer to one discriminating cue.
+:::
+
+## Bridge to Topic 5
+
+- Statistics supports interpretation
+- Ethics limits what research should do
+- Next: consent, risk, and oversight
+
+::: notes
+Visual cue: Evidence and ethics as two pillars supporting responsible research.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- statistical association vs causal relationships
+- limits of inference
+- strength and direction of association
+- r interpretation
+- misuse of correlation
+- third variables
+- directionality problems
+- illusory correlation
+- pattern seeking
+- bias in interpreting data
+
+## Key terms
+
+- correlation_vs_causation
+- association
+- causality
+- inference_limits
+- correlation_coefficient
+- r_value
+- strength
+- direction
+- correlation_limitations
+- causality_warning
+- third_variable
+- directionality
+- illusory_correlation
+- patternicity
+- statistical_bias
+
+## Examples
+
+- Why “average” does not mean “typical for everyone”
+- Why a statistically significant difference may still be small or not practically meaningful
+- How a graph can be misread by ignoring axes, scales, or grouping
+
+:::

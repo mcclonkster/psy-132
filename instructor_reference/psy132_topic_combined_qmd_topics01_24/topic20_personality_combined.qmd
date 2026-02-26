@@ -1,0 +1,556 @@
+---
+title: "Topic 20: Personality"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Personality as relatively stable patterns
+- Trait approaches and the five-factor model
+- Major theory families and assessment
+- Person-situation interaction
+
+::: notes
+Visual cue: Traits + situation → behavior.
+:::
+
+## Personality is a pattern
+
+- Patterns of thinking, feeling, and behaving
+- Consistency across time, with situational variation
+- Probabilistic prediction, not certainty
+
+::: notes
+Guardrail: traits describe tendencies, not destiny.
+:::
+
+## Person and situation together
+
+```{mermaid}
+flowchart LR
+T[Traits] --> B[Behavior]
+S[Situation strength] --> B
+B --> F[Feedback over time]
+F --> T
+```
+
+::: notes
+Caption cue: situations can amplify or suppress trait expression.
+:::
+
+## Trait approach
+
+- Describes dimensions of personality
+- Predicts broad tendencies
+- Depends on measurement quality
+
+::: notes
+Visual cue: Trait sliders.
+:::
+
+## Five-factor model
+
+- Openness to experience
+- Conscientiousness
+- Extraversion
+- Agreeableness
+- Neuroticism
+
+::: notes
+Visual cue: Five labeled sliders.
+Guardrail: avoid stereotypes and value judgments.
+:::
+
+## Openness
+
+- interest in novelty and ideas
+- preference for variety
+- imagination and curiosity
+
+::: notes
+Visual cue: exploration icons.
+:::
+
+## Conscientiousness
+
+- organization and follow-through
+- self-control and planning
+- reliability in routine demands
+
+::: notes
+Visual cue: plan → action → completion.
+:::
+
+## Extraversion
+
+- social energy and engagement
+- assertiveness and activity
+- positive affect in social settings
+
+::: notes
+Visual cue: social engagement dial.
+:::
+
+## Agreeableness
+
+- cooperation and trust
+- empathy and warmth
+- reduced conflict seeking
+
+::: notes
+Visual cue: collaboration icon.
+:::
+
+## Neuroticism
+
+- sensitivity to negative emotion
+- stress reactivity
+- higher risk of distress under load
+
+::: notes
+Visual cue: stress reactivity dial.
+Guardrail: not a diagnosis.
+:::
+
+## Temperament
+
+- early reactivity differences
+- early regulation differences
+- some stability with change across development
+
+::: notes
+Visual cue: two dials labeled reactivity and regulation.
+:::
+
+## Situation strength
+
+- strong situations constrain behavior
+- weak situations allow more trait expression
+- context improves prediction
+
+::: notes
+Visual cue: rules and constraints box shrinking behavior options.
+Anchor: Mischel as a person-situation emphasis.
+:::
+
+## Major theory families
+
+- Psychodynamic
+- Humanistic
+- Behavioral
+- Social cognitive
+
+::: notes
+Visual cue: Four mechanism cards answering “why this pattern happens.”
+:::
+
+## Psychodynamic approaches
+
+- emphasize unconscious processes and conflict
+- highlight defense mechanisms and recurring themes
+- evidence often comes from clinical patterns
+
+::: notes
+Guardrail: distinguish inference from direct observation.
+Visual cue: theme across time → defensive pattern → behavior.
+:::
+
+## Humanistic approaches
+
+- emphasize meaning and growth
+- focus on self-concept
+- highlight autonomy and values
+
+::: notes
+Visual cue: values → choices → growth path.
+:::
+
+## Behavioral approaches
+
+- emphasize learning history
+- reinforcement and punishment shape patterns
+- environment change can change behavior
+
+::: notes
+Visual cue: antecedent → behavior → consequence loop.
+:::
+
+## Social cognitive approaches
+
+- emphasize cognition in context
+- expectations and goals matter
+- person and environment influence each other
+
+::: notes
+Visual cue: reciprocal determinism triangle.
+:::
+
+## Reciprocal determinism
+
+```{mermaid}
+flowchart LR
+P[Person factors] <--> E[Environment]
+E <--> B[Behavior]
+B <--> P
+```
+
+::: notes
+Caption cue: people shape environments and environments shape people over time.
+:::
+
+## Measuring personality
+
+- tools vary in evidence quality
+- good measures need reliability and validity
+- interpretation depends on purpose
+
+::: notes
+Visual cue: tool → reliability → validity → interpretation.
+:::
+
+## Self-report inventories
+
+- efficient summary of typical patterns
+- vulnerable to social desirability
+- limited by self-knowledge
+
+::: notes
+Visual cue: questionnaire → profile → interpretation limits.
+:::
+
+## Projective tests
+
+- ambiguous stimuli invite interpretation
+- scoring consistency can vary widely
+- evidence support varies by method
+
+::: notes
+Guardrail: do not treat projective tests as uniformly evidence-based.
+Visual cue: ambiguous stimulus → many interpretations → need strong scoring.
+:::
+
+## Personality is not diagnosis
+
+- traits do not imply a disorder
+- distress and impairment are separate questions
+- keep boundaries clear with abnormal topics
+
+::: notes
+Visual cue: traits circle and disorder circle overlap but do not equal.
+:::
+
+## Worked example: behavior in two situations
+
+Example: speaking up in class
+
+- weak situation: more trait expression shows
+- strong situation: rules and norms shape behavior
+- both trait and context matter
+
+::: notes
+Teaching move: ask students to name one situational constraint and one trait tendency.
+:::
+
+## Common confusions to avoid
+
+- traits determine behavior in all contexts
+- one theory explains all personality
+- all tests are equally accurate
+- projective tests reveal hidden truth
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Openness
+- Conscientiousness
+- Extraversion
+- Agreeableness
+- Neuroticism
+- Situation strength
+- Reciprocal determinism
+- Self-report inventory
+- Projective test
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Openness: interest in novelty and ideas
+- Conscientiousness: planning and follow-through
+- Extraversion: social engagement and energy
+- Agreeableness: cooperation and trust
+- Neuroticism: negative emotion sensitivity and stress reactivity
+- Situation strength: rules and constraints limit behavioral options
+- Reciprocal determinism: person, environment, and behavior influence each other
+- Self-report inventory: questionnaire-based trait profile with self-report limits
+- Projective test: ambiguous stimuli with variable scoring evidence
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 21
+
+- Personality describes stable tendencies and patterns
+- Gender involves identity, roles, and norms in context
+- Next: gender-related development and social meaning
+
+::: notes
+Visual cue: traits and context feeding into identity and norms.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of personality as enduring patterns of thinking
+- feeling
+- behaving
+- early models (psychodynamic
+- behaviorist
+- humanistic) of how personality forms
+- unconscious conflict
+- early experiences
+- psychic determinism
+- Freud’s structural model
+- roles of id
+- ego
+- superego
+- ego defenses (repression
+- projection
+- etc.)
+- anxiety reduction
+- oral
+- anal
+- phallic
+- latency
+- genital stages
+- Adler’s inferiority and compensation
+- psychosexual vs psychosocial stages
+- lifespan vs early focus
+- collective unconscious
+- archetypes
+- Jungian contributions
+- Horney’s critique
+- basic anxiety
+- cultural reinterpretation
+- personality as learned responses
+- reinforcement history
+- cognitive schemas
+- personal constructs
+- beliefs
+- reciprocal determinism
+- observational learning
+- self-efficacy
+- self-actualization
+- hierarchy of needs
+- self-concept
+- unconditional positive regard
+- twin study
+- heritability of traits
+- genetic influence
+- easy/difficult/slow-to-warm
+- early temperament profiles
+- traits as adaptations
+- reproductive and survival advantages
+- factor-analytic trait models
+- 16PF
+- Eysenck’s three-factor model
+- OCEAN
+- trait descriptions
+- profiles
+- MMPI
+- clinical scales
+- personality assessment
+- Rorschach
+- TAT
+- projective techniques
+- self-regulation
+- goal pursuit
+- impulse control
+- outcomes
+- openness
+- persistence
+- tolerance of ambiguity
+- independence
+- risk-taking
+- personality vs temperament
+- vs self-concept
+- vs self-esteem
+- unconscious conflicts
+- psychodynamic mechanisms
+- learning
+- reinforcement
+- modeling as sources of personality
+- subjective experience
+- traits as relatively stable dispositions
+- Allport’s trait distinctions
+- Cattell’s factor-analytic work
+- OCEAN vs HEXACO
+- honesty–humility factor
+- type vs trait
+- MBTI-style classifications
+- limitations
+- self-report
+- informant report
+- behavioral observation
+- projective
+- heritability estimates
+- shared vs non-shared environment
+- leadership development
+- trait and skill enhancement
+- grit (persistence
+- passion)
+- self-change strategies
+
+## Key terms
+
+- personality_definition
+- traits
+- patterns
+- individual_differences
+- early_personality_theories
+- development
+- psychodynamic
+- humanistic
+- behaviorist
+- psychodynamic_assumptions
+- unconscious
+- early_experience
+- conflict
+- id
+- ego
+- superego
+- structural_model
+- defense_mechanisms
+- repression
+- projection
+- displacement
+- denial
+- psychosexual_stages
+- oral
+- anal
+- phallic
+- latency
+- genital
+- inferiority_complex
+- Adler
+- compensation
+- Erikson_vs_Freud
+- psychosexual
+- psychosocial
+- lifespan
+- Jung
+- collective_unconscious
+- archetypes
+- Horney
+- penis_envy_revision
+- basic_anxiety
+- culture
+- behaviorist_personality
+- learning_history
+- reinforcement
+- cognitive_personality
+- schemas
+- personal_constructs
+- social_cognitive_personality
+- Bandura
+- reciprocal_determinism
+- self_efficacy
+- Maslow_personality
+- Rogers
+- self_actualization
+- self_concept
+- twin_study_personality
+- heritability
+- genetics
+- temperament_types
+- Thomas_Chess
+- infant_temperament
+- evolutionary_personality
+- adaptation
+- trait_functions
+- Cattell
+- Eysenck
+- trait_theories
+- factor_analysis
+- Big_Five
+- OCEAN
+- high_low_examples
+- trait_profiles
+- MMPI
+- personality_assessment
+- clinical_scales
+- projective_tests
+- Rorschach
+- TAT
+- self_regulation_definition
+- goals
+- impulse_control
+- outcomes
+- creative_personality
+- openness
+- risk_taking
+- persistence
+- personality_vs_temperament
+- self_esteem
+- psychoanalytic_personality
+- behavioral_social_learning_personality
+- modeling
+- humanistic_personality
+- personality_trait_definition
+- stability
+- disposition
+- trait_history
+- Allport
+- Big_Five_vs_HEXACO
+- trait_models
+- honesty_humility
+- personality_types
+- MBTI
+- type_vs_trait
+- weaknesses
+- personality_measure_methods
+- self_report
+- informant
+- behavioral
+- projective
+- behavioral_genetics_personality
+- shared_environment
+- nonshared_environment
+- leadership_plan
+- skills
+- self_development
+- grit_plan
+- perseverance
+- self_regulation
+- long_term_goals
+
+## Examples
+
+- A scenario where the same person behaves differently across contexts, showing situation effects
+- A scenario where a trait predicts tendency but does not guarantee behavior
+- One example of measurement limitation, such as social desirability in self-report
+
+:::

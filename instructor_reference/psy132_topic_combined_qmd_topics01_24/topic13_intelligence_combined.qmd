@@ -1,0 +1,430 @@
+---
+title: "Topic 13: Intelligence"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  pptx: default
+---
+
+## What this topic covers
+
+- How intelligence is defined and measured
+- How test scores get meaning from norms
+- What reliability, validity, and fairness constrain
+
+::: notes
+Visual cue: Define → measure → interpret pipeline, with “limits” highlighted.
+:::
+
+## Intelligence is a construct
+
+- Used to describe patterns of cognitive performance
+- Not directly observed like height or weight
+- Definitions differ across theories
+
+::: notes
+Guardrail: do not treat intelligence as a single substance that people “have” in fixed quantity.
+:::
+
+## How test interpretation works
+
+```{mermaid}
+flowchart LR
+T[Test performance] --> S[Score]
+S --> N[Norm group comparison]
+N --> R[Reliability]
+R --> V[Validity for this use]
+V --> I[Interpretation limits]
+```
+
+::: notes
+Caption cue: scores gain meaning through norms and evidence, not raw points alone.
+:::
+
+## Standardization
+
+- Same instructions and timing
+- Same scoring rules
+- Supports fair comparison
+
+::: notes
+Visual cue: Checklist labeled instructions, timing, scoring.
+:::
+
+## Norms and normative samples
+
+- Norms describe typical performance in a reference group
+- Norm groups define what a score means
+- Meaning comes from comparison, not raw points
+
+::: notes
+Visual cue: Distribution curve with one score marked.
+Guardrail: always name the population the norm group represents.
+:::
+
+## Standard scores and percentiles
+
+- Standard scores compare you to the norm group
+- Percentiles show relative standing
+- Percentiles are not equal-interval measures
+
+::: notes
+Visual cue: One distribution with a standard score marker and a percentile marker.
+:::
+
+## Reliability is consistency
+
+- More reliability means less measurement noise
+- Low reliability weakens interpretation
+- Reliability does not guarantee validity
+
+::: notes
+Visual cue: Tight cluster of repeated measures versus scattered measures.
+:::
+
+## Validity supports the interpretation
+
+- Validity is evidence for the intended meaning of a score
+- Construct validity supports the interpretation
+- Predictive validity supports forecasting outcomes
+
+::: notes
+Visual cue: Claim → evidence → use.
+Guardrail: validity is about a specific use, not a permanent label.
+:::
+
+## General intelligence factor
+
+- Many cognitive tasks correlate positively
+- Factor models summarize shared variance
+- A factor is a statistical summary, not a single “thing”
+
+![Components of General Intelligence](https://www.verywellmind.com/thmb/nYbuwLL4-6nske9N7mn3lJgGhiQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-general-intelligence-2795210_final2-5b3f90eb46e0fb005bb17b85.png)
+
+::: notes
+Visual cue: Many tasks feeding into a shared factor plus smaller specific factors.
+:::
+
+## Cattell-Horn-Carroll (CHC) model
+
+![CHC Theory of Cognitive Abilities](https://assessingpsyche.wordpress.com/wp-content/uploads/2013/12/chctheory.png)
+
+## Factor analysis
+
+- Models patterns among many measures
+- Estimates underlying dimensions that explain correlations
+- Depends on what measures are included
+
+::: notes
+Visual cue: Correlation matrix becoming fewer factors.
+Guardrail: factors reflect the data and task set, not a discovered organ.
+:::
+
+## Fluid and crystallized intelligence
+
+:::: columns
+::: column
+Fluid
+- novel reasoning
+- pattern detection
+- minimal reliance on learned knowledge
+:::
+
+::: column
+Crystallized
+- accumulated knowledge
+- vocabulary and facts
+- shaped by education and experience
+:::
+::::
+
+::: notes
+Visual cue: Two profiles that can differ across people and across age.
+:::
+
+## Profiles matter
+
+- Similar total scores can reflect different strengths
+- Interpretation depends on task demands
+- Strengths can change across development
+
+::: notes
+Visual cue: Two score profiles with different peaks.
+Guardrail: avoid “one number tells the whole story” framing.
+:::
+
+## Competing frameworks and measurement
+
+- Some theories focus on one broad factor plus specifics
+- Some emphasize multiple abilities
+- Measurement support varies across frameworks
+
+::: notes
+Visual cue: Three model cards with a “measurement support varies” caption.
+Guardrail: do not present popular frameworks as equally supported by psychometrics.
+:::
+
+## Individual differences have multiple causes
+
+- Genetic variation contributes to differences
+- Environment and development contribute to differences
+- Interaction matters
+
+::: notes
+Visual cue: Genes ↔ environment ↔ development triangle.
+:::
+
+## Heritability
+
+- Describes variation in a population under specific conditions
+- Does not describe individuals
+- Does not mean immutability
+
+::: notes
+Visual cue: Population-level bar labeled “variation explained,” with a warning: not individuals.
+:::
+
+## Group differences require caution
+
+- Opportunity and environment differ across groups
+- Measurement choices can distort comparisons
+- Single-cause explanations are usually inaccurate
+
+::: notes
+Guardrail: do not treat group differences as proof of innate superiority or inferiority.
+Visual cue: Multiple pathways into score differences: access, schooling, stress, measurement.
+:::
+
+## Intellectual disability
+
+- Involves intellectual functioning
+- Involves adaptive functioning
+- Has developmental onset
+
+::: notes
+Visual cue: Two pillars labeled intellectual and adaptive, plus a “developmental onset” tag.
+Guardrail: not defined by a single score cutoff alone.
+:::
+
+## Giftedness
+
+- Identification depends on criteria and context
+- Profiles can vary widely
+- Support needs vary across students
+
+::: notes
+Visual cue: Multiple pathways into identification: tests, performance, portfolios.
+:::
+
+## Common confusions to avoid
+
+- Scores are destiny
+- Heritability applies to individuals
+- Reliability means validity
+- Percentile ranks are equal-interval
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Standardization
+- Normative sample
+- Percentile rank
+- Reliability
+- Construct validity
+- Predictive validity
+- General intelligence factor
+- Factor analysis
+- Fluid intelligence
+- Crystallized intelligence
+- Heritability
+- Adaptive functioning
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Standardization: same procedure and scoring
+- Normative sample: reference group used to interpret scores
+- Percentile rank: relative standing in the norm group
+- Reliability: consistency of measurement
+- Construct validity: evidence supporting intended meaning
+- Predictive validity: evidence supporting forecasting outcomes
+- General intelligence factor: shared variance across tasks
+- Factor analysis: modeling dimensions that explain correlations
+- Fluid intelligence: novel reasoning and pattern detection
+- Crystallized intelligence: accumulated knowledge and skills
+- Heritability: population variation under conditions
+- Adaptive functioning: everyday functioning skills and independence
+
+::: notes
+Keep explanations short and discriminating.
+:::
+
+## Bridge to Topic 14
+
+- Intelligence involves measurement and interpretation
+- Language is a structured system for communication and thought
+- Next: language components and development
+
+::: notes
+Visual cue: Measurement and reasoning feeding into language use.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of intelligence
+- cognitive ability
+- problem solving
+- Sternberg’s analytical
+- creative
+- practical intelligence
+- comparison of g
+- multiple intelligences
+- triarchic
+- etc.
+- emotional abilities
+- perception
+- understanding
+- regulation of emotion
+- creativity as originality and usefulness
+- creative ability
+- test development
+- norming
+- reliability
+- validity
+- Binet
+- Terman
+- Wechsler
+- historical context
+- uses for placement
+- diagnosis
+- research
+- benefits
+- heritability
+- environmental influences
+- nature–nurture
+- general intelligence factor
+- Spearman
+- underlying ability
+- cultural bias
+- multiple criteria
+- practical vs academic
+- context dependence
+- standardization
+- norms
+- test bias
+- cultural loading
+- fairness
+- tests of general ability vs specific aptitudes
+- WAIS
+- Stanford–Binet
+- subtests and abilities
+- IQ scores
+- deviation IQ
+- normal distribution
+- high IQ/gifted criteria
+- academic and social outcomes
+- heritability estimates
+- twin and adoption studies
+- schooling
+- SES
+- nutrition
+- enriched/deprived environments
+
+## Key terms
+
+- intelligence_definition
+- cognitive_ability
+- problem_solving
+- triarchic_theory
+- analytical_intelligence
+- creative_intelligence
+- practical_intelligence
+- intelligence_theories
+- g_theory
+- multiple_intelligences
+- triarchic
+- emotional_intelligence
+- EI_components
+- emotion_perception
+- regulation
+- creativity_definition
+- originality
+- usefulness
+- intelligence_tests
+- test_development
+- norming
+- reliability
+- validity
+- IQ_history
+- Binet
+- Terman
+- Wechsler
+- intelligence_testing_purposes
+- placement
+- diagnosis
+- prediction
+- intelligence_heritability
+- environment_effects
+- nature_nurture
+- g_factor
+- general_intelligence
+- Spearman
+- defining_intelligence_challenges
+- culture
+- multiple_criteria
+- psychometric_properties
+- standardization
+- norms
+- culture_fair_tests
+- test_bias
+- cultural_loading
+- fairness
+- g_vs_aptitude
+- aptitude_tests
+- WAIS
+- Stanford_Binet
+- intelligence_subtests
+- abilities
+- IQ_scores
+- standard_scores
+- normal_distribution
+- mean_SD
+- giftedness
+- identification
+- outcomes
+- high_ability
+- intelligence_genetics
+- twin_studies
+- heritability
+- intelligence_environment
+- schooling
+- SES
+- enrichment
+- deprivation
+
+## Examples
+
+- Why a test score can be useful while still having limitations
+- One way context can affect performance, such as stress, unfamiliarity, or unequal preparation opportunities
+- One reason group averages do not justify conclusions about individuals
+
+:::

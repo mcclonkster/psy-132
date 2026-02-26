@@ -1,0 +1,537 @@
+---
+title: "Topic 24: Therapies"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Major treatment approaches
+- Evidence-based practice and outcome evaluation
+- Matching care to needs, context, and access
+- Common confusions about treatment
+
+::: notes
+Visual cue: Approach + evidence + fit triangle.
+:::
+
+## Treatment includes multiple approaches
+
+- Psychotherapy
+- Medication
+- Combined care
+
+::: notes
+Guardrail: one approach is not best for all problems.
+Visual cue: Three pathways feeding into one plan.
+:::
+
+## Evidence-based practice
+
+```{mermaid}
+flowchart TB
+E[Best research evidence] --> P[Practice decision]
+C[Clinical expertise] --> P
+V[Patient values and context] --> P
+```
+
+::: notes
+Caption cue: evidence-based practice integrates evidence, expertise, and values in context.
+:::
+
+## What outcomes we judge
+
+- Symptom reduction
+- Functional improvement
+- Quality of life
+
+::: notes
+Visual cue: Three outcome bars that can change independently.
+:::
+
+## Efficacy and effectiveness
+
+:::: columns
+::: column
+Efficacy
+- works in controlled studies
+- strong internal validity
+:::
+
+::: column
+Effectiveness
+- works in routine settings
+- context and access matter
+:::
+::::
+
+::: notes
+Visual cue: Controlled trial vs routine care setting.
+Guardrail: do not assume trial results transfer perfectly.
+:::
+
+## Matching care to needs
+
+- Severity and risk
+- Comorbidity
+- Functional impairment
+- Preference and access constraints
+
+::: notes
+Visual cue: Triage board: risk, impairment, comorbidity, access.
+:::
+
+## Psychotherapy targets patterns and skills
+
+- Approaches differ in mechanisms
+- Skill practice is often central
+- Common factors also matter
+
+::: notes
+Visual cue: Skills practice cycle: learn, practice, apply, review.
+:::
+
+## Common factors
+
+- Therapeutic alliance
+- Expectations and hope
+- Structure and practice
+
+::: notes
+Guardrail: common factors do not mean technique never matters.
+:::
+
+## Therapeutic alliance
+
+- Shared goals
+- Agreement on tasks
+- Collaborative relationship
+
+::: notes
+Visual cue: Client and therapist linking goals, tasks, bond.
+:::
+
+## Major psychotherapy approaches
+
+- Behavioral therapy
+- Cognitive therapy
+- Cognitive behavioral therapy
+- Psychodynamic therapy
+- Humanistic and client-centered therapy
+- Group and family therapy
+
+::: notes
+Visual cue: Menu of approaches with one mechanism keyword you say aloud for each.
+:::
+
+## Behavioral therapy and exposure
+
+- Targets avoidance and behavior patterns
+- Uses learning principles
+- Exposure reduces avoidance that maintains fear
+
+::: notes
+Visual cue: Fear cue → safe exposure → reduced avoidance loop.
+Guardrail: exposure is planned, gradual, and monitored.
+:::
+
+## Cognitive therapy and CBT
+
+- Cognitive therapy targets thought patterns
+- CBT targets thought-behavior cycles
+- Practice supports generalization
+
+::: notes
+Visual cue: Situation → thought → emotion → behavior cycle with tools.
+:::
+
+## Psychodynamic and humanistic approaches
+
+- Psychodynamic emphasizes recurring themes and conflict
+- Humanistic emphasizes meaning and self-concept
+- Approaches differ in goals and methods
+
+::: notes
+Visual cue: Two cards with themes and values highlighted.
+Guardrail: keep claims tied to goals and evidence, not certainty.
+:::
+
+## Group and family therapy
+
+- Groups provide support and practice
+- Family therapy targets interaction cycles
+- Context can maintain problems
+
+::: notes
+Visual cue: Group circle and family interaction loop.
+Guardrail: confidentiality limits exist in groups.
+:::
+
+## Medication
+
+- Can reduce symptom intensity for some conditions
+- Effects depend on condition and person factors
+- Often paired with psychosocial support
+
+::: notes
+Guardrail: medication is not a single “cure” for underlying causes.
+Visual cue: Symptom dial reduced plus skills and support lane.
+:::
+
+## Placebo and expectancy effects
+
+- Context and expectations can contribute to outcomes
+- Improvement is not fake
+- Effects do not mean all treatments are equivalent
+
+::: notes
+Visual cue: Expectancy lane alongside active mechanism lane.
+:::
+
+## Stepped care
+
+- Start with appropriate intensity
+- Adjust based on response
+- Combine approaches when indicated
+
+::: notes
+Visual cue: Step ladder with an adjust loop.
+:::
+
+## Access and structural barriers
+
+- Cost and insurance
+- Availability and wait times
+- Transportation and scheduling
+- Language access and trust
+
+::: notes
+Visual cue: Barriers funnel reducing entry to care.
+:::
+
+## Worked example: choosing a plan
+
+Scenario: panic symptoms and avoidance
+
+- Evidence suggests exposure-based CBT can help
+- Medication may reduce intensity for some people
+- Choice depends on severity, preference, and access
+
+::: notes
+Teaching move: ask students which decision factors change the plan (risk, comorbidity, resources).
+:::
+
+## Common confusions to avoid
+
+- One therapy works best for everything
+- Common factors mean technique never matters
+- Medication always fixes the cause
+- “Works in a study” guarantees the same outcome for everyone
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Evidence-based practice
+- Efficacy
+- Effectiveness
+- Therapeutic alliance
+- Common factors
+- Exposure
+- Cognitive behavioral therapy
+- Stepped care
+- Placebo effects
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Evidence-based practice: integrate evidence, expertise, and values
+- Efficacy: works in controlled studies
+- Effectiveness: works in routine settings
+- Therapeutic alliance: goals, tasks, and collaboration
+- Common factors: shared contributors across therapies
+- Exposure: planned contact that reduces avoidance
+- Cognitive behavioral therapy: skills targeting thought-behavior cycles
+- Stepped care: adjust intensity based on response
+- Placebo effects: context and expectations contribute to outcomes
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Course close
+
+- Use methods to judge claims
+- Use context to interpret results
+- Use evidence and fit to choose actions
+
+::: notes
+Visual cue: Evidence, context, and fit as the course wrap triad.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- historical treatments
+- asylums
+- exorcism
+- moral treatment
+- modern care
+- movement from hospitals to community care
+- policy change
+- consequences
+- outpatient
+- inpatient
+- community
+- integrated care
+- telehealth
+- consent
+- commitment
+- legal criteria
+- patient rights
+- talk therapies vs medication/medical procedures
+- psychodynamic
+- behavioral
+- cognitive
+- humanistic
+- systems
+- antidepressants
+- antipsychotics
+- mood stabilizers
+- anxiolytics
+- indications
+- individual
+- group
+- couple
+- family
+- intensive
+- stepped care
+- universality
+- support
+- modeling
+- cost
+- efficiency
+- abstinence or harm reduction
+- relapse prevention
+- functioning
+- common factors
+- therapeutic alliance
+- evidence-based techniques
+- integrated vs sequential treatment
+- prioritization
+- culturally informed care
+- community context
+- client worldview
+- stigma
+- access
+- language
+- distrust
+- cultural mismatch
+- assessment
+- diagnosis
+- psychotherapy
+- consultation
+- CAM definition
+- examples
+- safety/evidence concerns
+- missed sessions
+- poor adherence to meds
+- dropout
+- engagement strategies
+- premodern practices
+- confinement
+- religious interventions
+- free association
+- dream analysis
+- transference
+- insight
+- directive vs nondirective
+- insight vs action
+- time-limited vs open-ended
+- individual vs group
+- structured vs flexible
+- alliance
+- empathy
+- expectations
+- technique
+- exposure
+- reinforcement
+- skills training
+- behavior change
+- systematic desensitization
+- exposure/response prevention
+- aversion
+- token economies
+- contingency management
+- behavioral activation
+- cognitive restructuring
+- identifying automatic thoughts
+- schema work
+- client-centered
+- unconditional positive regard
+- congruence
+- examples such as person-centered
+- Gestalt
+- existential
+- pharmacotherapy
+- ECT
+- psychosurgery or similar
+- inpatient care
+- partial programs
+- community support systems
+- recognizing distress
+- referral
+- boundaries
+- self-help steps
+- accessing services
+- overcoming barriers
+
+## Key terms
+
+- treatment_history
+- asylums
+- exorcism
+- moral_treatment
+- modern_care
+- deinstitutionalization
+- community_care
+- policy
+- outcomes
+- service_delivery_today
+- outpatient
+- inpatient
+- community
+- integrated_care
+- voluntary_treatment
+- involuntary_treatment
+- commitment
+- consent
+- psychotherapy_vs_biomedical
+- talk_therapy
+- medication
+- medical_treatments
+- therapy_orientations
+- psychodynamic
+- behavioral
+- cognitive
+- humanistic
+- family
+- psychotropic_medications
+- antidepressants
+- antipsychotics
+- mood_stabilizers
+- anxiolytics
+- treatment_modalities
+- individual
+- group
+- couple
+- group_therapy_benefits
+- universality
+- support
+- cost_effectiveness
+- SUD_treatment_goals
+- abstinence
+- harm_reduction
+- relapse_prevention
+- effective_treatment_factors
+- therapeutic_alliance
+- EBPs
+- comorbid_treatment
+- sequencing
+- sociocultural_therapy
+- cultural_competence
+- context
+- treatment_barriers
+- ethnic_minorities
+- access
+- stigma
+- clinical_work
+- counseling_work
+- assessment
+- therapy
+- CAM
+- complementary_medicine
+- alternative_medicine
+- evidence_concern
+- noncompliance
+- adherence
+- dropout
+- engagement
+- pre_1900_treatments
+- psychoanalysis_elements
+- free_association
+- transference
+- insight
+- therapy_characteristics
+- directive
+- time_limited
+- group_vs_individual
+- psychotherapy_effectiveness
+- alliance
+- empathy
+- expectation
+- skills
+- behavior_therapy_elements
+- exposure
+- reinforcement
+- skills_training
+- classical_conditioning_therapies
+- desensitization
+- aversion
+- operant_therapies
+- token_economy
+- contingency_management
+- activation
+- cognitive_therapy_elements
+- restructuring
+- automatic_thoughts
+- schemas
+- humanistic_therapy_elements
+- person_centered
+- UPR
+- congruence
+- humanistic_therapy_examples
+- Gestalt
+- existential
+- medical_therapies
+- ECT
+- neurosurgery
+- hospitalization_support
+- community_programs
+- medical_therapy_support
+- help_others_plan
+- referral
+- boundaries
+- help_self_plan
+- service_navigation
+- stigma_reduction
+
+## Examples
+
+- Why two people can respond differently to the same therapy because of context and fit
+- Why “my friend said it worked” is not evidence of effectiveness
+- One example of an ethical constraint in therapy, such as confidentiality limits in broad terms
+- One example of an access constraint, such as cost, availability, transportation, stigma, or time
+
+:::

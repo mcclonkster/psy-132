@@ -1,0 +1,432 @@
+---
+title: "Topic 3: Research Methods"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How research questions become evidence
+- How method choice limits conclusions
+- How sampling, measurement, and design reduce error
+
+::: notes
+Visual cue: Question → design → data → interpretation loop.
+:::
+
+## Methods set the ceiling on conclusions
+
+- Stronger designs reduce alternative explanations
+- Better measures reduce error
+- Better samples support better generalization
+
+::: notes
+Visual cue: Three sliders labeled Design, Measurement, Sampling feeding into a “Conclusion strength” meter.
+:::
+
+## From question to claim
+
+```{mermaid}
+flowchart LR
+Q[Question] --> D[Design]
+D --> M[Measures]
+M --> Data[Data]
+Data --> I[Interpretation]
+I --> C[Conclusion limits]
+```
+
+::: notes
+Teaching move: Ask, “What conclusion would be too strong for this design?”
+:::
+
+## Variables and measures
+
+:::: columns
+::: column
+Variable
+- Something that can change
+- A concept you want to study
+:::
+
+::: column
+Measure
+- How you record the variable
+- A score, count, or observation
+:::
+::::
+
+::: notes
+Quick example to say aloud: study time measured as minutes logged.
+:::
+
+## Operational definitions
+
+- Define a concept in measurable terms
+- Make the definition specific
+- Make the definition repeatable
+
+::: notes
+Visual cue: Concept → operational definition.
+Example: stress measured by a scale score or a physiological indicator.
+:::
+
+## Measurement quality
+
+- Reliability is consistency
+- Validity is measuring what you intend
+- Reliable does not guarantee valid
+
+::: notes
+Visual cue: Target diagram with consistent hits versus correct target.
+:::
+
+## Population and sample
+
+- Population: who you want to generalize to
+- Sample: who you actually studied
+- Generalization depends on sampling
+
+::: notes
+Visual cue: Big circle (population) with a smaller circle (sample) inside it.
+:::
+
+## Random sampling and random assignment
+
+:::: columns
+::: column
+Random sampling
+- Who is in the study
+- Supports generalization
+:::
+
+::: column
+Random assignment
+- Who is in which condition
+- Supports causal inference
+:::
+::::
+
+::: notes
+Teaching move: Have students label which one answers “generalize” and which answers “cause.”
+:::
+
+## Three families of research methods
+
+:::: columns
+::: column
+Descriptive
+- What is happening
+- What patterns exist
+:::
+
+::: column
+Correlational
+- What relates to what
+- What predicts what
+:::
+
+::: column
+Experimental
+- What causes what
+- What changes when you manipulate something
+:::
+::::
+
+::: notes
+Visual cue: Three columns with one allowed conclusion under each.
+:::
+
+## Descriptive methods describe patterns
+
+- Case studies
+- Naturalistic observation
+- Surveys and interviews
+- Archival research
+
+::: notes
+Guardrail: descriptive methods do not establish cause.
+Visual cue: Four method cards labeled “describe.”
+:::
+
+## Correlational methods test association
+
+- Measure variables as they naturally occur
+- Estimate direction and strength of relationship
+- Support prediction, not causation
+
+::: notes
+Visual cue: Scatterplot with a trend line.
+Core line: correlation does not imply causation.
+:::
+
+## Correlation traps
+
+- Third-variable problem
+- Directionality problem
+
+::: notes
+Visual cue: Triangle diagram with A, B, and C (third variable).
+Quick example to say aloud: sleep and grades.
+:::
+
+## Experiments test causal hypotheses
+
+- Manipulate an independent variable
+- Measure a dependent variable
+- Compare conditions
+- Use random assignment
+
+::: notes
+Visual cue: Manipulate → measure → compare.
+:::
+
+## Confounds and controls
+
+- Confound: an alternative explanation tied to the independent variable
+- Controls reduce confounds, but do not guarantee perfection
+- Better controls support clearer inference
+
+::: notes
+Visual cue: IV → DV with a confound arrow.
+Guardrail: a control group alone is not a magic shield.
+:::
+
+## Reducing bias in research
+
+- Standardized procedures
+- Blinding when feasible
+- Clear scoring and coding rules
+
+::: notes
+Visual cue: Checklist labeled Standardize, Blind, Score.
+:::
+
+## Replication and converging evidence
+
+- Replication tests whether findings repeat
+- Peer review evaluates methods and claims
+- Converging evidence strengthens confidence
+
+::: notes
+Visual cue: Multiple studies pointing toward one conclusion.
+:::
+
+## Worked example: one question, three designs
+
+Question: Does sleep improve test performance?
+
+:::: columns
+::: column
+Descriptive
+- Describe sleep and grades in a class
+- Conclusion: pattern, not cause
+:::
+
+::: column
+Correlational
+- Measure sleep and grades across students
+- Conclusion: association, not cause
+:::
+
+::: column
+Experimental
+- Randomly assign sleep opportunity conditions
+- Conclusion: causal effect, with limits
+:::
+::::
+
+::: notes
+Teaching move: Ask what the strongest justified claim is for each design.
+:::
+
+## Quick check
+
+For each method, pick the strongest justified conclusion
+
+- Descriptive
+- Correlational
+- Experimental
+
+::: notes
+Answer key:
+Descriptive: describes patterns.
+Correlational: predicts, but does not establish cause.
+Experimental: supports causal inference under the study’s conditions.
+:::
+
+## Quick check answers
+
+- Descriptive: describes patterns in a sample
+- Correlational: variables relate and may predict each other
+- Experimental: manipulation can support causal inference
+
+::: notes
+Keep feedback to one discriminating cue per method.
+:::
+
+## Bridge to Topic 4
+
+- Methods tell you what you can conclude
+- Statistics summarizes patterns and uncertainty
+- Next: distributions, effect size, and inference
+
+::: notes
+Visual cue: Design quality plus statistics supports interpretation.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- scientific method
+- hypothesis testing
+- empirical evidence in psych
+- applying findings to policy
+- evidence-informed decisions
+- using research to evaluate claims
+- everyday decisions
+- experiments
+- correlational studies
+- surveys
+- case studies
+- observation
+- non-experimental methods
+- validity
+- generalizability
+- depth vs breadth
+- time-based designs
+- following individuals vs groups
+- pros/cons
+- sampling for generalization
+- assignment for internal validity
+- expectancy effects
+- demand characteristics
+- need for blinding
+- manipulated vs measured variables in experiments
+- hypothesis
+- data
+- analysis
+- reporting
+- self-report
+- behavioral
+- physiological data
+- challenges
+- IV
+- DV
+- extraneous/confounding variables
+- manipulation
+- control
+- random assignment
+- causality
+- statistical testing
+- effect size
+- replication
+- experimenter bias
+- external validity
+- random assignment vs none
+- causal inference limits
+- correlational design
+- correlation coefficient
+- association
+- rare cases
+- rich detail
+- hypothesis generation
+- critical evaluation strategies
+- source checking
+- correlation vs causation
+- personal evaluation plan
+- applying critical thinking skills
+
+## Key terms
+
+- scientific_research
+- behavior
+- hypothesis_testing
+- evidence
+- research_to_policy
+- evidence_based_policy
+- application
+- personal_decisions
+- research_application
+- scientific_literacy
+- research_methods_overview
+- experimental
+- correlational
+- surveys
+- observation
+- case_studies
+- naturalistic_observation
+- archival_research
+- strengths
+- weaknesses
+- longitudinal_design
+- cross_sectional_design
+- time
+- development
+- random_sampling
+- random_assignment
+- external_validity
+- internal_validity
+- experimenter_bias
+- participant_bias
+- demand_characteristics
+- blinding
+- independent_variable
+- dependent_variable
+- experimental_design
+- scientific_method
+- steps
+- hypothesis
+- data_collection
+- data_types
+- self_report
+- behavioral
+- physiological
+- challenges
+- extraneous_variable
+- confound
+- experiments
+- causality
+- control
+- evaluate_results
+- statistics
+- effect_size
+- replication
+- experiment_problems
+- bias
+- control_procedures
+- quasi_experiment
+- true_experiment
+- correlational_research
+- correlation_coefficient
+- association
+- case_study
+- rare_cases
+- rich_data
+- limitations
+- media_critique
+- social_media
+- source_evaluation
+- critical_thinking
+- media_evaluation_plan
+- personal_application
+
+## Examples
+
+- A correlational result and why it does not establish causation
+- A simple experiment and why control and random assignment support stronger causal language
+- A study flaw caused by a confound or a biased interpretation
+
+:::

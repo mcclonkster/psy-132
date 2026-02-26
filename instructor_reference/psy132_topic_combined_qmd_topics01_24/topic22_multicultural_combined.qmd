@@ -1,0 +1,342 @@
+---
+title: "Topic 22: Multicultural"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- How culture and context shape psychology
+- Why generalization can fail across groups and settings
+- How measurement and sampling bias distort conclusions
+- Identity, acculturation, and stereotype threat
+
+::: notes
+Visual cue: One behavior in the center with context layers: norms, values, language, identity, setting.
+:::
+
+## Culture changes meaning
+
+- Norms shape what counts as appropriate
+- Values shape goals and priorities
+- Context changes what behavior communicates
+
+::: notes
+Guardrail: avoid cultural essentialism and stereotypes.
+:::
+
+## Generalization checkpoint
+
+```{mermaid}
+flowchart LR
+S[Study sample] --> M[Measure and method]
+M --> F[Finding]
+F --> G{Generalize?}
+G -->|Yes, with evidence| P[Population and context match]
+G -->|No or limited| L[Limits and caution]
+```
+
+::: notes
+Caption cue: generalization requires evidence about sampling and measurement, not assumption.
+:::
+
+## Within-group variability
+
+- People within groups vary widely
+- Group averages do not describe individuals
+- Context often explains more than labels
+
+::: notes
+Visual cue: One group label with many diverse points inside it.
+:::
+
+## Ethnocentrism
+
+- Judging other contexts by your own standards
+- Increases misunderstanding
+- Can distort research interpretation
+
+::: notes
+Visual cue: “default lens” warping interpretation.
+:::
+
+## Sampling bias
+
+- Convenience samples are common
+- Narrow samples can misestimate typicality
+- Sampling limits must be stated
+
+::: notes
+Visual cue: Funnel showing who is included and who is missing.
+Guardrail: avoid treating overrepresented samples as universal.
+:::
+
+## Measurement bias
+
+- Measures can embed assumptions
+- Translation can change meaning
+- Validation in context improves fairness
+
+::: notes
+Visual cue: Same survey item interpreted differently across contexts.
+:::
+
+## Cultural competence is concrete skill
+
+- Assess in context
+- Communicate clearly
+- Adapt when needed
+
+::: notes
+Visual cue: Three-step skills checklist.
+Guardrail: competence is not only attitude.
+:::
+
+## Self-construal
+
+- Independent: autonomy-focused self
+- Interdependent: relationship-focused self
+- Patterns are context-dependent
+
+::: notes
+Visual cue: “me” centered vs “we” network-centered representations.
+:::
+
+## Acculturation
+
+- Adaptation in a new cultural context
+- Outcomes depend on support and barriers
+- Identity processes affect well-being
+
+::: notes
+Visual cue: Context shift arrow plus supports and barriers icons.
+Anchor: Berry’s acculturation framework.
+:::
+
+## Acculturation strategies
+
+```{mermaid}
+quadrantChart
+title Acculturation strategy patterns
+x-axis Low engagement with host culture --> High engagement with host culture
+y-axis Low maintenance of heritage culture --> High maintenance of heritage culture
+quadrant-1 Integration
+quadrant-2 Assimilation
+quadrant-3 Marginalization
+quadrant-4 Separation
+```
+
+::: notes
+Guardrail: strategies are shaped by context and constraints, not only preference.
+:::
+
+## Cultural identity can be protective
+
+- Belonging and meaning can reduce stress
+- Identity can support coping and support-seeking
+- Context and safety shape effects
+
+::: notes
+Visual cue: Identity badge connecting to support network or to stressors depending on setting.
+:::
+
+## Stereotype threat
+
+- Context cues can affect performance
+- Effects depend on stakes and identity relevance
+- Changing cues can reduce threat
+
+::: notes
+Visual cue: Cue → load → performance.
+Guardrail: keep claims conditional and context-based.
+:::
+
+## Structural barriers and disparities
+
+- Access and affordability shape care
+- Language access and trust shape use
+- Conditions shape outcomes beyond attitudes
+
+::: notes
+Visual cue: Barriers pipeline reducing entry to care.
+Guardrail: disparities are not explained by one factor.
+:::
+
+## Worked example: measure mismatch
+
+Scenario: a stress scale item asks about “control”
+
+- Meaning of control can differ by context
+- Translation can change the nuance
+- Validation requires local evidence
+
+::: notes
+Teaching move: ask students to propose a revised item that fits the local context.
+:::
+
+## Common confusions to avoid
+
+- Culture only matters in “special cases”
+- Group averages describe individuals
+- One study generalizes everywhere
+- Differences imply deficits
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Ethnocentrism
+- Within-group variability
+- Sampling bias
+- Measurement bias
+- Cultural competence
+- Self-construal
+- Acculturation
+- Integration
+- Assimilation
+- Separation
+- Marginalization
+- Stereotype threat
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Ethnocentrism: judging other cultures by your own standards
+- Within-group variability: wide differences within the same group label
+- Sampling bias: sample does not represent the population
+- Measurement bias: measure embeds assumptions or changes meaning across contexts
+- Cultural competence: assess, communicate, adapt skills
+- Self-construal: independent versus interdependent self patterns
+- Acculturation: adaptation to a new cultural context
+- Integration: maintain heritage and engage host culture
+- Assimilation: engage host culture with reduced heritage maintenance
+- Separation: maintain heritage with low host engagement
+- Marginalization: low engagement with both in some contexts
+- Stereotype threat: performance affected by stereotype-relevant cues
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 23
+
+- Culture shapes distress expression and help-seeking
+- Diagnosis must be interpreted in context
+- Next: abnormal psychology and classification limits
+
+::: notes
+Visual cue: Culture and context layer over diagnosis and outcomes.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- SES gradients in IQ
+- opportunity
+- inequality
+- how culture shapes trait expression and self-construal
+- etic
+- emic
+- and indigenous approaches
+- WEIRD samples
+- androcentrism
+- exclusion of non-dominant groups
+- confounds
+- misuse of genetics
+- social and measurement bias
+- affect
+- behavior
+- cognition
+- ABC model
+- conscious vs automatic prejudice
+- measurement
+- authoritarianism
+- SDO
+- threat
+- lack of contact (etc.)
+- psychological
+- physical
+- economic
+- social costs
+- contact
+- cooperation
+- recategorization
+- norms
+- applying prejudice-reduction strategies
+- perspective taking
+- behavior change
+
+## Key terms
+
+- IQ_SES_relationship
+- inequality
+- opportunity
+- test_scores
+- personality_collectivist_individualist
+- culture
+- traits
+- cultural_personality_approaches
+- etic
+- emic
+- indigenous
+- early_bias
+- gender_bias
+- culture_bias
+- WEIRD
+- group_IQ_claims
+- genetic_misuse
+- confounds
+- test_bias
+- prejudice_components
+- affect
+- behavior
+- cognition
+- explicit_prejudice
+- implicit_prejudice
+- bias_levels
+- prejudice_predictors
+- authoritarianism
+- SDO
+- threat
+- low_contact
+- prejudice_consequences
+- mental_health
+- physical_health
+- social_costs
+- prejudice_reduction
+- contact_hypothesis
+- cooperation
+- recategorization
+- diversity_relationship_plan
+- contact
+- empathy
+- inclusion
+
+## Examples
+
+- One example where the same behavior is interpreted differently across contexts because norms differ
+- One example where a research finding might not generalize to a different population or setting
+- One example of how access or discrimination can change outcomes independently of individual choice
+
+:::

@@ -1,0 +1,617 @@
+---
+title: "Topic 23: Abnormal"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- What counts as psychological disorder
+- How diagnosis and classification work, with limits
+- Multi-factor risk models and cultural context
+- Stigma and barriers to care
+
+::: notes
+Visual cue: Classification + context + outcomes triangle.
+:::
+
+## Disorder is evaluated in context
+
+- Patterns of emotion, cognition, and behavior
+- Associated with distress or impairment
+- Interpreted in cultural and situational context
+
+::: notes
+Guardrail: distress and impairment are related but not identical.
+:::
+
+## Clinical reasoning workflow
+
+```{mermaid}
+flowchart LR
+S[Symptoms and patterns] --> D[Distress and impairment]
+D --> C[Context and culture]
+C --> R[Rule-outs and alternatives]
+R --> L[Provisional label]
+L --> P[Plan and supports]
+```
+
+::: notes
+Caption cue: diagnosis supports communication and planning, not automatic explanation.
+:::
+
+## Diagnosis is descriptive
+
+- Supports shared language
+- Supports treatment planning
+- Does not automatically identify cause
+
+::: notes
+Guardrail: categories are not causes.
+:::
+
+## Key classification terms
+
+- Comorbidity
+- Heterogeneity
+- Differential diagnosis
+
+::: notes
+Visual cue: Three cards with one discriminating phrase for each.
+:::
+
+## Comorbidity
+
+- More than one diagnosis at the same time
+- Common in real clinical settings
+- Changes planning and treatment
+
+::: notes
+Visual cue: Two diagnosis cards in one file.
+:::
+
+## Heterogeneity
+
+- Same label can look different across people
+- Different symptom profiles can meet criteria
+- Impairment can vary widely within a label
+
+::: notes
+Visual cue: One label feeding into multiple symptom profiles.
+:::
+
+## Differential diagnosis
+
+- Similar symptoms can reflect different conditions
+- Course and context matter
+- Evidence quality and uncertainty matter
+
+::: notes
+Visual cue: Symptom cluster → multiple possible explanations → more information needed.
+:::
+
+## Multi-factor models
+
+- Vulnerability and stress interact
+- Risk and protective factors shift likelihood and course
+- Biology, psychology, and context all contribute
+
+::: notes
+Visual cue: Vulnerability + stressor → outcomes, with protective factors as buffers.
+:::
+
+## Diathesis-stress model
+
+- Diathesis: vulnerability
+- Stress: trigger or demand
+- Interaction predicts risk and course
+
+::: notes
+Visual cue: Two-axis graph: vulnerability and stress, risk increases toward top-right.
+:::
+
+## Prevalence and incidence
+
+- Prevalence: how common a condition is
+- Incidence: new cases over time
+- Numbers depend on definition and measurement
+
+::: notes
+Guardrail: avoid quoting prevalence without population and method.
+Visual cue: “number” bubble tied to population and method labels.
+:::
+
+## Culture shapes symptoms and help-seeking
+
+- Culture shapes meaning and expression of distress
+- Culture shapes what counts as impairing
+- Culture shapes help-seeking pathways
+
+::: notes
+Visual cue: Same symptom described differently across contexts.
+Guardrail: culture is relevant across diagnoses, not only “special syndromes.”
+:::
+
+## Stigma and barriers matter
+
+- Stigma can reduce help-seeking
+- Barriers can worsen outcomes independently of symptoms
+- Social context can shape recovery
+
+::: notes
+Visual cue: Symptoms lane and stigma/barrier lane both feeding into functioning.
+:::
+
+## A vignette: distress, impairment, context
+
+Scenario: a student avoids class presentations
+
+- Distress may be high
+- Impairment depends on functioning demands
+- Context changes what is feasible and safe
+
+::: notes
+Teaching move: ask what additional information is needed for differential diagnosis.
+:::
+
+## Common confusions to avoid
+
+- Diagnosis explains cause
+- Categories are sharply separated
+- Symptoms always mean severe impairment
+- Culture is irrelevant to diagnosis
+- Stigma is minor
+
+::: notes
+Use as a reset before retrieval.
+:::
+
+## Quick check
+
+Match the term to the best description
+
+- Distress
+- Impairment
+- Comorbidity
+- Heterogeneity
+- Differential diagnosis
+- Diathesis-stress model
+- Prevalence
+- Incidence
+- Stigma
+
+::: notes
+Delivery: students commit first, then you reveal.
+One discriminating cue per match.
+:::
+
+## Quick check answers
+
+- Distress: subjective suffering and discomfort
+- Impairment: reduced functioning in important areas
+- Comorbidity: more than one diagnosis at the same time
+- Heterogeneity: one label with many different presentations
+- Differential diagnosis: similar symptoms, different possible conditions
+- Diathesis-stress model: vulnerability interacts with stress to shape risk
+- Prevalence: how common in a population at a time
+- Incidence: new cases over time window
+- Stigma: social devaluation and barriers that reduce care and worsen outcomes
+
+::: notes
+Keep it brief. Do not re-lecture.
+:::
+
+## Bridge to Topic 24
+
+- Diagnosis supports planning, not automatic explanation
+- Treatment depends on evidence, preference, severity, and access
+- Next: therapies and how effectiveness is evaluated
+
+::: notes
+Visual cue: Label → options → evidence and fit filter → plan.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- insomnia presentation
+- diagnostic features
+- CBT-I
+- medication
+- parasomnias (sleepwalking
+- night terrors
+- REM behavior disorder
+- etc.)
+- symptom profiles
+- obstructive/central apnea
+- daytime sleepiness
+- CPAP and other treatments
+- narcolepsy symptoms (sleep attacks
+- cataplexy)
+- behavioral strategies
+- DSM SUD criteria
+- impaired control
+- social impairment
+- risky use
+- pharmacological criteria
+- specific learning disorders vs broader developmental disorders
+- DSM categories
+- definitional issues
+- distress
+- dysfunction
+- deviance
+- danger
+- cultural context
+- Wakefield’s harmful dysfunction model
+- failure of internal mechanism plus harm
+- criteria such as distress
+- impairment
+- risk
+- reasons for classification: communication
+- research
+- treatment planning
+- DSM structure
+- categories
+- descriptive criteria
+- historical DSM revisions
+- reliability
+- overpathologizing
+- cultural critiques
+- prevalence of anxiety
+- mood
+- SUD
+- etc.
+- demonology
+- witch hunts
+- exorcism
+- asylums
+- biological
+- cognitive
+- behavioral
+- psychodynamic
+- sociocultural models
+- highly heritable disorders (e.g.
+- bipolar
+- schizophrenia
+- ASD)
+- vulnerability + stress interaction
+- risk model
+- adaptive fear vs excessive
+- impairing anxiety
+- GAD
+- panic
+- phobias
+- key symptoms and prevalence
+- conditioning
+- cognitive biases
+- genetics
+- neurotransmitters
+- symptom profiles and prevalence for OCD
+- BDD
+- hoarding
+- learning
+- cognition
+- family
+- biological influences on OCD
+- intrusion
+- avoidance
+- alterations in cognition and arousal
+- PTSD risk factors (trauma severity
+- prior trauma
+- social support
+- appraisals
+- beliefs in PTSD
+- common moods vs mood episodes
+- intensity and impairment
+- MDD and bipolar symptom sets
+- MDD vs PDD/dysthymia
+- subtypes like seasonal
+- postpartum
+- DSM manic episode criteria
+- duration
+- severity
+- multi-level etiology of depression
+- link between mood disorders and suicidal thoughts/behavior
+- risk factors
+- what schizophrenia is and is not
+- clarifying myths
+- positive
+- negative
+- and disorganized symptoms
+- diathesis–stress applied to schizophrenia
+- multi-level risk
+- prodrome
+- early identification
+- prevention
+- dissociative symptoms
+- disruption of identity
+- memory
+- consciousness
+- symptom profiles of the main dissociative diagnoses
+- trauma
+- suggestibility
+- cultural context in DID
+- ADHD and ASD core symptoms
+- prevalence and risk factors for ADHD and ASD
+- enduring patterns
+- inflexibility
+- ego-syntonic features
+- Cluster A
+- B
+- C
+- shared features of each
+- BPD and ASPD symptom patterns and risk factors
+- criteria for ID
+- adaptive functioning
+- associated outcomes
+- genetic (e.g.
+- Down
+- Fragile X)
+- prenatal/perinatal causes
+- symptom differences
+- weight status
+- binge/purge
+- desire
+- arousal
+- orgasm
+- pain disorders
+- atypical sexual interests plus distress/harm
+- examples
+- excessive thoughts/feelings/behaviors about somatic symptoms
+- use of DSM
+- diagnostic process
+- categorical approach
+- etiological factors
+- reiteration of stress–vulnerability
+- gross impairment in reality testing
+- thought disorder
+- hallucinations/delusions
+- long-standing delusions
+- relatively intact functioning
+- core schizophrenia features
+- course
+- functional impact
+- neurodevelopment
+- dopamine
+- environment
+- episodic disturbances in mood
+- depression/mania patterns
+- more detailed features of depression vs bipolar
+- social
+- life events
+- psychiatric diagnoses
+- hopelessness
+- access to means
+- social isolation
+- PD general features
+- ASPD symptom set
+- persistent
+- excessive fear/anxiety
+- psychodynamic theories applied to anxiety
+- such as panic disorder
+- OCD-related
+
+## Key terms
+
+- insomnia
+- symptoms
+- treatment
+- CBT_I
+- sedative_hypnotics
+- parasomnias
+- sleepwalking
+- night_terrors
+- REM_behavior_disorder
+- sleep_apnea
+- CPAP
+- narcolepsy
+- cataplexy
+- stimulants
+- substance_use_disorder
+- DSM_criteria
+- addiction
+- learning_disability
+- developmental_disorder
+- neurodevelopmental
+- classification
+- defining_disorder
+- distress
+- dysfunction
+- deviance
+- danger
+- harmful_dysfunction
+- Wakefield
+- internal_mechanism
+- harm
+- abnormality_criteria
+- impairment
+- classification_rationale
+- DSM
+- diagnosis
+- communication
+- DSM5_features
+- categories
+- criteria
+- DSM_history
+- DSM_criticism
+- reliability
+- overdiagnosis
+- disorder_prevalence
+- common_disorders
+- epidemiology
+- supernatural_etiology
+- history
+- demonology
+- witch_hunts
+- modern_etiological_models
+- biological
+- psychological
+- sociocultural
+- high_heritability_disorders
+- genetics
+- bipolar
+- schizophrenia
+- diathesis_stress
+- vulnerability
+- stress
+- psychopathology
+- normal_anxiety_vs_disorder
+- intensity
+- duration
+- anxiety_disorders_overview
+- GAD
+- panic
+- phobias
+- prevalence
+- anxiety_etiology
+- learning
+- cognition
+- biology
+- OCD
+- BDD
+- hoarding_disorder
+- OCD_etiology
+- family
+- PTSD
+- trauma
+- PTSD_risk_factors
+- trauma_severity
+- prior_trauma
+- support
+- PTSD_learning_cognition
+- conditioning
+- appraisal
+- sadness_vs_depression
+- euphoria_vs_mania
+- thresholds
+- MDD_symptoms
+- bipolar_symptoms
+- mood_disorders
+- MDD_vs_PDD
+- depression_subtypes
+- seasonal
+- postpartum
+- manic_episode_criteria
+- depression_etiology
+- environment
+- mood_disorders_suicide
+- suicidal_ideation
+- risk_factors
+- schizophrenia_definition
+- myth_busting
+- split_personality_misconception
+- schizophrenia_symptom_categories
+- positive
+- negative
+- disorganized
+- schizophrenia_etiology
+- schizophrenia_prodrome
+- early_detection
+- risk_states
+- dissociative_disorders
+- depersonalization
+- amnesia
+- DID
+- dissociative_amnesia
+- depersonalization_derealization
+- DID_etiology
+- sociocognitive
+- cultural_factors
+- ADHD_symptoms
+- ASD_symptoms
+- neurodevelopmental_disorders
+- ADHD_ASD_prevalence
+- personality_disorder_nature
+- chronic
+- inflexible
+- ego_syntonic
+- personality_disorder_clusters
+- cluster_A
+- cluster_B
+- cluster_C
+- BPD
+- ASPD
+- etiological_factors
+- intellectual_disability_identification
+- adaptive_functioning
+- outcomes
+- intellectual_disability_causes
+- Down_syndrome
+- prenatal_risk
+- anorexia_vs_bulimia
+- causes
+- eating_disorders
+- sexual_dysfunctions
+- desire_disorder
+- arousal_disorder
+- orgasmic_disorder
+- pain
+- paraphilic_disorders
+- fetishistic
+- exhibitionistic
+- pedophilic
+- somatic_symptom_disorder
+- somatic_focus
+- excessive_anxiety
+- abnormality_considerations
+- norms
+- classification_diagnosis
+- DSM_use
+- assessment
+- causes_overview
+- stress_vulnerability_model
+- multi_factor
+- psychotic_disorders_general
+- reality_testing
+- thought_disorder
+- delusional_disorder_features
+- non_bizarre_delusions
+- schizophrenia_specific
+- course
+- schizophrenia_causes
+- dopamine
+- mood_disorders_general
+- episodes
+- mood_disturbance
+- depression_features
+- bipolar_features
+- comparison
+- mood_disorder_causes
+- suicide_factors
+- risk
+- hopelessness
+- means
+- isolation
+- PD_general
+- antisocial_PD_features
+- chronic_patterns
+- anxiety_disorders_general
+- excessive_fear
+- avoidance
+- anxiety_theories
+- cognitive
+- behavioral
+- psychodynamic
+- anxiety_related_list
+- OCD_related
+
+## Examples
+
+- A case where distress is present but impairment differs, and why that distinction matters
+- A biopsychosocial explanation for a symptom cluster that includes one biological, one psychological, and one social contributor
+- One example of stigma affecting help-seeking or outcomes
+
+:::

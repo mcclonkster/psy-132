@@ -1,0 +1,416 @@
+---
+title: "Topic 2: Theoretical Perspectives"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## What this topic covers
+
+- Perspectives are lenses for explaining behavior and mental processes
+- Different lenses emphasize different causes and evidence
+- You can use more than one lens for the same behavior
+
+::: notes
+Visual cue: Same behavior in the center with multiple labeled lenses around it.
+:::
+
+## A perspective is an explanatory lens
+
+- It highlights certain causes
+- It guides what you measure
+- It shapes what you conclude
+
+::: notes
+Teaching move: Ask, “What would this lens make you look for first?”
+:::
+
+## Lens workflow
+
+```{mermaid}
+flowchart LR
+L[Lens] --> Q[Question]
+Q --> P[Prediction]
+P --> E[Evidence]
+E --> C[Conclusion limits]
+```
+
+::: notes
+Caption cue: A lens is useful when it generates testable predictions and clear limits.
+:::
+
+## What lenses differ on
+
+:::: columns
+::: column
+Emphasis
+- Causes they highlight
+- Processes they focus on
+:::
+
+::: column
+Evidence
+- Measures they trust most
+- Designs they prefer
+:::
+
+::: column
+Questions
+- What they treat as the main “why”
+- What they treat as noise
+:::
+::::
+
+::: notes
+Visual cue: Three-column organizer shown as a stable template you reuse across the topic.
+:::
+
+## Use lenses with discipline
+
+- Name the question you are answering
+- Say what evidence would support the lens
+- Say what evidence would weaken the lens
+
+::: notes
+Teaching move: require a “what would change my mind” statement in class discussion.
+:::
+
+## Lenses can complement each other
+
+- One behavior can have multiple causes
+- Different levels can fit together
+- Integration can be stronger than one-lens answers
+
+::: notes
+Visual cue: Stacked levels labeled biological, cognitive, behavioral, social and cultural.
+:::
+
+## Biological lens asks “what is happening in the body”
+
+- Focus: brain, body, physiology
+- Typical why: vulnerability and regulation systems
+- Evidence: biological measures and brain-behavior links
+
+::: notes
+Visual cue: Brain-body network diagram.
+Guardrail: avoid one-region “center” language.
+:::
+
+## Behavioral lens asks “what was learned”
+
+- Focus: observable behavior
+- Typical why: learning history and consequences
+- Evidence: behavior changes with conditioning and reinforcement patterns
+
+::: notes
+Visual cue: Antecedent → behavior → consequence loop.
+:::
+
+## Cognitive lens asks “how is this interpreted”
+
+- Focus: attention, memory, beliefs, interpretation
+- Typical why: meaning and information processing
+- Evidence: performance patterns and predictable thinking effects
+
+::: notes
+Visual cue: Input → interpretation → response.
+:::
+
+## Psychodynamic lens asks “what is outside awareness”
+
+- Focus: motives outside awareness and conflict
+- Typical why: recurring themes and internal conflict
+- Evidence: patterns across time and relationships
+
+::: notes
+Visual cue: Repeating theme across situations.
+Guardrail: emphasize inference and limits of evidence.
+:::
+
+## Humanistic lens asks “what is meaningful”
+
+- Focus: meaning, values, self-concept
+- Typical why: goals and growth needs
+- Evidence: lived experience and well-being outcomes
+
+::: notes
+Visual cue: Values → choices → growth path.
+Guardrail: keep examples concrete, not slogan-based.
+:::
+
+## Sociocultural lens asks “what is the context doing”
+
+- Focus: norms, roles, relationships, culture
+- Typical why: expectations and constraints in context
+- Evidence: group patterns and cultural comparisons
+
+::: notes
+Visual cue: Person inside a context frame labeled norms, roles, culture.
+:::
+
+## Evolutionary lens asks “what problem does this solve”
+
+- Focus: adaptation over generations
+- Typical why: functional problems and trade-offs
+- Evidence: testable predictions and converging data
+
+::: notes
+Visual cue: Problem → predicted tendency → evidence check.
+Guardrail: avoid storytelling that cannot be tested.
+:::
+
+## Worked example: phobia through three lenses
+
+Example: fear of dogs
+
+:::: columns
+::: column
+Biological
+- vulnerability and arousal systems
+- sensitivity to threat cues
+:::
+
+::: column
+Behavioral
+- learning history
+- avoidance reinforced over time
+:::
+
+::: column
+Cognitive
+- threat interpretation
+- attention to danger cues
+:::
+::::
+
+::: notes
+Teaching move: ask, “What evidence would be strongest for each lens?”
+:::
+
+## Worked example: health behavior through three lenses
+
+Example: sticking to an exercise plan
+
+:::: columns
+::: column
+Behavioral
+- cues and rewards
+- habit loops
+:::
+
+::: column
+Cognitive
+- self-efficacy and planning
+- beliefs about control
+:::
+
+::: column
+Sociocultural
+- norms and support
+- access and constraints
+:::
+::::
+
+::: notes
+Teaching move: ask students to propose one intervention per lens.
+:::
+
+## Misconception reset
+
+- A lens is not a topic unit
+- A lens is not a moral judgment
+- A lens does not claim one cause explains everything
+
+::: notes
+Visual cue: “Lens” stamped as a tool, not a label for a person.
+:::
+
+## Quick check: match the question to the lens
+
+- Which consequence is maintaining the behavior
+- Which beliefs are driving the interpretation
+- Which brain or body system is involved
+- Which norms and roles shape what is acceptable
+- Which goals and values give the choice meaning
+- Which motives may be outside awareness
+- Which adaptive problem might this tendency address
+
+::: notes
+Delivery: students match first, then you reveal.
+
+Prompt: ask what evidence would strengthen the match.
+:::
+
+## Quick check answers
+
+- Consequence maintaining behavior → Behavioral
+- Beliefs driving interpretation → Cognitive
+- Brain or body system involved → Biological
+- Norms and roles shaping behavior → Sociocultural
+- Goals and values giving meaning → Humanistic
+- Motives outside awareness → Psychodynamic
+- Adaptive problem framing → Evolutionary
+
+::: notes
+Keep each explanation to one discriminating cue.
+:::
+
+## Bridge to Topic 3
+
+- Lenses suggest hypotheses
+- Research methods test hypotheses
+- Next: how designs limit conclusions
+
+::: notes
+Visual cue: Lens → hypothesis → method filter → conclusion strength.
+:::
+
+
+::: {.content-hidden when-format="revealjs"}
+
+# Coverage bundle
+
+## Key concepts
+
+- definition of psychology
+- study of behavior and mental processes
+- scientific discipline
+- transferable skills
+- career flexibility
+- personal insight
+- behaviorism
+- historical impact
+- shift to observable behavior
+- influence on methods
+- core ideas of humanism
+- self-actualization
+- growth orientation
+- cognitive revolution
+- mental processes
+- range of subfields
+- basic vs applied work
+- what clinical
+- cognitive
+- social
+- etc. study and where they apply
+- key ideas and names across subfields
+- training pathways
+- BA/MA/PhD
+- academic career preparation
+- teaching
+- research
+- service
+- workload
+- expectations
+- applied careers
+- clinical
+- I/O
+- school
+- industry
+- etc.
+- applications of psychology
+- career and life benefits
+- cognitive biases
+- confirmation bias
+- naive realism
+- superstition
+- pseudoscience
+- scientific criteria
+- subfields
+- research areas
+- domains
+- biological
+- psychological
+- social perspectives
+- multi-level explanation
+- strengths of BPS model
+- describe
+- explain
+- predict
+- control behavior
+- critical thinking
+- evaluation of evidence
+- skepticism
+
+## Key terms
+
+- psychology_definition
+- behavior
+- mental_processes
+- science
+- education_merits
+- psychology_degree
+- skills
+- careers
+- behaviorism_history
+- theoretical_perspectives
+- observable_behavior
+- humanism
+- self_actualization
+- personal_growth
+- cognitive_revolution
+- behaviorism_shift
+- mind_focus
+- diversity_of_psychology
+- subfields
+- basic_research
+- applied_psychology
+- applications
+- interests
+- real_world_examples
+- major_figures
+- key_concepts
+- discipline_overview
+- careers_academic
+- education_requirements
+- training_path
+- job_demands
+- teaching
+- research
+- service
+- careers_applied
+- nonacademic
+- clinical
+- IO
+- human_services
+- educational_merits
+- personal_life
+- career
+- common_sense_error
+- confirmation_bias
+- naive_realism
+- critical_thinking
+- superstition
+- pseudoscience
+- research_areas
+- basic_vs_applied
+- biopsychosocial_model
+- biological
+- psychological
+- social
+- biopsychosocial_advantages
+- complexity
+- integration
+- psych_goals
+- describe
+- explain
+- predict
+- control
+- principles
+- evidence_evaluation
+- skepticism
+
+## Examples
+
+- A single behavior described through two perspectives, with one limitation statement for each
+- One example where the “best” explanation depends on what evidence is available
+
+:::
