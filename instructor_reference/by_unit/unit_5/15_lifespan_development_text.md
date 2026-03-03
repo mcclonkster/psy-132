@@ -1,0 +1,1431 @@
+# 15_lifespan_development
+
+
+---
+## Language Development | Introduction to Psychology
+
+- url_title:: "Language Development | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/language/
+### Learning Objectives
+
+-   Understand how the use of language develops
+
+Language is a communication system that involves using words and systematic rules to organize those words to transmit information from one individual to another. While language is a form of communication, not all communication is language. Many species communicate with one another through their postures, movements, odors, or vocalizations. This communication is crucial for species that need to interact and develop social relationships with their conspecifics. However, many people have asserted that it is language that makes humans unique among all of the animal species (Corballis & Suddendorf, 2007; Tomasello & Rakoczy, 2003). This section will focus on what distinguishes language as a special form of communication, how the use of language develops, and how language affects the way we think.
+
+## Components of Language
+
+**Language**, be it spoken, signed, or written, has specific components: a lexicon and grammar. **Lexicon** refers to the words of a given language. Thus, lexicon is a language’s vocabulary. **Grammar** refers to the set of rules that are used to convey meaning through the use of the lexicon (Fernández & Cairns, 2011). For instance, English grammar dictates that most verbs receive an “-ed” at the end to indicate past tense.
+
+Words are formed by combining the various phonemes that make up the language. A **phoneme** (e.g., the sounds “ah” vs. “eh”) is a basic sound unit of a given language, and different languages have different sets of phonemes. Phonemes are combined to form **morphemes**, which are the smallest units of language that convey some type of meaning (e.g., “I” is both a phoneme and a morpheme).  Further, a morpheme is not the same as a word. The main difference is that a morpheme sometimes does not stand alone, but a word, by definition, always stands alone.
+
+We use semantics and syntax to construct language. Semantics and syntax are part of a language’s grammar. **Semantics** refers to the process by which we derive meaning from morphemes and words. **Syntax** refers to the way words are organized into sentences (Chomsky, 1965; Fernández & Cairns, 2011).
+
+We apply the rules of grammar to organize the lexicon in novel and creative ways, which allow us to communicate information about both concrete and abstract concepts. We can talk about our immediate and observable surroundings as well as the surface of unseen planets. We can share our innermost thoughts, our plans for the future, and debate the value of a college education. We can provide detailed instructions for cooking a meal, fixing a car, or building a fire. Through our use of words and language, we are able to form, organize, and express ideas, schema, and artificial concepts.
+
+## Language Development
+
+Given the remarkable complexity of a language, one might expect that mastering a language would be an especially arduous task; indeed, for those of us trying to learn a second language as adults, this might seem to be true. However, young children master language very quickly with relative ease. B. F. Skinner (1957) proposed that language is learned through reinforcement. Noam Chomsky (1965) criticized this behaviorist approach, asserting instead that the mechanisms underlying language acquisition are biologically determined. The use of language develops in the absence of formal instruction and appears to follow a very similar pattern in children from vastly different cultures and backgrounds. It would seem, therefore, that we are born with a biological predisposition to acquire a language (Chomsky, 1965; Fernández & Cairns, 2011). Moreover, it appears that there is a critical period for language acquisition, such that this proficiency at acquiring language is maximal early in life; generally, as people age, the ease with which they acquire and master new languages diminishes (Johnson & Newport, 1989; Lenneberg, 1967; Singleton, 1995).
+
+Children begin to learn about language from a very early age (Table 1). In fact, it appears that this is occurring even before we are born. Newborns show preference for their mother’s voice and appear to be able to discriminate between the language spoken by their mother and other languages. Babies are also attuned to the languages being used around them and show preferences for videos of faces that are moving in synchrony with the audio of spoken language versus videos that do not synchronize with the audio (Blossom & Morgan, 2006; Pickens, 1994; Spelke & Cortelyou, 1981).
+
+Table 1. Stages of Language and Communication Development
+| Stage | Age | Developmental Language and Communication |
+| --- | --- | --- |
+| 1 | 0–3 months | Reflexive communication |
+| 2 | 3–8 months | Reflexive communication; interest in others |
+| 3 | 8–13 months | Intentional communication; sociability |
+| 4 | 12–18 months | First words |
+| 5 | 18–24 months | Simple sentences of two words |
+| 6 | 2–3 years | Sentences of three or more words |
+| 7 | 3–5 years | Complex sentences; has conversations |
+
+### Dig Deeper: The Case of Genie
+
+In the fall of 1970, a social worker in the Los Angeles area found a 13-year-old girl who was being raised in extremely neglectful and abusive conditions. The girl, who came to be known as Genie, had lived most of her life tied to a potty chair or confined to a crib in a small room that was kept closed with the curtains drawn. For a little over a decade, Genie had virtually no social interaction and no access to the outside world. As a result of these conditions, Genie was unable to stand up, chew solid food, or speak (Fromkin, Krashen, Curtiss, Rigler, & Rigler, 1974; Rymer, 1993). The police took Genie into protective custody.
+
+Genie’s abilities improved dramatically following her removal from her abusive environment, and early on, it appeared she was acquiring language—much later than would be predicted by critical period hypotheses that had been posited at the time (Fromkin et al., 1974). Genie managed to amass an impressive vocabulary in a relatively short amount of time. However, she never developed a mastery of the grammatical aspects of language (Curtiss, 1981). Perhaps being deprived of the opportunity to learn language during a critical period impeded Genie’s ability to fully acquire and use language.
+
+You may recall that each language has its own set of phonemes that are used to generate morphemes, words, and so on. Babies can discriminate among the sounds that make up a language (for example, they can tell the difference between the “s” in vision and the “ss” in fission); early on, they can differentiate between the sounds of all human languages, even those that do not occur in the languages that are used in their environments. However, by the time that they are about 1 year old, they can only discriminate among those phonemes that are used in the language or languages in their environments (Jensen, 2011; Werker & Lalonde, 1988; Werker & Tees, 1984).
+
+After the first few months of life, babies enter what is known as the babbling stage, during which time they tend to produce single syllables that are repeated over and over. As time passes, more variations appear in the syllables that they produce. During this time, it is unlikely that the babies are trying to communicate; they are just as likely to babble when they are alone as when they are with their caregivers (Fernández & Cairns, 2011). Interestingly, babies who are raised in environments in which sign language is used will also begin to show babbling in the gestures of their hands during this stage (Petitto, Holowka, Sergio, Levy, & Ostry, 2004).
+
+Generally, a child’s first word is uttered sometime between the ages of 1 year to 18 months, and for the next few months, the child will remain in the “one word” stage of language development. During this time, children know a number of words, but they only produce one-word utterances. The child’s early vocabulary is limited to familiar objects or events, often nouns. Although children in this stage only make one-word utterances, these words often carry larger meaning (Fernández & Cairns, 2011). So, for example, a child saying “cookie” could be identifying a cookie or asking for a cookie.
+
+As a child’s lexicon grows, she begins to utter simple sentences and to acquire new vocabulary at a very rapid pace. In addition, children begin to demonstrate a clear understanding of the specific rules that apply to their language(s). Even the mistakes that children sometimes make provide evidence of just how much they understand about those rules. This is sometimes seen in the form of overgeneralization. In this context, overgeneralization refers to an extension of a language rule to an exception to the rule. For example, in English, it is usually the case that an “s” is added to the end of a word to indicate plurality. For example, we speak of one dog versus two dogs. Young children will overgeneralize this rule to cases that are exceptions to the “add an s to the end of the word” rule and say things like “those two gooses” or “three mouses.” Clearly, the rules of the language are understood, even if the exceptions to the rules are still being learned (Moskowitz, 1978).
+
+### Glossary
+
+**grammar:** set of rules that are used to convey meaning through the use of a lexicon
+
+**language:** communication system that involves using words to transmit information from one individual to another
+
+**lexicon:** the words of a given language
+
+**morpheme:** smallest unit of language that conveys some type of meaning
+
+**overgeneralization:** extension of a rule that exists in a given language to an exception to the rule
+
+**phoneme:** basic sound unit of a given language
+
+**semantics:** process by which we derive meaning from morphemes and words  
+**syntax:** manner by which words are organized into sentences
+
+### Candela Citations
+
+---
+
+## Why It Matters: Introduction to Lifespan Development
+
+- url_title:: "Why It Matters: Introduction to Lifespan Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-8/
+![A picture shows two intertwined hands. One is the large hand of an adult, and the other is the tiny hand of an infant. The infant’s entire hand grasp is about the size of a single adult finger.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224915/CNX_Psych_09_00_Hands.jpg)
+
+**Figure 1**. How have you changed since childhood? How are you the same? What will your life be like 25 years from now? Fifty years from now? Lifespan development studies how you change as well as how you remain the same over the course of your life. (credit: modification of work by Giles Cook)
+
+Welcome to the story of your life. In this module we will explore the fascinating tale of how you have grown and developed into the person you are today. We will also look at some ideas about who you will grow into tomorrow. Yours is a story of lifespan development (Figure 1), from the start of life to the end.
+
+The process of human growth and development is more obvious in infancy and childhood, yet your development is happening this moment and will continue, minute by minute, for the rest of your life. Who you are today and who you will be in the future depends on a blend of genetics, environment, culture, relationships, and more, as you continue through each phase of life. You have experienced firsthand much of what is discussed in this module. Now consider what psychological science has to say about your physical, cognitive, and psychosocial development, from the womb to the tomb.
+
+Module References
+
+### Candela Citations
+
+---
+
+## Introduction to Development in Adolescence and Adulthood
+
+- url_title:: "Introduction to Development in Adolescence and Adulthood"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-development-in-adolescence-and-adulthood/
+## What you’ll learn to do: describe physical, cognitive, and emotional development in adolescence and adulthood
+
+Changes in development during childhood are rapid and more obvious than the changes that come later on in life, but before you reach adulthood, there is one more large transition: adolescence. Adolescence brings the physical development of puberty, as well as cognitive, social, and emotional changes. Following adolescence, transitions are less obvious, but still significant throughout emerging adulthood. Finally, growing older means confronting many psychological, emotional, and social issues that come with entering the last phase of life.
+
+### Watch It
+
+Watch this video from a few of the world’s oldest people for some advice on how you can also live a fulfilling life until the very end.
+
+You can [view the transcript for “How to Be the Oldest Person Alive” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/HowToBeTheOldestPersonAlive.txt).
+
+### Learning Objectives
+
+-   Describe physical, cognitive, and emotional development that occurs during adolescence
+-   Describe physical, cognitive, and emotional development that occurs in adulthood
+-   Differentiate between fluid and crystallized intelligence
+-   Explain attitudes toward death and Kübler-Ross’s five stages of grief (denial, anger, bargaining, depression, acceptance)
+
+### Candela Citations
+
+---
+
+## Introduction to Stages of Development in Childhood
+
+- url_title:: "Introduction to Stages of Development in Childhood"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-stages-of-development/
+## What you’ll learn to do: explain the physical, cognitive, and emotional development that occurs from infancy through childhood
+
+Think about the miraculous development that occurs during childhood in order for a tiny zygote to grow into a walking, talking, thinking child. Newborn infants only weigh about 7.5 pounds but their physical, cognitive, and psychosocial skills grow and change as they move through developmental stages. In this section, you’ll learn about many of these changes.
+
+### Watch It
+
+Some of these key concepts are discussed (as well as others you learned about previously) in the following CrashCourse Psychology video:
+
+You can [view the transcript for “Monkeys and Morality: Crash Course Psychology #19” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/MonkeysAndMoralityCrashCoursePsychology19.txt).
+
+### Learning Objectives
+
+-   Describe the stages of prenatal development and the significance of prenatal care
+-   Define and differentiate between various infant reflexes
+-   Explain the physical development that occurs from infancy through childhood
+-   Explain the cognitive development that occurs from infancy through childhood
+-   Explain the emotional development that occurs from infancy through childhood, including attachment and the development of a self-concept
+
+### Candela Citations
+
+---
+
+## Introduction to Theories of Development
+
+- url_title:: "Introduction to Theories of Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-theories-of-development/
+## What you’ll learn to do: compare and contrast theories of lifespan development
+
+[![Three young boys playing outside and smiling widely. One boy looks directly at the camera, smiling with his arms outstretched.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/08143807/6782624795_81cabe31c3_z.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/08143807/6782624795_81cabe31c3_z.jpg)
+
+Lifespan development explores how we change and grow from conception to death. This field of psychology is studied by developmental psychologists. They view development as a lifelong process that can be studied scientifically across three developmental domains: physical, cognitive development, and psychosocial.
+
+There are many theories regarding how babies and children grow and develop into happy, healthy adults. Sigmund Freud suggested that we pass through a series of psychosexual stages in which our energy is focused on certain erogenous zones on the body. Eric Erikson modified Freud’s ideas and suggested a theory of psychosocial development. Erikson said that our social interactions and successful completion of social tasks shape our sense of self. Jean Piaget proposed a theory of cognitive development that explains how children think and reason as they move through various stages. Finally, Lawrence Kohlberg turned his attention to moral development. He said that we pass through three levels of moral thinking that build on our cognitive development. You’ll learn about each of these theories in this section.
+
+### Learning Objectives
+
+-   Describe the three major issues in development: continuity and discontinuity, one common course of development or many unique courses of development, and nature versus nurture
+-   Define Freud’s theory of psychosexual development
+-   Describe the major tasks of child and adult psychosocial development according to Erikson
+-   Give examples of behavior and key vocabulary in each of Piaget’s stages of cognitive development
+-   Describe Kohlberg’s theory of moral development and the stages of reasoning
+-   Explain the procedure, results, and implications of Hamlin and Wynn’s research on moral reasoning in infants
+
+### Candela Citations
+
+---
+
+## What Is Lifespan Development? | Introduction to Psychology
+
+- url_title:: "What Is Lifespan Development? | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/what-is-lifespan-development/
+### Learning Objectives
+
+-   Describe the three major issues in development: continuity and discontinuity, one common course of development or many unique courses of development, and nature versus nurture
+
+My heart leaps up when I behold  
+A rainbow in the sky:  
+So was it when my life began;  
+So is it now I am a man;  
+So be it when I shall grow old,  
+Or let me die!  
+The Child is father of the Man;  
+And I could wish my days to be  
+Bound each to each by natural piety. (Wordsworth, 1802)
+
+In this poem, William Wordsworth writes, “the child is father of the man.” What does this seemingly incongruous statement mean, and what does it have to do with lifespan development? Wordsworth might be suggesting that the person he is as an adult depends largely on the experiences he had in childhood. Consider the following questions: To what extent is the adult you are today influenced by the child you once were? To what extent is a child fundamentally different from the adult he grows up to be?
+
+These are the types of questions developmental psychologists try to answer, by studying how humans change and grow from conception through childhood, adolescence, adulthood, and death. They view development as a lifelong process that can be studied scientifically across three developmental domains—physical, cognitive, and psychosocial development. Physical development involves growth and changes in the body and brain, the senses, motor skills, and health and wellness. Cognitive development involves learning, attention, memory, language, thinking, reasoning, and creativity. Psychosocial development involves emotions, personality, and social relationships. We refer to these domains throughout the module.
+
+### Connect the Concepts: Research Methods in Developmental Psychology
+
+You’ve learned about a variety of research methods used by psychologists. Developmental psychologists use many of these approaches in order to better understand how individuals change mentally and physically over time. These methods include naturalistic observations, case studies, surveys, and experiments, among others.
+
+Naturalistic observations involve observing behavior in its natural context. A developmental psychologist might observe how children behave on a playground, at a daycare center, or in the child’s own home. While this research approach provides a glimpse into how children behave in their natural settings, researchers have very little control over the types and/or frequencies of displayed behavior.
+
+In a case study, developmental psychologists collect a great deal of information from one individual in order to better understand physical and psychological changes over the lifespan. This particular approach is an excellent way to better understand individuals, who are exceptional in some way, but it is especially prone to researcher bias in interpretation, and it is difficult to generalize conclusions to the larger population.
+
+In one classic example of this research method being applied to a study of lifespan development Sigmund Freud analyzed the development of a child known as “Little Hans” (Freud, 1909/1949). Freud’s findings helped inform his theories of psychosexual development in children, which you will learn about later in this module. Little Genie, the subject of a case study discussed in the module on thinking and intelligence, provides another example of how psychologists examine developmental milestones through detailed research on a single individual. In Genie’s case, her neglectful and abusive upbringing led to her being unable to speak until, at age 13, she was removed from that harmful environment. As she learned to use language, psychologists were able to compare how her language acquisition abilities differed when occurring in her late-stage development compared to the typical acquisition of those skills during the ages of infancy through early childhood (Fromkin, Krashen, Curtiss, Rigler, & Rigler, 1974; Curtiss, 1981).
+
+The survey method asks individuals to self-report important information about their thoughts, experiences, and beliefs. This particular method can provide large amounts of information in relatively short amounts of time; however, validity of data collected in this way relies on honest self-reporting, and the data is relatively shallow when compared to the depth of information collected in a case study.
+
+Experiments involve significant control over extraneous variables and manipulation of the independent variable. As such, experimental research allows developmental psychologists to make causal statements about certain variables that are important for the developmental process. Because experimental research must occur in a controlled environment, researchers must be cautious about whether behaviors observed in the laboratory translate to an individual’s natural environment.
+
+Later in this module, you will learn about several experiments in which toddlers and young children observe scenes or actions so that researchers can determine at what age specific cognitive abilities develop. For example, children may observe a quantity of liquid poured from a short, fat glass into a tall, skinny glass. As the experimenters question the children about what occurred, the subjects’ answers help psychologists understand at what age a child begins to comprehend that the volume of liquid remained the same although the shapes of the containers differs.
+
+Across these three domains—physical, cognitive, and psychosocial—the **normative approach** to development is also discussed. This approach asks, “What is normal development?” In the early decades of the 20th century, normative psychologists studied large numbers of children at various ages to determine norms (i.e., average ages) of when most children reach specific developmental milestones in each of the three domains (Gesell, 1933, 1939, 1940; Gesell & Ilg, 1946; Hall, 1904). Although children develop at slightly different rates, we can use these age-related averages as general guidelines to compare children with same-age peers to determine the approximate ages they should reach specific normative events called **developmental milestones** (e.g., crawling, walking, writing, dressing, naming colors, speaking in sentences, and starting puberty).
+
+Not all normative events are universal, meaning they are not experienced by all individuals across all cultures. Biological milestones, such as puberty, tend to be universal, but social milestones, such as the age when children begin formal schooling, are not necessarily universal; instead, they affect most individuals in a particular **culture** (Gesell & Ilg, 1946). For example, in developed countries children begin school around 5 or 6 years old, but in developing countries, like Nigeria, children often enter school at an advanced age, if at all (Huebler, 2005; United Nations Educational, Scientific, and Cultural Organization \[UNESCO\], 2013).
+
+To better understand the normative approach, imagine two new mothers, Louisa and Kimberly, who are close friends and have children around the same age. Louisa’s daughter is 14 months old, and Kimberly’s son is 12 months old. According to the normative approach, the average age a child starts to walk is 12 months. However, at 14 months Louisa’s daughter still isn’t walking. She tells Kimberly she is worried that something might be wrong with her baby. Kimberly is surprised because her son started walking when he was only 10 months old. Should Louisa be worried? Should she be concerned if her daughter is not walking by 15 months or 18 months?
+
+### Link to Learning
+
+The Centers for Disease Control and Prevention (CDC) describes the [developmental milestones](http://www.cdc.gov/ncbddd/actearly/milestones/) for children from 2 months through 5 years old. If you are a parent with concerns about your child’s development, contact your pediatrician.
+
+## Issues in Developmental Psychology
+
+There are many different theoretical approaches regarding human development. As we evaluate them in this module, recall that developmental psychology focuses on how people change, and keep in mind that all the approaches that we present in this module address questions of change: Is the change smooth or uneven (continuous versus discontinuous)? Is this pattern of change the same for everyone, or are there many different patterns of change (one course of development versus many courses)? How do genetics and environment interact to influence development (nature versus nurture)?
+
+## Is Development Continuous or Discontinuous?
+
+**Continuous development** views development as a cumulative process, gradually improving on existing skills (Figure 1). With this type of development, there is gradual change. Consider, for example, a child’s physical growth: adding inches to her height year by year. In contrast, theorists who view development as **discontinuous** believe that development takes place in unique stages: It occurs at specific times or ages. With this type of development, the change is more sudden, such as an infant’s ability to conceive object permanence.
+
+![Continuous and Discontinuous development are shown side by side using two separate pictures. The first picture is a triangle labeled “Continuous Development” which slopes upward from Infancy to Adulthood in a straight line. The second picture is 4 bars side by side labeled “Discontinuous Development” which get higher from Infancy to Adulthood. These bars resemble a staircase.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224916/CNX_Psych_09_01_DevelopR.jpg)
+
+**Figure 1**. The concept of continuous development can be visualized as a smooth slope of progression, whereas discontinuous development sees growth in more discrete stages.
+
+## Is There One Course of Development or Many?
+
+Is development essentially the same, or universal, for all children (i.e., there is one course of development) or does development follow a different course for each child, depending on the child’s specific genetics and environment (i.e., there are many courses of development)? Do people across the world share more similarities or more differences in their development? How much do culture and genetics influence a child’s behavior?
+
+Stage theories hold that the sequence of development is universal. For example, in cross-cultural studies of language development, children from around the world reach language milestones in a similar sequence (Gleitman & Newport, 1995). Infants in all cultures coo before they babble. They begin babbling at about the same age and utter their first word around 12 months old. Yet we live in diverse contexts that have a unique effect on each of us. For example, researchers once believed that motor development follows one course for all children regardless of culture. However, child care practices vary by culture, and different practices have been found to accelerate or inhibit achievement of developmental milestones such as sitting, crawling, and walking (Karasik, Adolph, Tamis-LeMonda, & Bornstein, 2010).
+
+For instance, let’s look at the Aché society in Paraguay. They spend a significant amount of time foraging in forests. While foraging, Aché mothers carry their young children, rarely putting them down in order to protect them from getting hurt in the forest. Consequently, their children walk much later: They walk around 23–25 months old, in comparison to infants in Western cultures who begin to walk around 12 months old. However, as Aché children become older, they are allowed more freedom to move about, and by about age 9, their motor skills surpass those of U.S. children of the same age: Aché children are able to climb trees up to 25 feet tall and use machetes to chop their way through the forest (Kaplan & Dove, 1987). As you can see, our development is influenced by multiple contexts, so the timing of basic motor functions may vary across cultures. However, the functions themselves are present in all societies (Figure 2).
+
+![Photograph A shows two children wearing inner tubes playing in the shallow water at the beach. Photograph B shows two children playing in the sand at a beach.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224918/CNX_Psych_09_01_Play.jpg)
+
+**Figure 2**. All children across the world love to play. Whether in (a) Florida or (b) South Africa, children enjoy exploring sand, sunshine, and the sea. (credit a: modification of work by “Visit St. Pete/Clearwater”/Flickr; credit b: modification of work by “stringer\_bel”/Flickr)
+
+## How Do Nature and Nurture Influence Development?
+
+Are we who we are because of nature (biology and genetics), or are we who we are because of nurture (our environment and culture)? This longstanding question is known in psychology as the nature versus nurture debate. It seeks to understand how our personalities and traits are the product of our genetic makeup and biological factors, and how they are shaped by our environment, including our parents, peers, and culture. For instance, why do biological children sometimes act like their parents—is it because of genetics or because of early childhood environment and what the child has learned from the parents? What about children who are adopted—are they more like their biological families or more like their adoptive families? And how can siblings from the same family be so different?
+
+We are all born with specific genetic traits inherited from our parents, such as eye color, height, and certain personality traits. Beyond our basic genotype, however, there is a deep interaction between our genes and our environment: Our unique experiences in our environment influence whether and how particular traits are expressed, and at the same time, our genes influence how we interact with our environment (Diamond, 2009; Lobo, 2008). This module will show that there is a reciprocal interaction between nature and nurture as they both shape who we become, but the debate continues as to the relative contributions of each.
+
+### Dig Deeper: The Achievement Gap: How Does Socioeconomic Status Affect Development?
+
+The achievement gap refers to the persistent difference in grades, test scores, and graduation rates that exist among students of different ethnicities, races, and—in certain subjects—sexes (Winerman, 2011). Research suggests that these achievement gaps are strongly influenced by differences in socioeconomic factors that exist among the families of these children. While the researchers acknowledge that programs aimed at reducing such socioeconomic discrepancies would likely aid in equalizing the aptitude and performance of children from different backgrounds, they recognize that such large-scale interventions would be difficult to achieve. Therefore, it is recommended that programs aimed at fostering aptitude and achievement among disadvantaged children may be the best option for dealing with issues related to academic achievement gaps (Duncan & Magnuson, 2005).
+
+Low-income children perform significantly more poorly than their middle- and high-income peers on a number of educational variables: They have significantly lower standardized test scores, graduation rates, and college entrance rates, and they have much higher school dropout rates. There have been attempts to correct the achievement gap through state and federal legislation, but what if the problems start before the children even enter school?
+
+Psychologists Betty Hart and Todd Risley (2006) spent their careers looking at early language ability and progression of children in various income levels. In one longitudinal study, they found that although all the parents in the study engaged and interacted with their children, middle- and high-income parents interacted with their children differently than low-income parents. After analyzing 1,300 hours of parent-child interactions, the researchers found that middle- and high-income parents talk to their children significantly more, starting when the children are infants. By 3 years old, high-income children knew almost double the number of words known by their low-income counterparts, and they had heard an estimated total of 30 million more words than the low-income counterparts (Hart & Risley, 2003). And the gaps only become more pronounced. Before entering kindergarten, high-income children score 60% higher on achievement tests than their low-income peers (Lee & Burkam, 2002).
+
+There are solutions to this problem. At the University of Chicago, experts are working with low-income families, visiting them at their homes, and encouraging them to speak more to their children on a daily and hourly basis. Other experts are designing preschools in which students from diverse economic backgrounds are placed in the same classroom. In this research, low-income children made significant gains in their language development, likely as a result of attending the specialized preschool (Schechter & Byeb, 2007). What other methods or interventions could be used to decrease the achievement gap? What types of activities could be implemented to help the children of your community or a neighboring community?
+
+### Think It Over
+
+-   How are you different today from the person you were at 6 years old? What about at 16 years old? How are you the same as the person you were at those ages?
+-   Your 3-year-old daughter is not yet potty trained. Based on what you know about the normative approach, should you be concerned? Why or why not?
+
+### Glossary
+
+**cognitive development:** domain of lifespan development that examines learning, attention, memory, language, thinking, reasoning, and creativity
+
+**continuous development:** view that development is a cumulative process: gradually improving on existing skills
+
+**developmental milestone:** approximate ages at which children reach specific normative events
+
+**discontinuous development:** view that development takes place in unique stages, which happen at specific times or ages
+
+**nature:** genes and biology
+
+**normative approach:** study of development using norms, or average ages, when most children reach specific developmental milestones
+
+**nurture:** environment and culture
+
+**physical development:** domain of lifespan development that examines growth and changes in the body and brain, the senses, motor skills, and health and wellness
+
+**psychosocial development:** domain of lifespan development that examines emotions, personality, and social relationships
+
+### Candela Citations
+
+---
+
+## Adolescence | Introduction to Psychology
+
+- url_title:: "Adolescence | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-adolescence/
+### Learning Objectives
+
+-   Describe physical, cognitive, and emotional development that occurs during adolescence
+
+Adolescence is a socially constructed concept. In pre-industrial society, children were considered adults when they reached physical maturity, but today we have an extended time between childhood and adulthood called adolescence. **Adolescence** is the period of development that begins at puberty and ends at emerging adulthood, or into the mid- to late 20s. In the United States, adolescence is seen as a time to develop independence from parents while remaining connected to them (Figure 1). The typical age range of adolescence is from 12 to 18 years, and this stage of development also has some predictable physical, cognitive, and psychosocial milestones.
+
+[![A photograph captures four people midair as they hold hands and jump.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03191911/0b823efdca083be0d94ab78e28f2efa6672be364.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03191911/0b823efdca083be0d94ab78e28f2efa6672be364.jpeg)
+
+**Figure 1**. Peers are a primary influence on our development in adolescence. (credit: “manseok\_Pixabay”/ Pixabay)
+
+## Physical Development
+
+As noted above, adolescence begins with puberty. While the sequence of physical changes in puberty is predictable, the onset and pace of puberty vary widely. Several physical changes occur during puberty, such as **adrenarche** and **gonadarche**, the maturing of the adrenal glands and sex glands, respectively. Also during this time, primary and secondary sexual characteristics develop and mature. **Primary sexual characteristics** are organs specifically needed for reproduction, like the uterus and ovaries in females and testes in males. **Secondary sexual characteristics** are physical signs of sexual maturation that do not directly involve sex organs, such as development of breasts and hips in girls, and development of facial hair and a deepened voice in boys. Girls experience **menarche**, the beginning of menstrual periods, usually around 12–13 years old, and boys experience **spermarche**, the first ejaculation, around 13–14 years old.
+
+During puberty, both sexes experience a rapid increase in height (i.e., growth spurt). For girls this begins between 8 and 13 years old, with adult height reached between 10 and 16 years old. Boys begin their growth spurt slightly later, usually between 10 and 16 years old, and reach their adult height between 13 and 17 years old. Both nature (i.e., genes) and nurture (e.g., nutrition, medications, and medical conditions) can influence height.
+
+Because rates of physical development vary so widely among teenagers, puberty can be a source of pride or embarrassment. Early maturing boys tend to be stronger, taller, and more athletic than their later maturing peers. They are usually more popular, confident, and independent, but they are also at a greater risk for substance abuse and early sexual activity (Flannery, Rowe, & Gulley, 1993; Kaltiala-Heino, Rimpela, Rissanen, & Rantanen, 2001). Early maturing girls may be teased or overtly admired, which can cause them to feel self-conscious about their developing bodies. These girls are at a higher risk for depression, substance abuse, and eating disorders (Ge, Conger, & Elder, 2001; Graber, Lewinsohn, Seeley, & Brooks-Gunn, 1997; Striegel-Moore & Cachelin, 1999). Late blooming boys and girls (i.e., they develop more slowly than their peers) may feel self-conscious about their lack of physical development. Negative feelings are particularly a problem for late maturing boys, who are at a higher risk for depression and conflict with parents (Graber et al., 1997) and more likely to be bullied (Pollack & Shuster, 2000).
+
+The adolescent brain also remains under development. Recall from your earlier study, that the brain consists of six regions: temporal lobe, brain stem, cerebellum, occipital lobe (includes the visual cortex), parietal lobe, and the frontal lobe. The frontal lobe consists of the prefrontal cortex, premotor cortex, and motor cortex. The prefrontal lobe lies just behind the forehead. Up until puberty, brain cells continue to bloom in the frontal region. Adolescents engage in increased risk-taking behaviors and emotional outbursts possibly because the frontal lobes of their brains are still developing (Figure 2). Recall that this area is often called the “CEO of the brain”, as it is responsible for judgment, impulse control, and planning. It is still maturing into early adulthood, up until around age 25 (Casey, Tottenham, Liston, & Durston, 2005).
+
+![An illustration of a brain is shown with the frontal lobe labeled.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_04_TeenBrain.jpg#fixme)
+
+**Figure 2**. Brain growth continues into the early 20s. The development of the frontal lobe, in particular, is important during this stage.
+
+Brain maturity occurs when there is growth of new neural connections and the pruning of unused neurons and connections. According to recent research, the brain regions tend to develop from the back to the front of the brain. Also, myelin continues to grow around axons and neurons helping to speed transmission between the various regions of the brain.
+
+## Cognitive Development
+
+More complex thinking abilities emerge during adolescence. Some researchers suggest this is due to increases in processing speed and efficiency rather than as the result of an increase in mental capacity—in other words, due to improvements in existing skills rather than development of new ones (Bjorkland, 1987; Case, 1985). During adolescence, teenagers move beyond concrete thinking and become capable of abstract thought. Recall that Piaget refers to this stage as formal operational thought. Teen thinking is also characterized by the ability to consider multiple points of view, imagine hypothetical situations, debate ideas and opinions (e.g., politics, religion, and justice), and form new ideas (Figure 3). In addition, it’s not uncommon for adolescents to question authority or challenge established societal norms.Cognitive empathy, also known as theory-of-mind (which we discussed earlier with regard to egocentrism), relates to the ability to take the perspective of others and feel concern for others (Shamay-Tsoory, Tomer, & Aharon-Peretz, 2005). Cognitive empathy begins to increase in adolescence and is an important component of social problem solving and conflict avoidance. According to one longitudinal study, levels of cognitive empathy begin rising in girls around 13 years old, and around 15 years old in boys (Van der Graaff et al., 2013). Teens who reported having supportive fathers with whom they could discuss their worries were found to be better able to take the perspective of others (Miklikowska, Duriez, & Soenens, 2011).
+
+![Four people gathered around a table attempting to figure out a problem together.](http://cnx.org/resources/2898a5a518c37c36fa4fbadb5aec6159/CNX_Psych_09_04_Reasoning.jpg)
+
+**Figure 3**. Teenage thinking is characterized by the ability to reason logically and solve hypothetical problems such as how to design, plan, and build a structure. (credit: U.S. Army RDECOM)
+
+## Psychosocial Development
+
+Adolescents continue to refine their sense of self as they relate to others. Erikson referred to the task of the adolescent as one of identity versus role confusion. Thus, in Erikson’s view, an adolescent’s main questions are “Who am I?” and “Who do I want to be?” Some adolescents adopt the values and roles that their parents expect for them. Other teens develop identities that are in opposition to their parents but align with a peer group. This is common as peer relationships become a central focus in adolescents’ lives.
+
+As adolescents work to form their identities, they pull away from their parents, and the peer group becomes very important (Shanahan, McHale, Osgood, & Crouter, 2007). Despite spending less time with their parents, most teens report positive feelings toward them (Moore, Guzman, Hair, Lippman, & Garrett, 2004). Warm and healthy parent-child relationships have been associated with positive child outcomes, such as better grades and fewer school behavior problems, in the United States as well as in other countries (Hair et al., 2005).
+
+It appears that most teens don’t experience adolescent storm and stress to the degree once famously suggested by G. Stanley Hall, a pioneer in the study of adolescent development. Only small numbers of teens have major conflicts with their parents (Steinberg & Morris, 2001), and most disagreements are minor. For example, in a study of over 1,800 parents of adolescents from various cultural and ethnic groups, Barber (1994) found that conflicts occurred over day-to-day issues such as homework, money, curfews, clothing, chores, and friends. These types of arguments tend to decrease as teens develop (Galambos & Almeida, 1992).
+
+## Emerging Adulthood
+
+The next stage of development is **emerging adulthood**. This is a relatively newly defined period of lifespan development spanning from 18 years old to the mid-20s, characterized as an in-between time where identity exploration is focused on work and love.
+
+When does a person become an adult? There are many ways to answer this question. In the United States, you are legally considered an adult at 18 years old. But other definitions of adulthood vary widely; in sociology, for example, a person may be considered an adult when she becomes self-supporting, chooses a career, gets married, or starts a family. The ages at which we achieve these milestones vary from person to person as well as from culture to culture. For example, in the African country of Malawi, 15-year-old Njemile was married at 14 years old and had her first child at 15 years old. In her culture she is considered an adult. Children in Malawi take on adult responsibilities such as marriage and work (e.g., carrying water, tending babies, and working fields) as early as 10 years old. In stark contrast, independence in Western cultures is taking longer and longer, effectively delaying the onset of adult life.
+
+Why is it taking twenty-somethings so long to grow up? It seems that emerging adulthood is a product of both Western culture and our current times (Arnett, 2000). People in developed countries are living longer, allowing the freedom to take an extra decade to start a career and family. Changes in the workforce also play a role. For example, 50 years ago, a young adult with a high school diploma could immediately enter the work force and climb the corporate ladder. That is no longer the case. Bachelor’s and even graduate degrees are required more and more often—even for entry-level jobs (Arnett, 2000). In addition, many students are taking longer (five or six years) to complete a college degree as a result of working and going to school at the same time. After graduation, many young adults return to the family home because they have difficulty finding a job. Changing cultural expectations may be the most important reason for the delay in entering adult roles. Young people are spending more time exploring their options, so they are delaying marriage and work as they change majors and jobs multiple times, putting them on a much later timetable than their parents (Arnett, 2000).
+
+### Link to Learning
+
+Review these concepts on adolescence and emerging adulthood in the [Crash Course Psychology video](https://www.youtube.com/watch?v=PzyXGUCngoU&feature=youtu.be&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6).
+
+### Think It Over
+
+Would you describe your experience of puberty as one of pride or embarrassment? Why?
+
+### Glossary
+
+**adolescence:** period of development that begins at puberty and ends at early adulthood
+
+**adrenarche:** maturing of the adrenal glands
+
+**emerging adulthood:** newly defined period of lifespan development from 18 years old to the mid-20s; young people are taking longer to complete college, get a job, get married, and start a family
+
+**gonadarche:** maturing of the sex glands
+
+**menarche:** beginning of menstrual period; around 12–13 years old
+
+**primary sexual characteristics:** organs specifically needed for reproduction
+
+**secondary sexual characteristics:** physical signs of sexual maturation that do not directly involve sex organs
+
+**spermarche:** first male ejaculation
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Modification and adaptation, addition of crash course video. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+CC licensed content, Shared previously
+
+-   Stages of Development. **Authored by**: OpenStax College. **Located at**: [https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development](https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+-   Brain Changes and Cognitive Development in Adolescence. **Provided by**: Open Learning Initiative. **Located at**: [https://oli.cmu.edu/jcourse/workbook/activity/page?context=df3e73250a0001dc08caae28aa5ca73a](https://oli.cmu.edu/jcourse/workbook/activity/page?context=df3e73250a0001dc08caae28aa5ca73a). **License**: _[CC BY-NC-SA: Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)_
+
+---
+
+## Adulthood | Introduction to Psychology
+
+- url_title:: "Adulthood | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-adulthood/
+### Learning Objectives
+
+-   Describe physical, cognitive, and emotional development that occurs in adulthood
+-   Differentiate between fluid and crystallized intelligence
+
+Adulthood begins around 20 years old and has three distinct stages: early, middle, and late. Each stage brings its own set of rewards and challenges.
+
+## Physical Development
+
+![A picture shows a person in a harness ascending a climbing wall.](http://cnx.org/resources/5045d7216f28647dbfb4976c597a47ea/CNX_Psych_09_04_Exercise.jpg)
+
+**Figure 1**. Physical declines of middle and late adulthood can be minimized with proper exercise, nutrition, and an active lifestyle. (credit: modification of work by Peter Stevens)
+
+By the time we reach early adulthood (20 to early 40s), our physical maturation is complete, although our height and weight may increase slightly. In young adulthood, our physical abilities are at their peak, including muscle strength, reaction time, sensory abilities, and cardiac functioning. Most professional athletes are at the top of their game during this stage. Many women have children in the young adulthood years, so they may see additional weight gain and breast changes.
+
+Middle adulthood extends from the 40s to the 60s (Figure 1). Physical decline is gradual. The skin loses some elasticity, and wrinkles are among the first signs of aging. Visual acuity decreases during this time. Women experience a gradual decline in fertility as they approach the onset of menopause, the end of the menstrual cycle, around 50 years old. Both men and women tend to gain weight: in the abdominal area for men and in the hips and thighs for women. Hair begins to thin and turn gray.
+
+Late adulthood is considered to extend from the 60s on. This is the last stage of physical change. The skin continues to lose elasticity, reaction time slows further, and muscle strength diminishes. Smell, taste, hearing, and vision, so sharp in our twenties, decline significantly. The brain may also no longer function at optimal levels, leading to problems like memory loss, dementia, and Alzheimer’s disease in later years.
+
+### Link to Learning
+
+Aging doesn’t mean a person can’t explore new pursuits, learn new skills, and continue to grow. Watch this [inspiring story about Neil Unger](https://www.youtube.com/watch?utm_medium=social&utm_source=twitter.com&v=lM4FQ_FqEhQ&utm_content=buffer843bf&utm_campaign=buffer&app=desktop) who is a newbie to the world of skateboarding at 60 years old.
+
+## Cognitive Development
+
+Because we spend so many years in adulthood (more than any other stage), cognitive changes are numerous. In fact, research suggests that adult cognitive development is a complex, ever changing process that may be even more active than cognitive development in infancy and early childhood (Fischer, Yan, & Stewart, 2003).
+
+Researchers have identified areas of both losses and gains in cognition in older age. Cognitive ability and intelligence are often measured using standardized tests and validated measures. The psychometric approach has identified two categories of intelligence that show different rates of change across the life span (Schaie & Willis, 1996). **Fluid intelligence** refers to information processing abilities, such as logical reasoning, remembering lists, spatial ability, and reaction time. **Crystallized intelligence** encompasses abilities that draw upon experience and knowledge. Measures of crystallized intelligence include vocabulary tests, solving number problems, and understanding texts.
+
+![Photograph of an older man holding a cane while getting off of his moped.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/29163311/manonmotorcycle-300x202.jpg)
+
+**Figure 2**. There are many stereotypes of older adults. They are sometimes seen as slow because of changes in cognitive processing speed. They are though, on average, excellent at drawing on personal experience and knowledge. And they tend to outperform young adults when it comes to social and emotional challenges. \[Photo: jessleecuizon\]
+
+With age, systematic declines are observed on cognitive tasks requiring self-initiated, effortful processing, without the aid of supportive memory cues (Park, 2000). Older adults tend to perform poorer than young adults on memory tasks that involve recall of information, where individuals must retrieve information they learned previously without the help of a list of possible choices. For example, older adults may have more difficulty recalling facts such as names or contextual details about where or when something happened (Craik, 2000). What might explain these deficits as we age? As we age, working memory, or our ability to simultaneously store and use information, becomes less efficient (Craik & Bialystok, 2006). The ability to process information quickly also decreases with age. This slowing of processing speed may explain age differences on many different cognitive tasks (Salthouse, 2004). Some researchers have argued that inhibitory functioning, or the ability to focus on certain information while suppressing attention to less pertinent information, declines with age and may explain age differences in performance on cognitive tasks (Hasher & Zacks, 1988). Finally, it is well established that our hearing and vision decline as we age. Longitudinal research has proposed that deficits in sensory functioning explain age differences in a variety of cognitive abilities (Baltes & Lindenberger, 1997).
+
+Fewer age differences are observed when memory cues are available, such as for recognition memory tasks, or when individuals can draw upon acquired knowledge or experience. For example, older adults often perform as well if not better than young adults on tests of word knowledge or vocabulary. With age often comes expertise, and research has pointed to areas where aging experts perform as well or better than younger individuals. For example, older typists were found to compensate for age-related declines in speed by looking farther ahead at printed text (Salthouse, 1984). Compared to younger players, older chess experts are able to focus on a smaller set of possible moves, leading to greater cognitive efficiency (Charness, 1981). Accrued knowledge of everyday tasks, such as grocery prices, can help older adults to make better decisions than young adults (Tentori, Osheron, Hasher, & May, 2001).
+
+How do changes or maintenance of cognitive ability affect older adults’ everyday lives? Researchers have studied cognition in the context of several different everyday activities. One example is driving. Although older adults often have more years of driving experience, cognitive declines related to reaction time or attentional processes may pose limitations under certain circumstances (Park & Gutchess, 2000). Research on interpersonal problem solving suggested that older adults use more effective strategies than younger adults to navigate through social and emotional problems (Blanchard-Fields, 2007). In the context of work, researchers rarely find that older individuals perform poorer on the job (Park & Gutchess, 2000). Similar to everyday problem solving, older workers may develop more efficient strategies and rely on expertise to compensate for cognitive decline.
+
+How can we delay the onset of cognitive decline? Mental and physical activity seems to play a part (Figure 2). Research has found adults who engage in mentally and physically stimulating activities experience less cognitive decline and have a reduced incidence of mild cognitive impairment and dementia (Hertzog, Kramer, Wilson, & Lindenberger, 2009; Larson et al., 2006; Podewils et al., 2005).
+
+![Three people at a table leaning over a board game.](http://cnx.org/resources/c129cd1ac3fae008b9b25ad16ee927f7/CNX_Psych_09_04_Cognitive.jpg)
+
+**Figure 3**. Cognitive activities such as playing mahjong, chess, or other games, can keep you mentally fit. The same is true for solo pastimes like reading and completing crossword puzzles. (credit: Philippe Put)
+
+## Psychosocial Development
+
+There are many theories about the social and emotional aspects of aging. Some aspects of healthy aging include activities, social connectedness, and the role of a person’s culture. According to many theorists, including George Vaillant (2002), who studied and analyzed over 50 years of data, we need to have and continue to find meaning throughout our lives. For those in early and middle adulthood, meaning is found through work (Sterns & Huyck, 2001) and family life (Markus, Ryff, Curan, & Palmersheim, 2004). These areas relate to the tasks that Erikson referred to as _intimacy versus isolation_ in early adulthood and _generativity versus stagnation_ in middle adulthood. As mentioned previously, adults tend to define themselves by what they do—their careers. Earnings peak during this time, yet job satisfaction is more closely tied to work that involves contact with other people, is interesting, provides opportunities for advancement, and allows some independence (Mohr & Zoghi, 2006) than it is to salary (Iyengar, Wells, & Schwartz, 2006). How might being unemployed or being in a dead-end job challenge adult well-being?
+
+### Try It
+
+Review some of the major changes during late adulthood in the following interactive.
+
+As people enter the final stages of life, they have what Erik Erikson described as a crisis over _integrity versus despair._ In other words, they review the events of their lives and try to come to terms with the mark (or lack thereof) that they have made on the world. People who believe they have had a positive impact on the world through their contributions live the end of life with a sense of integrity. Those who feel they have not measured up to certain standards—either their own or others’—develop a sense of despair.
+
+![Four people are sitting on a bench looking off in the same direction.](http://cnx.org/resources/3fb67abeaad86956ca4046dbffc6ddaf/CNX_Psych_09_04_Support.jpg)
+
+**Figure 4**. Social support is important as we age. (credit: Gabriel Rocha)
+
+Positive relationships with significant others in our adult years have been found to contribute to a state of well-being (Ryff & Singer, 2009). Most adults in the United States identify themselves through their relationships with family—particularly with spouses, children, and parents (Markus et al., 2004). While raising children can be stressful, especially when they are young, research suggests that parents reap the rewards down the road, as adult children tend to have a positive effect on parental well-being (Umberson, Pudrovska, & Reczek, 2010). Having a stable marriage has also been found to contribute to well-being throughout adulthood (Vaillant, 2002).
+
+Another aspect of positive aging is believed to be social connectedness and social support. As we get older, socioemotional selectivity theory suggests that our social support and friendships dwindle in number, but remain as close, if not more close than in our earlier years (Carstensen, 1992) (Figure 3).
+
+### Link to Learning
+
+To see more perspectives on aging, view this [video about aging in America](https://www.youtube.com/watch?v=8Gms2ogdLVE&feature=relatedQifornia).
+
+### Glossary
+
+**crystallized intelligence**: intelligence that draw upon experience and knowledge. Measures include vocabulary tests, solving number problems, and understanding texts  
+**fluid intelligence**: information processing abilities, such as logical reasoning, remembering lists, spatial ability, and reaction time
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Modification and adaptation, inclusion of tutorial. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+-   Signs of Aging interactive. **Authored by**: Jessica Traylor for Lumen Learning. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+CC licensed content, Shared previously
+
+-   Stages of Development. **Authored by**: OpenStax College. **Located at**: [https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development](https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+-   Section on cognitive development. **Authored by**: Tara Queen and Jacqui Smith . **Provided by**: University of Michigan. **Located at**: [http://nobaproject.com/modules/aging](http://nobaproject.com/modules/aging). **Project**: The Noba Project. **License**: _[CC BY-NC-SA: Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)_
+-   Physical Development in Late Adulthood. **Provided by**: Boundless. **Located at**: [https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/human-development-14/aging-late-adulthood-412/physical-development-in-late-adulthood-291-12826/](https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/human-development-14/aging-late-adulthood-412/physical-development-in-late-adulthood-291-12826/). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+---
+
+## Childhood: Emotional and Social Development
+
+- url_title:: "Childhood: Emotional and Social Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/childhood-emotional-and-social-development/
+### Learning Objectives
+
+-   Explain the emotional development that occurs from infancy through childhood, including attachment, the development of a self-concept, and parenting styles
+
+## Attachment
+
+Psychosocial development occurs as children form relationships, interact with others, and understand and manage their feelings. In social and emotional development, forming healthy attachments is very important and is the major social milestone of infancy. **Attachment** is a long-standing connection or bond with others. Developmental psychologists are interested in how infants reach this milestone. They ask such questions as: How do parent and infant attachment bonds form? How does neglect affect these bonds? What accounts for children’s attachment differences?
+
+Researchers Harry Harlow, John Bowlby, and Mary Ainsworth conducted studies designed to answer these questions. In the 1950s, Harlow conducted a series of experiments on monkeys. He separated newborn monkeys from their mothers. Each monkey was presented with two surrogate mothers. One surrogate monkey was made out of wire mesh, and she could dispense milk. The other monkey was softer and made from cloth: This monkey did not dispense milk. Research shows that the monkeys preferred the soft, cuddly cloth monkey, even though she did not provide any nourishment. The baby monkeys spent their time clinging to the cloth monkey and only went to the wire monkey when they needed to be feed. Prior to this study, the medical and scientific communities generally thought that babies become attached to the people who provide their nourishment. However, Harlow (1958) concluded that there was more to the mother-child bond than nourishment. Feelings of comfort and security are the critical components to maternal-infant bonding, which leads to healthy psychosocial development.
+
+Building on the work of Harlow and others, John Bowlby developed the concept of attachment theory. He defined attachment as the affectional bond or tie that an infant forms with the mother (Bowlby, 1969). An infant must form this bond with a primary caregiver in order to have normal social and emotional development. In addition, Bowlby proposed that this attachment bond is very powerful and continues throughout life. He used the concept of secure base to define a healthy attachment between parent and child (1988). A **secure base** is a parental presence that gives the child a sense of safety as he explores his surroundings. Bowlby said that two things are needed for a healthy attachment: The caregiver must be responsive to the child’s physical, social, and emotional needs; and the caregiver and child must engage in mutually enjoyable interactions (Bowlby, 1969) (Figure 4).
+
+[![A man holds a baby in the air.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/03191702/b264621e863ce1b7a80d3858e981efbecdf548c2.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/03191702/b264621e863ce1b7a80d3858e981efbecdf548c2.jpeg)
+
+**Figure 1**. Mutually enjoyable interactions promote the parent-infant bond. (credit: “balouriarajesh\_Pixabay”/Pixabay)
+
+While Bowlby thought attachment was an all-or-nothing process, Mary Ainsworth’s (1970) research showed otherwise. Ainsworth wanted to know if children differ in the ways they bond, and if so, why. To find the answers, she used the Strange Situation procedure to study attachment between mothers and their infants (1970). In the Strange Situation, the mother (or primary caregiver) and the infant (age 12-18 months) are placed in a room together. There are toys in the room, and the caregiver and child spend some time alone in the room. After the child has had time to explore her surroundings, a stranger enters the room. The mother then leaves her baby with the stranger. After a few minutes, she returns to comfort her child.
+
+Based on how the infants/toddlers responded to the separation and reunion, Ainsworth identified three types of parent-child attachments: secure, avoidant, and resistant (Ainsworth & Bell, 1970). A fourth style, known as disorganized attachment, was later described (Main & Solomon, 1990). The most common type of attachment—also considered the healthiest—is called **secure attachment** (Figure 5). In this type of attachment, the toddler prefers his parent over a stranger. The attachment figure is used as a secure base to explore the environment and is sought out in times of stress. Securely attached children were distressed when their caregivers left the room in the Strange Situation experiment, but when their caregivers returned, the securely attached children were happy to see them. Securely attached children have caregivers who are sensitive and responsive to their needs.
+
+![A photograph shows a person squatting down next to a small child who is standing up.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_04_Secure.jpg#fixme)
+
+**Figure 2**. In secure attachment, the parent provides a secure base for the toddler, allowing him to securely explore his environment. (credit: Kerry Ceszyk)
+
+With **avoidant attachment (sometimes called insecure or anxious-avoidant)**, the child is unresponsive to the parent, does not use the parent as a secure base, and does not care if the parent leaves. The toddler reacts to the parent the same way she reacts to a stranger. When the parent does return, the child is slow to show a positive reaction. Ainsworth theorized that these children were most likely to have a caregiver who was insensitive and inattentive to their needs (Ainsworth, Blehar, Waters, & Wall, 1978).
+
+In cases of **resistant attachment (also called ambivalent or anxious-ambivalent/resistant)**, children tend to show clingy behavior, but then they reject the attachment figure’s attempts to interact with them (Ainsworth & Bell, 1970). These children do not explore the toys in the room, as they are too fearful. During separation in the Strange Situation, they became extremely disturbed and angry with the parent. When the parent returns, the children are difficult to comfort. Resistant attachment is the result of the caregivers’ inconsistent level of response to their child.
+
+Finally, children with **disorganized attachment** behaved oddly in the Strange Situation. They freeze, run around the room in an erratic manner, or try to run away when the caregiver returns (Main & Solomon, 1990). This type of attachment is seen most often in kids who have been abused. Research has shown that abuse disrupts a child’s ability to regulate their emotions.
+
+While Ainsworth’s research has found support in subsequent studies, it has also met criticism. Some researchers have pointed out that a child’s temperament may have a strong influence on attachment (Gervai, 2009; Harris, 2009), and others have noted that attachment varies from culture to culture, a factor not accounted for in Ainsworth’s research (Rothbaum, Weisz, Pott, Miyake, & Morelli, 2000; van Ijzendoorn & Sagi-Schwartz, 2008).
+
+## Self-Concept
+
+Just as attachment is the main psychosocial milestone of infancy, the primary psychosocial milestone of childhood is the development of a positive sense of self. How does self-awareness develop? Infants don’t have a self-concept, which is an understanding of who they are. If you place a baby in front of a mirror, she will reach out to touch her image, thinking it is another baby. However, by about 18 months a toddler will recognize that the person in the mirror is herself. How do we know this? In a well-known experiment, a researcher placed a red dot of paint on children’s noses before putting them in front of a mirror (Amsterdam, 1972). Commonly known as the mirror test, this behavior is demonstrated by humans and a few other species and is considered evidence of self-recognition (Archer, 1992). At 18 months old they would touch their own noses when they saw the paint, surprised to see a spot on their faces. By 24–36 months old children can name and/or point to themselves in pictures, clearly indicating self-recognition.
+
+Children from 2–4 years old display a great increase in social behavior once they have established a self-concept. They enjoy playing with other children, but they have difficulty sharing their possessions. Also, through play children explore and come to understand their gender roles and can label themselves as a girl or boy (Chick, Heilman-Houser, & Hunter, 2002). By 4 years old, children can cooperate with other children, share when asked, and separate from parents with little anxiety. Children at this age also exhibit autonomy, initiate tasks, and carry out plans. Success in these areas contributes to a positive sense of self. Once children reach 6 years old, they can identify themselves in terms of group memberships: “I’m a first grader!” School-age children compare themselves to their peers and discover that they are competent in some areas and less so in others (recall Erikson’s task of industry versus inferiority). At this age, children recognize their own personality traits as well as some other traits they would like to have. For example, 10-year-old Layla says, “I’m kind of shy. I wish I could be more talkative like my friend Alexa.”
+
+Development of a positive self-concept is important to healthy development. Children with a positive self-concept tend to be more confident, do better in school, act more independently, and are more willing to try new activities (Maccoby, 1980; Ferrer & Fugate, 2003). Formation of a positive self-concept begins in Erikson’s toddlerhood stage, when children establish autonomy and become confident in their abilities. Development of self-concept continues in elementary school, when children compare themselves to others. When the comparison is favorable, children feel a sense of competence and are motivated to work harder and accomplish more. Self-concept is re-evaluated in Erikson’s adolescence stage, as teens form an identity. They internalize the messages they have received regarding their strengths and weaknesses, keeping some messages and rejecting others. Adolescents who have achieved identity formation are capable of contributing positively to society (Erikson, 1968).
+
+### dig deeper
+
+## **Phenomenological Variant of Ecological Systems Theory (PVEST)**
+
+Kenneth and Mamie Clark were pioneering psychologists responsible for the first psychological study used in a Supreme Court case. Their research with African American children and doll choices was used to highlight the harmful effects of segregation and provided support for the Browns and the NAACP in their lawsuit against the Board of Education. The finding that African American children were more likely to choose a white doll over a black doll, in both northern and southern states, led them to theorize that the children did not have a healthy concept of themselves (Clark & Clark, 1950).
+
+The Clarks’ research differed from that of Inez Beverly Prosser, who also studied African American children in segregated and integrated schools in Cincinnati. Parents could choose either environment for their children during the 1930s. She found, among other factors, that the self-concept of children at segregated schools was more positive versus those in integrated schools, partly due to teachers’ low expectations. Prosser also noted that the child’s personality should be considered when choosing a segregated school or an integrated school (Benjamin, Henry, & McMahon, 2005).
+
+Later researchers suggested that African American children choosing a doll that did not look like them was not an indication of their self-esteem or their self-image. For instance, Rogers and Meltzoff (2017) found that gender identity was more important than race in their study of diverse children whose average age was about 10 years old. Thus, for children that young, the meaning of race is an evolving process, as opposed to adolescents’ search for identity. The BIPOC children in the study did view racial identity as important, compared to their white counterparts.
+
+For teenagers who are members of marginalized groups, racial/ethnic/cultural identity can be paramount, depending on the family’s processes. Racial socialization involves teaching them the positive aspects of their in-group, usually by caregivers. Most of the students in a study by Neblett, Smalls, Ford, Nguyen, and Sellers (2009) reported having received such messages but a few received no racial socialization messages. They found that these messages played a role in how they felt about their in-group.
+
+Some theories have been developed to explain the behaviors of marginalized youth. One such theory is the Phenomenological Variant of Ecological Systems Theory (PVEST), put forth by Margaret Beale Spencer. It is a merging of phenomenology and Bronfenbrenner’s ecological systems theory. A phenomenological approach is based on how a person makes meaning of their experiences. For example, young Black American boys have different experiences in educational settings compared to Black American girls. Consequently, the meaning they assign to those experiences differs. Bronfenbrenner’s ecological systems theory suggests that development occurs based on interactions among environments such as school, family, and community (Bronfenbrenner, 1977).
+
+The research that Spencer, Dupree, and Hartmann (1997) conducted with Black adolescent boys and girls was explained by PVEST. They found that negative learning attitudes were predicted by unpopularity with peers for girls and boys. Additionally, for boys, more stress predicted a less negative attitude toward learning, possibly due to focus on the school environment instead of on personal issues. This occurred along with perceiving that teachers had positive expectations of Black boys. The researchers surmised that PVEST accounted for how others’ perceptions and their subsequent attitudes were related and worked both ways.
+
+What can parents do to nurture a healthy self-concept? Diana Baumrind (1971, 1991) thinks parenting style may be a factor. The way we parent is an important factor in a child’s socioemotional growth. Baumrind developed and refined a theory describing four parenting styles: authoritative, authoritarian, permissive, and uninvolved. With the **authoritative** **style**, the parent gives reasonable demands and consistent limits, expresses warmth and affection, and listens to the child’s point of view. Parents set rules and explain the reasons behind them. They are also flexible and willing to make exceptions to the rules in certain cases—for example, temporarily relaxing bedtime rules to allow for a nighttime swim during a family vacation. Of the four parenting styles, the authoritative style is the one that is most encouraged in modern American society. American children raised by authoritative parents tend to have high self-esteem and social skills. However, effective parenting styles vary as a function of culture and, as Small (1999) points out, the authoritative style is not necessarily preferred or appropriate in all cultures.
+
+In **authoritarian style**, the parent places high value on conformity and obedience. The parents are often strict, tightly monitor their children, and express little warmth. In contrast to the authoritative style, authoritarian parents probably would not relax bedtime rules during a vacation because they consider the rules to be set, and they expect obedience. This style can create anxious, withdrawn, and unhappy kids. However, it is important to point out that authoritarian parenting is as beneficial as the authoritative style in some ethnic groups (Russell, Crockett, & Chao, 2010). For instance, first-generation Chinese American children raised by authoritarian parents did just as well in school as their peers who were raised by authoritative parents (Russell et al., 2010).
+
+For parents who employ the **permissive style** of parenting, the kids run the show and anything goes. Permissive parents make few demands and rarely use punishment. They tend to be very nurturing and loving, and may play the role of friend rather than parent. In terms of our example of vacation bedtimes, permissive parents might not have bedtime rules at all—instead they allow the child to choose his bedtime whether on vacation or not. Not surprisingly, children raised by permissive parents tend to lack self-discipline, and the permissive parenting style is negatively associated with grades (Dornbusch, Ritter, Leiderman, Roberts, & Fraleigh, 1987). The permissive style may also contribute to other risky behaviors such as alcohol abuse (Bahr & Hoffman, 2010), risky sexual behavior especially among female children (Donenberg, Wilson, Emerson, & Bryant, 2002), and increased display of disruptive behaviors by male children (Parent et al., 2011). However, there are some positive outcomes associated with children raised by permissive parents. They tend to have higher self-esteem, better social skills, and report lower levels of depression (Darling, 1999).
+
+With the **uninvolved style** of parenting, the parents are indifferent, uninvolved, and sometimes referred to as neglectful. They don’t respond to the child’s needs and make relatively few demands. This could be because of severe depression or substance abuse, or other factors such as the parents’ extreme focus on work. These parents may provide for the child’s basic needs, but little else. The children raised in this parenting style are usually emotionally withdrawn, fearful, anxious, perform poorly in school, and are at an increased risk of substance abuse (Darling, 1999).
+
+As you can see, parenting styles influence childhood adjustment, but could a child’s temperament likewise influence parenting? **Temperament** refers to innate traits that influence how one thinks, behaves, and reacts with the environment. Children with easy temperaments demonstrate positive emotions, adapt well to change, and are capable of regulating their emotions. Conversely, children with difficult temperaments demonstrate negative emotions and have difficulty adapting to change and regulating their emotions. Difficult children are much more likely to challenge parents, teachers, and other caregivers (Thomas, 1984). Therefore, it’s possible that easy children (i.e., social, adaptable, and easy to soothe) tend to elicit warm and responsive parenting, while demanding, irritable, withdrawn children evoke irritation in their parents or cause their parents to withdraw (Sanson & Rothbart, 1995).
+
+### Watch It
+
+Watch this optional lecture on child development from MIT’s John Gabrieli for an interesting overview of key physical, social, and emotional developmental stages of childhood.
+
+You can [view the transcript for “Lec 17 | MIT 9.00SC Introduction to Psychology, Spring 2011” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/Lec17MIT900SCIntroductiontoPsychologySpring2011.txt).
+
+### Think It Over
+
+Which parenting style describes how you were raised? Provide an example or two to support your answer.
+
+### Glossary
+
+**attachment:** long-standing connection or bond with others
+
+**authoritarian parenting style:** parents place a high value on conformity and obedience, are often rigid, and express little warmth to the child
+
+**authoritative parenting style:** parents give children reasonable demands and consistent limits, express warmth and affection, and listen to the child’s point of view
+
+**avoidant attachment:** characterized by child’s unresponsiveness to parent, does not use the parent as a secure base, and does not care if parent leaves
+
+**disorganized attachment:** characterized by the child’s odd behavior when faced with the parent; type of attachment seen most often with kids that are abused
+
+**permissive parenting style:** parents make few demands and rarely use punishment
+
+**resistant attachment:** characterized by the child’s tendency to show clingy behavior and rejection of the parent when she attempts to interact with the child
+
+**secure attachment:** characterized by the child using the parent as a secure base from which to explore
+
+**secure base:** parental presence that gives the infant/toddler a sense of safety as he explores his surroundings
+
+**temperament:** innate traits that influence how one thinks, behaves, and reacts with the environment
+
+**uninvolved parenting style:** parents are indifferent, uninvolved, and sometimes referred to as neglectful; they don’t respond to the child’s needs and make relatively few demands
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   The Strange Situation - Mary Ainsworth. **Authored by**: thibs44. **Located at**: [https://www.youtube.com/watch?v=QTsewNrHUHU](https://www.youtube.com/watch?v=QTsewNrHUHU). **License**: _Other_. **License Terms**: Standard YouTube License
+-   Stages of Development. **Provided by**: OpenStax College. **Located at**: [https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development](https://openstax.org/books/psychology-2e/pages/9-3-stages-of-development). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+
+---
+
+## Childhood: Physical and Cognitive Development
+
+- url_title:: "Childhood: Physical and Cognitive Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-childhood/
+### Learning Objectives
+
+-   Explain the physical development that occurs from infancy through childhood
+-   Explain the cognitive development that occurs from infancy through childhood
+
+## Physical Development
+
+In infancy, toddlerhood, and early childhood, the body’s physical development is rapid (Figure 1). On average, newborns weigh between 5 and 10 pounds, and a newborn’s weight typically doubles in six months and triples in one year. By 2 years old the weight will have quadrupled, so we can expect that a 2 year old should weigh between 20 and 40 pounds. The average length of a newborn is 19.5 inches, increasing to 29.5 inches by 12 months and 34.4 inches by 2 years old (WHO Multicentre Growth Reference Study Group, 2006).
+
+![A collage of four photographs depicting babies is shown. From left to right they get progressively older. The far left photograph is a bundled up sleeping newborn. To the right is a picture of a toddler next to a toy giraffe. To the right is a baby blowing out a single candle. To the far right is a child on a swing set.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_04_Growth.jpg#fixme)
+
+**Figure 1**. Children experience rapid physical changes through infancy and early childhood. (credit “left”: modification of work by Kerry Ceszyk; credit “middle-left”: modification of work by Kristi Fausel; credit “middle-right”: modification of work by “devinf”/Flickr; credit “right”: modification of work by Rose Spielman)
+
+During infancy and childhood, growth does not occur at a steady rate (Carel, Lahlou, Roger, & Chaussain, 2004). Growth slows between 4 and 6 years old: During this time children gain 5–7 pounds and grow about 2–3 inches per year. Once girls reach 8–9 years old, their growth rate outpaces that of boys due to a pubertal growth spurt. This growth spurt continues until around 12 years old, coinciding with the start of the menstrual cycle. By 10 years old, the average girl weighs 88 pounds, and the average boy weighs 85 pounds.
+
+We are born with all of the brain cells that we will ever have—about 100–200 billion neurons (nerve cells) whose function is to store and transmit information (Huttenlocher & Dabholkar, 1997). However, the nervous system continues to grow and develop. Each neural pathway forms thousands of new connections during infancy and toddlerhood. This period of rapid neural growth is called blooming. Neural pathways continue to develop through puberty. The blooming period of neural growth is then followed by a period of pruning, where neural connections are reduced. It is thought that pruning causes the brain to function more efficiently, allowing for mastery of more complex skills (Hutchinson, 2011). Blooming occurs during the first few years of life, and pruning continues through childhood and into adolescence in various areas of the brain.
+
+The size of our brains increases rapidly. For example, the brain of a 2-year-old is 55% of its adult size, and by 6 years old the brain is about 90% of its adult size (Tanner, 1978). During early childhood (ages 3–6), the frontal lobes grow rapidly. Recalling our discussion of the 4 lobes of the brain earlier in this book, the frontal lobes are associated with planning, reasoning, memory, and impulse control. Therefore, by the time children reach school age, they are developmentally capable of controlling their attention and behavior. Through the elementary school years, the frontal, temporal, occipital, and parietal lobes all grow in size. The brain growth spurts experienced in childhood tend to follow Piaget’s sequence of cognitive development, so that significant changes in neural functioning account for cognitive advances (Kolb & Whishaw, 2009; Overman, Bachevalier, Turner, & Peuster, 1992).
+
+Motor development occurs in an orderly sequence as infants move from reflexive reactions (e.g., sucking and rooting) to more advanced motor functioning. For instance, babies first learn to hold their heads up, then to sit with assistance, and then to sit unassisted, followed later by crawling and then walking.
+
+**Motor skills** refer to our ability to move our bodies and manipulate objects. **Fine motor skills** focus on the muscles in our fingers, toes, and eyes, and enable coordination of small actions (e.g., grasping a toy, writing with a pencil, and using a spoon). **Gross motor skill**s focus on large muscle groups that control our arms and legs and involve larger movements (e.g., balancing, running, and jumping).
+
+As motor skills develop, there are certain developmental milestones that young children should achieve (Table 1). For each milestone there is an average age, as well as a range of ages in which the milestone should be reached. An example of a developmental milestone is sitting. On average, most babies sit alone at 7 months old. Sitting involves both coordination and muscle strength, and 90% of babies achieve this milestone between 5 and 9 months old. In another example, babies on average are able to hold up their head at 6 weeks old, and 90% of babies achieve this between 3 weeks and 4 months old. If a baby is not holding up his head by 4 months old, he is showing a delay. If the child is displaying delays on several milestones, that is reason for concern, and the parent or caregiver should discuss this with the child’s pediatrician. Some developmental delays can be identified and addressed through early intervention.
+
+Table 1. Developmental Milestones, Ages 2–5 Years
+| Age (years) | Physical | Personal/Social | Language | Cognitive |
+| --- | --- | --- | --- | --- |
+| 2 | Kicks a ball; walks up and down stairs | Plays alongside other children; copies adults | Points to objects when named; puts 2–4 words together in a sentence | Sorts shapes and colors; follows 2-step instructions |
+| 3 | Climbs and runs; pedals tricycle | Takes turns; expresses many emotions; dresses self | Names familiar things; uses pronouns | Plays make believe; works toys with parts (levers, handles) |
+| 4 | Catches balls; uses scissors | Prefers social play to solo play; knows likes and interests | Knows songs and rhymes by memory | Names colors and numbers; begins writing letters |
+| 5 | Hops and swings; uses fork and spoon | Distinguishes real from pretend; likes to please friends | Speaks clearly; uses full sentences | Counts to 10 or higher; prints some letters and copies basic shapes |
+
+[![Man and baby](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/04195054/Dad-1280x854-300x200.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/04195054/Dad-1280x854.jpg)
+
+Figure 2. Man with a baby.
+
+## Cognitive Development
+
+In addition to rapid physical growth, young children also exhibit significant development of their cognitive abilities. Piaget thought that children’s ability to understand objects—such as learning that a rattle makes a noise when shaken—was a cognitive skill that develops slowly as a child matures and interacts with the environment. Today, developmental psychologists think Piaget was incorrect. Researchers have found that even very young children understand objects and how they work long before they have experience with those objects (Baillargeon, 1987; Baillargeon, Li, Gertner, & Wu, 2011). For example, children as young as 3 months old demonstrated knowledge of the properties of objects that they had only viewed and did not have prior experience with them. In one study, 3-month-old infants were shown a truck rolling down a track and behind a screen. The box, which appeared solid but was actually hollow, was placed next to the track. The truck rolled past the box as would be expected. Then the box was placed on the track to block the path of the truck. When the truck was rolled down the track this time, it continued unimpeded. The infants spent significantly more time looking at this impossible event (Figure 2). Baillargeon (1987) concluded that they knew solid objects cannot pass through each other. Baillargeon’s findings suggest that very young children have an understanding of objects and how they work, which Piaget (1954) would have said is beyond their cognitive abilities due to their limited experiences in the world.
+
+![Image A shows a toy truck coasting along a track unobstructed. Image B shows a toy truck coasting along a track with a box in the background. Image C shows a truck coasting along a track and going through what appears to be an obstruction.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_04_TruckBox.jpg#fixme)
+
+**Figure 2**. In Baillargeon’s study, infants observed a truck (a) roll down an unobstructed track, (b) roll down an unobstructed track with an obstruction (box) beside it, and (c) roll down and pass through what appeared to be an obstruction.
+
+Just as there are physical milestones that we expect children to reach, there are also cognitive milestones. It is helpful to be aware of these milestones as children gain new abilities to think, problem solve, and communicate. For example, infants shake their head “no” around 6–9 months, and they respond to verbal requests to do things like “wave bye-bye” or “blow a kiss” around 9–12 months. Remember Piaget’s ideas about object permanence? We can expect children to grasp the concept that objects continue to exist even when they are not in sight by around 8 months old. Because toddlers (i.e., 12–24 months old) have mastered object permanence, they enjoy games like hide and seek, and they realize that when someone leaves the room they will come back (Loop, 2013). Toddlers also point to pictures in books and look in appropriate places when you ask them to find objects.
+
+Just as there are **_physical milestones_** that we expect children to reach, there are also **_cognitive milestones_**. It is helpful to be aware of these milestones as children gain new abilities to think, problem solve, and communicate. For example, infants shake their head “no” around 6–9 months, and they respond to verbal requests to do things like “wave bye-bye” or “blow a kiss” around 9–12 months. Remember Piaget’s ideas about object permanence? We can expect children to grasp the concept that objects continue to exist even when they are not in sight by around 8 months old. Because toddlers (i.e., 12–24 months old) have mastered object permanence, they enjoy games like hide and seek, and they realize that when someone leaves the room they will come back (Loop, 2013). Toddlers also point to pictures in books and look in appropriate places when you ask them to find objects.
+
+Preschool-age children (i.e., 3–5 years old) also make steady progress in cognitive development. Not only can they count, name colors, and tell you their name and age, but they can also make some decisions on their own, such as choosing an outfit to wear. Preschool-age children understand basic time concepts and sequencing (e.g., before and after), and they can predict what will happen next in a story. They also begin to enjoy the use of humor in stories. Because they can think symbolically, they enjoy pretend play and inventing elaborate characters and scenarios. One of the most common examples of their cognitive growth is their blossoming curiosity. Preschool-age children love to ask “Why?”
+
+An important cognitive change occurs in children this age. Recall that Piaget described 2–3 year olds as egocentric, meaning that they do not have an awareness of others’ points of view. Between 3 and 5 years old, children come to understand that people have thoughts, feelings, and beliefs that are different from their own. This is known as theory-of-mind (TOM). Children can use this skill to tease others, persuade their parents to purchase a candy bar, or understand why a sibling might be angry. When children develop TOM, they can recognize that others have false beliefs (Dennett, 1987; Callaghan et al., 2005).
+
+An important cognitive change occurs in children this age. Recall that Piaget described 2–3 year olds as egocentric, meaning that they do not have an awareness of others’ points of view. Between 3 and 5 years old, children come to understand that people have thoughts, feelings, and beliefs that are different from their own. This is known as **theory of mind (TOM)**. Children can use this skill to tease others, persuade their parents to purchase a candy bar, or understand why a sibling might be angry. When children develop TOM, they can recognize that others have false beliefs (Dennett, 1987; Callaghan et al., 2005).
+
+Cognitive skills continue to expand in middle and late childhood (6–11 years old). Thought processes become more logical and organized when dealing with concrete information (Figure 3). Children at this age understand concepts such as the past, present, and future, giving them the ability to plan and work toward goals. Additionally, they can process complex ideas such as addition and subtraction and cause-and-effect relationships. However, children’s attention spans tend to be very limited until they are around 11 years old. After that point, it begins to improve through adulthood.
+
+![A photograph of children playing baseball is shown. Five children are in the picture, two on one team, and three on the other.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_04_Game.jpg#fixme)
+
+**Figure 3**. Because they understand luck and fairness, children in middle and late childhood (6–11 years old) are able to follow rules for games. (credit: Edwin Martinez)
+
+One well-researched aspect of cognitive development is language acquisition. As mentioned earlier, the order in which children learn language structures is consistent across children and cultures (Hatch, 1983). You’ve also learned that some psychological researchers have proposed that children possess a biological predisposition for language acquisition.
+
+Starting before birth, babies begin to develop language and communication skills. At birth, babies apparently recognize their mother’s voice and can discriminate between the language(s) spoken by their mothers and foreign languages, and they show preferences for faces that are moving in synchrony with audible language (Blossom & Morgan, 2006; Pickens, 1994; Spelke & Cortelyou, 1981).
+
+Children communicate information through gesturing long before they speak, and there is some evidence that gesture usage predicts subsequent language development (Iverson & Goldin-Meadow, 2005). In terms of producing spoken language, babies begin to coo almost immediately. Cooing is a one-syllable combination of a consonant and a vowel sound (e.g., coo or ba). Interestingly, babies replicate sounds from their own languages. A baby whose parents speak French will coo in a different tone than a baby whose parents speak Spanish or Urdu. After cooing, the baby starts to babble. Babbling begins with repeating a syllable, such as ma-ma, da-da, or ba-ba. When a baby is about 12 months old, we expect her to say her first word for meaning, and to start combining words for meaning at about 18 months.
+
+At about 2 years old, a toddler uses between 50 and 200 words; by 3 years old they have a vocabulary of up to 1,000 words and can speak in sentences. During the early childhood years, children’s vocabulary increases at a rapid pace. This is sometimes referred to as the “vocabulary spurt” and has been claimed to involve an expansion in vocabulary at a rate of 10–20 new words per week. Recent research may indicate that while some children experience these spurts, it is far from universal (as discussed in Ganger & Brent, 2004). It has been estimated that, 5 year olds understand about 6,000 words, speak 2,000 words, and can define words and question their meanings. They can rhyme and name the days of the week. Seven year olds speak fluently and use slang and clichés (Stork & Widdowson, 1974).
+
+What accounts for such dramatic language learning by children? Behaviorist B. F. Skinner thought that we learn language in response to reinforcement or feedback, such as through parental approval or through being understood. For example, when a two-year-old child asks for juice, he might say, “me juice,” to which his mother might respond by giving him a cup of apple juice. Noam Chomsky (1957) criticized Skinner’s theory and proposed that we are all born with an innate capacity to learn language. Chomsky called this mechanism a language acquisition device (LAD). Who is correct? Both Chomsky and Skinner are right. Remember that we are a product of both nature and nurture. Researchers now believe that language acquisition is partially inborn and partially learned through our interactions with our linguistic environment (Gleitman & Newport, 1995; Stork & Widdowson, 1974).
+
+What accounts for such dramatic language learning by children? Behaviorist B. F. Skinner thought that we learn language in response to **reinforcement**, such as through parental approval or through being understood. For example, when a two-year-old child asks for juice, he might say, “me juice,” to which his mother might respond by giving him a cup of apple juice.
+
+Noam Chomsky (1957) criticized Skinner’s theory and proposed that we are all born with an innate capacity to learn language. Chomsky called this mechanism a language acquisition device (LAD). Who is correct? Both Chomsky and Skinner are right. Remember that we are a product of both nature and nurture. Researchers now believe that language acquisition is partially inborn and partially learned through our interactions with our linguistic environment (Gleitman & Newport, 1995; Stork & Widdowson, 1974).
+
+### Everyday Connection: The Importance of Play and Recess
+
+According to the American Academy of Pediatrics (2007), unstructured play is an integral part of a child’s development. It builds creativity, problem solving skills, and social relationships. Play also allows children to develop a theory-of-mind as they imaginatively take on the perspective of others.
+
+Outdoor play allows children the opportunity to directly experience and sense the world around them. While doing so, they may collect objects that they come across and develop lifelong interests and hobbies. They also benefit from increased exercise, and engaging in outdoor play can actually increase how much they enjoy physical activity. This helps support the development of a healthy heart and brain. Unfortunately, research suggests that today’s children are engaging in less and less outdoor play (Clements, 2004). Perhaps, it is no surprise to learn that lowered levels of physical activity in conjunction with easy access to calorie-dense foods with little nutritional value are contributing to alarming levels of childhood obesity (Karnik & Kanekar, 2012).
+
+Despite the adverse consequences associated with reduced play, some children are over scheduled and have little free time to engage in unstructured play. In addition, some schools have taken away recess time for children in a push for students to do better on standardized tests, and many schools commonly use loss of recess as a form of punishment. Do you agree with these practices? Why or why not?
+
+### Glossary
+
+**cognitive empathy:** ability to take the perspective of others and to feel concern for others
+
+**fine motor skills:** use of muscles in fingers, toes, and eyes to coordinate small actions
+
+**gross motor skills:** use of large muscle groups to control arms and legs for large body movements
+
+**motor skills:** ability to move our body and manipulate objects
+
+**reinforcement:** feedback that strengthens future behavior
+
+**theory of mind:** that children come to understand that people have thoughts, feelings, and beliefs different from their own
+
+### Candela Citations
+
+---
+
+## Cognitive Development | Introduction to Psychology
+
+- url_title:: "Cognitive Development | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/lifespan-theories-cognitive-development/
+### Learning Objectives
+
+-   Give examples of behavior and key vocabulary in each of Piaget’s stages of cognitive development
+
+## Cognitive Theory of Development
+
+Jean Piaget (1896–1980) is another stage theorist who studied childhood development (Figure 1). Instead of approaching development from a psychoanalytical or psychosocial perspective, Piaget focused on children’s cognitive growth. He believed that thinking is a central aspect of development and that children are naturally inquisitive. However, he said that children do not think and reason like adults (Piaget, 1930, 1932). His theory of cognitive development holds that our cognitive abilities develop through specific stages, which exemplifies the discontinuity approach to development. As we progress to a new stage, there is a distinct shift in how we think and reason.
+
+![A photograph depicts Jean Piaget in his later years.](https://textimgs.s3.amazonaws.com/ospsych/m49109/CNX_Psych_09_03_Piaget.jpg#fixme)
+
+**Figure 1**. Jean Piaget spent over 50 years studying children and how their minds develop.
+
+Piaget said that children develop schemata to help them understand the world. **Schemata** are concepts (mental models) that are used to help us categorize and interpret information. By the time children have reached adulthood, they have created schemata for almost everything. When children learn new information, they adjust their schemata through two processes: assimilation and accommodation. First, they assimilate new information or experiences in terms of their current schemata: **assimilation** is when they take in information that is comparable to what they already know. **Accommodation** describes when they change their schemata based on new information. This process continues as children interact with their environment.
+
+For example, 2-year-old Blake learned the schema for dogs because his family has a Labrador retriever. When Blake sees other dogs in his picture books, he says, “Look mommy, dog!” Thus, he has assimilated them into his schema for dogs. One day, Blake sees a sheep for the first time and says, “Look mommy, dog!” Having a basic schema that a dog is an animal with four legs and fur, Blake thinks all furry, four-legged creatures are dogs. When Blake’s mom tells him that the animal he sees is a sheep, not a dog, Blake must accommodate his schema for dogs to include more information based on his new experiences. Blake’s schema for dog was too broad, since not all furry, four-legged creatures are dogs. He now modifies his schema for dogs and forms a new one for sheep.
+
+### Link to Learning
+
+Watch [this short video clip](https://www.youtube.com/watch?v=Xj0CUeyucJw) to review the concepts of schema, assimilation and accommodation.
+
+Like Freud and Erikson, Piaget thought development unfolds in a series of stages approximately associated with age ranges. He proposed a theory of cognitive development that unfolds in four stages: sensorimotor, preoperational, concrete operational, and formal operational.
+
+Table 1. Piaget’s Stages of Cognitive Development
+| Age (years) | Stage | Description | Developmental issues |
+| --- | --- | --- | --- |
+| 0–2 | Sensorimotor | World experienced through senses and actions | Object permanence  
+Stranger anxiety |
+| 2–7 | Preoperational | Use words and images to represent things, but lack logical reasoning | Pretend play  
+Egocentrism  
+Language development |
+| 7–11 | Concrete operational | Understand concrete events and analogies logically; perform arithmetical operations | Conservation  
+Mathematical transformations |
+| 11– | Formal operational | Formal operations  
+Utilize abstract reasoning | Abstract logic  
+Moral reasoning |
+
+The first stage is the **sensorimotor** stage, which lasts from birth to about 2 years old. During this stage, children learn about the world through their senses and motor behavior. Young children put objects in their mouths to see if the items are edible, and once they can grasp objects, they may shake or bang them to see if they make sounds. Between 5 and 8 months old, the child develops **object permanence**, which is the understanding that even if something is out of sight, it still exists (Bogartz, Shinskey, & Schilling, 2000). According to Piaget, young infants do not remember an object after it has been removed from sight. Piaget studied infants’ reactions when a toy was first shown to an infant and then hidden under a blanket. Infants who had already developed object permanence would reach for the hidden toy, indicating that they knew it still existed, whereas infants who had not developed object permanence would appear confused.
+
+In Piaget’s view, around the same time children develop object permanence, they also begin to exhibit stranger anxiety, which is a fear of unfamiliar people. Babies may demonstrate this by crying and turning away from a stranger, by clinging to a caregiver, or by attempting to reach their arms toward familiar faces such as parents. Stranger anxiety results when a child is unable to assimilate the stranger into an existing schema; therefore, she can’t predict what her experience with that stranger will be like, which results in a fear response.
+
+Piaget’s second stage is the **preoperational stage**, which is from approximately 2 to 7 years old. In this stage, children can use symbols to represent words, images, and ideas, which is why children in this stage engage in pretend play. A child’s arms might become airplane wings as he zooms around the room, or a child with a stick might become a brave knight with a sword. Children also begin to use language in the preoperational stage, but they cannot understand adult logic or mentally manipulate information (the term _operational_ refers to logical manipulation of information, so children at this stage are considered to be _pre_\-operational). Children’s logic is based on their own personal knowledge of the world so far, rather than on conventional knowledge. For example, dad gave a slice of pizza to 10-year-old Keiko and another slice to her 3-year-old brother, Kenny. Kenny’s pizza slice was cut into five pieces, so Kenny told his sister that he got more pizza than she did. Children in this stage cannot perform mental operations because they have not developed an understanding of **conservation**, which is the idea that even if you change the appearance of something, it is still equal in size as long as nothing has been removed or added.
+
+During this stage, we also expect children to display **egocentrism**, which means that the child is not able to take the perspective of others. A child at this stage thinks that everyone sees, thinks, and feels just as they do. Let’s look at Kenny and Keiko again. Keiko’s birthday is coming up, so their mom takes Kenny to the toy store to choose a present for his sister. He selects an Iron Man action figure for her, thinking that if he likes the toy, his sister will too. An egocentric child is not able to infer the perspective of other people and instead attributes his own perspective. At some point during this stage and typically between 3 and 5 years old, children come to understand that people have thoughts, feelings, and beliefs that are different from their own. This is known as **theory-of-mind** (TOM).
+
+### Watch It
+
+Piaget developed the Three-Mountain Task to determine the level of egocentrism displayed by children. Children view a 3-dimensional mountain scene from one viewpoint, and are asked what another person at a different viewpoint would see in the same scene. Watch the Three-Mountain Task in action in this short video from the University of Minnesota and the Science Museum of Minnesota.  
+
+You can [view the transcript for “Piaget’s Mountains Task” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/PiagetsMountainsTask.txt).
+
+Piaget’s third stage is the **concrete operational stage**, which occurs from about 7 to 11 years old. In this stage, children can think logically about real (concrete) events; they have a firm grasp on the use of numbers and start to employ memory strategies. They can perform mathematical operations and understand transformations, such as addition is the opposite of subtraction, and multiplication is the opposite of division. In this stage, children also master the concept of conservation: Even if something changes shape, its mass, volume, and number stay the same. For example, if you pour water from a tall, thin glass to a short, fat glass, you still have the same amount of water. Remember Keiko and Kenny and the pizza? How did Keiko know that Kenny was wrong when he said that he had more pizza?
+
+Children in the concrete operational stage also understand the principle of **reversibility**, which means that objects can be changed and then returned back to their original form or condition. Take, for example, water that you poured into the short, fat glass: You can pour water from the fat glass back to the thin glass and still have the same amount (minus a couple of drops).
+
+The fourth, and last, stage in Piaget’s theory is the **formal operational stage**, which is from about age 11 to adulthood. Whereas children in the concrete operational stage are able to think logically only about concrete events, children in the formal operational stage can also deal with abstract ideas and hypothetical situations. Children in this stage can use abstract thinking to problem solve, look at alternative solutions, and test these solutions. In adolescence, a renewed egocentrism occurs. For example, a 15-year-old with a very small pimple on her face might think it is huge and incredibly visible, under the mistaken impression that others must share her perceptions.
+
+## Beyond Formal Operational Thought
+
+As with other major contributors of theories of development, several of Piaget’s ideas have come under criticism based on the results of further research. For example, several contemporary studies support a model of development that is more continuous than Piaget’s discrete stages (Courage & Howe, 2002; Siegler, 2005, 2006). Many others suggest that children reach cognitive milestones earlier than Piaget describes (Baillargeon, 2004; de Hevia & Spelke, 2010).
+
+According to Piaget, the highest level of cognitive development is formal operational thought, which develops between 11 and 20 years old. However, many developmental psychologists disagree with Piaget, suggesting a fifth stage of cognitive development, known as the postformal stage (Basseches, 1984; Commons & Bresette, 2006; Sinnott, 1998). In postformal thinking, decisions are made based on situations and circumstances, and logic is integrated with emotion as adults develop principles that depend on contexts. One way that we can see the difference between an adult in postformal thought and an adolescent in formal operations is in terms of how they handle emotionally charged issues.
+
+It seems that once we reach adulthood our problem solving abilities change: As we attempt to solve problems, we tend to think more deeply about many areas of our lives, such as relationships, work, and politics (Labouvie-Vief & Diehl, 1999). Because of this, postformal thinkers are able to draw on past experiences to help them solve new problems. Problem-solving strategies using postformal thought vary, depending on the situation. What does this mean? Adults can recognize, for example, that what seems to be an ideal solution to a problem at work involving a disagreement with a colleague may not be the best solution to a disagreement with a significant other.
+
+### Connect the concepts
+
+**Neuroconstructivism**
+
+The genetic environmental correlation you’ve learned about concerning the bidirectional influence of genes and the environment has been explored in more recent theories (Newcombe, 2011). One such theory, **neuroconstructivism**, suggests that neural brain development influences cognitive development. Experiences that a child encounters can impact or change the way that neural pathways develop in response to the environment. An individual’s behavior is based on how one understands the world. There is interaction between neural and cognitive networks at and between each level, consisting of these:
+
+-   genes
+-   neurons
+-   brain
+-   body
+-   social environment
+
+These interactions shape mental representations in the brain and are dependent on context that individuals actively explore throughout their lifetimes (Westermann, Mareschal, Johnson, Sirois, Spratling, & Thomas, 2007).
+
+An example of this would be a child who may be genetically predisposed to a difficult temperament. They may have parents who provide a social environment in which they are encouraged to express themselves in an optimal manner. The child’s brain would form neural connections enhanced by that environment, thus influencing the brain. The brain gives information to the body about how it will experience the environment. Thus, neural and cognitive networks work together to influence genes (i.e., attenuating temperament), body (i.e., may be less prone to high blood pressure), and social environment (i.e., may seek people who are similar to them).
+
+### Think It Over
+
+Explain how you would use your understanding of one of the major developmental theories (psychosexual, psychosocial, or cognitive) to deal with each of the difficulties listed below:
+
+1.  Your infant daughter puts everything in her mouth, including the dog’s food.
+2.  Your eight-year-old son is failing math; all he cares about is baseball.
+3.  Your two-year-old daughter refuses to wear the clothes you pick for her every morning, which makes getting dressed a twenty-minute battle.
+4.  Your sixty-eight-year-old neighbor is chronically depressed and feels she has wasted her life.
+5.  Your 18-year-old daughter has decided not to go to college. Instead she’s moving to Colorado to become a ski instructor.
+6.  Your 11-year-old son is the class bully.
+
+### Glossary
+
+**assimilation:** adjustment of a schema by adding information similar to what is already known
+
+**accommodation:** adjustment of a schema by changing a scheme to accommodate new information different from what was already known
+
+**concrete operational stage:** third stage in Piaget’s theory of cognitive development; from about 7 to 11 years old, children can think logically about real (concrete) events
+
+**conservation:** idea that even if you change the appearance of something, it is still equal in size, volume, or number as long as nothing is added or removed
+
+**egocentrism:** preoperational child’s difficulty in taking the perspective of others
+
+**formal operational stage:** final stage in Piaget’s theory of cognitive development; from age 11 and up, children are able to deal with abstract ideas and hypothetical situations
+
+**object permanence:** idea that even if something is out of sight, it still exists
+
+**preoperational stage:** second stage in Piaget’s theory of cognitive development; from ages 2 to 7, children learn to use symbols and language but do not understand mental operations and often think illogically
+
+**reversibility:** understanding that objects can be changed and then returned back to their original form or condition  
+**schema:** (plural = schemata) concept (mental model) that is used to help us categorize and interpret information  
+**sensorimotor stage:** first stage in Piaget’s theory of cognitive development; from birth through age 2, a child learns about the world through senses and motor behavior
+
+**theory-of-mind:** the understanding that people have thoughts, feelings, and beliefs that are different from our own
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Modification and adaptation, addition of video link. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+CC licensed content, Specific attribution
+
+-   Lifespan Theories. **Authored by**: OpenStax. **Located at**: [https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories](https://openstax.org/books/psychology-2e/pages/9-2-lifespan-theories). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+
+All rights reserved content
+
+-   Piaget - Stage 1 - Sensorimotor stage : Object Permanence. **Authored by**: Geert Stienissen. **Located at**: [https://www.youtube.com/watch?v=NCdLNuP7OA8](https://www.youtube.com/watch?v=NCdLNuP7OA8). **License**: _Other_. **License Terms**: Standard YouTube License
+-   A typical child on Piaget's conservation tasks. **Authored by**: munakatay. **Located at**: [https://www.youtube.com/watch?v=gnArvcWaH6I](https://www.youtube.com/watch?v=gnArvcWaH6I). **License**: _Other_. **License Terms**: Standard YouTube License
+-   Piaget's Mountains Task. **Authored by**: UofMNCYFC. **Located at**: [https://www.youtube.com/watch?v=v4oYOjVDgo0](https://www.youtube.com/watch?v=v4oYOjVDgo0). **License**: _Other_. **License Terms**: Standard YouTube License
+
+---
+
+## Death and Dying | Introduction to Psychology
+
+- url_title:: "Death and Dying | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/death-and-dying/
+### Learning Objectives
+
+-   Explain attitudes toward death and Kübler-Ross’s five stages of grief (denial, anger, bargaining, depression, acceptance)
+
+Every story has an ending. Death marks the end of your life story (Figure 1). Our culture and individual backgrounds influence how we view death. In some cultures, death is accepted as a natural part of life and is embraced. In contrast, until about 50 years ago in the United States, a doctor might not inform someone that they were dying, and the majority of deaths occurred in hospitals. In 1967 that reality began to change with Cicely Saunders, who created the first modern **hospice** in England. The aim of hospice is to help provide a death with dignity and pain management in a humane and comfortable environment, which is usually outside of a hospital setting. In 1974, Florence Wald founded the first hospice in the United States. Today, hospice provides care for 1.65 million Americans and their families. Because of hospice care, many terminally ill people are able to spend their last days at home.
+
+[![In figure a, a cemetery has many gravestones among the grass and trees. In Figure b, a Navy officer pours ashes into the sea. In figure c, people surround a decorated funeral pyre that is on fire.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03192520/3e947ad61d037b6ca2792c97ba52614dbccfbd57.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03192520/3e947ad61d037b6ca2792c97ba52614dbccfbd57.jpeg)
+
+**Figure 1**. Different cultures, societies, and religions have varying practices surrounding death. For example, people’s bodies may be (a) buried in a cemetery, (b) cremated and buried at sea as in this U.S. Navy ceremony, or (c) cremated such as in this Hindu ceremony in Bali. (credit a: modification of work by Christina Rutz; credit b: modification of work by Chief Journalist Alan J. Baribeau/Wikimedia; credit c: modification of work by “CazzJj\_Flickr”/Flickr)
+
+Research has indicated that hospice care is beneficial for the patient (Brumley, Enquidanos, & Cherin, 2003; Brumley et al., 2007; Godkin, Krant, & Doster, 1984) and for the patient’s family (Rhodes, Mitchell, Miller, Connor, & Teno, 2008; Godkin et al., 1984). Hospice patients report high levels of satisfaction with hospice care because they are able to remain at home and are not completely dependent on strangers for care (Brumley et al., 2007). In addition, hospice patients tend to live longer than non-hospice patients (Connor, Pyenson, Fitch, Spence, & Iwasaki, 2007; Temel et al., 2010). Family members receive emotional support and are regularly informed of their loved one’s treatment and condition. The family member’s burden of care is also reduced (McMillan et al., 2006). Both the patient and the patient’s family members report increased family support, increased social support, and improved coping while receiving hospice services (Godkin et al., 1984).
+
+How do you think you might react if you were diagnosed with a terminal illness like cancer? Elizabeth Kübler-Ross (1969), who worked with the founders of hospice care, described the process of an individual accepting his own death. She proposed **five stages of grief**: denial, anger, bargaining, depression, and acceptance. Most individuals experience these stages, but the stages may occur in different orders, depending on the individual. In addition, not all people experience all of the stages. It is also important to note that some psychologists believe that the more a dying person fights death, the more likely he is to remain stuck in the denial phase. This could make it difficult for the dying person to face death with dignity. However, other psychologists believe that not facing death until the very end is an adaptive coping mechanism for some people.
+
+Whether due to illness or old age, not everyone facing death or the loss of a loved one experiences the negative emotions outlined in the Kübler-Ross model (Nolen-Hoeksema & Larson, 1999). For example, research suggests that people with religious or spiritual beliefs are better able to cope with death because of their hope in an afterlife and because of social support from religious or spiritual associations (Hood, Spilka, Hunsberger, & Corsuch, 1996; McIntosh, Silver, & Wortman, 1993; Paloutzian, 1996; Samarel, 1991; Wortman & Park, 2008).
+
+A prominent example of a person creating meaning through death is Randy Pausch, who was a well-loved and respected professor at Carnegie Mellon University. Diagnosed with terminal pancreatic cancer in his mid-40s and given only 3–6 months to live, Pausch focused on living in a fulfilling way in the time he had left. Instead of becoming angry and depressed, he presented his now famous last lecture called “Really Achieving Your Childhood Dreams.” In his moving, yet humorous talk, he shares his insights on seeing the good in others, overcoming obstacles, and experiencing zero gravity, among many other things. Despite his terminal diagnosis, Pausch lived the final year of his life with joy and hope, showing us that our plans for the future still matter, even if we know that we are dying.
+
+### Think It Over
+
+-   Have you ever had to cope with the loss of a loved one? If so, what concepts described in this section provide context that may help you understand your experience and process of grieving?
+-   If you were diagnosed with a terminal illness would you choose hospice care or a traditional death in a hospital? Why?
+
+### Glossary
+
+**five stages of grief**: denial, anger, bargaining, depression, and acceptance
+
+**hospice:** service that provides a death with dignity; pain management in a humane and comfortable environment; usually outside of a hospital setting
+
+### Candela Citations
+
+---
+
+## Moral Development | Introduction to Psychology
+
+- url_title:: "Moral Development | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/lifespan-theories/
+### Learning Objectives
+
+-   Describe Kohlberg’s theory of moral development and the stages of reasoning
+
+## Sociocultural Theory of Development
+
+Lev Vygotsky was a Russian psychologist who proposed a sociocultural theory of development. He suggested that human development is rooted in one’s culture. A child’s social world, for example, forms the basis for the formation of language and thought. The language one speaks and the ways a person thinks about things is dependent on one’s cultural background. Vygotsky also considered historical influences as key to one’s development. He was interested in the process of development and the individual’s interactions with their environment (John-Steiner & Mahn, 1996).
+
+## Theory of Moral Development
+
+A major task beginning in childhood and continuing into adolescence is discerning right from wrong. Psychologist Lawrence Kohlberg (1927–1987) extended upon the foundation that Piaget built regarding cognitive development. Kohlberg believed that moral development, like cognitive development, follows a series of stages. To develop this theory, Kohlberg posed moral dilemmas to people of all ages, and then he analyzed their answers to find evidence of their particular stage of moral development. Before reading about the stages, take a minute to consider how you would answer one of Kohlberg’s best-known moral dilemmas, commonly known as the Heinz dilemma:
+
+> In Europe, a woman was near death from a special kind of cancer. There was one drug that the doctors thought might save her. It was a form of radium that a druggist in the same town had recently discovered. The drug was expensive to make, but the druggist was charging ten times what the drug cost him to make. He paid $200 for the radium and charged $2,000 for a small dose of the drug. The sick woman’s husband, Heinz, went to everyone he knew to borrow the money, but he could only get together about $1,000, which is half of what it cost. He told the druggist that his wife was dying and asked him to sell it cheaper or let him pay later. But the druggist said: “No, I discovered the drug and I’m going to make money from it.” So Heinz got desperate and broke into the man’s store to steal the drug for his wife. Should the husband have done that? (Kohlberg, 1969, p. 379)
+
+How would you answer this dilemma? Kohlberg was not interested in whether you answer yes or no to the dilemma: Instead, he was interested in the reasoning behind your answer.
+
+After presenting people with this and various other moral dilemmas, Kohlberg reviewed people’s responses and placed them in different **stages of moral reasoning** (Figure 1). According to Kohlberg, an individual progresses from the capacity for pre-conventional morality (before age 9) to the capacity for conventional morality (early adolescence), and toward attaining post-conventional morality (once formal operational thought is attained), which only a few fully achieve. Kohlberg placed in the highest stage responses that reflected the reasoning that Heinz should steal the drug because his wife’s life is more important than the pharmacist making money. The value of a human life overrides the pharmacist’s greed.
+
+![Nine boxes are arranged in rows and columns of three. The top left box contains “Level 1, Pre-conventional Morality.” A line connects this box with another box to the right containing “Stage 1, Obedience and punishment: behavior driven by avoiding punishment.” To the right is another box connected by a line containing “Stage 2, Individual interest: behavior driven by self-interest and rewards.” The middle left box contains “Level 2, Conventional Morality.” A line connects this box with another box to the right containing “Stage 3, Interpersonal: behavior driven by social approval.” To the right is another box connected by a line containing “Stage 4, Authority: behavior driven by obeying authority and conforming to social order.” The lower left box contains “Level 3, Post-conventional Morality.” A line connects this box with another box to the right containing “Stage 5, Social contract: behavior driven by balance of social order and individual rights.” To the right is another box connected by a line containing “Stage 6, Universal ethics: behavior driven by internal moral principles.”](https://textimgs.s3.amazonaws.com/ospsych/m49109/CNX_Psych_09_03_KohlStage.jpg#fixme)
+
+**Figure 1**. Kohlberg identified three levels of moral reasoning: pre-conventional, conventional, and post-conventional: Each level is associated with increasingly complex stages of moral development.
+
+It is important to realize that even those people who have the most sophisticated, post-conventional reasons for some choices may make other choices for the simplest of pre-conventional reasons. Many psychologists agree with Kohlberg’s theory of moral development but point out that moral reasoning is very different from moral behavior. Sometimes what we say we would do in a situation is not what we actually do in that situation. In other words, we might “talk the talk,” but not “walk the walk.”
+
+How does this theory apply to males and females? Kohlberg (1969) felt that more males than females move past stage four in their moral development. He went on to note that women seem to be deficient in their moral reasoning abilities. These ideas were not well received by Carol Gilligan, a research assistant of Kohlberg, who consequently developed her own ideas of moral development. In her groundbreaking book, _In a Different Voice: Psychological Theory and Women’s Development_, Gilligan (1982) criticized her former mentor’s theory because it was based only on upper class white men and boys. She argued that women are not deficient in their moral reasoning—she proposed that males and females reason differently. Girls and women focus more on staying connected and the importance of interpersonal relationships. Therefore, in the Heinz dilemma, many girls and women respond that Heinz should not steal the medicine. Their reasoning is that if he steals the medicine, is arrested, and is put in jail, then he and his wife will be separated, and she could die while he is still in prison.
+
+### Glossary
+
+**stages of moral reasoning:**  process proposed by Kohlberg; humans move through three stages of moral development
+
+### Candela Citations
+
+---
+
+## Prenatal Development | Introduction to Psychology
+
+- url_title:: "Prenatal Development | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/stages-of-development/
+### Learning Objectives
+
+-   Describe the stages of prenatal development and the significance of prenatal care
+-   Define and differentiate between various infant reflexes
+
+As discussed at the beginning of this module, developmental psychologists often divide our development into three areas: physical development, cognitive development, and psychosocial development. Mirroring Erikson’s stages, lifespan development is divided into different stages that are based on age. We will discuss prenatal, infant, child, adolescent, and adult development.
+
+How did you come to be who you are? From beginning as a one-cell structure to your birth, your **prenatal development** occurred in an orderly and delicate sequence.There are three stages of prenatal development: germinal, embryonic, and fetal. Let’s take a look at what happens to the developing baby in each of these stages.
+
+## Germinal Stage (Weeks 1–2)
+
+In the discussion of biopsychology earlier in the book, you learned about genetics and DNA. A mother and father’s DNA is passed on to the child at the moment of conception. Conception occurs when sperm fertilizes an egg and forms a **zygote** (Figure 1). A zygote begins as a one-cell structure that is created when a sperm and egg merge. The genetic makeup and sex of the baby are set at this point. During the first week after conception, the zygote divides and multiplies, going from a one-cell structure to two cells, then four cells, then eight cells, and so on. This process of cell division is called mitosis. **Mitosis** is a fragile process, and fewer than one-half of all zygotes survive beyond the first two weeks (Hall, 2004). After 5 days of mitosis there are 100 cells, and after 9 months there are billions of cells. As the cells divide, they become more specialized, forming different organs and body parts. In the germinal stage, the mass of cells has yet to attach itself to the lining of the mother’s uterus. Once it does, the next stage begins.
+
+![A microscopic picture shows a single sperm fusing with the ovum.](https://textimgs.s3.amazonaws.com/ospsych/m49112/CNX_Psych_09_02_Conception.jpg#fixme)
+
+**Figure 1**. Sperm and ovum fuse at the point of conception.
+
+## Embryonic Stage (Weeks 3–8)
+
+After the zygote divides for about 7–10 days and has 150 cells, it travels down the fallopian tubes and implants itself in the lining of the uterus. Upon implantation, this multi-cellular organism is called an **embryo**. Now blood vessels grow, forming the placenta. The **placenta** is a structure connected to the uterus that provides nourishment and oxygen from the mother to the developing embryo via the umbilical cord. Basic structures of the embryo start to develop into areas that will become the head, chest, and abdomen. During the embryonic stage, the heart begins to beat and organs form and begin to function. The neural tube forms along the back of the embryo, developing into the spinal cord and brain.
+
+## Fetal Stage (Weeks 9–40)
+
+When the organism is about nine weeks old, the embryo is called a fetus. At this stage, the fetus is about the size of a kidney bean and begins to take on the recognizable form of a human being as the “tail” begins to disappear.
+
+From 9–12 weeks, the sex organs begin to differentiate. At about 16 weeks, the fetus is approximately 4.5 inches long. Fingers and toes are fully developed, and fingerprints are visible. By the time the fetus reaches the sixth month of development (24 weeks), it weighs up to 1.4 pounds. Hearing has developed, so the fetus can respond to sounds. The internal organs, such as the lungs, heart, stomach, and intestines, have formed enough that a fetus born prematurely at this point has a chance to survive outside of the mother’s womb. Throughout the fetal stage the brain continues to grow and develop, nearly doubling in size from weeks 16 to 28. Around 36 weeks, the fetus is almost ready for birth. It weighs about 6 pounds and is about 18.5 inches long, and by week 37 all of the fetus’s organ systems are developed enough that it could survive outside the mother’s uterus without many of the risks associated with premature birth. The fetus continues to gain weight and grow in length until approximately 40 weeks. By then, the fetus has very little room to move around and birth becomes imminent. The progression through the stages is shown in Figure 2.
+
+[![The growth of a fetus is shown using nine pictures in different stages of development. For each stage, there is a picture of a fetus which gets progressively larger and more mature. The first stage is labeled “9 weeks; fetal stage begins.” The second stage is labeled “12 weeks; sex organs differentiate.” The third stage is labeled “16 weeks; fingers and toes develop.” The fourth stage is labeled “20 weeks; hearing begins.” The fifth stage is labeled “24 weeks; lungs begin to develop.” The sixth stage is labeled “28 weeks; brain grows rapidly.” The seventh stage is labeled “32 weeks; bones fully develop.” The eighth stage is labeled “36 weeks; muscles fully develop.” The ninth stage is labeled “40 weeks; full-term development.”](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03191031/1752bba5757c2d2e2f43fb7a6d4a3baf7abfd135.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03191031/1752bba5757c2d2e2f43fb7a6d4a3baf7abfd135.jpeg)
+
+**Figure 2**. During the fetal stage, the baby’s brain develops and the body adds size and weight, until the fetus reaches full-term development.
+
+## Prenatal Influences
+
+During each prenatal stage, genetic and environmental factors can affect development. The developing fetus is completely dependent on the mother for life. It is important that the mother takes good care of herself and receives **prenatal care**, which is medical care during pregnancy that monitors the health of both the mother and the fetus. According to the National Institutes of Health (\[NIH\], 2013), routine prenatal care is important because it can reduce the risk of complications to the mother and fetus during pregnancy. In fact, women who are trying to become pregnant or who may become pregnant should discuss pregnancy planning with their doctor. They may be advised, for example, to take a vitamin containing folic acid, which helps prevent certain birth defects, or to monitor aspects of their diet or exercise routines.
+
+[![A technician uses ultrasound equipment to examine a pregnant woman's belly.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03191242/93f16559bb80864325e705fbb99e90cbc1924750.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/03191242/93f16559bb80864325e705fbb99e90cbc1924750.jpeg)
+
+**Figure 3**. A pregnant woman receives an ultrasound as part of her prenatal care. (credit: “MIKI Yoshihito\_Flickr”/Flickr)
+
+Recall that when the zygote attaches to the wall of the mother’s uterus, the placenta is formed. The placenta provides nourishment and oxygen to the fetus. Most everything the mother ingests, including food, liquid, and even medication, travels through the placenta to the fetus, hence the common phrase “eating for two.” Anything the mother is exposed to in the environment affects the fetus; if the mother is exposed to something harmful, the child can show life-long effects.
+
+A **teratogen** is any environmental agent—biological, chemical, or physical—that causes damage to the developing embryo or fetus. There are different types of teratogens. Alcohol and most drugs cross the placenta and affect the fetus. Alcohol is not safe to drink in any amount during pregnancy. Alcohol use during pregnancy has been found to be the leading preventable cause of intellectual development disorder (intellectual disability) in children in the United States (Maier & West, 2001). Excessive maternal drinking while pregnant can cause fetal alcohol spectrum disorders with life-long consequences for the child ranging in severity from minor to major (Table 1). Fetal alcohol spectrum disorders (FASD) are a collection of birth defects associated with heavy consumption of alcohol during pregnancy. Physically, children with FASD may have a small head size and abnormal facial features. Cognitively, these children may have poor judgment, poor impulse control, higher rates of ADHD, learning issues, and lower IQ scores. These developmental problems and delays persist into adulthood (Streissguth et al., 2004). Based on studies conducted on animals, it also has been suggested that a mother’s alcohol consumption during pregnancy may predispose her child to like alcohol (Youngentob et al., 2007).
+
+Table 1. Fetal Alcohol Syndrome Facial Features
+| Facial Feature | Potential Effect of Fetal Alcohol Syndrome |
+| --- | --- |
+| Head size | Below-average head circumference |
+| Eyes | Smaller than average eye opening, skin folds at corners of eyes |
+| Nose | Low nasal bridge, short nose |
+| Midface | Smaller than average midface size |
+| Lip and philtrum | Thin upper lip, indistinct philtrum |
+
+Smoking is also considered a teratogen because nicotine travels through the placenta to the fetus. When the mother smokes, the developing baby experiences a reduction in blood oxygen levels. According to the Centers for Disease Control and Prevention (2013), smoking while pregnant can result in premature birth, low-birth-weight infants, stillbirth, and sudden infant death syndrome (SIDS).
+
+Heroin, cocaine, methamphetamine, almost all prescription medicines, and most over-the-counter medications are also considered teratogens. Babies born with a heroin addiction need heroin just like an adult addict. The child will need to be gradually weaned from the heroin under medical supervision; otherwise, the child could have seizures and die. Other teratogens include radiation, viruses such as HIV and herpes, and rubella (German measles). Women in the United States are much less likely to be afflicted with rubella because most women received childhood immunizations or vaccinations that protect the body from disease.
+
+Each organ of the fetus develops during a specific period in the pregnancy, called the **critical** or **sensitive period** (Figure 2). For example, research with primate models of FASD has demonstrated that the time during which a developing fetus is exposed to alcohol can dramatically affect the appearance of facial characteristics associated with fetal alcohol syndrome. Specifically, this research suggests that alcohol exposure that is limited to day 19 or 20 of gestation can lead to significant facial abnormalities in the offspring (Ashley, Magnuson, Omnell, & Clarren, 1999). Given regions of the brain also show sensitive periods during which they are most susceptible to the teratogenic effects of alcohol (Tran & Kelly, 2003).
+
+### What Do You Think? Should Women Who Use Drugs During Pregnancy Be Arrested and Jailed?
+
+As you now know, women who use drugs or alcohol during pregnancy can cause serious lifelong harm to their child. Some people have advocated mandatory screenings for women who are pregnant and have a history of drug abuse, and if the women continue using, to arrest, prosecute, and incarcerate them (Figdor & Kaeser, 1998). This policy was tried in Charleston, South Carolina, as recently as 20 years ago. The policy was called the Interagency Policy on Management of Substance Abuse During Pregnancy, and had disastrous results.
+
+> The Interagency Policy applied to patients attending the obstetrics clinic at MUSC, which primarily serves patients who are indigent or on Medicaid. It did not apply to private obstetrical patients. The policy required patient education about the harmful effects of substance abuse during pregnancy. . . . \[A\] statement also warned patients that protection of unborn and newborn children from the harms of illegal drug abuse could involve the Charleston police, the Solicitor of the Ninth Judicial Court, and the Protective Services Division of the Department of Social Services (DSS). (Jos, Marshall, & Perlmutter, 1995, pp. 120–121)
+
+This policy seemed to deter women from seeking prenatal care, deterred them from seeking other social services, and was applied solely to low-income women, resulting in lawsuits. The program was canceled after 5 years, during which 42 women were arrested. A federal agency later determined that the program involved human experimentation without the approval and oversight of an institutional review board (IRB). What were the flaws in the program and how would you correct them? What are the ethical implications of charging pregnant women with child abuse?
+
+## **Infancy** 
+
+The average newborn weighs approximately 7.5 pounds. Although small, a newborn is not completely helpless because their reflexes and sensory capacities help him interact with the environment from the moment of birth. All healthy babies are born with **newborn reflexes**: inborn automatic responses to particular forms of stimulation. Reflexes help the newborn survive until it is capable of more complex behaviors—these reflexes are crucial to survival. They are present in babies whose brains are developing normally and usually disappear around 4–5 months old. Let’s take a look at some of these newborn reflexes. The _rooting reflex_ is the newborn’s response to anything that touches her cheek: When you stroke a baby’s cheek, she naturally turns her head in that direction and begins to suck. The _sucking reflex_ is the automatic, unlearned, sucking motions that infants do with their mouths. Several other interesting newborn reflexes can be observed. For instance, if you put your finger into a newborn’s hand, you will witness the _grasping reflex_, in which a baby automatically grasps anything that touches their palms. The _Moro reflex_ is the newborn’s response when she feels like she is falling. The baby spreads her arms, pulls them back in, and then (usually) cries. How do you think these reflexes promote survival in the first months of life?
+
+What can young infants see, hear, and smell? Newborn infants’ sensory abilities are significant, but their senses are not yet fully developed. Many of a newborn’s innate preferences facilitate interaction with caregivers and other humans. Although vision is their least developed sense, newborns already show a preference for faces. Babies who are just a few days old also prefer human voices, they will listen to voices longer than sounds that do not involve speech (Vouloumanos & Werker, 2004), and they seem to prefer their mother’s voice over a stranger’s voice (Mills & Melhuish, 1974). In an interesting experiment, 3-week-old babies were given pacifiers that played a recording of the infant’s mother’s voice and of a stranger’s voice. When the infants heard their mother’s voice, they sucked more strongly at the pacifier (Mills & Melhuish, 1974). Newborns also have a strong sense of smell. For instance, newborn babies can distinguish the smell of their own mother from that of others. In a study by MacFarlane (1978), 1-week-old babies who were being breastfed were placed between two gauze pads. One gauze pad was from the bra of a nursing mother who was a stranger, and the other gauze pad was from the bra of the infant’s own mother. More than two-thirds of the week-old babies turned toward the gauze pad with their mother’s scent.
+
+### Glossary
+
+**conception:** when a sperm fertilizes an egg and forms a zygote  
+**critical (sensitive) period:** time during fetal growth when specific parts or organs develop  
+**embryo:** multi-cellular organism in its early stages of development  
+**mitosis:** process of cell division  
+**newborn reflexes:** inborn automatic response to a particular form of stimulation that all healthy babies are born with  
+**placenta:** structure connected to the uterus that provides nourishment and oxygen to the developing baby  
+**prenatal care:** medical care during pregnancy that monitors the health of both the mother and the fetus  
+**teratogen:** biological, chemical, or physical environmental agent that causes damage to the developing embryo or fetus  
+**zygote:** structure created when a sperm and egg merge at conception; begins as a single cell and rapidly divides to form the embryo and placenta
+
+### Candela Citations
+
+---
+
+## Psychosexual and Psychosocial Theories of Development
+
+- url_title:: "Psychosexual and Psychosocial Theories of Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/lifespan-theories-psychosexual-and-psychosocial-theories/
+### Learning Objectives
+
+-   Define Freud’s theory of psychosexual development
+-   Describe the major tasks of child and adult psychosocial development according to Erikson
+
+## Psychosexual Theory of Development
+
+Sigmund Freud (1856–1939) believed that personality develops during early childhood. For Freud, childhood experiences shape our personalities and behavior as adults. Freud viewed development as discontinuous; he believed that each of us must pass through a series of stages during childhood, and that if we lack proper nurturance and parenting during a stage, we may become stuck, or fixated, in that stage. Freud’s stages are called the stages of **psychosexual development**. According to Freud, children’s pleasure-seeking urges are focused on a different area of the body, called an erogenous zone, at each of the five stages of development: oral, anal, phallic, latency, and genital.
+
+While most of Freud’s ideas have not found support in modern research, we cannot discount the contributions that Freud has made to the field of psychology. Psychologists today dispute Freud’s psychosexual stages as a legitimate explanation for how one’s personality develops, but what we can take away from Freud’s theory is that personality is shaped, in some part, by experiences we have in childhood. These stages are discussed in detail in the module on personality.
+
+## Psychosocial Theory of Development
+
+Erik Erikson (1902–1994) (Figure 1), another stage theorist, took Freud’s theory and modified it as psychosocial theory. Erikson’s **psychosocial development theory** emphasizes the social nature of our development rather than its sexual nature. While Freud believed that personality is shaped only in childhood, Erikson proposed that personality development takes place all through the lifespan. Erikson suggested that how we interact with others is what affects our sense of self, or what he called the ego identity.
+
+![A photograph depicts Erik Erikson in his later years.](https://textimgs.s3.amazonaws.com/ospsych/m49109/CNX_Psych_09_03_Erikson.jpg#fixme)
+
+**Figure 1**. Erik Erikson proposed the psychosocial theory of development. In each stage of Erikson’s theory, there is a psychosocial task that we must master in order to feel a sense of competence.
+
+Erikson proposed that we are motivated by a need to achieve competence in certain areas of our lives. According to psychosocial theory, we experience eight stages of development over our lifespan, from infancy through late adulthood. At each stage there is a conflict, or task, that we need to resolve. Successful completion of each developmental task results in a sense of competence and a healthy personality. Failure to master these tasks leads to feelings of inadequacy.
+
+According to Erikson (1963), trust is the basis of our development during infancy (birth to 12 months). Therefore, the primary task of this stage is trust versus mistrust. Infants are dependent upon their caregivers, so caregivers who are responsive and sensitive to their infant’s needs help their baby to develop a sense of trust; their baby will see the world as a safe, predictable place. Unresponsive caregivers who do not meet their baby’s needs can engender feelings of anxiety, fear, and mistrust; their baby may see the world as unpredictable.
+
+As toddlers (ages 1–3 years) begin to explore their world, they learn that they can control their actions and act on the environment to get results. They begin to show clear preferences for certain elements of the environment, such as food, toys, and clothing. A toddler’s main task is to resolve the issue of autonomy versus shame and doubt, by working to establish independence. This is the “me do it” stage. For example, we might observe a budding sense of autonomy in a 2-year-old child who wants to choose her clothes and dress herself. Although her outfits might not be appropriate for the situation, her input in such basic decisions has an effect on her sense of independence. If denied the opportunity to act on her environment, she may begin to doubt her abilities, which could lead to low self-esteem and feelings of shame.
+
+Once children reach the preschool stage (ages 3–6 years), they are capable of initiating activities and asserting control over their world through social interactions and play. According to Erikson, preschool children must resolve the task of initiative versus guilt. By learning to plan and achieve goals while interacting with others, preschool children can master this task. Those who do will develop self-confidence and feel a sense of purpose. Those who are unsuccessful at this stage—with their initiative misfiring or stifled—may develop feelings of guilt. How might over-controlling parents stifle a child’s initiative?
+
+During the elementary school stage (ages 6–12), children face the task of industry versus inferiority. Children begin to compare themselves to their peers to see how they measure up. They either develop a sense of pride and accomplishment in their schoolwork, sports, social activities, and family life, or they feel inferior and inadequate when they don’t measure up. What are some things parents and teachers can do to help children develop a sense of competence and a belief in themselves and their abilities?
+
+In adolescence (ages 12–18), children face the task of identity versus role confusion. According to Erikson, an adolescent’s main task is developing a sense of self. Adolescents struggle with questions such as “Who am I?” and “What do I want to do with my life?” Along the way, most adolescents try on many different selves to see which ones fit. Adolescents who are successful at this stage have a strong sense of identity and are able to remain true to their beliefs and values in the face of problems and other people’s perspectives. What happens to apathetic adolescents, who do not make a conscious search for identity, or those who are pressured to conform to their parents’ ideas for the future? These teens will have a weak sense of self and experience role confusion. They are unsure of their identity and confused about the future.
+
+People in early adulthood (i.e., 20s through early 40s) are concerned with intimacy versus isolation. After we have developed a sense of self in adolescence, we are ready to share our life with others. Erikson said that we must have a strong sense of self before developing intimate relationships with others. Adults who do not develop a positive self-concept in adolescence may experience feelings of loneliness and emotional isolation.
+
+When people reach their 40s, they enter the time known as middle adulthood, which extends to the mid-60s. The social task of middle adulthood is generativity versus stagnation. Generativity involves finding your life’s work and contributing to the development of others, through activities such as volunteering, mentoring, and raising children. Those who do not master this task may experience stagnation, having little connection with others and little interest in productivity and self-improvement.
+
+From the mid-60s to the end of life, we are in the period of development known as late adulthood. Erikson’s task at this stage is called integrity versus despair. He said that people in late adulthood reflect on their lives and feel either a sense of satisfaction or a sense of failure. People who feel proud of their accomplishments feel a sense of integrity, and they can look back on their lives with few regrets. However, people who are not successful at this stage may feel as if their life has been wasted. They focus on what “would have,” “should have,” and “could have” been. They face the end of their lives with feelings of bitterness, depression, and despair. Table 1 summarizes the stages of Erikson’s theory.
+
+Table 1. Erikson’s Psychosocial Stages of Development
+| Stage | Age (years) | Developmental Task | Description |
+| --- | --- | --- | --- |
+| 1 | 0–1 | Trust vs. mistrust | Trust (or mistrust) that basic needs, such as nourishment and affection, will be met |
+| 2 | 1–3 | Autonomy vs. shame/doubt | Develop a sense of independence in many tasks |
+| 3 | 3–6 | Initiative vs. guilt | Take initiative on some activities—may develop guilt when unsuccessful or boundaries overstepped |
+| 4 | 7–11 | Industry vs. inferiority | Develop self-confidence in abilities when competent or sense of inferiority when not |
+| 5 | 12–18 | Identity vs. confusion | Experiment with and develop identity and roles |
+| 6 | 19–29 | Intimacy vs. isolation | Establish intimacy and relationships with others |
+| 7 | 30–64 | Generativity vs. stagnation | Contribute to society and be part of a family |
+| 8 | 65– | Integrity vs. despair | Assess and make sense of life and meaning of contributions |
+
+### Glossary
+
+**psychosexual development:** process proposed by Freud in which pleasure-seeking urges focus on different erogenous zones of the body as humans move through five stages of life
+
+**psychosocial development:** process proposed by Erikson in which social tasks are mastered as humans move through eight stages of life from infancy to adulthood
+
+### Candela Citations
+
+---
+
+## Psych in Real Life: Moral Reasoning
+
+- url_title:: "Psych in Real Life: Moral Reasoning"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-moral-reasoning/
+### Learning Objectives
+
+-   Explain the procedure, results, and implications of Hamlin and Wynn’s research on moral reasoning in infants
+
+## Moral Reasoning in Infants
+
+[![Young baby, around 6 months old, doing tummy time and looking happily at the camera.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/14214431/baby-1709003_1920.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/14214431/baby-1709003_1920.jpg)
+
+**Figure 1**. Maybe babies know more than we think they do!
+
+The work of Lawrence Kohlberg was an important start to modern research on moral development and reasoning. However, Kohlberg relied on a specific method: he presented moral dilemmas (like the Heinz problem) and asked children and adults to explain what they would do and—more importantly—why they would act in that particular way. Kohlberg found that children tended to make choices based on avoiding punishment and gaining praise. But children are at a disadvantage compared to adults when they must rely on language to convey their inner thoughts and emotional reactions, so what they say may not adequately capture the complexity of their thinking.
+
+Starting in the 1980s, developmental psychologists created new methods for studying the thought processes of children, even of infants long before they acquire language. One particularly effective method is to present children with puppet shows, which grab their attention, and then record nonverbal behaviors, such as looking and choosing, to identify children’s preferences or interests.
+
+A research group at Yale University has been using the puppet show technique to study moral thinking of children for much of the past decade. What they have discovered has given us a glimpse of surprisingly complex thought processes that may serve as the foundation of moral reasoning.
+
+## EXPERIMENT 1: Do children prefer givers or takers?
+
+In 2011, J. Kiley Hamlin and Karen Wynn put on puppet shows for very young children: 5-month-old infants. The infants watch a puppet bouncing a ball. We’ll call this puppet the “bouncer puppet.” Two other puppets stand at the back of the stage, one to left and the other to the right. After a few bounces, the ball gets away from the bouncer puppet and rolls to the side of the stage toward one of the other puppets. This puppet grabs the ball. The bouncer puppet turns toward the ball and opens its arms, as if asking for the ball back.
+
+This is where the puppet show gets interesting (for a young infant, anyway!).  Sometimes, the puppet with the ball rolls it back to the bouncer puppet. This is the “giver puppet” condition. Other times, the infant sees a different ending. As the bouncer puppet opens its arms to ask for the ball, the puppet with the ball turns and runs away with it. This is the “taker puppet” condition. Although the giver and taker puppets are two copies of the same animal doll, they are easily distinguished because they are wearing different colored shirts, and color is a quality that infants easily distinguish and remember.
+
+Each infant sees both conditions: the giver condition and the taker condition. Just after the end of the second puppet show (i.e., the second condition), a new researcher, who doesn’t know which puppet was the giver and which was the taker, sits in front of the infant with the giver puppet in one hand and the taker puppet in the other. The 5-month-old infants are allowed to reach for a puppet. The one the child reaches out to touch is considered the preferred puppet.
+
+Remember that Lawrence Kohlberg thought that children at this age—and, in fact, through 9 years of age—are primarily motivated to avoid punishment and seek rewards. Neither Kohlberg nor Carol Gilligan nor Jean Piaget was likely to predict that infants would develop preferences based on the type of behavior shown by other individuals.
+
+### Work It Out
+
+The puppet show is over and the experimenter is holding the two dolls—the giver puppet and the taker puppet—in front of the infant. The reaching behavior of the infant is being videotaped for later analysis.
+
+What do you think? Make a prediction about the results of this study—which should reflect your own “theory” of children’s ability to judge and care about the types of behavior others display. Do you think infants will choose the taker or the giver puppet? Do you expect the results to be significant?
+
+INSTRUCTIONS: Adjust the pink bar on the left to show the percentage of infants who reached for the giver puppet. The yellow bar on the right will automatically adjust to make the total (sum of both bars) equal 100%.
+
+Show Answer
+
+But this isn’t the end of the story…
+
+## EXPERIMENT 2: Do infants judge others based on their behavior?
+
+In the research world, the early attempts to study something, when the researchers work to develop a solid and reliable research procedure, is often the most challenging time. Once the researcher works through initial problems and issues and begins to get consistent results, they can gain a deeper understanding by adding new variables or testing different groups of subjects (e.g., older children or children with some interesting psychological characteristics).
+
+The study you just read about is an example of a simple, basic study. The researchers found that infants preferred puppets that help another puppet (the puppet in the giver condition) over puppets that are not nice to another puppet (the puppet in the taker condition). A common sense interpretation of this simple result is that infants like nice behavior and they dislike hurtful behavior. And perhaps that is as complicated as an 8-month-old infant’s thoughts can be. But maybe not.
+
+Dr. Hamlin and her colleagues wondered if infants might consider more factors when judging an event. Adults generally prefer situations where good things happen to someone rather than something harmful. However, when adults see someone do something bad, they may find satisfaction in seeing that person punished by having something bad happen to them. In a nutshell: good things should happen to good people and bad things should happen to bad people. This is what is called “just world” thinking, where people get what they deserve.
+
+In the study we will call Experiment 2, Hamlin’s team tested 8-month-old infants and repeated the procedures from Experiment 1 with a major addition. In Experiment 1 (described above), the puppet bouncing the ball was a neutral character, neither good nor bad. In Experiment 2, the infants saw 2 different shows. First, they saw the bouncer puppet either helping or hindering another puppet. Then, they watched the same ball-bouncing puppet show. Here is what happened:
+
+-   Puppet Show #1:  A puppet is trying to open a box, but cannot quite succeed. Two puppets stand in the background. For some infants, as the first puppet struggles to open the box, one of the puppets in the back comes forward and helps to open the box. This is the helper puppet. For other children, as the first puppet struggles, a puppet comes from the back and jumps on the box, slamming it shut. This is the hinderer puppet. Each infant sees only a helper or a hinderer—not both.
+
+-   Puppet Show #2: Just after the infants have watched the first show, the second puppet show begins. This is the show that you read about in Experiment 1. The only thing that is new is that the bouncer puppet, the one that loses the ball, is either the helper puppet from Puppet Show #1 or the hinderer puppet from Puppet Show #1. Each infant sees this puppet lose the ball to a giver, who returns the ball, and to a taker, who runs off with the ball.
+
+### Watch It
+
+This video demonstrates show #2. The elephant in the yellow shirt from the first show is now bouncing a ball. After dropping the ball, the moose in the green shirt gives it back to him, while the moose in the red shirt takes it away.
+
+[https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02151230/sm03-1.mp4](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02151230/sm03-1.mp4)
+
+[https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02151300/sm04-1.mp4](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02151300/sm04-1.mp4)
+
+So far we have concluded that even young babies prefer the “nice” puppet and show a preference for a puppet who helps another puppet. But this only happened when the bouncer puppet was the Helper from the first puppet show. What if, instead of the nice elephant in the yellow shirt bouncing the ball, the elephant in the red shirt (the one who jumped on the duck’s box, remember?) was the one bouncing the ball? Imagine the same scenario: the mean elephant in red shirt is bouncing the ball, he drops it, and the moose in the green shirt gives it to him or the moose in the red shirt takes it away.
+
+[![See caption for appropriate alternative text.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/07153216/image03.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/07153216/image03.png)
+
+**Figure 3**. This bar graph shows the results of Experiment 2 for 8-month-old infants. Bar A shows that 75% of babies (Bar A) preferred the giver when giving to the helper/giver bouncer, while 25% (Bar C) preferred the taker/hinderer when taking from the helper bouncer. The opposite was true in the second scenario. The babies strongly preferred the taker/hinderer bounder (Bar D, 81%) to the giver/helper bouncer (Bar B, 19%) when the puppet bouncing the ball had been the Hinderer (who jumped on the box in the first show).
+
+So now things are getting interesting, right? Do 8-month old infants understand the concepts of revenge or justice? We must always be careful when labeling behaviors of children (or animals) with characteristics we use for human adults. In the description above, we have talked of “nice puppets” and “mean puppets” and used other loaded terms. It is tempting to interpret the choices of the 8-month-olds as a kind of revenge motive: the bad guy gets its just desserts (the hinderer puppet has its ball stolen) and the good guy gets its just reward (the helper puppet is itself helped by the giver). Maybe that is what is going on, but we encourage you to consider these very sophisticated types of thinking as merely one hypothesis. Remember the facts—what did the puppets do and what choices did the infants make?—without committing yourself to the adult-level interpretation.
+
+The researchers believe that this type of thinking, which is remarkably sophisticated, takes some cognitive development. They tested 5-month-olds using the same procedures, and the results with these younger infants was different. The 5-month-olds showed an overwhelming preference for the giver puppets, regardless of who was bouncing the ball. Maybe it is too complex for them to understand that the bouncer puppet in the second show was the same puppet from the first show, Or perhaps their memory processes are too fragile to hold onto information for that length of time. Possibly the “revenge” motive is too advanced a way of thinking. Or maybe something else is going on. What is clear is that 5-month-olds and 8-month-olds respond differently to the situations tested in the second experiment.
+
+## EXPERIMENT 3: Do infants judge others based on their preferences?
+
+Across the first two experiments, infants appear to prefer puppets (and, by extension, maybe people, as well) that are helpful over those that are not helpful.  Experiment 2 complicated our story a bit, but it still appears that prosocial behavior is attractive to infants and antisocial behavior is unattractive. But another experiment, again using the bouncing ball show, suggests that infants as young as 8-months of age may have some other motives that are less altruistic than the first two experiments indicate.
+
+In a study by Hamlin, Mahanjan, Liberman, and Wynn from 2013, 9-month-old infants watched the bouncing ball show, but with a new twist.
+
+At the beginning of the experiment—**Phase 1**—the infants were given a choice between graham crackers and green beans. The experimenters determined which food the infant preferred.
+
+### Watch It
+
+This video shows an infant choosing between graham crackers or green beans.
+
+You can [view the transcript for “Graham Cracker Choice” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/GrahamCrackerChoice.txt).
+
+Then, in **Phase 2**, the infants watched a puppet make the same choice. For half of the infants, the puppet chose the same food that they preferred, saying “Mmmm, yum! I like \_\_\_(graham crackers or green beans)!” and saying “Eww, yuck! I don’t like \_\_\_\_\_ (graham crackers or green beans!”  This was called the SIMILAR condition, because the puppet was similar to the child in its food preference. For the other half of the infants, the puppet chose the other food, choosing graham crackers if the infant preferred green beans and preferring green beans if the infant liked graham crackers. This was the DISSIMILAR condition.
+
+### Watch It
+
+This video shows Phase 2 of the experiment, in which the animals chose either a similar or dissimilar preferred food as the infant.
+
+You can [view the transcript for “Similar / Dissimilar Puppet Preference Example” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/SimilarDissimilarPuppetPreferenceExample.txt).
+
+Why did experimenters do this? They wanted to know if young children form in-groups and out-groups by perceiving some people as being like them and other people as being unlike them. The experimenters noted in their research introduction that we (adults) are influenced by our perception that others are similar to us or not like us. We tend to project positive qualities—being trustworthy, intelligent, kind—on people we perceive as similar to ourselves, and people we see as unlike us are seen as having negative qualities—being relatively untrustworthy, unintelligent, and unkind.\[1\]
+
+Of course, there is a big difference between claiming that adults use similarity to make judgments about others and saying that infants less than a year of age do the same thing. However, the researchers note that some recent research has suggested that infants less than a year old are more likely to develop peer friendships with other infants who “share their own food, clothing or toy preferences” compared to those who don’t.
+
+So, back to the experiment. In **Phase 3**, the infants either saw a similar puppet (one that chose the food the baby preferred) or a dissimilar puppet (one that chose the food the baby did not prefer) bouncing the ball. As in the other experiments, the ball got away from the bouncer and rolled to the back of the stage. In one instance, the giver puppet returned the ball and, in the other instance, the other puppet ran away with the ball. Finally, in **Phase 4**, the 9-month-old baby was shown the giver and taker puppet and the experimenters recorded which of the two puppets the baby preferred (reached out to touch). This video shows the dog in the light blue shirt giving the ball back to the red bunny that preferred graham crackers.
+
+### Watch It
+
+This video shows the dog in the light blue shirt giving the ball back to the red bunny that preferred graham crackers.
+
+Here is a summary of the four phases in Experiment 3:
+
+-   Phase 1: The infant chooses graham crackers or green beans.
+-   Phase 2: The bouncer puppets chooses graham crackers or green beans.
+    -   Similar condition: The bouncer chooses the same food that the infant chose.
+    -   Dissimilar condition: The bouncer chooses the food that the infant did not choose.
+-   Phase 3: This is the same bouncing ball experiment that you have been reading about.
+    -   Remember that each child sees both the Giver and Taker shows.
+-   Phase 4: This is the same choice—Giver or Taker—that was the final phase in the other two experiments
+
+### Work It Out
+
+Now make predictions for the results. Here is a matrix picture of the design of the experiment:
+
+![Matrix showing the conditions in the experiment. In condition A, the bouncer puppet has similar food choice to the child, and the other puppet in the show as the giver puppet. In condition B, the bouncer puppet has similar food choice to the child, and the other puppet is the taker. In condition C the bouncer puppet has a dissimilar food choice to the child and the other puppet is the giver puppet, and in condition D the bouncer puppet has a dissimilar food choice to the child and the other puppet as the taker puppet.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/14213359/ex3puppetmatrix.png)
+
+INSTRUCTIONS: Adjust bars A and C to make your predictions. Bar A represents the “nice” puppet who gave the ball to the bouncer puppet that liked the same food as the child, while bar B represents the “mean” puppet who took the ball away from the bouncer puppet who liked the same food as the child. Bar C represents the “nice” puppet who gave the ball back to the puppet who did not like the same food as the child, and bar D represents the puppet who took the ball away from the puppet who did not like the same food.
+
+As before, move the bars on the left to indicate the percentage of infants preferring the giver puppet in the similar condition (purple bars) and in the dissimilar condition (green bars). The bars on the right will adjust to make the total in each of the similarity conditions equal 100%.
+
+After you have recorded your predictions, click the “Show Answer” link to see the results from the experiment.
+
+Show Answer
+
+The experimenters also tested an older group of babies that were 14-months-old. The results for these older babies were consistent with the 9-month-old and, if anything, the effects were stronger. Their results showed that all infants preferred when the giver puppet was nice to the puppet that was similar to them and all infants preferred when puppets were mean to the puppet that was dissimilar to them.
+
+[![Bar graphs depicting the results of the experiment with 14 month olds. All infants preferred when the giver puppet was nice to the puppet that was similar to them and all infants preferred when puppets were mean to the puppet that was dissimilar to them.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02211356/moral_bars2_answer2-300x121.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/02211356/moral_bars2_answer2.png)
+
+Figure 5. These bar graphs show the results of the experiment when 14-month olds were tested. 100% of the children chose the puppet that gave the ball back to the puppet that was similar to them, and 100% of children chose the puppet that took the ball away from the puppet that had a different preference than they did.
+
+## CONCLUSIONS
+
+This exercise started with a reminder that Lawrence Kohlberg found that children went through a long developmental process in their moral reasoning. Based on children’s reasoning aloud about moral dilemmas, Kohlberg concluded that children younger than about 8 or 9 years of age make moral decisions based on avoiding punishment and receiving praise. Neither his research nor that of most others in the 1970s and 1980s suggested that young children would use multiple sources of information and judgments about the meaning of behaviors in their thinking what sorts of behaviors are better or worse.
+
+If Dr. Hamlin and her colleagues are right, then infants are much more sophisticated and complex in their thinking about the world than these earlier researchers thought. In Dr. Hamlin’s view, infants like good things to happen to good puppets and people, and bad things to happen to bad puppets and people. Experiment 3 suggests that they make judgments about more than helping and harming behavior. They prefer others who are like them (green beans vs. graham crackers) and they don’t mind if others who are not like them have unpleasant experiences.
+
+The research we have been reviewing is just part of an impressive set of research on infant thinking. The ideas that the researchers have developed are intriguing and they are consistent with the modern view of the infant as an active, creative thinker. At the same time, remember that science doesn’t rest on an early set of explanations based on a small set of complicated experiments. Science pushed beyond what we currently know and believe. This starts with curiosity on your part. Are the experimenters correct in interpreting reaching behavior as showing a preference or is something else going on? Do infants really prefer prosocial behaviors to antisocial behaviors, or is there some other explanation for their preferences? How else could we test moral judgments of infants without using puppet shows? The next generation of creative scientists will push beyond what we know now, with new research methods and new ideas about the mind.
+
+We’ll give Dr. Hamlin the last word. Here is part of her conclusion section from an article that summarizes some of the research we have been studying: “In sum, recent developmental research supports the claim that at least some aspects of human morality are innate…Indeed, these early tendencies are far from shallow, mechanical predispositions to behave well or knee-jerk reactions to particular states of the world. Infant moral inclinations are sophisticated, flexible, and surprisingly consistent with adults’ moral inclinations, incorporating aspects of moral goodness, evaluation, and retaliation. “ \[Hamlin, 2013, p. 191\]
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Psychology in Real Life: Moral Reasoning. **Authored by**: Patrick Carroll for Lumen Learning. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+-   Similar/Dissimilar Puppet Preference Example. **Provided by**: UBCHamlinLab . **Located at**: [https://www.youtube.com/watch?v=aT4ljlQw-Io](https://www.youtube.com/watch?v=aT4ljlQw-Io). **License**: _All Rights Reserved_
+
+CC licensed content, Shared previously
+
+-   Picture of baby. **Authored by**: adtkedia . **Located at**: [https://pixabay.com/p-1709003/?no\_redirect](https://pixabay.com/p-1709003/?no_redirect). **License**: _[CC0: No Rights Reserved](https://creativecommons.org/about/cc0)_
+
+All rights reserved content
+
+-   Videos shared with permission from Kiley Hamlin. **Provided by**: The University of British Columbia: Vancouver Campus. **Located at**: [http://cic.psych.ubc.ca/media-videos/](http://cic.psych.ubc.ca/media-videos/). **License**: _All Rights Reserved_
+-   Babies want bad behavior punished video. **Authored by**: Kiley Hamlin. **Provided by**: Live Science. **Located at**: [http://www.livescience.com/17205-babies-bad-behavior-punished.html](http://www.livescience.com/17205-babies-bad-behavior-punished.html). **License**: _All Rights Reserved_
+-   Graham Cracker Choice. **Provided by**: UBCHamlinLab. **Located at**: [https://www.youtube.com/watch?v=VY005Pia4uA](https://www.youtube.com/watch?v=VY005Pia4uA). **License**: _All Rights Reserved_
+-   Nice Blue Dog. **Provided by**: UBCHamlinLab . **Located at**: [https://www.youtube.com/watch?v=Ijiru5ggPVQ](https://www.youtube.com/watch?v=Ijiru5ggPVQ). **License**: _All Rights Reserved_
+
+* * *
+
+1.  The experimenters support these claims by citing the following studies: (1) DeBruine, L.M. Facial resemblance enhances trust: Proceedings of the Royal Society of London B, 2002, 269: 1307-1312. (2) Brewer, M.B. In-group bias in the minimal intergroup situation: A cognitive-motivational analysis. Psychological Bulletin, 1979, 86: 307-324. (3) Doise, W., Cspely, G., Dann, and others. An experimental investigation into the formation of intergroup representation. European Journal of Social Psychology, 1972, 2: 202-204. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-moral-reasoning/#return-footnote-3869-1)
+
+---
+
+## Putting It Together: Lifespan Development
+
+- url_title:: "Putting It Together: Lifespan Development"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-lifespan-development/
+### Learning Objectives
+
+In this module, you learned to
+
+-   compare and contrast theories lifespan development theories
+-   explain the physical, cognitive, and emotional development that occurs from infancy through childhood
+-   describe physical, cognitive, and emotional development in adolescence and adulthood
+
+Our understanding of human nature has come a long way since the belief that children were just little adults in need of instruction. Through ongoing research, we now know that children hit certain milestones that enable them to take another viewpoint or understand the law of conservation, that babies can understand enough about the world around them to make moral judgments, and that issues of physical, social, and cognitive importance change across the lifespan.
+
+Adolescence is one of the time periods of interest to psychologists, especially due to the focus on identity formation, which often involves a period of exploration followed by commitments to particular identities. Adolescence is characterized by risky behavior, which is made more likely by changes in the brain in which reward-processing centers develop more rapidly than cognitive control systems, making adolescents more sensitive to rewards than to possible negative consequences.[![Youth from diverse backgrounds interacting and talking. Some are wearing backpacks, and one is talking on a cell phone.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/02024207/Diversity_of_youth_in_Oslo_Norway.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/02024207/Diversity_of_youth_in_Oslo_Norway.jpg)
+
+Marcia (1966) described identify formation during adolescence as involving both decision points and commitments with respect to ideologies (e.g., religion, politics) and occupations. He described four identity statuses: foreclosure, identity diffusion, moratorium, and identity achievement.
+
+-   Foreclosure occurs when an individual commits to an identity without exploring options.
+-   Identity diffusion occurs when adolescents neither explore nor commit to any identities.
+-   Moratorium is a state in which adolescents are actively exploring options but have not yet made commitments.
+-   Identity achievement occurs when individuals have explored different options and then made identity commitments.
+
+Think about your own adolescent experience (you may consider yourself still in this life stage). Which identity status best fits with your own experience? Do you feel committed to your current identity, or do you feel as though you are still developing? Regardless of your answer, you can rest assured that human development does not end with adolescence, and research proves that people can continue to learn, grow, and even change as long as they would like.
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   Putting It Together: Lifespan Development. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+-   Section on Adolescent Development. **Authored by**: Jennifer Lansford . **Provided by**: Duke University. **Located at**: [http://nobaproject.com/modules/adolescent-development?r=MTc0ODYsMzIxMDM%3D](http://nobaproject.com/modules/adolescent-development?r=MTc0ODYsMzIxMDM%3D). **Project**: The Noba Project. **License**: _[CC BY-NC-SA: Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)_
+-   Youth Interacting in Oslo, Norway. **Authored by**: Leifern. **Provided by**: Wikipedia. **Located at**: [https://chr.wikipedia.org/wiki/%E1%8E%BE%E1%8E%A5\_%E1%8F%84%E1%8E%BE%E1%8F%93%E1%8E%B8#/media/File:Diversity\_of\_youth\_in\_Oslo\_Norway.jpg](https://chr.wikipedia.org/wiki/%E1%8E%BE%E1%8E%A5_%E1%8F%84%E1%8E%BE%E1%8F%93%E1%8E%B8#/media/File:Diversity_of_youth_in_Oslo_Norway.jpg). **License**: _[CC BY-SA: Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/)_
+
+---
+
+## Discussion: Lifespan Development | Introduction to Psychology
+
+- url_title:: "Discussion: Lifespan Development | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-lifespan-development/
+## Discussion: Lifespan Development
+
+**Step 1:** To view this discussion prompt, click on [Discussion: Lifespan Development.](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-lifespan-development-2/)
+
+**Step 2:** Read the prompt and instructions, then post your response and comments inside of the discussion forum.
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   Discussion: Lifespan Development. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+Licenses and Attributions
+
+[Previous](https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-lifespan-development/) [Next](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-5/)
+
+---
+
+## Introduction to Childhood Disorders | Introduction to Psychology
+
+- url_title:: "Introduction to Childhood Disorders | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-childhood-disorders/
+## What you’ll learn to do: explain common childhood disorders, including attention deficit/hyperactivity disorder and autism spectrum disorder
+
+[![Photograph of an autistic boy looking through a fuzzy glass window with his hands pressed against the glass.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/03125430/Autism_boy_help.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/03125430/Autism_boy_help.jpg)
+
+Neurodevelopmental disorders are a group of disorders that are typically diagnosed during childhood and are characterized by developmental deficits in personal, social, academic, and intellectual realms; these disorders include attention deficit/hyperactivity disorder (ADHD) and autism spectrum disorder. ADHD is characterized by a pervasive pattern of inattention and/or hyperactive and impulsive behavior that interferes with normal functioning. Genetic and neurobiological factors contribute to the development of ADHD, which can persist well into adulthood and is often associated with poor long-term outcomes. The major features of autism spectrum disorder include deficits in social interaction and communication and repetitive movements or interests. As with ADHD, genetic factors appear to play a prominent role in the development of autism spectrum disorder; exposure to environmental pollutants such as mercury have also been linked to the development of this disorder. Although it is believed by some that autism is triggered by the MMR vaccination, evidence does not support this claim.
+
+### Learning Objectives
+
+-   Describe the symptoms, prevalence, and contributing factors of attention-deficit/hyperactivity disorder
+-   Describe the symptoms and prevalence of autism spectrum disorder, as well as the contributing factors that cause the disorder
+-   Evaluate scenarios and descriptions to identify and differentiate between psychological disorders
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   Disorders in Childhood. **Authored by**: OpenStax College. **Located at**: [https://openstax.org/books/psychology-2e/pages/15-10-disorders-in-childhood](https://openstax.org/books/psychology-2e/pages/15-10-disorders-in-childhood). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+-   Modification, adaptation, and original content. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+-   Autistic boy image. **Authored by**: hepingting. **Provided by**: Wikimedia. **Located at**: [https://commons.wikimedia.org/wiki/File:Autism\_boy\_help.jpg](https://commons.wikimedia.org/wiki/File:Autism_boy_help.jpg). **License**: _[CC BY-SA: Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/)_
+
+---
+
+## ADHD | Introduction to Psychology
+
+- url_title:: "ADHD | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/disorders-in-childhood/
+### Learning Objectives
+
+-   Describe the symptoms, prevalence, and contributing factors of attention deficit/hyperactivity disorder
+
+Most of the disorders we have discussed so far are typically diagnosed in adulthood, although they can and sometimes do occur during childhood. However, there are a group of conditions that, when present, are diagnosed early in childhood, often before the time a child enters school. These conditions are listed in the DSM-5 as **neurodevelopmental disorders**, and they involve developmental problems in personal, social, academic, and intellectual functioning (APA, 2013). In this section, we will discuss two such disorders: attention deficit/ hyperactivity disorder and autism.
+
+## Attention Deficit/Hyperactivity Disorder
+
+Diego is always active, from the time he wakes up in the morning until the time he goes to bed at night. His mother reports that he came out the womb kicking and screaming, and he has not stopped moving since. He has a sweet disposition, but always seems to be in trouble with his teachers, parents, and after-school program counselors. He seems to accidentally break things; he lost his jacket three times last winter, and he never seems to sit still. His teachers believe he is a smart child, but he never finishes anything he starts and is so impulsive that he does not seem to learn much in school.
+
+Diego likely has **attention deficit/hyperactivity disorder (ADHD)**. The symptoms of this disorder were first described by Hans Hoffman in the 1920s. While taking care of his son while his wife was in the hospital giving birth to a second child, Hoffman noticed that the boy had trouble concentrating on his homework, had a short attention span, and had to repeatedly go over easy homework to learn the material (Jellinek & Herzog, 1999). Later, it was discovered that many hyperactive children—those who are fidgety, restless, socially disruptive, and have trouble with impulse control—also display short attention spans, problems with concentration, and distractibility. By the 1970s, it had become clear that many children who display attention problems often also exhibit signs of hyperactivity. In recognition of such findings, the DSM-III (published in 1980) included a new disorder: attention deficit disorder with and without hyperactivity, now known as attention deficit/hyperactivity disorder (ADHD).
+
+A child with ADHD shows a constant pattern of inattention and/or hyperactive and impulsive behavior that interferes with normal functioning (APA, 2013). Some of the signs of inattention include great difficulty with and avoidance of tasks that require sustained attention (such as conversations or reading), failure to follow instructions (often resulting in failure to complete school work and other duties), disorganization (difficulty keeping things in order, poor time management, sloppy and messy work), lack of attention to detail, becoming easily distracted, and forgetfulness. Hyperactivity is characterized by excessive movement, and includes fidgeting or squirming, leaving one’s seat in situations when remaining seated is expected, having trouble sitting still (e.g., in a restaurant), running about and climbing on things, blurting out responses before another person’s question or statement has been completed, difficulty waiting one’s turn for something, and interrupting and intruding on others. Frequently, the hyperactive child comes across as noisy and boisterous. The child’s behavior is hasty, impulsive, and seems to occur without much forethought; these characteristics may explain why adolescents and young adults diagnosed with ADHD receive more traffic tickets and have more automobile accidents than do others (Thompson, Molina, Pelham, & Gnagy, 2007).
+
+ADHD occurs in about 5% of children (APA, 2013). On the average, boys are 3 times more likely to have ADHD than are girls; however, such findings might reflect the greater propensity of boys to engage in aggressive and antisocial behavior and thus incur a greater likelihood of being referred to psychological clinics (Barkley, 2006). This may also be reflective of bias in failing to appropriately diagnose girls and women who show symptoms. Children with ADHD face severe academic and social challenges. Compared to their non-ADHD counterparts, children with ADHD have lower grades and standardized test scores and higher rates of expulsion, grade retention, and dropping out (Loe & Feldman, 2007). They also are less well-liked and more often rejected by their peers (Hoza et al., 2005).
+
+Previously, ADHD was thought to fade away by adolescence. However, longitudinal studies have suggested that ADHD is a chronic problem, one that can persist into adolescence and adulthood (Barkley, Fischer, Smallish, & Fletcher, 2002). A recent study found that 29.3% of adults who had been diagnosed with ADHD decades earlier still showed symptoms (Barbaresi et al., 2013). Somewhat troubling, this study also reported that nearly 81% of those whose ADHD persisted into adulthood had experienced at least one other comorbid disorder, compared to 47% of those whose ADHD did not persist.
+
+## Life Problems from ADHD
+
+Children diagnosed with ADHD face considerably worse long-term outcomes than do those children who do not receive such a diagnosis. In one investigation, 135 adults who had been identified as having ADHD symptoms in the 1970s were contacted decades later and interviewed (Klein et al., 2012). Compared to a control sample of 136 participants who had never been diagnosed with ADHD, those who were diagnosed as children:
+
+-   had worse educational attainment (more likely to have dropped out of high school and less likely to have earned a bachelor’s degree);
+-   had lower socioeconomic status;
+-   held less prestigious occupational positions;
+-   were more likely to be unemployed;
+-   made considerably less in salary;
+-   scored worse on a measure of occupational functioning (indicating, for example, lower job satisfaction, poorer work relationships, and more firings);
+-   scored worse on a measure of social functioning (indicating, for example, fewer friendships and less involvement in social activities);
+-   were more likely to be divorced; and
+-   were more likely to have non-alcohol-related substance abuse problems. (Klein et al., 2012)
+
+Longitudinal studies also show that children diagnosed with ADHD are at higher risk for substance abuse problems. One study reported that childhood ADHD predicted later drinking problems, daily smoking, and use of marijuana and other illicit drugs (Molina & Pelham, 2003). The risk of substance abuse problems appears to be even greater for those with ADHD who also exhibit antisocial tendencies (Marshal & Molina, 2006).
+
+## Causes of ADHD
+
+Family and twin studies indicate that genetics play a significant role in the development of ADHD. Burt (2009), in a review of 26 studies, reported that the median rate of concordance for identical twins was .66 (one study reported a rate of .90), whereas the median concordance rate for fraternal twins was .20. This study also found that the median concordance rate for unrelated (adoptive) siblings was .09; although this number is small, it is greater than 0, thus suggesting that the environment may have at least some influence. Another review of studies concluded that the heritability of inattention and hyperactivity were 71% and 73%, respectively (Nikolas & Burt, 2010).
+
+The specific genes involved in ADHD are thought to include at least two that are important in the regulation of the neurotransmitter dopamine (Gizer, Ficks, & Waldman, 2009), suggesting that dopamine may be important in ADHD. Indeed, medications used in the treatment of ADHD, such as methylphenidate (Ritalin) and amphetamine with dextroamphetamine (Adderall), have stimulant qualities and elevate dopamine activity. People with ADHD show less dopamine activity in key regions of the brain, especially those associated with motivation and reward (Volkow et al., 2009), which provides support to the theory that dopamine deficits may be a vital factor in the development this disorder (Swanson et al., 2007).
+
+Brain imaging studies have shown that children with ADHD exhibit abnormalities in their frontal lobes, an area in which dopamine is in abundance. Compared to children without ADHD, those with ADHD appear to have smaller frontal lobe volume, and they show less frontal lobe activation when performing mental tasks. Recall that one of the functions of the frontal lobes is to inhibit our behavior. Thus, abnormalities in this region may go a long way toward explaining the hyperactive, uncontrolled behavior of ADHD.
+
+By the 1970s, many had become aware of the connection between nutritional factors and childhood behavior. At the time, much of the public believed that hyperactivity was caused by sugar and food additives, such as artificial coloring and flavoring. Undoubtedly, part of the appeal of this hypothesis was that it provided a simple explanation of (and treatment for) behavioral problems in children. A statistical review of 16 studies, however, concluded that sugar consumption has no effect at all on the behavioral and cognitive performance of children (Wolraich, Wilson, & White, 1995). Additionally, although food additives have been shown to increase hyperactivity in non-ADHD children, the effect is rather small (McCann et al., 2007). Numerous studies, however, have shown a significant relationship between exposure to nicotine in cigarette smoke during the prenatal period and ADHD (Linnet et al., 2003). Maternal smoking during pregnancy is associated with the development of more severe symptoms of the disorder (Thakur et al., 2013).
+
+Is ADHD caused by poor parenting? Not likely. Remember, the genetics studies discussed above suggested that the family environment does not seem to play much of a role in the development of this disorder; if it did, we would expect the concordance rates to be higher for fraternal twins and adoptive siblings than has been demonstrated. All things considered, the evidence seems to point to the conclusion that ADHD is triggered more by genetic and neurological factors and less by social or environmental ones.
+
+### Dig Deeper: Why Is the Prevalence Rate of ADHD Increasing?
+
+Many people believe that the rates of ADHD have increased in recent years, and there is evidence to support this contention. In a recent study, investigators found that the parent-reported prevalence of ADHD among children (4–17 years old) in the United States increased by 22% during a 4-year period, from 7.8% in 2003 to 9.5% in 2007 (CDC, 2010). Over time this increase in parent-reported ADHD was observed in all sociodemographic groups and was reflected by substantial increases in 12 states (Indiana, North Carolina, and Colorado were the top three). The increases were greatest for older teens (ages 15–17), multiracial and Hispanic children, and children with a primary language other than English. Another investigation found that from 1998–2000 through 2007–2009 the parent-reported prevalence of ADHD increased among U.S. children between the ages of 5–17 years old, from 6.9% to 9.0% (Akinbami, Liu, Pastor, & Reuben, 2011).
+
+A major weakness of both studies was that children were not actually given a formal diagnosis. Instead, parents were simply asked whether or not a doctor or other health-care provider had ever told them their child had ADHD; the reported prevalence rates thus may have been affected by the accuracy of parental memory. Nevertheless, the findings from these studies raise important questions concerning what appears to be a demonstrable rise in the prevalence of ADHD. Although the reasons underlying this apparent increase in the rates of ADHD over time are poorly understood and, at best, speculative, several explanations are viable: ADHD may be over-diagnosed by doctors who are too quick to medicate children as a behavior treatment. There is greater awareness of ADHD now than in the past. Nearly everyone has heard of ADHD, and most parents and teachers are aware of its key symptoms. Thus, parents may be quick to take their children to a doctor if they believe their child possesses these symptoms, or teachers may be more likely now than in the past to notice the symptoms and refer the child for evaluation. The use of computers, video games, iPhones, and other electronic devices has become pervasive among children in the early 21st century, and these devices could potentially shorten children’s attention spans. Thus, what might seem like inattention to some parents and teachers could simply reflect exposure to too much technology. ADHD diagnostic criteria have changed over time.
+
+### Glossary
+
+**attention deficit/hyperactivity disorder:** childhood disorder characterized by inattentiveness and/or hyperactive, impulsive behavior
+
+**neurodevelopmental disorder:** one of the disorders that are first diagnosed in childhood and involve developmental problems in academic, intellectual, social functioning
+
+### Candela Citations
+
+---
+
+## Autism | Introduction to Psychology
+
+- url_title:: "Autism | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/autism/
+### Learning Objectives
+
+-   Describe the symptoms and prevalence of autism spectrum disorder, as well as the contributing factors that cause the disorder
+
+## Autism Spectrum Disorder
+
+A seminal paper published in 1943 by psychiatrist Leo Kanner described an unusual neurodevelopmental condition he observed in a group of children. He called this condition early infantile autism, and it was characterized mainly by an inability to form close emotional ties with others, speech and language abnormalities, repetitive behaviors, and an intolerance of minor changes in the environment and in normal routines (Bregman, 2005). What the DSM-5 refers to as autism spectrum disorder today, is a direct extension of Kanner’s work.
+
+Autism spectrum disorder is probably the most misunderstood and puzzling of the neurodevelopmental disorders. Children with this disorder show signs of significant disturbances in three main areas: (a) deficits in social interaction, (b) deficits in communication, and (c) repetitive patterns of behavior or interests. These disturbances appear early in life and cause serious impairments in functioning (APA, 2013). The child with autism spectrum disorder might exhibit deficits in social interaction by not initiating conversations with other children or turning their head away when spoken to. These children do not make eye contact with others and seem to prefer playing alone rather than with others. In a certain sense, it is almost as though these individuals live in a personal and isolated social world others are simply not privy to or able to penetrate. Communication deficits can range from a complete lack of speech, to one word responses (e.g., saying “Yes” or “No” when replying to questions or statements that require additional elaboration), to echoed speech (e.g., parroting what another person says, either immediately or several hours or even days later), to difficulty maintaining a conversation because of an inability to reciprocate others’ comments. These deficits can also include problems in using and understanding nonverbal cues (e.g., facial expressions, gestures, and postures) that facilitate normal communication.
+
+Repetitive patterns of behavior or interests can be exhibited a number of ways. The child might engage in stereotyped, repetitive movements (rocking, head-banging, or repeatedly dropping an object and then picking it up), or she might show great distress at small changes in routine or the environment. For example, the child might throw a temper tantrum if an object is not in its proper place or if a regularly-scheduled activity is rescheduled. In some cases, the person with autism spectrum disorder might show highly restricted and fixated interests that appear to be abnormal in their intensity. For instance, the person might learn and memorize every detail about something even though doing so serves no apparent purpose. Importantly, autism spectrum disorder is not the same thing as intellectual development disorder (intellectual disability), although these two conditions are often comorbid. The DSM-5 specifies that the symptoms of autism spectrum disorder are not caused or explained by intellectual development disorder.
+
+## Life Problems From Autism Spectrum Disorder
+
+Autism spectrum disorder is referred to in everyday language as autism; in fact, the disorder was termed “autistic disorder” in earlier editions of the DSM, and its diagnostic criteria were much narrower than those of autism spectrum disorder. The qualifier “spectrum” in autism spectrum disorder is used to indicate that individuals with the disorder can show a range, or spectrum, of symptoms that vary in their magnitude and severity: some severe, others less severe. The previous edition of the DSM included a diagnosis of Asperger’s disorder, generally recognized as a less severe form of autistic disorder; individuals diagnosed with Asperger’s disorder were described as having average or high intelligence and a strong vocabulary, but exhibiting impairments in social interaction and social communication, such as talking only about their special interests (Wing, Gould, & Gillberg, 2011). However, because research has failed to demonstrate that Asperger’s disorder differs qualitatively from autistic disorder, the DSM-5 does not include it, which is prompting concerns among some parents that their children may no longer be eligible for special services (“Asperger’s Syndrome Dropped,” 2012). Some individuals with autism spectrum disorder, particularly those with better language and intellectual skills, can live and work independently as adults. However, most do not because the symptoms remain sufficient to cause serious impairment in many realms of life (APA, 2013).
+
+### Link to Learning
+
+[This video explains](https://www.youtube.com/watch?v=z7NeBs5wNOA) some of the early signs of autism.
+
+Current estimates from the Center for Disease Control and Prevention’s Autism and Developmental Disabilities Monitoring Network indicate that 1 in 59 children in the United States has autism spectrum disorder; the disorder is 4 times more common among boys (1 in 38) than in girls (1 in 152) (Baio et al, 2018). Rates of autistic spectrum disorder have increased dramatically since the 1980s. For example, California saw an increase of 273% in reported cases from 1987 through 1998 (Byrd, 2002); between 2000 and 2008, the rate of autism diagnoses in the United States increased 78% (CDC, 2012). Although it is difficult to interpret this increase, it is possible that the rise in prevalence is the result of the broadening of the diagnosis, increased efforts to identify cases in the community, and greater awareness and acceptance of the diagnosis. In addition, mental health professionals are now more knowledgeable about autism spectrum disorder and are better equipped to make the diagnosis, even in subtle cases (Novella, 2008).
+
+## Causes of Autism Spectrum Disorder
+
+Early theories of autism placed the blame squarely on the shoulders of the child’s parents, particularly the mother. Bruno Bettelheim (an Austrian-born American child psychologist who was heavily influenced by Sigmund Freud’s ideas) suggested that a mother’s ambivalent attitudes and her frozen and rigid emotions toward her child were the main causal factors in childhood autism. In what must certainly stand as one of the more controversial assertions in psychology over the last 50 years, he wrote, “I state my belief that the precipitating factor in infantile autism is the parent’s wish that his child should not exist” (Bettelheim, 1967, p. 125). As you might imagine, Bettelheim did not endear himself to a lot of people with this position; incidentally, no scientific evidence exists supporting his claims.
+
+The exact causes of autism spectrum disorder remain unknown despite massive research efforts over the last two decades (Meek, Lemery-Chalfant, Jahromi, & Valiente, 2013). Autism appears to be strongly influenced by genetics, as identical twins show concordance rates of 60%–90%, whereas concordance rates for fraternal twins and siblings are 5%–10% (Autism Genome Project Consortium, 2007). Many different genes and gene mutations have been implicated in autism (Meek et al., 2013). Among the genes involved are those important in the formation of synaptic circuits that facilitate communication between different areas of the brain (Gauthier et al., 2011). A number of environmental factors are also thought to be associated with increased risk for autism spectrum disorder, at least in part, because they contribute to new mutations. These factors include exposure to pollutants, such as plant emissions and mercury, urban versus rural residence, and vitamin D deficiency (Kinney, Barch, Chayka, Napoleon, & Munir, 2009).
+
+## Child Vaccinations and Autism Spectrum Disorder
+
+In the late 1990s, a prestigious medical journal published an article purportedly showing that autism is triggered by the MMR (measles, mumps, and rubella) vaccine. These findings were very controversial and drew a great deal of attention, sparking an international forum on whether children should be vaccinated. In a shocking turn of events, some years later the article was retracted by the journal that had published it after accusations of fraud on the part of the lead researcher. Despite the retraction, the reporting in popular media led to concerns about a possible link between vaccines and autism persisting. A recent survey of parents, for example, found that roughly a third of respondents expressed such a concern (Kennedy, LaVail, Nowak, Basket, & Landry, 2011); and perhaps fearing that their children would develop autism, more than 10% of parents of young children refuse or delay vaccinations (Dempsey et al., 2011). Some parents of children with autism mounted a campaign against scientists who refuted the vaccine-autism link. Even politicians and several well-known celebrities weighed in; for example, actress Jenny McCarthy (who believed that a vaccination caused her son’s autism) co-authored a book on the matter. However, there is no scientific evidence that a link exists between autism and vaccinations (Hughes, 2007). Indeed, a recent study compared the vaccination histories of 256 children with autism spectrum disorder with that of 752 control children across three time periods during their first two years of life (birth to 3 months, birth to 7 months, and birth to 2 years) (DeStefano, Price, & Weintraub, 2013). At the time of the study, the children were between 6 and 13 years old, and their prior vaccination records were obtained. Because vaccines contain immunogens (substances that fight infections), the investigators examined medical records to see how many immunogens children received to determine if those children who received more immunogens were at greater risk for developing autism spectrum disorder. The results of this study, a portion of which are shown in Figure 1 (and table 1), clearly demonstrate that the quantity of immunogens from vaccines received during the first two years of life were not at all related to the development of autism spectrum disorder. There is not a relationship between vaccinations and autism spectrum disorders.
+
+[![Data in this graph and alternative tag is also provided in a data table below. A graph has an x-axis labeled “total cumulative immunogens” and a y-axis with percentage numbers. For children aged 0–3 months, the data is approximately as follows: 0–25 immunogens are about 48% for ASD cases and 41% for controls, 26–50 immunogens are 5% for ASD cases and 6% for controls, and for 3000–3258 immunogens45% for ASD cases and 50% for controls. For children aged 0–7months, the data is approximately as follows: 26–50 immunogens are about 20% for ASD cases and 18% for controls, 51–75 immunogens are 25% for ASD cases and 22% for controls, 3000–3258 immunogens are 45% for ASD cases and 52% for controls, 6000–6258 immunogens are 10% for ASD cases and 8% for controls, and for 9000–9258 immunogens 33% for ASD cases and 40% for controls. For children aged 0–24 months, the data is approximately as follows: 151–175 immunogens are about 25% for ASD cases and 25% for controls, 176–200 immunogens are 18% for ASD cases and 13% for controls, 9000–9528 immunogens are 17% for ASD cases and 20% for controls, and for 12000–12258 immunogens 25% for ASD cases and25% for controls.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/10205306/9cd509a797eeee2ba2ac5622f1d86b57ee9e6dc2.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/10205306/9cd509a797eeee2ba2ac5622f1d86b57ee9e6dc2.jpeg)
+
+**Figure 1**. In terms of their exposure to immunogens in vaccines, overall, there is not a significant difference between children with autism spectrum disorder and their age-matched controls without the disorder (DeStefano et al., 2013).
+
+<table summary="This table shows the data presented in Figure 1. which demonstrates that there is no relationship between the amount of immunogens that infants are exposed to through vaccines and the rate at which infants are diagnosed with Autism Spectrum Disorder. In this table, no value given is represented with the character -."><caption>Table 1. Comparison Groups Infants 0 to 24 Months of Age With and Without Autism and Total Cumulative Immunogens Exposure Through Vaccines</caption><tbody><tr><th scope="col">Total Cumulative Immunogens</th><th scope="col">0 to 3 Months: Autism (ASD)</th><th scope="col">0 to 3 Months: Controls</th><th scope="col">0 to 7 Months: Autism (ASD)</th><th scope="col">0 to 7 Months: Controls</th><th scope="col">0 to 24 Months: Autism (ASD)</th><th scope="col">0 to 24 Months: Controls</th></tr><tr><th scope="row">0 to 25</th><td>48%</td><td>41%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><th scope="row">26 to 50</th><td>5%</td><td>6%</td><td>20%</td><td>18%</td><td>–</td><td>–</td></tr><tr><th scope="row">51 to 75</th><td>–</td><td>–</td><td>25%</td><td>22%</td><td>–</td><td>–</td></tr></tbody></table>
+
+Why does concern over vaccines and autism spectrum disorder persist? Since the proliferation of the Internet in the 1990s, parents have been constantly bombarded with online information that can become magnified and take on a life of its own. The enormous volume of electronic information pertaining to autism spectrum disorder, combined with how difficult it can be to grasp complex scientific concepts, can make separating good research from bad challenging (Downs, 2008). Notably, the study that fueled the controversy reported that 8 out of 12 children—according to their parents—developed symptoms consistent with autism spectrum disorder shortly after receiving a vaccination. To conclude that vaccines cause autism spectrum disorder on this basis, as many did, is clearly incorrect for a number of reasons, not the least of which is because correlation does not imply causation, as you’ve learned.
+
+Additionally, as was the case with diet and ADHD in the 1970s, the notion that autism spectrum disorder is caused by vaccinations is appealing to some because it provides a simple explanation for this condition. Like all disorders, however, there are no simple explanations for autism spectrum disorder. Although the research discussed above has shed some light on its causes, science is still a long way from complete understanding of the disorder.
+
+### Key Takeaways
+
+**autism spectrum disorder:** childhood disorder characterized by deficits in social interaction and communication, and repetitive patterns of behavior or interests
+
+**neurodevelopmental disorder:** one of the disorders that are first diagnosed in childhood and involve developmental problems in academic, intellectual, social functioning
+
+### Candela Citations
+
+---
+

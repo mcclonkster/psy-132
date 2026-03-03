@@ -1,0 +1,996 @@
+# 04_statistics
+
+
+---
+## Why It Matters: Psychological Research
+
+- url_title:: "Why It Matters: Psychological Research"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-15/
+![Children sit in front of a bank of television screens. A sign on the wall says, “Some content may not be suitable for children.”](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224457/CNX_Psych_02_00_childrentv.jpg)
+
+**Figure 1**. How does television content impact children’s behavior? (credit: modification of work by “antisocialtory”/Flickr)
+
+Have you ever wondered whether the violence you see on television affects your behavior? Are you more likely to behave aggressively in real life after watching people behave violently in dramatic situations on the screen? Or, could seeing fictional violence actually get aggression out of your system, causing you to be more peaceful? How are children influenced by the media they are exposed to? A psychologist interested in the relationship between behavior and exposure to violent images might ask these very questions.
+
+The topic of violence in the media today is contentious. Since ancient times, humans have been concerned about the effects of new technologies on our behaviors and thinking processes. The Greek philosopher Socrates, for example, worried that writing—a new technology at that time—would diminish people’s ability to remember because they could rely on written records rather than committing information to memory. In our world of quickly changing technologies, questions about the effects of media continue to emerge. Is it okay to talk on a cell phone while driving? Are headphones good to use in a car? What impact does text messaging have on reaction time while driving? These are types of questions that psychologist David Strayer asks in his lab.
+
+### Watch It
+
+Watch this short video to see how Strayer utilizes the scientific method to reach important conclusions regarding technology and driving safety.
+
+You can [view the transcript for “Understanding driver distraction” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/UnderstandingDriverDistraction.txt).
+
+How can we go about finding answers that are supported not by mere opinion, but by evidence that we can all agree on? The findings of psychological research can help us navigate issues like this.
+
+Module References
+
+### Candela Citations
+
+---
+
+## Introduction to Statistical Thinking | Introduction to Psychology
+
+- url_title:: "Introduction to Statistical Thinking | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-statistical-thinking/
+## What you’ll learn to do: define basic elements of a statistical investigation
+
+[![A normal distribution curve drawn on top of a histogram.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/18040916/822px-Fisher_iris_versicolor_sepalwidth.svg_.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/18040916/822px-Fisher_iris_versicolor_sepalwidth.svg_.png)
+
+Once psychologists have performed an experiment or study and gathered their results, they need to organize the information in a way so that they can draw conclusions from the results. What does the information mean? Does it support or reject the hypothesis? Is the data valid and reliable, and is the study replicable?
+
+Psychologists use statistics to assist them in analyzing data, and also to give more precise measurements to describe whether something is statistically significant. Analyzing data using statistics enables researchers to find patterns, make claims, and share their results with others. In this section, you’ll learn about some of the tools that psychologists use in statistical analysis.
+
+### Learning Objectives
+
+-   Define reliability and validity
+-   Describe the importance of distributional thinking and the role of p-values in statistical inference
+-   Describe the role of random sampling and random assignment in drawing cause-and-effect conclusions
+-   Describe the basic structure of a psychological research article
+-   Describe replication and its importance to psychology
+
+### Candela Citations
+
+---
+
+## Drawing Conclusions from Statistics | Introduction to Psychology
+
+- url_title:: "Drawing Conclusions from Statistics | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-drawing-conclusions-from-statistics/
+### Learning Objectives
+
+-   Describe the role of random sampling and random assignment in drawing cause-and-effect conclusions
+
+## Generalizability
+
+[![Photo of a diverse group of college-aged students.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17150423/generalizability.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17150423/generalizability.jpg)
+
+**Figure 1**. Generalizability is an important research consideration: The results of studies with widely representative samples are more likely to generalize to the population. \[Image: Barnacles Budget Accommodation\]
+
+One limitation to the study mentioned previously about the babies choosing the “helper” toy is that the conclusion only applies to the 16 infants in the study. We don’t know much about how those 16 infants were selected. Suppose we want to select a subset of individuals (a **sample**) from a much larger group of individuals (the **population**) in such a way that conclusions from the sample can be **generalized** to the larger population. This is the question faced by pollsters every day.
+
+**Example 1**: The General Social Survey (GSS) is a survey on societal trends conducted every other year in the United States. Based on a sample of about 2,000 adult Americans, researchers make claims about what percentage of the U.S. population consider themselves to be “liberal,” what percentage consider themselves “happy,” what percentage feel “rushed” in their daily lives, and many other issues. The key to making these claims about the larger population of all American adults lies in how the sample is selected. The goal is to select a sample that is representative of the population, and a common way to achieve this goal is to select a **random sample** that gives every member of the population an equal chance of being selected for the sample. In its simplest form, random sampling involves numbering every member of the population and then using a computer to randomly select the subset to be surveyed. Most polls don’t operate exactly like this, but they do use probability-based sampling methods to select individuals from nationally representative panels.
+
+In 2004, the GSS reported that 817 of 977 respondents (or 83.6%) indicated that they always or sometimes feel rushed. This is a clear majority, but we again need to consider variation due to _random sampling_. Fortunately, we can use the same probability model we did in the previous example to investigate the probable size of this error. (Note, we can use the coin-tossing model when the actual population size is much, much larger than the sample size, as then we can still consider the probability to be the same for every individual in the sample.) This probability model predicts that the sample result will be within 3 percentage points of the population value (roughly 1 over the square root of the sample size, the **margin of error**). A statistician would conclude, with 95% confidence, that between 80.6% and 86.6% of all adult Americans in 2004 would have responded that they sometimes or always feel rushed.
+
+The key to the margin of error is that when we use a probability sampling method, we can make claims about how often (in the long run, with repeated random sampling) the sample result would fall within a certain distance from the unknown population value by chance (meaning by random sampling variation) alone. Conversely, non-random samples are often suspect to bias, meaning the sampling method systematically over-represents some segments of the population and under-represents others. We also still need to consider other sources of bias, such as individuals not responding honestly. These sources of error are not measured by the margin of error.
+
+## Cause and Effect
+
+In many research studies, the primary question of interest concerns differences between groups. Then the question becomes how were the groups formed (e.g., selecting people who already drink coffee vs. those who don’t). In some studies, the researchers actively form the groups themselves. But then we have a similar question—could any differences we observe in the groups be an artifact of that group-formation process? Or maybe the difference we observe in the groups is so large that we can discount a “fluke” in the group-formation process as a reasonable explanation for what we find?
+
+**Example 2**: A psychology study investigated whether people tend to display more creativity when they are thinking about intrinsic (internal) or extrinsic (external) motivations (Ramsey & Schafer, 2002, based on a study by Amabile, 1985). The subjects were 47 people with extensive experience with creative writing. Subjects began by answering survey questions about either intrinsic motivations for writing (such as the pleasure of self-expression) or extrinsic motivations (such as public recognition). Then all subjects were instructed to write a haiku, and those poems were evaluated for creativity by a panel of judges. The researchers conjectured beforehand that subjects who were thinking about intrinsic motivations would display more creativity than subjects who were thinking about extrinsic motivations. The creativity scores from the 47 subjects in this study are displayed in Figure 2, where higher scores indicate more creativity.
+
+![Image showing a dot for creativity scores, which vary between 5 and 27, and the types of motivation each person was given as a motivator, either extrinsic or intrinsic.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2016/06/10212632/000001452original.jpg)
+
+**Figure 2**. Creativity scores separated by type of motivation.
+
+In this example, the key question is whether the type of motivation _affects_ creativity scores. In particular, do subjects who were asked about intrinsic motivations tend to have higher creativity scores than subjects who were asked about extrinsic motivations?
+
+Figure 2 reveals that both motivation groups saw considerable variability in creativity scores, and these scores have considerable overlap between the groups. In other words, it’s certainly not always the case that those with extrinsic motivations have higher creativity than those with intrinsic motivations, but there may still be a statistical _tendency_ in this direction. (Psychologist Keith Stanovich (2013) refers to people’s difficulties with thinking about such probabilistic tendencies as “the Achilles heel of human cognition.”)
+
+The mean creativity score is 19.88 for the intrinsic group, compared to 15.74 for the extrinsic group, which supports the researchers’ conjecture. Yet comparing only the means of the two groups fails to consider the variability of creativity scores in the groups. We can measure variability with statistics using, for instance, the standard deviation: 5.25 for the extrinsic group and 4.40 for the intrinsic group. The standard deviations tell us that most of the creativity scores are within about 5 points of the mean score in each group. We see that the mean score for the intrinsic group lies within one standard deviation of the mean score for extrinsic group. So, although there is a tendency for the creativity scores to be higher in the intrinsic group, on average, the difference is not extremely large.
+
+We again want to consider possible explanations for this difference. The study only involved individuals with extensive creative writing experience. Although this limits the population to which we can generalize, it does not explain why the mean creativity score was a bit larger for the intrinsic group than for the extrinsic group. Maybe women tend to receive higher creativity scores? Here is where we need to focus on how the individuals were assigned to the motivation groups. If only women were in the intrinsic motivation group and only men in the extrinsic group, then this would present a problem because we wouldn’t know if the intrinsic group did better because of the different type of motivation or because they were women. However, the researchers guarded against such a problem by randomly assigning the individuals to the motivation groups. Like flipping a coin, each individual was just as likely to be assigned to either type of motivation. Why is this helpful? Because this **random assignment** tends to balance out all the variables related to creativity we can think of, and even those we don’t think of in advance, between the two groups. So we should have a similar male/female split between the two groups; we should have a similar age distribution between the two groups; we should have a similar distribution of educational background between the two groups; and so on. Random assignment should produce groups that are as similar as possible except for the type of motivation, which presumably eliminates all those other variables as possible explanations for the observed tendency for higher scores in the intrinsic group.
+
+But does this always work? No, so by “luck of the draw” the groups may be a little different prior to answering the motivation survey. So then the question is, is it possible that an unlucky random assignment is responsible for the observed difference in creativity scores between the groups? In other words, suppose each individual’s poem was going to get the same creativity score no matter which group they were assigned to, that the type of motivation in no way impacted their score. Then how often would the random-assignment process alone lead to a difference in mean creativity scores as large (or larger) than 19.88 – 15.74 = 4.14 points?
+
+We again want to apply to a probability model to approximate a **p-value**, but this time the model will be a bit different. Think of writing everyone’s creativity scores on an index card, shuffling up the index cards, and then dealing out 23 to the extrinsic motivation group and 24 to the intrinsic motivation group, and finding the difference in the group means. We (better yet, the computer) can repeat this process over and over to see how often, when the scores don’t change, random assignment leads to a difference in means at least as large as 4.41. Figure 3 shows the results from 1,000 such hypothetical random assignments for these scores.
+
+![Standard distribution in a typical bell curve.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2016/06/10212623/000001454original.jpg)
+
+**Figure 3**. Differences in group means under random assignment alone.
+
+Only 2 of the 1,000 simulated random assignments produced a difference in group means of 4.41 or larger. In other words, the approximate p-value is 2/1000 = 0.002. This small p-value indicates that it would be very surprising for the random assignment process alone to produce such a large difference in group means. Therefore, as with Example 2, we have strong evidence that focusing on intrinsic motivations tends to increase creativity scores, as compared to thinking about extrinsic motivations.
+
+Notice that the previous statement implies a cause-and-effect relationship between motivation and creativity score; is such a strong conclusion justified? Yes, because of the random assignment used in the study. That should have balanced out any other variables between the two groups, so now that the small p-value convinces us that the higher mean in the intrinsic group wasn’t just a coincidence, the only reasonable explanation left is the difference in the type of motivation. Can we generalize this conclusion to everyone? Not necessarily—we could cautiously generalize this conclusion to individuals with extensive experience in creative writing similar the individuals in this study, but we would still want to know more about how these individuals were selected to participate.
+
+## Conclusion
+
+[![Close-up photo of mathematical equations.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17150557/conclusion.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17150557/conclusion.jpg)
+
+**Figure 4**. Researchers employ the scientific method that involves a great deal of statistical thinking: generate a hypothesis –> design a study to test that hypothesis –> conduct the study –> analyze the data –> report the results. \[Image: widdowquinn\]
+
+Statistical thinking involves the careful design of a study to collect meaningful data to answer a focused research question, detailed analysis of patterns in the data, and drawing conclusions that go beyond the observed data. Random sampling is paramount to generalizing results from our sample to a larger population, and random assignment is key to drawing cause-and-effect conclusions. With both kinds of randomness, probability models help us assess how much random variation we can expect in our results, in order to determine whether our results could happen by chance alone and to estimate a margin of error.
+
+So where does this leave us with regard to the coffee study mentioned previously (the Freedman, Park, Abnet, Hollenbeck, & Sinha, 2012 found that men who drank at least six cups of coffee a day had a 10% lower chance of dying (women 15% lower) than those who drank none)? We can answer many of the questions:
+
+-   This was a 14-year study conducted by researchers at the National Cancer Institute.
+-   The results were published in the June issue of the _New England Journal of Medicine_, a respected, peer-reviewed journal.
+-   The study reviewed coffee habits of more than 402,000 people ages 50 to 71 from six states and two metropolitan areas. Those with cancer, heart disease, and stroke were excluded at the start of the study. Coffee consumption was assessed once at the start of the study.
+-   About 52,000 people died during the course of the study.
+-   People who drank between two and five cups of coffee daily showed a lower risk as well, but the amount of reduction increased for those drinking six or more cups.
+-   The sample sizes were fairly large and so the p-values are quite small, even though percent reduction in risk was not extremely large (dropping from a 12% chance to about 10%–11%).
+-   Whether coffee was caffeinated or decaffeinated did not appear to affect the results.
+-   This was an observational study, so no cause-and-effect conclusions can be drawn between coffee drinking and increased longevity, contrary to the impression conveyed by many news headlines about this study. In particular, it’s possible that those with chronic diseases don’t tend to drink coffee.
+
+This study needs to be reviewed in the larger context of similar studies and consistency of results across studies, with the constant caution that this was not a randomized experiment. Whereas a statistical analysis can still “adjust” for other potential confounding variables, we are not yet convinced that researchers have identified them all or completely isolated why this decrease in death risk is evident. Researchers can now take the findings of this study and develop more focused studies that address new questions.
+
+### Think It Over
+
+-   Find a recent research article in your field and answer the following: What was the primary research question? How were individuals selected to participate in the study? Were summary results provided? How strong is the evidence presented in favor or against the research question? Was random assignment used? Summarize the main conclusions from the study, addressing the issues of statistical significance, statistical confidence, generalizability, and cause and effect. Do you agree with the conclusions drawn from this study, based on the study design and the results presented?
+-   Is it reasonable to use a random sample of 1,000 individuals to draw conclusions about all U.S. adults? Explain why or why not.
+
+### Glossary
+
+**cause-and-effect:** related to whether we say one variable is causing changes in the other variable, versus other variables that may be related to these two variables.  
+**generalizability**: related to whether the results from the sample can be generalized to a larger population.  
+**margin of error**: the expected amount of random variation in a statistic; often defined for 95% confidence level.  
+**population**: a larger collection of individuals that we would like to generalize our results to.  
+**p-value**: the probability of observing a particular outcome in a sample, or more extreme, under a conjecture about the larger population or process.  
+**random assignment**: using a probability-based method to divide a sample into treatment groups.  
+**random sampling**: using a probability-based method to select a subset of individuals for the sample from the population.  
+**sample**: the collection of individuals on which we collect data.
+
+### Candela Citations
+
+---
+
+## How to Read Research | Introduction to Psychology
+
+- url_title:: "How to Read Research | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/how-to-read-research/
+### Learning Objectives
+
+-   Describe the basic structure of a psychological research article
+
+In this course and throughout your academic career, you’ll be reading journal articles (meaning they were published by experts in a peer-reviewed journal) and reports that explain psychological research. It’s important to understand the format of these articles so that you can read them strategically and understand the information presented. Scientific articles vary in content or structure, depending on the type of journal to which they will be submitted. Psychological articles and many papers in the social sciences follow the writing guidelines and format dictated by the [American Psychological Association](https://owl.english.purdue.edu/owl/section/2/10/) (APA). In general, the structure is: abstract, introduction, methods, results, discussion, and references.
+
+-   **Abstract**: the abstract is the concise summary of the article. It summarizes the most important features of the manuscript, providing the reader with a global first impression of the article. It is generally just one paragraph that explains the experiment as well as a short synopsis of the results.
+-   **Introduction**: this section provides background information about the origin and purpose of performing the experiment or study. It reviews previous research and presents existing theories on the topic.
+-   **Method**: this section covers the methodologies used to investigate the research question, including the identification of _participants_, _procedures_, and _materials_ as well as a description of the actual _procedure_. It should be sufficiently detailed to allow for replication.
+-   **Results**: the results section presents key findings of the research, including references to indicators of statistical significance.
+-   **Discussion**: this section provides an interpretation of the findings, states their significance for current research, and derives implications for theory and practice. Alternative interpretations for findings are also provided, particularly when it is not possible to conclude for the directionality of the effects. In the discussion, authors also acknowledge the strengths and limitations/weaknesses of the study and offer concrete directions for future research.
+
+### Watch It
+
+Watch this video for an explanation of how to read scholarly articles. While the articles can sometimes seem dense, if you use the abstract, conclusion, or introductions first, you can get a broad overview of what the article is about and what you should focus on while you read.
+
+Practice identifying these key components in the following experiment: [Food-Induced Emotional Resonance Improves Emotion Recognition](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167462).
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Modification, adaptation, and original content. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+CC licensed content, Shared previously
+
+-   Reading a Scientific Paper for Psychology and the Social Sciences: A Critical Guide. **Authored by**: Pedro Cordeiro, Victor E. C. Ortuu00f1o, Maria Paula Paixu00e3o, Jou00e3o Maru00f4co. **Provided by**: Faculty of Psychology and Educational Sciences, University of Coimbra. **Located at**: [http://pch.psychopen.eu/article/view/136/html](http://pch.psychopen.eu/article/view/136/html). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+All rights reserved content
+
+-   How to Read a Scholarly Article video. **Provided by**: University of Illinois Undergraduate Library. **Located at**: [https://www.youtube.com/watch?v=2ZS1Beio11M](https://www.youtube.com/watch?v=2ZS1Beio11M). **License**: _Other_. **License Terms**: Standard YouTube License
+
+---
+
+## Statistical Significance | Introduction to Psychology
+
+- url_title:: "Statistical Significance | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/statistical-thinking/
+### Learning Objectives
+
+-   Describe the importance of distributional thinking and the role of p-values in statistical inference
+
+## Introduction to Statistical Thinking
+
+[![Coffee cup with heart shaped cream inside.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17151911/coffee.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/10/17151911/coffee.jpg)
+
+**Figure 1**. People around the world differ in their preferences for drinking coffee versus drinking tea. Would the results of the coffee study be the same in Canada as in China? \[Image: Duncan, https://goo.gl/vbMyTm, CC BY-NC 2.0, https://goo.gl/l8UUGY\]
+
+Does drinking coffee actually increase your life expectancy? A recent study (Freedman, Park, Abnet, Hollenbeck, & Sinha, 2012) found that men who drank at least six cups of coffee a day also had a 10% lower chance of dying (women’s chances were 15% lower) than those who drank none. Does this mean you should pick up or increase your own coffee habit? We will explore these results in more depth in the next section about drawing conclusions from statistics. Modern society has become awash in studies such as this; you can read about several such studies in the news every day.
+
+Conducting such a study well, and interpreting the results of such studies requires understanding basic ideas of **statistics**, the science of gaining insight from data. Key components to a statistical investigation are:
+
+-   Planning the study: Start by asking a testable research question and deciding how to collect data. For example, how long was the study period of the coffee study? How many people were recruited for the study, how were they recruited, and from where? How old were they? What other variables were recorded about the individuals? Were changes made to the participants’ coffee habits during the course of the study?
+-   Examining the data: What are appropriate ways to examine the data? What graphs are relevant, and what do they reveal? What descriptive statistics can be calculated to summarize relevant aspects of the data, and what do they reveal? What patterns do you see in the data? Are there any individual observations that deviate from the overall pattern, and what do they reveal? For example, in the coffee study, did the proportions differ when we compared the smokers to the non-smokers?
+-   Inferring from the data: What are valid statistical methods for drawing inferences “beyond” the data you collected? In the coffee study, is the 10%–15% reduction in risk of death something that could have happened just by chance?
+-   Drawing conclusions: Based on what you learned from your data, what conclusions can you draw? Who do you think these conclusions apply to? (Were the people in the coffee study older? Healthy? Living in cities?) Can you draw a **cause-and-effect** conclusion about your treatments? (Are scientists now saying that the coffee drinking is the cause of the decreased risk of death?)
+
+Notice that the numerical analysis (“crunching numbers” on the computer) comprises only a small part of overall statistical investigation. In this section, you will see how we can answer some of these questions and what questions you should be asking about any statistical investigation you read about.
+
+## Distributional Thinking
+
+When data are collected to address a particular question, an important first step is to think of meaningful ways to organize and examine the data. Let’s take a look at an example.
+
+**Example 1**: Researchers investigated whether cancer pamphlets are written at an appropriate level to be read and understood by cancer patients (Short, Moriarty, & Cooley, 1995). Tests of reading ability were given to 63 patients. In addition, readability level was determined for a **sample** of 30 pamphlets, based on characteristics such as the lengths of words and sentences in the pamphlet. The results, reported in terms of grade levels, are displayed in Figure 2.
+
+![Two Frequency Tables. Table showing patients' reading levels and table showing pahmphlet's readability levels. The first table has two rows: Row one rates the patient’s reading levels from under 3 to over 12. The second row shows the number of patients that are in each readability level. The far right of the table shows that there are a total of 63 patients. The second table is the same as the first, but the first row is labeled “Pamphlets readability levels” with ratings 6 to 16 and the second row shows the number of pamphlets that fall into each readability level. There are a total of 30 pamphlets.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2016/06/10212647/000001456original.jpg)
+
+**Figure 2**. Frequency tables of patient reading levels and pamphlet readability levels.
+
+Testing these two variables reveal two fundamental aspects of statistical thinking:
+
+-   Data _vary_. More specifically, values of a variable (such as reading level of a cancer patient or readability level of a cancer pamphlet) vary.
+-   Analyzing the pattern of variation, called the **distribution** of the variable, often reveals insights.
+
+Addressing the research question of whether the cancer pamphlets are written at appropriate levels for the cancer patients requires comparing the two distributions. A naïve comparison might focus only on the centers of the distributions. Both medians turn out to be ninth grade, but considering only medians ignores the variability and the overall distributions of these data. A more illuminating approach is to compare the entire distributions, for example with a graph, as in Figure 3.
+
+![Histogram showing the reading levels of patients and the readability level of pamphlets. The histogram displays the frequency of patients and pamphlets in each reading level side by side. The graph shows that the readability level of pamphlets is typically higher than the reading level of the patients.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2016/06/10212639/000001457original.jpg)
+
+**Figure 3**. Comparison of patient reading levels and pamphlet readability levels.
+
+Figure 2 makes clear that the two distributions are not well aligned at all. The most glaring discrepancy is that many patients (17/63, or 27%, to be precise) have a reading level below that of the most readable pamphlet. These patients will need help to understand the information provided in the cancer pamphlets. Notice that this conclusion follows from considering the distributions as a whole, not simply measures of center or variability, and that the graph contrasts those distributions more immediately than the frequency tables.
+
+## Finding Significance in Data
+
+Even when we find patterns in data, often there is still uncertainty in various aspects of the data. For example, there may be potential for measurement errors (even your own body temperature can fluctuate by almost 1°F over the course of the day). Or we may only have a “snapshot” of observations from a more long-term process or only a small subset of individuals from the **population** of interest. In such cases, how can we determine whether patterns we see in our small set of data is convincing evidence of a systematic phenomenon in the larger process or population? Let’s take a look at another example.
+
+**Example 2**: In a study reported in the November 2007 issue of _Nature_, researchers investigated whether pre-verbal infants take into account an individual’s actions toward others in evaluating that individual as appealing or aversive (Hamlin, Wynn, & Bloom, 2007). In one component of the study, 10-month-old infants were shown a “climber” character (a piece of wood with “googly” eyes glued onto it) that could not make it up a hill in two tries. Then the infants were shown two scenarios for the climber’s next try, one where the climber was pushed to the top of the hill by another character (“helper”), and one where the climber was pushed back down the hill by another character (“hinderer”). The infant was alternately shown these two scenarios several times. Then the infant was presented with two pieces of wood (representing the helper and the hinderer characters) and asked to pick one to play with.
+
+The researchers found that of the 16 infants who made a clear choice, 14 chose to play with the helper toy. One possible explanation for this clear majority result is that the helping behavior of the one toy increases the infants’ likelihood of choosing that toy. But are there other possible explanations? What about the color of the toy? Well, prior to collecting the data, the researchers arranged so that each color and shape (red square and blue circle) would be seen by the same number of infants. Or maybe the infants had right-handed tendencies and so picked whichever toy was closer to their right hand?
+
+Well, prior to collecting the data, the researchers arranged it so half the infants saw the helper toy on the right and half on the left. Or, maybe the shapes of these wooden characters (square, triangle, circle) had an effect? Perhaps, but again, the researchers controlled for this by rotating which shape was the helper toy, the hinderer toy, and the climber. When designing experiments, it is important to _control_ for as many variables as might affect the responses as possible. It is beginning to appear that the researchers accounted for all the other plausible explanations. But there is one more important consideration that cannot be controlled—if we did the study again with these 16 infants, they might not make the same choices. In other words, there is some _randomness_ inherent in their selection process.
+
+### P-value
+
+Maybe each infant had no genuine preference at all, and it was simply “random luck” that led to 14 infants picking the helper toy. Although this random component cannot be controlled, we can apply a _probability model_ to investigate the pattern of results that would occur in the long run if random chance were the only factor.
+
+If the infants were equally likely to pick between the two toys, then each infant had a 50% chance of picking the helper toy. It’s like each infant tossed a coin, and if it landed heads, the infant picked the helper toy. So if we tossed a coin 16 times, could it land heads 14 times? Sure, it’s possible, but it turns out to be very unlikely. Getting 14 (or more) heads in 16 tosses is about as likely as tossing a coin and getting 9 heads in a row. This probability is referred to as a **p-value**. The p-value represents the likelihood that experimental results happened by chance. Within psychology, the most common standard for p-values is “p < .05”. What this means is that there is less than a 5% probability that the results happened just by random chance, and therefore a 95% probability that the results reflect a meaningful pattern in human psychology. We call this **statistical significance**.
+
+So, in the study above, if we assume that each infant was choosing equally, then the probability that 14 or more out of 16 infants would choose the helper toy is found to be 0.0021. We have only two logical possibilities: either the infants have a genuine preference for the helper toy, or the infants have no preference (50/50) and an outcome that would occur only 2 times in 1,000 iterations happened in this study. Because this p-value of 0.0021 is quite small, we conclude that the study provides very strong evidence that these infants have a genuine preference for the helper toy.
+
+If we compare the p-value to some cut-off value, like 0.05, we see that the p=value is smaller. Because the p-value is smaller than that cut-off value, then we reject the hypothesis that only random chance was at play here. In this case, these researchers would conclude that _significantly_ more than half of the infants in the study chose the helper toy, giving strong evidence of a genuine preference for the toy with the helping behavior.
+
+### Glossary
+
+**distribution**: the pattern of variation in data  
+**population**: a larger collection of individuals that we would like to generalize our results to  
+**p-value**: how often a random process would give a result at least as extreme as what was found in the actual study, assuming there was nothing other than random chance at play  
+**sample**: the collection of individuals on which we collect data  
+**statistic**: a numerical result computed from a sample (e.g., mean, proportion)  
+**statistical significance**: a result is statistically significant if it is unlikely to arise by chance alone
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   Statistical Thinking. **Authored by**: Beth Chance and Allan Rossman . **Provided by**: California Polytechnic State University, San Luis Obispo. **Located at**: [http://nobaproject.com/modules/statistical-thinking](http://nobaproject.com/modules/statistical-thinking). **Project**: The Noba Project. **License**: _[CC BY-NC-SA: Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)_. **License Terms**: http://nobaproject.com/license-agreement
+
+---
+
+## The Reliability and Validity of Research
+
+- url_title:: "The Reliability and Validity of Research"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/reading-reporting-experimental-research/
+### Learning Objectives
+
+-   Define reliability and validity
+
+## Interpreting Experimental Findings
+
+Once data is collected from both the experimental and the control groups, a statistical analysis is conducted to find out if there are meaningful differences between the two groups. A statistical analysis determines how likely any difference found is due to chance (and thus not meaningful). For example, if an experiment is done on the effectiveness of a nutritional supplement, and those taking a placebo pill (and not the supplement) have the same result as those taking the supplement, then the experiment has shown that the nutritional supplement is not effective. Generally, psychologists consider differences to be statistically significant if there is less than a five percent chance of observing them if the groups did not actually differ from one another. Stated another way, psychologists want to limit the chances of making “false positive” claims to five percent or less.
+
+The greatest strength of experiments is the ability to assert that any significant differences in the findings are caused by the independent variable. This occurs because random selection, random assignment, and a design that limits the effects of both experimenter bias and participant expectancy should create groups that are similar in composition and treatment. Therefore, any difference between the groups is attributable to the independent variable, and now we can finally make a causal statement. If we find that watching a violent television program results in more violent behavior than watching a nonviolent program, we can safely say that watching violent television programs causes an increase in the display of violent behavior.
+
+## Reporting Research
+
+When psychologists complete a research project, they generally want to share their findings with other scientists. The American Psychological Association (APA) publishes a manual detailing how to write a paper for submission to scientific journals. Unlike an article that might be published in a magazine like _Psychology Today,_ which targets a general audience with an interest in psychology, scientific journals generally publish peer-reviewed journal articles aimed at an audience of professionals and scholars who are actively involved in research themselves.
+
+### Link to Learning
+
+The [Online Writing Lab (OWL)](http://openstaxcollege.org/l/owl) at Purdue University can walk you through the APA writing guidelines.
+
+A peer-reviewed journal article is read by several other scientists (generally anonymously) with expertise in the subject matter. These peer reviewers provide feedback—to both the author and the journal editor—regarding the quality of the draft. Peer reviewers look for a strong rationale for the research being described, a clear description of how the research was conducted, and evidence that the research was conducted in an ethical manner. They also look for flaws in the study’s design, methods, and statistical analyses. They check that the conclusions drawn by the authors seem reasonable given the observations made during the research. Peer reviewers also comment on how valuable the research is in advancing the discipline’s knowledge. This helps prevent unnecessary duplication of research findings in the scientific literature and, to some extent, ensures that each research article provides new information. Ultimately, the journal editor will compile all of the peer reviewer feedback and determine whether the article will be published in its current state (a rare occurrence), published with revisions, or not accepted for publication.
+
+Peer review provides some degree of quality control for psychological research. Poorly conceived or executed studies can be weeded out, and even well-designed research can be improved by the revisions suggested. Peer review also ensures that the research is described clearly enough to allow other scientists to replicate it, meaning they can repeat the experiment using different samples to determine reliability. Sometimes replications involve additional measures that expand on the original finding. In any case, each replication serves to provide more evidence to support the original research findings. Successful replications of published research make scientists more apt to adopt those findings, while repeated failures tend to cast doubt on the legitimacy of the original article and lead scientists to look elsewhere. For example, it would be a major advancement in the medical field if a published study indicated that taking a new drug helped individuals achieve a healthy weight without changing their diet. But if other scientists could not replicate the results, the original study’s claims would be questioned.
+
+In recent years, there has been increasing concern about a “replication crisis” that has affected a number of scientific fields, including psychology. Some of the most well-known studies and scientists have produced research that has failed to be replicated by others (as discussed in Shrout & Rodgers, 2018). In fact, even a famous Nobel Prize-winning scientist has recently retracted a published paper because she had difficulty replicating her results (Nobel Prize-winning scientist Frances Arnold retracts paper, 2020 January 3). These kinds of outcomes have prompted some scientists to begin to work together and more openly, and some would argue that the current “crisis” is actually improving the ways in which science is conducted and in how its results are shared with others (Aschwanden, 2018).
+
+### Dig Deeper: The Vaccine-Autism Myth and the Retraction of Published Studies
+
+Some scientists have claimed that routine childhood vaccines cause some children to develop autism, and, in fact, several peer-reviewed publications published research making these claims. Since the initial reports, large-scale epidemiological research has suggested that vaccinations are not responsible for causing autism and that it is much safer to have your child vaccinated than not. Furthermore, several of the original studies making this claim have since been retracted.
+
+A published piece of work can be rescinded when data is called into question because of falsification, fabrication, or serious research design problems. Once rescinded, the scientific community is informed that there are serious problems with the original publication. Retractions can be initiated by the researcher who led the study, by research collaborators, by the institution that employed the researcher, or by the editorial board of the journal in which the article was originally published. In the vaccine-autism case, the retraction was made because of a significant conflict of interest in which the leading researcher had a financial interest in establishing a link between childhood vaccines and autism (Offit, 2008). Unfortunately, the initial studies received so much media attention that many parents around the world became hesitant to have their children vaccinated (Figure 2.19). Continued reliance on such debunked studies has significant consequences. For instance, between January and October of 2019, there were 22 measles outbreaks across the United States and more than a thousand cases of individuals contracting measles (Patel et al., 2019). This is likely due to the anti-vaccination movements that have risen from the debunked research. For more information about how the vaccine/autism story unfolded, as well as the repercussions of this story, take a look at Paul Offit’s book, Autism’s False Prophets: Bad Science, Risky Medicine, and the Search for a Cure.
+
+![A photograph shows a child being given an oral vaccine.](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224525/CNX_Psych_02_05_vaccine.jpg)
+
+**Figure 1**. Some people still think vaccinations cause autism. (credit: modification of work by UNICEF Sverige)
+
+## Reliability and Validity
+
+Reliability and validity are two important considerations that must be made with any type of data collection. Reliability refers to the ability to consistently produce a given result. In the context of psychological research, this would mean that any instruments or tools used to collect data do so in consistent, reproducible ways. There are a number of different types of reliability. Some of these include inter-rater reliability (the degree to which two or more different observers agree on what has been observed), internal consistency (the degree to which different items on a survey that measure the same thing correlate with one another), and test-retest reliability (the degree to which the outcomes of a particular measure remain consistent over multiple administrations).
+
+Unfortunately, being consistent in measurement does not necessarily mean that you have measured something correctly. To illustrate this concept, consider a kitchen scale that would be used to measure the weight of cereal that you eat in the morning. If the scale is not properly calibrated, it may consistently under- or overestimate the amount of cereal that’s being measured. While the scale is highly reliable in producing consistent results (e.g., the same amount of cereal poured onto the scale produces the same reading each time), those results are incorrect. This is where validity comes into play. Validity refers to the extent to which a given instrument or tool accurately measures what it’s supposed to measure, and once again, there are a number of ways in which validity can be expressed. Ecological validity (the degree to which research results generalize to real-world applications), construct validity (the degree to which a given variable actually captures or measures what it is intended to measure), and face validity (the degree to which a given variable seems valid on the surface) are just a few types that researchers consider. While any valid measure is by necessity reliable, the reverse is not necessarily true. Researchers strive to use instruments that are both highly reliable and valid.
+
+### Try It
+
+### Everyday Connection: How Valid are the SAT and act?
+
+Standardized tests like the SAT and ACT are supposed to measure an individual’s aptitude for a college education, but how reliable and valid are such tests? Research conducted by the College Board suggests that scores on the SAT have high predictive validity for first-year college students’ GPA (Kobrin, Patterson, Shaw, Mattern, & Barbuti, 2008). In this context, predictive validity refers to the test’s ability to effectively predict the GPA of college freshmen. Given that many institutions of higher education require the SAT or ACT for admission, this high degree of predictive validity might be comforting.
+
+However, the emphasis placed on SAT or ACT scores in college admissions has generated some controversy on a number of fronts. For one, some researchers assert that these tests are biased and place marginalized students at a disadvantage and unfairly reduce the likelihood for these students being admitted into a college (Santelices & Wilson, 2010). Additionally, some research has suggested that the predictive validity of these tests is grossly exaggerated in how well they are able to predict the GPA of first-year college students. In fact, it has been suggested that the SAT’s predictive validity may be overestimated by as much as 150% (Rothstein, 2004). Many institutions of higher education are beginning to consider de-emphasizing the significance of SAT scores in making admission decisions (Rimer, 2008).
+
+Recent examples of high-profile cheating scandals both domestically and abroad have only increased the scrutiny being placed on these types of tests, and as of March 2019, more than 1000 institutions of higher education have either relaxed or eliminated the requirements for SAT or ACT testing for admissions (Strauss, 2019, March 19). This trend continued when testing centers and schools shut down during the Covid-19 Pandemic in 2020 and 2021. Many schools remain test-optional.
+
+### Glossary
+
+**reliability:** consistency and reproducibility of a given result
+
+**replicate:** repeating an experiment using different samples to determine the research’s reliability
+
+**validity:** accuracy of a given result in measuring what it is designed to measure
+
+**statistical analysis:** determines how likely any difference between experimental groups is due to chance
+
+### Candela Citations
+
+---
+
+## Psych in Real Life: Brain Imaging and Messy Science
+
+- url_title:: "Psych in Real Life: Brain Imaging and Messy Science"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/
+### Learning Objectives
+
+-   Describe replication and its importance to psychology
+
+This is a little difficult for a psychologist to ask, but here goes: when you think of a “science” which one of these is more likely to come to mind: physics or psychology?
+
+We suspect you chose “physics” (though we don’t have the data, so maybe not!).
+
+Despite the higher “status” of physics and chemistry in the world of science over psychology, good scientific reasoning is just as important in psychology. Valid logic, careful methodology, strong results, and empirically supported conclusions should be sought after regardless of the topic area.
+
+We would like you to exercise your scientific reasoning using the example below. Read the passage “Watching TV is Related to Math Ability” and answer a few questions afterward.
+
+### Watching TV is Related to Math Ability
+
+Television is often criticized for having a negative impact on our youth. Everything from aggressive behavior to obesity in children seems to be blamed on their television viewing habits. On the other hand, TV also provides us with much of our news and entertainment, and has become a major source of education for children, with shows like Sesame Street teaching children to count and say the alphabet.
+
+Recently, researchers Ian McAtee and Leo Geraci at Harvard University did some research to examine if TV watching might have beneficial effects on cognition. The approach was fairly simple. Children between the ages of 12-14 were either asked to watch a television sitcom or do arithmetic problems, and while they were doing these activities, images of their brains were recorded using fMRI (functional magnetic resonance imaging). This technique measures the flow of blood to specific parts of the brain during performance, allowing scientists to create images of the areas that are activated during cognition.
+
+[![Two images of brain fMRI scans. The top image shows red areas of activation in three different regions on the back of the head, and he bottom scan shows activation in two similar areas. A bar showing the intensity of the activation from red (2) to yellow (10) is shown next to the brain scans.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03123719/Screen-Shot-2017-08-03-at-7.32.47-AM1-240x300.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03123719/Screen-Shot-2017-08-03-at-7.32.47-AM1.png)Results revealed that similar areas of the parietal lobes were active during TV watching (the red area of the brain image on the top) and during arithmetic problem solving (the red area of the brain image on the bottom). This area of the brain has been implicated in other research as being important for abstract thought, suggesting that both TV watching and arithmetic processing may have beneficial effects on cognition. “We were somewhat surprised that TV watching would activate brain areas involved in higher-order thought processes because TV watching is typically considered a passive activity,” said McAtee. Added Geraci, “The next step is to see what specific content on the TV show led to the pattern of activation that mimicked math performance, so we need to better understand that aspect of the data. We also need to compare TV watching to other types of cognitive skills, like reading comprehension and writing.” Although this is only the beginning to this type of research, these findings certainly question the accepted wisdom that the “idiot box” is harmful to children’s cognitive functioning.
+
+Indicate whether you agree or disagree with the following statements about the article. There are no incorrect answers.
+
+The article was well written.
+
+1.  strongly disagree
+2.  disagree
+3.  agree
+4.  strongly agree
+
+The title, “Watching TV is Related to Math Ability” was a good description of the results.
+
+1.  strongly disagree
+2.  disagree
+3.  agree
+4.  strongly agree
+
+The scientific argument in the article made sense.
+
+1.  strongly disagree
+2.  disagree
+3.  agree
+4.  strongly agree
+
+It is pretty surprising to learn that watching television can improve your math ability, and the fact that we can identify the area in the brain that produces this relationship shows how far psychology has progressed as a science.
+
+Or maybe not.
+
+The article you just read and rated was _not_ an account of real research. Ian McAtee and Leo Geraci are not real people and the study discussed was never conducted (as far as we know). The article was written by psychologists David McCabe and Alan Castel for a study they published in 2008.\[1\] They asked people to do exactly what you just did: read this article and two others and rate them.
+
+McCabe and Castel wondered if people’s biases about science influence the way they judge the information they read. In other words, if what you are reading _looks_ more scientific, do you assume it is better science?
+
+In recent years, neuroscience has impressed a lot of people as “real science,” when compared to the “soft science” of psychology. Did you notice the pictures of the brain next to the article that you just read? Do you think that picture had any influence on your evaluation of the scientific quality of the article? The brain pictures actually added no new information that was not already in the article itself other than showing you exactly where in the brain the relevant part of the parietal lobe is located. The red marks are in the same locations in both brain pictures, but we already knew that “Results revealed that similar areas in the parietal lobes were active during TV watching…and during arithmetic solving.”
+
+## McCabe & Castel Experiment
+
+McCabe and Castel wrote three brief (fake) scientific articles that appeared to be typical reports like those you might find in a textbook or news source, all with brain activity as part of the story. In addition to the one you read (“Watching TV is related to math ability “) others had these titles: “Meditation enhances creative thought” and “Playing video games benefits attention.”
+
+All of the articles had flawed scientific reasoning. In the “Watching TV is Related to Math Ability” article that you read, the only “result” that is reported is that a particular brain area (a part of the parietal lobe) is active when a person is watching TV and when they are working on math. The highlighted part of the next sentence is where the article goes too far: “This area of the brain has been implicated in other research as being important for abstract thought, **suggesting that both tv watching and arithmetic processing may have beneficial effects on cognition**.”
+
+The fact that the same area of the brain is active for two different activities does _not_ “suggest” that either one is beneficial or that there is any interesting similarity in mental or brain activity between the processes. The final part of the article goes on and on about how this supposedly surprising finding is intriguing and deserves extensive exploration.
+
+The researchers asked 156 college students to read the three articles and rate them for how much they made sense scientifically, as well as rating the quality of the writing and the accuracy of the title.
+
+Everybody read the same articles, but the picture that accompanied the article differed according to create three experimental conditions. For the article in the brain image condition, subjects saw one of the following brain images to the side of the article:
+
+[![3 different images. The first is the brain activation fMRI showing activity in the brain, the other shows an overhead fMRI of activation and a statement that says "meditation enhances creative thought." The last shows another brain scan saying "playing video games enhances attention."](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144210/image3.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144210/image3.png)
+
+**Figure 1**. Subjects in the experimental condition were shown ONE of the applicable brain images with each article they read.
+
+Graphs are a common and effective way to display results in science and other areas, but most people are so used to seeing graphs that (according to McCabe and Castel) people should be less impressed by them than by brain images. The figures below show the graphs that accompanied the three articles for the bar graph condition. The results shown in the graphs were made up by the experimenters, but what they show is consistent with the information in the article.
+
+[![3 bar graphs. Participants in the bar graph condition were shown one of the following with each article they read: The first bar graph called “Watching TV is Related to Math Ability" shows two bars of about the same height measuring parietal lobe activation. The second bar graph called “Meditation Enhances Creative Thought” shows similar levels of activation in the occipital, temporal, parietal, and frontal lobes. The third bar graph called “Playing Video Games Enhances Attention” shows shows more activation in the parietal lobe in gaming experts than in gaming novices.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144302/image2.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/07/03144302/image2.png)
+
+**Figure 2**. Participants in the bar graph condition were shown ONE of the bar graphs with each article they read.
+
+Finally, in the control condition, the article was presented without any accompanying figure or picture. The control condition tells us how the subjects rate the articles without any extraneous, but potentially biasing, illustrations.
+
+### Procedure
+
+Each participant read all three articles: one with a brain image, one with a bar graph, and one without any illustration (the control condition). Across all the participants, each article was presented approximately the same number of times in each condition, and the order in which the articles were presented was randomized.
+
+### Ratings
+
+Immediately after reading each article, the participants rated their agreement with three statements: (a) The article was well written, (b) The title was a good description of the results, and (c) The scientific reasoning in the article made sense. Each rating was on a 4-point scale: (score=1) strongly disagree, (score=2) disagree, (score=3) agree, and (score=4) strongly agree. Remember that the written part of the articles was exactly the same in all three conditions, so the ratings should have been the same if people were not using the illustrations to influence their conclusions.
+
+Before going on, let’s make sure you know the basic design of this experiment. In other words, can you identify the critical variables used in the study according to their function?
+
+### Results for (a) Accuracy of the Title and (b) Quality of the Writing
+
+The first two questions for the participants were about (a) the accuracy of the title and (b) the quality of the writing. These questions were included to assure that the participants had read the articles closely. The experimenters expected that there would be no differences in the ratings for the three conditions for these questions. For the question about the title, their prediction was correct. Subjects gave about the same rating to the titles in all three conditions, agreeing that it was accurate.
+
+For question (b) about the quality of the writing, the experimenters found that the two conditions with illustrations (the brain images and the bar graphs) were rated higher than the control condition. Apparently just the presence of an illustration made the writing seem better. This result was not predicted.
+
+### Results for (c) Scientific Reasoning Assessment
+
+The main hypothesis behind this study was that subjects would rate the quality of the scientific reasoning in the article higher when it was accompanied by a brain image than when there was a bar graph or there was no illustration at all. If the ratings differed among conditions, then the illustrations—which added nothing substantial that was not in the writing—had to be the cause.
+
+### Try It
+
+Use the graph below to show your predicted results of the experiment. Move the bars to the point where you think people generally agreed or disagreed with the statement that “the scientific reasoning in the article made sense.” Higher bars mean that the person believes the reasoning in the article is better, and a lower bar means that they judge the reasoning as worse. Click on “Show Results” when you are done to compare your prediction with the actual results.
+
+Show Results
+
+### Conclusions
+
+McCabe and Castel conducted two more experiments, changing the stories, the images, and the wording of the questions in each. Across the three experiments, they tested almost 400 college students and their results were consistent: _participants rated the quality of scientific reasoning higher when the writing was accompanied by a brain image than in other conditions_.
+
+The implications of this study go beyond brain images. The deeper idea is that any information that symbolizes something we believe is important can influence our thinking, sometimes making us less thoughtful than we might otherwise be. This other information could be a brain image or some statistical jargon that sounds impressive or a mathematical formula that we don’t understand or a statement that the author teaches at Harvard University rather than Littletown State College.
+
+In a study also published in 2008, Deena Weisberg and her colleagues at Yale University conducted a study similar to the one you just read.\[2\] Weisberg had people read brief descriptions of psychological phenomena (involving memory, attention, reasoning, emotion, and other similar topics). They rated the scientific quality of the explanations. Instead of images, Weisberg had some explanations that included entirely superfluous and useless brain information (e.g., “people feel strong emotion because the amygdala processes emotion”) or no such brain information. Weisberg found that a good explanation was rated as even better when it included a brain reference (which was completely irrelevant). When the explanation was flawed, students were fairly good at catching the reasoning problems UNLESS the explanation contained the irrelevant brain reference. In that case, the students rated the flawed explanations as being good. Weisberg and her colleague call the problem “the seductive allure of neuroscience explanations.”
+
+## Does it Replicate? The Messy World of Real Science
+
+A few years after the McCabe and Castel study was published, some psychologists\[3\] at the University of Victoria in New Zealand, led by Robert Michael, were intrigued by the results and they were impressed by how frequently the paper had been cited by other researchers (about 40 citations per year between 2008 and 2012—a reasonably strong citation record). They wanted to explore the brain image effect, so they started by simply replicating the original study.\[4\]
+
+In their first attempt at replication, the researchers recruited and tested people using an online site called Mechanical Turk. With 197 participants, they found no hint of an effect of the brain image on people’s judgments about the validity of the conclusions of the article they read. In a second replication study, they tested students from their university and again found no statistically significant effect. In this second attempt, the results were in the predicted direction (the presence of a brain image was associated with higher ratings), but the differences were not strong enough to be persuasive. They tried slight variations on instructions and people recruited, but across 10 different replication studies, only one produced a statistically significant effect.
+
+So, did Dr. Michael and his colleagues accuse McCabe and Castel of doing something wrong? Did they tear apart the experiments we described earlier and show that they were poorly planned, incorrectly analyzed, or interpreted in a deceptive way?
+
+Not at all.
+
+It is instructive to see how professional scientists approached the problem of failing to replicate a study. Here is a quick review of the approach taken by the researchers who did not replicate the McCabe and Castel study:
+
+-   First, they did not question the integrity of the original research. David McCabe\[5\] and Alan Castel are respected researchers who carefully reported on a series of well-conducted experiments. They even noted that the original paper was carefully reported, even if journalists and other psychologists had occasionally exaggerated the findings: “Although McCabe and Castel (2008) did not overstate their findings, many others have. Sometimes these overstatements were linguistic exaggerations…Other overstatements made claims beyond what McCabe and Castel themselves reported.” \[p. 720\]
+-   Replication is an essential part of the scientific process. Michael and his colleagues did not back off of the importance of their difficulty reproducing the McCabe and Castel results. Clearly, McCabe and Castel’s conclusions—that “there is something special about the brain images with respect to influencing judgments of scientific credibility”—need to taken as possibly incorrect.
+-   Michael and his colleagues looked closely at the McCabe and Castel results and their own, and they looked for interesting reasons that the results of the two sets of studies might be different.
+    -   -   **Subtle effects**: Perhaps the brain pictures really do influence their judgments, but only for some people or under very specific circumstances.
+        -   **Alternative explanations**: Perhaps people assume that irrelevant information is not typically presented in scientific reports. People may have believed that the brain images provided additional evidence for the claims.
+        -   **Things have changed**: The McCabe and Castel study was conducted in 2008 and the failed replication was in 2013. Neuroscience was very new to the general public in 2008, but a mere 5 years later, in 2013, it may have seemed less impressive.
+
+Do images really directly affect people’s judgments of the quality of scientific thinking? Maybe yes. Maybe no. That’s still an open question.
+
+### The “Replication Crisis”
+
+In recent years, there has been increased effort in the sciences (psychology, medicine, economics, etc.) to redo previous experiments to test their reliability. The findings have been disappointing at times.
+
+The [Reproducibility Project](https://osf.io/ezcuj/) has attempted to replicate 100 studies within the field of psychology that were published with statistically significant results; they found that many of these results did not replicate well. Some did not reach statistical significance when replicated. Others reached statistical significance, but with much weaker effects than in the original study.
+
+How could this happen?
+
+-   **Chance**. Psychologist use statistics to confirm that their results did not occur simply because of chance. Within psychology, the most common standard for p-values is “p < .05”. This p-value means that there is less than a 5% probability that the results of an experiment happened just by random chance, and a 95% probability that the results were statistically significant. Even though a published study may reveal statistically significant results, there is still a possibility that those results were random.
+-   **Publication bias.** Psychology research journals are far more likely to publish studies that find statistically significant results than they are studies that fail to find statistically significant results. What this means is that studies that yield results that are not statistically significant are _very unlikely_ to get published. Let’s say that twenty researchers are all studying the same phenomenon. Out of the twenty, one gets statistically significant results, while the other nineteen all get non-significant results. The statistically significant result was likely just a result of randomness, but because of publication bias, that one study’s results are far more likely to be published than are the results of the other nineteen.
+
+Note that this “replication crisis” itself does not mean that the original studies were bad, fraudulent, or even wrong. What it means, at its core, is that replication found results that were different from the results of the original studies. These results were sufficiently different that we might no longer be secure in our knowledge of what those results mean. Further replication and testing in other directions might give us a better understanding of why the results were different, but that too will require time and resources.
+
+## One Final Note
+
+When we wrote to Dr. Alan Castel for permission to use his stimuli in this article, he not only consented, but he also sent us his data and copies of all of his stimuli. He sent copies of research by a variety of people, some research that has supported his work with David McCabe and some that has not. He even included a copy of the 10-experiment paper that you just read about, the one that failed to replicate the McCabe and Castel study.
+
+The goal is to find the truth, not to insist that everything you publish is the last word on the topic. In fact, if it is the last word, then you are probably studying something so boring that no one else really cares.
+
+Scientists disagree with one another all the time. But the disagreements are (usually) not personal. The evidence is not always neat and tidy, and the best interpretation of complex results is seldom obvious. At its best, scientists can disagree passionately about theory and evidence, and later to relax over a cool drink as friends.
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Brain Imaging and Messy Science. **Authored by**: Patrick Carroll for Lumen Learning. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+CC licensed content, Shared previously
+
+-   The Replication Crisis. **Authored by**: Colin Thomas William. **Provided by**: Ivy Tech Community College. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+All rights reserved content
+
+-   Seeing is believing: The effect of brain images on judgments of scientific reasoning. **Authored by**: David P. McCabe & Alan D. Castel (2008). **Provided by**: Cognition. **License**: _All Rights Reserved_. **License Terms**: Used with permission from Alan Castel
+
+* * *
+
+1.  David P. McCabe & Alan D. Castel (2008). Seeing is believing: The effect of brain images on judgments of scientific reasoning. Cognition, 107, 343-352. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-1)
+2.  Deena Skolnick Weisberg, Frank C. Keil, Joshua Goodstein, Elizabeth Rawson, & Jeremy R. Gray (2008). The seductive allure of neuroscience explanations. Journal of Cognitive Neuroscience, 20(3), 470-477 [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-2)
+3.  Robert B. Michael, Eryn J. Newman, Matti Vuorre, Geoff Cumming, and Maryanne Garry (2013). On the (non)persuasive power of a brain image. Psychonomic Bulletin & Review, 20(4), 720-725. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-3)
+4.  They actually tried to replicate Experiment 3 in the McCabe and Castel study. You read Experiment 1. These two experiments were similar and supported the same conclusions, but Dr. Michael and his colleagues preferred Experiment 3 for some technical reasons. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-4)
+5.  David McCabe, the first author of the original paper, tragically passed away in 2011 at the age of 41. At the time of his death, he was an assistant professor of Psychology at Colorado State University and he had started to build a solid body of published research, and he was also married with two young children. The problems with replicating his experiments were only published after his death, so it is impossible to know what his thoughts might have been about the issues these challenges raised. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-brain-imaging-and-messy-science/#return-footnote-4722-5)
+
+---
+
+## Putting It Together: Psychological Research
+
+- url_title:: "Putting It Together: Psychological Research"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/
+### Learning Objectives
+
+In this module, you learned to
+
+-   define and apply the scientific method to psychology
+-   describe the strengths and weaknesses of descriptive, experimental, and correlational research
+-   define the basic elements of a statistical investigation
+
+Psychologists use the scientific method to examine human behavior and mental processes. Some of the methods you learned about include descriptive, experimental, and correlational research designs.
+
+### Watch It
+
+Watch the CrashCourse video to review the material you learned, then read through the following examples and see if you can come up with your own design for each type of study.  
+
+You can [view the transcript for “Psychological Research: Crash Course Psychology #2” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Lifespan+Development/Transcriptions/PsychologicalResearchCrashCoursePsychology2_transcript.txt).
+
+**Case Study:** a detailed analysis of a particular person, group, business, event, etc. This approach is commonly used to learn more about rare examples with the goal of describing that particular thing.
+
+-   Ted Bundy was one of America’s most notorious serial killers who murdered at least 30 women and was executed in 1989. Dr. Al Carlisle evaluated Bundy when he was first arrested and conducted a psychological analysis of Bundy’s development of his sexual fantasies merging into reality (Ramsland, 2012). Carlisle believes that there was a gradual evolution of three processes that guided his actions: fantasy, dissociation, and compartmentalization (Ramsland, 2012). Read _[Imagining Ted Bundy](https://www.psychologytoday.com/blog/shadow-boxing/201208/imagining-ted-bundy)_ (http://goo.gl/rGqcUv) for more information on this case study.
+
+**Naturalistic Observation**: a researcher unobtrusively collects information without the participant’s awareness.
+
+-   Drain and Engelhardt (2013) observed six nonverbal children with autism’s evoked and spontaneous communicative acts. Each of the children attended a school for children with autism and were in different classes. They were observed for 30 minutes of each school day. By observing these children without them knowing, they were able to see true communicative acts without any external influences.
+
+**Survey**: participants are asked to provide information or responses to questions on a survey or structure assessment.
+
+-   Educational psychologists can ask students to report their grade point average and what, if anything, they eat for breakfast on an average day. A healthy breakfast has been associated with better academic performance (Digangi’s 1999).
+
+**Archival research:** researchers examine data that has already been collected for other purposes.
+
+-   Anderson (1987) tried to find the relationship between uncomfortably hot temperatures and aggressive behavior, which was then looked at with two studies done on violent and nonviolent crime. Based on previous research that had been done by Anderson and Anderson (1984), it was predicted that violent crimes would be more prevalent during the hotter time of year and the years in which it was hotter weather in general. The study confirmed this prediction.
+
+**Longitudinal Study:** researchers recruit a sample of participants and track them for an extended period of time.
+
+-   In a study of a representative sample of 856 children Eron and his colleagues (1972) found that a boy’s exposure to media violence at age eight was significantly related to his aggressive behavior ten years later, after he graduated from high school.
+
+**Cross-Sectional Study:** researchers gather participants from different groups (commonly different ages) and look for differences between the groups.
+
+-   In 1996, Russell surveyed people of varying age groups and found that people in their 20s tend to report being more lonely than people in their 70s.
+
+**Correlational Design:** two different variables are measured to determine whether there is a relationship between them.
+
+-   Thornhill et al. (2003) had people rate how physically attractive they found other people to be. They then had them separately smell t-shirts those people had worn (without knowing which clothes belonged to whom) and rate how good or bad their body odor was. They found that the more attractive someone was the more pleasant their body odor was rated to be.
+
+**Experiment:** researchers create a controlled environment in which they can carefully manipulate at least one variable to test its effect on another. The key here is that the researchers can cause a change in one variable.
+
+-   Clinical psychologists can test a new pharmaceutical treatment for depression by giving some patients the new pill and others an already-tested one to see which is the more effective treatment.
+
+### Candela Citations
+
+---
+
+## Discussion: Research in Psychology | Introduction to Psychology
+
+- url_title:: "Discussion: Research in Psychology | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology/
+## Discussion: Research in Psychology
+
+**Step 1:** To view this discussion prompt, click on [Discussion: Research in Psychology.](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-research-in-psychology-2/)
+
+**Step 2:** Read the prompt and instructions, then post your response and comments inside of the discussion forum.
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Discussion: Research in Psychology. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+Licenses and Attributions
+
+[Previous](https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-research/) [Next](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-14/)
+
+---
+
+## Measures of Intelligence | Introduction to Psychology
+
+- url_title:: "Measures of Intelligence | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/measures-of-intelligence/
+### Learning Objectives
+
+-   Describe the development of IQ tests, their purposes, and benefits
+-   Explain the bell curve, and how IQ is measured
+
+While you’re likely familiar with the term “IQ” and associate it with the idea of intelligence, what does IQ really mean? IQ stands for **intelligence quotient** and describes a score earned on a test designed to measure intelligence. You’ve already learned that there are many ways psychologists describe intelligence (or more aptly, intelligences). Similarly, IQ tests—the tools designed to measure intelligence—have been the subject of debate throughout their development and use.
+
+When might an IQ test be used? What do we learn from the results, and how might people use this information? While there are certainly many benefits to intelligence testing, it is important to also note the limitations and controversies surrounding these tests. For example, IQ tests have sometimes been used as arguments in support of insidious purposes, such as the eugenics movement (Severson, 2011). The infamous Supreme Court Case, Buck v. Bell, legalized the forced sterilization of some people deemed “feeble-minded” through this type of testing, resulting in about 65,000 sterilizations (Buck v. Bell, 274 U.S. 200; Ko, 2016). Today, only professionals trained in psychology can administer IQ tests, and the purchase of most tests requires an advanced degree in psychology. Other professionals in the field, such as social workers and psychiatrists, cannot administer IQ tests. In this section, we will explore what intelligence tests measure, how they are scored, and how they were developed.
+
+## Measuring Intelligence
+
+It seems that the human understanding of intelligence is somewhat limited when we focus on traditional or academic-type intelligence. How then, can intelligence be measured? And when we measure intelligence, how do we ensure that we capture what we’re really trying to measure (in other words, that IQ tests function as valid measures of intelligence)? In the following paragraphs, we will explore how intelligence tests were developed and the history of their use. The IQ test has been synonymous with intelligence for over a century.
+
+In the late 1800s, Sir Francis Galton developed the first broad test of intelligence (Flanagan & Kaufman, 2004). Although he was not a psychologist, his contributions to the concepts of intelligence testing are still felt today (Gordon, 1995). Reliable intelligence testing (you may recall from earlier modules that reliability refers to a test’s ability to produce consistent results) began in earnest during the early 1900s with a researcher named Alfred Binet. Binet was asked by the French government to develop an intelligence test to use on children to determine which ones might have difficulty in school; it included many verbally based tasks. American researchers soon realized the value of such testing.
+
+Louis Terman, a Stanford professor, modified Binet’s work by standardizing the administration of the test and tested thousands of different-aged children to establish an average score for each age. As a result, the test was normed and standardized, which means that the test was administered consistently to a large enough representative sample of the population that the range of scores resulted in a bell curve (bell curves will be discussed later). **Standardization** means that the manner of administration, scoring, and interpretation of results is consistent. **Norming** involves giving a test to a large population so data can be collected comparing groups, such as age groups. The resulting data provide norms, or referential scores, by which to interpret future scores. Norms are not expectations of what a given group _should_ know but a demonstration of what that group _does_ know. Norming and standardizing the test ensures that new scores are reliable. This new version of the test was called the Stanford-Binet Intelligence Scale (Terman, 1916). Remarkably, an updated version of this test is still widely used today.
+
+![Photograph A shows a portrait of Alfred Binet. Photograph B shows six sketches of human faces. Above these faces is the label “Guide for Binet-Simon Scale. 223” The faces are arranged in three rows of two, and these rows are labeled “1, 2, and 3.” At the bottom it reads: “The psychological clinic is indebted for the loan of these cuts and those on p. 225 to the courtesy of Dr. Oliver P. Cornman, Associate Superintendent of Schools of Philadelphia, and Chairman of Committee on Backward Children Investigation. See Report of Committee, Dec. 31, 1910, appendix.”](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224836/CNX_Psych_07_05_ChildIQ.jpg)
+
+**Figure 1**. French psychologist Alfred Binet helped to develop intelligence testing. (b) This page is from a 1908 version of the Binet-Simon Intelligence Scale. Children being tested were asked which face, of each pair, was prettier.
+
+In 1939, David Wechsler, a psychologist who spent part of his career working with World War I veterans, developed a new IQ test in the United States. Wechsler combined several subtests from other intelligence tests used between 1880 and World War I. These subtests tapped into a variety of verbal and nonverbal skills, because Wechsler believed that intelligence encompassed “the global capacity of a person to act purposefully, to think rationally, and to deal effectively with his environment” (Wechsler, 1958, p. 7). He named the test the Wechsler-Bellevue Intelligence Scale (Wechsler, 1981). This combination of subtests became one of the most extensively used intelligence tests in the history of psychology. Although its name was later changed to the Wechsler Adult Intelligence Scale (WAIS) and has been revised several times, the aims of the test remain virtually unchanged since its inception (Boake, 2002). Today, there are three intelligence tests credited to Wechsler, the Wechsler Adult Intelligence Scale-fourth edition (WAIS-IV), the Wechsler Intelligence Scale for Children (WISC-V), and the Wechsler Preschool and Primary Scale of Intelligence—IV (WPPSI-IV) (Wechsler, 2012). These tests are used widely in schools and communities throughout the United States, and they are periodically normed and standardized as a means of recalibration. As a part of the recalibration process, the WISC-V was given to thousands of children across the country, and children taking the test today are compared with their same-age peers (Figure 7.13).
+
+The WISC-V is composed of 14 subtests, which comprise five indices, which then render an IQ score. The five indices are Verbal Comprehension, Visual Spatial, Fluid Reasoning, Working Memory, and Processing Speed. When the test is complete, individuals receive a score for each of the five indices and a Full Scale IQ score. The method of scoring reflects the understanding that intelligence is comprised of multiple abilities in several cognitive realms and focuses on the mental processes that the child used to arrive at their answers to each test item.
+
+Interestingly, the periodic recalibrations have led to an interesting observation known as the Flynn effect. Named after James Flynn, who was among the first to describe this trend, the **Flynn effect** refers to the observation that each generation has a significantly higher IQ than the last. Flynn himself argues, however, that increased IQ scores do not necessarily mean that younger generations are more intelligent per se (Flynn, Shaughnessy, & Fulgham, 2012).
+
+Ultimately, we are still left with the question of how valid intelligence tests are. Certainly, the most modern versions of these tests tap into more than verbal competencies, yet the specific skills that should be assessed in IQ testing, the degree to which any test can truly measure an individual’s intelligence, and the use of the results of IQ tests are still issues of debate (Gresham & Witt, 1997; Flynn, Shaughnessy, & Fulgham, 2012; Richardson, 2002; Schlinger, 2003).
+
+### What Do You Think?: Intellectually Disabled Criminals and Capital Punishment
+
+The case of _Atkins v. Virginia_ was a landmark case in the United States Supreme Court. On August 16, 1996, two men, Daryl Atkins and William Jones, robbed, kidnapped, and then shot and killed Eric Nesbitt, a local airman from the U.S. Air Force. A clinical psychologist evaluated Atkins and testified at the trial that Atkins had an IQ of 59. The mean IQ score is 100. The psychologist concluded that Atkins was mildly mentally retarded. The jury found Atkins guilty, and he was sentenced to death. Atkins and his attorneys appealed to the Supreme Court. In June 2002, the Supreme Court reversed a previous decision and ruled that executions of mentally retarded criminals are ‘cruel and unusual punishments’ prohibited by the Eighth Amendment. The court wrote in their decision:
+
+> Clinical definitions of mental retardation require not only subaverage intellectual functioning, but also significant limitations in adaptive skills. Mentally retarded persons frequently know the difference between right and wrong and are competent to stand trial. Because of their impairments, however, by definition they have diminished capacities to understand and process information, to communicate, to abstract from mistakes and learn from experience, to engage in logical reasoning, to control impulses, and to understand others’ reactions. Their deficiencies do not warrant an exemption from criminal sanctions, but diminish their personal culpability (_Atkins v. Virginia_, 2002, par. 5).
+
+The court also decided that there was a state legislature consensus against the execution of the mentally retarded and that this consensus should stand for all of the states. The Supreme Court ruling left it up to the states to determine their own definitions of mental retardation and intellectual development disorder (intellectual disability). The definitions vary among states as to who can be executed. In the Atkins case, a jury decided that because he had many contacts with his lawyers and thus was provided with intellectual stimulation, his IQ had reportedly increased, and he was now smart enough to be executed. He was given an execution date and then received a stay of execution after it was revealed that lawyers for co-defendant, William Jones, coached Jones to “produce a testimony against Mr. Atkins that did match the evidence” (Liptak, 2008). After the revelation of this misconduct, Atkins was re-sentenced to life imprisonment. _Atkins v. Virginia_ (2002) highlights several issues regarding society’s beliefs around intelligence. In the Atkins case, the Supreme Court decided that intellectual development disorder (intellectual disability) _does_ affect decision making and therefore should affect the nature of the punishment such criminals receive. Where, however, should the lines of intellectual disability be drawn? In May 2014, the Supreme Court ruled in a related case (_Hall v. Florida_) that IQ scores cannot be used as a final determination of a prisoner’s eligibility for the death penalty (Roberts, 2014).
+
+The value of IQ testing is most evident in educational or clinical settings. Children who seem to be experiencing learning difficulties or severe behavioral problems can be tested to ascertain whether the child’s difficulties can be partly attributed to an IQ score that is significantly different from the mean for her age group. Without IQ testing—or another measure of intelligence—children and adults needing extra support might not be identified effectively. In addition, IQ testing is used in courts to determine whether a defendant has special or extenuating circumstances that preclude him from participating in some way in a trial. People also use IQ testing results to seek disability benefits from the Social Security Administration. While IQ tests have sometimes been used as arguments in support of insidious purposes, such as the eugenics movement (Severson, 2011), the following case study demonstrates the usefulness and benefits of IQ testing.
+
+The following case study demonstrates the usefulness and benefits of IQ testing. Candace, a 14-year-old girl experiencing problems at school in Connecticut, was referred for a court-ordered psychological evaluation. She was in regular education classes in ninth grade and was failing every subject. Candace had never been a stellar student but had always been passed to the next grade. Frequently, she would curse at any of her teachers who called on her in class. She also got into fights with other students and occasionally shoplifted. When she arrived for the evaluation, Candace immediately said that she hated everything about school, including the teachers, the rest of the staff, the building, and the homework. Her parents stated that they felt their daughter was picked on, because she was of a different race than the teachers and most of the other students. When asked why she cursed at her teachers, Candace replied, “They only call on me when I don’t know the answer. I don’t want to say, ‘I don’t know’ all of the time and look like an idiot in front of my friends. The teachers embarrass me.” She was given a battery of tests, including an IQ test. Her score on the IQ test was 68. What does Candace’s score say about her ability to excel or even succeed in regular education classes without assistance? Why were her difficulties never noticed or addressed?
+
+## Bell Curves
+
+The results of intelligence tests follow the bell curve, a graph in the general shape of a bell. When the bell curve is used in psychological testing, the graph demonstrates a normal distribution of a trait, in this case, intelligence, in the human population. Many human traits naturally follow the bell curve. For example, if you lined up all your female schoolmates according to height, it is likely that a large cluster of them would be the average height for an American woman: 5’4”–5’6”. This cluster would fall in the center of the bell curve, representing the average height for American women (Figure 2). There would be fewer women who stand closer to 4’11”. The same would be true for women of above-average height: those who stand closer to 5’11”.
+
+The trick to finding a bell curve in nature is to use a large sample size. Without a large sample size, it is less likely that the bell curve will represent the wider population. A **representative sample** is a subset of the population that accurately represents the general population. If, for example, you measured the height of the women in your classroom only, you might not actually have a representative sample. Perhaps the women’s basketball team wanted to take this course together, and they are all in your class. Because basketball players tend to be taller than average, the women in your class may not be a good representative sample of the population of American women. But if your sample included all the women at your school, it is likely that their heights would form a natural bell curve.
+
+[![A graph of a bell curve is labeled “Height of U.S. Women.” The x axis is labeled “Height” and the y axis is labeled “Frequency.” Between the heights of five feet tall and five feet and five inches tall, the frequency rises to a curved peak, then begins dropping off at the same rate until it hits five feet ten inches tall.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31163951/723f82b4d44cc0875f0cc0351a14620b45130a8d.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31163951/723f82b4d44cc0875f0cc0351a14620b45130a8d.jpeg)
+
+**Figure 2**. Are you of below-average, average, or above-average height?
+
+The same principles apply to intelligence tests scores. Individuals earn a score called an intelligence quotient (IQ). Over the years, different types of IQ tests have evolved, but the way scores are interpreted remains the same. The average IQ score on an IQ test is 100. **Standard deviations** describe how data are dispersed in a population and give context to large data sets. The bell curve uses the standard deviation to show how all scores are dispersed from the average score (Figure 3). In modern IQ testing, one standard deviation is 15 points. So a score of 85 would be described as “one standard deviation below the mean.” How would you describe a score of 115 and a score of 70? Any IQ score that falls within one standard deviation above and below the mean (between 85 and 115) is considered average, and 82% of the population has IQ scores in this range. An IQ score of 130 or above is considered a superior level.
+
+[![A graph of a bell curve is labeled “Intelligence Quotient Score.” The x axis is labeled “IQ,” and the y axis is labeled “Population.” Beginning at an IQ of 60, the population rises to a curved peak at an IQ of 100 and then drops off at the same rate ending near zero at an IQ of 140.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31164156/87dba6aac07b342c4ce36005429a170fed2cc4cd.jpeg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2015/02/31164156/87dba6aac07b342c4ce36005429a170fed2cc4cd.jpeg)
+
+**Figure 3**. The majority of people have an IQ score between 85 and 115.
+
+Only 2.2% of the population has an IQ score below 70 (American Psychological Association \[APA\], 2013). A score of 70 or below indicates significant cognitive delays, major deficits in adaptive functioning, and difficulty meeting “community standards of personal independence and social responsibility” when compared to same-aged peers (APA, 2013, p. 37). An individual in this IQ range would be considered to have an intellectual development disorder (intellectual disability) and exhibit deficits in intellectual functioning and adaptive behavior (American Association on Intellectual and Developmental Disabilities, 2013). Formerly known as mental retardation, the accepted term now is intellectual development disorder, and it has four subtypes: mild, moderate, severe, and profound. _The Diagnostic and Statistical Manual of Psychological Disorders_ lists criteria for each subgroup (APA, 2013).
+
+Table 1. Characteristics of Cognitive Disorders
+| Intellectual Development Disorder Subtype | Percentage of Intellectually Disabled Population | Description |
+| --- | --- | --- |
+| Mild | 85% | 3rd- to 6th-grade skill level in reading, writing, and math; may be employed and live independently |
+| Moderate | 10% | Basic reading and writing skills; functional self-care skills; requires some oversight |
+| Severe | 5% | Functional self-care skills; requires oversight of daily environment and activities |
+| Profound | <1% | May be able to communicate verbally or nonverbally; requires intensive oversight |
+
+On the other end of the intelligence spectrum are those individuals whose IQs fall into the highest ranges. Consistent with the bell curve, about 2% of the population falls into this category. People are considered gifted if they have an IQ score of 130 or higher, or superior intelligence in a particular area. Long ago, popular belief suggested that people of high intelligence were maladjusted. This idea was disproven through a groundbreaking study of gifted children. In 1921, Lewis Terman began a longitudinal study of over 1500 children with IQs over 135 (Terman, 1925). His findings showed that these children became well-educated, successful adults who were, in fact, well-adjusted (Terman & Oden, 1947). Additionally, Terman’s study showed that the subjects were above average in physical build and attractiveness, dispelling an earlier popular notion that highly intelligent people were “weaklings.” Some people with very high IQs elect to join Mensa, an organization dedicated to identifying, researching, and fostering intelligence. Members must have an IQ score in the top 2% of the population, and they may be required to pass other exams in their application to join the group.
+
+### Dig Deeper: What’s in a Name? Mental Retardation
+
+In the past, individuals with IQ scores below 70 and significant adaptive and social functioning delays were diagnosed with mental retardation. When this diagnosis was first named, the title held no social stigma. In time, however, the degrading word “retard” sprang from this diagnostic term. “Retard” was frequently used as a taunt, especially among young people, until the words “mentally retarded” and “retard” became an insult. As such, the DSM-5 now labels this diagnosis as “intellectual development disorder (intellectual disability)”. Many states once had a Department of Mental Retardation to serve those diagnosed with such cognitive delays, but most have changed their name to Department of Developmental Disabilities or something similar in language. For example, the [Social Security Administration implemented the term change in 2013](https://www.federalregister.gov/documents/2013/08/01/2013-18552/change-in-terminology-mental-retardation-to-intellectual-disability). Earlier in the module, we discussed how language affects how we think. Do you think changing the title of this department has any impact on how people regard those with developmental disabilities? Does a different name give people more dignity, and if so, how? Does it change the expectations for those with developmental or cognitive disabilities? Why or why not?
+
+### Link to Learning
+
+This CrashCourse Psychology video elaborates on intelligence testing and explains the common WAIS and WISC IQ tests:  
+
+You can [view the transcript for “Brains vs. Bias: Crash Course Psychology #24” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/BrainsVsBiasCrashCoursePsychology24.txt).
+
+### Think It Over
+
+In thinking about the case of Candace described earlier, do you think that Candace benefited or suffered as a result of consistently being passed on to the next grade?
+
+### Glossary
+
+**Flynn effect:** observation that each generation has a significantly higher IQ than the previous generation
+
+**intelligence quotient:** (also, IQ) score on a test designed to measure intelligence
+
+**norming:** administering a test to a large population so data can be collected to reference the normal scores for a population and its groups
+
+**representative sample:** subset of the population that accurately represents the general population
+
+**standard deviation:** measure of variability that describes the difference between a set of scores and their mean
+
+**standardization:** method of testing in which administration, scoring, and interpretation of results are consistent
+
+---
+
+## Psych in Real Life: Blirtatiousness, Questionnaires, and Validity
+
+- url_title:: "Psych in Real Life: Blirtatiousness, Questionnaires, and Validity"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/
+### Learning Objectives
+
+-   Describe the complications of developing personality assessments, including the importance of reliability and validity
+
+## Creating a Personality Questionnaire
+
+Psychologists often assess a person’s personality using a questionnaire that is filled in by the person who is being assessed. Such a test is called a “self-report inventory.” To get into the spirit of personality assessment, please complete the personality inventory below. It has only 10 questions. Simply decide how much each pair of words or phrases fits you.
+
+[Take the TIPI Personality Test](https://www.psytoolkit.org/c/3.4.0/survey?s=7rOq6)
+
+The questionnaire you just completed is called the TIPI: The Ten-Item Personality Inventory. It was created by University of Texas psychologist Sam Gosling as a very brief measure of five personality characteristics: Extraversion, Agreeableness, Conscientiousness, Emotional Stability, and Openness to Experience. These five personality dimensions are called “The Big Five” and, taken together, they have been found to be an excellent first-level summary of people’s personalities.
+
+Tests of the Big Five personality dimensions are widely used by researchers and by people in business and education who want a general view of a person’s personality. Several different self-report inventories have been developed to measure the Big Five factors, most with 50 or more questions. The TIPI, which you just took, was developed for situations where time is very limited and the tester (usually a researcher) needs a “good enough” version of the test. One of the longer versions would be used by someone needing a more reliable and nuanced view of someone’s personality.
+
+Looking at the TIPI, you might have the impression that creating a personality inventory is pretty easy. You come up with a few obvious questions, find names that fit, and you’re ready to claim you are measuring something about people’s personality. Undoubtedly you can find some “personality tests” on the internet that fit this description, but tests created by serious psychologists for use in research or in clinical settings must go through a much more careful development process before they are widely accepted and used. And, even then, the tests continue to be studied, criticized, and revised.
+
+In this exercise, we will look more closely at some of the work that goes into creating a personality inventory or questionnaire. To help you keep your eyes on the _process_ of test construction, we want you to think about a personality dimension that is not as obvious as self-esteem or extraversion. We are going to assess **blirtatiousness**.
+
+## Part 1: Creating the Blirt Scale
+
+One of my closest friends is sometimes annoying and usually entertaining, but he never holds back; you always know what he’s thinking. His wife is kind and friendly, and she is the first to arrive when help is needed, but she hides her feelings and opinions. It is not easy to know what she wants or where she stands.Consider your own closest friends. Where do they fall on the continuum between my friends? Who is open and easy to read, and who is private and guarded?
+
+One of my closest friends is sometimes annoying and usually entertaining, but they never holds back; you always know what they’re thinking. Their partner is kind and friendly, and she is first to arrive when help is needed, but she hides her feelings and opinions. It is not easy to know what she wants or where she stands. Consider your own closest friends. Where do they fall on the continuum between my friends? Who is open and easy to read, and who is private and guarded?
+
+Back in the early 2000s, social psychologist William Swann and his colleagues became interested in the impact of self-disclosure—the process of communicating information about ourselves to other people—on personal relationships. In one paper, the researchers wrote about “blirters” and “brooders”—good labels for my two friends. Early in their research, the psychologists realized that the story was not going to be simple. Enthusiastic self-disclosure (blirting) is sometimes good for relationships and sometimes bad, and the same is true about reluctance to self-disclose (brooding).
+
+The researchers also realized that they didn’t really have a good way to sort people out on the self-disclosure continuum. Self-selection (“I’m very open.” “I’m very private.”) often doesn’t fit with how other people—including your friends—see you. And researchers’ first impressions (“He seems like a blirter.” “She seems like a brooder.”) are extremely unreliable. They needed a better way to measure people’s willingness to self-disclose.
+
+In this exercise, we’re going to give you a small taste of the process of creating a personality questionnaire. To do this, we are going to recreate Dr. Swann’s “blirtatiousness” test that is now used by researchers studying self-disclosure in personal relationships.
+
+By the way, even serious psychologists seem to want to give their tests interesting names, so the name BLIRT stands for Brief Loquaciousness and Interpersonal Responsiveness Test.
+
+_By the way, even serious psychologists seem to want to give their tests interesting names, so the name BLIRT stands for Brief Loquaciousness and Interpersonal Responsiveness Test._
+
+### Scale Construction: What Questions Should We Use?
+
+The first step in constructing a test or scale to measure some personal characteristic is to be clear about what it is you are measuring. In their papers, Dr. Swann and his colleagues discuss what they mean by “blirtatiousness” in detail, but here the following definition should be enough: _Blirtatiousness is the extent to which people respond to friends and partners quickly and effusively._ A person is effusive if they excitedly show and express emotion.
+
+One thing to notice about this definition is that it focuses on behavior more than inner feelings. It is the behaviors of our friends and partners that affect us, regardless of their intentions and motivations, so that is what the BLIRT scale is all about.
+
+Obviously, the first step in creating a questionnaire is writing the questions, but this is not as straightforward as it seems. Will they be open-ended (e.g., “How open-minded are you? \_\_\_). Probably not, as they are hard to score. Forced choice, where a person chooses one of several options, is a better choice. Some forced-choice questions make you give rankings, or others may have you choose from options, like these questions from the [Narcissistic Personality Inventory](https://openpsychometrics.org/tests/NPI/):
+
+[![Sample text from the narcissistic personality inventory that has people choose which statement best identifies them: "I have a natural talent for influencing people" or "I am not good an influencing people." and "Modesty doesn't become me" or "I am essentially a modest person."](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24175056/Screen-Shot-2018-10-24-at-12.50.27-PM.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24175056/Screen-Shot-2018-10-24-at-12.50.27-PM.png)
+
+**Figure 1**. The questions from Terry Raskin’s Narcissistic Personality Inventory force participants to choose between two options.
+
+Another common forced-choice format is the Likert\[1\] scale, which is composed of a statement (not a question) followed by 5 or 7 numbers allowing you to indicate your level of agreement with the statement. For example, here is an item from the [Rosenberg Self-Esteem inventory](https://openpsychometrics.org/tests/RSE.php):
+
+[![Sample text from a personality inventory that says "I feel that I am a person of worth, at least on an equal plane with others." Then a person can choose either strongly disagree, disagree, agree, or strongly agree.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24175626/Screen-Shot-2018-10-24-at-12.56.09-PM.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24175626/Screen-Shot-2018-10-24-at-12.56.09-PM.png)
+
+**Figure 2**. Morris Rosenberg’s questions on the self-esteem inventory utilize the Likert scale.
+
+Dr. Swann and his team chose a 7-point Likert format to measure blirtatiousness. To do this, they needed to write clear, simple statements that people could agree or disagree with, where different levels of agreement were possible.
+
+We aren’t going to ask you to write any questions, but join the test-development team by looking at the eight statements below. Choose four that you think would be the best items to include in the BLIRT scale.
+
+When they were developing the scale, Dr. Swann and his team wrote dozens of questions and then pared them down to 20. Then, they got 237 undergraduates to rate the 20 questions for how well they fit the qualities that the BLIRT scale was trying to measure.\[2\]
+
+Questionnaire writers have strategies to encourage people to read the statements carefully. For example, they often write “reverse scoring” items. To show what this means, just below is the 7-point Likert scale used with the Blirtatiousness questionnaire. Below that, you will see two statements. Look at how the statements and the Likert scale fit together.
+
+[![Likert scale showing 1 as strongly disagree, then counting up so that 4 is neither agree nor disagree and 7 is strongly agree.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24180330/likert.png)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2018/03/24180330/likert.png)
+
+**Figure 3.** A Likert scale.
+
+1.  I speak my mind as soon as a thought enters my head.
+    -   For this question, 1 means not blirtatious and 7 means very blirtatious.
+2.  I don’t speak my mind as soon as a thought enters my head.
+    -   For this question, 1 means very blirtatious and 7 means not blirtatious.
+
+Dr. Swann and his team chose 8 items for the BLIRT scale and half were worded so that higher numbers mean more blirtatious, and half so that high numbers mean less blirtatious. After the test, a process called “reverse scoring” put all the questions back on the same scale, so that higher numbers mean more blirtatious.\[3\]
+
+At this point in the test-creation process, Dr. Swann and his team settled on eight statements that seemed to measure BLIRT. They were ready to administer the test, but before they could praise the test and its effectiveness, they needed to be sure of a few things: the questions need to work together as a set, the test must be reliable, and the test must be valid.
+
+-   **The questions must work together as a set.** In other words, we want to be sure that the 8 items are all giving us responses about the same quality (blirtatiousness) and that the responses people are giving are consistent with one another.
+    -   You might think that a single question would be enough to measure blirtatiousness. Why ask 8 questions when one would do? But research has shown that asking variations on the same question 8 or 10 different times gives a more stable measure. The questions must be slightly different (enough to make people think carefully), but not too different (so they measure different things).
+    -   The researchers administered the BLIRT to 1,137 students and used statistical procedures\[4\] to be sure that the 8 items in the scale worked together. The results indicated that the 8 items on the scale were consistent with each other in measuring the same psychological quality.
+-   **The test must be reliable**. The word “reliability” means “consistent.” We should be able to give you a test of some quality (e.g., how extraverted you are) and then give you that same test again two months later, and your scores should be pretty similar. This is important for what is called “stable traits.” Obviously, some psychological qualities, like moods, change all the time and we would not expect consistency. But, blirtatiousness should be a stable trait.
+    -   One common way to measure reliability of a test is a process called “test-retest reliability.” It is as simple as it sounds: you give the test, wait some period of time, and give again to the same people.
+
+-   **The test must be valid.** Believe it or not, after all this work, we still don’t know if the BLIRT scale is VALID. Validity is a question of whether or not we are measuring the thing we are trying to measure. Reliability doesn’t tell us if a scale is valid; reliability simply means that we get consistent answers. So how can we figure out if our test is valid or not? We’ll go into that in the next section.
+
+The exercises you just reviewed give you a taste of the initial steps in creating a personality inventory. We started by carefully defining the personality trait. We had to figure out how we were going to ask our questions, and we chose a Likert scale. The questions had to be carefully written to be clear and focused on the trait we are studying: blirtatiousness. Writing effective items usually involves a process of writing, testing, selection, rewriting, retesting, and selecting again, until we are satisfied that our questions are good. Once we have compiled a test–at least a candidate for the test–we need to administer it to people to see if it is reliable and internally consistent (i.e., that all the questions are measuring the same trait).
+
+### Measuring Personality
+
+Before you go on, now is a good time to measure _your_ blirtatiousness. Follow the link below to find out if you are a blirter or a brooder.
+
+[Take the Blirt Test](https://labs.la.utexas.edu/swann/the-blirt/)
+
+## Part 2: Does the Blirt Scale Measure What It Claims to Measure?
+
+No one wants to use a scale that hasn’t been shown to be valid. And validity is really hard to show.
+
+### Analyzing Validity
+
+Here is our challenge. Remember that blirtatiousness is the extent to which people respond to friends and partners quickly and effusively. Our questions may look good, but we need evidence that the numbers we get actually measure the trait.
+
+There is no one way to determine the validity of a scale. Test developers like Dr. Swann usually take several different approaches. They may compare the test results with other personality tests of similar traits (convergent validity), or compare scores from the BLIRT test with other dissimilar tests (discriminant validity). Researchers may also compare the results of the BLIRT test to real-world outcomes (criterion validity), or see if the results work to predict people’s behavior in certain situations (predictive validity).
+
+In the sections below, we will peek at some studies that try to assess these different aspects of validity.
+
+### Convergent and Discriminant Validity
+
+One way to test the validity of a test is to compare it to results from tests of other traits for which validated tests already exist. There are two types of comparisons that researchers look for when they validate a test. One is called _convergent validity_ and the other is called _discriminant validity_.
+
+When testing for **convergent validity**, the researcher looks for other traits that are similar to (but not identical to) the trait they are measuring. For example, we are studying blirtatiousness. It would be reasonable to think that a person who is blirtatious is also assertive. The two traits—blirtatiousness and assertiveness—are not the same, but they are certainly related. If our blirtatiousness scale is not at all related to assertiveness, then we should be worried that we are not really measuring blirtatiousness successfully.
+
+We can use the correlation between the BLIRT score and a score on a test of assertiveness to measure convergent validity. The researchers gave a set of tests, including the BLIRT scale and a measure of assertiveness\[5\] to 1,397 college students. Assertiveness was just one of several traits that were expected to be similar to blirtatiousness.\[6\]
+
+We want our BLIRT score to have a moderate-to-strong relationship with traits that are similar, but we also want it to be unrelated to traits or abilities that are not similar to blirtatiousness. Tests of **discriminant validity** compare our BLIRT score to traits that should have weak or no relationship to blirtatiousness. For example, people who are blirtatious may be good students or poor students or somewhere in-between. Knowing how blirtatious you are should not tell us much about how good a student you are.
+
+The researchers compared the BLIRT score of the 1,397 students mentioned earlier to their self-reported GPA.\[7\]
+
+Dr. Swann’s team compared 21 different traits and abilities to the blirtatiousness scale. Some assessed convergent validity and others tested discriminant validity. The results were generally convincing: BLIRT scores were similar to traits that should be related to blirtatiousness (good convergent validity) and unrelated to traits that should have no connection to blirtatiousness (good discriminant validity).
+
+### Criterion Validity
+
+Another way to test the validity of a measure is to see if it fits the way people behave in the real world. The BLIRT researchers conducted two studies to see if BLIRT scores fit what we know about people’s personalities. **Criterion validity** is the relationship between some measure and some real-world outcome.
+
+#### Librarians or Salespeople?
+
+Who do you think is more likely to be blirtatious, a salesperson or a librarian? The researchers found thirty employees of car dealerships and libraries in central Texas and gave them the BLIRT scale. Their ages ranged from 20 to 66 (average age = 34.3 years).
+
+### Try It
+
+Using the bar graph below, adjust the bars based on your prediction about who will be more blirtatious. Then click the link below to see if your prediction is correct.
+
+Click here to see the results.
+
+Most people expect salespeople to be more blirtatious than librarians. The researchers explained that we assume that high blirters will look for a work environment that rewards “effusive, rapid responding,” while low blirters would prefer a workplace that encourages “reflection and social inhibition.” As you can see, the results of the study were consistent with this idea: salespeople had significantly higher blirt scores (on the average) than librarians.
+
+#### Asian Americans or European Americans?
+
+How blirtatious a person is can be influenced by a lot of factors, including “cultural norms”—ways of acting that we learn from our families and the people around us as we grow up. Although we shouldn’t overstate the difference, Asian cultures tend to emphasize restraint of emotional expression, while European cultures are more likely to encourage direct and rapid expression.
+
+The researchers were able to get BLIRT scores from 2,800 students from European-American cultures and 698 students from Asian-American cultures. What would you predict about the BLIRT scores for these two groups?
+
+### Try It
+
+Using the bar graph below, adjust the bars based on your prediction about who will be more blirtatious. Then click the link below to see if your prediction is correct.
+
+Click here to see the results.
+
+As you can see, the results were consistent with the researchers’ expectations. The difference between the groups was small, but statistically significant. The small difference indicates that we shouldn’t turn these modest differences into cultural stereotypes, but the statistically significant difference suggests that cultural experiences may have a real—if modest—effect on people’s blirtatiousness.
+
+### Predictive Validity
+
+Another way to assess validity of the BLIRT scale is to see if it predicts people’s behavior in specific situations. Based on research about first impressions, the experimenters believed that people who are open and expressive should, in general, make better first impressions than people who are reserved and relatively quiet.
+
+To test this hypothesis, the researchers recruited college students and put them into pairs. The members of each pair had a 7-minute “getting acquainted” telephone conversation. The members of the pairs did not know each other and, in fact, they never saw each other. The participants also completed several personality measures, including the BLIRT scale. Note that they were NOT paired based on their BLIRT scores, so there were different combinations of blirtatiousness across the 32 pairs tested.
+
+### Try It
+
+After the conversations, the students rated their conversation partners on several different qualities. For example, who do you think would be perceived as more responsive—a high blirter or a low blirter?
+
+-   high blirter
+-   low blirter
+-   no difference
+
+Show Answer
+
+Keeping in mind that this was a first-impression 7-minute conversation, who do you think would be seen as more interesting: a high blirter or a low blirter?
+
+-   high blirter
+-   low blirter
+-   no difference
+
+Show Answer
+
+Here are some other qualities that were rated. Make your prediction for each one, and then check out the results.
+
+Who was rated as more likeable?
+
+-   high blirter
+-   low blirter
+-   no difference
+
+Show Answer
+
+Who was rated as someone who “I’d like to be friends with?”
+
+-   high blirter
+-   low blirter
+-   no difference
+
+Show Answer
+
+Who was rated as more intelligent?
+
+-   high blirter
+-   low blirter
+-   no difference
+
+Show Answer
+
+### Measuring Personality
+
+You now know more about creating a personality test than most people do. Scales like the BLIRT or the Big Five test you took at the beginning of this exercise are used for serious purposes. Psychological researchers use them in their studies, of course. But psychological tests are also used by companies in their hiring process, by therapists trying to understand their patients, school systems assessing strengths and weaknesses of their students, and even sports teams trying to identify the best athletes to fit their system.
+
+Blirtatiousness is simply an example of a personality trait, and it is not among the most widely used scales. There are hundreds of personality tests in use today. For example, the Big Five personality factors (conscientiousness, agreeability, neuroticism, openness to experience, and extraversion) are among the most widely used scales, and they have been extensively studied and validated. Other qualities, like intelligence, self-esteem, and general anxiety level, have also been widely studied, and they have well validated measures.
+
+We hope that this exercise has given you some insight into the characteristics of a good personality test, and the work that goes into developing a useful scale. Next time you take one, consider the process that went into its development.
+
+### Glossary
+
+convergent validity:
+
+the relationship between traits that are similar to (but not identical to) the trait being measured
+
+criterion validity:
+
+the relationship between some measure and some real-world outcome
+
+discriminant validity:
+
+the relationship between some traits that should have weak or no relationship
+
+predictive validity:
+
+the relationship between experimental results and the ability to predict people’s behavior in certain situations
+
+### Candela Citations
+
+CC licensed content, Original
+
+-   Psychology in Real Life: Blirtatiousness, Questionnaires, and Validity. **Authored by**: Patrick Carroll for Lumen Learning. **Provided by**: Lumen Learning. **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_
+
+All rights reserved content
+
+-   Sample of narcissistic personality disorder. **Authored by**: Raskin, R.; Terry, H. **Provided by**: Journal of Personality and Social Psychology. **Located at**: [https://openpsychometrics.org/tests/NPI/](https://openpsychometrics.org/tests/NPI/). **Project**: A principal-components analysis of the Narcissistic Personality Inventory and further evidence of its construct validity. **License**: _All Rights Reserved_
+-   Sample of the Rosenberg Self-Esteem inventory. **Authored by**: Morris Rosenberg. **Located at**: [https://openpsychometrics.org/tests/RSE.php](https://openpsychometrics.org/tests/RSE.php). **Project**: Society and the adolescent self-image. **License**: _All Rights Reserved_
+
+* * *
+
+1.  The man who created the scale pronounced his name as LICK-ert. Many psychologists—maybe even your instructor—pronounce it LIKE-ert. It probably doesn’t matter much which way you say the name. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-1)
+2.  Note: Notice that the four items from the BLIRT are about what you DO. They aren’t about your beliefs (option 1), how you think other people see you (option 3), opinions about yourself (option 4), or what you think about other people (option 6). [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-2)
+3.  Reverse scoring is simple: 7 becomes 1, 6 becomes 2, 5 becomes 3, 4 stays 4, 3 becomes 5, 2 becomes 6, and 1 becomes 7. Only the 4 items with the reverse wording are rescored this way. The goal is to make it so that higher numbers mean more blirtatious for all the items. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-3)
+4.  Cronbach’s alpha and Factor Analysis [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-4)
+5.  The Rathus Assertiveness Schedule [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-5)
+6.  Others included self-perceived social confidence, extraversion, impulsivity, and self-liking. [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-6)
+7.  Other traits assessed for discriminant validity were agreeableness, conscientiousness, affect intensity (how strongly people were influenced by their emotions). [↵](https://courses.lumenlearning.com/waymaker-psychology/chapter/psych-in-real-life-blirtatiousness-questionnaires-and-validity/#return-footnote-4856-7)
+
+---
+
+## Evaluating Psychotherapy | Introduction to Psychology
+
+- url_title:: "Evaluating Psychotherapy | Introduction to Psychology"
+  url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/humanistic-theory/
+### Learning Objectives
+
+-   Compare and evaluate various forms of psychotherapy
+
+## Evaluating Various Forms of Psychotherapy
+
+How can we assess the effectiveness of psychotherapy? Is one technique more effective than another? For anyone considering therapy, these are important questions. According to the American Psychological Association, three factors work together to produce successful treatment. The first is the use of evidence-based treatment that is deemed appropriate for your particular issue. The second important factor is the clinical expertise of the psychologist or therapist. The third factor is your own characteristics, values, preferences, and culture. Many people begin psychotherapy feeling like their problem will never be resolved; however, psychotherapy helps people see that they can do things to make their situation better. Psychotherapy can help reduce a person’s anxiety, depression, and maladaptive behaviors. Through psychotherapy, individuals can learn to engage in healthy behaviors designed to help them better express emotions, improve relationships, think more positively, and perform more effectively at work or school. In discussing therapeutic orientations, it is important to note that many clinicians incorporate techniques from multiple approaches, a practice known as integrative or **eclectic psychotherapy**.
+
+[![Two people having a conversation in a library.](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/05205823/Delta_College_Counseling_and_Career_Services.jpg)](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/04/05205823/Delta_College_Counseling_and_Career_Services.jpg)
+
+**Figure 1**. Therapy comes in many different forms and settings, but one critical factor in its success is the relationship between the therapist and client.
+
+Consider the following advantages and disadvantages of some of the major forms of psychotherapy:
+
+-   **Psychoanalysis**: Psychoanalysis was once the only type of psychotherapy available, but presently the number of therapists practicing this approach is decreasing around the world. Psychoanalysis is not appropriate for some types of patients, including those with severe psychopathology or mental retardation. Further, psychoanalysis is often expensive because treatment usually lasts many years. Still, some patients and therapists find the prolonged and detailed analysis very rewarding.
+-   **Cognitive-Behavioral Therapy**: CBT interventions tend to be relatively brief, making them cost-effective for the average consumer. In addition, CBT is an intuitive treatment that makes logical sense to patients. It can also be adapted to suit the needs of many different populations. One disadvantage, however, is that CBT does involve significant effort on the patient’s part, because the patient is an active participant in treatment. Therapists often assign “homework” (e.g., worksheets for recording one’s thoughts and behaviors) between sessions to maintain the cognitive and behavioral habits the patient is working on. The greatest strength of CBT is the abundance of empirical support for its effectiveness.
+-   **Humanistic Therapy**: One key advantage of person-centered therapy is that it is highly acceptable to patients. In other words, people tend to find the supportive, flexible environment of this approach very rewarding. Furthermore, some of the themes of PCT translate well to other therapeutic approaches. For example, most therapists of any orientation find that clients respond well to being treated with nonjudgmental empathy.
+
+Many studies have explored the effectiveness of psychotherapy. For example, one large-scale study that examined 16 meta-analyses of CBT reported that it was equally effective or more effective than other therapies in treating PTSD, generalized anxiety disorder, depression, and social anxiety disorder (Butlera, Chapmanb, Formanc, & Becka, 2006). Another study found that CBT was as effective at treating depression (43% success rate) as prescription medication (50% success rate) compared to the placebo rate of 25% (DeRubeis et al., 2005). Another meta-analysis found that psychodynamic therapy was also as effective at treating these types of psychological issues as CBT (Shedler, 2010). However, no studies have found one psychotherapeutic approach more effective than another (Abbass, Kisely, & Kroenke, 2006; Chorpita et al., 2011), nor have they shown any relationship between a client’s treatment outcome and the level of the clinician’s training or experience (Wampold, 2007). Regardless of which type of psychotherapy an individual chooses, one critical factor that determines the success of treatment is the person’s relationship with the psychologist or therapist.
+
+### Watch It
+
+Review each of the types of psychotherapy you’ve learned about in this lesson in the following CrashCourse video.  
+
+You can [view the transcript for “Getting Help – Psychotherapy: Crash Course Psychology #35” here (opens in new window)](https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/GettingHelpPsychotherapyCrashCoursePsychology35.txt).
+
+### Glossary
+
+**eclectic psychotherapy**: also called integrative psychotherapy, this term refers to approaches combining multiple orientations (e.g., CBT with psychoanalytic elements).
+
+### Candela Citations
+
+CC licensed content, Shared previously
+
+-   Types of Treatment. **Authored by**: OpenStax College. **Located at**: [https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment](https://openstax.org/books/psychology-2e/pages/16-2-types-of-treatment). **License**: _[CC BY: Attribution](https://creativecommons.org/licenses/by/4.0/)_. **License Terms**: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction
+-   Definition of eclectic therapy and summaries about advantages and disadvantages of treatments from Therapeutic Orientations. **Authored by**: Hannah Boettcher, Stefan G. Hofmann, and Q. Jade Wu. **Provided by**: Boston University. **Located at**: [http://nobaproject.com/modules/therapeutic-orientations](http://nobaproject.com/modules/therapeutic-orientations). **Project**: The Noba Project. **License**: _[CC BY-NC-SA: Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)_
+-   Counseling image. **Authored by**: Jefferyrauschert. **Located at**: [https://commons.wikimedia.org/wiki/File:Delta\_College\_Counseling\_and\_Career\_Services.jpg](https://commons.wikimedia.org/wiki/File:Delta_College_Counseling_and_Career_Services.jpg). **License**: _[CC BY-SA: Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/)_
+
+All rights reserved content
+
+-   Getting Help - Psychotherapy: Crash Course Psychology #35. **Authored by**: Hank Green. **Provided by**: CrashCourse. **Located at**: [https://www.youtube.com/watch?v=6nEL44QkL9w&index=35&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6](https://www.youtube.com/watch?v=6nEL44QkL9w&index=35&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6). **License**: _Other_. **License Terms**: Standard YouTube License
+
+---
+
