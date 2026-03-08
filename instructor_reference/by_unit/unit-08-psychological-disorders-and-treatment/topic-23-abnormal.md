@@ -1,0 +1,496 @@
+---
+title: "Topic 23: Abnormal"
+permalink: /units/unit-08-psychological-disorders-and-treatment/topic-23-abnormal/
+---
+
+# Topic 23: Abnormal
+
+<!-- GENERATED:TOPIC-STUDY-SHEET-10-24-START -->
+## Study sheet
+
+<!-- SOURCE: source_data/topic_library/library_topic_23.json -> content_supports.key_concepts, evidence.misconception_targets, content_supports.key_terms, resources.* -->
+
+### Big ideas
+
+- insomnia presentation
+- diagnostic features
+- CBT-I
+- medication
+- parasomnias (sleepwalking
+- night terrors
+- REM behavior disorder
+- etc.)
+- symptom profiles
+- obstructive/central apnea
+- daytime sleepiness
+- CPAP and other treatments
+- narcolepsy symptoms (sleep attacks
+- cataplexy)
+- behavioral strategies
+- DSM SUD criteria
+- impaired control
+- social impairment
+- risky use
+- pharmacological criteria
+- specific learning disorders vs broader developmental disorders
+- DSM categories
+- definitional issues
+- distress
+- dysfunction
+- deviance
+- danger
+- cultural context
+- Wakefield’s harmful dysfunction model
+- failure of internal mechanism plus harm
+- criteria such as distress
+- impairment
+- risk
+- reasons for classification: communication
+- research
+- treatment planning
+- DSM structure
+- categories
+- descriptive criteria
+- historical DSM revisions
+- reliability
+- overpathologizing
+- cultural critiques
+- prevalence of anxiety
+- mood
+- SUD
+- etc.
+- demonology
+- witch hunts
+- exorcism
+- asylums
+- biological
+- cognitive
+- behavioral
+- psychodynamic
+- sociocultural models
+- highly heritable disorders (e.g.
+- bipolar
+- schizophrenia
+- ASD)
+- vulnerability + stress interaction
+- risk model
+- adaptive fear vs excessive
+- impairing anxiety
+- GAD
+- panic
+- phobias
+- key symptoms and prevalence
+- conditioning
+- cognitive biases
+- genetics
+- neurotransmitters
+- symptom profiles and prevalence for OCD
+- BDD
+- hoarding
+- learning
+- cognition
+- family
+- biological influences on OCD
+- intrusion
+- avoidance
+- alterations in cognition and arousal
+- PTSD risk factors (trauma severity
+- prior trauma
+- social support
+- appraisals
+- beliefs in PTSD
+- common moods vs mood episodes
+- intensity and impairment
+- MDD and bipolar symptom sets
+- MDD vs PDD/dysthymia
+- subtypes like seasonal
+- postpartum
+- DSM manic episode criteria
+- duration
+- severity
+- multi-level etiology of depression
+- link between mood disorders and suicidal thoughts/behavior
+- risk factors
+- what schizophrenia is and is not
+- clarifying myths
+- positive
+- negative
+- and disorganized symptoms
+- diathesis–stress applied to schizophrenia
+- multi-level risk
+- prodrome
+- early identification
+- prevention
+- dissociative symptoms
+- disruption of identity
+- memory
+- consciousness
+- symptom profiles of the main dissociative diagnoses
+- trauma
+- suggestibility
+- cultural context in DID
+- ADHD and ASD core symptoms
+- prevalence and risk factors for ADHD and ASD
+- enduring patterns
+- inflexibility
+- ego-syntonic features
+- Cluster A
+- B
+- C
+- shared features of each
+- BPD and ASPD symptom patterns and risk factors
+- criteria for ID
+- adaptive functioning
+- associated outcomes
+- genetic (e.g.
+- Down
+- Fragile X)
+- prenatal/perinatal causes
+- symptom differences
+- weight status
+- binge/purge
+- desire
+- arousal
+- orgasm
+- pain disorders
+- atypical sexual interests plus distress/harm
+- examples
+- excessive thoughts/feelings/behaviors about somatic symptoms
+- use of DSM
+- diagnostic process
+- categorical approach
+- etiological factors
+- reiteration of stress–vulnerability
+- gross impairment in reality testing
+- thought disorder
+- hallucinations/delusions
+- long-standing delusions
+- relatively intact functioning
+- core schizophrenia features
+- course
+- functional impact
+- neurodevelopment
+- dopamine
+- environment
+- episodic disturbances in mood
+- depression/mania patterns
+- more detailed features of depression vs bipolar
+- social
+- life events
+- psychiatric diagnoses
+- hopelessness
+- access to means
+- social isolation
+- PD general features
+- ASPD symptom set
+- persistent
+- excessive fear/anxiety
+- psychodynamic theories applied to anxiety
+- such as panic disorder
+- OCD-related
+
+### Common misconceptions
+
+- Diagnosis explains the cause of a person’s symptoms.
+- Diagnostic categories are sharply separated and non-overlapping.
+- Symptoms automatically mean severe impairment.
+- Distress and impairment are the same thing.
+- One label describes a single uniform presentation.
+- Comorbidity is rare and unusual.
+- Culture is irrelevant to diagnosis except for rare culture-bound syndromes.
+- Stigma is minor compared with symptom severity.
+- Prevalence numbers are universal facts independent of method and population.
+- Mental illness is a personal weakness rather than a multi-factor health condition.
+- Differential diagnosis is only guessing rather than systematic rule-out reasoning.
+
+### Key terms
+
+- **insomnia**
+- **symptoms**
+- **treatment**
+- **CBT_I**
+- **sedative_hypnotics**
+- **parasomnias**
+- **sleepwalking**
+- **night_terrors**
+- **REM_behavior_disorder**
+- **sleep_apnea**
+- **CPAP**
+- **narcolepsy**
+- **cataplexy**
+- **stimulants**
+- **substance_use_disorder**
+- **DSM_criteria**
+- **addiction**
+- **learning_disability**
+- **developmental_disorder**
+- **neurodevelopmental**
+- **classification**
+- **defining_disorder**
+- **distress**
+- **dysfunction**
+- **deviance**
+- **danger**
+- **harmful_dysfunction**
+- **Wakefield**
+- **internal_mechanism**
+- **harm**
+- **abnormality_criteria**
+- **impairment**
+- **classification_rationale**
+- **DSM**
+- **diagnosis**
+- **communication**
+- **DSM5_features**
+- **categories**
+- **criteria**
+- **DSM_history**
+- **DSM_criticism**
+- **reliability**
+- **overdiagnosis**
+- **disorder_prevalence**
+- **common_disorders**
+- **epidemiology**
+- **supernatural_etiology**
+- **history**
+- **demonology**
+- **witch_hunts**
+- **modern_etiological_models**
+- **biological**
+- **psychological**
+- **sociocultural**
+- **high_heritability_disorders**
+- **genetics**
+- **bipolar**
+- **schizophrenia**
+- **diathesis_stress**
+- **vulnerability**
+- **stress**
+- **psychopathology**
+- **normal_anxiety_vs_disorder**
+- **intensity**
+- **duration**
+- **anxiety_disorders_overview**
+- **GAD**
+- **panic**
+- **phobias**
+- **prevalence**
+- **anxiety_etiology**
+- **learning**
+- **cognition**
+- **biology**
+- **OCD**
+- **BDD**
+- **hoarding_disorder**
+- **OCD_etiology**
+- **family**
+- **PTSD**
+- **trauma**
+- **PTSD_risk_factors**
+- **trauma_severity**
+- **prior_trauma**
+- **support**
+- **PTSD_learning_cognition**
+- **conditioning**
+- **appraisal**
+- **sadness_vs_depression**
+- **euphoria_vs_mania**
+- **thresholds**
+- **MDD_symptoms**
+- **bipolar_symptoms**
+- **mood_disorders**
+- **MDD_vs_PDD**
+- **depression_subtypes**
+- **seasonal**
+- **postpartum**
+- **manic_episode_criteria**
+- **depression_etiology**
+- **environment**
+- **mood_disorders_suicide**
+- **suicidal_ideation**
+- **risk_factors**
+- **schizophrenia_definition**
+- **myth_busting**
+- **split_personality_misconception**
+- **schizophrenia_symptom_categories**
+- **positive**
+- **negative**
+- **disorganized**
+- **schizophrenia_etiology**
+- **schizophrenia_prodrome**
+- **early_detection**
+- **risk_states**
+- **dissociative_disorders**
+- **depersonalization**
+- **amnesia**
+- **DID**
+- **dissociative_amnesia**
+- **depersonalization_derealization**
+- **DID_etiology**
+- **sociocognitive**
+- **cultural_factors**
+- **ADHD_symptoms**
+- **ASD_symptoms**
+- **neurodevelopmental_disorders**
+- **ADHD_ASD_prevalence**
+- **personality_disorder_nature**
+- **chronic**
+- **inflexible**
+- **ego_syntonic**
+- **personality_disorder_clusters**
+- **cluster_A**
+- **cluster_B**
+- **cluster_C**
+- **BPD**
+- **ASPD**
+- **etiological_factors**
+- **intellectual_disability_identification**
+- **adaptive_functioning**
+- **outcomes**
+- **intellectual_disability_causes**
+- **Down_syndrome**
+- **prenatal_risk**
+- **anorexia_vs_bulimia**
+- **causes**
+- **eating_disorders**
+- **sexual_dysfunctions**
+- **desire_disorder**
+- **arousal_disorder**
+- **orgasmic_disorder**
+- **pain**
+- **paraphilic_disorders**
+- **fetishistic**
+- **exhibitionistic**
+- **pedophilic**
+- **somatic_symptom_disorder**
+- **somatic_focus**
+- **excessive_anxiety**
+- **abnormality_considerations**
+- **norms**
+- **classification_diagnosis**
+- **DSM_use**
+- **assessment**
+- **causes_overview**
+- **stress_vulnerability_model**
+- **multi_factor**
+- **psychotic_disorders_general**
+- **reality_testing**
+- **thought_disorder**
+- **delusional_disorder_features**
+- **non_bizarre_delusions**
+- **schizophrenia_specific**
+- **course**
+- **schizophrenia_causes**
+- **dopamine**
+- **mood_disorders_general**
+- **episodes**
+- **mood_disturbance**
+- **depression_features**
+- **bipolar_features**
+- **comparison**
+- **mood_disorder_causes**
+- **suicide_factors**
+- **risk**
+- **hopelessness**
+- **means**
+- **isolation**
+- **PD_general**
+- **antisocial_PD_features**
+- **chronic_patterns**
+- **anxiety_disorders_general**
+- **excessive_fear**
+- **avoidance**
+- **anxiety_theories**
+- **cognitive**
+- **behavioral**
+- **psychodynamic**
+- **anxiety_related_list**
+- **OCD_related**
+
+### Resources
+
+#### Videos
+
+- [Psychological Disorders](https://www.youtube.com/watch?v=wuhJ-GkRRQc)
+- [OCD and Anxiety Disorders](https://www.youtube.com/watch?v=aX7jnVXXG5o)
+- [Depressive and Bipolar Disorders](https://www.youtube.com/watch?v=ZwMlHkWKDwM)
+- [Trauma and Addiction](https://www.youtube.com/watch?v=343ORgL3kIc)
+- [Schizophrenia and Dissociative Disorders](https://www.youtube.com/watch?v=uxktavpRdzU)
+- [Eating and Body Dysmorphic Disorders](https://www.youtube.com/watch?v=eMVyZ6Ax-74)
+- [Personality Disorders](https://www.youtube.com/watch?v=4E1JiDFxFGk)
+
+#### Web pages
+
+- [Why It Matters: Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-2/)
+- [Learning Hacks: Learning Styles](https://courses.lumenlearning.com/waymaker-psychology/chapter/learning-hacks-learning-styles/)
+- [Introduction to Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-psychological-disorders/)
+- [What are Psychological Disorders?](https://courses.lumenlearning.com/waymaker-psychology/chapter/what-are-psychological-disorders/)
+- [Diagnosing and Classifying Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/diagnosing-and-classifying-psychological-disorders/)
+- [Perspectives on Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/perspectives-on-psychological-disorders/)
+- [Introduction to Anxiety Disorders, OCD, and PTSD](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-anxiety-disorders-and-ocd/)
+- [Phobias and Social Anxiety Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/anxiety-disorders/)
+- [Panic and Generalized Anxiety Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/social-anxiety-disorder-and-generalized-anxiety-disorder/)
+- [Obsessive-Compulsive and Related Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/obsessive-compulsive-and-related-disorders/)
+- [Posttraumatic Stress Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/posttraumatic-stress-disorder/)
+- [Introduction to Mood Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-mood-disorders/)
+- [Major Depressive Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/major-depressive-disorder/)
+- [Bipolar Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/mood-disorders/)
+- [The Biological Basis of Mood Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/the-biological-basis-of-mood-disorders/)
+- [Suicide](https://courses.lumenlearning.com/waymaker-psychology/chapter/video-depressive-and-bipolar-disorders/)
+- [Introduction to Schizophrenia and Dissociative Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-schizophrenia-and-dissociative-disorders/)
+- [Schizophrenia](https://courses.lumenlearning.com/waymaker-psychology/chapter/schizophrenia/)
+- [Dissociative Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/dissociative-disorders/)
+- [Introduction to Personality Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-personality-disorders/)
+- [Personality Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/personality-disorders/)
+- [Borderline Personality Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/borderline-personality-disorder/)
+- [Antisocial Personality Disorder](https://courses.lumenlearning.com/waymaker-psychology/chapter/antisocial-personality-disorder/)
+- [Introduction to Childhood Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-childhood-disorders/)
+- [ADHD](https://courses.lumenlearning.com/waymaker-psychology/chapter/disorders-in-childhood/)
+- [Autism](https://courses.lumenlearning.com/waymaker-psychology/chapter/autism/)
+- [Review: Classifying Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/tutorial-mystery-client/)
+- [Putting It Together: Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-psychological-disorders/)
+- [Discussion: Psychological Disorders](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-psychological-disorders/)
+
+#### Textbook sections
+
+- [States of Consciousness | Sleep Problems and Disorders](https://openstax.org/books/psychology-2e/pages/4-4-sleep-problems-and-disorders)
+- [States of Consciousness | Substance Use and Abuse](https://openstax.org/books/psychology-2e/pages/4-5-substance-use-and-abuse)
+- [Thinking and Intelligence | The Source of Intelligence](https://openstax.org/books/psychology-2e/pages/7-6-the-source-of-intelligence)
+- [Psychological Disorders | What Are Psychological Disorders?](https://openstax.org/books/psychology-2e/pages/15-1-what-are-psychological-disorders)
+- [Psychological Disorders | Diagnosing and Classifying Psychological Disorders](https://openstax.org/books/psychology-2e/pages/15-2-diagnosing-and-classifying-psychological-disorders)
+- [Psychological Disorders | Perspectives on Psychological Disorders](https://openstax.org/books/psychology-2e/pages/15-3-perspectives-on-psychological-disorders)
+- [Psychological Disorders | Anxiety Disorders](https://openstax.org/books/psychology-2e/pages/15-4-anxiety-disorders)
+- [Psychological Disorders | Obsessive-Compulsive and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-5-obsessive-compulsive-and-related-disorders)
+- [Psychological Disorders | Posttraumatic Stress Disorder](https://openstax.org/books/psychology-2e/pages/15-6-posttraumatic-stress-disorder)
+- [Psychological Disorders | Mood and Related Disorders](https://openstax.org/books/psychology-2e/pages/15-7-mood-and-related-disorders)
+- [Psychological Disorders | Schizophrenia](https://openstax.org/books/psychology-2e/pages/15-8-schizophrenia)
+- [Psychological Disorders | Dissociative Disorders](https://openstax.org/books/psychology-2e/pages/15-9-dissociative-disorders)
+- [Psychological Disorders | Personality Disorders](https://openstax.org/books/psychology-2e/pages/15-11-personality-disorders)
+- Intelligence | Intellectual Giftedness and Disability
+- Motivation and Emotion | Biological Motives
+- Sex, Gender, and Sexuality | Sexual Relationships
+- Health Psychology | Improving Health with Treatment
+- Psychological Disorders | Psychopathology: Classification and Causes
+- Psychological Disorders | Psychotic Disorders
+- Psychological Disorders | Mood and Personality Disorders
+- Psychological Disorders | Anxiety and Anxiety-Related Disorders
+<!-- GENERATED:TOPIC-STUDY-SHEET-10-24-END -->
+
+
+This is a placeholder topic page.
+
+## Big ideas
+
+## Common misconceptions
+
+## Key terms
+
+## Practice quiz
+
+<div data-component="practice-quiz" data-quiz-src="/assets/data/quizzes/quiz_topic_23.json">
+  <p>Practice quiz: coming soon.</p>
+</div>
+
+
+
+

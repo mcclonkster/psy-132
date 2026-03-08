@@ -1,0 +1,660 @@
+---
+title: "Topic 19: Social"
+permalink: /units/unit-07-social-behavior-and-identity/topic-19-social/
+---
+
+# Topic 19: Social
+
+<!-- GENERATED:TOPIC-STUDY-SHEET-10-24-START -->
+## Study sheet
+
+<!-- SOURCE: source_data/topic_library/library_topic_19.json -> content_supports.key_concepts, evidence.misconception_targets, content_supports.key_terms, resources.* -->
+
+### Big ideas
+
+- definition of social psychology
+- influence of others on thoughts
+- feelings
+- behavior
+- situational attributions
+- dispositional attributions
+- overemphasis on dispositional causes
+- underweighting situation
+- different attributions for self vs others
+- attributing successes internally
+- failures externally
+- belief in a fair world
+- victim-blaming
+- roles
+- expectations
+- role-congruent behavior
+- norms
+- conformity pressures
+- regulation of behavior
+- schemas for events
+- expected sequences of actions
+- role-induced behavior
+- power of situation
+- ethical issues
+- evaluation of objects
+- people
+- ideas
+- affect
+- cognition
+- dissonance
+- attitude change to reduce inconsistency
+- persuasion
+- message
+- source
+- audience factors
+- elaboration likelihood
+- central vs peripheral cues
+- conformity in judgments
+- normative influence
+- conformity
+- compliance
+- obedience
+- informational vs normative
+- obedience to authority
+- situational power
+- ethics
+- groupthink
+- performance change in groups
+- loafing vs effort
+- affective
+- cognitive
+- behavioral components of bias
+- concrete cases of each component of bias
+- social identity
+- realistic conflict
+- learning
+- cognitive biases
+- behavior intended to harm
+- different forms
+- online aggression
+- harassment via digital channels
+- reduced help in presence of others
+- diffusion of responsibility
+- helping with no obvious self-benefit
+- proximity
+- similarity
+- familiarity
+- reciprocity
+- attractiveness
+- competence
+- Sternberg’s intimacy
+- passion
+- commitment
+- costs and benefits
+- comparison levels
+- investments
+- I/O domains
+- work behavior
+- organizational processes
+- origins
+- Hawthorne studies
+- major developments
+- job analysis
+- testing
+- interviews
+- validity
+- onboarding
+- skills training
+- development programs
+- performance appraisals
+- rating biases
+- feedback
+- study of workers’ attitudes
+- motivation
+- leadership
+- job satisfaction scales
+- predictors
+- outcomes
+- leadership styles
+- management roles
+- influence
+- shared values and norms
+- climate
+- impact on behavior
+- human–machine interaction
+- design for users
+- design to reduce errors
+- improve comfort and performance
+- spoken/written vs body language
+- facial expressions
+- tone
+- e.g.
+- assertive vs passive
+- content vs relational
+- communication goals
+- skills practice
+- observational learning
+- desensitization
+- priming
+- mixed findings
+- cohort differences
+- cultural shifts
+- sexual norms
+- communication
+- consent
+- mutual respect
+- satisfaction
+- unwanted sexual behavior
+- power
+- workplace or social contexts
+- definition of rape
+- false beliefs that minimize or excuse it
+- participation in community and public life
+- benefits to health
+- social capital
+- democracy
+- personal civic goals
+- concrete actions
+- barriers
+- group membership
+- ingroup bias
+- core group constructs and their meanings
+- upward vs downward comparison
+- reference groups
+- internal vs external
+- covariation or similar model
+- FAE vs actor-observer
+- nuance in attribution biases
+- definition
+- conditioning
+- modeling
+- exposure
+- self-report
+- behavioral
+- implicit measures
+- persuasion cues
+- threats/opportunities
+- inconsistency
+- reduction strategies
+- taxonomy of influence
+- from passive presence to active coercion
+- social facilitation/inhibition
+- arousal effects
+- normative vs informational motives
+- situational factors
+- and audience factors
+- specific compliance techniques
+- mechanism differences
+- key findings
+- individual vs situational factors
+- ethical implications
+- coercive persuasion
+- isolation
+- control of information
+- assertive communication
+- boundary-setting
+- confidence
+- group participation
+- role clarity
+- need to belong
+- social support
+- information
+- identity
+- physical attractiveness
+- depth of disclosure
+- cost–benefit
+- reciprocity over time
+- intimacy
+- combinations
+- secure
+- anxious/ambivalent
+- avoidant
+- evolved preferences
+- parental investment
+- mate selection
+- prosocial behavior
+- altruism
+- egoism
+- collectivism
+- helping that may or may not involve self-sacrifice vs strict selfless helping
+- situational (bystanders)
+- victim characteristics
+- helper traits
+- decision model of helping
+- noticing
+- interpreting
+- responsibility
+- antisocial acts
+- aggression
+- direct vs relational aggression
+- biological
+- social learning
+- situational triggers
+- policies
+- education
+- self-control
+- context changes
+- I/O roles in selection
+- training
+- assessment
+- development
+- culture at work
+- hostile environments
+- selection
+- placement
+- improving conditions
+- recognition
+- fit
+- management assumptions
+- study of people–environment interactions
+- environmental stressors
+- coping and design strategies
+- tragedy of the commons
+- overuse
+- pollution
+- policy
+- incentives
+- structural changes
+- applied roles in law
+- community settings
+- sport performance
+- voir dire
+- surveys
+- mock juries
+- profiling
+- pretrial publicity
+- biases
+- group dynamics
+- evidence complexity
+- ecological levels
+- empowerment
+- prevention
+- career exploration
+- goal setting
+- skill development
+
+### Common misconceptions
+
+- Social psychology denies personality and individual differences.
+- If behavior changes with context, people have no stable traits.
+- Conformity means private agreement rather than sometimes public compliance.
+- Obedience is always physical coercion rather than role and authority framing.
+- Bystanders do not care, so lack of helping reflects lack of empathy.
+- Groupthink means groups are always irrational.
+- Group polarization means people always become extreme after discussion.
+- Social loafing means people are lazy rather than responding to accountability structures.
+- Stereotypes are always conscious and intentional.
+- Prejudice, discrimination, and stereotypes are the same thing.
+- Intergroup differences are inevitable and cannot be changed by context or norms.
+
+### Key terms
+
+- **social_psychology_definition**
+- **social_influence**
+- **group_context**
+- **situational_vs_dispositional**
+- **attribution**
+- **behavior_causes**
+- **fundamental_attribution_error**
+- **attribution_bias**
+- **actor_observer_bias**
+- **self_vs_other**
+- **self_serving_bias**
+- **self_protection**
+- **just_world_belief**
+- **victim_blame**
+- **social_roles**
+- **expectations**
+- **behavior**
+- **social_norms**
+- **conformity**
+- **behavior_regulation**
+- **social_scripts**
+- **event_schemas**
+- **Stanford_prison_experiment**
+- **roles**
+- **ethics**
+- **demand_characteristics**
+- **attitude_definition**
+- **ABC_model**
+- **evaluation**
+- **cognitive_dissonance_change**
+- **internal_attitude_change**
+- **persuasion**
+- **external_attitude_change**
+- **source_message_audience**
+- **ELM**
+- **central_route**
+- **peripheral_route**
+- **persuasion_routes**
+- **Asch_effect**
+- **norms**
+- **conformity_definition**
+- **social_influence_types**
+- **compliance**
+- **obedience**
+- **Milgram**
+- **authority**
+- **groupthink**
+- **social_facilitation**
+- **social_loafing**
+- **group_processes**
+- **prejudice**
+- **stereotypes**
+- **discrimination**
+- **prejudice_examples**
+- **stereotype_examples**
+- **discrimination_examples**
+- **prejudice_causes**
+- **social_identity**
+- **realistic_conflict**
+- **learning**
+- **aggression_definition**
+- **intent_to_harm**
+- **cyberbullying**
+- **online_aggression**
+- **harassment**
+- **bystander_effect**
+- **diffusion_of_responsibility**
+- **helping**
+- **altruism_definition**
+- **prosocial_behavior**
+- **selflessness**
+- **relationship_formation**
+- **proximity**
+- **similarity**
+- **familiarity**
+- **reciprocity**
+- **attraction_factors**
+- **physical_attractiveness**
+- **triangular_theory**
+- **Sternberg**
+- **intimacy**
+- **passion**
+- **commitment**
+- **social_exchange_theory**
+- **costs_benefits**
+- **comparison_level**
+- **relationships**
+- **IO_scope**
+- **work_psychology**
+- **organizational_behavior**
+- **IO_history**
+- **Hawthorne**
+- **applied_psychology**
+- **employee_selection**
+- **job_analysis**
+- **testing**
+- **hiring**
+- **job_training**
+- **onboarding**
+- **skills_training**
+- **development**
+- **performance_assessment**
+- **ratings**
+- **bias**
+- **feedback**
+- **organizational_psychology_definition**
+- **work_attitudes**
+- **leadership**
+- **job_satisfaction**
+- **measurement**
+- **predictors**
+- **outcomes**
+- **management**
+- **styles**
+- **influence**
+- **organizational_culture**
+- **climate**
+- **human_factors**
+- **ergonomics**
+- **user_centered_design**
+- **human_factors_role**
+- **safety**
+- **productivity**
+- **satisfaction**
+- **verbal_communication**
+- **nonverbal_communication**
+- **body_language**
+- **verbal_methods**
+- **communication_styles**
+- **perspectives**
+- **communication_plan**
+- **skills**
+- **self_improvement**
+- **media_violence**
+- **aggression**
+- **mechanisms**
+- **research_findings**
+- **sexual_attitudes_change**
+- **sexual_behavior_trends**
+- **cohorts**
+- **healthy_sexual_relationships**
+- **communication**
+- **consent**
+- **respect**
+- **sexual_harassment**
+- **examples**
+- **power**
+- **boundaries**
+- **rape_definition**
+- **rape_myths**
+- **civic_engagement**
+- **participation**
+- **community_involvement**
+- **civic_benefits**
+- **social_capital**
+- **health**
+- **democracy**
+- **civic_plan**
+- **engagement**
+- **action_steps**
+- **ingroup**
+- **outgroup**
+- **ingroup_favoritism**
+- **group_structure**
+- **cohesiveness**
+- **status**
+- **social_comparison**
+- **upward**
+- **downward**
+- **reference_group**
+- **internal_vs_external_attribution**
+- **attribution_factors**
+- **FAE_vs_actor_observer**
+- **attribution_bias_comparison**
+- **attitude_formation**
+- **conditioning**
+- **modeling**
+- **exposure**
+- **attitude_measurement**
+- **self_report**
+- **implicit_measures**
+- **attitude_change_factors**
+- **dissonance**
+- **threat**
+- **cognitive_dissonance**
+- **reduction_strategies**
+- **belief_behavior_gap**
+- **social_influence_methods**
+- **mere_presence**
+- **coercion**
+- **social_inhibition**
+- **conformity_reasons**
+- **normative_influence**
+- **informational_influence**
+- **conditions**
+- **compliance_persuasiveness**
+- **source**
+- **message**
+- **audience**
+- **compliance_techniques**
+- **foot_in_the_door**
+- **door_in_the_face**
+- **lowball**
+- **nudge**
+- **Milgram_lessons**
+- **situational_power**
+- **brainwashing**
+- **captivity**
+- **self_assertion_strategies**
+- **assertiveness**
+- **teamwork_plan**
+- **group_skills**
+- **collaboration**
+- **affiliation_motives**
+- **belongingness**
+- **support**
+- **information**
+- **attractiveness**
+- **relationship_development**
+- **self_disclosure**
+- **social_exchange**
+- **Sternberg_triangular**
+- **adult_attachment_types**
+- **secure**
+- **anxious**
+- **avoidant**
+- **sexual_selection_social**
+- **mate_preferences**
+- **evolutionary_psychology**
+- **motives**
+- **altruism**
+- **egoism**
+- **collectivism**
+- **prosocial_vs_altruism**
+- **selfless**
+- **helping_factors**
+- **situation**
+- **victim**
+- **helper**
+- **bystander_apathy**
+- **helping_decision_model**
+- **steps**
+- **antisocial_behavior**
+- **direct**
+- **indirect**
+- **aggression_causes**
+- **biology**
+- **aggression_reduction**
+- **societal**
+- **individual**
+- **interventions**
+- **IO_roles**
+- **selection**
+- **training**
+- **assessment**
+- **hostility**
+- **personnel_psychology**
+- **person_job_fit**
+- **placement**
+- **job_satisfaction_promotion**
+- **work_conditions**
+- **recognition**
+- **Theory_X**
+- **Theory_Y**
+- **transformational_leadership**
+- **leadership_styles**
+- **environmental_psychology**
+- **human_environment_interaction**
+- **crowding**
+- **overstimulation**
+- **noise**
+- **environmental_management**
+- **environmental_damage**
+- **social_dilemmas**
+- **commons**
+- **environmental_solutions**
+- **policy**
+- **incentives**
+- **legal_psychology**
+- **community_psychology**
+- **sports_psychology**
+- **jury_selection_techniques**
+- **voir_dire**
+- **surveys**
+- **profiling**
+- **juror_bias_factors**
+- **impartiality**
+- **pretrial_publicity**
+- **group_pressure**
+- **community_psychology_ideas**
+- **empowerment**
+- **prevention**
+- **ecology**
+- **career_plan**
+- **goals**
+- **exploration**
+
+### Resources
+
+#### Videos
+
+- [Social Thinking](https://www.youtube.com/watch?v=h6HLDV0T5Q8)
+- [Social Influence](https://www.youtube.com/watch?v=UGxGDdQnC1Y)
+- [Aggression vs. Altruism](https://www.youtube.com/watch?v=XoTx7Rt4dig)
+
+#### Web pages
+
+- [Why It Matters: Social Psychology](https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-5/)
+- [Learning Hacks: How Should I Study Across Topics?](https://courses.lumenlearning.com/waymaker-psychology/chapter/learning-hacks-how-should-i-study-across-topics/)
+- [Introduction to Social Psychology and Self-Presentation](https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-social-psychology-and-self-presentation/)
+- [Social Psychology and Influences on Behavior](https://courses.lumenlearning.com/waymaker-psychology/chapter/what-is-social-psychology/)
+- [Social Norms and Scripts](https://courses.lumenlearning.com/waymaker-psychology/chapter/self-presentation/)
+- [Introduction to Attitudes and Persuasion](https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-attitudes-and-persuasion/)
+- [Attitudes](https://courses.lumenlearning.com/waymaker-psychology/chapter/attitudes-and-persuasion/)
+- [Persuasion](https://courses.lumenlearning.com/waymaker-psychology/chapter/persuasion/)
+- [Introduction to Group Behavior](https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-group-behavior/)
+- [Conformity and Obedience](https://courses.lumenlearning.com/waymaker-psychology/chapter/conformity-compliance-and-obedience/)
+- [Group Behavior](https://courses.lumenlearning.com/waymaker-psychology/chapter/group-behavior/)
+- [The Bystander Effect and Altruism](https://courses.lumenlearning.com/waymaker-psychology/chapter/the-bystander-effect-and-altruism/)
+- [Attraction and Love](https://courses.lumenlearning.com/waymaker-psychology/chapter/prosocial-behavior/)
+- [Psych in Real Life: Love and Pain](https://courses.lumenlearning.com/waymaker-psychology/chapter/psychology-in-real-life-love-and-pain/)
+- [Aggression](https://courses.lumenlearning.com/waymaker-psychology/chapter/aggression/)
+- [Putting It Together: Social Psychology](https://courses.lumenlearning.com/waymaker-psychology/chapter/outcome-prosocial-behavior/)
+- [Discussion: Social Psychology](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-social-psychology/)
+
+#### Textbook sections
+
+- [Social Psychology | What Is Social Psychology?](https://openstax.org/books/psychology-2e/pages/12-1-what-is-social-psychology)
+- [Social Psychology | Self-presentation](https://openstax.org/books/psychology-2e/pages/12-2-self-presentation)
+- [Social Psychology | Attitudes and Persuasion](https://openstax.org/books/psychology-2e/pages/12-3-attitudes-and-persuasion)
+- [Social Psychology | Conformity, Compliance, and Obedience](https://openstax.org/books/psychology-2e/pages/12-4-conformity-compliance-and-obedience)
+- [Social Psychology | Prejudice and Discrimination](https://openstax.org/books/psychology-2e/pages/12-5-prejudice-and-discrimination)
+- [Social Psychology | Aggression](https://openstax.org/books/psychology-2e/pages/12-6-aggression)
+- [Social Psychology | Prosocial Behavior](https://openstax.org/books/psychology-2e/pages/12-7-prosocial-behavior)
+- [Industrial-Organizational Psychology | What Is Industrial and Organizational Psychology?](https://openstax.org/books/psychology-2e/pages/13-1-what-is-industrial-and-organizational-psychology)
+- [Industrial-Organizational Psychology | Industrial Psychology: Selecting and Evaluating Employees](https://openstax.org/books/psychology-2e/pages/13-2-industrial-psychology-selecting-and-evaluating-employees)
+- [Industrial-Organizational Psychology | Organizational Psychology: The Social Dimension of Work](https://openstax.org/books/psychology-2e/pages/13-3-organizational-psychology-the-social-dimension-of-work)
+- [Industrial-Organizational Psychology | Human Factors Psychology and Workplace Design](https://openstax.org/books/psychology-2e/pages/13-4-human-factors-psychology-and-workplace-design)
+- Sensation, Attention, and Perception | Psychology and Your Skill Set: Effective Communication
+- Conditioning and Learning | Observational Learning: Watch It!
+- Sex, Gender, and Sexuality | Sexual Responses, Attitudes, and Behaviors
+- Sex, Gender, and Sexuality | Sexual Relationships
+- Sex, Gender, and Sexuality | Psychology and Your Skill Set: Civic Engagement
+- Social Thinking and Social Influence | The Fundamentals of Social Groups
+- Social Thinking and Social Influence | Attitudes
+- Social Thinking and Social Influence | Social Influence
+- Social Thinking and Social Influence | Psychology and Your Skill Set: Teamwork
+- Prosocial and Antisocial Behavior | Affiliation and Attraction
+- Prosocial and Antisocial Behavior | Prosocial Behavior: Helping Others
+- Prosocial and Antisocial Behavior | Antisocial Behavior: Aggression, Conflict, and Prejudice
+- Applied Psychology | Industrial/Organizational Psychology
+- Applied Psychology | Environmental Psychology
+- Applied Psychology | Legal, Community, and Sports Psychology
+- Applied Psychology | Psychology and Your Skill Set: Career Preparation
+<!-- GENERATED:TOPIC-STUDY-SHEET-10-24-END -->
+
+
+This is a placeholder topic page.
+
+## Big ideas
+
+## Common misconceptions
+
+## Key terms
+
+## Practice quiz
+
+<div data-component="practice-quiz" data-quiz-src="/assets/data/quizzes/quiz_topic_19.json">
+  <p>Practice quiz: coming soon.</p>
+</div>
+
+
+
+
