@@ -12,6 +12,8 @@
 
 [2026 Spring Shared OneDrive Folder](https://jalcollege-my.sharepoint.com/:f:/g/personal/kristenmcconkey_jalc_edu/IgC6IOvuWwggQbU0_3-9NgeYAXTPswpEeA8opZqe-CX2WjY?e=A8pONe)
 
+https://jalcollege-my.sharepoint.com/:f:/g/personal/kristenmcconkey_jalc_edu/IgC6IOvuWwggQbU0_3-9NgeYAXTPswpEeA8opZqe-CX2WjY?e=uw20Wg
+
 [Google Learn About](https://learning.google.com/experiments/learn-about)
 
 ---
