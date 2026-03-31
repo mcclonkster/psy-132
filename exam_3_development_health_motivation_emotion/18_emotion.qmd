@@ -1,0 +1,211 @@
+---
+title: "PSY-132 Topic 18: Emotion"
+subtitle: "Contemporary Teaching Center"
+author: "Kristen"
+date: "2026-03-31"
+origin: "chat"
+format:
+  pptx: default
+---
+
+# Emotion
+
+## Topic 18 contemporary center
+
+What does the best contemporary evidence say about emotion, and how does that help us understand our own lives, other people, and the claims we hear?
+
+---
+
+## Why this topic matters
+
+Emotion matters because it shapes:
+
+- what we notice
+- what we think situations mean
+- how we act
+- how we relate to other people
+- how we interpret ourselves and others
+
+This topic is **not** centered on memorizing old theory names. It is centered on understanding emotion in a way that is useful, current, and evidence-grounded.
+
+---
+
+## Learning objectives
+
+By the end of this topic, students will be able to:
+
+1. **Define** emotion and **distinguish** it from mood.
+2. **Describe** the coordinated components of emotion.
+3. **Explain** how major bodily and brain systems are involved in emotion and **identify** the limits of one-region explanations.
+4. **Explain** how emotions function at personal, relational, and cultural levels.
+5. **Compare** basic emotion and constructed emotion approaches by **identifying** what each treats as central.
+6. **Evaluate** common claims about basic emotions, especially claims about universality, facial expression, and fixed emotion categories.
+7. **Describe** how emotions are expressed, interpreted, and regulated in context.
+
+---
+
+## Emotion vs. mood
+
+### Emotion
+
+- usually tied to a particular event, meaning, or situation
+- tends to be shorter in duration
+- often includes clearer action tendencies and expressions
+
+### Mood
+
+- more diffuse and less tied to one specific event
+- often lasts longer
+- can color how later events are interpreted
+
+### Bottom line
+
+Emotion is usually more **event-focused**. Mood is usually more **background-like**.
+
+---
+
+## Emotion is a coordinated process
+
+Emotion is best taught as a coordinated set of processes rather than a single thing.
+
+Core components include:
+
+- **subjective experience**
+- **physiological change**
+- **appraisal or interpretation**
+- **expression**
+- **action readiness**
+- **social meaning**
+
+No single one of these is the whole emotion by itself (Scherer & Moors, 2019).
+
+---
+
+## Body and brain matter, but no single part explains emotion
+
+Students should understand two things at the same time:
+
+- emotion has a real **bodily** and **biological** basis
+- no single brain area fully explains emotional experience
+
+That means Topic 18 should avoid stale defaults such as:
+
+- “the limbic system is the emotion center”
+- “the amygdala is the fear center”
+
+A better current default is that emotion involves **distributed, process-based biology** shaped by meaning and context (Barrett, 2017; Scherer & Moors, 2019).
+
+---
+
+## What emotions do
+
+Emotions are not just private feelings.
+
+They help people:
+
+- notice what matters
+- interpret events
+- prepare for action
+- communicate to others
+- manage belonging, trust, fairness, status, conflict, and repair
+
+A strong contemporary frame is that emotions have **personal, relational, and cultural functions** (Keltner et al., 2022).
+
+---
+
+## Two live contemporary approaches
+
+### Basic emotion approaches
+
+Treat some emotions as structured, recurring patterns with meaningful regularities.
+
+### Constructed emotion approaches
+
+Treat emotion as emerging from prediction, interoception, categorization, and context rather than as fixed inner packages.
+
+### What students should learn
+
+These are **live contemporary approaches**, not dead history.  
+They differ in what they treat as central, and comparing them helps students see that emotion science is active and contested rather than fully settled (Barrett, 2017; Keltner et al., 2022).
+
+---
+
+## Evaluating claims about “basic emotions”
+
+Students should be able to evaluate claims such as:
+
+- “there are only a few real emotions”
+- “facial expressions tell you exactly what someone feels”
+- “emotion categories are fixed and universal”
+- “a movie model shows literally how emotion works”
+
+Useful takeaways:
+
+- some emotion patterns are structured
+- expressions can be informative
+- context changes interpretation
+- a small fixed inventory should not be treated as the settled endpoint of the field (Cowen & Keltner, 2017; Yeo & Ong, 2025)
+
+---
+
+## Expression, recognition, and regulation in context
+
+Students should leave knowing:
+
+- expressions are **clues, not proof**
+- faces matter, but so do voice, posture, behavior, and situation
+- recognition depends on **context**
+- regulation is not “suppress every feeling”; it is learning how to interpret, respond, and act more effectively
+
+Recent evidence strongly supports appraisal as central to emotion, and recent work on emotion perception shows that context matters greatly when interpreting expression (Steward et al., 2024; Yeo & Ong, 2025).
+
+---
+
+## Using *Inside Out* carefully
+
+*Inside Out* may be used as:
+
+- an entry point
+- a discussion prompt
+- a simplified illustration of emotional patterns and functions
+
+It should **not** be used as:
+
+- the unit’s main theory
+- a literal map of the mind
+- proof that emotions are fixed characters
+- proof that current emotion science is neat, simple, or settled
+
+The film is useful for thinking. It is not the science itself.
+
+---
+
+## What students should leave with
+
+By the end of Topic 18, students should understand that:
+
+- emotions are not random
+- emotions are not a single thing
+- body signals matter, but they do not interpret themselves
+- meaning and context shape emotion
+- culture shapes emotion too
+- other people’s emotions cannot be read with certainty from a face alone
+- public claims about emotion should be judged carefully
+
+That is the center of the unit.
+
+---
+
+## References
+
+Barrett, L. F. (2017). The theory of constructed emotion: An active inference account of interoception and categorization. *Social Cognitive and Affective Neuroscience, 12*(1), 1–23. https://doi.org/10.1093/scan/nsw154
+
+Cowen, A. S., & Keltner, D. (2017). Self-report captures 27 distinct categories of emotion bridged by continuous gradients. *Proceedings of the National Academy of Sciences, 114*(38), E7900–E7909. https://doi.org/10.1073/pnas.1702247114
+
+Keltner, D., Sauter, D., Tracy, J., Cowen, A., Oveis, C., Gordon, A., ... & Cordaro, D. (2022). What basic emotion theory really says for the twenty-first century study of emotion. *Journal of Nonverbal Behavior, 46*, 359–368. https://doi.org/10.1007/s10919-022-00408-0
+
+Scherer, K. R., & Moors, A. (2019). The emotion process: Event appraisal and component differentiation. *Annual Review of Psychology, 70*, 719–745. https://doi.org/10.1146/annurev-psych-122216-011854
+
+Steward, T., Saucier, D., Huang, Y., & Efanov, D. (2024). Appraisal theories of emotion: A meta-analysis of the relationships between appraisal and emotion. *Psychological Bulletin.* Advance online publication. https://doi.org/10.1037/bul0000452
+
+Yeo, J., & Ong, D. C. (2025). The face-context system in emotion perception: A meta-analysis. *Psychological Bulletin.* Advance online publication. https://doi.org/10.1037/bul0000472

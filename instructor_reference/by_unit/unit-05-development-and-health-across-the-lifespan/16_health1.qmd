@@ -1,0 +1,822 @@
+---
+title: "Topic 16: Health"
+subtitle: "Stress, Coping, Behavior, and Evidence"
+author: "Kristen"
+date: "2026-03-24"
+origin: "chat"
+format:
+  pptx:
+    slide-number: true
+execute:
+  echo: false
+---
+
+## Topic 16: Health
+
+::: notes
+Talk track
+- Today we are using health psychology to explain why the same stressful life conditions can lead to different patterns of coping, behavior, and health.
+
+Transition
+- Start with why this matters before we build the model.
+:::
+
+## Why this matters
+
+- The same stressful week can lead to very different outcomes.
+- One person stabilizes.
+- Another spirals.
+
+::: notes
+Talk track
+- Students already know that stress can feel bad. The more useful question is why the same kind of stress can produce different outcomes across people and across time.
+- This lesson is about explaining that difference with a psychological model rather than with vague advice.
+
+Example bank
+- Two students have the same deadlines. One asks for help, sleeps enough, and recovers. The other stays stuck, sleeps badly, and starts skipping routines that usually help.
+- Two patients receive the same diagnosis. One has stable support and flexible time. The other has transportation barriers and high stress at home.
+- Two people both know sleep matters. One has stable habits and a predictable schedule. The other has night shifts, stress cues, and late-night scrolling loops.
+
+Transition
+- Now make the targets visible so students know what they are trying to learn.
+:::
+
+## Learning targets
+
+- Explain stress as a process involving appraisal, body response, coping, and outcomes.
+- Compare coping responses by fit and by later cost.
+- Apply the model to a realistic stress-and-health situation.
+- Evaluate a simple health claim more carefully.
+
+::: notes
+Talk track
+- These targets tell students that today is not just vocabulary. They will explain, compare, apply, and evaluate.
+
+Transition
+- Next, give a quick roadmap so the lesson has visible structure.
+:::
+
+# Roadmap and context
+
+## Today’s roadmap
+
+- Health psychology and the biopsychosocial model
+- Stress over time
+- Coping, support, and health behavior
+- Better questions for health claims
+
+::: notes
+Talk track
+- This is the map for the class. We will start with the frame, move into stress, then coping and behavior, and end with evidence evaluation.
+
+Transition
+- Start the frame with the core claim of health psychology.
+:::
+
+## Health psychology uses a biopsychosocial model
+
+- Health and illness reflect:
+  - biology
+  - behavior
+  - thoughts and emotions
+  - social conditions
+
+::: notes
+Talk track
+- Health psychology does not reduce health to the body alone and it does not reduce health to mindset alone. The model is biopsychosocial because outcomes reflect multiple interacting layers.
+
+Example bank
+- Sleep problems can involve stress, habits, schedule, environment, and body-level arousal.
+- High blood pressure can involve biology, chronic strain, activity, nutrition, medication use, and access to care.
+- Pain can involve tissue damage, fear, expectation, attention, stress, and support.
+
+Common confusion
+- Wrong idea: if health is biopsychosocial, biology matters less.
+- Correction: biology still matters. The model says biology is one part of a larger causal picture.
+
+Transition
+- Move from the broad frame to a short problem students can think about before more explanation.
+:::
+
+# Retrieval or warm-up
+
+## Warm-up
+
+Two students have the same bad week:
+
+- too much work
+- not enough sleep
+- no extra time
+
+By Friday:
+
+- one is stressed but functioning
+- one is stressed and unraveling
+
+What would psychology look at first to explain the difference?
+
+::: notes
+Talk track
+- Give students brief individual think time first, then partner talk.
+- Listen for appraisal, control, coping, support, habits, barriers, and time under strain.
+
+Debrief script
+- If students say personality, push for mechanism. Ask what changed in the process.
+- If students say stress level, ask what might have changed that level.
+
+Transition
+- Now turn that puzzle into the core stress claim for the lesson.
+:::
+
+# Concept build
+
+## Stress is not only a feeling
+
+- Stress is a body-and-mind response to demands.
+
+::: notes
+Talk track
+- Students often treat stress as just a feeling word. Health psychology treats it as a response pattern that includes appraisal, body activation, coping, and later outcomes.
+
+Example bank
+- You notice a message from a professor and your attention narrows immediately.
+- You hear bad news and your body reacts before you have a full plan.
+- You stay keyed up for hours after a stressful event because the system did not shut down quickly.
+
+Common confusion
+- Wrong idea: stress is only whatever someone reports feeling.
+- Correction: subjective feeling matters, but stress also involves body response and behavior over time.
+
+Transition
+- Once stress is framed as a response, the next distinction is short-term versus chronic activation.
+:::
+
+## Short-term and chronic stress are different
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Short-term stress
+
+- can support action
+- brief activation
+- recovery matters
+:::
+
+::: {.column width="50%"}
+### Chronic stress
+
+- repeated or sustained activation
+- harder recovery
+- greater long-term strain
+:::
+
+:::
+
+::: notes
+Talk track
+- Short-term stress can help people mobilize for a challenge. Chronic stress is different because the system stays activated or gets repeatedly reactivated.
+
+Example bank
+- One deadline this afternoon versus nonstop overload for weeks.
+- A single public-speaking moment versus ongoing caregiving stress.
+- One difficult exam versus living with unstable housing and daily uncertainty.
+
+Common confusion
+- Wrong idea: all stress is harmful.
+- Correction: short-term activation can be useful. The problem is repeated, prolonged, or poorly recovered activation.
+
+Transition
+- Students now need the main levers that help explain why stress outcomes differ.
+:::
+
+## What changes stress outcomes
+
+- appraisal
+- perceived control
+- available resources
+- time under strain
+
+::: notes
+Talk track
+- These are four major levers in the stress process. They do not explain everything, but they help explain why the same demand can land differently.
+
+Example bank
+- A message from a professor can feel manageable or threatening.
+- A problem with a clear next step feels different from a problem with no clear action.
+- A student with social support has more usable resources than a student facing the same week alone.
+- One rough day is not the same as months of overload.
+
+Transition
+- Start with appraisal because it is often the first psychological shift in the chain.
+:::
+
+## Appraisal
+
+- What does this mean?
+- How much control do I have?
+- What resources can I use?
+
+::: notes
+Talk track
+- Appraisal is the interpretation step. Students do not need a jargon-heavy definition. They need to understand that appraisal shapes how the demand is read.
+
+Example bank
+- “Can we talk after class?” can be interpreted as manageable or as a threat.
+- A hard class can be read as a challenge or as proof that failure is coming.
+- A new symptom can be read as annoying, scary, or urgent.
+
+Common confusion
+- Wrong idea: appraisal is just positive thinking.
+- Correction: appraisal is not denial. It is the way a person interprets meaning, control, and resources.
+
+Transition
+- Perceived control is important enough to separate from appraisal for one slide.
+:::
+
+## Perceived control matters
+
+- Control changes stress intensity.
+- Control changes coping options.
+
+::: notes
+Talk track
+- People do not need full control for control to matter. Even partial control can change what happens next.
+
+Example bank
+- You can email a professor and make a plan.
+- You cannot change that a family member is in the hospital today.
+- You can control bedtime cues more than you can control your exam schedule.
+
+Common confusion
+- Wrong idea: if you cannot control everything, control does not matter.
+- Correction: even partial control can reduce strain and expand coping choices.
+
+Transition
+- Check this distinction before adding body-level material.
+:::
+
+## Quick Check
+
+Which situation gives a person more usable control right now?
+
+- a missed deadline that can still be addressed
+- a medical update that cannot be changed today
+
+::: notes
+Correct answer
+- The missed deadline usually offers more immediate control.
+
+Common wrong answers
+- Wrong pattern: choosing the medical update because it feels more important.
+- Why it fails: importance and controllability are not the same thing.
+
+Debrief script
+- Control is about what can be changed or acted on, not about how serious the situation feels.
+
+Transition
+- Now connect appraisal and control to the body response.
+:::
+
+## Why the body matters
+
+- Stress affects action now.
+- Stress can also create strain over time.
+
+::: notes
+Talk track
+- This slide is a bridge. Students do not need a physiology lecture. They need a reason that body-level material belongs in a health lesson.
+
+Transition
+- Compare the two broad pathway patterns next.
+:::
+
+## Fast and slower stress pathways
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Sympathetic pathway
+
+- faster activation
+- prepares immediate action
+- short time scale
+:::
+
+::: {.column width="50%"}
+### HPA axis
+
+- slower stress pathway
+- involves cortisol
+- longer time scale
+:::
+
+:::
+
+::: notes
+Talk track
+- Keep this simple. Students need the contrast, not a memorized anatomy chain.
+- The sympathetic pathway is the quick mobilization pattern. The HPA axis is a slower hormonal pathway that helps regulate stress over time.
+
+Example bank
+- Sudden alarm response versus staying activated through an ongoing stressful week.
+- Immediate jolt before a presentation versus slower wear during ongoing overload.
+
+Common confusion
+- Wrong idea: these are separate from psychology.
+- Correction: these are part of the stress process that psychology is trying to explain.
+
+Transition
+- Cortisol is the part most likely to be misunderstood, so correct that immediately.
+:::
+
+## Cortisol needs context
+
+- Cortisol is part of stress response.
+- It is not a simple stress meter.
+
+::: notes
+Talk track
+- Students often learn cortisol as if one number gives a complete answer. That is too simple. Timing matters, context matters, and one reading does not explain the whole stress story.
+
+Example bank
+- Morning and evening readings are not interchangeable.
+- A stressful exam week is not the same as chronic strain over months.
+- One lab measure does not explain someone’s whole health pattern.
+
+Common confusion
+- Wrong idea: high cortisol always means more stress and low cortisol always means less stress.
+- Correction: interpretation depends on timing, context, and the broader pattern.
+
+Transition
+- Move from one signal to the bigger long-term idea.
+:::
+
+## Chronic activation can create wear
+
+- repeated activation
+- harder recovery
+- cumulative wear over time
+
+::: notes
+Talk track
+- This is the student-facing version of allostatic load. The key idea is repeated strain across time, not one dramatic moment.
+
+Example bank
+- One rough day versus weeks of bad sleep and nonstop overload.
+- Daily stress plus limited recovery time.
+- Chronic strain plus low support and few options.
+
+Common confusion
+- Wrong idea: one bad event explains long-term wear.
+- Correction: repeated activation and limited recovery are the main idea.
+
+Transition
+- Now connect stress to health outcomes without overstating the claim.
+:::
+
+## Stress and health links are real but complex
+
+- Stress can shape:
+  - sleep and recovery
+  - attention and decisions
+  - health behavior
+  - immune-related outcomes
+
+::: notes
+Talk track
+- The point is not that stress automatically causes a specific disease. The point is that stress can influence multiple pathways that matter for health.
+
+Example bank
+- Poor sleep after chronic strain
+- More avoidance or substance use during overload
+- Harder recovery when stress and barriers pile up
+
+Common confusion
+- Wrong idea: if stress affects health, stress directly causes disease in a simple one-step way.
+- Correction: the links are real, but they are multi-step and multi-factor.
+
+Transition
+- Once the strain starts, coping helps determine the next part of the path.
+:::
+
+## Coping changes the path
+
+- Coping can change:
+  - the problem
+  - the emotional impact
+  - what happens next
+
+::: notes
+Talk track
+- Coping is not one thing. It changes the situation, the experience, or the downstream consequences.
+
+Example bank
+- Making a plan
+- Calming down enough to think clearly
+- Avoiding a task and creating later cost
+
+Transition
+- Start with the kind of coping that tries to reduce the problem itself.
+:::
+
+## Problem-focused coping
+
+- reduce the problem
+- best when something can change
+
+::: notes
+Talk track
+- Problem-focused coping is a good fit when part of the situation is controllable.
+
+Example bank
+- Email the professor.
+- Break the task into steps.
+- Ask a friend for help with transportation.
+- Reduce task load for the week.
+
+Common confusion
+- Wrong idea: problem-focused coping is always best.
+- Correction: it depends on whether the situation can actually be changed.
+
+Transition
+- Now contrast that with coping that reduces emotional impact.
+:::
+
+## Emotion-focused coping
+
+- reduce distress
+- best when the stressor cannot change right now
+
+::: notes
+Talk track
+- Emotion-focused coping is not automatically avoidance. It can be necessary when the situation cannot be fixed immediately and a person still needs to function.
+
+Example bank
+- Acceptance during an uncontrollable situation
+- Reappraisal before acting
+- Calming strategies that reduce panic enough to think clearly
+
+Common confusion
+- Wrong idea: emotion-focused coping is weak or irrational.
+- Correction: it can be highly effective when the stressor is not currently controllable.
+
+Transition
+- Add one more layer because some coping feels good now but creates later problems.
+:::
+
+## Some coping helps now but costs later
+
+- short-term relief
+- long-term cost
+
+::: notes
+Talk track
+- This is a major reality check for students. Some responses reduce distress in the moment but create worse outcomes later.
+
+Example bank
+- Procrastination
+- Numbing with substances
+- Doomscrolling late at night
+- Skipping sleep to keep working
+
+Common confusion
+- Wrong idea: if it lowers stress right now, it is effective coping.
+- Correction: some responses reduce distress now while increasing cost later.
+
+Transition
+- Use a quick check to sort these coping types before moving on.
+:::
+
+## Quick Check
+
+One stressful situation, three responses:
+
+- make a plan
+- calm down before acting
+- avoid it tonight and deal with it later
+
+Which response:
+
+- reduces the problem
+- reduces the emotional impact
+- may create later cost
+
+::: notes
+Correct answer
+- Make a plan reduces the problem.
+- Calm down before acting reduces the emotional impact.
+- Avoid it tonight and deal with it later may create later cost.
+
+Common wrong answers
+- Wrong pattern: calling all three “good coping.”
+- Why it fails: usefulness depends on fit and on later cost.
+
+Debrief script
+- Ask which response is best only after asking what kind of situation it is and what cost it creates later.
+
+Transition
+- Next, widen the lens from coping inside the person to support and life context around the person.
+:::
+
+## Support, control, and context change outcomes
+
+- social support
+- perceived control
+- life context
+
+::: notes
+Talk track
+- These factors can buffer strain, expand options, and change how hard it is for chronic stress to affect the body and behavior over time.
+
+Example bank
+- A ride to the clinic changes adherence.
+- Flexible work hours change sleep and recovery.
+- A supportive friend changes coping options during overload.
+
+Common confusion
+- Wrong idea: support helps everyone in exactly the same way.
+- Correction: support helps through different pathways and does not work identically in every case.
+
+Transition
+- Now apply that logic to everyday health behavior.
+:::
+
+## Health behavior is not just willpower
+
+- behavior reflects:
+  - learning
+  - environment
+  - habit loops
+  - stress
+
+::: notes
+Talk track
+- Students often moralize health behavior. This slide corrects that. Knowledge matters, but behavior is shaped by cues, routines, barriers, stress, and context.
+
+Example bank
+- Knowing sleep matters but getting pulled into a late-night cue-routine loop
+- Knowing medication matters but missing doses during overload
+- Wanting to exercise but lacking time, safety, or transportation
+
+Common confusion
+- Wrong idea: if people know better, they should do better.
+- Correction: behavior is shaped by much more than knowledge or willpower.
+
+Transition
+- Show one simple mechanism with a concrete habit example.
+:::
+
+## Habit loop example
+
+- cue
+- routine
+- consequence
+
+::: notes
+Talk track
+- Keep this simple and concrete. A habit loop is useful here because it explains how stress and environment shape repeated behavior.
+
+Example bank
+- Cue: stress at night. Routine: endless scrolling. Consequence: short-term relief and worse sleep.
+- Cue: stress after class. Routine: quick walk and breathing. Consequence: less arousal and clearer thinking.
+- Cue: medication near the coffee maker. Routine: take medication. Consequence: more stable adherence.
+
+Transition
+- Move from everyday routines to the formal health-behavior term students may encounter.
+:::
+
+## Adherence over time
+
+- Adherence is shaped by:
+  - stress
+  - barriers
+  - memory
+  - support
+  - routine
+
+::: notes
+Talk track
+- Adherence means following a treatment or health plan over time. It is not just a willpower issue. It reflects barriers, overload, support, and habit structure.
+
+Example bank
+- Missing medication during a chaotic week
+- Missing physical therapy when transportation falls through
+- Skipping appointments because time and stress pile up
+
+Common confusion
+- Wrong idea: nonadherence means the person does not care.
+- Correction: nonadherence often reflects strain, barriers, forgetfulness, cost, or unstable routines.
+
+Transition
+- Now add one belief-related example that also teaches scientific caution.
+:::
+
+## Beliefs can change symptoms and outcomes
+
+- expectation matters
+- placebo effects are real
+
+::: notes
+Talk track
+- Placebo and expectation effects show that beliefs can change symptoms and outcomes. This does not mean symptoms are fake. It means expectation can shape experience and response.
+
+Example bank
+- People report less pain when they expect a treatment to help.
+- Expectation can change symptom perception and comfort.
+- Belief can alter outcomes without proving that every treatment claim is valid.
+
+Common confusion
+- Wrong idea: placebo means it was all in someone’s head.
+- Correction: placebo effects are real effects of expectation and context, not proof that symptoms were imaginary.
+
+Transition
+- That is exactly why strong health claims need strong evidence.
+:::
+
+## Why health claims need controls
+
+- good comparisons matter
+- replication matters
+
+::: notes
+Talk track
+- Expectation effects are one reason controlled studies matter. Without controls, improvement can be misread as proof of a treatment effect when other explanations are possible.
+
+Example bank
+- People improve because they expected improvement.
+- People improve because symptoms naturally fluctuate.
+- People improve because the comparison group was different at baseline.
+
+Transition
+- End the concept build with a short framework students can actually use on health headlines.
+:::
+
+## How to evaluate a health headline
+
+Ask:
+
+- correlation or causation
+- effect size
+- confounds addressed
+
+::: notes
+Talk track
+- This is the scientific-literacy payoff. Students should learn a short set of questions they can actually use outside class.
+
+Example bank
+- Did the study show a link or test a cause?
+- Was the effect tiny or meaningful?
+- Did the study address access, baseline risk, and stress exposure?
+
+Common confusion
+- Wrong idea: if a headline says “linked to,” it proved cause.
+- Correction: correlation is not causation, and even good studies still need careful interpretation.
+
+Transition
+- Now students are ready to apply the full model in a realistic scenario.
+:::
+
+# Student processing activity
+
+## Processing scenario
+
+A student is:
+
+- working many hours
+- behind on two assignments
+- sleeping badly
+- skipping routines that usually help
+
+::: notes
+Talk track
+- This scenario is intentionally ordinary. The goal is not drama. The goal is to trace a realistic stress-and-health chain.
+
+Transition
+- Give the group a clear output structure next.
+:::
+
+## Group task
+
+Identify:
+
+- one biopsychosocial factor
+- one likely appraisal
+- one body-level stress effect
+- one coping response
+- one possible later cost
+- one support or context factor
+- one health behavior effect
+
+::: notes
+Talk track
+- Students should produce one specific answer for each line, not a vague paragraph.
+- Push for mechanism, not just labels.
+
+Debrief script
+- Ask groups to compare where they agreed and where their chains differed.
+
+Transition
+- After the activity, bring the class back together for comparison and correction.
+:::
+
+# Debrief and feedback
+
+## Debrief
+
+- What did your group predict first?
+- Where did your chains differ?
+
+::: notes
+Talk track
+- Use this to surface different interpretations before correcting them.
+- Ask which part of the chain seemed most important in each group’s answer.
+
+Transition
+- Then correct the predictable errors directly.
+:::
+
+## Common mistakes to correct
+
+- stress is not only a feeling
+- relief now is not always better later
+- health behavior is not just willpower
+- beliefs matter, but that does not prove every claim
+- support does not work the same way in every case
+
+::: notes
+Talk track
+- These are the predictable misunderstandings for this lesson.
+- Keep correction concise and tied to what students actually said.
+
+Transition
+- Close by pulling the model back together.
+:::
+
+# Synthesis or application
+
+## Synthesis
+
+- Health reflects body, behavior, mind, and context.
+- Chronic strain changes the picture.
+- Coping, support, and habits shape outcomes.
+- Good health claims need good evidence.
+
+::: notes
+Talk track
+- This slide is the lesson in compressed form. If students leave with four usable ideas, these are the four.
+
+Transition
+- Ask one final applied question before closing.
+:::
+
+## Applied question
+
+Why can the same stressful life conditions produce different health outcomes?
+
+::: notes
+Talk track
+- Ask for answers using the lesson model: appraisal, control, body response, coping, support, habit loops, and context.
+
+Transition
+- Now connect this lesson to the next topic.
+:::
+
+# Closure
+
+## Bridge to Topic 17
+
+- Health behavior unfolds over time.
+- Motivation helps explain starting, persisting, and stopping.
+- Next: needs, incentives, goals, and self-regulation
+
+::: notes
+Talk track
+- This bridge works because today’s lesson showed that health behavior is not just knowledge. It is behavior over time under stress, cues, and constraints.
+
+Transition
+- End with an exit ticket that checks both content and evidence evaluation.
+:::
+
+# Exit ticket
+
+## Exit ticket
+
+- Which response best fits a controllable stressor?
+- Which question best checks whether a headline proved cause?
+- In 1 to 3 sentences, explain one way support, control, or context could change a health outcome during a stressful week.
+
+::: notes
+Correct answer
+- A response that targets the problem best fits a controllable stressor.
+- Asking whether the result is correlational or causal is the first step in checking a headline.
+
+Common wrong answers
+- Wrong pattern: choosing the response that feels best immediately without considering control or later cost.
+- Why it fails: coping fit depends on what can change and what happens later.
+- Wrong pattern: focusing only on whether the finding sounds believable.
+- Why it fails: plausibility is not the same as evidence quality.
+
+Debrief script
+- Collect responses individually. Use them to see whether students can apply both the stress model and the evidence questions.
+:::

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation: Psychological Processes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* NORD PALETTE CONSTANTS */
+        /* Polar Night: #2E3440 (0), #3B4252 (1), #434C5E (2), #4C566A (3) */
+        /* Snow Storm: #D8DEE9 (4), #E5E9F0 (5), #ECEFF4 (6) */
+        /* Frost: #8FBCBB (7), #88C0D0 (8), #81A1C1 (9), #5E81AC (10) */
+        /* Aurora: #A3BE8C (14 - Green), #B48EAD (15 - Purple) */
+
+        * { box-sizing: border-box; }
+        body { 
+            background-color: #D8DEE9; /* Nord 4 */
+            display: grid; 
+            gap: 60px; 
+            grid-template-columns: 1fr; 
+            margin: 0; 
+            min-height: 100vh; 
+            padding: 80px 0; 
+            place-items: center; 
+        }
+
+        .slide-container {
+            align-items: center;
+            background-color: #ECEFF4; /* Nord 6 */
+            border-radius: 4px; /* Nord aesthetic is often flatter/sharper */
+            box-shadow: 0 10px 30px rgba(46, 52, 64, 0.15);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lato', sans-serif;
+            height: 720px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 80px;
+            position: relative;
+            width: 1280px;
+            border: 1px solid #D8DEE9;
+        }
+
+        /* TYPOGRAPHY */
+        .slide-container h1, .slide-container h2, .slide-container h3 { 
+            color: #2E3440; /* Nord 0 */
+            font-weight: 700; 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; 
+            line-height: 1.2; 
+        }
+        .slide-container h1 { font-size: 68px; margin-bottom: 20px; color: #5E81AC; /* Nord 10 */ }
+        
+        .slide-container .slide-title { 
+            font-size: 38px; 
+            font-weight: 600; 
+            margin-bottom: 50px; 
+            text-align: left; 
+            width: 100%; 
+            border-left: 10px solid #81A1C1; /* Nord 9 */
+            padding-left: 25px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            color: #434C5E; /* Nord 2 */
+        }
+
+        .slide-container p, .slide-container li { 
+            color: #4C566A; /* Nord 3 */
+            font-size: 22px; 
+            line-height: 1.6; 
+        }
+        
+        .subtitle { font-size: 28px; color: #4C566A; font-weight: 400; margin-top: 15px; }
+
+        /* DECORATIVE ELEMENTS */
+        .slide-container::after {
+            content: ''; position: absolute; top: 0; right: 0; width: 400px; height: 400px;
+            background: linear-gradient(135deg, rgba(143, 188, 187, 0.1) 0%, transparent 70%); 
+            z-index: 0;
+        }
+
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; z-index: 1; }
+
+        /* TILES */
+        .tiled-content { display: flex; gap: 30px; width: 100%; align-items: stretch; }
+        .tile { 
+            flex: 1; 
+            background: #E5E9F0; /* Nord 5 */
+            border-radius: 2px; 
+            padding: 45px; 
+            border-top: 6px solid #88C0D0; /* Nord 8 */
+            display: flex; 
+            flex-direction: column; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .tile .icon { font-size: 50px; color: #5E81AC; margin-bottom: 30px; }
+        .tile h3 { font-size: 26px; margin-bottom: 20px; color: #3B4252; }
+
+        /* LAYOUTS */
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; width: 100%; }
+        .image-wrapper { 
+            border-radius: 4px; 
+            overflow: hidden; 
+            height: 420px; 
+            box-shadow: 0 15px 35px rgba(46, 52, 64, 0.1); 
+            border: 4px solid #FFF; 
+        }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(10%) contrast(105%); }
+        .image-wrapper.contain img { object-fit: contain; background: #E5E9F0; }
+
+        .bullet-list { list-style: none; padding: 0; margin: 0; }
+        .bullet-list li { position: relative; padding-left: 50px; margin-bottom: 30px; font-size: 24px; color: #3B4252; }
+        .bullet-list li i { position: absolute; left: 0; top: 6px; color: #A3BE8C; /* Nord 14 - Green */ font-size: 26px; }
+
+        /* TABLES */
+        .table-layout table { width: 100%; border-collapse: collapse; border: 1px solid #D8DEE9; }
+        .table-layout th { background: #434C5E; color: #ECEFF4; padding: 24px; text-align: left; font-size: 22px; text-transform: uppercase; letter-spacing: 1px; }
+        .table-layout td { padding: 22px; border-bottom: 1px solid #D8DEE9; font-size: 20px; background: #FFF; color: #2E3440; }
+        .table-layout tr:nth-child(even) td { background: #F8FAFB; }
+
+        /* HIGHLIGHTS */
+        .number-box { text-align: center; background: #E5E9F0; padding: 40px; border-radius: 50%; width: 300px; height: 300px; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; border: 8px solid #88C0D0; }
+        .number { font-size: 130px; font-weight: 700; color: #5E81AC; line-height: 1; }
+        .number-label { font-size: 24px; font-weight: 700; color: #2E3440; margin-top: 10px; }
+
+        /* TIMELINE */
+        .timeline-layout { display: flex; justify-content: space-between; position: relative; padding-top: 60px; }
+        .timeline-line { position: absolute; top: 132px; left: 5%; width: 90%; height: 3px; background: #D8DEE9; z-index: 0; }
+        .timeline-item { flex: 1; text-align: center; position: relative; z-index: 1; padding: 0 20px; }
+        .timeline-dot { width: 28px; height: 28px; background: #81A1C1; border-radius: 50%; margin: 0 auto 35px; border: 6px solid #ECEFF4; box-shadow: 0 0 0 2px #81A1C1; }
+        .timeline-item h3 { color: #5E81AC; font-size: 24px; margin-bottom: 20px; }
+
+        /* SPECIAL LAYOUTS */
+        .bleed-image-layout { display: grid; grid-template-columns: 1fr 1fr; padding: 0 !important; gap: 0 !important; }
+        .bleed-image-layout .content-container { padding: 80px; }
+        .bleed-image-side { width: 100%; height: 720px; object-fit: cover; }
+
+        .full-bg-image { background-size: cover; background-position: center; position: relative; }
+        .full-bg-overlay { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            background: linear-gradient(90deg, #ECEFF4 30%, rgba(236, 239, 244, 0.8) 60%, transparent 100%); 
+        }
+
+        /* SECTION SLIDE */
+        .section-slide { background-color: #3B4252; color: #ECEFF4; }
+        .section-slide h2 { color: #88C0D0 !important; }
+        .section-slide p { color: #D8DEE9 !important; }
+        .section-slide hr { width: 120px; height: 6px; background: #8FBCBB; border: none; margin: 40px auto; }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide-container" id="slide1">
+    <div style="text-align: center; max-width: 1000px;">
+        <p style="text-transform: uppercase; letter-spacing: 4px; color: #81A1C1; font-weight: 700; margin-bottom: 20px;">General Psychology (PSY-132)</p>
+        <h1>Motivation</h1>
+        <div style="height: 4px; width: 200px; background: #A3BE8C; margin: 30px auto;"></div>
+        <p class="subtitle">Exploring Biological, Cognitive, Humanistic, and Social Processes</p>
+        <p style="margin-top: 60px; color: #4C566A; font-weight: 700;">Kristen H. McConkey</p>
+    </div>
+</div>
+
+<!-- Slide 2: Section Title -->
+<div class="slide-container section-slide" id="slide2">
+    <div style="text-align: center;">
+        <h2 style="font-size: 72px;">Today's Question</h2>
+        <hr>
+        <p style="font-size: 38px; font-weight: 300;">"Why do people do what they do?"</p>
+    </div>
+</div>
+
+<!-- Slide 3: Learning Targets -->
+<div class="slide-container" id="slide3">
+    <h2 class="slide-title">Learning Targets</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+                <h3>Explain</h3>
+                <p>Analyze everyday behavior using at least <strong>two</strong> distinct motivational perspectives.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-flask"></i></div>
+                <h3>Predict</h3>
+                <p>Turn explanations into <strong>testable predictions</strong> about specific human observations.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                <h3>Evaluate</h3>
+                <p>Determine what evidence would <strong>strengthen</strong> or <strong>weaken</strong> a psychological claim.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4: Case Studies -->
+<div class="slide-container" id="slide4">
+    <h2 class="slide-title">Our Working Examples</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="tile" style="border-top-color: #B48EAD;">
+                <h3>The Exam-Day Choice</h3>
+                <p>A student skips lunch before a high-stakes exam. They feel physiological hunger, stress, and mental fatigue. <strong>What drives their next decision?</strong></p>
+            </div>
+            <div class="tile" style="border-top-color: #B48EAD;">
+                <h3>The Social Club</h3>
+                <p>A student joins a new organization to 'fit in' but stays late mainly to talk to one specific mentor. <strong>Is this affiliation or intimacy?</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 5: The Process -->
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">The Psychological Lens</h2>
+    <div class="content-area">
+        <div class="two-column" style="align-items: center;">
+            <div class="number-box">
+                <div class="number">04</div>
+                <div class="number-label">Core Steps</div>
+            </div>
+            <ul class="bullet-list">
+                <li><i class="fa-solid fa-quote-left"></i> <strong>Claim:</strong> Identify the likely motive.</li>
+                <li><i class="fa-solid fa-circle-question"></i> <strong>Logic:</strong> If X is true, then Y should happen.</li>
+                <li><i class="fa-solid fa-bolt"></i> <strong>Prediction:</strong> A specific observable event.</li>
+                <li><i class="fa-solid fa-magnifying-glass"></i> <strong>Evidence:</strong> Data that confirms or refutes.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Homeostasis -->
+<div class="slide-container" id="slide6">
+    <h2 class="slide-title">Biological Regulation</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <h3 style="color: #5E81AC; margin-bottom: 20px;">Homeostasis & Drive</h3>
+                <p>Our bodies work like a thermostat to maintain internal stability.</p>
+                <p><strong>Drive Theory:</strong> Physiological needs create psychological "pushes" to act.</p>
+                <div style="margin-top: 40px; padding: 30px; background: #D8DEE9; border-left: 8px solid #8FBCBB;">
+                    <p style="margin:0; font-style: italic; font-size: 20px;">"Motivation is the body's way of telling the mind to fix a survival-related problem."</p>
+                </div>
+            </div>
+            <div class="image-wrapper contain">
+                <img src="https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?auto=format&fit=crop&q=80&w=1000" alt="Thermostat and temperature concept">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 7: Drive Cycle -->
+<div class="slide-container" id="slide7">
+    <h2 class="slide-title">The Drive-Reduction Cycle</h2>
+    <div class="content-area">
+        <div class="timeline-layout">
+            <div class="timeline-line"></div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Need</h3>
+                <p>Physiological deficit (e.g., low blood sugar)</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Drive</h3>
+                <p>Internal tension (Feeling of hunger)</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Behavior</h3>
+                <p>Goal-directed action (Eating a snack)</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Satiation</h3>
+                <p>Homeostasis restored, drive reduced</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 8: Mindsets -->
+<div class="slide-container" id="slide10">
+    <h2 class="slide-title">Cognitive Mindsets</h2>
+    <div class="content-area">
+        <div class="table-layout">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Context</th>
+                        <th>Fixed Mindset</th>
+                        <th>Growth Mindset</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Core Belief</strong></td>
+                        <td>Ability is static/innate</td>
+                        <td>Ability is developed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Struggle</strong></td>
+                        <td>Sign of low intelligence</td>
+                        <td>A necessary part of learning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feedback</strong></td>
+                        <td>A threat to self-image</td>
+                        <td>Useful info for improvement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Outcome</strong></td>
+                        <td>Plateausing early</td>
+                        <td>Higher levels of achievement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 9: Maslow -->
+<div class="slide-container full-bg-image" id="slide11" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1500');">
+    <div class="full-bg-overlay"></div>
+    <div class="content-area" style="max-width: 650px; position: relative;">
+        <h2 style="font-size: 52px; margin-bottom: 25px;">The Hierarchy of Needs</h2>
+        <p>Maslow organized human motives into a pyramid, suggesting we prioritize survival before self-fulfillment.</p>
+        <ul class="bullet-list" style="margin-top: 40px;">
+            <li><i class="fa-solid fa-shield-halved" style="color:#5E81AC"></i> <strong>Basic:</strong> Food, Shelter, Safety</li>
+            <li><i class="fa-solid fa-users" style="color:#81A1C1"></i> <strong>Social:</strong> Belonging & Esteem</li>
+            <li><i class="fa-solid fa-star" style="color:#A3BE8C"></i> <strong>Growth:</strong> Self-Actualization</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Slide 10: Social Motives -->
+<div class="slide-container" id="slide12">
+    <h2 class="slide-title">Social Motives</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-award"></i></div>
+                <h3>Achievement</h3>
+                <p>The drive to succeed, master skills, and overcome obstacles. Linked to high persistence.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                <h3>Affiliation</h3>
+                <p>The need for social connection and being part of a group. Crucial for evolutionary survival.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Intimacy</h3>
+                <p>The desire for close, personal, and emotionally deep relationships with specific others.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 11: Exit Ticket -->
+<div class="slide-container section-slide" id="slide14">
+    <div style="text-align: center; max-width: 900px;">
+        <h2 style="font-size: 64px; margin-bottom: 40px;">Exit Ticket</h2>
+        <div style="text-align: left; background: #434C5E; padding: 50px; border-radius: 4px; border-left: 10px solid #A3BE8C;">
+            <p style="color: #ECEFF4 !important; font-size: 24px; margin-bottom: 25px;"><strong>1.</strong> Which theory best explains "stress-eating" during an exam?</p>
+            <p style="color: #ECEFF4 !important; font-size: 24px; margin-bottom: 25px;"><strong>2.</strong> Rephrase: "I'm just not a math person" into a growth mindset.</p>
+            <p style="color: #ECEFF4 !important; font-size: 24px;"><strong>3.</strong> Pick one social motive and explain why it matters for student success.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

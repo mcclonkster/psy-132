@@ -328,6 +328,8 @@ permalink: /units/unit-05-development-and-health-across-the-lifespan/topic-16-he
 - [Putting It Together: Stress, Lifestyle, and Health](https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-stress-lifestyle-and-health/)
 - [Discussion: Stress, Lifestyle, and Health](https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-stress-lifestyle-and-health/)
 
+https://pressbooks.cuny.edu/jjcpsy101/chapter/what-is-stress/
+
 #### Textbook sections
 
 - [States of Consciousness | Sleep Problems and Disorders](https://openstax.org/books/psychology-2e/pages/4-4-sleep-problems-and-disorders)

@@ -11,6 +11,8 @@ format:
   html:
     toc: true
     toc-depth: 3
+  pptx:
+    slide-number: true
 ---
 
 ## What this topic covers
@@ -31,22 +33,6 @@ Visual cue: Stress process → behavior and physiology → health outcomes, with
 
 ::: notes
 Guardrail: avoid one-to-one claims like “stress causes disease.”
-:::
-
-## Stress is a process
-
-```{mermaid}
-flowchart LR
-S[Stressor] --> A[Appraisal]
-A --> P[Physiology]
-A --> C[Coping]
-P --> O[Outcomes]
-C --> O
-O --> A
-```
-
-::: notes
-Caption cue: the same stressor can produce different outcomes depending on appraisal and coping.
 :::
 
 ## Appraisal shapes stress

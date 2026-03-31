@@ -1,0 +1,426 @@
+---
+title: "Motivation: Biological, Cognitive, Humanistic, and Social Processes"
+subtitle: "General Psychology"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    controls: true
+    progress: true
+    center: false
+    transition: fade
+  html:
+    toc: true
+    toc-depth: 2
+  pptx:
+    slide-number: true
+---
+
+## Motivation
+
+### Biological, Cognitive, Humanistic, and Social Processes
+
+- General Psychology
+- Today’s question: **Why do people do what they do?**
+- We will use motivation theories to explain everyday behavior, not just define terms.
+
+::: notes
+- Script: Open with the big framing question: “Why do people do what they do?” Tell students that today’s goal is to use motivation theories as tools for explanation, not just to collect vocabulary.
+- Recurring examples for instructor planning: exam-day student; social decision student.
+- Instructor move: Have everyone silently think of one recent behavior they chose on purpose: studying, procrastinating, eating, texting a friend, joining a group, skipping sleep, or practicing a skill.
+- Time: 30–45 seconds
+:::
+
+## Agenda
+
+- What motivation is
+- Two examples we will keep coming back to
+- How psychologists move from claim to prediction to evidence
+- Homeostasis, drive theory, and hunger
+- Cognitive and social motives later in the lesson
+- Exit ticket
+
+::: notes
+- Script: Preview the flow briefly. Tell students that the lesson uses a small number of recurring examples so they can compare theories instead of starting over on every slide.
+- Instructor move: Tell students, “Your job today is to explain behavior with more than one lens.”
+- Time: 30–45 seconds
+:::
+
+## Learning target
+
+- Explain one everyday behavior using at least **two** motivation perspectives from this lesson.
+- Turn one explanation into a **testable prediction**.
+- Identify what evidence would **support** that explanation and what evidence would **weaken** it.
+
+### Why it matters
+
+- In psychology, a good explanation does more than name a term.
+- It helps us compare explanations, make predictions, and look for evidence.
+
+::: notes
+- Script: Say the target plainly, then rephrase it in plain language: “By the end, you should be able to explain a behavior, make a prediction, and say what evidence would matter.”
+- Quick check: Ask, “Which is stronger: naming a theory, or using it to make a prediction?” Expect: using it to make a prediction.
+- Response plan: If students answer vaguely, restate the target with an example: “Saying ‘drive theory’ is step one. Saying what we would expect to observe if hunger is driving behavior is step two.”
+- Time: 45–60 seconds
+:::
+
+## Two examples for today
+
+### Example 1: before a difficult exam
+
+- A student skipped lunch before a difficult afternoon exam.
+- They feel hungry, stressed, and distracted.
+- They have to decide whether to keep studying, eat, or stop for now.
+
+### Example 2: a social decision
+
+- A student joins a club, wants to fit in, and texts one close friend for support.
+- The same behavior may reflect belonging, achievement, or intimacy.
+
+::: notes
+- Script: “Let’s test these ideas on two situations.” Tell students these are the two examples the lesson will return to so the theories stay connected across the class.
+- Instructor move: Everybody answer in your head first: “Which example feels easier to explain right now?”
+- Why this slide matters: It reduces cognitive overload and supports retrieval across the lesson.
+- Time: 45–60 seconds
+:::
+
+## How psychologists work with explanations
+
+- **Claim:** What motive might be shaping this behavior?
+- **Question:** If that explanation is right, what should we expect to observe?
+- **Prediction:** What should happen in a specific situation?
+- **Evidence:** What result would support the explanation, and what result would weaken it?
+
+### Example
+
+- **Claim:** Hunger is affecting the student’s behavior.
+- **Prediction:** If they have gone hours without food, food cues and eating motivation should increase.
+- **Evidence:** Stronger hunger signals and eating after deprivation would fit that explanation.
+
+::: notes
+- Script: Model the move slowly. “Psychology does not stop at naming a motive. We ask what we would expect to see if that explanation is correct.”
+- Quick check: Ask, “What would weaken the hunger explanation?” Strong answers: the student ate recently, is not physiologically hungry, or is mainly eating because friends are eating.
+- Response plan: If students struggle, give two alternatives and ask which one counts as supporting evidence and which one counts as weakening evidence.
+- Time: 1–2 minutes
+:::
+
+## Homeostasis and drive theory
+
+- Our bodies work to maintain **homeostasis**, a relatively stable internal state.
+- A disruption in that balance can create a physiological need.
+- **Drive theory** proposes that bodily needs can create a psychological drive that pushes behavior.
+- One common goal of behavior is to reduce the drive and restore balance.
+
+### Applying it to the exam-day example
+
+- Skipping lunch can produce a biological need.
+- That need may be experienced psychologically as hunger.
+- The student becomes more likely to seek food and reduce the drive.
+
+::: notes
+- Script: Reattach the official labels clearly: homeostasis, physiological need, drive theory, drive reduction.
+- Plain-language first: “Your body is off balance, you feel that as hunger, and that pushes behavior.”
+- Quick retrieval: Ask students to explain the example in plain language, then restate it using the official terms.
+- Response plan: If students confuse the need with the drive, clarify the sequence: bodily condition first, psychological drive second, goal-directed behavior next.
+- Time: 60–90 seconds
+:::
+
+## A simple drive cycle
+
+- Biological need
+- Psychological drive
+- Goal-directed behavior
+- Reduced drive and restored balance
+
+::: notes
+- Concepts covered: sequence from need to behavior.
+- Script: Walk slowly through the cycle. A student skips lunch, begins to feel hungry, starts thinking about food, and then grabs something to eat after class. The point is not that all motivation works this way, but that this model is useful for many basic biological needs.
+- Time: 45–75 seconds
+:::
+
+## Habits can grow around drive reduction
+
+- Behaviors that successfully reduce a drive can become more likely in the future.
+- Over time, people often repeat the same response to the same internal state.
+- This helps explain why routines can feel automatic.
+- It also helps explain why some coping patterns are easy to repeat, even when they are not ideal.
+
+::: notes
+- Concepts covered: habits; repeated drive reduction; routine formation.
+- Script: Use a familiar example such as exhaustion, caffeine, and routine. A repeated response can become the default answer to a feeling state. This is a good moment to remind students that understanding a pattern does not mean the pattern is healthy.
+- Time: 60–90 seconds
+:::
+
+## Hunger is a biological motive with clear signals
+
+- Hunger helps ensure that we seek food often enough to survive.
+- Empty stomach sensations, changes in blood glucose, and signals from organs all contribute to hunger.
+- These signals are integrated by brain systems involved in regulation, including the hypothalamus.
+- Hunger is a useful example of how body states shape behavior.
+
+::: notes
+- Concepts covered: hunger; physiological signaling; hypothalamus.
+- Script: Ask for a relatable example such as stomach growling during class or during a test. Emphasize that hunger is not just a vague feeling. It reflects coordinated signaling between the body and the brain.
+- Time: 60–90 seconds
+:::
+
+## Satiation helps stop eating
+
+- Motivation is not only about starting behavior.
+- It also involves cues that the goal has been met.
+- **Satiation** is the feeling of fullness or satisfaction that helps end eating.
+- Feedback from the digestive system, blood chemistry, and stored energy all help regulate this process.
+
+::: notes
+- Concepts covered: satiation; satiety signals; regulation.
+- Script: Connect this back to homeostasis. The body does not just push behavior on; it also helps turn behavior off once enough food has been consumed. Students often understand motivation better when they see both the “go” side and the “stop” side.
+- Time: 60–90 seconds
+:::
+
+## Biology starts the drive, but culture shapes the menu
+
+- The drive to eat has a biological basis.
+- Preferences about *what* counts as appealing food are shaped by learning and culture.
+- Comfort foods, food traditions, and taste expectations vary widely across groups.
+- Many behaviors make more sense when we look at biology and culture together.
+
+::: notes
+- Concepts covered: biology–culture interaction; food preference; learning.
+- Script: Ask students what foods feel normal, comforting, strange, or unappealing to them. Then point out that the need to eat is widespread, but the meaning and expression of eating are culturally shaped.
+- Time: 60–90 seconds
+:::
+
+## Motivation is also cognitive
+
+- People do not act only on bodily drives.
+- Expectations, interpretations, and beliefs about ability also influence motivation.
+- These cognitive factors can change whether a person starts, avoids, or persists at a task.
+- Academic behavior is a good place to see this clearly.
+
+::: notes
+- Concepts covered: cognitive motivation; expectations; persistence.
+- Script: Transition from hunger to schoolwork. A student may have the ability to begin a task, but whether they try, keep going, or give up often depends on how they interpret the challenge.
+- Time: 45–75 seconds
+:::
+
+## Self-efficacy shapes effort and persistence
+
+- **Self-efficacy** is a person’s belief that they can successfully carry out a task.
+- Higher self-efficacy is often linked to greater effort, persistence, and willingness to face difficulty.
+- Lower self-efficacy can make a challenge feel less worth attempting.
+- Beliefs about capability do not guarantee success, but they can influence motivation in important ways.
+
+::: notes
+- Concepts covered: self-efficacy; effort; persistence.
+- Script: Keep the claim careful here. Self-efficacy is not magic, and confidence alone is not enough. The teaching point is that beliefs about capability can shape whether students engage with difficult work long enough to learn from it.
+- Time: 60–90 seconds
+:::
+
+## Mindsets are beliefs about the nature of ability
+
+- Research on mindsets focuses on how people think about intelligence and ability.
+- A **fixed mindset** treats ability as relatively unchangeable.
+- A **growth mindset** treats ability as something that can develop over time.
+- These beliefs can shape how students interpret effort, mistakes, and challenge.
+
+::: notes
+- Concepts covered: fixed mindset; growth mindset.
+- Script: Use everyday examples such as “I’m just bad at math” or “I can get better with practice and feedback.” Keep the tone measured. The point is not that one phrase changes a life overnight. The point is that beliefs about ability can guide choices and reactions over time.
+- Time: 60–90 seconds
+:::
+
+## Mindsets can influence how students respond to difficulty
+
+:::: columns
+::: column
+**More fixed-mindset pattern**
+
+- Avoids challenge more often
+- Treats struggle as evidence of low ability
+- Sees mistakes as threatening
+- May disengage after failure
+:::
+
+::: column
+**More growth-mindset pattern**
+
+- Accepts challenge more readily
+- Treats struggle as part of learning
+- Uses mistakes as information
+- More likely to try a new strategy
+:::
+::::
+
+::: notes
+- Concepts covered: mindset patterns; response to challenge.
+- Script: Present these as tendencies, not absolute personality types. Students can show both patterns in different classes or at different moments. That keeps the science more accurate and helps students reflect without feeling boxed in.
+- Time: 75–105 seconds
+:::
+
+## Praise can send different messages
+
+- Feedback can shape what students think success means.
+- Praise focused only on being “smart” can sometimes make students more cautious about failure.
+- Praise that recognizes effort, strategy, and revision can support persistence.
+- The larger lesson is that feedback influences motivation when it changes how students interpret success and struggle.
+
+::: notes
+- Concepts covered: praise; feedback; meaning of effort.
+- Script: Keep this nuanced. The problem is not using a positive word. The issue is what kind of explanation the praise teaches. If feedback suggests that success comes only from an inborn trait, students may become more protective of that label.
+- Time: 60–90 seconds
+:::
+
+## Maslow offered a broad framework for human needs
+
+- Abraham Maslow proposed a hierarchy of needs as a way to organize human motives.
+- The model is often shown as a pyramid.
+- It moves from basic survival needs toward needs involving belonging, esteem, and fulfillment.
+- It remains influential because it is intuitive, even though it is not a strict law of behavior.
+
+::: notes
+- Concepts covered: Maslow; hierarchy of needs; influence and limits.
+- Script: Introduce Maslow as a broad organizing framework rather than a perfect map. Students usually remember it well, so it is useful, but it should be taught with caution.
+- Time: 60–90 seconds
+:::
+
+## Lower-level needs: physiological and safety
+
+- **Physiological needs** include food, water, warmth, rest, and shelter.
+- **Safety needs** include security, stability, and protection.
+- When these needs are unmet, they can dominate attention.
+- This helps explain why stress, exhaustion, and scarcity can disrupt learning.
+
+::: notes
+- Concepts covered: physiological needs; safety needs.
+- Script: Connect this directly to student life. Studying is much harder when a person is hungry, sleep-deprived, unsafe, or overwhelmed by instability. This slide often helps students see that motivation is shaped by conditions, not just by willpower.
+- Time: 60–90 seconds
+:::
+
+## Middle needs: belonging and esteem
+
+- **Belongingness** includes love, connection, and acceptance.
+- **Esteem** includes competence, respect, confidence, and accomplishment.
+- These needs help explain why social life and achievement matter so much.
+- Many school behaviors reflect both belonging and esteem at the same time.
+
+::: notes
+- Concepts covered: belonging; esteem.
+- Script: Give examples such as joining a club, wanting approval from peers, trying to earn a good grade, or wanting to feel capable in class. Students can usually see themselves in these motives very quickly.
+- Time: 60–90 seconds
+:::
+
+## Higher needs: self-actualization and self-transcendence
+
+- **Self-actualization** refers to developing one’s potential.
+- Maslow later discussed **self-transcendence**, or pursuing meaning beyond the self.
+- These ideas help explain motives such as creativity, purpose, service, and moral commitment.
+- They are best understood as broad humanistic ideas rather than precise stages everyone follows in order.
+
+::: notes
+- Concepts covered: self-actualization; self-transcendence.
+- Script: Emphasize that these are not finish lines. People move in and out of these concerns across a lifetime. The value of the framework is that it reminds us humans are motivated by more than survival and reward.
+- Time: 60–90 seconds
+:::
+
+## Maslow is useful, but real behavior is messier
+
+- People do not always satisfy one need completely before pursuing another.
+- Higher values can sometimes override basic comfort or safety.
+- Real lives are shaped by culture, circumstance, identity, and history.
+- Maslow is a helpful framework, but it does not explain every case neatly.
+
+::: notes
+- Concepts covered: critique of Maslow; complexity of behavior.
+- Script: This is the scientific caution slide. A person may sacrifice comfort, food, safety, or status in pursuit of justice, loyalty, faith, love, or meaning. That does not make the model useless. It means the model is a simplification.
+- Time: 60–90 seconds
+:::
+
+## Social motives shape daily life
+
+- Human beings are strongly motivated by social needs.
+- Three commonly discussed social motives are **achievement**, **affiliation**, and **intimacy**.
+- These motives help explain school performance, friendship patterns, and many personal goals.
+- Social motives matter partly because humans survive and develop in groups.
+
+::: notes
+- Concepts covered: social motives; achievement; affiliation; intimacy.
+- Script: Transition from Maslow to everyday social behavior. Students usually recognize these motives immediately once you name them. This slide works well as a bridge from theory to lived experience.
+- Time: 45–75 seconds
+:::
+
+## Achievement pushes people toward competence and success
+
+- The **need for achievement** involves striving to accomplish goals and perform well.
+- It often shows up in competition, persistence, ambition, and mastery.
+- Achievement motivation can be energizing.
+- It can also create pressure when success becomes tied too tightly to self-worth.
+
+::: notes
+- Concepts covered: need for achievement; ambition; pressure.
+- Script: Use the dual-credit context carefully. Many students in a college class while still in high school are clearly motivated by achievement. That can be a strength, but it can also become stressful if every outcome starts to feel like a verdict on their value.
+- Time: 60–90 seconds
+:::
+
+## Affiliation and intimacy are related, but not identical
+
+- **Affiliation** involves seeking friendly connection and positive interaction.
+- **Intimacy** involves seeking deeper, emotionally meaningful relationships.
+- A person may want both broad social belonging and a few close bonds.
+- These motives help explain why acceptance and trust matter in different ways.
+
+::: notes
+- Concepts covered: affiliation; intimacy; difference between casual and close connection.
+- Script: A simple contrast helps here. Affiliation is enjoying being with others and feeling included. Intimacy is wanting to be known, supported, and emotionally understood in a deeper relationship.
+- Time: 60–90 seconds
+:::
+
+## Quick reflection: what is driving this social behavior?
+
+- Think of a recent choice you made that involved other people.
+- Were you mainly seeking **achievement**, **affiliation**, or **intimacy**?
+- What made that motive feel important in that moment?
+- Turn to a partner and explain your example using one of the three social motives.
+
+::: notes
+- Concepts covered: applying social motive theory to real behavior; distinguishing achievement, affiliation, and intimacy.
+- Script: Give students 20–30 seconds to think of a real example, such as studying with friends, trying out for a team, texting someone for support, joining a club, or working hard for a grade. Then ask them to identify which motive best fits and why. Remind them that behavior can reflect more than one motive at once, but the goal here is to practice naming the strongest one.
+- Time: 2–3 minutes
+:::
+
+## The need to belong has deep roots
+
+- Humans are social animals.
+- Group living helped our ancestors share labor, protection, and resources.
+- Because belonging was important for survival, social exclusion can feel deeply distressing.
+- This helps explain why rejection, exclusion, and loneliness can have such strong effects.
+
+::: notes
+- Concepts covered: belonging; evolutionary perspective; exclusion.
+- Script: Connect this to ordinary student experiences such as being left out, ignored, rejected, or cut off from a friend group. The goal is not to dramatize everything. The goal is to explain why social pain can feel so powerful and why belonging is not a trivial need.
+- Time: 60–90 seconds
+:::
+
+## Takeaway
+
+- Motivation cannot be explained by one theory alone.
+- Biological regulation, beliefs about ability, human needs, and social connection all matter.
+- The same behavior can reflect several motives at once.
+- Good psychological thinking asks which motives are most relevant in a given situation.
+
+::: notes
+- Concepts covered: integration across theories of motivation.
+- Script: End by synthesizing rather than choosing a winner. Ask students to pick one behavior such as studying, joining a team, skipping a meal, or staying up too late and explain it from more than one motivational perspective.
+- Time: 45–75 seconds
+:::
+
+## Exit ticket
+
+- Which example best illustrates homeostasis and drive reduction?
+- Which statement best reflects a growth mindset rather than a fixed mindset?
+- In 1–3 sentences, explain one everyday behavior using at least two motivational perspectives from today’s lesson.
+
+::: notes
+- Concepts covered: retrieval and application across the lesson.
+- Script: Tell students that the first two prompts check core concepts and the last prompt checks transfer. Encourage them to answer the short response with a real behavior such as studying, procrastinating, stress eating, joining a team, or staying connected to friends.
+- Time: 60–90 seconds
+:::

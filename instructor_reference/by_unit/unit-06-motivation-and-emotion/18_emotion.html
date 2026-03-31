@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>18_emotion.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="18emotion">18_emotion</h1>
+<hr>
+<h2 id="why-it-matters-emotion-and-motivation">Why It Matters: Emotion and Motivation</h2>
+<ul>
+<li>url_title:: &quot;Why It Matters: Emotion and Motivation&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-7/
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224922/CNX_Psych_10_00_Marathon.jpg" alt="A photograph shows a crowd at the site of the Boston Marathon bombing immediately after it occurred. Debris is scattered on the ground, several people appear to be injured, and several people are helping others."></li>
+</ul>
+<p><strong>Figure 1</strong>. Emotions can change in an instant, especially in response to an unexpected event. Surprise, fear, anger, and sadness are some immediate emotions that people experienced in the aftermath of the April 15, 2013 Boston Marathon bombing. What are emotions? What causes them? What motivated some bystanders to immediately help others, while other people ran for safety? (credit: modification of work by Aaron “tango” Tang)</p>
+<p>What makes us behave as we do? What drives us to eat? What drives us toward sex? Is there a biological basis to explain the feelings we experience? How universal are emotions?</p>
+<p>In this module, we will explore issues relating to both motivation and emotion. We will begin with a discussion of several theories that have been proposed to explain motivation and why we engage in a given behavior. You will learn about the physiological needs that drive some human behaviors, as well as the importance of our social experiences in influencing our actions.</p>
+<p>Next, we will consider both eating and having sex as examples of motivated behaviors. What are the physiological mechanisms of hunger and satiety? What understanding do scientists have of why obesity occurs, and what treatments exist for obesity and eating disorders? How has research into human sex and sexuality evolved over the past century? How do psychologists understand and study the human experience of sexual orientation and gender identity? These questions—and more—will be explored.</p>
+<p>This module will close with a discussion of emotion. You will learn about several theories that have been proposed to explain how emotion occurs, the biological underpinnings of emotion, and the universality of emotions.</p>
+<p>Module References</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="introduction-to-emotion--introduction-to-psychology">Introduction to Emotion | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Introduction to Emotion | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-to-emotion/</li>
+</ul>
+<h2 id="what-youll-learn-to-do-explain-theories-of-emotion-and-how-we-express-and-recognize-emotion">What you’ll learn to do: explain theories of emotion and how we express and recognize emotion</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/25033254/800px-Portret_van_een_man005.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2017/03/25033254/800px-Portret_van_een_man005.jpg" alt="Four sculptures of a man showing four different expressions: fear, anger, contempt, and disgust."></a></p>
+<p>As we move through our daily lives, we experience a variety of emotions. An <strong>emotion</strong> is a subjective state of being that we often describe as our feelings. Emotions result from the combination of subjective experience, expression, cognitive appraisal, and physiological responses (Levenson, Carstensen, Friesen, &amp; Ekman, 1991). However, as discussed later in the chapter, the exact order in which the components occur is not clear, and some parts may happen at the same time. An emotion often begins with a subjective (individual) experience, which is a stimulus. Often the stimulus is external, but it does not have to be from the outside world. For example, it might be that one thinks about war and becomes sad, even though they never experienced war. Emotional expression refers to the way one displays an emotion and includes nonverbal and verbal behaviors (Gross, 1999). One also performs a cognitive appraisal in which a person tries to determine the way they will be impacted by a situation (Roseman &amp; Smith, 2001). In addition, emotions include physiological responses, such as possible changes in heart rate, sweating, etc. (Soussignan, 2002).</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare and contrast the the Cannon-Bard, James-Lange, Schachter-Singer two-factor, and other theories of emotion</li>
+<li>Describe the role that limbic structures play in emotional processing</li>
+<li>Classify and explain how emotions are recognized and expressed</li>
+</ul>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification, adaptation, and original content. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Describing Emotion. <strong>Provided by</strong>: Boundless. <strong>Located at</strong>: <a href="https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/emotion-13/defining-emotion-503/defining-emotion-504-16761/">https://www.boundless.com/psychology/textbooks/boundless-psychology-textbook/emotion-13/defining-emotion-503/defining-emotion-504-16761/</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+<li>Emotion. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/10-4-emotion">https://openstax.org/books/psychology-2e/pages/10-4-emotion</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+<li>Portrait of a Man showing emotions. <strong>Authored by</strong>: Gert Germeraad. <strong>Located at</strong>: <a href="https://commons.wikimedia.org/wiki/File:Portret_van_een_man005.jpg">https://commons.wikimedia.org/wiki/File:Portret_van_een_man005.jpg</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA: Attribution-ShareAlike</a></em></li>
+</ul>
+<hr>
+<h2 id="seeing-emotion--introduction-to-psychology">Seeing Emotion | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Seeing Emotion | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/seeing-emotion/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Classify and explain how emotions are recognized and expressed</li>
+</ul>
+<h2 id="facial-expression-and-recognition-of-emotions">Facial Expression and Recognition of Emotions</h2>
+<p>Culture can impact the way in which people display emotion. A <strong>cultural display rule</strong> is one of a collection of culturally specific standards that govern the types and frequencies of displays of emotions that are acceptable (Malatesta &amp; Haviland, 1982). Therefore, people from varying cultural backgrounds can have very different cultural display rules of emotion. For example, research has shown that individuals from the United States express negative emotions like fear, anger, and disgust both alone and in the presence of others, while Japanese individuals only do so while alone (Matsumoto, 1990). Furthermore, individuals from cultures that tend to emphasize social cohesion are more likely to engage in suppression of emotional reaction so they can evaluate which response is most appropriate in a given context (Matsumoto, Yoo, &amp; Nakagawa, 2008).</p>
+<p>Other distinct cultural characteristics might be involved in emotionality. For instance, there may be gender differences involved in emotional processing. While research into gender differences in emotional display is equivocal, there is some evidence that men and women may differ in regulation of emotions (McRae, Ochsner, Mauss, Gabrieli, &amp; Gross, 2008).</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Even babies are good at reading emotions! Watch <a href="https://www.youtube.com/watch?v=apzXGEbZht0&amp;list=PLsjOSJm46miabqNKVfh8VrzHtKZym3lQs&amp;index=8">this clip from the Still Face Experiment</a> to see an example of how a baby responds to a sudden change in emotion from his mother.</p>
+<p>Paul Ekman (1972) researched a New Guinea man who was living in a preliterate culture using stone implements, and which was isolated and had never seen any outsiders before. Ekman asked the man to show what his facial expression would be if: (1) friends visited, (2) his child had just died, (3) he was about to fight, (4) he stepped on a smelly dead pig. After Ekman’s return from New Guinea, he researched facial expressions for more than four decades. Despite different emotional display rules, our ability to recognize and produce facial expressions of emotion appears to be universal. In fact, even congenitally blind individuals produce the same facial expression of emotions, despite their never having the opportunity to observe these facial displays of emotion in other people. This would seem to suggest that the pattern of activity in facial muscles involved in generating emotional expressions is universal, and indeed, this idea was suggested in the late 19th century in Charles Darwin’s book The Expression of Emotions in Man and Animals (1872). In fact, there is substantial evidence for seven universal emotions that are each associated with distinct facial expressions. These include: happiness, surprise, sadness, fright, disgust, contempt, and anger (Figure 10.24) (Ekman &amp; Keltner, 1997).</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23225000/CNX_Psych_10_04_Expressions.jpg" alt="Each of seven photographs includes a person demonstrating a different facial expression: happiness, surprise, sadness, fright, disgust, contempt, and anger."></p>
+<p><strong>Figure 1</strong>. The seven universal facial expressions of emotion are shown. (credit: modification of work by Cory Zanker)</p>
+<p>Does smiling make you happy? Or does being happy make you smile? The <strong>facial feedback hypothesis</strong> asserts that facial expressions are capable of influencing our emotions, meaning that smiling can make you feel happier (Buck, 1980; Soussignan, 2001; Strack, Martin, &amp; Stepper, 1988). Recent research explored how Botox, which paralyzes facial muscles and limits facial expression, might affect emotion. Havas, Glenberg, Gutowski, Lucarelli, and Davidson (2010) discovered that depressed individuals reported less depression after paralysis of their frowning muscles with Botox injections.</p>
+<h3 id="link-to-learning-catching-liars">Link to Learning: Catching Liars</h3>
+<p>The television program <em>Lie to Me</em> was based off of the idea that people can learn to read facial microexpressions and detect when another person is telling a lie. Although many criticize the human ability to actually detect lies through visual cues, psychologist <a href="http://www.paulekman.com/">Paul Ekman</a> has done extensive research on the human face and how to better read emotions through even the slightest facial movements.</p>
+<p>Another way to spot lies is through language. Watch <a href="https://www.youtube.com/watch?v=H0-WkpmTPrM">this TEDEd video</a> to learn more.</p>
+<p>Click through the following interactive to learn more about some of the techniques psychologists use in efforts to understand differences in behavior and expression when we lie.</p>
+<p>Of course, emotion is not only displayed through facial expression. We also use the tone of our voices, various behaviors, and body language to communicate information about our emotional states. <strong>Body language</strong> is the expression of emotion in terms of body position or movement. Research suggests that we are quite sensitive to the emotional information communicated through body language, even if we’re not consciously aware of it (de Gelder, 2006; Tamietto et al., 2009).</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Learn more about body language in <a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc">Amy Cuddy’s Ted Talk</a>, “Your Body Language Shapes Who You Are.”</p>
+<h3 id="connect-the-concepts-autism-spectrum-disorder-and-expression-of-emotions">Connect the Concepts: Autism Spectrum Disorder and Expression of Emotions</h3>
+<p>Autism spectrum disorder (ASD) is a set of neurodevelopmental disorders characterized by repetitive behaviors and communication and social problems. Children who have autism spectrum disorders have difficulty recognizing the emotional states of others, and research has shown that this may stem from an inability to distinguish various nonverbal expressions of emotion (i.e., facial expressions) from one another (Hobson, 1986). In addition, there is evidence to suggest that autistic individuals also have difficulty expressing emotion through tone of voice and by producing facial expressions (Macdonald et al., 1989). Difficulties with emotional recognition and expression may contribute to the impaired social interaction and communication that characterize autism; therefore, various therapeutic approaches have been explored to address these difficulties. Various educational curricula, cognitive-behavioral therapies, and pharmacological therapies have shown some promise in helping autistic individuals process emotionally relevant information (Bauminger, 2002; Golan &amp; Baron-Cohen, 2006; Guastella et al., 2010).</p>
+<h3 id="try-it">Try It</h3>
+<p>Click through the following presentation to review some of the ways people express emotion.</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>cultural display rule:</strong> one of the culturally specific standards that govern the types and frequencies of emotions that are acceptable</p>
+<p><strong>emotion:</strong> subjective state of being often described as feelings</p>
+<p><strong>facial feedback hypothesis</strong>: facial expressions are capable of influencing our emotions</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Original</p>
+<ul>
+<li>Modification and adaptation, addition of link to learning and content on lie detection. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+<li>Emotion interactive. <strong>Authored by</strong>: Jessica Traylor for Lumen Learning. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Emotion. <strong>Authored by</strong>: OpenStax College. <strong>Located at</strong>: <a href="https://openstax.org/books/psychology-2e/pages/10-4-emotion">https://openstax.org/books/psychology-2e/pages/10-4-emotion</a>. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em>. <strong>License Terms</strong>: Download for free at https://openstax.org/books/psychology-2e/pages/1-introduction</li>
+</ul>
+<hr>
+<h2 id="the-biology-of-emotions--introduction-to-psychology">The Biology of Emotions | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;The Biology of Emotions | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/the-biology-of-emotions/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the role that limbic structures play in emotional processing</li>
+</ul>
+<p>Earlier, you learned about the limbic system, which is the area of the brain involved in emotion and memory (Figure 1). The limbic system includes the hypothalamus, thalamus, amygdala, and the hippocampus. The hypothalamus plays a role in the activation of the sympathetic nervous system that is a part of any given emotional reaction. The thalamus serves as a sensory relay center whose neurons project to both the amygdala and the higher cortical regions for further processing. The amygdala plays a role in processing emotional information and sending that information on to cortical structures (Fossati, 2012).The hippocampus integrates emotional experience with cognition (Femenía, Gómez-Galán, Lindskog, &amp; Magara, 2012).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03231922/097c83b04dc3fee269b52da8700857ec7b42ec62.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03231922/097c83b04dc3fee269b52da8700857ec7b42ec62.jpeg" alt="An illustration of the brain labels the locations of the “thalamus,” “hypothalamus,” “amygdala,” and “hippocampus.”"></a></p>
+<p><strong>Figure 1</strong>. The limbic system, which includes the hypothalamus, thalamus, amygdala, and the hippocampus, is involved in mediating emotional response and memory.</p>
+<h3 id="link-to-learning">Link to Learning</h3>
+<p>Work through this Open Colleges <a href="https://www.opencolleges.edu.au/informed/learning-strategies/">interactive 3D brain simulator</a> for a refresher on the brain’s parts and their functions. To begin, click the “Start Exploring” button. To access the limbic system, click the plus sign in the right-hand menu (set of three tabs).</p>
+<h2 id="amygdala">Amygdala</h2>
+<p>The <strong>amygdala</strong> has received a great deal of attention from researchers interested in understanding the biological basis for emotions, especially fear and anxiety (Blackford &amp; Pine, 2012; Goosens &amp; Maren, 2002; Maren, Phan, &amp; Liberzon, 2013). The amygdala is composed of various subnuclei, including the basolateral complex and the central nucleus (Figure 2). The <strong>basolateral complex</strong> has dense connections with a variety of sensory areas of the brain. It is critical for classical conditioning and for attaching emotional value to learning processes and memory. The <strong>central nucleus</strong> plays a role in attention, and it has connections with the hypothalamus and various brainstem areas to regulate the autonomic nervous and endocrine systems’ activity (Pessoa, 2010).</p>
+<p><a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03232140/79bfd30ce14938bbbf36af8f5be3f283b4fc5cba.jpeg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/03232140/79bfd30ce14938bbbf36af8f5be3f283b4fc5cba.jpeg" alt="An illustration of the brain labels the locations of the “basolateral complex” and “central nucleus” within the “amygdala.”"></a></p>
+<p><strong>Figure 2</strong>. The anatomy of the basolateral complex and central nucleus of the amygdala are illustrated in this diagram.</p>
+<p>Animal research has demonstrated that there is increased activation of the amygdala in rat pups that have odor cues paired with electrical shock when their mother is absent. This leads to an aversion to the odor cue that suggests the rats learned to fear the odor cue. Interestingly, when the mother was present, the rats actually showed a preference for the odor cue despite its association with an electrical shock. This preference was associated with no increases in amygdala activation. This suggests a differential effect on the amygdala by the <em>context</em> (the presence or absence of the mother) determined whether the pups learned to fear the odor or to be attracted to it (Moriceau &amp; Sullivan, 2006).</p>
+<p>Raineki, Cortés, Belnoue, and Sullivan (2012) demonstrated that, in rats, negative early life experiences could alter the function of the amygdala and result in adolescent patterns of behavior that mimic human mood disorders. In this study, rat pups received either abusive or normal treatment during postnatal days 8–12. There were two forms of abusive treatment. The first form of abusive treatment had an insufficient bedding condition. The mother rat had insufficient bedding material in her cage to build a proper nest that resulted in her spending more time away from her pups trying to construct a nest and less times nursing her pups. The second form of abusive treatment had an associative learning task that involved pairing odors and an electrical stimulus in the absence of the mother, as described above. The control group was in a cage with sufficient bedding and was left undisturbed with their mothers during the same time period. The rat pups that experienced abuse were much more likely to exhibit depressive-like symptoms during adolescence when compared to controls. These depressive-like behaviors were associated with increased activation of the amygdala.</p>
+<p>Human research also suggests a relationship between the amygdala and psychological disorders of mood or anxiety. Changes in amygdala structure and function have been demonstrated in adolescents who are either at-risk or have been diagnosed with various mood and/or anxiety disorders (Miguel-Hidalgo, 2013; Qin et al., 2013). It has also been suggested that functional differences in the amygdala could serve as a biomarker to differentiate individuals suffering from bipolar disorder from those suffering from major depressive disorder (Fournier, Keener, Almeida, Kronhaus, &amp; Phillips, 2013).</p>
+<h2 id="hippocampus">Hippocampus</h2>
+<p>As mentioned earlier, the <strong>hippocampus</strong> is also involved in emotional processing. Like the amygdala, research has demonstrated that hippocampal structure and function are linked to a variety of mood and anxiety disorders. Individuals suffering from posttraumatic stress disorder (PTSD) show marked reductions in the volume of several parts of the hippocampus, which may result from decreased levels of neurogenesis and dendritic branching (the generation of new neurons and the generation of new dendrites in existing neurons, respectively) (Wang et al., 2010). While it is impossible to make a causal claim with correlational research like this, studies have demonstrated behavioral improvements and hippocampal volume increases following either pharmacological or cognitive-behavioral therapy in individuals suffering from PTSD (Bremner &amp; Vermetten, 2004; Levy-Gigi, Szabó, Kelemen, &amp; Kéri, 2013).</p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>basolateral complex:</strong> part of the brain with dense connections with a variety of sensory areas of the brain; it is critical for classical conditioning and attaching emotional value to memory</p>
+<p><strong>central nucleus:</strong> part of the brain involved in attention and has connections with the hypothalamus and various brainstem areas to regulate the autonomic nervous and endocrine systems’ activity</p>
+<p><strong>emotion:</strong> subjective state of being often described as feelings</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="theories-of-emotion--introduction-to-psychology">Theories of Emotion | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Theories of Emotion | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/emotion/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare and contrast the the Cannon-Bard, James-Lange, Schachter-Singer two-factor, and other theories of emotion</li>
+</ul>
+<p>The words emotion and mood are sometimes used interchangeably, but psychologists use these words to refer to two different things. Typically, the word emotion indicates a subjective, affective state that is relatively intense and that occurs in response to something we experience (Figure 10.20). Emotions are often thought to be consciously experienced and intentional. Mood, on the other hand, refers to a prolonged, less intense, affective state that does not occur in response to something we experience. Mood states may not be consciously recognized and do not carry the intentionality that is associated with emotion (Beedie, Terry, Lane, &amp; Devonport, 2011). Here we will focus on emotion, and you will learn more about mood in the chapter that covers psychological disorders.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224952/CNX_Psych_10_04_HappySad.jpg" alt="Photograph A shows a toddler laughing. Photograph B shows the same toddler crying."></p>
+<p><strong>Figure 1</strong>. Toddlers can cycle through emotions quickly, being (a) extremely happy one moment and (b) extremely sad the next. (credit a: modification of work by Kerry Ceszyk; credit b: modification of work by Kerry Ceszyk)</p>
+<p>We can be at the heights of joy or in the depths of despair. We might feel angry when we are betrayed, fear when we are threatened, and surprised when something unexpected happens. This section will outline some of the most well-known theories explaining our emotional experience and provide insight into the biological bases of emotion. This section closes with a discussion of the ubiquitous nature of facial expressions of emotion and our abilities to recognize those expressions in others.</p>
+<p>Our emotional states are combinations of physiological arousal, psychological appraisal, and subjective experiences. Together, these are known as the <strong>components of emotion</strong>. These appraisals are informed by our experiences, backgrounds, and cultures. Therefore, different people may have different emotional experiences even when faced with similar circumstances. Over time, several different theories of emotion, shown in Figure 2, have been proposed to explain how the various components of emotion interact with one another.</p>
+<p>The <strong>James-Lange theory</strong> of emotion asserts that emotions arise from physiological arousal. Recall what you have learned about the sympathetic nervous system and our fight or flight response when threatened. If you were to encounter some threat in your environment, like a venomous snake in your backyard, your sympathetic nervous system would initiate significant physiological arousal, which would make your heart race and increase your respiration rate. According to the James-Lange theory of emotion, you would only experience a feeling of fear after this physiological arousal had taken place. Furthermore, different arousal patterns would be associated with different feelings.</p>
+<p>Other theorists, however, doubted that the physiological arousal that occurs with different types of emotions is distinct enough to result in the wide variety of emotions that we experience. Thus, the <strong>Cannon-Bard theory</strong> of emotion was developed. According to this view, physiological arousal and emotional experience occur simultaneously, yet independently (Lang, 1994). So, when you see the venomous snake, you feel fear at exactly the same time that your body mounts its fight or flight response. This emotional reaction would be separate and independent of the physiological arousal, even though they co-occur.</p>
+<p>Does smiling make you happy? Alternatively, does being happy make you smile? The facial feedback hypothesis proposes that your facial expression can actually affect your emotional experience (Adelman &amp; Zajonc, 1989; Boiger &amp; Mesquita, 2012; Buck, 1980; Capella, 1993; Soussignan, 2001; Strack, Martin, &amp; Stepper, 1988). Research investigating the facial feedback hypothesis suggested that suppression of facial expression of emotion lowered the intensity of some emotions experienced by participants (Davis, Senghas, &amp; Ochsner, 2009). Havas, Glenberg, Gutowski, Lucarelli, and Davidson (2010) used Botox injections to paralyze facial muscles and limit facial expressions, including frowning, and they found that depressed people reported less depression after their frowning muscles were paralyzed. Other research found that the intensities of facial expressions affected the emotional reactions (Soussignan, 2002; Strack, Martin, &amp; Stepper, 1988). In other words, if something insignificant occurs and you smile as if you just won lottery, you will actually be happier about the little thing than you would be if you only had a tiny smile. Conversely, if you walk around frowning all the time, it might cause you to have less positive emotions than you would if you had smiled. Interestingly, Soussignan (2002) also reported physiological arousal differences associated with the intensities of one type of smile.</p>
+<p>G. Marañon Posadillo was a Spanish physician who studied the psychological effects of adrenaline to create a model for the experience of emotion. Marañon’s model preceded Schachter’s two-factor or arousal-cognition theory of emotion (Cornelius, 1991). <strong>The Schachter-Singer two-factor theory of emotion</strong> is another variation on theories of emotions that takes into account both physiological arousal and the emotional experience. According to this theory, emotions are composed of two factors: physiological and cognitive. In other words, physiological arousal is interpreted in context to produce the emotional experience. In revisiting our example involving the venomous snake in your backyard, the two-factor theory maintains that the snake elicits sympathetic nervous system activation that is labeled as fear given the context, and our experience is that of fear. If you had labeled your sympathetic nervous system activation as joy, you would have experienced joy. The Schachter-Singer two-factor theory depends on labeling the physiological experience, which is a type of cognitive appraisal.</p>
+<p>Magda Arnold was the first theorist to offer an exploration of the meaning of appraisal, and to present an outline of what the appraisal process might be and how it relates to emotion (Roseman &amp; Smith, 2001). The key idea of appraisal theory is that you have thoughts (a cognitive appraisal) before you experience an emotion, and the emotion you experience depends on the thoughts you had (Frijda, 1988; Lazarus, 1991). If you think something is positive, you will have more positive emotions about it than if your appraisal was negative, and the opposite is true. Appraisal theory explains the way two people can have two completely different emotions regarding the same event. For example, suppose your psychology instructor selected you to lecture on emotion; you might see that as positive, because it represents an opportunity to be the center of attention, and you would experience happiness. However, if you dislike speaking in public, you could have a negative appraisal and experience discomfort.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/902/2015/02/23224954/CNX_Psych_10_04_Theories.jpg" alt="A diagram shows a photograph of a snake on the left and a photograph of a frightened person on the right, with an arrow labeled “time.” Beneath the photos are flow diagrams of four theories of emotion: James-Lange Theory, Cannon-Bard Theory, Schachter-Singer Two-Factory Theory, and Lazarus’ Cognitive-mediational Theory. For James-Lange Theory arousal (seeing the snake) leads to the heart pounding and sweating, which leads to fear (emotion). For Cannon-Bard theory arousal (seeing the snake) leads to both heart pounding and sweating and fear (emotion) simultaneously. For the Schachter-Singer Two-Factor Theory arousal (seeing the snake) leads to both heart pounding and sweating, and cognitive label (“I’m scared”) which then leads to fear (emotion). For Lazarus’ Cognitive-mediational Theory arousal (seeing the snake) leads to appraisal, which leads to fear/heart pounding and sweating."></p>
+<p><strong>Figure 2</strong>. This figure illustrates the major assertions of the James-Lange, Cannon-Bard, and Schachter-Singer two-factor theories of emotion. (credit “snake”: modification of work by “tableatny”/Flickr; credit “face”: modification of work by Cory Zanker)</p>
+<p>Schachter and Singer believed that physiological arousal is very similar across the different types of emotions that we experience, and therefore, the cognitive appraisal of the situation is critical to the actual emotion experienced. In fact, it might be possible to misattribute arousal to an emotional experience if the circumstances were right (Schachter &amp; Singer, 1962). They performed a clever experiment to test their idea. Male participants were randomly assigned to one of several groups. Some of the participants received injections of epinephrine that caused bodily changes that mimicked the fight-or-flight response of the sympathetic nervous system; however, only some of these men were told to expect these reactions as side effects of the injection. The other men that received injections of epinephrine were told either that the injection would have no side effects or that it would result in a side effect unrelated to a sympathetic response, such as itching feet or headache. After receiving these injections, participants waited in a room with someone else they thought was another subject in the research project. In reality, the other person was a confederate of the researcher. The confederate engaged in scripted displays of euphoric or angry behavior (Schachter &amp; Singer, 1962).</p>
+<p>When those participants who were told that they should expect to feel symptoms of physiological arousal were asked about any emotional changes that they had experienced related to either euphoria or anger (depending on the way the confederate behaved), they reported none. However, the men who weren’t expecting physiological arousal as a function of the injection were more likely to report that they experienced euphoria or anger as a function of their assigned confederate’s behavior. While everyone who received an injection of epinephrine experienced the same physiological arousal, only those who were not expecting the arousal used context to interpret the arousal as a change in emotional state (Schachter &amp; Singer, 1962).</p>
+<p>Strong emotional responses are associated with strong physiological arousal, which caused some theorists to suggest that the signs of physiological arousal, including increased heart rate, respiration rate, and sweating, might be used to determine whether someone is telling the truth or not. The assumption is that most of us would show signs of physiological arousal if we were being dishonest with someone. A <strong>polygraph</strong>, or lie detector test, measures the physiological arousal of an individual responding to a series of questions. Someone trained in reading these tests would look for answers to questions that are associated with increased levels of arousal as potential signs that the respondent may have been dishonest on those answers. While polygraphs are still commonly used, their validity and accuracy are highly questionable because there is no evidence that lying is associated with any particular pattern of physiological arousal (Saxe &amp; Ben-Shakhar, 1999).</p>
+<p>Return to the example of being asked to lecture by your professor. Even if you do not enjoy speaking in public, you probably could manage to do it. You would purposefully control your emotions, which would allow you to speak, but we constantly regulate our emotions, and much of our emotion regulation occurs without us actively thinking about it. Mauss and her colleagues studied automatic emotion regulation (AER), which refers to the non-deliberate control of emotions. It is simply not reacting with your emotions, and AER can affect all aspects of emotional processes. AER can influence the things you attend to, your appraisal, your choice to engage in an emotional experience, and your behaviors after an emotion is experienced (Mauss, Bunge, &amp; Gross, 2007; Mauss, Levenson, McCarter, Wilhelm, &amp; Gross, 2005). AER is similar to other automatic cognitive processes in which sensations activate knowledge structures that affect functioning. These knowledge structures can include concepts, schemas, or scripts.</p>
+<p>The idea of AER is that people develop an automatic process that works like a script or schema, and the process does not require deliberate thought to regulate emotions. AER works like riding a bicycle. Once you develop the process, you just do it without thinking about it. AER can be adaptive or maladaptive and has important health implications (Hopp, Troy, &amp; Mauss, 2011). Adaptive AER leads to better health outcomes than maladaptive AER, primarily due to experiencing or mitigating stressors better than people with maladaptive AERs (Hopp, Troy, &amp; Mauss, 2011). Alternatively, maladaptive AERs may be critical for maintaining some psychological disorders (Hopp, Troy, &amp; Mauss, 2011). Mauss and her colleagues found that strategies could reduce negative emotions, which in turn should increase psychological health (Mauss, Cook, Cheng, &amp; Gross, 2007; Mauss, Cook, &amp; Gross, 2007; Shallcross, Troy, Boland, &amp; Mauss, 2010; Troy, Shallcross, &amp; Mauss, 2013; Troy, Wilhelm, Shallcross, &amp; Mauss, 2010). Mauss has also suggested there are problems with the way emotions are measured, but she believes most of the aspects of emotions that are typically measured are useful (Mauss, et al., 2005; Mauss &amp; Robinson, 2009). However, another way of considering emotions challenges our entire understanding of emotions.</p>
+<p>After about three decades of interdisciplinary research, Barrett argued that we do not understand emotions. She proposed that emotions were not built into your brain at birth, but rather they were constructed based on your experiences. Emotions in the constructivist theory are predictions that construct your experience of the world. In chapter 7 you learned that concepts are categories or groupings of linguistic information, images, ideas, or memories, such as life experiences. Barrett extended that to include emotions as concepts that are predictions (Barrett, 2017). Two identical physiological states can result in different emotional states depending on your predictions. For example, your brain predicting a churning stomach in a bakery could lead to you constructing hunger. However, your brain predicting a churning stomach while you were waiting for medical test results could lead your brain to construct worry. Thus, you can construct two different emotions from the same physiological sensations. Rather than emotions being something over which you have no control, you can control and influence your emotions</p>
+<p>Two other prominent views arise from the work of Robert Zajonc and Joseph LeDoux. Zajonc asserted that some emotions occur separately from or prior to our cognitive interpretation of them, such as feeling fear in response to an unexpected loud sound (Zajonc, 1998). He also believed in what we might casually refer to as a gut feeling—that we can experience an instantaneous and unexplainable like or dislike for someone or something (Zajonc, 1980). LeDoux also views some emotions as requiring no cognition: some emotions completely bypass contextual interpretation. His research into the neuroscience of emotion has demonstrated the amygdala’s primary role in fear (Cunha, Monfils, &amp; LeDoux, 2010; LeDoux 1996, 2002). A fear stimulus is processed by the brain through one of two paths: from the thalamus (where it is perceived) directly to the amygdala or from the thalamus through the cortex and then to the amygdala. The first path is quick, while the second enables more processing about details of the stimulus. In the following section, we will look more closely at the neuroscience of emotional response.</p>
+<h3 id="connect-the-concepts">connect the concepts</h3>
+<h2 id="emotional-expression-and-emotion-regulation"><strong>Emotional Expression and Emotion Regulation</strong></h2>
+<p>Emotion regulation describes how people respond to situations and experiences by modifying their emotional experiences and expressions. Covert emotion regulation strategies are those that occur within the individual, while overt strategies involve others or actions (such as seeking advice or consuming alcohol). Aldao and Dixon (2014) studied the relationship between overt emotional regulation strategies and psychopathology. They researched how 218 undergraduate students reported their use of covert and overt strategies and their reported symptoms associated with selected mental disorders, and found that overt emotional regulation strategies were better predictors of psychopathology than covert strategies. Another study examined the relationship between pregaming (the act of drinking heavily before a social event) and two emotion regulation strategies to understand how these might contribute to alcohol-related problems; results suggested a relationship but a complicated one (Pederson, 2016). Further research is needed in these areas to better understand patterns of adaptive and maladaptive emotion regulation (Aldao &amp; Dixon-Gordon, 2014).</p>
+<h3 id="psychology-in-music">Psychology in Music</h3>
+<p>Neuroscienctist Jospeh LeDoux does more than study emotional processing and conditioning in rats—he is also the lead singer in his band, The Amygdaloids. His band often explains psychological music in their songs. See an example of this in the song, <a href="https://www.youtube.com/watch?v=AMI3hbgRj6o">Fearing</a>.</p>
+<h3 id="watch-it">Watch It</h3>
+<p>Review the theories of emotion in the following Crash Course Psychology video.</p>
+<p>You can <a href="https://oerfiles.s3-us-west-2.amazonaws.com/Psychology/Transcriptions/FeelingAllTheFeelsCrashCoursePsychology25.txt">view the transcript for “Feeling All the Feels: Crash Course Psychology #25” here (opens in new window)</a>.</p>
+<h3 id="think-it-over">Think It Over</h3>
+<ul>
+<li>Think about times in your life when you have been absolutely elated (e.g., perhaps your school’s basketball team just won a closely contested ballgame for the national championship) and very fearful (e.g., you are about to give a speech in your public speaking class to a roomful of 100 strangers). How would you describe how your arousal manifested itself physically? Were there marked differences in physiological arousal associated with each emotional state?</li>
+</ul>
+<h3 id="glossary">Glossary</h3>
+<p><strong>body language:</strong> emotional expression through body position or movement</p>
+<p><strong>Cannon-Bard theory of emotion:</strong> physiological arousal and emotional experience occur at the same time</p>
+<p><strong>cognitive-mediational theory:</strong> our emotions are determined by our appraisal of the stimulus</p>
+<p><strong>components of emotion:</strong> physiological arousal, psychological appraisal, and subjective experience</p>
+<p><strong>emotion:</strong> subjective state of being often described as feelings</p>
+<p><strong>facial feedback hypothesis:</strong> facial expressions are capable of influencing our emotions</p>
+<p><strong>James-Lange theory of emotion:</strong> emotions arise from physiological arousal</p>
+<p><strong>polygraph:</strong> lie detector test that measures physiological arousal of individuals as they answer a series of questions</p>
+<p><strong>Schachter-Singer two-factor theory of emotion:</strong> emotions consist of two factors: physiological and cognitive</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<h2 id="putting-it-together-motivation-and-emotion">Putting It Together: Motivation and Emotion</h2>
+<ul>
+<li>url_title:: &quot;Putting It Together: Motivation and Emotion&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-motivation-and-emotion/</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>In this module, you learned to</p>
+<ul>
+<li>explain motivation, how it is influenced, and major theories about motivation</li>
+<li>describe hunger and eating in relation to motivation, obesity, anorexia, and bulimia</li>
+<li>describe sexual behavior and research about sexuality</li>
+<li>explain theories of emotion and how we express and recognize emotion</li>
+</ul>
+<p>In this module, you learned about emotion and motivation, particularly in regards to hunger and sex. You also learned about theories about motivation, intrinsic and extrinsic motivation, and optimal levels of arousal. Remember the overjustification effect—how intrinsic motivation is diminished when extrinsic motivation is given? Can you think of an example of when this has applied to you in your life? Maybe you used to like doing something because you found it enjoyable, but once your parents noticed and rewarded you for it, it became less exciting. It turns out that researchers have combined work in the study of motivation, learning, developmental psychology, and social psychology (remember that many of the fields in psychology overlap!) to discover that children are actually less likely to help an adult in need when offered a reward.<a href="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/02013743/toy.jpg"><img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/855/2016/11/02013743/toy.jpg" alt="Two year old boy playing with a bead-maze track game in an office waiting room."></a></p>
+<p>In a study by Felix Warneken and Michael Tomasello, children around 20 months old were observed to see if they would react with altruism when a researcher dropped an object and needed help to pick it up. The children were assigned to three groups: one group that was given the offer of a reward (a previously shown toy) when asked to pick up the object (a pen or a similar item that fell off the desk), one group that was given verbal praise, and another control group in which the children were not addressed in any way.</p>
+<p>The good news is that the children were overwhelmingly altruistic and happy to help, even if they were distracted by an enticing game. The interesting news is that the children who were given nothing at all or just verbal praise were nearly 40% more likely to help as opposed to those who had been rewarded with a toy. How might this information change your approach as a parent? What about as a teacher? Before you jump to any extreme conclusions, however, keep in mind that the overjustifcation effect has showed different types of results for different ages and types of behavior, so a child at nearly 2 may not respond the same way as a teenager or adult. Just as with all the other topics you’ve covered, there is more research to be done and more we need to learn about what really motivates behavior (2008, p. 1785–1788). [1]</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<hr>
+<ol>
+<li>Felix W., and Tomasello, M. (2008). Extrinsic Rewards Undermine Altruistic Tendencies in 20-Month-Olds. Developmental Psychology, 44(6), 1785-1788. doi: 10.1037/a0013860 <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-motivation-and-emotion/#return-footnote-3193-1">↵</a></li>
+</ol>
+<hr>
+<h2 id="discussion-motivation-and-emotion--introduction-to-psychology">Discussion: Motivation and Emotion | Introduction to Psychology</h2>
+<ul>
+<li>url_title:: &quot;Discussion: Motivation and Emotion | Introduction to Psychology&quot;
+url_source:: https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-motivation-and-emotion/</li>
+</ul>
+<h2 id="discussion-motivation-and-emotion">Discussion: Motivation and Emotion</h2>
+<p><strong>Step 1:</strong> To view this discussion prompt, click on <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/discussion-motivation-and-emotion-2/">Discussion: Motivation and Emotion.</a></p>
+<p><strong>Step 2:</strong> Read the prompt and instructions, then post your response and comments inside of the discussion forum.</p>
+<h3 id="candela-citations">Candela Citations</h3>
+<p>CC licensed content, Shared previously</p>
+<ul>
+<li>Discussion prompt. <strong>Authored by</strong>: Terry Davis. <strong>Provided by</strong>: Wiley College. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+<li>Discussion: Motivation and Emotion. <strong>Provided by</strong>: Lumen Learning. <strong>License</strong>: <em><a href="https://creativecommons.org/licenses/by/4.0/">CC BY: Attribution</a></em></li>
+</ul>
+<p>Licenses and Attributions</p>
+<p><a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/putting-it-together-motivation-and-emotion/">Previous</a> <a href="https://courses.lumenlearning.com/waymaker-psychology/chapter/introduction-4/">Next</a></p>
+<hr>
+
+</body>
+</html>
