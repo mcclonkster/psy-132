@@ -1,5 +1,21 @@
 # PSY-132
 
+This repository has been converted into a **Vite** project so course content can be served from a local dev server.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Notes
+
+- Existing course files were preserved in place.
+- Files that appeared to be safe-to-delete artifacts were moved into `quarantine/` instead of being deleted.
+
+## Existing resource links
+
 [Public NotebookLM notebook for OpenStax](https://notebooklm.google.com/notebook/90a2ee5f-cccb-4c28-a356-bb1682cc8aeb?e)
 
 [Class NotebookLM notebook](https://notebooklm.google.com/notebook/fab22e79-9a9f-4e9a-9891-bad32612c98c)
